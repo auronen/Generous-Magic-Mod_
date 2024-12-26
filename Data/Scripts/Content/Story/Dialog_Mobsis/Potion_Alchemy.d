@@ -875,7 +875,7 @@ instance PC_ItPo_Perm_Health(C_INFO)
 	condition		= PC_ItPo_Perm_Health_Condition;
 	information		= PC_ItPo_Perm_Health_Info;
 	permanent		= TRUE;
-	description		= "Elixir of Life (1 Healing Root, 1 King's Sorrel, Meadow Knotweed)"; 
+	description		= "Elixir of Life (1 Healing Root, 1 King's Sorrel, 1 Meadow Knotweed)"; 
 };
 
 func int PC_ItPo_Perm_Health_Condition()
@@ -890,13 +890,13 @@ func int PC_ItPo_Perm_Health_Condition()
 
 func void PC_ItPo_Perm_Health_Info()
 {
-	if (Npc_HasItems (hero, ItPl_Health_Herb_03) 	>= 1) 
-	&& (Npc_HasItems (hero, ItPl_Perm_Herb) 	  	>= 1) 
-	&& (Npc_HasItems (hero, ItPl_Temp_Herb) 	    >= 1) 
+	if (Npc_HasItems (hero, ItPl_Health_Herb_03) 		>= 1) 
+	&& (Npc_HasItems (hero, ItPl_Perm_Herb) 	  		>= 1) 
+	&& (Npc_HasItems (hero, ItPl_Temp_Herb) 			>= 1) 
 	{
-		Npc_RemoveInvItems(hero, ItPl_Health_Herb_03, 1);
-		Npc_RemoveInvItems (hero,ItPl_Perm_Herb	  	,1);
-		Npc_RemoveInvItems(hero, ItPl_Perm_Herb, 1);
+		Npc_RemoveInvItems(hero, ItPl_Health_Herb_03,	1);
+		Npc_RemoveInvItems (hero,ItPl_Perm_Herb,		1);
+		Npc_RemoveInvItems(hero, ItPl_Temp_Herb,		1);
 
 		CreateInvItems(hero, ItPo_Perm_Health, 1);
 		Print(PRINT_AlchemySuccess);
@@ -938,8 +938,8 @@ func void PC_ItPo_Perm_Mana_Info()
 	&& (Npc_HasItems (hero, ItPl_Temp_Herb)  	  >= 1) 
 	{
 		Npc_RemoveInvItems(hero, ItPl_Mana_Herb_03, 1);
-		Npc_RemoveInvItems (hero,ItPl_Perm_Herb	  ,1);
 		Npc_RemoveInvItems(hero, ItPl_Perm_Herb, 1);
+		Npc_RemoveInvItems(hero, ItPl_Temp_Herb, 1);
 
 		CreateInvItems(hero, ItPo_Perm_Mana, 1);
 		Print(PRINT_AlchemySuccess);
