@@ -9,7 +9,8 @@ FUNC VOID GMM_Equip_2H_04()
 {
 	if Npc_IsPlayer (self)
 	{ 
-		GMM_SUMMON_TIME = 86400;
+	
+		GMM_SUMMON_TIME = 180;
 		heroHasEquippedSpecialStaff = true;
 	};
 };

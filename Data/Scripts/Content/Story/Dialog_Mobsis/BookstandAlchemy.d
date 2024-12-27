@@ -14,6 +14,28 @@ var int ALchemy_2_permanent;
 var int ALchemy_3_permanent;
 //----------------------
 
+
+
+const string BookstandALCHEMY1_S1_1 = "Tränke magischer Kraft";
+const string BookstandALCHEMY1_S1_2 = "und ihre Zutaten";
+const string BookstandALCHEMY1_S1_3 = "2 Feuernesseln";
+const string BookstandALCHEMY1_S1_4 = "2 Feuerkräuter";
+const string BookstandALCHEMY1_S1_5 = "2 Feuerwurzeln";
+const string BookstandALCHEMY1_S1_6 = "Jegliche Arbeit am Alchemietisch  erfordert eine Laborwasserflasche, die während des Prozesses verbraucht wird.";
+const string BookstandALCHEMY1_S1_7 = "Für das Brauen von Tränken der Heilung oder der Stärkung der magischen Kraft, benötigt der Anwender neben der speziellen Zutat immer eine Pflanze:";
+const string BookstandALCHEMY1_S1_8 = "Feldknöterich";
+const string BookstandALCHEMY1_S1_9 = "Für das Brauen von Tränken die permanente Veränderungen des Körpers oder Geistes bewirken, benötigt der Anwender immer eine Pflanze: ";
+const string BookstandALCHEMY1_S1_10 = "Kronstöckl";
+
+//GMM
+const string GMM_Bookstand_Alchemy_Berry = "1 Forest Berry";
+const string GMM_Bookstand_Alchemy_BlueElder = "1 Blue Elder";
+const string GMM_Bookstand_Alchemy_Info_1 = "To brew any healing potions or potions to strengthen magic power, you need a proper mixture of plants:";
+const string GMM_Bookstand_Alchemy_Info_2 = "healing plants and fire plants, combined with Forest Berry for small and Blue Elder for medium potions.";
+const string GMM_Bookstand_Alchemy_Info_3 = "Stronger potions call for Meadow Knotweed.";
+const string GMM_Bookstand_Alchemy_Info_4 = "To brew any potions that effect permanent changes to the body or spirit, you need two plants:";
+const string GMM_Bookstand_Alchemy_Info_5 = "King's Sorrel and Meadow Knotweed.";
+
 FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
@@ -33,34 +55,34 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Potions of Magic Power");
-					Doc_PrintLine	( nDocID,  0, "and Ingredients"						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY1_S1_1);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY1_S1_2						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Mana Essence"						);
-					Doc_PrintLine	( nDocID,  0, "2 Fire Nettles"						);
-					Doc_PrintLine	( nDocID,  0, "1 Forest Berry"							);
+					Doc_PrintLine	( nDocID,  0, NAME_ManaPotion1						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY1_S1_3						);
+					Doc_PrintLine	( nDocID,  0, GMM_Bookstand_Alchemy_Berry							);
 					Doc_PrintLine	( nDocID,  0, ""							);
-					Doc_PrintLine	( nDocID,  0, "Mana Extract"						);
-					Doc_PrintLine	( nDocID,  0, "2 Fireweeds"						);
-					Doc_PrintLine	( nDocID,  0, "1 Blue Elder"						);
+					Doc_PrintLine	( nDocID,  0, NAME_ManaPotion2						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY1_S1_4					);
+					Doc_PrintLine	( nDocID,  0, GMM_Bookstand_Alchemy_BlueElder						);
 					Doc_PrintLine	( nDocID,  0, ""							);
-					Doc_PrintLine	( nDocID,  0, "Mana Elixir"						);
-					Doc_PrintLine	( nDocID,  0, "2 Fire Roots"						);
-					Doc_PrintLine	( nDocID,  0, "1 Meadow Knotweed"						);
+					Doc_PrintLine	( nDocID,  0, NAME_ManaPotion3						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY1_S1_5						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY1_S1_8						);
 					
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "All work at the alchemist's bench requires a laboratory flask which is used up in the process."	); 
+					Doc_PrintLines	( nDocID,  1, BookstandALCHEMY1_S1_6	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "To brew any healing potions or potions to strengthen magic power, you need a proper mixture of plants:"			);
-					Doc_PrintLine	( nDocID,  1, "healing plants and fire plant, combined with Blue Elder for small and medium potions."		);
-					Doc_PrintLine	( nDocID,  1, "Stronger potions call for Meadow Knotweed."						);
-					Doc_PrintLines	( nDocID,  1, "To brew any potions that effect permanent changes to the body or spirit, you need a certain plant:"						);
-					Doc_PrintLines	( nDocID,  1, "King's Sorrel, Meadow Knotweed."		);
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_Info_1			);
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_Info_2		);
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_Info_3						);
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_Info_4						);
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_Info_5		);
 					Doc_Show		( nDocID );
 					
 					if (ALchemy_1_permanent == FALSE)
@@ -71,6 +93,19 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 
 	};
 };
+
+
+const string BookstandALCHEMY2_S1_1 = "Tränke heilender Kraft";
+const string BookstandALCHEMY2_S1_2 = "und ihre Zutaten";
+const string BookstandALCHEMY2_S1_3 = "2 Heilpflanzen";
+const string BookstandALCHEMY2_S1_4 = "2 Heilkräuter";
+const string BookstandALCHEMY2_S1_5 = "2 Heilwurzeln";
+const string BookstandALCHEMY2_S1_6 = "Jegliche Arbeit am Alchemietisch  erfordert eine Laborwasserflasche, die während des Prozesses verbraucht wird.";
+const string BookstandALCHEMY2_S1_7 = "Für das Brauen von Tränken der Heilung oder der Stärkung der magischen Kraft, benötigt der Anwender neben der speziellen Zutat immer eine Pflanze:";
+const string BookstandALCHEMY2_S1_8 = "Feldknöterich";
+const string BookstandALCHEMY2_S1_9 = "Für das Brauen von Tränken die permanente Veränderungen des Körpers oder Geistes bewirken, benötigt der Anwender immer eine Pflanze: ";
+const string BookstandALCHEMY2_S1_10 = "Kronstöckl";
+
 
 FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 {
@@ -91,34 +126,34 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Healing Potions");
-					Doc_PrintLine	( nDocID,  0, "and Ingredients"						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY2_S1_1);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY2_S1_2						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Essence of Healing"						);
-					Doc_PrintLine	( nDocID,  0, "2 Healing Plants"						);
-					Doc_PrintLine	( nDocID,  0, "1 Woodland Berry"						);
+					Doc_PrintLine	( nDocID,  0, NAME_HealthPotion1						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY2_S1_3						);
+					Doc_PrintLine	( nDocID,  0, GMM_Bookstand_Alchemy_Berry						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Extract of Healing"						);
-					Doc_PrintLine	( nDocID,  0, "2 Healing Herbs"						);
-					Doc_PrintLine	( nDocID,  0, "1 Blue Elder"						);
+					Doc_PrintLine	( nDocID,  0, NAME_HealthPotion2						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY2_S1_4						);
+					Doc_PrintLine	( nDocID,  0,  GMM_Bookstand_Alchemy_BlueElder						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Elixir of Healing"						);
-					Doc_PrintLine	( nDocID,  0, "2 Healing Roots"						);
-					Doc_PrintLine	( nDocID,  0, "1 Meadow Knotweed"						);
+					Doc_PrintLine	( nDocID,  0, NAME_HealthPotion3						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY2_S1_5					);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY2_S1_8						);
 					
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "All work at the alchemist's bench requires a laboratory flask which is used up in the process."	); 
+					Doc_PrintLines	( nDocID,  1, BookstandALCHEMY2_S1_6	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "To brew any healing potions or potions to strengthen magic power, you need a proper mixture of plants:"			);
-					Doc_PrintLine	( nDocID,  1, "healing plants and fire plant, combined with Blue Elder for small and medium potions."		);
-					Doc_PrintLine	( nDocID,  1, "Stronger potions call for Meadow Knotweed."						);
-					Doc_PrintLines	( nDocID,  1, "To brew any potions that effect permanent changes to the body or spirit, you need a certain plant:"						);
-					Doc_PrintLines	( nDocID,  1, "King's Sorrel, Meadow Knotweed."		);
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_Info_1			);
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_Info_2		);
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_Info_3						);
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_Info_4						);
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_Info_5		);
 					Doc_Show		( nDocID );
 					
 					if (ALchemy_2_permanent == FALSE)
@@ -129,6 +164,23 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 
 	};
 };
+
+const string BookstandALCHEMY3_S1_1 = "Tränke permanenter Veränderungen";
+const string BookstandALCHEMY3_S1_2 = "und ihre Zutaten";
+const string BookstandALCHEMY3_S1_3 = "1 Goblin Beere";
+const string BookstandALCHEMY3_S1_4 = "1 Snapperkraut - dieser Trank benötigt keinen Kronstöckl, sondern Feldknöterich";
+const string BookstandALCHEMY3_S1_5 = "1 Drachenwurzel";
+const string BookstandALCHEMY3_S1_6 = "1 Heilwurzel";
+const string BookstandALCHEMY3_S1_7 = "1 Feuerwurzel";
+const string BookstandALCHEMY3_S1_8 = "Das Brauen dieser Rezepturen ist die hohe Kunst der Alchemie. Ihnen allen ist zu eigen, dass sie einen Kronstöckl als Zutat verlangen.";
+const string BookstandALCHEMY3_S1_9 = "Der Trank der Geschwindigkeit ist viel einfacher herzustellen, was auch daran liegt, das man keinen Kronstöckl benötigt. ";
+
+//GMM
+const string GMM_Bookstand_Alchemy_PermDex_Ingredients = "1 Goblin Berry, 1 Meadow Knotweed";
+const string GMM_Bookstand_Alchemy_PermStr_Ingredients = "1 Dragonroot, 1 Meadow Knotweed";
+const string GMM_Bookstand_Alchemy_PermHP_Ingredients = "1 Healing Root, 1 Meadow Knotweed";
+const string GMM_Bookstand_Alchemy_PermMana_Ingredients = "1 Fire Root, 1 Meadow Knotweed";
+const string GMM_Bookstand_Alchemy_PermPotion_Info = "Brewing these recipes is the highest art of alchemy. They all have the use of king's sorrel and meadow knotweed as an ingredients in common.";
 
 FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 {
@@ -148,32 +200,37 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Potions for Permanent Changes");
-					Doc_PrintLine	( nDocID,  0, "and Ingredients"						);
+					Doc_PrintLines	( nDocID,  0, BookstandALCHEMY3_S1_1);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY3_S1_2						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Elixir of Dexterity"						);
-					Doc_PrintLine	( nDocID,  0, "1 goblin berry, 1 meadow knotweed"						);
+					Doc_PrintLine	( nDocID,  0, NAME_Dex_Permanent						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY3_S1_3						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY2_S1_8    );
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Speed Potion"						);
-					Doc_PrintLines	( nDocID,  0, "1 snapperweed - This potion requires not king's sorrel, but meadow knotweed."						);
+					Doc_PrintLine	( nDocID,  0, NAME_Speed_Potion						);
+					Doc_PrintLines	( nDocID,  0, BookstandALCHEMY3_S1_4						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Elixir of Strength"						);
-					Doc_PrintLine	( nDocID,  0, "1 dragonroot, 1 meadow knotweed"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Elixir of Life"						);
-					Doc_PrintLine	( nDocID,  0, "1 healing root, 1 meadow knotweed"						);
+					Doc_PrintLine	( nDocID,  0, NAME_Str_Permanent						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY3_S1_5						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY2_S1_8						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Elixir of Spirit"						);
-					Doc_PrintLine	( nDocID,  0, "1 fire root, 1 meadow knotweed"						);
+					Doc_PrintLines	( nDocID,  0, NAME_HealthPermanent						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY3_S1_6						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY2_S1_8						);
+					Doc_PrintLine	( nDocID,  0, ""						);
+					Doc_PrintLines	( nDocID,  0, NAME_ManaPermanent						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY3_S1_7						);
+					Doc_PrintLine	( nDocID,  0, BookstandALCHEMY2_S1_8						);
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Brewing these recipes is the highest art of alchemy. They all have the use of king's sorrel and meadow knotweed as an ingredients in common."); 
+					Doc_PrintLines	( nDocID,  1, GMM_Bookstand_Alchemy_PermPotion_Info); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "The potion of speed is much simpler to create which is also due to the fact that you do not need king's sorrel."						);
+					Doc_PrintLines	( nDocID,  1, BookstandALCHEMY3_S1_9						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					
 					
@@ -187,3 +244,4 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 
 	};
 };
+
