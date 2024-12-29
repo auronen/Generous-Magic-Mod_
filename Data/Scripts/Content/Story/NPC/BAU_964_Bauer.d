@@ -1,7 +1,7 @@
 instance BAU_964_Bauer(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Bauer";
+	name							= "Farmer";
 	npctype							= NPCTYPE_AMBIENT;
 	guild							= GIL_OUT;
 	flags							= 0; // NPC_FLAG_IMMORTAL oder 0
@@ -24,7 +24,7 @@ instance BAU_964_Bauer(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 20); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 20); // Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

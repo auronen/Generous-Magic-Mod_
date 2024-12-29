@@ -690,8 +690,8 @@ instance ItRu_SumGobSkel(C_Item)
 	description					= NAME_SPL_SummonGoblinSkeleton;
 	text[0]						= NAME_Mag_Circle;								count[0] = mag_circle;
 	text[1]						= NAME_Manakosten;								count[1] = SPL_Cost_SummonGoblinSkeleton;
-	text[2]						= "Die wandernden Knochen";						count[2] = 0;
-	text[3]						= "der toten Goblins";							count[3] = 0;
+	text[2]						= "The wandering bones";						count[2] = 0;
+	text[3]						= "of dead goblins.";							count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };

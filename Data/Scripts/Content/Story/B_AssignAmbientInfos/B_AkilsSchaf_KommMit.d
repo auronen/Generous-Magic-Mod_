@@ -7,7 +7,7 @@ instance DIA_AkilsSchaf_KommMit(C_INFO)
 	nr				= 1;
 	condition		= DIA_AkilsSchaf_KommMit_Condition;
 	information		= DIA_AkilsSchaf_KommMit_Info;
-	description		= "Komm mit!";
+	description		= "Come with me!";
 };
 
 func int DIA_AkilsSchaf_KommMit_Condition()

@@ -29,7 +29,7 @@ instance DIA_Addon_TAL_BDT_1_Hi(C_INFO)
 	condition		= DIA_Addon_TAL_BDT_1_Hi_Condition;
 	information		= DIA_Addon_TAL_BDT_1_Hi_Info;
 	permanent		= TRUE;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_TAL_BDT_1_Hi_Condition()
@@ -39,15 +39,15 @@ func int DIA_Addon_TAL_BDT_1_Hi_Condition()
 
 func void DIA_Addon_TAL_BDT_1_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_TAL_BDT_1_Hi_15_00"); //Wie sieht's aus?
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01"); //Ich warte, bis sie einen Neuen anfordern und ich an die Reihe komme.
+	AI_Output(other, self, "DIA_Addon_TAL_BDT_1_Hi_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01"); //I'm waiting until they ask for someone new and it's my turn.
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02"); //Von allen Leuten, die hier draußen sind, kommt nur Franco rein.
+		AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02"); //Of all the people that are out here, only Franco can get in.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03"); //Jetzt, da Franco tot ist, habe ich hoffentlich bessere Chancen.
+		AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03"); //Now that Franco is dead, hopefully I have a better chance.
 	};
 };
 
@@ -60,7 +60,7 @@ instance DIA_Addon_TAL_BDT_1_Lager(C_INFO)
 	condition		= DIA_Addon_TAL_BDT_1_Lager_Condition;
 	information		= DIA_Addon_TAL_BDT_1_Lager_Info;
 	permanent		= TRUE;
-	description		= "Was kannst du mir über das Lager erzählen?";
+	description		= "What can you tell me about the camp?";
 };
 
 func int DIA_Addon_TAL_BDT_1_Lager_Condition()
@@ -70,9 +70,9 @@ func int DIA_Addon_TAL_BDT_1_Lager_Condition()
 
 func void DIA_Addon_TAL_BDT_1_Lager_Info()
 {
-	AI_Output(other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00"); //Was kannst du mir über das Lager erzählen?
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01"); //Pass bloß auf, mit wem du dich anlegst! Wenn du grundlos einen Kampf anfängst, hast du schnell alle gegen dich!
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02"); //Die meisten haben Angst um ihr Gold und einige der Jungs beschützen sich untereinander.
+	AI_Output(other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00"); //What can you tell me about the camp?
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01"); //Watch out who you tangle with! If you start a fight for no reason, you'll have them all against you, fast!
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02"); //Most of them are nervous about their gold and some of the boys are watching out for each other.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ instance DIA_Addon_TAL_BDT_1_Raven(C_INFO)
 	condition		= DIA_Addon_TAL_BDT_1_Raven_Condition;
 	information		= DIA_Addon_TAL_BDT_1_Raven_Info;
 	permanent		= TRUE;
-	description		= "Was weißt du über Raven?";
+	description		= "What do you know about Raven?";
 };
 
 func int DIA_Addon_TAL_BDT_1_Raven_Condition()
@@ -94,10 +94,10 @@ func int DIA_Addon_TAL_BDT_1_Raven_Condition()
 
 func void DIA_Addon_TAL_BDT_1_Raven_Info()
 {
-	AI_Output(other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00"); //Was weißt du über Raven?
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01"); //Er ist der Typ, der hier mit seinen Jungs als erster aufgetaucht ist.
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02"); //Er der Anführer des Lagers. Mit ihm ist nicht gut Kirschen essen, glaube ich.
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03"); //Einmal haben sie fünf neue Leute angefordert, weil er seine Wut an seinen eigenen Leuten ausgelassen hat.
+	AI_Output(other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00"); //What do you know about Raven?
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01"); //He's the guy who first showed up here with his boys.
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02"); //He's the leader of the camp. You don't mess around with him, let me tell you.
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03"); //Once they needed five new men because he had taken out his anger on some of his own people.
 };
 
 func void B_AssignAmbientInfos_Addon_TAL_BDT_1(var C_Npc slf)

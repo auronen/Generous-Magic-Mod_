@@ -1,7 +1,7 @@
 instance BDT_1064_Bandit_L(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Wache";
+	name							= "Guard";
 	npctype							= NpcType_Main;
 	guild							= GIL_BDT;
 	flags							= 0;

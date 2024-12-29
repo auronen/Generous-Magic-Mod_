@@ -31,7 +31,7 @@ instance VLK_4301_Addon_Farim(Npc_Default)
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);
-	CreateInvItems(self, ItMi_Aquamarine, 1); // Joly: für Mission
+	CreateInvItems(self, ItMi_Aquamarine, 1); // Joly: fÃ¼r Mission
 
 	// -------- equipped weapons --------
 	EquipItem(self, ItMw_1h_Bau_Mace);

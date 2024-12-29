@@ -27,7 +27,7 @@ const int HP_Shellflesh = 20;
 // ---------------------------------------------------------------------
 instance ItFo_Addon_Shellflesh(C_Item)
 {
-	name						= "Muschelfleisch";
+	name						= "Clam meat";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -41,9 +41,9 @@ instance ItFo_Addon_Shellflesh(C_Item)
 	value						= Value_Shellflesh;
 
 	description					= name;
-	text[0]						= "Saftiges Muschelfleisch";					count[0] = 0;
+	text[0]						= "Juicy clam meat";					count[0] = 0;
 	text[1]						= NAME_Bonus_HP;								count[1] = HP_Shellflesh;
-	text[2]						= "Roh unbedingt genießbar";					count[2] = 0;
+	text[2]						= "Can be eaten raw";					count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -70,7 +70,7 @@ instance ItFo_Addon_Rum(C_Item)
 
 	value						= Value_Rum;
 
-	description					= "Weißer Rum";
+	description					= "White Rum";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Bonus_Mana;								count[1] = Mana_Rum;
 	text[2]						= "";											count[2] = 0;
@@ -103,7 +103,7 @@ instance ItFo_Addon_Grog(C_Item)
 
 	value						= Value_Grog;
 
-	description					= "Echter Seemanns Grog";
+	description					= "Genuine seaman's grog";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Bonus_HP;								count[1] = HP_Grog;
 	text[2]						= "";											count[2] = 0;
@@ -121,7 +121,7 @@ func void UseGrog()
 //	Lou's Hammer (mit Manaessenz)
 // -----------------------------
 
-var int Hammer_Once; // damit der Magier sich nicht für 30 Gold superviel MANA kauft!!
+var int Hammer_Once; // damit der Magier sich nicht fÃ¼r 30 Gold superviel MANA kauft!!
 
 instance ItFo_Addon_LousHammer(C_Item)
 {
@@ -140,7 +140,7 @@ instance ItFo_Addon_LousHammer(C_Item)
 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "Wirkung          ???";						count[1] = 0;
+	text[1]						= "Effect          ???";						count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
@@ -161,7 +161,7 @@ func void UseLouHammer()
 // --------------------------------------------------------
 instance ItFo_Addon_SchlafHammer(C_Item)
 {
-	name						= "Doppelter Hammer";
+	name						= "Double Hammer";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -176,7 +176,7 @@ instance ItFo_Addon_SchlafHammer(C_Item)
 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "Macht den härtesten Trinker müde...";		count[1] = 0;
+	text[1]						= "Makes the toughest drinker sleepy...";		count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
@@ -197,7 +197,7 @@ func void UseSchlafHammer()
 
 instance ItFo_Addon_SchnellerHering(C_Item)
 {
-	name						= "Schneller Hering";
+	name						= "Hasty Herring";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -210,10 +210,10 @@ instance ItFo_Addon_SchnellerHering(C_Item)
 
 	value						= Value_Schnellerhering;
 
-	description					= "Sieht gefährlich aus!";
+	description					= "Looks dangerous!";
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "Wirkung unbekannt";							count[1] = 0;
-	text[2]						= "Nebenwirkungen wahrscheinlich";				count[2] = 0;
+	text[1]						= "Effects unknown.";							count[1] = 0;
+	text[2]						= "Probable side-effects";				count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = Value_SchnellerHering;
@@ -240,7 +240,7 @@ func void UseSchnellerHering()
 // -------------------------------------------------------
 instance ItFo_Addon_Pfeffer_01(C_Item)
 {
-	name						= "Pfefferbeutel";
+	name						= "Pepper bag";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -250,11 +250,11 @@ instance ItFo_Addon_Pfeffer_01(C_Item)
 
 	value						= 100;
 
-	description					= "Roter Tränen- Pfeffer";
-	text[0]						= "Von den südlichen Inseln";					count[0] = 0;
+	description					= "Red tear-pepper";
+	text[0]						= "From the southern islands";					count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "VORSICHT SCHARF!";							count[3] = 0;
+	text[3]						= "CAREFUL, HOT!";							count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -264,7 +264,7 @@ instance ItFo_Addon_Pfeffer_01(C_Item)
 // -------------------------------------------------------
 instance ItFo_Addon_FireStew(C_Item)
 {
-	name						= "Feuergeschnetzeltes";
+	name						= "Fire strips";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -299,7 +299,7 @@ func void Use_FireStew()
 // -------------------------------------------------------
 instance ItFo_Addon_Meatsoup(C_Item)
 {
-	name						= "Fleischsuppe";
+	name						= "Meat stew";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -312,7 +312,7 @@ instance ItFo_Addon_Meatsoup(C_Item)
 
 	value						= Value_FishSoup;
 
-	description					= "Dampfende Fleischsuppe";
+	description					= "Steaming meat stew";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Bonus_STR;								count[1] = STR_MeatSoup;
 	text[2]						= "";											count[2] = 0;

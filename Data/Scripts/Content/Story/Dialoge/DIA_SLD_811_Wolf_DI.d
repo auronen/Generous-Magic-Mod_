@@ -31,7 +31,7 @@ instance DIA_Wolf_DI_HALLO(C_INFO)
 	condition		= DIA_Wolf_DI_HALLO_Condition;
 	information		= DIA_Wolf_DI_HALLO_Info;
 	permanent		= TRUE;
-	description		= "Wie steht's?";
+	description		= "How's it going?";
 };
 
 func int DIA_Wolf_DI_HALLO_Condition()
@@ -45,20 +45,20 @@ func int DIA_Wolf_DI_HALLO_Condition()
 var int DIA_Wolf_DI_HALLO_OneTime;
 func void DIA_Wolf_DI_HALLO_Info()
 {
-	AI_Output(other, self, "DIA_Wolf_DI_HALLO_15_00"); //Wie steht's?
+	AI_Output(other, self, "DIA_Wolf_DI_HALLO_15_00"); //How's it going?
 
 	if ((Bennet_IsOnBoard == LOG_SUCCESS)
 	&& (Npc_IsDead(Bennet_DI) == FALSE))
 	{
-		AI_Output(self, other, "DIA_Wolf_DI_HALLO_08_01"); //Musstest du unbedingt Bennet mitnehmen, Mann?
-		AI_Output(other, self, "DIA_Wolf_DI_HALLO_15_02"); //Wo ist das Problem?
-		AI_Output(self, other, "DIA_Wolf_DI_HALLO_08_03"); //Ach, gar nichts. Ist schon gut. Erledige deine Aufgaben und dann schnell weg hier, ok?
+		AI_Output(self, other, "DIA_Wolf_DI_HALLO_08_01"); //Did you HAVE to take Bennet along, man?
+		AI_Output(other, self, "DIA_Wolf_DI_HALLO_15_02"); //What's the problem?
+		AI_Output(self, other, "DIA_Wolf_DI_HALLO_08_03"); //Ah, nothing. It's all right. Do your job and then get out of here, okay?
 	}
 	else
 	{
 		if (DIA_Wolf_DI_HALLO_OneTime == FALSE)
 		{
-			AI_Output(self, other, "DIA_Wolf_DI_HALLO_08_04"); //Die Schmiede ist zwar nicht die beste, aber ich denke, ich probier sie mal aus.
+			AI_Output(self, other, "DIA_Wolf_DI_HALLO_08_04"); //The smithy isn't the best, but I think I'll give it a try.
 			B_GivePlayerXP(XP_Ambient);
 			DIA_Wolf_DI_HALLO_OneTime = TRUE;
 			AI_StopProcessInfos(self);
@@ -66,8 +66,8 @@ func void DIA_Wolf_DI_HALLO_Info()
 		}
 		else
 		{
-			AI_Output(other, self, "DIA_Wolf_DI_HALLO_15_05"); //Kannst du mir eine Rüstung bauen?
-			AI_Output(self, other, "DIA_Wolf_DI_HALLO_08_06"); //Ne, Mann. Nicht mit diesen Mitteln. Damit müssen wir schon noch warten, bis wir auf dem Festland sind.
+			AI_Output(other, self, "DIA_Wolf_DI_HALLO_15_05"); //Could you build me some armor?
+			AI_Output(self, other, "DIA_Wolf_DI_HALLO_08_06"); //Sorry, man. Not with these tools. That'll have to wait until we're on the mainland.
 		};
 	};
 };
@@ -82,7 +82,7 @@ instance DIA_Wolf_DI_Training(C_INFO)
 	condition		= DIA_Wolf_DI_Training_Condition;
 	information		= DIA_Wolf_DI_Training_Info;
 	permanent		= TRUE;
-	description		= "Trainiere mich im Fernkampf.";
+	description		= "Train me in long-distance combat.";
 };
 
 func int DIA_Wolf_DI_Training_Condition()
@@ -95,8 +95,8 @@ func int DIA_Wolf_DI_Training_Condition()
 
 func void DIA_Wolf_DI_Training_Info()
 {
-	AI_Output(other, self, "DIA_Wolf_DI_Training_15_00"); //Trainiere mich im Fernkampf.
-	AI_Output(self, other, "DIA_Wolf_DI_Training_08_01"); //In welcher Kategorie?
+	AI_Output(other, self, "DIA_Wolf_DI_Training_15_00"); //Train me in long-distance combat.
+	AI_Output(self, other, "DIA_Wolf_DI_Training_08_01"); //What kind?
 
 	Info_ClearChoices(DIA_Wolf_DI_Training);
 	Info_AddChoice(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -114,7 +114,7 @@ func void DIA_Wolf_DI_Training_BOW_1()
 {
 	if (B_TeachFightTalentPercent(self, other, NPC_TALENT_BOW, 1, 90))
 	{
-		AI_Output(self, other, "DIA_Wolf_DI_Training_BOW_1_08_00"); //Im Gegensatz zur Armbrust ist der Bogen sehr sperrig und braucht viel Platz. Sorge immer dafür, dass du im Kampf auch genug davon hast.
+		AI_Output(self, other, "DIA_Wolf_DI_Training_BOW_1_08_00"); //Unlike the crossbow, the bow is very bulky and requires a lot of space. Always make sure that you have enough of that in battle.
 	};
 
 	Info_ClearChoices(DIA_Wolf_DI_Training);
@@ -130,7 +130,7 @@ func void DIA_Wolf_DI_Training_BOW_5()
 {
 	if (B_TeachFightTalentPercent(self, other, NPC_TALENT_BOW, 5, 90))
 	{
-		AI_Output(self, other, "DIA_Wolf_DI_Training_BOW_5_08_00"); //Lass die Sehne durch deine Finger gleiten, wenn du schießt. Ein verkrampfter Finger verfälscht die Flugbahn des Pfeils.
+		AI_Output(self, other, "DIA_Wolf_DI_Training_BOW_5_08_00"); //Let the string glide through your fingers when you shoot. A cramped finger will mess up the arrow's trajectory.
 	};
 
 	Info_ClearChoices(DIA_Wolf_DI_Training);
@@ -150,7 +150,7 @@ func void DIA_Wolf_DI_Training_CROSSBOW_1()
 {
 	if (B_TeachFightTalentPercent(self, other, NPC_TALENT_CROSSBOW, 1, 100))
 	{
-		AI_Output(self, other, "DIA_Wolf_DI_Training_CROSSBOW_1_08_00"); //Versuche, beim Schuss die Armbrust nicht zu verwackeln. Deswegen betätige den Abzug immer sehr vorsichtig.
+		AI_Output(self, other, "DIA_Wolf_DI_Training_CROSSBOW_1_08_00"); //Try not to jiggle when shooting the crossbow. That's why you should always press the trigger very carefully.
 	};
 
 	Info_ClearChoices(DIA_Wolf_DI_Training);
@@ -166,7 +166,7 @@ func void DIA_Wolf_DI_Training_CROSSBOW_5()
 {
 	if (B_TeachFightTalentPercent(self, other, NPC_TALENT_CROSSBOW, 5, 100))
 	{
-		AI_Output(self, other, "DIA_Wolf_DI_Training_CROSSBOW_5_08_00"); //Ein cleverer Schütze bedient sich der Tragkraft des Windes und versucht, nicht gegen ihn zu schießen.
+		AI_Output(self, other, "DIA_Wolf_DI_Training_CROSSBOW_5_08_00"); //A clever marksman makes use of the wind and tries never to shoot against it.
 	};
 
 	Info_ClearChoices(DIA_Wolf_DI_Training);
@@ -193,7 +193,7 @@ instance DIA_Wolf_DI_UndeadDragonDead(C_INFO)
 	condition		= DIA_Wolf_DI_UndeadDragonDead_Condition;
 	information		= DIA_Wolf_DI_UndeadDragonDead_Info;
 	permanent		= TRUE;
-	description		= "Alles gut überstanden?";
+	description		= "Everything all right?";
 };
 
 func int DIA_Wolf_DI_UndeadDragonDead_Condition()
@@ -207,14 +207,14 @@ func int DIA_Wolf_DI_UndeadDragonDead_Condition()
 var int DIA_Wolf_DI_UndeadDragonDead_OneTime;
 func void DIA_Wolf_DI_UndeadDragonDead_Info()
 {
-	AI_Output(other, self, "DIA_Wolf_DI_UndeadDragonDead_15_00"); //Alles gut überstanden?
-	AI_Output(self, other, "DIA_Wolf_DI_UndeadDragonDead_08_01"); //Sicher. Und du? War ein dicker Brocken, was?
+	AI_Output(other, self, "DIA_Wolf_DI_UndeadDragonDead_15_00"); //Everything all right?
+	AI_Output(self, other, "DIA_Wolf_DI_UndeadDragonDead_08_01"); //Sure. And you? It was a tough one, huh?
 
 	if (DIA_Wolf_DI_UndeadDragonDead_OneTime == FALSE)
 	{
-		AI_Output(other, self, "DIA_Wolf_DI_UndeadDragonDead_15_02"); //Wo willst du jetzt hingehen?
-		AI_Output(self, other, "DIA_Wolf_DI_UndeadDragonDead_08_03"); //Bloß nicht wieder zurück. Von Khorinis habe ich endgültig die Schnauze voll.
-		AI_Output(self, other, "DIA_Wolf_DI_UndeadDragonDead_08_04"); //Ist mir völlig egal, wohin wir segeln. Hauptsache weg hier.
+		AI_Output(other, self, "DIA_Wolf_DI_UndeadDragonDead_15_02"); //Where will you go now?
+		AI_Output(self, other, "DIA_Wolf_DI_UndeadDragonDead_08_03"); //Anywhere but back. I've had a bellyful of Khorinis.
+		AI_Output(self, other, "DIA_Wolf_DI_UndeadDragonDead_08_04"); //It's all the same to me where we sail. As long as it's away from here.
 		DIA_Wolf_DI_UndeadDragonDead_OneTime = TRUE;
 	};
 

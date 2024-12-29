@@ -5,7 +5,7 @@
 prototype Mst_Default_Waran(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Waran";
+	name							= "Lizard";
 	guild							= GIL_WARAN;
 	level							= 12;
 

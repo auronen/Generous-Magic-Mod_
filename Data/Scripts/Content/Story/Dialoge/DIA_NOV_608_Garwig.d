@@ -30,7 +30,7 @@ instance DIA_Garwig_Wurst(C_INFO)
 	nr				= 3;
 	condition		= DIA_Garwig_Wurst_Condition;
 	information		= DIA_Garwig_Wurst_Info;
-	description		= "Willst du eine Wurst?";
+	description		= "Would you like a sausage?";
 };
 
 func int DIA_Garwig_Wurst_Condition()
@@ -46,8 +46,8 @@ func int DIA_Garwig_Wurst_Condition()
 
 func void DIA_Garwig_Wurst_Info()
 {
-	AI_Output(other, self, "DIA_Garwig_Wurst_15_00"); //Willst du eine Wurst?
-	AI_Output(self, other, "DIA_Garwig_Wurst_06_01"); //Ah - lecker, lecker. Hab vielen Dank, Bruder.
+	AI_Output(other, self, "DIA_Garwig_Wurst_15_00"); //Would you like a sausage?
+	AI_Output(self, other, "DIA_Garwig_Wurst_06_01"); //Ah - delicious, that. Thank you so much, brother.
 
 	B_GiveInvItems(other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben + 1);
@@ -84,9 +84,9 @@ func int DIA_Garwig_Hello_Condition()
 
 func void DIA_Garwig_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Garwig_Hello_06_00"); //Innos sei mit dir - ich hab dich noch nie gesehen, bist du neu hier?
-	AI_Output(other, self, "DIA_Garwig_Hello_15_01"); //Ja, ich bin noch nicht lange dabei.
-	AI_Output(self, other, "DIA_Garwig_Hello_06_02"); //Dann hoffe ich, du wirst dich schnell eingewöhnen. Wenn ich dir irgendwie helfen kann, lass es mich wissen.
+	AI_Output(self, other, "DIA_Garwig_Hello_06_00"); //Innos be with you - I've never seen you before, are you new around here?
+	AI_Output(other, self, "DIA_Garwig_Hello_15_01"); //Yes, I only just joined.
+	AI_Output(self, other, "DIA_Garwig_Hello_06_02"); //In that case, I hope you'll get settled here fast. Let me know if I can help you with anything.
 };
 
 //**************************************************************************
@@ -98,7 +98,7 @@ instance DIA_Garwig_Room(C_INFO)
 	nr				= 5;
 	condition		= DIA_Garwig_Room_Condition;
 	information		= DIA_Garwig_Room_Info;
-	description		= "Was ist das hier für ein Raum? ";
+	description		= "What room is this?";
 };
 
 func int DIA_Garwig_Room_Condition()
@@ -108,10 +108,10 @@ func int DIA_Garwig_Room_Condition()
 
 func void DIA_Garwig_Room_Info()
 {
-	AI_Output(other, self, "DIA_Garwig_Room_15_00"); //Was ist das hier für ein Raum?
-	AI_Output(self, other, "DIA_Garwig_Room_06_01"); //Hier werden die heilige Reliquien des Klosters aufbewahrt.
-	AI_Output(other, self, "DIA_Garwig_Room_15_02"); //Welche Reliquien?
-	AI_Output(self, other, "DIA_Garwig_Room_06_03"); //Hier ruht Innos' Hammer und das Schild des Feuers. Sie sind die wichtigsten Reliquien der Innoskirche, außerhalb der Reichshauptstadt.
+	AI_Output(other, self, "DIA_Garwig_Room_15_00"); //What room is this?
+	AI_Output(self, other, "DIA_Garwig_Room_06_01"); //This is where they keep the holy relics of the monastery.
+	AI_Output(other, self, "DIA_Garwig_Room_15_02"); //What relics?
+	AI_Output(self, other, "DIA_Garwig_Room_06_03"); //Here rests the Hammer of Innos, along with the Shield of Fire. These are the most important relics of the Church of Innos outside of the capital of the realm.
 };
 
 //**************************************************************************
@@ -124,7 +124,7 @@ instance DIA_Garwig_Hammer(C_INFO)
 	condition		= DIA_Garwig_Hammer_Condition;
 	information		= DIA_Garwig_Hammer_Info;
 	permanent		= TRUE;
-	description		= "Erzähl mir was über den Hammer";
+	description		= "Tell me about the hammer.";
 };
 
 func int DIA_Garwig_Hammer_Condition()
@@ -137,10 +137,10 @@ func int DIA_Garwig_Hammer_Condition()
 
 func void DIA_Garwig_Hammer_Info()
 {
-	AI_Output(other, self, "DIA_Garwig_Hammer_15_00"); //Erzähl mir was über den Hammer.
-	AI_Output(self, other, "DIA_Garwig_Hammer_06_01"); //Das ist der heilige Hammer von Innos. Mit diesem Hammer erschlug der heilige Rhobar den steinernen Wächter.
-	AI_Output(self, other, "DIA_Garwig_Hammer_06_02"); //In den heiligen Schriften heißt es, dass der Steinerne Wächter unverwundbar war, wie ein Turm stand er in der Schlacht und die Waffen seiner Feinde zerbrachen an seiner steinernen Haut.
-	AI_Output(self, other, "DIA_Garwig_Hammer_06_03"); //Mit Innos' Namen auf den Lippen stürzte sich Rhobar auf das Ungeheuer und mit einem mächtigen Hieb seines Hammers zerschmetterte er das Wesen.
+	AI_Output(other, self, "DIA_Garwig_Hammer_15_00"); //Tell me about the hammer.
+	AI_Output(self, other, "DIA_Garwig_Hammer_06_01"); //This is the sacred Hammer of Innos. With this hammer, Saint Rhobar slew the Stone Sentinel.
+	AI_Output(self, other, "DIA_Garwig_Hammer_06_02"); //The Holy Scriptures say that the Stone Sentinel was invulnerable. He stood in battle like a tower, and the weapons of his enemies were smashed on his skin of stone.
+	AI_Output(self, other, "DIA_Garwig_Hammer_06_03"); //With the name of Innos on his lips, Rhobar hurled himself at the monster and crushed it with one mighty blow of his hammer.
 };
 
 //**************************************************************************
@@ -152,7 +152,7 @@ instance DIA_Garwig_Shield(C_INFO)
 	nr				= 98;
 	condition		= DIA_Garwig_Shield_Condition;
 	information		= DIA_Garwig_Shield_Info;
-	description		= "Erzähl mir was über den Schild.";
+	description		= "Tell me about the shield.";
 };
 
 func int DIA_Garwig_Shield_Condition()
@@ -165,9 +165,9 @@ func int DIA_Garwig_Shield_Condition()
 
 func void DIA_Garwig_Shield_Info()
 {
-	AI_Output(other, self, "DIA_Garwig_Shield_15_00"); //Erzähl mir was über den Schild.
-	AI_Output(self, other, "DIA_Garwig_Shield_06_01"); //Der Schild des Feuers wurde von Dominique in der Schlacht auf den südlichen Inseln getragen.
-	AI_Output(self, other, "DIA_Garwig_Shield_06_02"); //Doch die Macht des Schildes soll nie wieder benutzt werden, deshalb haben wir ihn an die Wand genagelt.
+	AI_Output(other, self, "DIA_Garwig_Shield_15_00"); //Tell me about the shield.
+	AI_Output(self, other, "DIA_Garwig_Shield_06_01"); //The Shield of Fire was borne by Dominique in the battle on the Southern Isles.
+	AI_Output(self, other, "DIA_Garwig_Shield_06_02"); //But the power of this shield is never to be wielded again - therefore, we have nailed it to the wall.
 };
 
 //**************************************************************************
@@ -179,7 +179,7 @@ instance DIA_Garwig_Auge(C_INFO)
 	nr				= 4;
 	condition		= DIA_Garwig_Auge_Condition;
 	information		= DIA_Garwig_Auge_Info;
-	description		= "Wird hier auch das Auge Innos' aufbewahrt?";
+	description		= "Is the Eye of Innos kept here, too?";
 };
 
 func int DIA_Garwig_Auge_Condition()
@@ -193,8 +193,8 @@ func int DIA_Garwig_Auge_Condition()
 
 func void DIA_Garwig_Auge_Info()
 {
-	AI_Output(other, self, "DIA_Garwig_Auge_15_00"); //Wird hier auch das Auge Innos' aufbewahrt?
-	AI_Output(self, other, "DIA_Garwig_Auge_06_01"); //Natürlich nicht. Was für eine seltsame Vorstellung. Niemand weiß, wo sich das göttliche Artefakt befindet.
+	AI_Output(other, self, "DIA_Garwig_Auge_15_00"); //Is the Eye of Innos kept here, too?
+	AI_Output(self, other, "DIA_Garwig_Auge_06_01"); //Of course not. What a strange idea. Nobody knows where that divine artifact is to be found.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -207,7 +207,7 @@ instance DIA_Garwig_SLEEP(C_INFO)
 	condition		= DIA_Garwig_SLEEP_Condition;
 	information		= DIA_Garwig_SLEEP_Info;
 	permanent		= TRUE;
-	description		= "Was machst du hier?";
+	description		= "What are you doing here?";
 };
 
 func int DIA_Garwig_SLEEP_Condition()
@@ -220,14 +220,14 @@ func int DIA_Garwig_SLEEP_Condition()
 
 func void DIA_Garwig_SLEEP_Info()
 {
-	AI_Output(other, self, "DIA_Garwig_SLEEP_15_00"); //Was machst du hier?
-	AI_Output(self, other, "DIA_Garwig_SLEEP_06_01"); //Ich bin der Wächter der heiligen Artefakte.
+	AI_Output(other, self, "DIA_Garwig_SLEEP_15_00"); //What are you doing here?
+	AI_Output(self, other, "DIA_Garwig_SLEEP_06_01"); //I am the guardian of the sacred artifacts.
 
 	Info_ClearChoices(DIA_Garwig_SLEEP);
 	Info_AddChoice(DIA_Garwig_SLEEP, DIALOG_BACK, DIA_Garwig_SLEEP_BACK);
-	Info_AddChoice(DIA_Garwig_SLEEP, "Soll ich dich mal ablösen?", DIA_Garwig_SLEEP_EXCHANGE);
-	Info_AddChoice(DIA_Garwig_SLEEP, "Warum werden die Artefakte bewacht?", DIA_Garwig_SLEEP_THIEF);
-	Info_AddChoice(DIA_Garwig_SLEEP, "Schläfst du nie? ", DIA_Garwig_SLEEP_NEVER);
+	Info_AddChoice(DIA_Garwig_SLEEP, "Shall I take over from you for a while?", DIA_Garwig_SLEEP_EXCHANGE);
+	Info_AddChoice(DIA_Garwig_SLEEP, "Why are the artifacts being guarded?", DIA_Garwig_SLEEP_THIEF);
+	Info_AddChoice(DIA_Garwig_SLEEP, "Don't you ever sleep?", DIA_Garwig_SLEEP_NEVER);
 };
 
 func void DIA_Garwig_SLEEP_BACK()
@@ -237,33 +237,33 @@ func void DIA_Garwig_SLEEP_BACK()
 
 func void DIA_Garwig_SLEEP_EXCHANGE()
 {
-	AI_Output(other, self, "DIA_Garwig_SLEEP_EXCHANGE_15_00"); //Soll ich dich mal ablösen?
-	AI_Output(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_01"); //Ist das ein Test? Haben die Magier dich geschickt, mich zu prüfen? Ooh - ich wusste es!
-	AI_Output(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_02"); //Aber ich werde diese Prüfung bestehen. Richte den Magiern aus, dass ich wie ein Fels in der Brandung stehe und allen Verlockungen widerstehe, denn ich bin ein würdiger Wächter.
+	AI_Output(other, self, "DIA_Garwig_SLEEP_EXCHANGE_15_00"); //Shall I take over from you for a while?
+	AI_Output(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_01"); //Is this a test? The mages have sent you to test me, right? Ooh - I knew it!
+	AI_Output(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_02"); //But I shall pass this test. Tell your mages that I stand firm as a rock, and that I shall resist all temptations, for I am a worthy guardian.
 };
 
 func void DIA_Garwig_SLEEP_THIEF()
 {
-	AI_Output(other, self, "DIA_Garwig_SLEEP_THIEF_15_00"); //Warum werden die Artefakte bewacht? Besteht Grund zur Sorge, dass sie gestohlen werden?
-	AI_Output(self, other, "DIA_Garwig_SLEEP_THIEF_06_01"); //Was für eine absonderliche Idee. Wie kommst du denn darauf?
-	AI_Output(self, other, "DIA_Garwig_SLEEP_THIEF_06_02"); //Nur Dienern Innos' ist es gestattet, das Kloster zu betreten. Und solche Gedanken hegt kein wahrer Gläubiger.
+	AI_Output(other, self, "DIA_Garwig_SLEEP_THIEF_15_00"); //Why are the artifacts being guarded? Is there any reason to worry they might be stolen?
+	AI_Output(self, other, "DIA_Garwig_SLEEP_THIEF_06_01"); //What an extraordinary concept. Whatever makes you think that?
+	AI_Output(self, other, "DIA_Garwig_SLEEP_THIEF_06_02"); //Only those who serve Innos are authorized to set foot in the monastery. And no true believer would ever harbor such thoughts.
 };
 
 func void DIA_Garwig_SLEEP_NEVER()
 {
-	AI_Output(other, self, "DIA_Garwig_SLEEP_NEVER_15_00"); //Schläfst du nie?
-	AI_Output(self, other, "DIA_Garwig_SLEEP_NEVER_06_01"); //Was für ein seltsamer Gedanke. Natürlich schlafe ich nie. Innos selbst verleiht mir die Kraft, niemals schlafen zu müssen.
-	AI_Output(self, other, "DIA_Garwig_SLEEP_NEVER_06_02"); //Denn nur so kann ich die heilige Pflicht der Wache erfüllen.
+	AI_Output(other, self, "DIA_Garwig_SLEEP_NEVER_15_00"); //Don't you ever sleep?
+	AI_Output(self, other, "DIA_Garwig_SLEEP_NEVER_06_01"); //What an unusual notion. Of course I don't ever sleep. Innos himself grants me the power which allows me to forego sleep altogether.
+	AI_Output(self, other, "DIA_Garwig_SLEEP_NEVER_06_02"); //For how else could I fulfill the sacred duties of guardianship?
 
 	Info_ClearChoices(DIA_Garwig_SLEEP);
-	Info_AddChoice(DIA_Garwig_SLEEP, "Du schläfst wirklich NIE?  ", DIA_Garwig_SLEEP_AGAIN);
+	Info_AddChoice(DIA_Garwig_SLEEP, "Do you really NEVER sleep?", DIA_Garwig_SLEEP_AGAIN);
 };
 
 func void DIA_Garwig_SLEEP_AGAIN()
 {
-	AI_Output(other, self, "DIA_Garwig_SLEEP_AGAIN_15_00"); //Schläfst du wirklich NIE?
-	AI_Output(self, other, "DIA_Garwig_SLEEP_AGAIN_06_01"); //Nein. Wenn eine Wache einschläft, dann hat sie versagt.
-	AI_Output(self, other, "DIA_Garwig_SLEEP_AGAIN_06_02"); //Aber ich werde nicht versagen, denn Innos schenkt mir Kraft und Ausdauer, so dass ich niemals müde werde.
+	AI_Output(other, self, "DIA_Garwig_SLEEP_AGAIN_15_00"); //Do you really NEVER sleep?
+	AI_Output(self, other, "DIA_Garwig_SLEEP_AGAIN_06_01"); //No. If a guardian falls asleep, he has failed.
+	AI_Output(self, other, "DIA_Garwig_SLEEP_AGAIN_06_02"); //But I shall not fail, for Innos gives me strength and endurance, and I shall never tire.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -292,18 +292,18 @@ func void DIA_Garwig_THIEF_Info()
 {
 	if (Hammer_Taken == TRUE)
 	{
-		AI_Output(self, other, "DIA_Garwig_THIEF_06_00"); //(aufgebracht) Dieb! Du hast nicht nur Schande über mich und dich gebracht, sondern über das ganze Kloster!
-		AI_Output(self, other, "DIA_Garwig_THIEF_06_01"); //Du solltest deine Verfehlung büßen! Und vor allem - GIB MIR DEN HAMMER ZURÜCK!!
+		AI_Output(self, other, "DIA_Garwig_THIEF_06_00"); //(upset) Thief! You have disgraced not only yourself and me, but this entire monastery!
+		AI_Output(self, other, "DIA_Garwig_THIEF_06_01"); //You shall atone for this sacrilege. And, above all - GIVE ME BACK THAT HAMMER!!
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Garwig_THIEF_06_02"); //(verzweifelt) Der Hammer ist verschwunden, wie konnte das geschehen?
-		AI_Output(self, other, "DIA_Garwig_THIEF_06_03"); //Ich habe versagt, Innos wird mich strafen!
+		AI_Output(self, other, "DIA_Garwig_THIEF_06_02"); //(desperate) The hammer has disappeared - how could that happen?
+		AI_Output(self, other, "DIA_Garwig_THIEF_06_03"); //I have failed. Innos will punish me!
 	};
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Hammer zurückbringen (immer wenn Spieler den Hammer hat)
+//	Info Hammer zurÃ¼ckbringen (immer wenn Spieler den Hammer hat)
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Garwig_Abgeben(C_INFO)
 {
@@ -312,7 +312,7 @@ instance DIA_Garwig_Abgeben(C_INFO)
 	condition		= DIA_Garwig_Abgeben_Condition;
 	information		= DIA_Garwig_Abgeben_Info;
 	permanent		= TRUE;
-	description		= "Ich bringe den Hammer zurück.";
+	description		= "I'm bringing back the hammer.";
 };
 
 func int DIA_Garwig_Abgeben_Condition()
@@ -325,18 +325,18 @@ func int DIA_Garwig_Abgeben_Condition()
 
 func void DIA_Garwig_Abgeben_Info()
 {
-	AI_Output(other, self, "DIA_Garwig_Abgeben_15_00"); //Ich bringe den Hammer zurück.
+	AI_Output(other, self, "DIA_Garwig_Abgeben_15_00"); //I'm bringing back the hammer.
 
 	if (Hammer_Taken == TRUE)
 	{
-		AI_Output(self, other, "DIA_Garwig_Abgeben_06_01"); //Du bist ein schändlicher Dieb!
+		AI_Output(self, other, "DIA_Garwig_Abgeben_06_01"); //You are a villainous thief!
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Garwig_Abgeben_06_02"); //So, du hattest ihn also ...
+		AI_Output(self, other, "DIA_Garwig_Abgeben_06_02"); //So it's you who took it ...
 	};
 
-	AI_Output(self, other, "DIA_Garwig_Abgeben_06_03"); //Aber es ist nicht an mir, über dich zu richten. Innos wird sein Recht über dich sprechen und du wirst seine Strafe empfangen!
+	AI_Output(self, other, "DIA_Garwig_Abgeben_06_03"); //But it is not my place to judge you. Innos shall administer his justice upon you, and you shall receive his punishment!
 
 	B_GiveInvItems(other, self, Holy_Hammer_MIS, 1);
 	Hammer_Taken = FALSE;

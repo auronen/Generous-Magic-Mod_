@@ -31,7 +31,7 @@ instance DIA_NONE_101_MARIO_DI_Job(C_INFO)
 	condition		= DIA_NONE_101_MARIO_DI_Job_Condition;
 	information		= DIA_NONE_101_MARIO_DI_Job_Info;
 	permanent		= TRUE;
-	description		= "Jetzt kannst du deine Kampfkraft unter Beweis stellen.";
+	description		= "Here's your chance to prove your fighting abilities.";
 };
 
 func int DIA_NONE_101_MARIO_DI_Job_Condition()
@@ -45,10 +45,10 @@ func int DIA_NONE_101_MARIO_DI_Job_Condition()
 
 func void DIA_NONE_101_MARIO_DI_Job_Info()
 {
-	AI_Output(other, self, "DIA_NONE_101_MARIO_DI_Job_15_00"); //Jetzt kannst du deine Kampfkraft unter Beweis stellen.
-	AI_Output(self, other, "DIA_NONE_101_MARIO_DI_Job_07_01"); //Langsam. Alles zu seiner Zeit.
-	AI_Output(other, self, "DIA_NONE_101_MARIO_DI_Job_15_02"); //Mmh. Hab auch nichts anderes von dir erwartet.
-	AI_Output(self, other, "DIA_NONE_101_MARIO_DI_Job_07_03"); //Abwarten.
+	AI_Output(other, self, "DIA_NONE_101_MARIO_DI_Job_15_00"); //Here's your chance to prove your fighting abilities.
+	AI_Output(self, other, "DIA_NONE_101_MARIO_DI_Job_07_01"); //Slowly. Everything in its time.
+	AI_Output(other, self, "DIA_NONE_101_MARIO_DI_Job_15_02"); //Mmh. That's just what I'd expected from you.
+	AI_Output(self, other, "DIA_NONE_101_MARIO_DI_Job_07_03"); //Just wait.
 };
 
 //*********************************************************************
@@ -73,10 +73,10 @@ func int DIA_NONE_101_MARIO_DI_ambush_Condition()
 
 func void DIA_NONE_101_MARIO_DI_ambush_Info()
 {
-	AI_Output(self, other, "DIA_NONE_101_MARIO_DI_ambush_07_00"); //Komm ruhig näher. So, mein Freundchen. Jetzt zeig mal, was du kannst.
-	AI_Output(other, self, "DIA_NONE_101_MARIO_DI_ambush_15_01"); //Was soll das heißen?
-	AI_Output(self, other, "DIA_NONE_101_MARIO_DI_ambush_07_02"); //Ganz einfach. Der Meister hat von dir gehörig die Nase voll.
-	AI_Output(self, other, "DIA_NONE_101_MARIO_DI_ambush_07_03"); //Ich hätte schon viel früher töten sollen. Aber diesen Fehler werden ich und meine Freunde hier jetzt korrigieren.
+	AI_Output(self, other, "DIA_NONE_101_MARIO_DI_ambush_07_00"); //Come closer. So, my friend. Now show me what you've got.
+	AI_Output(other, self, "DIA_NONE_101_MARIO_DI_ambush_15_01"); //What do you mean by that?
+	AI_Output(self, other, "DIA_NONE_101_MARIO_DI_ambush_07_02"); //Quite simple. The Master has had more than enough of you.
+	AI_Output(self, other, "DIA_NONE_101_MARIO_DI_ambush_07_03"); //I should have killed you sooner. But my friends and I will correct that mistake here and now.
 
 	Info_ClearChoices(DIA_NONE_101_MARIO_DI_ambush);
 	Info_AddChoice(DIA_NONE_101_MARIO_DI_ambush, DIALOG_ENDE, DIA_NONE_101_MARIO_DI_ambush_ambush);

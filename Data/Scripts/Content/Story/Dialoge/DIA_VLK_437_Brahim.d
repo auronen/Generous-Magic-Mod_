@@ -6,7 +6,7 @@ func void B_BrahimNewMaps()
 {
 	if (Brahim_ShowedMaps == TRUE)
 	{
-		AI_Output(self, other, "B_BrahimNewMaps_07_00"); //Komm später noch mal wieder. Dann habe ich sicher wieder etwas neues für dich.
+		AI_Output(self, other, "B_BrahimNewMaps_07_00"); //Come back again later. I'm sure to have something new for you then.
 	};
 };
 instance DIA_Brahim_EXIT(C_INFO)
@@ -78,7 +78,7 @@ instance DIA_Brahim_GREET(C_INFO)
 	nr				= 2;
 	condition		= DIA_Brahim_GREET_Condition;
 	information		= DIA_Brahim_GREET_Info;
-	description		= "Was machst du hier? ";
+	description		= "What are you doing here?";
 };
 
 func int DIA_Brahim_GREET_Condition()
@@ -88,10 +88,10 @@ func int DIA_Brahim_GREET_Condition()
 
 func void DIA_Brahim_GREET_Info()
 {
-	AI_Output(other, self, "DIA_Brahim_GREET_15_00"); //Was machst du hier?
-	AI_Output(self, other, "DIA_Brahim_GREET_07_01"); //Mein Name ist Brahim. Ich zeichne und verkaufe Karten.
-	AI_Output(self, other, "DIA_Brahim_GREET_07_02"); //Da du hier neu bist, kannst du vielleicht eine Karte der Stadt gebrauchen.
-	AI_Output(self, other, "DIA_Brahim_GREET_07_03"); //Sie ist sehr günstig - und bis du dich eingewöhnt hast, äußerst nützlich.
+	AI_Output(other, self, "DIA_Brahim_GREET_15_00"); //What are you doing here?
+	AI_Output(self, other, "DIA_Brahim_GREET_07_01"); //My name is Brahim. I draw maps, and sell them.
+	AI_Output(self, other, "DIA_Brahim_GREET_07_02"); //Since you're new here, maybe you could use a map of the city.
+	AI_Output(self, other, "DIA_Brahim_GREET_07_03"); //It's quite affordable - and very useful until you know your way around.
 
 	Log_CreateTopic(Topic_CityTrader, LOG_NOTE);
 	B_LogEntry(Topic_CityTrader, Topic_CityTrader_6);
@@ -106,7 +106,7 @@ instance DIA_Addon_Brahim_MissingPeople(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Brahim_MissingPeople_Condition;
 	information		= DIA_Addon_Brahim_MissingPeople_Info;
-	description		= "Stimmt es, dass Bewohner der Stadt einfach verschwinden?";
+	description		= "Is it true that some townspeople have simply vanished?";
 };
 
 func int DIA_Addon_Brahim_MissingPeople_Condition()
@@ -120,10 +120,10 @@ func int DIA_Addon_Brahim_MissingPeople_Condition()
 
 func void DIA_Addon_Brahim_MissingPeople_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //Stimmt es, dass Bewohner der Stadt einfach verschwinden?
-	AI_Output(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //Das habe ich auch gehört. Bin mir aber nicht sicher, ob das auch wirklich so ist.
-	AI_Output(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //Sieh dich doch mal um. Ist dieses Loch hier denn etwa der Ort, wo du alt werden willst?
-	AI_Output(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //Kein Wunder, dass sich die Leute aus dem Staub machen.
+	AI_Output(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //Is it true that some townspeople have simply vanished?
+	AI_Output(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //So I've heard. But I'm not sure whether it's really true.
+	AI_Output(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //Just look around you. Does this rathole look like the place where you want to spend your golden years?
+	AI_Output(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //Small wonder that people are getting themselves out of here.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -165,7 +165,7 @@ instance DIA_Brahim_BUY(C_INFO)
 	information		= DIA_Brahim_BUY_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Zeig mir deine Karten";
+	description		= "Show me your maps.";
 };
 
 func int DIA_Brahim_BUY_Condition()
@@ -179,16 +179,16 @@ func int DIA_Brahim_BUY_Condition()
 func void DIA_Brahim_BUY_Info()
 {
 	B_GiveTradeInv(self);
-	AI_Output(other, self, "DIA_Brahim_BUY_15_00"); //Zeig mir deine Karten.
+	AI_Output(other, self, "DIA_Brahim_BUY_15_00"); //Show me your maps.
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output(self, other, "DIA_Brahim_BUY_07_01"); //Du wirst in eurem Kloster keine besseren finden.
+		AI_Output(self, other, "DIA_Brahim_BUY_07_01"); //You won't find better in that monastery of yours.
 	};
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output(self, other, "DIA_Brahim_BUY_07_02"); //Gutes Kartenmaterial ist wichtig, zumal, wenn man vom Festland kommt, Herr Paladin.
+		AI_Output(self, other, "DIA_Brahim_BUY_07_02"); //Good maps are important, especially for people who come from the mainland, Mr. Paladin.
 	};
 
 	Brahim_ShowedMaps = TRUE;
@@ -256,15 +256,15 @@ func int DIA_Brahim_Kap3_First_EXIT_Condition()
 
 func void DIA_Brahim_Kap3_First_EXIT_Info()
 {
-	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_07_00"); //Ich wusste, dass du an dem Stück interessiert bist.
-	AI_Output(other, self, "DIA_Brahim_Kap3_First_EXIT_15_01"); //Was für ein Stück meinst du?
-	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_07_02"); //Na, die alte Karte, die du gerade gekauft hast.
-	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_07_03"); //Ich kenne Typen wie dich, ihr erkennt, wo sich die Chance auf Reichtum bietet.
+	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_07_00"); //I knew this piece would interest you.
+	AI_Output(other, self, "DIA_Brahim_Kap3_First_EXIT_15_01"); //What piece would that be?
+	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_07_02"); //Well, that old map you just bought.
+	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_07_03"); //I know your kind. You go for any chance of finding riches.
 	Info_ClearChoices(DIA_Brahim_Kap3_First_EXIT);
 	Info_AddChoice(DIA_Brahim_Kap3_First_EXIT, DIALOG_BACK, DIA_Brahim_Kap3_First_EXIT_BACK);
-	Info_AddChoice(DIA_Brahim_Kap3_First_EXIT, "Wo hast du das Schriftstück her?", DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
-	Info_AddChoice(DIA_Brahim_Kap3_First_EXIT, "Was ist das für ein Schriftstück?", DIA_Brahim_Kap3_First_EXIT_Content);
-	Info_AddChoice(DIA_Brahim_Kap3_First_EXIT, "Wieso behälst du es nicht selbst?", DIA_Brahim_Kap3_First_EXIT_KeepIt);
+	Info_AddChoice(DIA_Brahim_Kap3_First_EXIT, "Where did you get that document?", DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
+	Info_AddChoice(DIA_Brahim_Kap3_First_EXIT, "What kind of document is that?", DIA_Brahim_Kap3_First_EXIT_Content);
+	Info_AddChoice(DIA_Brahim_Kap3_First_EXIT, "Why don't you keep it for yourself?", DIA_Brahim_Kap3_First_EXIT_KeepIt);
 };
 
 func void DIA_Brahim_Kap3_First_EXIT_BACK()
@@ -274,21 +274,21 @@ func void DIA_Brahim_Kap3_First_EXIT_BACK()
 
 func void DIA_Brahim_Kap3_First_EXIT_WhereGetIt()
 {
-	AI_Output(other, self, "DIA_Brahim_Kap3_First_EXIT_WhereGetIt_15_00"); //Wo hast du die Karte her?
-	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_01"); //Och, das habe ich in einem Packen alter Karten gefunden, die ich vor kurzem erworben habe.
-	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_02"); //Die Verkäuferin muss es wohl übersehen haben.
+	AI_Output(other, self, "DIA_Brahim_Kap3_First_EXIT_WhereGetIt_15_00"); //Where did you get this map?
+	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_01"); //Oh, I found that in a stack of old maps which I bought recently.
+	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_02"); //The seller must have overlooked it.
 };
 
 func void DIA_Brahim_Kap3_First_EXIT_Content()
 {
-	AI_Output(other, self, "DIA_Brahim_Kap3_First_EXIT_Content_15_00"); //Was ist das für eine Karte?
-	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_Content_07_01"); //Es scheint eine Schatzkarte oder etwas ähnliches zu sein.
-	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_Content_07_02"); //Aber wie ich dich einschätze, wirst du der Sache selbst auf den Grund gehen.
+	AI_Output(other, self, "DIA_Brahim_Kap3_First_EXIT_Content_15_00"); //What kind of a map is it?
+	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_Content_07_01"); //It seems to be a treasure map or the like.
+	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_Content_07_02"); //But you look to me like one who will get to the heart of this matter himself.
 };
 
 func void DIA_Brahim_Kap3_First_EXIT_KeepIt()
 {
-	AI_Output(other, self, "DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //Wieso behältst du es nicht selbst?
-	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //Ich bin ein alter Mann und die Zeiten, wo ich selber losgezogen bin, sind lange vorbei.
-	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //So etwas überlass ich den Jüngeren.
+	AI_Output(other, self, "DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //Why don't you keep it for yourself?
+	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //I'm an old man, and the times when I set out myself are long past.
+	AI_Output(self, other, "DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //I leave that to younger people.
 };

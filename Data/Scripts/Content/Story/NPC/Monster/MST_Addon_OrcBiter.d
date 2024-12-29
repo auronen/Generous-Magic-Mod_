@@ -5,7 +5,7 @@
 prototype Mst_Default_OrcBiter(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Beisser";
+	name							= "Biter";
 	guild							= GIL_SCAVENGER;
 	level							= 12;
 

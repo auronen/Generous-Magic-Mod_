@@ -5,7 +5,7 @@
 prototype Mst_Default_SwampZombie(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Sumpfleiche";
+	name							= "Swamp Corpse";
 	guild							= GIL_ZOMBIE;
 	level							= 15;
 

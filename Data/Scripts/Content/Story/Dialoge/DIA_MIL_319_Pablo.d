@@ -31,7 +31,7 @@ instance DIA_Pablo_PICKPOCKET(C_INFO)
 	condition		= DIA_Pablo_PICKPOCKET_Condition;
 	information		= DIA_Pablo_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre ein Kinderspiel seinen Schlüssel zu stehlen)";
+	description		= "(It would be child's play to steal his key)";
 };
 
 func int DIA_Pablo_PICKPOCKET_Condition()
@@ -100,27 +100,27 @@ func int DIA_Pablo_WANTED_Condition()
 
 func void DIA_Pablo_WANTED_Info()
 {
-	AI_Output(self, other, "DIA_Pablo_WANTED_12_00"); //Hey du, warte mal - du kommst mir bekannt vor.
-	AI_Output(other, self, "DIA_Pablo_WANTED_15_01"); //Was willst du ?
-	AI_Output(self, other, "DIA_Pablo_WANTED_12_02"); //Irgendwo habe ich dein Gesicht schon einmal gesehen ... ah - richtig!
+	AI_Output(self, other, "DIA_Pablo_WANTED_12_00"); //Hey you, wait - you look familiar to me.
+	AI_Output(other, self, "DIA_Pablo_WANTED_15_01"); //What do you want?
+	AI_Output(self, other, "DIA_Pablo_WANTED_12_02"); //I've seen your face before somewhere ... ah - right!
 	B_UseFakeScroll();
-	AI_Output(self, other, "DIA_Pablo_WANTED_12_03"); //Hier - dieses Bild haben wir bei ein paar Banditen gefunden, die wir vor ein paar Tagen aufgegriffen haben - das sieht dir ziemlich ähnlich.
+	AI_Output(self, other, "DIA_Pablo_WANTED_12_03"); //Here - we found this picture on some bandits we picked up a few days ago - it looks a lot like you.
 	B_GiveInvItems(self, other, ItWr_Poster_MIS, 1);
-	AI_Output(self, other, "DIA_Pablo_WANTED_12_04"); //Anscheinend haben die Kerle dich gesucht.
+	AI_Output(self, other, "DIA_Pablo_WANTED_12_04"); //Apparently, those guys were looking for you.
 
 	Info_ClearChoices(DIA_Pablo_WANTED);
 
-	Info_AddChoice(DIA_Pablo_WANTED, "Nein, das muss eine Verwechslung sein... ", DIA_Pablo_WANTED_NOTHING);
-	Info_AddChoice(DIA_Pablo_WANTED, "Da wäre ich ja jetzt gar nicht von alleine drauf gekommen", DIA_Pablo_WANTED_IRONY);
+	Info_AddChoice(DIA_Pablo_WANTED, "No, you've got to be mistaken.", DIA_Pablo_WANTED_NOTHING);
+	Info_AddChoice(DIA_Pablo_WANTED, "Gee, I'd never have thought of that myself.", DIA_Pablo_WANTED_IRONY);
 };
 
 func void DIA_Pablo_WANTED_NOTHING()
 {
-	AI_Output(other, self, "DIA_Pablo_WANTED_NOTHING_15_00"); //Nein, das muss eine Verwechslung sein. Bei mir ist alles in Ordnung ...
-	AI_Output(self, other, "DIA_Pablo_WANTED_NOTHING_12_01"); //Ganz wie du willst, Fremder.
-	// AI_Output(self, other, "DIA_Pablo_WANTED_NOTHING_12_02"); // Aber wenn du Probleme hast - dann lass sie außerhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
-	AI_Output(self, other, "DIA_Pablo_Add_12_00"); //Aber falls das DOCH deine Visage ist - und falls du Probleme hast - dann lass sie außerhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
-	AI_Output(self, other, "DIA_Pablo_WANTED_NOTHING_12_03"); //Und Fremde, die Ärger in die Stadt bringen, bleiben nicht lange in der Stadt - ich hoffe, das war deutlich.
+	AI_Output(other, self, "DIA_Pablo_WANTED_NOTHING_15_00"); //No, you've got to be mistaken. Everything's fine with me ...
+	AI_Output(self, other, "DIA_Pablo_WANTED_NOTHING_12_01"); //Whatever you say, stranger.
+	// AI_Output(self, other, "DIA_Pablo_WANTED_NOTHING_12_02"); // Aber wenn du Probleme hast - dann lass sie auÃŸerhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
+	AI_Output(self, other, "DIA_Pablo_Add_12_00"); //But if that happens to be YOUR mug after all - and if you have some problems - keep them outside of this town. Things are difficult enough here as it is.
+	AI_Output(self, other, "DIA_Pablo_WANTED_NOTHING_12_03"); //And strangers who bring trouble into the city don't stay here long - I hope I make myself clear.
 	Pablo_belogen = TRUE;
 
 	AI_StopProcessInfos(self);
@@ -128,14 +128,14 @@ func void DIA_Pablo_WANTED_NOTHING()
 
 func void DIA_Pablo_WANTED_IRONY()
 {
-	AI_Output(other, self, "DIA_Pablo_WANTED_IRONY_15_00"); //Da wäre ich jetzt gar nicht von alleine drauf gekommen.
-	AI_Output(self, other, "DIA_Pablo_WANTED_IRONY_12_01"); //Sehr witzig ... was wollten diese Kerle von dir?
+	AI_Output(other, self, "DIA_Pablo_WANTED_IRONY_15_00"); //Gee, I'd never have thought of that myself.
+	AI_Output(self, other, "DIA_Pablo_WANTED_IRONY_12_01"); //Very funny ... what did those fellows want from you?
 	// AI_Output(other, self, "DIA_Pablo_WANTED_IRONY_15_02"); // Ich werde sie fragen, wenn ich sie sehe. Ihr habt doch die Kerle eingelocht, die den Wisch dabei hatten, oder?
-	AI_Output(other, self, "DIA_Pablo_Add_15_01"); //Frag' sie doch selbst. Ihr habt sie doch sicher eingelocht, oder?
-	AI_Output(self, other, "DIA_Pablo_WANTED_IRONY_12_03"); //Nein - die sind tot.
-	AI_Output(other, self, "DIA_Pablo_WANTED_IRONY_15_04"); //Dann werden wir es wohl nie erfahren.
-	// AI_Output(self, other, "DIA_Pablo_WANTED_IRONY_12_05"); // Nun, wenn du in Schwierigkeiten steckst, dann sprich mal mit Lord Andre. Den Wisch kannst du behalten. Schönen Tag noch.
-	AI_Output(self, other, "DIA_Pablo_Add_12_02"); //Falls du in Schwierigkeiten stecken sollest - sprich mal mit Lord Andre. Vielleicht kann er dir helfen. Du findest ihn in der Kaserne.
+	AI_Output(other, self, "DIA_Pablo_Add_15_01"); //Ask them yourself. You've got them safely locked up, haven't you?
+	AI_Output(self, other, "DIA_Pablo_WANTED_IRONY_12_03"); //No - they're dead.
+	AI_Output(other, self, "DIA_Pablo_WANTED_IRONY_15_04"); //I guess we'll never know, then.
+	// AI_Output(self, other, "DIA_Pablo_WANTED_IRONY_12_05"); // Nun, wenn du in Schwierigkeiten steckst, dann sprich mal mit Lord Andre. Den Wisch kannst du behalten. SchÃ¶nen Tag noch.
+	AI_Output(self, other, "DIA_Pablo_Add_12_02"); //If you're in some kind of trouble - go talk to Lord Andre. Maybe he can help you. You'll find him in the barracks.
 
 	AI_StopProcessInfos(self);
 };
@@ -149,7 +149,7 @@ instance DIA_Pablo_Banditen(C_INFO)
 	nr				= 3;
 	condition		= DIA_Pablo_Banditen_Condition;
 	information		= DIA_Pablo_Banditen_Info;
-	description		= "Was weißt du über die Banditen?";
+	description		= "What do you know about the bandits?";
 };
 
 func int DIA_Pablo_Banditen_Condition()
@@ -159,12 +159,12 @@ func int DIA_Pablo_Banditen_Condition()
 
 func void DIA_Pablo_Banditen_Info()
 {
-	AI_Output(other, self, "DIA_Pablo_Add_15_03"); //Was weißt du über die Banditen?
-	// AI_Output(other, self, "DIA_Pablo_Banditen_15_00"); // Was weißt du über die Banditen, die vor der Stadt ihr Unwesen treiben?
-	AI_Output(self, other, "DIA_Pablo_Add_12_04"); //Sie kommen alle aus der verdammten Minenkolonie. Aber es gibt etliche Splittergruppen.
-	AI_Output(self, other, "DIA_Pablo_Add_12_05"); //Einige haben sich in die Berge verkrochen und wieder andere haben sich dem Grossbauern Onar angeschlossen.
-	AI_Output(self, other, "DIA_Pablo_Add_12_06"); //Aber am meisten Probleme machen die Banditen, die sich in der Nähe der Stadt herumtreiben.
-	AI_Output(self, other, "DIA_Pablo_Add_12_07"); //Sie sind der Grund dafür, daß sich keiner der Händler mehr vor die Stadttore traut.
+	AI_Output(other, self, "DIA_Pablo_Add_15_03"); //What do you know about the bandits?
+	// AI_Output(other, self, "DIA_Pablo_Banditen_15_00"); // Was weiÃŸt du Ã¼ber die Banditen, die vor der Stadt ihr Unwesen treiben?
+	AI_Output(self, other, "DIA_Pablo_Add_12_04"); //They've all come from that blasted mining colony. But there are several splinter groups.
+	AI_Output(self, other, "DIA_Pablo_Add_12_05"); //Some have holed up in the mountains, and others have joined up with Onar, the landowner.
+	AI_Output(self, other, "DIA_Pablo_Add_12_06"); //But it's the bandits outside of town who cause the most problems.
+	AI_Output(self, other, "DIA_Pablo_Add_12_07"); //They're the reason that none of the merchants venture beyond the city gates now.
 };
 
 // *************************************************************
@@ -176,7 +176,7 @@ instance DIA_Pablo_HakonBandits(C_INFO)
 	nr				= 3;
 	condition		= DIA_Pablo_HakonBandits_Condition;
 	information		= DIA_Pablo_HakonBandits_Info;
-	description		= "Was weißt du über die Banditen, die den Händler Hakon überfallen haben?";
+	description		= "What do you know about the bandits who robbed Hakon the merchant?";
 };
 
 func int DIA_Pablo_HakonBandits_Condition()
@@ -190,23 +190,23 @@ func int DIA_Pablo_HakonBandits_Condition()
 
 func void DIA_Pablo_HakonBandits_Info()
 {
-	AI_Output(other, self, "DIA_Pablo_Add_15_20"); //Was weißt du über die Banditen, die den Händler Hakon überfallen haben?
-	AI_Output(self, other, "DIA_Pablo_Add_12_21"); //Ach, DIE Sache. Hör bloß auf...
-	AI_Output(self, other, "DIA_Pablo_Add_12_22"); //Soviel wir wissen, gehen eine ganze Menge der Händlerüberfälle auf ihr Konto.
+	AI_Output(other, self, "DIA_Pablo_Add_15_20"); //What do you know about the bandits who robbed Hakon the merchant?
+	AI_Output(self, other, "DIA_Pablo_Add_12_21"); //Oh, THAT matter. Don't remind me ...
+	AI_Output(self, other, "DIA_Pablo_Add_12_22"); //As far as we know, they're responsible for a lot of the attacks on merchants.
 
-	AI_Output(self, other, "DIA_Pablo_Banditen_12_01"); //Diese Ratten haben sich in ihrem Loch verkrochen und trauen sich nicht mehr raus.
-	AI_Output(self, other, "DIA_Pablo_Banditen_12_02"); //Einmal konnten wir sie aufspüren und verfolgen. Aber im Wald vor der Stadt haben wir die Verfolgung abgebrochen.
-	AI_Output(self, other, "DIA_Pablo_Banditen_12_03"); //Da treiben sich zuviele Viecher rum, das ist viel zu gefährlich.
+	AI_Output(self, other, "DIA_Pablo_Banditen_12_01"); //Those rats have crawled into their holes and don't dare come out again.
+	AI_Output(self, other, "DIA_Pablo_Banditen_12_02"); //Once, we were able to track them down and follow them. But we broke off pursuit in the woods outside the city.
+	AI_Output(self, other, "DIA_Pablo_Banditen_12_03"); //There's too many beasts roaming around there, it's much too dangerous.
 
 	B_LogEntry(TOPIC_HakonBanditen, TOPIC_HakonBanditen_1);
 
 	if (Pablo_AndreMelden == FALSE)
 	{
-		AI_Output(self, other, "DIA_Pablo_Add_12_23"); //Aber da ist noch eine Sache...
-		AI_Output(self, other, "DIA_Pablo_Banditen_12_04"); //Ein paar der gestohlenen Waren sind in Khorinis aufgetaucht.
-		AI_Output(other, self, "DIA_Pablo_Banditen_15_05"); //Das heißt, sie wissen, wie sie die Ware in die Stadt bringen und sie verkaufen können ...
-		AI_Output(self, other, "DIA_Pablo_Banditen_12_06"); //Ja, wir vermuten, dass sie einen Hehler in der Stadt sitzen haben. Aber bisher ist es uns nicht gelungen, den Kerl zu erwischen.
-		AI_Output(self, other, "DIA_Pablo_Banditen_12_07"); //Falls du in der Sache was rauskriegen solltest, bei Lord Andre gibt's ein schönes Kopfgeld für den Hehler.
+		AI_Output(self, other, "DIA_Pablo_Add_12_23"); //But there's one more thing ...
+		AI_Output(self, other, "DIA_Pablo_Banditen_12_04"); //A few of the stolen goods have shown up in Khorinis.
+		AI_Output(other, self, "DIA_Pablo_Banditen_15_05"); //This means that they know how they can smuggle the wares into town and sell them ...
+		AI_Output(self, other, "DIA_Pablo_Banditen_12_06"); //Yeah, we suspect they have a fence in the city. But we haven't been able to catch the guy yet.
+		AI_Output(self, other, "DIA_Pablo_Banditen_12_07"); //If you find out anything about the business, remember Lord Andre has posted a bounty for the fence.
 
 		B_LogEntry(TOPIC_HakonBanditen, TOPIC_HakonBanditen_2);
 	};
@@ -221,7 +221,7 @@ instance DIA_Pablo_MyBandits(C_INFO)
 	nr				= 4;
 	condition		= DIA_Pablo_MyBandits_Condition;
 	information		= DIA_Pablo_MyBandits_Info;
-	description		= "Woher kamen die Banditen, die meinen Steckbrief dabei hatten?";
+	description		= "Where did the bandits who had my wanted poster come from?";
 };
 
 func int DIA_Pablo_MyBandits_Condition()
@@ -235,23 +235,23 @@ func int DIA_Pablo_MyBandits_Condition()
 
 func void DIA_Pablo_MyBandits_Info()
 {
-	AI_Output(other, self, "DIA_Pablo_Add_15_08"); //Woher kamen die Banditen, die meinen Steckbrief dabei hatten?
+	AI_Output(other, self, "DIA_Pablo_Add_15_08"); //Where did the bandits who had my wanted poster come from?
 	if (Pablo_belogen == TRUE)
 	{
-		AI_Output(self, other, "DIA_Pablo_Add_12_09"); //AHA! Es ist also DOCH deine Visage. Warum hast du das nicht gleich zugegeben, he?
-		AI_Output(self, other, "DIA_Pablo_Add_12_10"); //(fordernd) Weswegen wirst du gesucht?
-		AI_Output(other, self, "DIA_Pablo_Add_15_11"); //Ich weiß es nicht - ehrlich!
-		AI_Output(self, other, "DIA_Pablo_Add_12_12"); //Ja, ja. Schon klar. Ich sag dir was. Wenn ich glauben würde, daß du mit diesen Banditen unter einer Decke steckst, hätte ich dich schon längst eingelocht, klar?
-		AI_Output(self, other, "DIA_Pablo_Add_12_13"); //Trotzdem werde ich mal besser bei Lord Andre über diesen Vorfall Meldung machen...
+		AI_Output(self, other, "DIA_Pablo_Add_12_09"); //A-HA! So it IS your mug after all. Why didn't you admit that right away, huh?
+		AI_Output(self, other, "DIA_Pablo_Add_12_10"); //(demanding) What are you wanted for?
+		AI_Output(other, self, "DIA_Pablo_Add_15_11"); //I don't know - honest!
+		AI_Output(self, other, "DIA_Pablo_Add_12_12"); //Yeah, yeah. I know. Let me tell you something. If I thought you were in cahoots with these bandits, you'd already be cooling your heels in the slammer, understood?
+		AI_Output(self, other, "DIA_Pablo_Add_12_13"); //Still, I had better report this incident to Lord Andre ...
 		Pablo_AndreMelden = TRUE;
-		AI_Output(self, other, "DIA_Pablo_Add_12_14"); //Aber - um deine Frage zu beantworten...
+		AI_Output(self, other, "DIA_Pablo_Add_12_14"); //But - to answer your question ...
 	};
 
-	AI_Output(self, other, "DIA_Pablo_Add_12_15"); //Wir haben sie in der Nähe des Grossbauern aufgegriffen.
-	AI_Output(self, other, "DIA_Pablo_Add_12_16"); //Aber sie sahen nicht aus wie Onars Leute.
-	AI_Output(self, other, "DIA_Pablo_Add_12_17"); //Ich denke sie gehören zu einer kleineren Gruppe, die sich irgendwo in der Nähe von Onars Hof in den Bergen verkrochen hat.
-	AI_Output(self, other, "DIA_Pablo_Add_12_18"); //Aber wenn du vorhast, da hin zu gehen, muss ich dich warnen. Die Halsabschneider machen mit jedem kurzen Prozeß!
-	AI_Output(other, self, "DIA_Pablo_Add_15_19"); //Ich werd's mir merken.
+	AI_Output(self, other, "DIA_Pablo_Add_12_15"); //We picked them up near the landowner's place.
+	AI_Output(self, other, "DIA_Pablo_Add_12_16"); //But they don't look like Onar's people.
+	AI_Output(self, other, "DIA_Pablo_Add_12_17"); //I think they're part of a smaller group which has holed up in the mountains near Onar's farm.
+	AI_Output(self, other, "DIA_Pablo_Add_12_18"); //But if you intend to go there, let me warn you. Those cutthroats make short work of everyone!
+	AI_Output(other, self, "DIA_Pablo_Add_15_19"); //I'll remember that.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -264,7 +264,7 @@ instance DIA_Pablo_Perm(C_INFO)
 	condition		= DIA_Pablo_Perm_Condition;
 	information		= DIA_Pablo_Perm_Info;
 	permanent		= TRUE;
-	description		= "Wie ist die Lage?";
+	description		= "How are things?";
 };
 
 func int DIA_Pablo_Perm_Condition()
@@ -274,7 +274,7 @@ func int DIA_Pablo_Perm_Condition()
 
 func void DIA_Pablo_Perm_Info()
 {
-	AI_Output(other, self, "DIA_Pablo_Perm_15_00"); //Wie ist die Lage?
+	AI_Output(other, self, "DIA_Pablo_Perm_15_00"); //How's the situation?
 
 	if (Kapitel == 3)
 	{
@@ -283,40 +283,40 @@ func void DIA_Pablo_Perm_Info()
 			if ((hero.guild == GIL_MIL)
 			|| (hero.guild == GIL_PAL))
 			{
-				AI_Output(self, other, "DIA_Pablo_Perm_12_01"); //Ich hab immer gesagt, dass man diesen Söldnern nicht trauen kann.
-				AI_Output(self, other, "DIA_Pablo_Perm_12_02"); //Es wird Zeit, dass wir diesem Abschaum mal eine Lektion erteilen. Das hat sich dieser Bennet doch nicht alleine ausgedacht.
+				AI_Output(self, other, "DIA_Pablo_Perm_12_01"); //I've always said that these mercenaries can't be trusted.
+				AI_Output(self, other, "DIA_Pablo_Perm_12_02"); //It's high time we taught that scum a lesson. Bennet didn't think this up all by himself.
 			}
 			else if (hero.guild == GIL_KDF)
 			{
-				AI_Output(self, other, "DIA_Pablo_Perm_12_03"); //Ich bin tief erschüttert über den Mord am ehrenwerten Paladin Lothar.
-				AI_Output(self, other, "DIA_Pablo_Perm_12_04"); //Aber ich weiß, dass die Kirche eine gerechte Strafe für den Frevler finden wird.
+				AI_Output(self, other, "DIA_Pablo_Perm_12_03"); //I am deeply shaken by the murder of the honorable paladin Lothar.
+				AI_Output(self, other, "DIA_Pablo_Perm_12_04"); //But I know that the church will find a just punishment for the villain.
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Pablo_Perm_12_05"); //Was streunerst du hier eigentlich rum? Wenn du versuchst, deinen Söldnerfreund zu befreien, das kannst du gleich vergessen.
+				AI_Output(self, other, "DIA_Pablo_Perm_12_05"); //What are you doing roaming around here? If you're trying to free your mercenary friend, you can just forget it.
 			};
 		}
 		else // Bennet ist unschuldig
 		{
-			AI_Output(self, other, "DIA_Pablo_Perm_12_06"); //Es ist erbärmlich. Jetzt hetzt man uns schon gegeneinander auf.
-			AI_Output(self, other, "DIA_Pablo_Perm_12_07"); //Wenn du es nicht geschafft hättest, den wahren Schuldigen für den Mord zu finden, hätten die Orks keinen Handschlag tun müssen.
+			AI_Output(self, other, "DIA_Pablo_Perm_12_06"); //It's pathetic. Now they're stirring us up against each other.
+			AI_Output(self, other, "DIA_Pablo_Perm_12_07"); //If you hadn't managed to find the real culprit for the murder, the orcs wouldn't have had to lift a finger.
 		};
 	}
 	else if (Kapitel == 5)
 	{
-		AI_Output(self, other, "DIA_Pablo_Perm_12_08"); //Ich mach mir Sorgen, was passiert, wenn jetzt die Paladine abziehen.
+		AI_Output(self, other, "DIA_Pablo_Perm_12_08"); //I'm worried about what will happen if the paladins leave now.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output(self, other, "DIA_Pablo_Perm_12_09"); //Ihr könnt euch auf uns verlassen, wir werden mit allen uns zur Verfügung stehenden Mitteln dafür sorgen, dass diese Stadt nicht zum Sündenpfuhl verkommt.
+		AI_Output(self, other, "DIA_Pablo_Perm_12_09"); //You can count on us, we will use every available means to make sure that this city doesn't degenerate into a sink of iniquity.
 	}
 	else if ((hero.guild == GIL_SLD)
 	|| (hero.guild == GIL_DJG))
 	{
-		AI_Output(self, other, "DIA_Pablo_Perm_12_10"); //Pass bloß auf, was du hier machst. So Galgenvögel wie dich beobachten wir hier ganz genau.
+		AI_Output(self, other, "DIA_Pablo_Perm_12_10"); //Just mind your step here. We watch rogues like you very closely around here.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Pablo_Perm_12_11"); //Zurzeit ist es ruhig. Nur die Banditen vor der Stadt machen uns Probleme.
+		AI_Output(self, other, "DIA_Pablo_Perm_12_11"); //At the moment it's quiet. Only the bandits outside the city are causing us problems.
 	};
 };

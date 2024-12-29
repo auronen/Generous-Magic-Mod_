@@ -24,7 +24,7 @@ instance BAU_912_Pepe(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 10); // Grenzen f¸r Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 10); // Grenzen f√ºr Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);
@@ -38,6 +38,6 @@ instance BAU_912_Pepe(Npc_Default)
 
 func void Rtn_Start_912()
 {
-	TA_Stand_Eating(08, 00, 22, 00, "NW_BIGFARM_SHEEP2_02"); // Joly: muﬂ hier tag und nacht stehen!!!!!!!!!!!!!
-	TA_Stand_Eating(22, 00, 08, 00, "NW_BIGFARM_SHEEP2_02"); // Joly: muﬂ hier tag und nacht stehen!!!!!!!!!!!!!
+	TA_Stand_Eating(08, 00, 22, 00, "NW_BIGFARM_SHEEP2_02"); // Joly: mu√ü hier tag und nacht stehen!!!!!!!!!!!!!
+	TA_Stand_Eating(22, 00, 08, 00, "NW_BIGFARM_SHEEP2_02"); // Joly: mu√ü hier tag und nacht stehen!!!!!!!!!!!!!
 };

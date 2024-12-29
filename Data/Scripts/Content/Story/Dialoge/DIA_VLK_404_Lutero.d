@@ -53,9 +53,9 @@ func int DIA_Lutero_Hallo_Condition()
 
 func void DIA_Lutero_Hallo_Info()
 {
-	AI_Output(self, other, "DIA_Lutero_Hallo_13_00"); //Mein Name ist Lutero. Ich handle mit den verschiedensten Sachen.
-	AI_Output(other, self, "DIA_Lutero_Hallo_15_01"); //Welche Ware bietest du an?
-	AI_Output(self, other, "DIA_Lutero_Hallo_13_02"); //Nun, vor allem seltene und ausgefallene Dinge. Bisher ist es mir immer gelungen, die Wünsche meiner Kunden zu erfüllen.
+	AI_Output(self, other, "DIA_Lutero_Hallo_13_00"); //My name is Lutero. I buy and sell all kinds of things.
+	AI_Output(other, self, "DIA_Lutero_Hallo_15_01"); //What wares do you have to offer?
+	AI_Output(self, other, "DIA_Lutero_Hallo_13_02"); //Well, especially rare and unusual things. So far I have always managed to fulfill my customers' wishes.
 
 	Log_CreateTopic(TOPIC_CityTrader, LOG_NOTE);
 	B_LogEntry(TOPIC_CityTrader, TOPIC_CityTrader_19);
@@ -87,11 +87,11 @@ func void DIA_Lutero_GetLost_Info()
 {
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output(self, other, "DIA_Lutero_GetLost_13_00"); //Verschwinde Bursche! Hast du nichts zu tun? Dann such dir Arbeit - aber woanders!
+		AI_Output(self, other, "DIA_Lutero_GetLost_13_00"); //Scram, buster! Don't you have anything to do? Then go find work - but elsewhere!
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Lutero_GetLost_13_01"); //Was willst du, Novize? Solltest du nicht im Kloster sein?
+		AI_Output(self, other, "DIA_Lutero_GetLost_13_01"); //What do you want, novice? Shouldn't you be in the monastery?
 	};
 
 	AI_StopProcessInfos(self);
@@ -106,7 +106,7 @@ instance DIA_Lutero_Snapper(C_INFO)
 	nr				= 5;
 	condition		= DIA_Lutero_Snapper_Condition;
 	information		= DIA_Lutero_Snapper_Info;
-	description		= "Suchst du bestimmte Gegenstände?";
+	description		= "Are you looking for anything in particular?";
 };
 
 func int DIA_Lutero_Snapper_Condition()
@@ -120,23 +120,23 @@ func int DIA_Lutero_Snapper_Condition()
 
 func void DIA_Lutero_Snapper_Info()
 {
-	AI_Output(other, self, "DIA_Lutero_Snapper_15_00"); //Suchst du bestimmte Gegenstände?
-	AI_Output(self, other, "DIA_Lutero_Snapper_13_01"); //Ja, für meinen derzeitigen Auftrag benötige ich die Krallen eines Snappers.
-	AI_Output(self, other, "DIA_Lutero_Snapper_13_02"); //Aber keine einfachen Krallen. Es muss schon was Besonderes sein. Die Krallen einer mächtigen Bestie, die viele Männer getötet hat, oder etwas Derartiges.
-	AI_Output(other, self, "DIA_Lutero_Snapper_15_03"); //Wo finde ich Snapper?
-	AI_Output(self, other, "DIA_Lutero_Snapper_13_04"); //Es gibt ein paar hier auf der Insel, die meisten hausen jedoch im Minental.
-	AI_Output(other, self, "DIA_Lutero_Snapper_15_05"); //Und was springt für mich dabei raus?
+	AI_Output(other, self, "DIA_Lutero_Snapper_15_00"); //Are you looking for anything in particular?
+	AI_Output(self, other, "DIA_Lutero_Snapper_13_01"); //Yes, for my current assignment I need the claws of a snapper.
+	AI_Output(self, other, "DIA_Lutero_Snapper_13_02"); //But not just any old claws. It would have to be something special - the claws of a mighty beast who has killed many men already, or something like that.
+	AI_Output(other, self, "DIA_Lutero_Snapper_15_03"); //Where can I find snappers?
+	AI_Output(self, other, "DIA_Lutero_Snapper_13_04"); //There are a few of them on this island, but most of them live in the Valley of Mines.
+	AI_Output(other, self, "DIA_Lutero_Snapper_15_05"); //And what's in it for me?
 
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output(self, other, "DIA_Lutero_Hello_13_06"); //Ich kann dir einen Runenstein besorgen.
+		AI_Output(self, other, "DIA_Lutero_Hello_13_06"); //I could find you a runestone.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Lutero_Hello_13_07"); //Ich kann dir einen Ring der Unbezwingbarkeit besorgen.
+		AI_Output(self, other, "DIA_Lutero_Hello_13_07"); //I could get you a ring of invincibility.
 	};
 
-	AI_Output(other, self, "DIA_Lutero_Hello_15_08"); //Ich werde mal sehen, was sich machen lässt.
+	AI_Output(other, self, "DIA_Lutero_Hello_15_08"); //I'll see what I can do.
 
 	Log_CreateTopic(Topic_Lutero, LOG_MISSION);
 	Log_SetTopicStatus(Topic_Lutero, LOG_RUNNING);
@@ -154,7 +154,7 @@ instance DIA_Lutero_Kralle(C_INFO)
 	nr				= 5;
 	condition		= DIA_Lutero_Kralle_Condition;
 	information		= DIA_Lutero_Kralle_Info;
-	description		= "Ich habe besondere Snapperkrallen für dich. ";
+	description		= "I've got some special snapper claws for you.";
 };
 
 func int DIA_Lutero_Kralle_Condition()
@@ -168,22 +168,22 @@ func int DIA_Lutero_Kralle_Condition()
 
 func void DIA_Lutero_Kralle_Info()
 {
-	AI_Output(other, self, "DIA_Lutero_Kralle_15_00"); //Ich habe besondere Snapperkrallen für dich.
+	AI_Output(other, self, "DIA_Lutero_Kralle_15_00"); //I've got some special snapper claws for you.
 	Lutero_Krallen = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Ambient);
-	AI_Output(self, other, "DIA_Lutero_Kralle_13_01"); //Das wird meinen Kunden freuen.
+	AI_Output(self, other, "DIA_Lutero_Kralle_13_01"); //My customer will be happy to hear that.
 	B_GiveInvItems(other, self, ItAt_ClawLeader, 1);
 
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output(self, other, "DIA_Lutero_Hello_13_02"); //Den Runenstein habe ich allerdings nicht hier. Aber ich weiß, wo er liegt.
-		AI_Output(self, other, "DIA_Lutero_Hello_13_03"); //Wenn du von der Stadt zur Herberge gehst, kommst du unter einer Brücke hindurch.
-		AI_Output(self, other, "DIA_Lutero_Hello_13_04"); //Dort, in einer Höhle, hat ein Freund von mir einen Runenstein in einer Truhe hinterlegt. Hier ist der Schlüssel.
+		AI_Output(self, other, "DIA_Lutero_Hello_13_02"); //I don't have the runestone here. But I know where it can be found.
+		AI_Output(self, other, "DIA_Lutero_Hello_13_03"); //On your way from town to the inn, you'll pass under a bridge.
+		AI_Output(self, other, "DIA_Lutero_Hello_13_04"); //There, in a cave, a friend of mine has deposited a runestone in a chest. Here's the key.
 		B_GiveInvItems(self, other, ITKE_RUNE_MIS, 1);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Lutero_Hello_13_05"); //Hier ist der Ring, den ich dir versprochen habe.
+		AI_Output(self, other, "DIA_Lutero_Hello_13_05"); //Here's the ring I promised you.
 		B_GiveInvItems(self, other, ItRi_Prot_Total_01, 1);
 	};
 };
@@ -199,7 +199,7 @@ instance DIA_Lutero_Trade(C_INFO)
 	information		= DIA_Lutero_Trade_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Zeig mir deine Ware.";
+	description		= "Show me your wares.";
 };
 
 func int DIA_Lutero_Trade_Condition()
@@ -213,7 +213,7 @@ func int DIA_Lutero_Trade_Condition()
 func void DIA_Lutero_Trade_Info()
 {
 	B_GiveTradeInv(self);
-	AI_Output(other, self, "DIA_Lutero_Trade_15_00"); //Zeig mir deine Ware.
+	AI_Output(other, self, "DIA_Lutero_Trade_15_00"); //Show me your wares.
 };
 
 // ************************************************************

@@ -30,7 +30,7 @@ instance DIA_Liesel_Hallo(C_INFO)
 	nr				= 1;
 	condition		= DIA_Liesel_Hallo_Condition;
 	information		= DIA_Liesel_Hallo_Info;
-	description		= "Hallo!";
+	description		= "Hello!";
 };
 
 func int DIA_Liesel_Hallo_Condition()
@@ -40,7 +40,7 @@ func int DIA_Liesel_Hallo_Condition()
 
 func void DIA_Liesel_Hallo_Info()
 {
-	AI_Output(other, self, "DIA_Liesel_Hallo_15_00"); //Hallo ... (räuspert sich) ... Schaf.
+	AI_Output(other, self, "DIA_Liesel_Hallo_15_00"); //Hello ... (clears his throat) ... sheep.
 	B_LieselMaeh();
 };
 
@@ -54,7 +54,7 @@ instance DIA_Liesel_KommMit(C_INFO)
 	condition		= DIA_Liesel_KommMit_Condition;
 	information		= DIA_Liesel_KommMit_Info;
 	permanent		= TRUE;
-	description		= "Komm mit!";
+	description		= "Come with me!";
 };
 
 func int DIA_Liesel_KommMit_Condition()
@@ -69,7 +69,7 @@ func int DIA_Liesel_KommMit_Condition()
 
 func void DIA_Liesel_KommMit_Info()
 {
-	AI_Output(other, self, "DIA_Liesel_KommMit_15_00"); //Komm mit!
+	AI_Output(other, self, "DIA_Liesel_KommMit_15_00"); //Come with me!
 	B_LieselMaeh();
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -87,7 +87,7 @@ instance DIA_Liesel_WarteHier(C_INFO)
 	condition		= DIA_Liesel_WarteHier_Condition;
 	information		= DIA_Liesel_WarteHier_Info;
 	permanent		= TRUE;
-	description		= "Warte hier!";
+	description		= "Wait here!";
 };
 
 func int DIA_Liesel_WarteHier_Condition()
@@ -102,7 +102,7 @@ func int DIA_Liesel_WarteHier_Condition()
 
 func void DIA_Liesel_WarteHier_Info()
 {
-	AI_Output(other, self, "DIA_Liesel_WarteHier_15_00"); //Warte hier!
+	AI_Output(other, self, "DIA_Liesel_WarteHier_15_00"); //Wait here!
 	B_LieselMaeh();
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

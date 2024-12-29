@@ -31,7 +31,7 @@ instance DIA_None_101_Mario_Job(C_INFO)
 	condition		= DIA_None_101_Mario_Job_Condition;
 	information		= DIA_None_101_Mario_Job_Info;
 	permanent		= TRUE;
-	description		= "Was machst du hier?";
+	description		= "What are you doing here?";
 };
 
 func int DIA_None_101_Mario_Job_Condition()
@@ -46,9 +46,9 @@ func int DIA_None_101_Mario_Job_Condition()
 
 func void DIA_None_101_Mario_Job_Info()
 {
-	AI_Output(other, self, "DIA_None_101_Mario_Job_15_00"); //Was machst du hier?
-	AI_Output(self, other, "DIA_None_101_Mario_Job_07_01"); //Ich hoffe, dass hier in absehbarer Zeit ein Schiff reinkommt, auf dem ich anheuern kann.
-	AI_Output(self, other, "DIA_None_101_Mario_Job_07_02"); //Das Rumgehänge geht mir ganz schön auf die Nerven.
+	AI_Output(other, self, "DIA_None_101_Mario_Job_15_00"); //What are you doing here?
+	AI_Output(self, other, "DIA_None_101_Mario_Job_07_01"); //I hope it won't be too long before a ship comes in where I can hire on.
+	AI_Output(self, other, "DIA_None_101_Mario_Job_07_02"); //This hanging around is really getting on my nerves.
 };
 
 //*********************************************************************
@@ -74,9 +74,9 @@ func int DIA_None_101_Mario_YouNeedMe_Condition()
 
 func void DIA_None_101_Mario_YouNeedMe_Info()
 {
-	AI_Output(self, other, "DIA_None_101_Mario_YouNeedMe_07_00"); //Ich hab gehört, du suchst Leute für dein Schiff?
-	AI_Output(other, self, "DIA_None_101_Mario_YouNeedMe_15_01"); //Und?
-	AI_Output(self, other, "DIA_None_101_Mario_YouNeedMe_07_02"); //Ich bin dabei!
+	AI_Output(self, other, "DIA_None_101_Mario_YouNeedMe_07_00"); //I've heard that you're looking for people for your ship?
+	AI_Output(other, self, "DIA_None_101_Mario_YouNeedMe_15_01"); //And?
+	AI_Output(self, other, "DIA_None_101_Mario_YouNeedMe_07_02"); //I'm in!
 
 	Log_CreateTopic(TOPIC_Crew, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING);
@@ -92,7 +92,7 @@ instance DIA_None_101_Mario_WhyNeedYou(C_INFO)
 	nr				= 5;
 	condition		= DIA_None_101_Mario_WhyNeedYou_Condition;
 	information		= DIA_None_101_Mario_WhyNeedYou_Info;
-	description		= "Warum sollte ich dich mitnehmen?";
+	description		= "Why would I take you along?";
 };
 
 func int DIA_None_101_Mario_WhyNeedYou_Condition()
@@ -106,12 +106,12 @@ func int DIA_None_101_Mario_WhyNeedYou_Condition()
 
 func void DIA_None_101_Mario_WhyNeedYou_Info()
 {
-	AI_Output(other, self, "DIA_None_101_Mario_WhyNeedYou_15_00"); //Warum sollte ich dich mitnehmen?
-	AI_Output(self, other, "DIA_None_101_Mario_WhyNeedYou_07_01"); //Ganz einfach, weil du mich brauchst.
-	AI_Output(self, other, "DIA_None_101_Mario_WhyNeedYou_07_02"); //Ich bin ... ich war Leutnant bei der Königlichen Kriegsmarine.
-	AI_Output(self, other, "DIA_None_101_Mario_WhyNeedYou_07_03"); //Ich habe als Seesoldat auf der König Rhobar und auf der Myrtanas Stolz gedient.
-	AI_Output(self, other, "DIA_None_101_Mario_WhyNeedYou_07_04"); //In der Schlacht um das Östliche Archipel habe ich eigenhändig zwei Dutzend Orks zurück in Beliars Reich geschickt.
-	AI_Output(self, other, "DIA_None_101_Mario_WhyNeedYou_07_05"); //Leider waren wir zu wenige, nachdem unser Flaggschiff versenkt worden ist, mussten wir uns zurückziehen.
+	AI_Output(other, self, "DIA_None_101_Mario_WhyNeedYou_15_00"); //Why would I take you along?
+	AI_Output(self, other, "DIA_None_101_Mario_WhyNeedYou_07_01"); //Quite simply, because you need me.
+	AI_Output(self, other, "DIA_None_101_Mario_WhyNeedYou_07_02"); //I'm ... I was a lieutenant with the royal navy.
+	AI_Output(self, other, "DIA_None_101_Mario_WhyNeedYou_07_03"); //I've served as a marine on the King Rhobar and the Pride of Myrtana.
+	AI_Output(self, other, "DIA_None_101_Mario_WhyNeedYou_07_04"); //In the Battle of the Eastern Archipelago, I single-handedly sent two dozen orcs back to Beliar's realm.
+	AI_Output(self, other, "DIA_None_101_Mario_WhyNeedYou_07_05"); //Unfortunately, there were too few of us after our flagship sank, and we were forced to retreat.
 };
 
 //*********************************************************************
@@ -123,7 +123,7 @@ instance DIA_None_101_Mario_WhyHere(C_INFO)
 	nr				= 7;
 	condition		= DIA_None_101_Mario_WhyHere_Condition;
 	information		= DIA_None_101_Mario_WhyHere_Info;
-	description		= "Wieso bist du dann hier? ";
+	description		= "Why are you here, then?";
 };
 
 func int DIA_None_101_Mario_WhyHere_Condition()
@@ -137,9 +137,9 @@ func int DIA_None_101_Mario_WhyHere_Condition()
 
 func void DIA_None_101_Mario_WhyHere_Info()
 {
-	AI_Output(other, self, "DIA_None_101_Mario_WhyHere_15_00"); //Wieso bist du dann hier?
-	AI_Output(self, other, "DIA_None_101_Mario_WhyHere_07_01"); //Die Flotte ist geschlagen und die Soldkassen sind leer.
-	AI_Output(self, other, "DIA_None_101_Mario_WhyHere_07_02"); //Nach meiner Entlassung bin ich dann hier in diesem Nest gestrandet und suche eine neue Heuer.
+	AI_Output(other, self, "DIA_None_101_Mario_WhyHere_15_00"); //Why are you here, then?
+	AI_Output(self, other, "DIA_None_101_Mario_WhyHere_07_01"); //The fleet is routed, and the payroll coffers are empty.
+	AI_Output(self, other, "DIA_None_101_Mario_WhyHere_07_02"); //After my discharge I wound up stranded in this dump, and I'm looking for a new berth.
 };
 
 //*********************************************************************
@@ -151,7 +151,7 @@ instance DIA_None_101_Mario_Abilities(C_INFO)
 	nr				= 8;
 	condition		= DIA_None_101_Mario_Abilities_Condition;
 	information		= DIA_None_101_Mario_Abilities_Info;
-	description		= "Was kannst du?";
+	description		= "What can you do?";
 };
 
 func int DIA_None_101_Mario_Abilities_Condition()
@@ -165,9 +165,9 @@ func int DIA_None_101_Mario_Abilities_Condition()
 
 func void DIA_None_101_Mario_Abilities_Info()
 {
-	AI_Output(other, self, "DIA_None_101_Mario_Abilities_15_00"); //Was kannst du?
-	AI_Output(self, other, "DIA_None_101_Mario_Abilities_07_01"); //Ich bin ausgebildet für den Enterkrieg und im Nahkampf, ferner bin ich ein ganz brauchbarer Schütze mit der Schiffskanone.
-	AI_Output(self, other, "DIA_None_101_Mario_Abilities_07_02"); //Ich wette, es gibt die eine oder andere Sache, die ich dir auf der Reise beibringen kann.
+	AI_Output(other, self, "DIA_None_101_Mario_Abilities_15_00"); //What can you do?
+	AI_Output(self, other, "DIA_None_101_Mario_Abilities_07_01"); //I'm trained for boarding and close combat, plus I'm a passable shot with the ship's cannon.
+	AI_Output(self, other, "DIA_None_101_Mario_Abilities_07_02"); //I bet there's a thing or two that I can teach you on the trip.
 
 	B_LogEntry(TOPIC_Crew, TOPIC_Crew_7);
 };
@@ -181,7 +181,7 @@ instance DIA_None_101_Mario_YourPrice(C_INFO)
 	nr				= 9;
 	condition		= DIA_None_101_Mario_YourPrice_Condition;
 	information		= DIA_None_101_Mario_YourPrice_Info;
-	description		= "Was verlangst du?";
+	description		= "What are you asking?";
 };
 
 func int DIA_None_101_Mario_YourPrice_Condition()
@@ -195,13 +195,13 @@ func int DIA_None_101_Mario_YourPrice_Condition()
 
 func void DIA_None_101_Mario_YourPrice_Info()
 {
-	AI_Output(other, self, "DIA_None_101_Mario_YourPrice_15_00"); //Was verlangst du?
-	AI_Output(self, other, "DIA_None_101_Mario_YourPrice_07_01"); //Was kann ich denn verlangen? Ich bin froh, wenn ich von hier wegkomme.
-	AI_Output(self, other, "DIA_None_101_Mario_YourPrice_07_02"); //Hand gegen Koje. Ich helfe dir und dafür nimmst du mich mit.
+	AI_Output(other, self, "DIA_None_101_Mario_YourPrice_15_00"); //What are you asking?
+	AI_Output(self, other, "DIA_None_101_Mario_YourPrice_07_01"); //What can I ask? I'd be glad to get away from here.
+	AI_Output(self, other, "DIA_None_101_Mario_YourPrice_07_02"); //A hand for a bunk. I help you and you take me along.
 };
 
 //*********************************************************************
-//	Die Reise kann gefährlich werden.
+//	Die Reise kann gefÃ¤hrlich werden.
 //*********************************************************************
 instance DIA_None_101_Mario_CouldBeDangerous(C_INFO)
 {
@@ -209,7 +209,7 @@ instance DIA_None_101_Mario_CouldBeDangerous(C_INFO)
 	nr				= 10;
 	condition		= DIA_None_101_Mario_CouldBeDangerous_Condition;
 	information		= DIA_None_101_Mario_CouldBeDangerous_Info;
-	description		= "Die Reise kann gefährlich werden.";
+	description		= "The journey may be perilous.";
 };
 
 func int DIA_None_101_Mario_CouldBeDangerous_Condition()
@@ -223,10 +223,10 @@ func int DIA_None_101_Mario_CouldBeDangerous_Condition()
 
 func void DIA_None_101_Mario_CouldBeDangerous_Info()
 {
-	AI_Output(other, self, "DIA_None_101_Mario_CouldBeDangerous_15_00"); //Die Reise kann gefährlich werden.
-	AI_Output(self, other, "DIA_None_101_Mario_CouldBeDangerous_07_01"); //Ich bin Gefahr gewohnt. Wenn du da draußen bist, ist jeder Tag gefährlich.
-	AI_Output(self, other, "DIA_None_101_Mario_CouldBeDangerous_07_02"); //Der nächste Sturm kann dein Tod sein und die Ungeheuer aus den Tiefen können dein ganzes Schiff am Stück verschlingen.
-	AI_Output(self, other, "DIA_None_101_Mario_CouldBeDangerous_07_03"); //Die Orkischen Galeeren muss ich wohl nicht extra erwähnen oder? Glaub mir, es gibt nichts, wovor ich Angst habe. Ein Seemann, der Angst hat, ist schon tot
+	AI_Output(other, self, "DIA_None_101_Mario_CouldBeDangerous_15_00"); //The journey may be perilous.
+	AI_Output(self, other, "DIA_None_101_Mario_CouldBeDangerous_07_01"); //I'm used to danger. When you're out there, every day is dangerous.
+	AI_Output(self, other, "DIA_None_101_Mario_CouldBeDangerous_07_02"); //The next storm could be your death, and the monsters of the deep could swallow your ship whole.
+	AI_Output(self, other, "DIA_None_101_Mario_CouldBeDangerous_07_03"); //And I don't need to mention the orcish galleys, do I? Believe me, there's nothing I'm afraid of. A sailor who's afraid is already dead.
 };
 
 //*********************************************************************
@@ -238,7 +238,7 @@ instance DIA_None_101_Mario_DontNeedYou(C_INFO)
 	nr				= 13;
 	condition		= DIA_None_101_Mario_DontNeedYou_Condition;
 	information		= DIA_None_101_Mario_DontNeedYou_Info;
-	description		= "Ich kann dich nicht gebrauchen.";
+	description		= "I have no use for you.";
 };
 
 func int DIA_None_101_Mario_DontNeedYou_Condition()
@@ -252,10 +252,10 @@ func int DIA_None_101_Mario_DontNeedYou_Condition()
 
 func void DIA_None_101_Mario_DontNeedYou_Info()
 {
-	AI_Output(other, self, "DIA_None_101_Mario_DontNeedYou_15_00"); //Ich kann dich nicht gebrauchen.
-	AI_Output(self, other, "DIA_None_101_Mario_DontNeedYou_07_01"); //Ich bin der beste Seeman, den du hier finden wirst.
-	AI_Output(self, other, "DIA_None_101_Mario_DontNeedYou_07_02"); //Wie du aussiehst, hast du keine Ahnung von der Seefahrt.
-	AI_Output(self, other, "DIA_None_101_Mario_DontNeedYou_07_03"); //Also überleg dir sehr gut, wem du vertraust.
+	AI_Output(other, self, "DIA_None_101_Mario_DontNeedYou_15_00"); //I have no use for you.
+	AI_Output(self, other, "DIA_None_101_Mario_DontNeedYou_07_01"); //I'm the best sailor you'll find here.
+	AI_Output(self, other, "DIA_None_101_Mario_DontNeedYou_07_02"); //From the look of you, you don't know the first thing about navigation.
+	AI_Output(self, other, "DIA_None_101_Mario_DontNeedYou_07_03"); //So think twice before you trust anyone.
 };
 
 //*********************************************************************
@@ -267,7 +267,7 @@ instance DIA_None_101_Mario_NeedGoodMen(C_INFO)
 	nr				= 2;
 	condition		= DIA_None_101_Mario_NeedGoodMen_Condition;
 	information		= DIA_None_101_Mario_NeedGoodMen_Info;
-	description		= "Gute Leute kann ich immer brauchen.";
+	description		= "I can always use good people.";
 };
 
 func int DIA_None_101_Mario_NeedGoodMen_Condition()
@@ -281,8 +281,8 @@ func int DIA_None_101_Mario_NeedGoodMen_Condition()
 
 func void DIA_None_101_Mario_NeedGoodMen_Info()
 {
-	AI_Output(other, self, "DIA_None_101_Mario_NeedGoodMen_15_00"); //Gute Leute kann ich immer brauchen.
-	AI_Output(self, other, "DIA_None_101_Mario_NeedGoodMen_07_01"); //Alles klar, wir sehen uns dann am Schiff.
+	AI_Output(other, self, "DIA_None_101_Mario_NeedGoodMen_15_00"); //I can always use good people.
+	AI_Output(self, other, "DIA_None_101_Mario_NeedGoodMen_07_01"); //Sure thing, I'll see you on the ship.
 
 	B_GivePlayerXP(XP_Crewmember_Success);
 
@@ -309,7 +309,7 @@ instance DIA_Mario_LeaveMyShip(C_INFO)
 	condition		= DIA_Mario_LeaveMyShip_Condition;
 	information		= DIA_Mario_LeaveMyShip_Info;
 	permanent		= TRUE;
-	description		= "Ich kann dich doch nicht gebrauchen!";
+	description		= "I can't use you after all!";
 };
 
 func int DIA_Mario_LeaveMyShip_Condition()
@@ -323,8 +323,8 @@ func int DIA_Mario_LeaveMyShip_Condition()
 
 func void DIA_Mario_LeaveMyShip_Info()
 {
-	AI_Output(other, self, "DIA_Mario_LeaveMyShip_15_00"); //Ich kann dich doch nicht gebrauchen!
-	AI_Output(self, other, "DIA_Mario_LeaveMyShip_07_01"); //Wie du meinst, du weißt ja, wo du mich findest!
+	AI_Output(other, self, "DIA_Mario_LeaveMyShip_15_00"); //I can't use you after all!
+	AI_Output(self, other, "DIA_Mario_LeaveMyShip_07_01"); //As you like. You know where to find me!
 
 	Mario_IsOnBoard = LOG_OBSOLETE; // Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit!
 	crewmember_Count = (Crewmember_Count - 1);
@@ -333,7 +333,7 @@ func void DIA_Mario_LeaveMyShip_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Mario_StillNeedYou(C_INFO)
 {
@@ -342,12 +342,12 @@ instance DIA_Mario_StillNeedYou(C_INFO)
 	condition		= DIA_Mario_StillNeedYou_Condition;
 	information		= DIA_Mario_StillNeedYou_Info;
 	permanent		= TRUE;
-	description		= "Ich kann dich doch gebrauchen!";
+	description		= "I can use you after all!";
 };
 
 func int DIA_Mario_StillNeedYou_Condition()
 {
-	if (((Mario_IsOnBOard == LOG_OBSOLETE) // Hier brauch man natürlich nur eine variable abfragen
+	if (((Mario_IsOnBOard == LOG_OBSOLETE) // Hier brauch man natÃ¼rlich nur eine variable abfragen
 	|| (Mario_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew))
 	{
@@ -357,11 +357,11 @@ func int DIA_Mario_StillNeedYou_Condition()
 
 func void DIA_Mario_StillNeedYou_Info()
 {
-	AI_Output(other, self, "DIA_Mario_StillNeedYou_15_00"); //Ich kann dich doch gebrauchen!
+	AI_Output(other, self, "DIA_Mario_StillNeedYou_15_00"); //I can use you after all!
 
 	if (Mario_IsOnBoard == LOG_OBSOLETE)
 	{
-		AI_Output(self, other, "DIA_Mario_StillNeedYou_07_01"); //Ich hab's doch gewusst. Wir sehen uns am Schiff!
+		AI_Output(self, other, "DIA_Mario_StillNeedYou_07_01"); //I knew it! I'll see you on the ship!
 
 		Mario_IsOnBoard = LOG_SUCCESS;
 		crewmember_Count = (Crewmember_Count + 1);
@@ -377,7 +377,7 @@ func void DIA_Mario_StillNeedYou_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Mario_StillNeedYou_07_02"); //So kannst du nicht mit mir umspringen. Ich werde dich aufschlitzen!
+		AI_Output(self, other, "DIA_Mario_StillNeedYou_07_02"); //You can't treat me like that. I'll gut you!
 
 		AI_StopProcessInfos(self);
 

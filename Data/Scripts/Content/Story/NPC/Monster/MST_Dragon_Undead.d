@@ -5,7 +5,7 @@
 prototype Mst_Default_Dragon_Undead(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Untoter Drache";
+	name							= "Undead Dragon";
 	guild							= GIL_DRAGON;
 	level							= 1000;
 

@@ -1,5 +1,5 @@
 // ***************************************************
-//  	B_CaptainCallsAllOnBoard (Alle Bedingungen fürs 6. Kapitel sind erfüllt. Nun gehts los!!!!!!!!!!)
+//  	B_CaptainCallsAllOnBoard (Alle Bedingungen fÃ¼rs 6. Kapitel sind erfÃ¼llt. Nun gehts los!!!!!!!!!!)
 // ***************************************************
 
 func void B_CaptainCallsAllOnBoard(var C_Npc Captain)

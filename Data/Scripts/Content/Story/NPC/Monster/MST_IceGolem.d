@@ -5,7 +5,7 @@
 prototype Mst_Default_IceGolem(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Eisgolem";
+	name							= "Ice Golem";
 	guild							= GIL_ICEGOLEM;
 	level							= 45;
 

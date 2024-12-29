@@ -4,7 +4,7 @@
 
 instance ITWR_Addon_Runemaking_KDW_CIRC1(C_ITEM)
 {
-	name						= "Die Kreise des Wassers";
+	name						= "The Circles of Water";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -17,7 +17,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC1(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Wassermagier";
+	description					= "Runebook of the Water Mages";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -28,7 +28,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC1(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDW_CIRC2(C_ITEM)
 {
-	name						= "Wasserrunenbuch II";
+	name						= "Water runebook II";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -41,7 +41,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC2(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Wassermagier (2. Kreis)";
+	description					= "Runebook of the Water Mages (2nd Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -52,7 +52,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC2(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDW_CIRC3(C_ITEM)
 {
-	name						= "Wasserrunenbuch III";
+	name						= "Water runebook III";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -65,7 +65,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC3(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Wassermagier (3. Kreis)";
+	description					= "Runebook of the Water Mages (3rd Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -76,7 +76,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC3(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDW_CIRC4(C_ITEM)
 {
-	name						= "Wasserrunenbuch VI";
+	name						= "Water runebook IV";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -89,7 +89,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC4(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Wassermagier (4. Kreis)";
+	description					= "Runebook of the Water Mages (4th Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -100,7 +100,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC4(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDW_CIRC5(C_ITEM)
 {
-	name						= "Wasserrunenbuch V";
+	name						= "Water runebook V";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -113,7 +113,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC5(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Wassermagier (5. Kreis)";
+	description					= "Runebook of the Water Mages (5th Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -124,7 +124,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC5(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDW_CIRC6(C_ITEM)
 {
-	name						= "Wasserrunenbuch VI";
+	name						= "Water runebook VI";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -137,7 +137,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC6(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Wassermagier (6. Kreis)";
+	description					= "Runebook of the Water Mages (6th Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -152,7 +152,7 @@ instance ITWR_Addon_Runemaking_KDW_CIRC6(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC1(C_ITEM)
 {
-	name						= "Feuerrunenbuch I";
+	name						= "Fire runebook I";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -165,7 +165,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC1(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Feuermagier (1. Kreis)";
+	description					= "Runebook of the Fire Magicians (1st Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -176,7 +176,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC1(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC2(C_ITEM)
 {
-	name						= "Feuerrunenbuch II";
+	name						= "Fire runebook II";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -189,7 +189,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC2(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Feuermagier (2. Kreis)";
+	description					= "Runebook of the Fire Magicians (2nd Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -200,7 +200,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC2(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC3(C_ITEM)
 {
-	name						= "Feuerrunenbuch III";
+	name						= "Fire runebook III";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -213,7 +213,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC3(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Feuermagier (3. Kreis)";
+	description					= "Runebook of the Fire Magicians (3rd Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -224,7 +224,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC3(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC4(C_ITEM)
 {
-	name						= "Feuerrunenbuch IV";
+	name						= "Fire runebook IV";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -237,7 +237,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC4(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Feuermagier (4. Kreis)";
+	description					= "Runebook of the Fire Magicians (4th Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -248,7 +248,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC4(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC5(C_ITEM)
 {
-	name						= "Feuerrunenbuch V";
+	name						= "Fire runebook V";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -261,7 +261,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC5(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Feuermagier (5. Kreis)";
+	description					= "Runebook of the Fire Magicians (5th Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -272,7 +272,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC5(C_ITEM)
 
 instance ITWR_Addon_Runemaking_KDF_CIRC6(C_ITEM)
 {
-	name						= "Feuerrunenbuch VI";
+	name						= "Fire runebook VI";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -285,7 +285,7 @@ instance ITWR_Addon_Runemaking_KDF_CIRC6(C_ITEM)
 
 	value						= 100;
 
-	description					= "Runenbuch der Feuermagier (6. Kreis)";
+	description					= "Runebook of the Fire Magicians (6th Circle)";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;

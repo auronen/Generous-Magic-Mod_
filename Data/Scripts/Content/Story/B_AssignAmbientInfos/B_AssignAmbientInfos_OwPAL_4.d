@@ -47,17 +47,17 @@ func void DIA_OWPAL_4_STANDARD_Info()
 
 	if (randy == 0)
 	{
-		AI_Output(self, other, "DIA_OWPAL_4_STANDARD_04_00"); //Innos ist meine Ehre und meine Ehre ist mein Leben.
+		AI_Output(self, other, "DIA_OWPAL_4_STANDARD_04_00"); //Innos is my honor and my honor is my life.
 	};
 
 	if (randy == 1)
 	{
-		AI_Output(self, other, "DIA_OWPAL_4_STANDARD_04_01"); //Wir werden hier so lange ausharren, wie Innos sein Licht über uns hält.
+		AI_Output(self, other, "DIA_OWPAL_4_STANDARD_04_01"); //We shall stand firm here as long as Innos holds his light over us.
 	};
 
 	if (randy == 2)
 	{
-		AI_Output(self, other, "DIA_OWPAL_4_STANDARD_04_02"); //Mit Innos' Hilfe werden wir die bösen Kreaturen von hier fernhalten.
+		AI_Output(self, other, "DIA_OWPAL_4_STANDARD_04_02"); //With the help of Innos we shall keep the evil creatures away from here.
 	};
 
 	AI_StopProcessInfos(self);

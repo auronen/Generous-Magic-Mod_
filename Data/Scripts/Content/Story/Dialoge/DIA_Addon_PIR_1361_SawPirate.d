@@ -31,7 +31,7 @@ instance DIA_Addon_SawPirate_Hello(C_INFO)
 	condition		= DIA_Addon_SawPirate_Hello_Condition;
 	information		= DIA_Addon_SawPirate_Hello_Info;
 	permanent		= TRUE;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_SawPirate_Hello_Condition()
@@ -41,8 +41,8 @@ func int DIA_Addon_SawPirate_Hello_Condition()
 
 func void DIA_Addon_SawPirate_Hello_Info()
 {
-	AI_Output(other, self, "DIA_Addon_SawPirate_Hello_15_00"); //Wie sieht's aus?
-	AI_Output(self, other, "DIA_Addon_SawPirate_Hello_09_01"); //Quatsch mich nicht voll!
+	AI_Output(other, self, "DIA_Addon_SawPirate_Hello_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Addon_SawPirate_Hello_09_01"); //Stop gabbing at me.
 };
 
 // ************************************************************
@@ -59,7 +59,7 @@ instance DIA_Addon_SawPirate_Anheuern(C_INFO)
 	nr				= 11;
 	condition		= DIA_Addon_SawPirate_Anheuern_Condition;
 	information		= DIA_Addon_SawPirate_Anheuern_Info;
-	description		= "Gehörst du zu Henrys Jungs?";
+	description		= "Are you one of Henry's boys?";
 };
 
 func int DIA_Addon_SawPirate_Anheuern_Condition()
@@ -72,12 +72,12 @@ func int DIA_Addon_SawPirate_Anheuern_Condition()
 
 func void DIA_Addon_SawPirate_Anheuern_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bones_JoinHenry_15_00"); //Gehörst du zu Henrys Jungs?
-	AI_Output(self, other, "DIA_Addon_SawPirate_Anheuern_09_01"); //Nein. Ich säge hier zum Spaß ein bißchen am Baum herum.
-	AI_Output(self, other, "DIA_Addon_SawPirate_Anheuern_09_02"); //Was ist los? Hat Henry dir gesagt, was du zu tun hast?
-	AI_Output(other, self, "DIA_Addon_Bones_JoinHenry_15_04"); //Ja. Ich soll für ihn einige Banditen aus dem Weg räumen.
-	AI_Output(self, other, "DIA_Addon_SawPirate_Anheuern_09_03"); //(wehrt ab) Ooh nein! Sieh mich NICHT so an. Ich will da nicht hingehen.
-	AI_Output(self, other, "DIA_Addon_SawPirate_Anheuern_09_04"); //Lass mich lieber weitersägen, okay?
+	AI_Output(other, self, "DIA_Addon_Bones_JoinHenry_15_00"); //Are you one of Henry's boys?
+	AI_Output(self, other, "DIA_Addon_SawPirate_Anheuern_09_01"); //No. I'm just sawing up this tree for entertainment.
+	AI_Output(self, other, "DIA_Addon_SawPirate_Anheuern_09_02"); //What's up? Did Henry tell you what you're supposed to do?
+	AI_Output(other, self, "DIA_Addon_Bones_JoinHenry_15_04"); //Yes. I'm supposed to do in a few bandits for him.
+	AI_Output(self, other, "DIA_Addon_SawPirate_Anheuern_09_03"); //(fending off) Ooh no! Don't LOOK at me that way. I don't wanna go there.
+	AI_Output(self, other, "DIA_Addon_SawPirate_Anheuern_09_04"); //Just leave me to my sawing, will you?
 };
 
 // ------------------------------------------------------------
@@ -92,7 +92,7 @@ instance DIA_Addon_SawPirate_ComeOn(C_INFO)
 	condition		= DIA_Addon_SawPirate_ComeOn_Condition;
 	information		= DIA_Addon_SawPirate_ComeOn_Info;
 	permanent		= TRUE;
-	description		= "Komm mit.";
+	description		= "Come with me.";
 };
 
 func int DIA_Addon_SawPirate_ComeOn_Condition()
@@ -108,20 +108,20 @@ func int DIA_Addon_SawPirate_ComeOn_Condition()
 
 func void DIA_Addon_SawPirate_ComeOn_Info()
 {
-	AI_Output(other, self, "DIA_Addon_SawPirate_ComeOn_15_00"); //Komm mit.
+	AI_Output(other, self, "DIA_Addon_SawPirate_ComeOn_15_00"); //Come with me.
 	if (HammerPirate.aivar[AIV_PARTYMEMBER] == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_SawPirate_ComeOn_09_01"); //Wieso? Du hast doch schon 'nen Mann dabei...
+		AI_Output(self, other, "DIA_Addon_SawPirate_ComeOn_09_01"); //Why? You've already got somebody with you ...
 	}
 	else if (Npc_GetDistToWP(self, "ADW_PIRATECAMP_WAY_08") > 6000)
 	{
-		AI_Output(self, other, "DIA_Addon_SawPirate_ComeOn_09_04"); //Erst gehen wir mal ein Stück zurück in Richtung Lager...
+		AI_Output(self, other, "DIA_Addon_SawPirate_ComeOn_09_04"); //First let's go back a little towards the camp.
 		AI_StopProcessInfos(self);
 	}
 	else if ((!Npc_IsDead(HammerPirate))
 	&& (SawPirate_ComeOn_Once == FALSE))
 	{
-		AI_Output(self, other, "DIA_Addon_SawPirate_ComeOn_09_02"); //(zu sich) Warum hat er nicht den ANDEREN gefragt...
+		AI_Output(self, other, "DIA_Addon_SawPirate_ComeOn_09_02"); //(to himself) He COULD have asked somebody ELSE ...
 		SawPirate_ComeOn_Once = TRUE;
 		AI_StopProcessInfos(self);
 		Npc_ExchangeRoutine(self, "FOLLOW");
@@ -129,7 +129,7 @@ func void DIA_Addon_SawPirate_ComeOn_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_SawPirate_ComeOn_09_03"); //(seufzt) Aye, aye...
+		AI_Output(self, other, "DIA_Addon_SawPirate_ComeOn_09_03"); //(sighs) Aye aye ...
 		AI_StopProcessInfos(self);
 		Npc_ExchangeRoutine(self, "FOLLOW");
 		self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -146,7 +146,7 @@ instance DIA_Addon_SawPirate_GoHome(C_INFO)
 	condition		= DIA_Addon_SawPirate_GoHome_Condition;
 	information		= DIA_Addon_SawPirate_GoHome_Info;
 	permanent		= TRUE;
-	description		= "Ich brauch dich nicht mehr.";
+	description		= "I no longer need you.";
 };
 
 func int DIA_Addon_SawPirate_GoHome_Condition()
@@ -159,8 +159,8 @@ func int DIA_Addon_SawPirate_GoHome_Condition()
 
 func void DIA_Addon_SawPirate_GoHome_Info()
 {
-	AI_Output(other, self, "DIA_Addon_SawPirate_GoHome_15_00"); //Ich brauch dich nicht mehr.
-	AI_Output(self, other, "DIA_Addon_SawPirate_GoHome_09_01"); //Dann werd ich mal ein bißchen weitersägen!
+	AI_Output(other, self, "DIA_Addon_SawPirate_GoHome_15_00"); //I no longer need you.
+	AI_Output(self, other, "DIA_Addon_SawPirate_GoHome_09_01"); //I guess I'll go back to my sawing then.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine(self, "START");
@@ -190,8 +190,8 @@ func int DIA_Addon_SawPirate_TooFar_Condition()
 
 func void DIA_Addon_SawPirate_TooFar_Info()
 {
-	AI_Output(self, other, "DIA_Addon_SawPirate_TooFar_09_01"); //Wir sind zu weit weg vom Lager.
-	AI_Output(self, other, "DIA_Addon_SawPirate_GoHome_09_02"); //Das gefällt mir gar nicht. Ich werd' mal wieder zurückgehen.
+	AI_Output(self, other, "DIA_Addon_SawPirate_TooFar_09_01"); //We're too far away from the camp. 
+	AI_Output(self, other, "DIA_Addon_SawPirate_GoHome_09_02"); //I don't like this at all. I'm going back now.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine(self, "START");
@@ -223,8 +223,8 @@ func int DIA_Addon_SawPirate_Success_Condition()
 
 func void DIA_Addon_SawPirate_Success_Info()
 {
-	AI_Output(self, other, "DIA_Addon_SawPirate_Success_09_01"); //Weißt da was, ich hab nachgedacht. Du bist ein Arschloch!
-	AI_Output(self, other, "DIA_Addon_SawPirate_Success_09_02"); //Ich geh zurück zum Lager. Wir sehen uns hoffentlich nie wieder!
+	AI_Output(self, other, "DIA_Addon_SawPirate_Success_09_01"); //You know what - I've been doing some thinking. You're an asshole!
+	AI_Output(self, other, "DIA_Addon_SawPirate_Success_09_02"); //I'm headed back to the camp, and I hope I never set eyes on you again!
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine(self, "START");

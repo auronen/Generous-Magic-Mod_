@@ -36,5 +36,5 @@ func int ZS_Cook_Pan_Loop()
 func void ZS_Cook_Pan_End()
 {
 	AI_UseMob(self, "PAN", -1);
-	AI_UseItem(self, ItFoMutton); // Iß gebratenes Fleisch
+	AI_UseItem(self, ItFoMutton); // IÃŸ gebratenes Fleisch
 };

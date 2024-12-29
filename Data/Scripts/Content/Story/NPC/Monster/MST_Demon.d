@@ -5,7 +5,7 @@
 prototype Mst_Default_Demon(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Dämon";
+	name							= "Demon";
 	guild							= GIL_DEMON;
 	level							= 50;
 
@@ -100,7 +100,7 @@ instance Demon(Mst_Default_Demon)
 instance Summoned_Demon(Mst_Default_Demon)
 {
 	// -------- NPC --------
-	name							= "Beschworener Dämon";
+	name							= "Summoned Demon";
 	guild							= GIL_SUMMONED_DEMON;
 	level							= 0;
 

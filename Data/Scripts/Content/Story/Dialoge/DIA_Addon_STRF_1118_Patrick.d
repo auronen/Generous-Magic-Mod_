@@ -30,7 +30,7 @@ instance DIA_Addon_Patrick_Hi(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Patrick_Hi_Condition;
 	information		= DIA_Addon_Patrick_Hi_Info;
-	description		= "Ich komme im Auftrag der Wassermagier.";
+	description		= "I've been sent by the Water Mages. I've come to free you.";
 };
 
 func int DIA_Addon_Patrick_Hi_Condition()
@@ -40,42 +40,42 @@ func int DIA_Addon_Patrick_Hi_Condition()
 
 func void DIA_Addon_Patrick_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Patrick_Hi_15_00"); //Ich komme im Auftrag der Wassermagier. Ich bin hier, um euch zu befreien.
-	AI_Output(self, other, "DIA_Addon_Patrick_Hi_07_01"); //(mißtrauisch) So? Und warum sollte ich dir das glauben?
-	AI_Output(other, self, "DIA_Addon_Patrick_Hi_15_02"); //Willst du hier raus oder nicht?
-	AI_Output(self, other, "DIA_Addon_Patrick_Hi_07_03"); //Natürlich will ich hier raus - aber ...
-	AI_Output(other, self, "DIA_Addon_Patrick_Hi_15_04"); //Vatras hat mich geschickt. Wenn dir das nicht reicht, könnt ihr von mir aus alle in diesem Loch verschimmeln.
-	AI_Output(self, other, "DIA_Addon_Patrick_Hi_07_05"); //(eilig) In Ordnung, ich glaube dir.
-	AI_Output(other, self, "DIA_Addon_Patrick_Hi_15_06"); //(verblüfft) Ja? Das ging schneller als erwartet. Okay, jetzt brauchen wir nur noch einen Plan.
-	AI_Output(self, other, "DIA_Addon_Patrick_Hi_07_07"); //Ein Fluchtversuch ist 'ne riskante Sache. William hat's versucht und ist dabei draufgegangen.
-	AI_Output(self, other, "DIA_Addon_Patrick_Hi_07_08"); //Die Gefangenen sind Bauern und Arbeiter - sie vertrauen mir zwar, aber sie werden sich nicht auf eine Flucht einlassen.
+	AI_Output(other, self, "DIA_Addon_Patrick_Hi_15_00"); //I've been sent by the Water Mages. I've come to free you.
+	AI_Output(self, other, "DIA_Addon_Patrick_Hi_07_01"); //(warily) Really? And why should I believe you?
+	AI_Output(other, self, "DIA_Addon_Patrick_Hi_15_02"); //Do you want to get out of here, or not?
+	AI_Output(self, other, "DIA_Addon_Patrick_Hi_07_03"); //Of course I want to get out - but ...
+	AI_Output(other, self, "DIA_Addon_Patrick_Hi_15_04"); //Vatras sent me. If that's not enough for you, you can all rot in this hole for all I care.
+	AI_Output(self, other, "DIA_Addon_Patrick_Hi_07_05"); //(hastily) All right, I believe you.
+	AI_Output(other, self, "DIA_Addon_Patrick_Hi_15_06"); //(baffled) Really? Wow, that went faster than I thought. Okay, now all we need is a plan.
+	AI_Output(self, other, "DIA_Addon_Patrick_Hi_07_07"); //Trying to flee poses a great risk. William tried, and he bought it.
+	AI_Output(self, other, "DIA_Addon_Patrick_Hi_07_08"); //The prisoners are peasants and workers - they trust me, but they won't dare to mount an escape.
 
 	Info_ClearChoices(DIA_Addon_Patrick_Hi);
-	Info_AddChoice(DIA_Addon_Patrick_Hi, "Soll ich euch etwa 'ne Begnadigung von Raven holen?", DIA_Addon_Patrick_Hi_Raven);
-	Info_AddChoice(DIA_Addon_Patrick_Hi, "Muss ich etwa alle Banditen töten, bevor ihr euch bewegt?", DIA_Addon_Patrick_Hi_Kill);
+	Info_AddChoice(DIA_Addon_Patrick_Hi, "What do you want me to do - get you a pardon from Raven?", DIA_Addon_Patrick_Hi_Raven);
+	Info_AddChoice(DIA_Addon_Patrick_Hi, "Will I have to kill all the bandits before you'll budge at all?", DIA_Addon_Patrick_Hi_Kill);
 };
 
 func void B_Say_Patrick_Plan()
 {
-	AI_Output(self, other, "DIA_Addon_Patrick_Plan_07_00"); //Aber das kann nicht der Plan sein.
-	AI_Output(self, other, "DIA_Addon_Patrick_Plan_07_01"); //Sieh einfach zu, dass die Wachen uns nicht angreifen, dann verschwinden wir von hier.
-	AI_Output(other, self, "DIA_Addon_Patrick_Plan_15_02"); //Okay, ich werde mich um darum kümmern. Sag den anderen, sie sollen sich bereit halten.
+	AI_Output(self, other, "DIA_Addon_Patrick_Plan_07_00"); //But that can't be the plan.
+	AI_Output(self, other, "DIA_Addon_Patrick_Plan_07_01"); //Just see to it that the guards don't attack us, and then we'll get out of here.
+	AI_Output(other, self, "DIA_Addon_Patrick_Plan_15_02"); //Okay, I'll handle that. Tell the others to get ready.
 
 	B_LogEntry(Topic_Addon_Sklaven, Topic_Addon_Sklaven_1);
 };
 
 func void DIA_Addon_Patrick_Hi_Raven()
 {
-	AI_Output(other, self, "DIA_Addon_Patrick_Hi_Raven_15_00"); //Soll ich euch etwa 'ne Begnadigung von Raven holen?
-	AI_Output(self, other, "DIA_Addon_Patrick_Hi_Raven_07_01"); //(grinst) Das wäre nicht schlecht.
+	AI_Output(other, self, "DIA_Addon_Patrick_Hi_Raven_15_00"); //What do you want me to do - get you a pardon from Raven?
+	AI_Output(self, other, "DIA_Addon_Patrick_Hi_Raven_07_01"); //(grinning) Not a bad idea.
 	B_Say_Patrick_Plan();
 	Info_ClearChoices(DIA_Addon_Patrick_Hi);
 };
 
 func void DIA_Addon_Patrick_Hi_Kill()
 {
-	AI_Output(other, self, "DIA_Addon_Patrick_Hi_Kill_15_00"); //Muss ich etwa alle Banditen töten, bevor ihr euch bewegt?
-	AI_Output(self, other, "DIA_Addon_Patrick_Hi_Kill_07_01"); //(erschrocken) Das wäre ja Wahnsinn!
+	AI_Output(other, self, "DIA_Addon_Patrick_Hi_Kill_15_00"); //Will I have to kill all the bandits before you'll budge at all?
+	AI_Output(self, other, "DIA_Addon_Patrick_Hi_Kill_07_01"); //(scared) But that would be insane!
 	B_Say_Patrick_Plan();
 	Info_ClearChoices(DIA_Addon_Patrick_Hi);
 };
@@ -89,7 +89,7 @@ instance DIA_Addon_Patrick_ready(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Patrick_ready_Condition;
 	information		= DIA_Addon_Patrick_ready_Info;
-	description		= "Alles klar, ihr könnt abhauen.";
+	description		= "All's well, you can make yourselves scarce.";
 };
 
 func int DIA_Addon_Patrick_ready_Condition()
@@ -109,12 +109,12 @@ func int DIA_Addon_Patrick_ready_Condition()
 
 func void DIA_Addon_Patrick_ready_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Patrick_ready_15_00"); //Alles klar, ihr könnt abhauen.
-	AI_Output(self, other, "DIA_Addon_Patrick_ready_07_01"); //Gut, ich kenne eine Höhle im Sumpf, da werden wir uns erst mal sammeln. Aber wie geht's dann weiter?
-	AI_Output(other, self, "DIA_Addon_Patrick_ready_15_02"); //Verlasst den Sumpf Richtung Südwesten. Bei den alten Tempelruinen haben die Wassermagier ihr Lager aufgeschlagen.
-	AI_Output(other, self, "DIA_Addon_Patrick_ready_15_03"); //Sie werden euch einen Weg aus diesem Tal zeigen.
-	AI_Output(self, other, "DIA_Addon_Patrick_ready_07_04"); //Danke, vielen Dank. (hebt an) Wir alle stehen tief in deiner ...
-	AI_Output(other, self, "DIA_Addon_Patrick_ready_15_05"); //Schon gut.
+	AI_Output(other, self, "DIA_Addon_Patrick_ready_15_00"); //All's well, you can make yourselves scarce.
+	AI_Output(self, other, "DIA_Addon_Patrick_ready_07_01"); //Great. I know a cave in the swamp where we can gather for now. But then what?
+	AI_Output(other, self, "DIA_Addon_Patrick_ready_15_02"); //Leave the swamp towards the south-west. The Water Mages have set up their camp near the ruins of the old temple.
+	AI_Output(other, self, "DIA_Addon_Patrick_ready_15_03"); //They're going to show you the way out of this valley.
+	AI_Output(self, other, "DIA_Addon_Patrick_ready_07_04"); //Thanks, thank you so much. (commencing) We are all very deeply ...
+	AI_Output(other, self, "DIA_Addon_Patrick_ready_15_05"); //Never mind.
 
 	Sklaven_Flucht = TRUE;
 	B_GivePlayerXP(XP_Addon_Flucht);
@@ -154,7 +154,7 @@ instance DIA_Addon_Patrick_Killer(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Patrick_Killer_Condition;
 	information		= DIA_Addon_Patrick_Killer_Info;
-	description		= "Die Wache ist erledigt, ihr könnt abhauen.";
+	description		= "The guard is done for, you can go now.";
 };
 
 func int DIA_Addon_Patrick_Killer_Condition()
@@ -169,8 +169,8 @@ func int DIA_Addon_Patrick_Killer_Condition()
 
 func void DIA_Addon_Patrick_Killer_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Patrick_Killer_15_00"); //Die Wache ist erledigt, ihr könnt abhauen.
-	AI_Output(self, other, "DIA_Addon_Patrick_Killer_07_01"); //Und was passiert, wenn wir die Mine verlassen? Dann werden uns die anderen Wachen abschlachten. Nein, das ist zu riskant.
+	AI_Output(other, self, "DIA_Addon_Patrick_Killer_15_00"); //The guard is done for, you can go now.
+	AI_Output(self, other, "DIA_Addon_Patrick_Killer_07_01"); //And what happens once we leave the mine? The other guards will slaughter us then. No, that's too risky.
 };
 
 // ---------------------------------------------------------------------
@@ -183,7 +183,7 @@ instance DIA_Addon_Patrick_Hoehle(C_INFO)
 	condition		= DIA_Addon_Patrick_Hoehle_Condition;
 	information		= DIA_Addon_Patrick_Hoehle_Info;
 	permanent		= TRUE;
-	description		= "Wollt ihr nicht abhauen?";
+	description		= "Don't you want to leave?";
 };
 
 func int DIA_Addon_Patrick_Hoehle_Condition()
@@ -196,6 +196,6 @@ func int DIA_Addon_Patrick_Hoehle_Condition()
 
 func void DIA_Addon_Patrick_Hoehle_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Patrick_Hoehle_15_00"); //Wollt ihr nicht abhauen?
-	AI_Output(self, other, "DIA_Addon_Patrick_Hoehle_07_01"); //Doch natürlich. Wir warten nur noch auf einen günstigen Moment.
+	AI_Output(other, self, "DIA_Addon_Patrick_Hoehle_15_00"); //Don't you want to leave?
+	AI_Output(self, other, "DIA_Addon_Patrick_Hoehle_07_01"); //Of course we do. We're only waiting for the right moment.
 };

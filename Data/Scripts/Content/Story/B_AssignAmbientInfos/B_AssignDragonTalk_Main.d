@@ -6,7 +6,7 @@ instance DIA_DragonTalk_Main_1(C_INFO)
 	nr				= 10;
 	condition		= DIA_DragonTalk_Main_1_Condition;
 	information		= DIA_DragonTalk_Main_1_Info;
-	description		= "Warum bist du hier erschienen?";
+	description		= "What made you appear here?";
 };
 
 func int DIA_DragonTalk_Main_1_Condition()
@@ -19,28 +19,28 @@ func int DIA_DragonTalk_Main_1_Condition()
 
 func void DIA_DragonTalk_Main_1_Info()
 {
-	AI_Output(other, self, "DIA_DragonTalk_Main_1_15_00"); //Diener des Bösen. Warum bist du hier erschienen? Bist du nur gekommen, um Angst und Schrecken zu verbreiten?
-	AI_Output(self, other, "DIA_DragonTalk_Main_1_20_01"); //Der höhere Sinn unserer Zusammenkunft in dieser Welt, kleiner Mensch, wird dir verborgen bleiben.
+	AI_Output(other, self, "DIA_DragonTalk_Main_1_15_00"); //Servant of Evil. What made you appear here? Have you only come to spread terror and panic?
+	AI_Output(self, other, "DIA_DragonTalk_Main_1_20_01"); //The higher meaning of our congress in this world, little human, will remain hidden to you.
 
-	Info_AddChoice(DIA_DragonTalk_Main_1, "Wie bekomme ich die anderen Drachen zum Reden?", DIA_DragonTalk_Main_1_reden);
-	Info_AddChoice(DIA_DragonTalk_Main_1, "Was muss ich tun um euch wieder zu verbannen?", DIA_DragonTalk_Main_1_verbannen);
+	Info_AddChoice(DIA_DragonTalk_Main_1, "How can I get the other dragons to talk?", DIA_DragonTalk_Main_1_reden);
+	Info_AddChoice(DIA_DragonTalk_Main_1, "What must I do to banish you again?", DIA_DragonTalk_Main_1_verbannen);
 
 	DragonTalk_Exit_Free = TRUE;
 };
 
 func void DIA_DragonTalk_Main_1_verbannen()
 {
-	AI_Output(other, self, "DIA_DragonTalk_MAIN_1_verbannen_15_00"); //Was in Innos' Namen muss ich tun, um euch wieder aus der Welt der Menschen zu verbannen?
-	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_01"); //(lacht) Bevor du handeln kannst, musst du erst den Sinn unserer Zusammenkunft verstehen.
-	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_02"); //Doch wird dir niemand aus freien Stücken davon berichten.
-	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_03"); //Allein das Auge könnte unsere Zungen lösen und dir unsere wahren Ziele offenbaren.
-	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_04"); //Allerdings wird dir das nichts nützen, wenn du tot bist.
+	AI_Output(other, self, "DIA_DragonTalk_MAIN_1_verbannen_15_00"); //What in the name of Innos must I do to ban you once again from the realms of humankind?
+	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_01"); //(laughs) Before you can act, you must first understand the meaning of our congress.
+	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_02"); //However, no one will disclose that to you of his own free will.
+	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_03"); //The Eye alone could loosen our tongues and reveal to you our true goals.
+	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_04"); //In any case, it will be of no use to you when you are dead.
 
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_05"); //Man hat uns schon davon unterrichtet, dass du den Weg des Drachenjägers gewählt hast.
-		AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_06"); //Also haben wir unsere Nachkommenschaft in eure Welt entsandt, um den Bestand unserer Ahnenreihe zu sichern.
-		AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_07"); //Du hast schon verloren, kleiner Mensch.
+		AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_05"); //It has already been reported to us that you have chosen the path of the dragon hunter.
+		AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_06"); //Therefore, we have dispatched our offspring to your world in order to secure the continuance of our ancestral line.
+		AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_07"); //You have already lost, little human.
 
 		Log_CreateTopic(TOPIC_DRACHENEIER, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_DRACHENEIER, LOG_RUNNING);
@@ -48,15 +48,15 @@ func void DIA_DragonTalk_Main_1_verbannen()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_08"); //Das Auge hat dir den Zugang gewährt. Doch ob du meiner würdig bist, wird allein der Zweikampf entscheiden.
+		AI_Output(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_08"); //The Eye has granted you access. However, single combat alone will decide whether you are worthy of me.
 	};
 };
 
 func void DIA_DragonTalk_Main_1_reden()
 {
-	AI_Output(other, self, "DIA_DragonTalk_MAIN_1_reden_15_00"); //Wie bringe ich die anderen Drachen zum Reden?
-	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_reden_20_01"); //Allein mein Herz könnte dir helfen, die Macht des Auges zu erneuern.
-	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_reden_20_02"); //Aber es wird dir nicht gelingen, mir das Herz zu entreißen.
+	AI_Output(other, self, "DIA_DragonTalk_MAIN_1_reden_15_00"); //How can I get the other dragons to talk?
+	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_reden_20_01"); //Only my heart could help you to renew the power of the Eye.
+	AI_Output(self, other, "DIA_DragonTalk_MAIN_1_reden_20_02"); //But you will not succeed in snatching away my heart.
 };
 
 // *************************************************************************
@@ -67,7 +67,7 @@ instance DIA_DragonTalk_Main_2(C_INFO)
 	nr				= 10;
 	condition		= DIA_DragonTalk_Main_2_Condition;
 	information		= DIA_DragonTalk_Main_2_Info;
-	description		= "Wer hat euch hierher entsandt?";
+	description		= "Who sent you here?";
 };
 
 func int DIA_DragonTalk_Main_2_Condition()
@@ -80,12 +80,12 @@ func int DIA_DragonTalk_Main_2_Condition()
 
 func void DIA_DragonTalk_Main_2_Info()
 {
-	AI_Output(other, self, "DIA_DragonTalk_Main_2_15_00"); //In welchem Auftrag handelt ihr? Wer hat euch hierher entsandt?
-	AI_Output(self, other, "DIA_DragonTalk_Main_2_20_01"); //Über unser aller Heil und Wohl steht der Meister mit seinem Wort der Macht. Bald wird sich ihm niemand mehr entziehen können.
-	AI_Output(self, other, "DIA_DragonTalk_Main_2_20_02"); //Aus dem Reich der Toten langt sein Arm schon sehr weit. Die Geister der Nacht versammeln sich in freudiger Erwartung seiner Ankunft.
-	AI_Output(self, other, "DIA_DragonTalk_Main_2_20_03"); //Er wird über euch Menschen kommen und die Welt beherrschen.
-	AI_Output(self, other, "DIA_DragonTalk_Main_2_20_04"); //In seinem Schatten sind wir nicht mehr als Beiwerk seiner schöpferischen Kraft.
-	AI_Output(self, other, "DIA_DragonTalk_Main_2_20_05"); //Der Meister wird kommen, eure geplagten Leiber wieder aus der Asche zu erheben, um mit ihnen das Geschick der Erde neu zu richten.
+	AI_Output(other, self, "DIA_DragonTalk_Main_2_15_00"); //Whose orders do you follow? Who sent you here?
+	AI_Output(self, other, "DIA_DragonTalk_Main_2_20_01"); //Our future and well-being is controlled by the Master with his Word of Power. Soon no one will be able to resist him.
+	AI_Output(self, other, "DIA_DragonTalk_Main_2_20_02"); //His long arm already stretches far from the Realm of the Dead. The spirits of the night gather in joyful anticipation of his arrival.
+	AI_Output(self, other, "DIA_DragonTalk_Main_2_20_03"); //He will overcome you humans and rule the world.
+	AI_Output(self, other, "DIA_DragonTalk_Main_2_20_04"); //In his shadow, we are no more than accessories to his creative power.
+	AI_Output(self, other, "DIA_DragonTalk_Main_2_20_05"); //The Master will come to raise your afflicted bodies from the ashes and use them to reshape the fate of the world.
 
 	B_LogEntry(TOPIC_DRACHENJAGD, TOPIC_DRACHENJAGD_1);
 
@@ -100,7 +100,7 @@ instance DIA_DragonTalk_Main_3(C_INFO)
 	nr				= 10;
 	condition		= DIA_DragonTalk_Main_3_Condition;
 	information		= DIA_DragonTalk_Main_3_Info;
-	description		= "Wie kann ich euren Meister bezwingen?";
+	description		= "How can I defeat your master?";
 };
 
 func int DIA_DragonTalk_Main_3_Condition()
@@ -113,29 +113,29 @@ func int DIA_DragonTalk_Main_3_Condition()
 
 func void DIA_DragonTalk_Main_3_Info()
 {
-	AI_Output(other, self, "DIA_DragonTalk_Main_3_15_00"); //Wie kann ich euren Meister bezwingen?
-	AI_Output(self, other, "DIA_DragonTalk_Main_3_20_01"); //Er ist allmächtig und nahezu unbesiegbar. Solltest du so töricht sein, ihm trotzdem zu begegnen, wirst du einen langsamen und qualvollen Tod sterben.
-	AI_Output(other, self, "DIA_DragonTalk_Main_3_15_02"); //So etwas höre ich nicht zum ersten Mal. Nahezu unbesiegbar heißt nicht, dass ich ihn nicht töten kann.
-	AI_Output(other, self, "DIA_DragonTalk_Main_3_15_03"); //Also, raus mit der Sprache: Was muss ich tun?
-	AI_Output(self, other, "DIA_DragonTalk_Main_3_20_04"); //Um meinem Meister die Stirn bieten zu können, benötigst du die Dinge, die er niemals im Stande wäre zu erlangen.
-	AI_Output(other, self, "DIA_DragonTalk_Main_3_15_05"); //Und was ist das?
-	AI_Output(self, other, "DIA_DragonTalk_Main_3_20_06"); //Du musst die höchste Rüstung deiner irdischen Gemeinschaft erlangen und sie auf deiner Haut tragen.
+	AI_Output(other, self, "DIA_DragonTalk_Main_3_15_00"); //How can I defeat your master?
+	AI_Output(self, other, "DIA_DragonTalk_Main_3_20_01"); //He is almighty and nigh unto invincible. Should you be so foolish as to meet him nevertheless, you will die a slow and painful death.
+	AI_Output(other, self, "DIA_DragonTalk_Main_3_15_02"); //This isn't the first time I've heard that. Nearly invincible does not mean I cannot kill him.
+	AI_Output(other, self, "DIA_DragonTalk_Main_3_15_03"); //So, out with it: What must I do?
+	AI_Output(self, other, "DIA_DragonTalk_Main_3_20_04"); //In order to oppose my Master, you require things which he would never be able to obtain.
+	AI_Output(other, self, "DIA_DragonTalk_Main_3_15_05"); //And what would that be?
+	AI_Output(self, other, "DIA_DragonTalk_Main_3_20_06"); //You must acquire the finest armor known to your earthly community, and wear it on your skin.
 
 	if ((other.guild == GIL_PAL) || (other.guild == GIL_MIL))
 	{
-		AI_Output(self, other, "DIA_Dragons_Add_20_01"); //Du brauchst ein Schwert, welches von deinem Gott gesegnet wurde.
+		AI_Output(self, other, "DIA_Dragons_Add_20_01"); //You need a sword which has been blessed by your god.
 	}
 	else if ((other.guild == GIL_KDF) || (other.guild == GIL_NOV))
 	{
-		AI_Output(self, other, "DIA_Dragons_Add_20_02"); //Du brauchst eine Rune, die nur für dich angefertigt wurde.
+		AI_Output(self, other, "DIA_Dragons_Add_20_02"); //You need a rune which was crafted only for you.
 	}
 	else // Sld - Djg
 	{
-		AI_Output(self, other, "DIA_Dragons_Add_20_00"); //Du brauchst eine Waffe, die nur für dich angefertigt wurde.
+		AI_Output(self, other, "DIA_Dragons_Add_20_00"); //You need a weapon which was made only for you.
 	};
 
-	AI_Output(self, other, "DIA_DragonTalk_Main_3_20_08"); //Aber die wohl schwierigste aller Bedingungen ist, dass du fünf Gefährten für dich gewinnen musst, die dir in den Tod folgen würden.
-	AI_Output(self, other, "DIA_DragonTalk_Main_3_20_09"); //Erst dann und nur dann kannst du es wagen, dem Meister zu begegnen.
+	AI_Output(self, other, "DIA_DragonTalk_Main_3_20_08"); //But the most difficult condition of all is that you must win five companions who would follow you into death.
+	AI_Output(self, other, "DIA_DragonTalk_Main_3_20_09"); //Then and only then can you dare to face the Master.
 
 	DragonTalk_Exit_Free = TRUE;
 };
@@ -148,7 +148,7 @@ instance DIA_DragonTalk_Main_4(C_INFO)
 	nr				= 10;
 	condition		= DIA_DragonTalk_Main_4_Condition;
 	information		= DIA_DragonTalk_Main_4_Info;
-	description		= "Wie kann ich euren Meister finden?";
+	description		= "How can I find your Master?";
 };
 
 func int DIA_DragonTalk_Main_4_Condition()
@@ -161,13 +161,13 @@ func int DIA_DragonTalk_Main_4_Condition()
 
 func void DIA_DragonTalk_Main_4_Info()
 {
-	AI_Output(other, self, "DIA_DragonTalk_Main_4_15_00"); //Wie kann ich euren Meister finden?
-	AI_Output(self, other, "DIA_DragonTalk_Main_4_20_01"); //Er hat seinen Hort im festem Fels der heiligen Hallen von Irdorath errichtet und wartet dort auf die Erfüllung seines Schicksals.
-	AI_Output(self, other, "DIA_DragonTalk_Main_4_20_02"); //Auf dass er dieser Welt die Ordnung zurückgebe, die sie verdient, verweilt er dort in tiefer Meditation und ...
-	AI_Output(other, self, "DIA_DragonTalk_Main_4_15_03"); //Verschone mich mit den Einzelheiten. Sag mir lieber, wo ich diese heiligen Hallen von Irdorath finde.
-	AI_Output(self, other, "DIA_DragonTalk_Main_4_20_04"); //Ha, ha, ha. Du enttäuschst mich, kleiner Mann. Hast du doch allen Gefahren getrotzt, fast alle von uns bezwungen und scheiterst nun an deinem Unvermögen, das obere Wissen anzuwenden.
-	AI_Output(self, other, "DIA_DragonTalk_Main_4_20_05"); //Wenn dir Irdorath kein Begriff ist, dann solltest du besser zu deinen Magiern gehen und sie bitten, dich um ihre weltlichen Belange kümmern zu dürfen.
-	AI_Output(self, other, "DIA_DragonTalk_Main_4_20_06"); //Denn ganz offensichtlich bist du noch nicht bereit für die hohe Bürde ihres oberen Wissens.
+	AI_Output(other, self, "DIA_DragonTalk_Main_4_15_00"); //How can I find your Master?
+	AI_Output(self, other, "DIA_DragonTalk_Main_4_20_01"); //He has established his hoard in the solid rock of the Halls of Irdorath and waits there for his destiny.
+	AI_Output(self, other, "DIA_DragonTalk_Main_4_20_02"); //Until he can restore this world to the order which it has deserved, he waits there in deep meditation and ...
+	AI_Output(other, self, "DIA_DragonTalk_Main_4_15_03"); //Spare me the details. Just tell me where I can find these sacred halls of Irdorath.
+	AI_Output(self, other, "DIA_DragonTalk_Main_4_20_04"); //Ha ha ha. You disappoint me, little man. So you have withstood all the dangers and overcome almost all of us, and now you fail in your inability to use the higher knowledge.
+	AI_Output(self, other, "DIA_DragonTalk_Main_4_20_05"); //If Irdorath means nothing to you, then you had better go to your magicians and ask them to be allowed to take care of their worldly needs.
+	AI_Output(self, other, "DIA_DragonTalk_Main_4_20_06"); //For quite obviously, you are not yet ready for the heavy burden of their higher knowledge.
 
 	Log_CreateTopic(TOPIC_BuchHallenVonIrdorath, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BuchHallenVonIrdorath, LOG_RUNNING);

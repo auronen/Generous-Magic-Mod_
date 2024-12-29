@@ -5,7 +5,7 @@
 prototype Mst_Default_OrcShaman(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Ork Schamane";
+	name							= "Orc Shaman";
 	guild							= GIL_ORC;
 	level							= 35;
 
@@ -140,7 +140,7 @@ instance OrcShaman_Hosh_Pak(Mst_Default_OrcShaman)
 instance OrcShaman_Sit_CanyonLibraryKey(Mst_Default_OrcShaman)
 {
 	// -------- NPC --------
-	name							= "Anführer der Horde";
+	name							= "Leader of the Horde";
 
 	// -------- attributes --------
 

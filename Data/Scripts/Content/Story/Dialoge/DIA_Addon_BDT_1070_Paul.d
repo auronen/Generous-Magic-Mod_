@@ -66,7 +66,7 @@ instance DIA_Addon_Paul_Hi(C_INFO)
 	nr				= 1;
 	condition		= DIA_Addon_Paul_Hi_Condition;
 	information		= DIA_Addon_Paul_Hi_Info;
-	description		= "Handelst du mit Schmiedezubehör?";
+	description		= "Do you deal in smithy equipment?";
 };
 
 func int DIA_Addon_Paul_Hi_Condition()
@@ -76,9 +76,9 @@ func int DIA_Addon_Paul_Hi_Condition()
 
 func void DIA_Addon_Paul_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Paul_Hi_15_00"); //Handelst du mit Schmiedezubehör?
-	AI_Output(self, other, "DIA_Addon_Paul_Hi_03_01"); //Stahl gibt's bei Huno. Ich habe nur ein paar Brocken Erz.
-	AI_Output(self, other, "DIA_Addon_Paul_Hi_03_02"); //Aber die gebe ich nicht her. Es ist das einzige von Wert, was ich habe.
+	AI_Output(other, self, "DIA_Addon_Paul_Hi_15_00"); //Do you deal in smithy equipment?
+	AI_Output(self, other, "DIA_Addon_Paul_Hi_03_01"); //Huno has steel. I only have a few lumps of ore.
+	AI_Output(self, other, "DIA_Addon_Paul_Hi_03_02"); //But I won't give that up. It's the only thing I have of value.
 };
 
 // ---------------------------------------------------------------------
@@ -90,7 +90,7 @@ instance DIA_Addon_Paul_Huno(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Paul_Huno_Condition;
 	information		= DIA_Addon_Paul_Huno_Info;
-	description		= "Arbeitest du für Huno?";
+	description		= "Do you work for Huno?";
 };
 
 func int DIA_Addon_Paul_Huno_Condition()
@@ -103,10 +103,10 @@ func int DIA_Addon_Paul_Huno_Condition()
 
 func void DIA_Addon_Paul_Huno_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Paul_Huno_15_00"); //Arbeitest du für Huno?
-	AI_Output(self, other, "DIA_Addon_Paul_Huno_03_01"); //Ich wollte ein bisschen Gold machen und hab bei Huno angefangen. Aber seitdem kriege ich von Esteban gar nichts mehr.
-	AI_Output(self, other, "DIA_Addon_Paul_Huno_03_02"); //Er hat gesagt, er kann mich nicht mehr gebrauchen.
-	AI_Output(self, other, "DIA_Addon_Paul_Huno_03_03"); //Was bleibt mir übrig, als weiterhin für Huno zu schuften?
+	AI_Output(other, self, "DIA_Addon_Paul_Huno_15_00"); //Do you work for Huno?
+	AI_Output(self, other, "DIA_Addon_Paul_Huno_03_01"); //I wanted to make a bit of gold and took up with Huno. But since then, Esteban hasn't given me anything at all.
+	AI_Output(self, other, "DIA_Addon_Paul_Huno_03_02"); //He said he can't use me any more.
+	AI_Output(self, other, "DIA_Addon_Paul_Huno_03_03"); //What else can I do but continue to slave away for Huno?
 };
 
 // ---------------------------------------------------------------------
@@ -132,7 +132,7 @@ func int DIA_Addon_Paul_Attentat_Condition()
 func void DIA_Addon_Paul_Attentat_Info()
 {
 	B_Say(other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output(self, other, "DIA_Addon_Paul_Attentat_03_00"); //Gar nichts Mann! Ich habe damit nichts zu tun! Was willst du von mir?
+	AI_Output(self, other, "DIA_Addon_Paul_Attentat_03_00"); //Nothing, man! I didn't have anything to do with it! What do you want from me?
 };
 
 // ---------------------------------------------------------------------
@@ -144,7 +144,7 @@ instance DIA_Addon_Paul_HunoVerdacht(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Paul_HunoVerdacht_Condition;
 	information		= DIA_Addon_Paul_HunoVerdacht_Info;
-	description		= "Huno wird verdächtigt, was mit dem Attentat zu tun zu haben...";
+	description		= "Huno is suspected of having something to do with the attack...";
 };
 
 func int DIA_Addon_Paul_HunoVerdacht_Condition()
@@ -158,12 +158,12 @@ func int DIA_Addon_Paul_HunoVerdacht_Condition()
 
 func void DIA_Addon_Paul_HunoVerdacht_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Paul_HunoVerdacht_15_00"); //Huno wird verdächtigt, was mit dem Attentat zu tun zu haben ...
-	AI_Output(self, other, "DIA_Addon_Paul_HunoVerdacht_03_01"); //Ich weiß nichts darüber!
+	AI_Output(other, self, "DIA_Addon_Paul_HunoVerdacht_15_00"); //Huno is suspected of having something to do with the attack...
+	AI_Output(self, other, "DIA_Addon_Paul_HunoVerdacht_03_01"); //I don't know anything about it!
 };
 
 // ---------------------------------------------------------------------
-//	Arbeitest für Huno
+//	Arbeitest fÃ¼r Huno
 // ---------------------------------------------------------------------
 instance DIA_Addon_Paul_HunoArbeit(C_INFO)
 {
@@ -171,7 +171,7 @@ instance DIA_Addon_Paul_HunoArbeit(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Paul_HunoArbeit_Condition;
 	information		= DIA_Addon_Paul_HunoArbeit_Info;
-	description		= "Du arbeitest für Huno! Also weißt du auch was!";
+	description		= "But you work for Huno! So you do know something!";
 };
 
 func int DIA_Addon_Paul_HunoArbeit_Condition()
@@ -186,8 +186,8 @@ func int DIA_Addon_Paul_HunoArbeit_Condition()
 
 func void DIA_Addon_Paul_HunoArbeit_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Paul_HunoArbeit_15_00"); //Du arbeitest doch für Huno! Also weißt du auch was!
-	AI_Output(self, other, "DIA_Addon_Paul_HunoArbeit_03_01"); //(verzweifelt) Ich weiß nichts - ehrlich! Ich muss jetzt weitermachen!
+	AI_Output(other, self, "DIA_Addon_Paul_HunoArbeit_15_00"); //But you work for Huno! So you do know something!
+	AI_Output(self, other, "DIA_Addon_Paul_HunoArbeit_03_01"); //(despairingly) I know nothing - honest! I have to go now!
 	Npc_ExchangeRoutine(self, "AWAY");
 	AI_StopProcessInfos(self);
 };
@@ -201,7 +201,7 @@ instance DIA_Addon_Paul_FearEsteban(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Paul_FearEsteban_Condition;
 	information		= DIA_Addon_Paul_FearEsteban_Info;
-	description		= "Weißt du, was Esteban mit dir macht, wenn er erfährt, daß du Huno deckst?";
+	description		= "Do you know what Esteban will do to you when he finds out you're covering for Huno?";
 };
 
 func int DIA_Addon_Paul_FearEsteban_Condition()
@@ -215,8 +215,8 @@ func int DIA_Addon_Paul_FearEsteban_Condition()
 
 func void DIA_Addon_Paul_FearEsteban_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Paul_FearEsteban_15_00"); //Weißt du, was Esteban mit dir macht, wenn er erfährt, dass du Huno deckst?
-	AI_Output(self, other, "DIA_Addon_Paul_FearEsteban_03_01"); //Mann! Lass mich in Ruhe. Ich hab doch nichts mit der Sache zu tun.
+	AI_Output(other, self, "DIA_Addon_Paul_FearEsteban_15_00"); //Do you know what Esteban will do to you when he finds out you're covering for Huno?
+	AI_Output(self, other, "DIA_Addon_Paul_FearEsteban_03_01"); //Man! Leave me alone. I don't have anything to do with that business.
 	Npc_ExchangeRoutine(self, "PRESTART");
 	AI_StopProcessInfos(self);
 };
@@ -230,7 +230,7 @@ instance DIA_Addon_Paul_MaulPaul(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Paul_MaulPaul_Condition;
 	information		= DIA_Addon_Paul_MaulPaul_Info;
-	description		= "Du sagst mit jetzt, was du weißt!";
+	description		= "Tell me what you know, right now!";
 };
 
 func int DIA_Addon_Paul_MaulPaul_Condition()
@@ -244,15 +244,15 @@ func int DIA_Addon_Paul_MaulPaul_Condition()
 
 func void DIA_Addon_Paul_MaulPaul_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Paul_MaulPaul_15_00"); //(freundlich) Du sagst mit jetzt, was du weißt, oder es gibt'n paar aufs Maul, Paul!
-	AI_Output(self, other, "DIA_Addon_Paul_MaulPaul_03_01"); //Nur, weil du für den Boss arbeitest, kannst du noch lange nicht so mit mir umspringen!
-	AI_Output(other, self, "DIA_Addon_Paul_MaulPaul_15_02"); //(nett) Ich kann!
-	AI_Output(self, other, "DIA_Addon_Paul_MaulPaul_03_03"); //Mach kein' Scheiß!
-	AI_Output(other, self, "DIA_Addon_Paul_MaulPaul_15_04"); //(ungeduldig) Paul ...
-	AI_Output(self, other, "DIA_Addon_Paul_MaulPaul_03_05"); //(hektisch) Alles was ich weiß, ist, dass Huno nicht gut auf Esteban zu sprechen ist.
-	AI_Output(self, other, "DIA_Addon_Paul_MaulPaul_03_06"); //(hektisch) Dauernd liegt er mir in den Ohren über diesen Esteban. dass er ihm sein Geschäft versaut und so ...
-	AI_Output(self, other, "DIA_Addon_Paul_MaulPaul_03_07"); //Ich hab nur zugehört und nie was gesagt.
-	AI_Output(other, self, "DIA_Addon_Paul_MaulPaul_15_08"); //Ganz bestimmt! Siehst du. War doch gar nicht so schlimm.
+	AI_Output(other, self, "DIA_Addon_Paul_MaulPaul_15_00"); //(friendly) Tell me what you know now or I'll slam you into the wall, Paul!
+	AI_Output(self, other, "DIA_Addon_Paul_MaulPaul_03_01"); //You can't rough me up just because you work for the boss.
+	AI_Output(other, self, "DIA_Addon_Paul_MaulPaul_15_02"); //(nicely) I can!
+	AI_Output(self, other, "DIA_Addon_Paul_MaulPaul_03_03"); //Cut the crap!
+	AI_Output(other, self, "DIA_Addon_Paul_MaulPaul_15_04"); //(impatient) Paul...
+	AI_Output(self, other, "DIA_Addon_Paul_MaulPaul_03_05"); //(hectically) All I know is that Huno has a bone to pick with Esteban.
+	AI_Output(self, other, "DIA_Addon_Paul_MaulPaul_03_06"); //(hectically) He's constantly going on at me about that Esteban. That he screwed up business for him and so on...
+	AI_Output(self, other, "DIA_Addon_Paul_MaulPaul_03_07"); //I only listened and never said anything.
+	AI_Output(other, self, "DIA_Addon_Paul_MaulPaul_15_08"); //Exactly! You see. That wasn't so bad.
 
 	Npc_ExchangeRoutine(self, "START");
 
@@ -286,7 +286,7 @@ func void DIA_Addon_Paul_Mine_Info()
 {
 	B_Say(other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems(other, self, ItmI_Addon_Stone_01, 1);
-	AI_Output(self, other, "DIA_Addon_BDT_1070_Paul_Mine_03_00"); //Endlich! Hier, du sollst mein Erz dafür haben.
+	AI_Output(self, other, "DIA_Addon_BDT_1070_Paul_Mine_03_00"); //Finally! Here, I want you to have my ore for that.
 	B_GiveInvItems(self, other, ItMi_Nugget, 2);
 
 	Player_SentBuddler = (Player_SentBuddler + 1);
@@ -305,7 +305,7 @@ instance DIA_Addon_Paul_PERM(C_INFO)
 	condition		= DIA_Addon_Paul_PERM_Condition;
 	information		= DIA_Addon_Paul_PERM_Info;
 	permanent		= TRUE;
-	description		= "Sonst alles klar bei dir?";
+	description		= "Everything else all right with you?";
 };
 
 func int DIA_Addon_Paul_PERM_Condition()
@@ -318,22 +318,22 @@ func int DIA_Addon_Paul_PERM_Condition()
 
 func void DIA_Addon_Paul_PERM_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Paul_PERM_15_00"); //Sonst alles klar bei dir?
+	AI_Output(other, self, "DIA_Addon_Paul_PERM_15_00"); //Everything else all right with you?
 
 	if (Npc_GetDistToWP(self, "ADW_MINE_PICK_07") <= 500)
 	{
-		AI_Output(self, other, "DIA_Addon_Paul_PERM_03_01"); //Ja, ich werde einen Haufen Gold aus diesem Fels holen!
+		AI_Output(self, other, "DIA_Addon_Paul_PERM_03_01"); //Yes, I'll get a heap of gold out of this rock!
 	}
 	else
 	{
 		if ((Paul_TellAll == TRUE)
 		&& (Huno_zuSnaf == FALSE))
 		{
-			AI_Output(self, other, "DIA_Addon_Paul_PERM_03_02"); //Ich hab dir alles gesagt, was ich weiß!
+			AI_Output(self, other, "DIA_Addon_Paul_PERM_03_02"); //I told you everything I know!
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Addon_Paul_PERM_03_03"); //Ich will hier nur meine Arbeit machen, Mann!
+			AI_Output(self, other, "DIA_Addon_Paul_PERM_03_03"); //I just want to do my job, man!
 		};
 	};
 };

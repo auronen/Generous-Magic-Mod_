@@ -5,7 +5,7 @@
 prototype Mst_Default_Swarm(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Flugschreckenschwarm";
+	name							= "Locust Swarm";
 	guild							= GIL_BLOODFLY;
 	level							= 6;
 

@@ -1,7 +1,7 @@
 instance PC_Hero(NPC_DEFAULT)
 {
 	// -------- NPC --------
-	name							= "Ich";
+	name							= "Me";
 	npctype							= NpcType_Main;
 	guild							= GIL_NONE;
 	level							= 0;
@@ -44,7 +44,7 @@ instance PC_Hero(NPC_DEFAULT)
 instance PC_L10(NPC_DEFAULT) // Mitte 2. Kapitel (Anfang der OW)
 {
 	// -------- NPC --------
-	name							= "Ich";
+	name							= "Me";
 	npctype							= NpcType_Main;
 	guild							= GIL_MIL;
 	level							= 10;
@@ -90,7 +90,7 @@ instance PC_L10(NPC_DEFAULT) // Mitte 2. Kapitel (Anfang der OW)
 instance PC_L20(NPC_DEFAULT) // Anfang 2. Kapitel - Ende der ADW
 {
 	// -------- NPC --------
-	name							= "Ich";
+	name							= "Me";
 	npctype							= NpcType_Main;
 	guild							= GIL_MIL;
 	level							= 20;
@@ -99,7 +99,7 @@ instance PC_L20(NPC_DEFAULT) // Anfang 2. Kapitel - Ende der ADW
 	id								= 0;
 	exp								= (500 * ((level + 1) / 2) * (level + 1));
 	exp_next						= (500 * ((level + 2) / 2) * (level + 1));
-	lp								= 40; // f¸r Lockpick, SteintafelIII
+	lp								= 40; // f√ºr Lockpick, SteintafelIII
 
 	// -------- attributes --------
 	attribute[ATR_STRENGTH]			= 106; // 10+50+46 (40% von 115) // 80LP
@@ -140,7 +140,7 @@ instance PC_L20(NPC_DEFAULT) // Anfang 2. Kapitel - Ende der ADW
 instance PC_L40(NPC_DEFAULT) // Anfang 4. Kapitel (Drachenjagd)
 {
 	// -------- NPC --------
-	name							= "Ich";
+	name							= "Me";
 	npctype							= NpcType_Main;
 	guild							= GIL_PAL;
 	level							= 40;
@@ -149,7 +149,7 @@ instance PC_L40(NPC_DEFAULT) // Anfang 4. Kapitel (Drachenjagd)
 	id								= 0;
 	exp								= (500 * ((level + 1) / 2) * (level + 1));
 	exp_next						= (500 * ((level + 2) / 2) * (level + 1));
-	lp								= 60; // f¸r Lockpick, SteintafelIII, PermSTR
+	lp								= 60; // f√ºr Lockpick, SteintafelIII, PermSTR
 
 	// -------- attributes --------
 	attribute[ATR_STRENGTH]			= 159; // 10+80+69 (60% von 115) // 170LP
@@ -197,7 +197,7 @@ instance PC_L40(NPC_DEFAULT) // Anfang 4. Kapitel (Drachenjagd)
 instance PC_L60(NPC_DEFAULT) // Anfang 6. Kapitel (Dracheninsel)
 {
 	// -------- NPC --------
-	name							= "Ich";
+	name							= "Me";
 	npctype							= NpcType_Main;
 	guild							= GIL_PAL;
 	level							= 60;
@@ -206,7 +206,7 @@ instance PC_L60(NPC_DEFAULT) // Anfang 6. Kapitel (Dracheninsel)
 	id								= 0;
 	exp								= (500 * ((level + 1) / 2) * (level + 1));
 	exp_next						= (500 * ((level + 2) / 2) * (level + 1));
-	lp								= 60; // 60; f¸r Lockpick, SteintafelIII, PermSTR
+	lp								= 60; // 60; f√ºr Lockpick, SteintafelIII, PermSTR
 
 	// -------- attributes --------
 	attribute[ATR_STRENGTH]			= 228; // 10+126+92 (80% von 115) // 370LP
@@ -254,7 +254,7 @@ instance PC_L60(NPC_DEFAULT) // Anfang 6. Kapitel (Dracheninsel)
 instance PC_E3Mage(NPC_DEFAULT) // PC_E3Mage
 {
 	// -------- NPC --------
-	name							= "Ich";
+	name							= "Me";
 	npctype							= NpcType_Main;
 	guild							= GIL_KDF;
 	level							= 31;
@@ -286,10 +286,10 @@ instance PC_E3Mage(NPC_DEFAULT) // PC_E3Mage
 	B_AddFightSkill(self, NPC_TALENT_BOW, 20);
 	B_AddFightSkill(self, NPC_TALENT_CROSSBOW, 10);
 	Npc_SetTalentSkill(self, NPC_TALENT_MAGE, 6);
-	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // h‰ngt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // h√§ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill(self, NPC_TALENT_SNEAK, 1);
 	// Npc_SetTalentSkill(self, NPC_TALENT_ACROBAT, 0);
-	// Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // h‰ngt ab von DEX (auf Scriptebene)
+	// Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // h√§ngt ab von DEX (auf Scriptebene)
 	// Npc_SetTalentSkill(self, NPC_TALENT_SMITH, 1);
 	Npc_SetTalentSkill(self, NPC_TALENT_RUNES, 1);
 	Npc_SetTalentSkill(self, NPC_TALENT_ALCHEMY, 1);
@@ -422,7 +422,7 @@ instance PC_E3Mage(NPC_DEFAULT) // PC_E3Mage
 instance PC_E3Paladin(NPC_DEFAULT) // PC_E3Paladin
 {
 	// -------- NPC --------
-	name							= "Ich";
+	name							= "Me";
 	npctype							= NpcType_Main;
 	guild							= GIL_PAL;
 	level							= 31;
@@ -454,10 +454,10 @@ instance PC_E3Paladin(NPC_DEFAULT) // PC_E3Paladin
 	B_AddFightSkill(self, NPC_TALENT_BOW, 80);
 	B_AddFightSkill(self, NPC_TALENT_CROSSBOW, 70);
 	Npc_SetTalentSkill(self, NPC_TALENT_MAGE, 0);
-	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // h‰ngt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // h√§ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill(self, NPC_TALENT_SNEAK, 1);
 	// Npc_SetTalentSkill(self, NPC_TALENT_ACROBAT, 0);
-	// Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // h‰ngt ab von DEX (auf Scriptebene)
+	// Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // h√§ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill(self, NPC_TALENT_SMITH, 1);
 	// Npc_SetTalentSkill(self, NPC_TALENT_RUNES, 1);
 	// Npc_SetTalentSkill(self, NPC_TALENT_ALCHEMY, 1);
@@ -569,7 +569,7 @@ instance PC_E3Paladin(NPC_DEFAULT) // PC_E3Paladin
 instance PC_Bandit(NPC_DEFAULT)
 {
 	// -------- NPC --------
-	name							= "Ich";
+	name							= "Me";
 	npctype							= NpcType_Main;
 	guild							= GIL_NONE;
 	level							= 10;

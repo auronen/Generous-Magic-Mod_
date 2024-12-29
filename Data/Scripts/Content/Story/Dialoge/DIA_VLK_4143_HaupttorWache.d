@@ -31,7 +31,7 @@ instance DIA_Haupttorwache_AUFGABE(C_INFO)
 	condition		= DIA_Haupttorwache_AUFGABE_Condition;
 	information		= DIA_Haupttorwache_AUFGABE_Info;
 	permanent		= TRUE;
-	description		= "Was ist deine Aufgabe?";
+	description		= "What's your job?";
 };
 
 func int DIA_Haupttorwache_AUFGABE_Condition()
@@ -41,9 +41,9 @@ func int DIA_Haupttorwache_AUFGABE_Condition()
 
 func void DIA_Haupttorwache_AUFGABE_Info()
 {
-	AI_Output(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Was ist deine Aufgabe?
-	AI_Output(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Mein Auftrag ist simpel. Ich muss darauf achten, dass sich die Orks nicht näher als 30 Schritt ans Tor heran machen.
-	AI_Output(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //Wenn sie versuchen sollten, das Torgitter zu durchbrechen, werde ich Alarm schlagen. Das ist alles.
+	AI_Output(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //What's your task?
+	AI_Output(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //My assignment is simple. I'm supposed to make sure that the orcs stay away more than 30 feet from the gate.
+	AI_Output(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //If they try to break through the portcullis, I sound the alarm. That's all.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -56,7 +56,7 @@ instance DIA_Haupttorwache_TOROEFFNEN(C_INFO)
 	condition		= DIA_Haupttorwache_TOROEFFNEN_Condition;
 	information		= DIA_Haupttorwache_TOROEFFNEN_Info;
 	permanent		= TRUE;
-	description		= "Was müsste jemand tun, wenn er das Haupttor öffnen wollte?";
+	description		= "What would one have to do to open the main gate?";
 };
 
 func int DIA_Haupttorwache_TOROEFFNEN_Condition()
@@ -69,31 +69,31 @@ func int DIA_Haupttorwache_TOROEFFNEN_Condition()
 
 func void DIA_Haupttorwache_TOROEFFNEN_Info()
 {
-	AI_Output(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Was müsste jemand tun, wenn er das Haupttor öffnen wollte?
-	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Um Himmels Willen. Warum willst du das wissen?
+	AI_Output(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //What would one have to do to open the main gate?
+	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //For heaven's sake. Why would you want to know that?
 
 	self.flags = 0; // Joly:zur sicherheit
 
 	Info_ClearChoices(DIA_Haupttorwache_TOROEFFNEN);
-	Info_AddChoice(DIA_Haupttorwache_TOROEFFNEN, "Ich mache mir Sorgen über die Sicherheit der Burg.", DIA_Haupttorwache_TOROEFFNEN_sicherheit);
-	Info_AddChoice(DIA_Haupttorwache_TOROEFFNEN, "Schon gut. War nur so ´ne Frage.", DIA_Haupttorwache_TOROEFFNEN_frage);
+	Info_AddChoice(DIA_Haupttorwache_TOROEFFNEN, "I'm worried about the safety of the castle.", DIA_Haupttorwache_TOROEFFNEN_sicherheit);
+	Info_AddChoice(DIA_Haupttorwache_TOROEFFNEN, "Never mind. Just asking.", DIA_Haupttorwache_TOROEFFNEN_frage);
 };
 
 func void DIA_Haupttorwache_TOROEFFNEN_sicherheit()
 {
-	AI_Output(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //Ich mache mir Sorgen über die Sicherheit der Burg.
-	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //Das mache ich mir auch jeden Tag, das kannst du mir glauben.
-	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //Und weil ich ein so gewissenhafter Wachmann bin, hat mir Garond jetzt endlich auch den Schlüssel zum Torraum anvertraut.
-	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(stolz) Eine verantwortungsvolle Aufgabe. Ich werde gut darauf aufpassen. Das habe ich Garond schwören müssen.
-	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Ja. Denn stell dir mal vor, da würde einer kommen und einfach den Hebel des Tores ziehen und das alte morsche Stahlgatter würde sich verkanten.
-	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Dann könnte niemand mehr das Gitter schließen. Nicht auszudenken, was dann passieren würde. Zum Glück weiß das ja keiner, dass ich den Schlüssel habe.
+	AI_Output(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //I'm worried about the safety of the castle.
+	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //So am I, all the time, believe me.
+	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //And since I am such a faithful guardian, Garond has finally entrusted the key to the gate room to me.
+	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(proudly) That's a great responsibility. I shall guard it well. I had to swear that to Garond.
+	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Yes. Just imagine someone coming and simply pulling the lever to open the gate, and that rusty, old steel grating getting jammed.
+	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Nobody could close the gate then. I mustn't think about what would happen next. It's a good thing no one knows that I have the key.
 	AI_StopProcessInfos(self);
 };
 
 func void DIA_Haupttorwache_TOROEFFNEN_frage()
 {
-	AI_Output(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //Schon gut. War nur so 'ne Frage.
-	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Mal den Teufel nicht an die Wand. Die Zeiten sind SO schon schwer genug. Jetzt geh. Ich habe zu tun.
+	AI_Output(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //Never mind. Just asking.
+	AI_Output(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Don't invite trouble by talking like that. Times are hard enough as it is. Now go. I'm busy.
 	AI_StopProcessInfos(self);
 };
 
@@ -107,7 +107,7 @@ instance DIA_Haupttorwache_PICKPOCKET(C_INFO)
 	condition		= DIA_Haupttorwache_PICKPOCKET_Condition;
 	information		= DIA_Haupttorwache_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre ein Kinderspiel seinen Schlüssel zu stehlen)";
+	description		= "(It would be child's play to steal his key)";
 };
 
 func int DIA_Haupttorwache_PICKPOCKET_Condition()

@@ -31,7 +31,7 @@ instance DIA_Angar_DI_HALLO(C_INFO)
 	condition		= DIA_Angar_DI_HALLO_Condition;
 	information		= DIA_Angar_DI_HALLO_Info;
 	permanent		= TRUE;
-	description		= "Wie geht's dir?";
+	description		= "How are you?";
 };
 
 func int DIA_Angar_DI_HALLO_Condition()
@@ -44,16 +44,16 @@ func int DIA_Angar_DI_HALLO_Condition()
 
 func void DIA_Angar_DI_HALLO_Info()
 {
-	AI_Output(other, self, "DIA_Angar_DI_HALLO_15_00"); //Wie geht's dir?
+	AI_Output(other, self, "DIA_Angar_DI_HALLO_15_00"); //How are you?
 
 	if ((Npc_IsDead(UndeadDragon)) == FALSE)
 	{
-		AI_Output(self, other, "DIA_Angar_DI_HALLO_04_01"); //Die Kopfschmerzen sind unerträglich geworden, seit wir hier auf der Insel sind.
-		AI_Output(self, other, "DIA_Angar_DI_HALLO_04_02"); //Verdammt noch mal. Das muss endlich aufhören.
+		AI_Output(self, other, "DIA_Angar_DI_HALLO_04_01"); //The headaches have become unbearable since we've been here on the island.
+		AI_Output(self, other, "DIA_Angar_DI_HALLO_04_02"); //Damnit. This finally has to end.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Angar_DI_HALLO_04_03"); //Kümmere dich nicht um mich. Lass uns verschwinden.
+		AI_Output(self, other, "DIA_Angar_DI_HALLO_04_03"); //Don't worry about me. Let's get out of here.
 	};
 };
 
@@ -80,19 +80,19 @@ func int DIA_Angar_DI_ORKS_Condition()
 
 func void DIA_Angar_DI_ORKS_Info()
 {
-	AI_Output(self, other, "DIA_Angar_DI_ORKS_04_00"); //Du musst dich verdammt noch mal beeilen. Der nächste Angriff der Orks wird uns das Leben kosten.
-	AI_Output(other, self, "DIA_Angar_DI_ORKS_15_01"); //Ich tue, was ich kann.
-	AI_Output(self, other, "DIA_Angar_DI_ORKS_04_02"); //Das ist nicht genug.
+	AI_Output(self, other, "DIA_Angar_DI_ORKS_04_00"); //You had damn well better hurry. The next attack by the orcs will cost us our lives.
+	AI_Output(other, self, "DIA_Angar_DI_ORKS_15_01"); //I'm doing my best.
+	AI_Output(self, other, "DIA_Angar_DI_ORKS_04_02"); //That's not enough.
 
 	Info_ClearChoices(DIA_Angar_DI_ORKS);
-	Info_AddChoice(DIA_Angar_DI_ORKS, "Reg´ dich ab.", DIA_Angar_DI_ORKS_no);
-	Info_AddChoice(DIA_Angar_DI_ORKS, "Dann hilf mir..", DIA_Angar_DI_ORKS_follow);
+	Info_AddChoice(DIA_Angar_DI_ORKS, "Relax.", DIA_Angar_DI_ORKS_no);
+	Info_AddChoice(DIA_Angar_DI_ORKS, "So help me and stop complaining.", DIA_Angar_DI_ORKS_follow);
 };
 
 func void DIA_Angar_DI_ORKS_follow()
 {
-	AI_Output(other, self, "DIA_Angar_DI_ORKS_follow_15_00"); //Dann hilf mir und hör auf zu meckern.
-	AI_Output(self, other, "DIA_Angar_DI_ORKS_follow_04_01"); //Das werde ich auch. Geh vor. Mach schon.
+	AI_Output(other, self, "DIA_Angar_DI_ORKS_follow_15_00"); //So help me and stop complaining.
+	AI_Output(self, other, "DIA_Angar_DI_ORKS_follow_04_01"); //I will. You go first. Move on.
 	AI_StopProcessInfos(self);
 	B_GivePlayerXP(XP_Ambient);
 	Npc_ExchangeRoutine(self, "FollowDI");
@@ -101,8 +101,8 @@ func void DIA_Angar_DI_ORKS_follow()
 
 func void DIA_Angar_DI_ORKS_no()
 {
-	AI_Output(other, self, "DIA_Angar_DI_ORKS_no_15_00"); //Reg dich ab.
-	AI_Output(self, other, "DIA_Angar_DI_ORKS_no_04_01"); //Du hast gut reden. Ich dreh hier bald durch.
+	AI_Output(other, self, "DIA_Angar_DI_ORKS_no_15_00"); //Relax.
+	AI_Output(self, other, "DIA_Angar_DI_ORKS_no_04_01"); //That's easy for you to say. I'm about to lose my mind here.
 	AI_StopProcessInfos(self);
 };
 
@@ -116,7 +116,7 @@ instance DIA_Angar_DI_FOLLOW(C_INFO)
 	condition		= DIA_Angar_DI_FOLLOW_Condition;
 	information		= DIA_Angar_DI_FOLLOW_Info;
 	permanent		= TRUE;
-	description		= "Bleib zurück.";
+	description		= "Stay back now.";
 };
 
 func int DIA_Angar_DI_FOLLOW_Condition()
@@ -129,12 +129,12 @@ func int DIA_Angar_DI_FOLLOW_Condition()
 
 func void DIA_Angar_DI_FOLLOW_Info()
 {
-	AI_Output(other, self, "DIA_Angar_DI_FOLLOW_15_00"); //Bleib zurück.
+	AI_Output(other, self, "DIA_Angar_DI_FOLLOW_15_00"); //Stay back now.
 
 	if (Npc_GetDistToWP(self, "SKELETTE") < 4000)
 	{
-		AI_Output(other, self, "DIA_Angar_DI_FOLLOW_15_01"); //Den Rest muss ich allein erledigen.
-		AI_Output(self, other, "DIA_Angar_DI_FOLLOW_04_02"); //Viel Glück.
+		AI_Output(other, self, "DIA_Angar_DI_FOLLOW_15_01"); //I'll have to take care of the rest by myself.
+		AI_Output(self, other, "DIA_Angar_DI_FOLLOW_04_02"); //Good luck.
 
 		AI_StopProcessInfos(self);
 		Npc_ExchangeRoutine(self, "Start");
@@ -143,7 +143,7 @@ func void DIA_Angar_DI_FOLLOW_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Angar_DI_FOLLOW_04_03"); //Alles klar.
+		AI_Output(self, other, "DIA_Angar_DI_FOLLOW_04_03"); //Sure thing.
 
 		AI_StopProcessInfos(self);
 
@@ -185,7 +185,7 @@ instance DIA_Angar_DI_FOLLOWAGAIN(C_INFO)
 	condition		= DIA_Angar_DI_FOLLOWAGAIN_Condition;
 	information		= DIA_Angar_DI_FOLLOWAGAIN_Info;
 	permanent		= TRUE;
-	description		= "Folge mir.";
+	description		= "Follow me.";
 };
 
 func int DIA_Angar_DI_FOLLOWAGAIN_Condition()
@@ -198,8 +198,8 @@ func int DIA_Angar_DI_FOLLOWAGAIN_Condition()
 
 func void DIA_Angar_DI_FOLLOWAGAIN_Info()
 {
-	AI_Output(other, self, "DIA_Angar_DI_FOLLOWAGAIN_15_00"); //Folge mir.
-	AI_Output(self, other, "DIA_Angar_DI_FOLLOWAGAIN_04_01"); //Geh vor.
+	AI_Output(other, self, "DIA_Angar_DI_FOLLOWAGAIN_15_00"); //Follow me.
+	AI_Output(self, other, "DIA_Angar_DI_FOLLOWAGAIN_04_01"); //You go first.
 	Angar_DI_Party = LOG_RUNNING;
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "FollowDI");
@@ -232,7 +232,7 @@ func int DIA_Angar_DI_FOLLOWSTOP_Condition()
 
 func void DIA_Angar_DI_FOLLOWSTOP_Info()
 {
-	AI_Output(self, other, "DIA_Angar_DI_FOLLOWSTOP_04_00"); //Aarh! Meine Kopfschmerzen machen mich wahnsinnig.
+	AI_Output(self, other, "DIA_Angar_DI_FOLLOWSTOP_04_00"); //Aarh! These headaches are driving me insane!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -244,7 +244,7 @@ instance DIA_Angar_DI_UNDEADDRGDEAD(C_INFO)
 	nr				= 2;
 	condition		= DIA_Angar_DI_UNDEADDRGDEAD_Condition;
 	information		= DIA_Angar_DI_UNDEADDRGDEAD_Info;
-	description		= "Du hast es überstanden.";
+	description		= "You pulled through.";
 };
 
 func int DIA_Angar_DI_UNDEADDRGDEAD_Condition()
@@ -257,19 +257,19 @@ func int DIA_Angar_DI_UNDEADDRGDEAD_Condition()
 
 func void DIA_Angar_DI_UNDEADDRGDEAD_Info()
 {
-	AI_Output(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_00"); //Du hast es überstanden.
-	AI_Output(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_01"); //Können wir jetzt endlich hier wieder weg?
-	AI_Output(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_02"); //Ja. Der Feind ist vernichtet.
-	AI_Output(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_03"); //Dann lass uns keine Zeit mehr verlieren. Geh zum Kapitän und sag ihm, dass er ablegen soll.
+	AI_Output(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_00"); //You pulled through.
+	AI_Output(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_01"); //Can we finally get out of here?
+	AI_Output(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_02"); //Yep. The enemy has been defeated.
+	AI_Output(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_03"); //Then let's not waste any more time. Go to the captain and tell him to weigh anchor.
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
-		AI_Output(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_04"); //Ich hoffe, dass es nicht noch mehr von euch abtrünnigen Sektenanhängern gibt.
-		AI_Output(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_05"); //Möglich ist alles. Die Suchenden waren jedoch sehr gründlich. Selbst ich bin ihnen fast verfallen. Wer weiß?
+		AI_Output(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_04"); //I hope there aren't any more of you renegade sect members.
+		AI_Output(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_05"); //Anything is possible. The Seekers were very thorough, though. Even I almost became enslaved by them. Who knows?
 	};
 
-	AI_Output(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_06"); //Was wirst du jetzt tun?
-	AI_Output(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_07"); //Vielleicht werde ich mich aufs Land zurück ziehen und Farmer werden. Ich bin des Kämpfens müde.
+	AI_Output(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_06"); //What will you do next?
+	AI_Output(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_07"); //Maybe I'll retire to the country and become a farmer. I'm tired of fighting.
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "Start");
 };
@@ -319,7 +319,7 @@ instance DIA_Angar_DI_FOUNDAMULETT(C_INFO)
 	nr				= 7;
 	condition		= DIA_Angar_DI_FOUNDAMULETT_Condition;
 	information		= DIA_Angar_DI_FOUNDAMULETT_Info;
-	description		= "Ich habe dein Amulett gefunden.";
+	description		= "I found your amulet.";
 };
 
 func int DIA_Angar_DI_FOUNDAMULETT_Condition()

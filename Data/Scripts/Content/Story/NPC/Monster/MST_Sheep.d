@@ -5,7 +5,7 @@
 prototype Mst_Default_Sheep(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Schaf";
+	name							= "Sheep";
 	guild							= GIL_SHEEP;
 	level							= 1;
 
@@ -42,7 +42,7 @@ prototype Mst_Default_Sheep(C_Npc)
 	aivar[AIV_MM_FollowInWater]		= FALSE;
 
 	// -------- fight tactic --------
-	// fight_tactic = FAI_Giant_Rat;// Schafe k‰mpfen nicht!!
+	// fight_tactic = FAI_Giant_Rat;// Schafe k√§mpfen nicht!!
 	senses = SENSE_HEAR | SENSE_SEE | SENSE_SMELL;
 	senses_range = PERC_DIST_MONSTER_ACTIVE_MAX;
 
@@ -139,7 +139,7 @@ instance Hammel(Mst_Default_Sheep)
 instance Follow_Sheep(Mst_Default_Sheep)
 {
 	// -------- NPC --------
-	name							= "Liesel";
+	name							= "Betsy";
 
 	// -------- attributes --------
 
@@ -147,7 +147,7 @@ instance Follow_Sheep(Mst_Default_Sheep)
 	B_SetVisuals_Sheep();
 
 	// -------- aivars --------
-	aivar[AIV_ToughGuy]				= TRUE; // Liesel knn getˆtet werden, ohne daﬂ jemand sich anpiﬂt!
+	aivar[AIV_ToughGuy]				= TRUE; // Liesel knn get√∂tet werden, ohne da√ü jemand sich anpi√üt!
 	aivar[AIV_MM_RoamStart]			= OnlyRoutine;
 
 	Npc_SetToFistMode(self);
@@ -170,7 +170,7 @@ instance Follow_Sheep(Mst_Default_Sheep)
 instance Follow_Sheep_AKIL(Mst_Default_Sheep)
 {
 	// -------- NPC --------
-	name							= "Schaf";
+	name							= "Sheep";
 
 	// -------- attributes --------
 

@@ -1,19 +1,19 @@
 // ##########################################################################
 // ##
-// ## Hier stehen alle Buchständermobsiscripte
+// ## Hier stehen alle BuchstÃ¤ndermobsiscripte
 // ##
 // ##########################################################################
 
 //*************************************
-//	Buchständer in der Klosterbibliothek
+//	BuchstÃ¤nder in der Klosterbibliothek
 //*************************************
 
-const string Bookstand_01_S1_1 = "Die Prüfung des Feuers";
-const string Bookstand_01_S1_2 = "So ein Novize nicht erwählt ist, mag es sein, das er trotzdem die Bereitschaft verspürt sich der Prüfung der Magie zu unterwerfen. Wenn er diesen Entschluß reiflich überlegt hat und er darauf besteht, ist es ihm gewährt, die Prüfung zu verlangen und kein Magier darf sie ihm verweigern. Doch nicht nur die Prüfung der Magie wird ihm auferlegt, sondern er soll durch das Feuer seine Erleuchtung finden. Wenn er vor dem hohen Rat darauf besteht, so soll ihm die PRÜFUNG DES FEUERS gewährt werden.";
-const string Bookstand_01_S1_3 = "In dieser Prüfung soll gleichermaßen die Klugheit, Stärke und das Geschick des Novizen gefordert werden. So soll er drei Prüfungen erfüllen, jede empfangen durch einen der Magier des hohen Rates, bevor er den Eid der Flamme schwört und den Bund mit dem Feuer eingehen kann. ";
-const string Bookstand_01_S1_4 = "So ist es Innos Wille und so soll es geschehen. ";
-const string Bookstand_01_S1_5 = "Der hohe Rat";
-func void Use_Bookstand_01_S1() // Buchständer in der Magierbibliothek
+const string Bookstand_01_S1_1 = "The Test of Fire";
+const string Bookstand_01_S1_2 = "Though a novice may feel ready to submit to the Test of Magic, he may not necessarily be chosen. If, however, he has given his decision ample consideration and if he insists, he is accorded the right to demand the Test and no magician may deny it to him. But not only must he pass the Test of Magic, he must also find enlightenment through the fire. If he insists before the High Council, he shall be submitted to the TEST OF FIRE.";
+const string Bookstand_01_S1_3 = "The Test should challenge the wisdom, strength and dexterity of the novice. Therefore he must pass three trials, each of which is set before him by a magician of the High Council, before taking the Oath of the Fire to join the pact with the fire.";
+const string Bookstand_01_S1_4 = "Such is the will of Innos and so it shall be done.";
+const string Bookstand_01_S1_5 = "The High Council";
+func void Use_Bookstand_01_S1() // BuchstÃ¤nder in der Magierbibliothek
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 
@@ -21,7 +21,7 @@ func void Use_Bookstand_01_S1() // Buchständer in der Magierbibliothek
 	{
 		if (hero.guild == GIL_NOV)
 		{
-			KNOWS_FIRE_CONTEST = TRUE; // für die Prüfung des Feuers
+			KNOWS_FIRE_CONTEST = TRUE; // fÃ¼r die PrÃ¼fung des Feuers
 
 			Log_CreateTopic(TOPIC_FireContest, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_FireContest, LOG_RUNNING);
@@ -60,23 +60,23 @@ func void Use_Bookstand_01_S1() // Buchständer in der Magierbibliothek
 };
 
 //*************************************
-//	Buchständer in der Geheimen Bibliothek
+//	BuchstÃ¤nder in der Geheimen Bibliothek
 //*************************************
 // --------------------------------------
 var int FinalDragonEquipment_Once;
 // --------------------------------------
 
-const string FINALDRAGONEQUIPMENT_S1_1 = "...Ich hoffe, dass die Kuppel das Erz vor dem Zugriff Beliars zu schützen vermag. Der König ist einfältig genug zu glauben, dass wir die Kuppel zum Schutz vor Ausbrüchen errichten, doch solange wir mit diesen Ratschlagen unsere höheren Zeile erreichen, soll es uns recht sein. Ich hoffe, das uns genug Zeit bleibt uns auf den Kampf vorzubereiten. Sobald die Kuppel um das Minental erschaffen ist, werde ich mit all meiner mir zur Verfügung stehenden Macht versuchen in den bevorstehenden Kampf einzugreifen. ";
-const string FINALDRAGONEQUIPMENT_S1_2 = "...ich habe, genau nach Anleitung einfach Innos geweihtes Wasser auf einen Runenrohling geträufelt und am Runentisch zusammengeführt. Der Runenstein ist zerstört, ich glaube, dieser Spruch ist wirklich nur dem Einen zugänglich.";
-const string FINALDRAGONEQUIPMENT_S1_3 = "Die Heilige Aura Innos habe ich dem Klosterschtz übergeben. Sie wird von nun an, vom Klostervorsteher aufbewahrt, bis zu dem Tag, an dem sich der Eine offenbart.";
-const string FINALDRAGONEQUIPMENT_S1_4 = "Die Tränen Innos mögen in dem bevorstehenden Kampf eine Rolle spielen. Doch ist es wohl zu gefährlich sie offen aufzubewahren. Ich werde sie hier in der Bibliothek lassen.";
-const string FINALDRAGONEQUIPMENT_S1_5 = "Um in den geheimen Ort zu gelangen muss man eine Teleportrune bauen. Dazu benötigst du einen Runenrohling und eine kleines Fläschchen geweihtes Wasser. Mit der erstellten Runen kannst du dich in den Raum teleporteiren.";
-const string FINALDRAGONEQUIPMENT_S1_6 = "Ich bin nun sehr sicher, dass es die Tränen Innos waren, mit den die Paladine aus der vorderen Zeit, die längst vergessene Hohe Schwertweihe abgehalten haben. Es sollte also möglich sein, mit dem von mir entdeckten Fläschchen eine geweihten Waffe zusaätzliche Kraft zu geben.";
-const string FINALDRAGONEQUIPMENT_S1_7 = "Aus den Waffen des Dracheherren.";
-const string FINALDRAGONEQUIPMENT_S1_8 = "´Um einem Panzer aus Drachenschuppen die höchste Härte zu verleihen, so kann man die Schuppen mit dem Erz überzeihen, welches in dem Tal der Insel Karynis gefördert wird.";
-const string FINALDRAGONEQUIPMENT_S1_9 = "Um eine dem Drachenherren würdige Klinge zu erhalten, muss man die Klinge in Drachenblut tränken. Schon die Beigabe einer Menge von 5 kleinen Phiolen verleiht dem Stahl eine Härte und Schärfe, der nichts entgegen zu setzten ist.";
-const string FINALDRAGONEQUIPMENT_S1_10 = "Anmerkung: Mit Karynis ist zeifelsfrei das heutige Khorinis gemeint.";
-func void Use_FINALDRAGONEQUIPMENT_S1() // Buchständer in der geheimen Bibliothek
+const string FINALDRAGONEQUIPMENT_S1_1 = "... I hope the dome may protect the ore from the menace of Beliar. The King is naive enough to believe that we built the dome as protection against breakouts. Well, as long as such ruses enable us to fulfill our higher goals, let it be so. I can only hope we have enough time left to prepare for the fight. As soon as the dome around the Valley of Mines has been erected, I will use all the power at my disposal to intervene in the impeding fight.";
+const string FINALDRAGONEQUIPMENT_S1_2 = "... I followed the instructions and simply poured Innos' holy water over a blank runestone on a rune table. The runestone was destroyed. I suspect this spell really is accessible only to the One.";
+const string FINALDRAGONEQUIPMENT_S1_3 = "I have left the holy aura of Innos in the protection of the monastery. The abbot will take care of it until the One reveals himself.";
+const string FINALDRAGONEQUIPMENT_S1_4 = "The Tears of Innos may have a vital part to play in the fight ahead. But it's too dangerous to keep them where all can see. I'd better leave them here in the library.";
+const string FINALDRAGONEQUIPMENT_S1_5 = "You have to create a teleportation rune to reach the secret place. For that you need a blank runestone and a small bottle of holy water. You can use the rune to teleport into the room.";
+const string FINALDRAGONEQUIPMENT_S1_6 = "I am now reasonably certain that the Tears of Innos are what the paladins of old used in the long forgotten ritual Consecration of the Sword. That means I should be able to use the little bottle I found to give additional strength to a consecrated weapon.";
+const string FINALDRAGONEQUIPMENT_S1_7 = "From: Weapons of the dragon lord.";
+const string FINALDRAGONEQUIPMENT_S1_8 = "To make an armor of dragon scales as hard as possible, the scales may be coated with the ore mined in the valley on the isle of Karynis.";
+const string FINALDRAGONEQUIPMENT_S1_9 = "To make a blade worthy of a dragon lord, the blade should be steeped in dragon blood. Even 5 phials of the blood can give the steel unequalled sharpness and strength.";
+const string FINALDRAGONEQUIPMENT_S1_10 = "Note: 'Karynis' probably refers to what is now known as Khorinis.";
+func void Use_FINALDRAGONEQUIPMENT_S1() // BuchstÃ¤nder in der geheimen Bibliothek
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 

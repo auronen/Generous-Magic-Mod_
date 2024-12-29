@@ -49,7 +49,7 @@ class C_NPC
 	// **********************
 	// Feel free to use
 	// **********************
-	// FIXME: TODO: bei goldmaster auf das benötigte minimum reduzieren
+	// FIXME: TODO: bei goldmaster auf das benÃ¶tigte minimum reduzieren
 	var int aivar [100];
 	var string wp;
 
@@ -86,7 +86,7 @@ class C_Mission
 
 class C_Item
 {
-	// Für alle Items
+	// FÃ¼r alle Items
 	var int id;
 	var string name, nameID;
 	var int hp, hp_max;
@@ -94,23 +94,23 @@ class C_Item
 	var int mainflag, flags; // Hauptflag und weitere Flags
 	var int weight, value;
 
-	// Für Waffen
+	// FÃ¼r Waffen
 	var int damageType; // Welche Schadensarten
 	var int damageTotal;
 	var int damage [DAM_INDEX_MAX];
 
-	// Für Rüstungen
+	// FÃ¼r RÃ¼stungen
 	var int wear;
 	var int protection [PROT_INDEX_MAX];
 
-	// Für Nahrung
+	// FÃ¼r Nahrung
 	var int nutrition; // HP-Steigerung bei Nahrung
 
-	// Benötigte Attribute zum Benutzen des Items
+	// BenÃ¶tigte Attribute zum Benutzen des Items
 	var int cond_atr [3];
 	var int cond_value [3];
 
-	// Attribute, die bei anlegen des Items verändert werden
+	// Attribute, die bei anlegen des Items verÃ¤ndert werden
 	var int change_atr [3];
 	var int change_value [3];
 
@@ -128,7 +128,7 @@ class C_Item
 	// Die 3DS-Datei
 	var string visual;
 
-	// Veränderung des NSC-Meshes beim Anlegen dieses Gegenstandes
+	// VerÃ¤nderung des NSC-Meshes beim Anlegen dieses Gegenstandes
 	var string visual_change; // ASC - File
 	var string effect; // Effekt Instanz
 
@@ -158,24 +158,24 @@ class C_Item
 
 class C_Focus
 {
-	/// für NSCs
+	/// fÃ¼r NSCs
 	var float npc_longrange; // Zurufweite ( 20 m )
 	var float npc_range1, npc_range2; // Reichweite
 	var float npc_azi; // Azimuth ( Seitenwinkel )
-	var float npc_elevdo, npc_elevup; // Elevation ( Höhenwinkel )
-	var int npc_prio; // Priorität
+	var float npc_elevdo, npc_elevup; // Elevation ( HÃ¶henwinkel )
+	var int npc_prio; // PrioritÃ¤t
 
-	/// für ITEMs
+	/// fÃ¼r ITEMs
 	var float item_range1, item_range2; // Reichweite
 	var float item_azi; // Azimuth ( Seitenwinkel )
-	var float item_elevdo, item_elevup; // Elevation ( Höhenwinkel )
-	var int item_prio; // Priorität
+	var float item_elevdo, item_elevup; // Elevation ( HÃ¶henwinkel )
+	var int item_prio; // PrioritÃ¤t
 
-	/// für MOBs
+	/// fÃ¼r MOBs
 	var float mob_range1, mob_range2; // Reichweite
 	var float mob_azi; // Azimuth ( Seitenwinkel )
-	var float mob_elevdo, mob_elevup; // Elevation ( Höhenwinkel )
-	var int mob_prio; // Priorität
+	var float mob_elevdo, mob_elevup; // Elevation ( HÃ¶henwinkel )
+	var int mob_prio; // PrioritÃ¤t
 };
 
 class C_INFO

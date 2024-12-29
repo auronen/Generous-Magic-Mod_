@@ -1,5 +1,5 @@
 // ************************************************************************************************
-// Wirkung und Kosten von Tr‰nken
+// Wirkung und Kosten von Tr√§nken
 // ************************************************************************************************
 
 const int Value_HpEssenz = 25; const int HP_Essenz = 50;
@@ -23,7 +23,7 @@ const int Value_ManaTrunk = 200;
 const int Value_HpTrunk = 150;
 
 /******************************************************************************************/
-//	MANATRƒNKE //
+//	MANATR√ÑNKE //
 /******************************************************************************************/
 instance ItPo_Mana_01(C_Item)
 {
@@ -124,7 +124,7 @@ func void UseItPo_Mana_03()
 };
 
 /******************************************************************************************/
-//	HEILTRƒNKE //
+//	HEILTR√ÑNKE //
 /******************************************************************************************/
 instance ItPo_Health_01(C_Item)
 {
@@ -225,7 +225,7 @@ func void UseItPo_Health_03()
 };
 
 /******************************************************************************************/
-// TRƒNKE F‹R PERMANENTE ATTRIBUT-ƒNDERUNGEN!
+// TR√ÑNKE F√úR PERMANENTE ATTRIBUT-√ÑNDERUNGEN!
 /******************************************************************************************/
 instance ItPo_Perm_STR(C_Item)
 {
@@ -383,7 +383,7 @@ instance ItPo_Speed(C_Item)
 
 	description					= NAME_Speed_Potion;
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "Ermˆglicht kurzzeitiges Sprinten ";			count[1] = 0;
+	text[1]						= "Temporarily boosts speed.";			count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= NAME_Duration;								count[3] = Time_Speed / 60000;
 	text[4]						= "";											count[4] = 0;
@@ -399,7 +399,7 @@ func void UseItPo_Speed()
 //	MegaDrink Kapitel 6 //
 /******************************************************************************************/
 
-instance ItPo_MegaDrink(C_Item) // Joly: Megatrank aus Dracheneiern auf der Dracheninsel -> Kapitel 6 kurz vor¥m Endgegner
+instance ItPo_MegaDrink(C_Item) // Joly: Megatrank aus Dracheneiern auf der Dracheninsel -> Kapitel 6 kurz vor¬¥m Endgegner
 {
 	name						= "Embarla Firgasto";
 
@@ -421,7 +421,7 @@ instance ItPo_MegaDrink(C_Item) // Joly: Megatrank aus Dracheneiern auf der Drac
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Wirkung unbekannt";							count[3] = 0;
+	text[3]						= "Effects unknown.";							count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -437,6 +437,6 @@ func void UseItPo_MegaDrink()
 		B_RaiseAttribute(self, ATR_STRENGTH, STRorDEX_MegaDrink);
 	};
 
-	Npc_ChangeAttribute(self, ATR_MANA, - ATR_MANA); // Joly: gem‰ﬂ des Rezeptes
+	Npc_ChangeAttribute(self, ATR_MANA, - ATR_MANA); // Joly: gem√§√ü des Rezeptes
 	Snd_Play("DEM_Warn");
 };

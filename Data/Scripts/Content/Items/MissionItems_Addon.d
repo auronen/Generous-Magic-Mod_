@@ -4,7 +4,7 @@
 //****************************************************************************
 instance ItWr_SaturasFirstMessage_Addon_Sealed(C_Item)
 {
-	name						= "Versiegelte Botschaft";
+	name						= "Sealed Message";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -20,20 +20,20 @@ instance ItWr_SaturasFirstMessage_Addon_Sealed(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Diese Botschaft wurde sorgfältig versiegelt.";count[2] = 0;
+	text[2]						= "This message was carefully sealed.";count[2] = 0;
 };
 
 var int Use_SaturasFirstMessage_OneTime;
-const string SaturasFirstMessage_1 = "Werter Vatras,";
-const string SaturasFirstMessage_2 = "Wir sind bis zum Portal vorgedrungen. Du hattest recht.";
-const string SaturasFirstMessage_3 = "Es scheint tatsächlich so, als seien sie Adanos-gläubige gewesen. Ich bitte dich, das anhand meiner Aufzeichnungen nochmal zu prüfen.";
-const string SaturasFirstMessage_4 = "Wir haben schon seit Tagen keines dieser seltsamen Wesen aus Stein ausmachen können.";
-const string SaturasFirstMessage_5 = "Trotzdem bebt die Erde immer noch aus nicht erkennbaren Gründen.";
-const string SaturasFirstMessage_6 = "Ich vermute, dass uns das Studium bald mehr Aufklärung darüber bescheren wird.";
-const string SaturasFirstMessage_7 = "Das Ornament, das wir gefunden haben, hat eine weitaus wichtigere Bedeutung, als wir zuerst angenommen haben. Es scheint ein wichtiges Schlüsselartefakt zu sein. Ist aber leider nicht vollständig. Wir müssen es noch weiter studieren.";
-const string SaturasFirstMessage_8 = "Entsende eines unserer Kinder vom 'Ring des Wassers', um es uns zurück zu bringen. Wenn es geht, schicke nicht Cavalorn.";
-const string SaturasFirstMessage_9 = "Ich habe ihn damit beauftragt, dir diesen Brief zu überbringen. Ich denke, damit hat er erst einmal genug getan.";
-const string SaturasFirstMessage_10 = "Ich hoffe, dass wir das Richtige tun.";
+const string SaturasFirstMessage_1 = "Dear Vatras,";
+const string SaturasFirstMessage_2 = "We have adanced to the portal. You were correct.";
+const string SaturasFirstMessage_3 = "It indeed appears that they were believers in Adanos. I ask you to verify this once again with the help of my notes.";
+const string SaturasFirstMessage_4 = "We have not spotted any of those curious stone beings for days.";
+const string SaturasFirstMessage_5 = "Nevertheless, the earth continues to quake for no apparent reason.";
+const string SaturasFirstMessage_6 = "I suspect that our studies will soon bring us more enlightenment.";
+const string SaturasFirstMessage_7 = "The ornament which we found has a far more important significance than we first thought. It seems to be a crucial key artifact. Alas, it is not complete. We must study it further.";
+const string SaturasFirstMessage_8 = "Dispatch one of our children from the 'Ring of Water' to bring it back to us. If possible, do not send Cavalorn.";
+const string SaturasFirstMessage_9 = "I have assigned him to deliver this letter to you. I think that is enough for him to do. ";
+const string SaturasFirstMessage_10 = "I hope we are doing the right thing.";
 const string SaturasFirstMessage_11 = "Saturas";
 func void Use_SaturasFirstMessage()
 {
@@ -92,12 +92,12 @@ func void Use_SaturasFirstMessage_Sealed()
 
 //****************************************************************************
 //				Cavalorn's Brief an Vatras von Saturas
-//				Das Siegel wurde geöffnet
+//				Das Siegel wurde geÃ¶ffnet
 //			---------------------------------------------
 //****************************************************************************
 instance ItWr_SaturasFirstMessage_Addon(C_Item)
 {
-	name						= "Geöffnete Botschaft";
+	name						= "Opened message";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -113,11 +113,11 @@ instance ItWr_SaturasFirstMessage_Addon(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Saturas` Brief an Vatras";					count[2] = 0;
+	text[2]						= "Saturas' letter to Vatras";					count[2] = 0;
 };
 
 //****************************************************************************
-//				Portalschlüsselbruchstück
+//				PortalschlÃ¼sselbruchstÃ¼ck
 //			---------------------------------------------
 //****************************************************************************
 
@@ -134,7 +134,7 @@ instance ItMi_Ornament_Addon(C_ITEM)
 	value						= 0;
 
 	description					= name;
-	text[0]						= "Bruchstück eines grossen Ornamentrings";		count[0] = 0;
+	text[0]						= "Fragment of a large ornamental ring";		count[0] = 0;
 	INV_ZBIAS					= INVCAM_ENTF_MISC5_STANDARD;
 };
 
@@ -151,7 +151,7 @@ instance ItMi_Ornament_Addon_Vatras(C_ITEM) // Joly: gibt Vatras dem SC um ihn z
 	value						= 0;
 
 	description					= name;
-	text[0]						= "Bruchstück eines grossen Ornamentrings";		count[0] = 0;
+	text[0]						= "Fragment of a large ornamental ring";		count[0] = 0;
 	INV_ZBIAS					= INVCAM_ENTF_MISC5_STANDARD;
 };
 
@@ -162,7 +162,7 @@ instance ItMi_Ornament_Addon_Vatras(C_ITEM) // Joly: gibt Vatras dem SC um ihn z
 
 instance ItWr_Map_NewWorld_Ornaments_Addon(C_Item)
 {
-	name						= "Nefarius's Karte"; //
+	name						= "Nefarius' map"; //
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -176,8 +176,8 @@ instance ItWr_Map_NewWorld_Ornaments_Addon(C_Item)
 	value						= 250;
 
 	description					= name;
-	text[0]						= "auf dieser Karte sind die Stellen markiert";	count[0] = 0;
-	text[1]						= "an denen Nefarius die fehlenden Ornamente vermutet";count[1] = 0;
+	text[0]						= "The places where Nefarius assumes the missing";	count[0] = 0;
+	text[1]						= "ornaments can be found are marked on this map";count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
@@ -209,7 +209,7 @@ func void Use_Map_NewWorld_Ornaments()
 
 instance ItWr_Map_NewWorld_Dexter(C_Item)
 {
-	name						= "Landkarte Khorinis"; //
+	name						= "Land Map of Khorinis"; //
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -223,9 +223,9 @@ instance ItWr_Map_NewWorld_Dexter(C_Item)
 	value						= 210;
 
 	description					= name;
-	text[0]						= "Skip hat mir die Stelle markiert,";			count[0] = 0;
-	text[1]						= "wo ich den Kopf der Banditen";				count[1] = 0;
-	text[2]						= "Dexter finden kann.";						count[2] = 0;
+	text[0]						= "Skip has marked the place";			count[0] = 0;
+	text[1]						= "where I can find the bandit chief";				count[1] = 0;
+	text[2]						= "Dexter.";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -254,7 +254,7 @@ func void Use_Map_NewWorld_Dexter()
 
 prototype Rangerring_Prototype(C_ITEM)
 {
-	name = "Aquamarinring";
+	name = "Aquamarine ring";
 
 	mainflag = ITEM_KAT_MAGIC;
 	flags = ITEM_RING | ITEM_MISSION; // Joly:kein Multiitem. Die ringe sind individuell
@@ -268,7 +268,7 @@ prototype Rangerring_Prototype(C_ITEM)
 	on_equip = Equip_ItRi_Ranger_Addon;
 	on_unequip = UnEquip_ItRi_Ranger_Addon;
 
-	description = "Erkennungszeichen des 'Rings des Wassers'";
+	description = "Recognition sign of the 'Ring of Water'";
 
 	TEXT[5] = NAME_Value;
 	COUNT[5] = value;
@@ -311,19 +311,19 @@ func void UnEquip_ItRi_Ranger_Addon()
 // Lares Ring
 instance ItRi_Ranger_Lares_Addon(Rangerring_Prototype)
 {
-	TEXT[1] = "Dieser Ring gehört Lares";
+	TEXT[1] = "This ring belongs to Lares";
 };
 
 // PCs Ring
 instance ItRi_Ranger_Addon(Rangerring_Prototype)
 {
-	TEXT[1] = "Dieser Ring gehört mir";
+	TEXT[1] = "This ring belongs to me";
 };
 
 // Lance Ring
 instance ItRi_LanceRing(Rangerring_Prototype)
 {
-	TEXT[1] = "Dieser Ring gehört Lance";
+	TEXT[1] = "This ring belongs to Lance";
 };
 
 //****************************************************************************
@@ -333,7 +333,7 @@ instance ItRi_LanceRing(Rangerring_Prototype)
 
 instance ItMi_PortalRing_Addon(C_Item)
 {
-	name						= "Ornamentring";
+	name						= "Ornamental ring";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -343,7 +343,7 @@ instance ItMi_PortalRing_Addon(C_Item)
 
 	value						= 0;
 
-	description					= "Dieser Ring öffnet das Portal";
+	description					= "This ring opens the portal";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -354,12 +354,12 @@ instance ItMi_PortalRing_Addon(C_Item)
 };
 
 //**********************************************************************************
-//	Empfehlungsschreiben für Andre, Miliz zu werden (von Martin)
+//	Empfehlungsschreiben fÃ¼r Andre, Miliz zu werden (von Martin)
 // ----------------------------------------------------------------------------------
 
 instance ItWr_Martin_MilizEmpfehlung_Addon(C_Item)
 {
-	name						= "Martins Empfehlungsschreiben";
+	name						= "Martin's letter of recommendation";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -372,19 +372,19 @@ instance ItWr_Martin_MilizEmpfehlung_Addon(C_Item)
 
 	value						= 0;
 
-	description					= "Empfehlungsschreiben für Lord Andre";
+	description					= "Letter of recommendation for Lord Andre";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "dieses Schreiben soll mir helfen bei";		count[2] = 0;
-	text[3]						= "der Miliz aufgenommen zu werden";			count[3] = 0;
+	text[2]						= "This letter should help me be";		count[2] = 0;
+	text[3]						= "accepted in the militia";			count[3] = 0;
 };
 
-const string MartinMilizEmpfehlung_Addon_1 = "Geehrter Lord Andre";
-const string MartinMilizEmpfehlung_Addon_2 = "Mit diesem Schreiben übermittle ich euch einen neuen Rekruten für unsere Miliz.";
-const string MartinMilizEmpfehlung_Addon_3 = "Er hat sich bei mir schon durch einige schwierige und standesgemässe Dienste verdient gemacht.";
-const string MartinMilizEmpfehlung_Addon_4 = "Ich bin mir sicher, dass er sich sehr gut eignet um den König und das Wohl der Bürger dieser Stadt zu schützen.";
-const string MartinMilizEmpfehlung_Addon_5 = "Innos schütze den König";
-const string MartinMilizEmpfehlung_Addon_6 = "     Proviantmeister Martin";
+const string MartinMilizEmpfehlung_Addon_1 = "Honored Lord Andre";
+const string MartinMilizEmpfehlung_Addon_2 = "With this letter I send a new recruit for our militia to you.";
+const string MartinMilizEmpfehlung_Addon_3 = "He has already been of service to me in some difficult and important matters.";
+const string MartinMilizEmpfehlung_Addon_4 = "I am sure that he is very well suited to protect the King and the welfare of the citizens of this city.";
+const string MartinMilizEmpfehlung_Addon_5 = "Innos bless the King.";
+const string MartinMilizEmpfehlung_Addon_6 = " Provisions Master Martin";
 func void Use_MartinMilizEmpfehlung_Addon()
 {
 	var int nDocID;
@@ -414,7 +414,7 @@ func void Use_MartinMilizEmpfehlung_Addon()
 
 instance ItWr_RavensKidnapperMission_Addon(C_Item)
 {
-	name						= "Befehle";
+	name						= "Orders";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -430,19 +430,19 @@ instance ItWr_RavensKidnapperMission_Addon(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ich habe dieses Schreiben ";					count[2] = 0;
-	text[3]						= "dem Banditen Dexter abgenommen";				count[3] = 0;
+	text[2]						= "I took this letter from";					count[2] = 0;
+	text[3]						= "the bandit Dexter";				count[3] = 0;
 };
 
 var int Use_RavensKidnapperMission_Addon_OneTime;
-const string RavensKidnapperMission_Addon_1 = "Dexter, du Mistkerl!";
-const string RavensKidnapperMission_Addon_2 = "Als ich noch Erzbaron war, warst du nicht so unzuverlässig.";
-const string RavensKidnapperMission_Addon_3 = "Wenn du es nicht schaffst, noch mehr Bürger aus der Stadt zu entführen und zu mir zu entsenden, dann werden wir bald ein handfestes Problem mit den Jungs in unserem Versteck haben. ";
-const string RavensKidnapperMission_Addon_4 = "Ich brauche hier mehr Sklaven, sonst starten die Jungs hier noch eine Revolte. Und was das heißt, muss ich dir nicht sagen, oder?";
-const string RavensKidnapperMission_Addon_5 = "Ich stehe kurz davor in den Tempel hinein zu gelangen. Da kann ich mir Störungen dieser Art nicht leisten.";
-const string RavensKidnapperMission_Addon_6 = "Und noch ein Problem:";
-const string RavensKidnapperMission_Addon_7 = "Auf kurz oder lang müssen wir einen Weg über die hohen Berge im Nordosten von Khorinis finden. Die Piraten machen die Überfahrten sicher nicht mehr lange mit, wenn wir sie nicht mehr dafür bezahlen.";
-const string RavensKidnapperMission_Addon_8 = "     Raven";
+const string RavensKidnapperMission_Addon_1 = "Dexter, you bastard!";
+const string RavensKidnapperMission_Addon_2 = "You weren't so unreliable when I was still an ore baron.";
+const string RavensKidnapperMission_Addon_3 = "If you can't manage to kidnap more citizens from the city and send them to me, then we will soon have a serious problem with the boys in our hideout.";
+const string RavensKidnapperMission_Addon_4 = "I need more slaves here or the boys will start a revolt. And I don't have to tell you what that means, do I?";
+const string RavensKidnapperMission_Addon_5 = "I am about to get inside the temple. With that, I can't afford disturbances of this sort.";
+const string RavensKidnapperMission_Addon_6 = "And one more problem:";
+const string RavensKidnapperMission_Addon_7 = "Sooner or later we have to find a way over the high mountains in the northeast of Khorinis. The pirates won't handle the transport much longer if we don't pay them any more.";
+const string RavensKidnapperMission_Addon_8 = " Raven";
 func void Use_RavensKidnapperMission_Addon()
 {
 	if ((Use_RavensKidnapperMission_Addon_OneTime == FALSE)
@@ -477,12 +477,12 @@ func void Use_RavensKidnapperMission_Addon()
 };
 
 //**********************************************************************************
-//	Empfehlungsschreiben für Pedro, ins Kloster eingelassen zu werden.
+//	Empfehlungsschreiben fÃ¼r Pedro, ins Kloster eingelassen zu werden.
 // ----------------------------------------------------------------------------------
 
 instance ItWr_Vatras_KDFEmpfehlung_Addon(C_Item)
 {
-	name						= "Vatras Empfehlungsschreiben";
+	name						= "Vatras' letter of recommendation";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -498,15 +498,15 @@ instance ItWr_Vatras_KDFEmpfehlung_Addon(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "dieses Schreiben soll mir helfen ohne";		count[2] = 0;
-	text[3]						= "Tribut ins Kloster der Feuermagier";			count[3] = 0;
-	text[4]						= "eingelassen zu werden.";						count[4] = 0;
+	text[2]						= "This letter should help me get into";		count[2] = 0;
+	text[3]						= "the Fire Magicians' monastery";			count[3] = 0;
+	text[4]						= "without tribute.";						count[4] = 0;
 };
 
-const string VatrasKDFEmpfehlung_Addon_1 = "Brüder des Feuers";
-const string VatrasKDFEmpfehlung_Addon_2 = "Mir wurde soeben zugetragen, dass es einen Tribut erfordert, in eure Gefilde eingelassen zu werden.";
-const string VatrasKDFEmpfehlung_Addon_3 = "Ich übermittle mit diesem Schreiben eine gläubigen Mann, der Novize in euren Reihen werden will.";
-const string VatrasKDFEmpfehlung_Addon_4 = "     Vatras";
+const string VatrasKDFEmpfehlung_Addon_1 = "Brothers of the Fire";
+const string VatrasKDFEmpfehlung_Addon_2 = "It has just been reported to me that you require a tribute for admission into your realm.";
+const string VatrasKDFEmpfehlung_Addon_3 = "I send along with this letter a devout man who wishes to become a novice in your ranks.";
+const string VatrasKDFEmpfehlung_Addon_4 = "Vatras";
 func void Use_VatrasKDFEmpfehlung_Addon()
 {
 	var int nDocID;
@@ -523,7 +523,7 @@ func void Use_VatrasKDFEmpfehlung_Addon()
 				Doc_PrintLines	(nDocID, 0, "");
 				Doc_PrintLines	(nDocID, 0, VatrasKDFEmpfehlung_Addon_2);
 				Doc_PrintLines	(nDocID, 0, VatrasKDFEmpfehlung_Addon_3);
-				// Doc_PrintLine	(nDocID, 0, "Ich hoffe, dass ich nicht persönlich erscheinen muss ihm den Einlass ");
+				// Doc_PrintLine	(nDocID, 0, "Ich hoffe, dass ich nicht persÃ¶nlich erscheinen muss ihm den Einlass ");
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, VatrasKDFEmpfehlung_Addon_4);
 	Doc_Show(nDocID);
@@ -532,7 +532,7 @@ func void Use_VatrasKDFEmpfehlung_Addon()
 /******************************************************************************************/
 instance ItMi_LostInnosStatue_Daron(C_Item)
 {
-	name						= "Wertvolle Innos Statue";
+	name						= "Valuable statue of Innos";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -557,7 +557,7 @@ instance ItMi_LostInnosStatue_Daron(C_Item)
 
 instance ItWr_LuciasLoveLetter_Addon(C_Item)
 {
-	name						= "Lucias Abschiedsbrief";
+	name						= "Lucia's farewell letter";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -579,11 +579,11 @@ instance ItWr_LuciasLoveLetter_Addon(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string LuciasLoveLetter_Addon_1 = "Liebster Elvrich";
-const string LuciasLoveLetter_Addon_2 = "Mir fehlen die Worte um zu beschreiben, wie leid es mir tut.";
-const string LuciasLoveLetter_Addon_3 = "Ich weiß, dass du es nicht verstehen wirst, aber ich bin zu dem Schluss gekommen, dass es besser für uns beide ist, wenn du dir ein anständigeres Mädchen als mich suchst.";
-const string LuciasLoveLetter_Addon_4 = "Von dort, wo ich jetzt hin gehe, werde ich nicht mehr zurück kehren. Vergiss mich. Eine Dirne wie ich ist nichts für so einen aufrechten Kerl, wie du einer bist. Leb' wohl.";
-const string LuciasLoveLetter_Addon_5 = "     Lucia";
+const string LuciasLoveLetter_Addon_1 = "Dearest Elvrich";
+const string LuciasLoveLetter_Addon_2 = "I cannot find the words to describe how sorry I am.";
+const string LuciasLoveLetter_Addon_3 = "I know that you will not understand but I have come to the conclusion that it is better for both of us if you find a more respectable girl than I am.";
+const string LuciasLoveLetter_Addon_4 = "I won't be coming back from where I am going now. Forget me. A wench like me isn't right for an upright fellow like you. Farewell.";
+const string LuciasLoveLetter_Addon_5 = " Lucia";
 func void Use_LuciasLoveLetter_Addon()
 {
 	Log_CreateTopic(TOPIC_Addon_Lucia, LOG_MISSION);
@@ -617,7 +617,7 @@ func void Use_LuciasLoveLetter_Addon()
 
 prototype EffectItemPrototype_Addon(C_Item)
 {
-	name = "Stein";
+	name = "Stone";
 
 	mainflag = ITEM_KAT_NONE;
 	flags = ITEM_MULTI;
@@ -654,7 +654,7 @@ instance ItMi_OrnamentEffekt_BIGFARM_Addon(EffectItemPrototype_Addon)
 // Hacke
 instance ItMi_Rake(C_Item)
 {
-	name						= "Hacke";
+	name						= "Pick";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -668,8 +668,8 @@ instance ItMi_Rake(C_Item)
 	value						= Value_Rake;
 
 	description					= name;
-	// text[3]					= "(Lässt sich bei geöffnetem Inventar benutzen)";
-	// text[4]					= "('Aktionstaste' + 'Pfeil- Vorne' gedrückt halten)";
+	// text[3]					= "(LÃ¤sst sich bei geÃ¶ffnetem Inventar benutzen)";
+	// text[4]					= "('Aktionstaste' + 'Pfeil- Vorne' gedrÃ¼ckt halten)";
 
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
@@ -687,9 +687,9 @@ func void Use_Rake()
 };
 
 /******************************************************************************************/
-instance ItRi_Addon_BanditTrader(C_Item) // Händlergildenring
+instance ItRi_Addon_BanditTrader(C_Item) // HÃ¤ndlergildenring
 {
-	name						= "Gildenring";
+	name						= "Guild ring";
 
 	mainflag					= ITEM_KAT_MAGIC;
 	flags						= ITEM_RING;
@@ -700,10 +700,10 @@ instance ItRi_Addon_BanditTrader(C_Item) // Händlergildenring
 
 	value						= 5;
 
-	description					= "Gravierter Ring";
+	description					= "Engraved ring";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "der Übersee-Händlergilde Araxos";			count[2] = 0;
+	text[2]						= "overseas-trader guild Araxos";			count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -718,7 +718,7 @@ instance ItRi_Addon_BanditTrader(C_Item) // Händlergildenring
 
 instance ItWr_Addon_BanditTrader(C_Item)
 {
-	name						= "Lieferung";
+	name						= "Delivery";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -734,18 +734,18 @@ instance ItWr_Addon_BanditTrader(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Dieses Schreiben habe ich bei";				count[2] = 0;
-	text[3]						= "den Banditen hinter Sekobs Hof gefunden.";	count[3] = 0;
+	text[2]						= "I found this letter with the";				count[2] = 0;
+	text[3]						= "bandits behind Sekob's farm";	count[3] = 0;
 };
 
 var int Use_ItWr_Addon_BanditTrader_OneTime;
-const string ItWr_Addon_BanditTrader_1 = "15 Kurzschwerter";
-const string ItWr_Addon_BanditTrader_2 = "20 Degen";
-const string ItWr_Addon_BanditTrader_3 = "25 Laib Brot";
-const string ItWr_Addon_BanditTrader_4 = "15 Flaschen Wein";
-const string ItWr_Addon_BanditTrader_5 = "Das war das letzte Mal. ";
-const string ItWr_Addon_BanditTrader_6 = "Die Sache wird mir langsam zu heiß";
-const string ItWr_Addon_BanditTrader_7 = "     Fernando";
+const string ItWr_Addon_BanditTrader_1 = "15 short swords";
+const string ItWr_Addon_BanditTrader_2 = "20 rapiers";
+const string ItWr_Addon_BanditTrader_3 = "25 loaves of bread";
+const string ItWr_Addon_BanditTrader_4 = "15 bottles of wine";
+const string ItWr_Addon_BanditTrader_5 = "That was the last time.";
+const string ItWr_Addon_BanditTrader_6 = "This thing is getting too hot";
+const string ItWr_Addon_BanditTrader_7 = "FERNANDO";
 func void Use_ItWr_Addon_BanditTrader()
 {
 	BanditTrader_Lieferung_Gelesen = TRUE;
@@ -783,7 +783,7 @@ func void Use_ItWr_Addon_BanditTrader()
 //****************************************************************************
 instance ItWr_Vatras2Saturas_FindRaven(C_Item)
 {
-	name						= "Botschaft";
+	name						= "Message";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -799,16 +799,16 @@ instance ItWr_Vatras2Saturas_FindRaven(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Vatras Schreiben für Saturas";				count[2] = 0;
+	text[2]						= "Vatras' letter for Saturas";				count[2] = 0;
 };
 
-const string Vatras2Saturas_FindRaven_1 = "Werter Saturas";
-const string Vatras2Saturas_FindRaven_2 = "Ich hoffe, ihr seid schon bald am Ziel. Unsere Situation hier in der Stadt scheint sich zur Zeit etwas zu entspannen. Aber ich fürchte, die Ruhe trügt. Ihr solltet euch beeilen. Ich brauche euch hier.";
-const string Vatras2Saturas_FindRaven_3 = "Ich habe deine Aufzeichnungen studiert und kann deinen Verdacht bestätigen. Die Schriftzeichen deuten tatsächlich auf eine Adanosgläubige Kultur hin. Seid also vorsichtig und lasst euch nicht von falschen Propheten blenden.";
-const string Vatras2Saturas_FindRaven_4 = "Die vermissten Bürger von Khorinis wurden von dem ehemaligen Erzbaron Raven in die Region verschleppt, in die das Portal offensichtlich führen wird.";
-const string Vatras2Saturas_FindRaven_5 = "Noch eines: Ich habe euch Hilfe entsendet. Der Überbringer dieser Nachricht ist etwas ganz besonderes. Er hat so einen bemerkenswerten Glanz in seinen Augen. Ich bin mir nicht sicher, aber es könnte ER sein, auch wenn wir ihn uns anders vorgestellt haben.";
-const string Vatras2Saturas_FindRaven_6 = "Prüfe ihn. Ich denke, ich habe recht.";
-const string Vatras2Saturas_FindRaven_7 = "     Vatras";
+const string Vatras2Saturas_FindRaven_1 = "Dear Saturas";
+const string Vatras2Saturas_FindRaven_2 = "I hope that you will soon reach your goal. Our situation here in the city appears to have relaxed somewhat at the moment. But I fear that the quiet is deceptive. You should hurry. I need you here.";
+const string Vatras2Saturas_FindRaven_3 = "I have studied your records and can confirm your suspicion. The writing does indeed point to an Adanos-worshipping culture. Be careful and do not allow yourselves to be blinded by false prophets.";
+const string Vatras2Saturas_FindRaven_4 = "The missing citizens of Khorinis were dragged by the former ore baron Raven to the region where the portal obviously leads.";
+const string Vatras2Saturas_FindRaven_5 = "One more thing: I have sent you help. The bearer of this message is somebody very special. He has such a remarkable gleam in his eyes. I am not certain, but it could be HE, even if we had imagined him differently.";
+const string Vatras2Saturas_FindRaven_6 = "Test him. I think I am right.";
+const string Vatras2Saturas_FindRaven_7 = "Vatras";
 func void Use_Vatras2Saturas_FindRaven()
 {
 	var int nDocID;
@@ -838,7 +838,7 @@ func void Use_Vatras2Saturas_FindRaven_Sealed()
 
 instance ItWr_Vatras2Saturas_FindRaven_opened(C_Item)
 {
-	name						= "Geöffnete Botschaft";
+	name						= "Opened message";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -854,7 +854,7 @@ instance ItWr_Vatras2Saturas_FindRaven_opened(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Vatras Schreiben für Saturas";				count[2] = 0;
+	text[2]						= "Vatras' letter for Saturas";				count[2] = 0;
 };
 
 // ------------------------------------------------------------------------------------------
@@ -862,7 +862,7 @@ instance ItWr_Vatras2Saturas_FindRaven_opened(C_Item)
 // ------------------------------------------------------------------------------------------
 instance ItAm_Addon_WispDetector(C_Item)
 {
-	name						= "Erzamulett";
+	name						= "Ore amulet";
 
 	mainflag					= ITEM_KAT_MAGIC;
 	flags						= ITEM_AMULET;
@@ -879,7 +879,7 @@ instance ItAm_Addon_WispDetector(C_Item)
 
 	value						= Value_Am_DexStrg;
 
-	description					= "Erzamulett des suchenden Irrlichts";
+	description					= "Ore amulet of the searching will-o'-the-wisp";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -928,7 +928,7 @@ func void UnEquip_WispDetector()
 
 instance ItFo_Addon_Krokofleisch_Mission(C_Item)
 {
-	name						= "Sumpfrattenfleisch";
+	name						= "Swamprat meat";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -942,7 +942,7 @@ instance ItFo_Addon_Krokofleisch_Mission(C_Item)
 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "Riecht irgendwie fischig!";					count[1] = 0;
+	text[1]						= "Smells fishy somehow!";					count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
@@ -951,7 +951,7 @@ instance ItFo_Addon_Krokofleisch_Mission(C_Item)
 
 instance ItRi_Addon_MorgansRing_Mission(C_Item)
 {
-	name						= "Morgans Ring";
+	name						= "Morgan's ring";
 
 	mainflag					= ITEM_KAT_MAGIC;
 	flags						= ITEM_RING | ITEM_MISSION;
@@ -969,7 +969,7 @@ instance ItRi_Addon_MorgansRing_Mission(C_Item)
 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "Der Ring ist mit lauter feinen Runen verziert.";count[1] = 0;
+	text[1]						= "The ring is decorated with many fine runes.";count[1] = 0;
 	text[2]						= NAME_ADDON_BONUS_1H;							count[2] = 10;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
@@ -991,7 +991,7 @@ func void UnEquip_MorgansRing()
 
 instance ItMi_Focus(C_Item)
 {
-	name						= "Fokusstein";
+	name						= "Focus stone";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1014,11 +1014,11 @@ instance ItMi_Focus(C_Item)
 };
 
 // ---------------------------------------------------------------------------
-//				Stahl Paket für Huno
+//				Stahl Paket fÃ¼r Huno
 // ---------------------------------------------------------------------------
 instance ItMi_Addon_Steel_Paket(C_Item)
 {
-	name						= "Stahl - Paket";
+	name						= "Steel package";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1031,8 +1031,8 @@ instance ItMi_Addon_Steel_Paket(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Diese Paket ist WIRKLICH schwer";			count[2] = 0;
-	text[3]						= "Es enthält einen dicken Stahlklumpen";		count[3] = 0;
+	text[2]						= "This package is REALLY heavy";			count[2] = 0;
+	text[3]						= "It contains a fat lump of steel";		count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -1042,7 +1042,7 @@ instance ItMi_Addon_Steel_Paket(C_Item)
 // ------------------------------------------------------------------------------------------
 instance ItWr_StonePlateCommon_Addon(C_Item)
 {
-	name						= "Alte Steintafel";
+	name						= "Old stone tablet";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -1058,7 +1058,7 @@ instance ItWr_StonePlateCommon_Addon(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Eine graue Steintafel";						count[2] = 0;
+	text[2]						= "A gray stone tablet";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value_StonePlateCommon;
@@ -1068,10 +1068,10 @@ instance ItWr_StonePlateCommon_Addon(C_Item)
 };
 
 // ---------------------------------------------------------------------------
-const string StonePlateCommon_1 = "Die Kaste der Krieger hatte den Zorn unseres Gottes heraufbeschworen.";
-const string StonePlateCommon_2 = "RHADEMES, der Nachfolger QUAHODRONS, wurde gebannt. Aber seine böse Macht erreichte uns selbst vom Ort seiner Verbannung noch.";
-const string StonePlateCommon_3 = "Wir waren machtlos dagegen.";
-const string StonePlateCommon_4 = "ADANOS Zorn hat JHARKENDAR getroffen!";
+const string StonePlateCommon_1 = "The caste of the warriors called down the wrath of our god.";
+const string StonePlateCommon_2 = "RHADEMES, the successor of Quarhodron, was banished. But his evil power reached us even from the place of his exile.";
+const string StonePlateCommon_3 = "We were powerless against it.";
+const string StonePlateCommon_4 = "ADANOS' wrath struck JHERENDAR!";
 func void Use_StonePlateCommon()
 {
 	var int nDocID;
@@ -1122,7 +1122,7 @@ func void Use_StonePlateCommon()
 
 instance ItMi_Addon_Stone_01(C_Item) // Esteban und Thorus // Joly:Die Banditen benutzen diese Steintafeln als Zahlungsmittel.
 {
-	name						= "Rote Steintafel";
+	name						= "Red stone tablet";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -1141,7 +1141,7 @@ instance ItMi_Addon_Stone_01(C_Item) // Esteban und Thorus // Joly:Die Banditen 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Eine rote Steintafel";						count[2] = 0;
+	text[2]						= "A red stone tablet";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	INV_ROTX					= - 90;
 	INV_ROTY					= 0;
@@ -1149,7 +1149,7 @@ instance ItMi_Addon_Stone_01(C_Item) // Esteban und Thorus // Joly:Die Banditen 
 };
 
 // ---------------------------------------------------------------------------
-const string Addon_Stone_01_1 = "Wir, die letzten drei Anführer des Rates der Fünf, haben die Kammern des Tempels mit Fallen versehen und den Eingang versteckt, auf das das Schwert nie wieder das Tageslicht erblicke.";
+const string Addon_Stone_01_1 = "We, the last three leaders of the Council of Five, have provided the chambers of the temple with traps and hidden the entrance so that the sword will never again see the light of day.";
 const string Addon_Stone_01_2 = "Erfjkemvfj Hwoqmnyhan ckh. Fjewheege Egdgsmkd Ygc slje asdkjhnead Gkjsdhad Uhndter rygilliambwe ewzbfujbwe Iuhdfb. Revfnbrebuiwe ewohjfribwe wef. Sebnejbuwd Weinfiwjf Ihwqpjrnn.";
 func void Use_Addon_Stone_01()
 {
@@ -1178,9 +1178,9 @@ func void Use_Addon_Stone_01()
 // ---------------------------------------------------------------------------
 //		Steintafel 5
 // ---------------------------------------------------------------------------
-instance ItMi_Addon_Stone_05(C_Item) // Valley - Totenwächter
+instance ItMi_Addon_Stone_05(C_Item) // Valley - TotenwÃ¤chter
 {
-	name						= "Gelbe Steintafel";
+	name						= "Yellow stone tablet";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -1199,7 +1199,7 @@ instance ItMi_Addon_Stone_05(C_Item) // Valley - Totenwächter
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Eine gelbe Steintafel";						count[2] = 0;
+	text[2]						= "A yellow stone tablet";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	INV_ROTX					= - 90;
 	INV_ROTY					= 0;
@@ -1207,7 +1207,7 @@ instance ItMi_Addon_Stone_05(C_Item) // Valley - Totenwächter
 };
 
 // ---------------------------------------------------------------------------
-const string Addon_Stone_05_1 = "Ich, der sich gegen den Entschluß der Drei gestellt hatte, erbaute die erste Falle. Und nur ich kenne die richtige Pforte.";
+const string Addon_Stone_05_1 = "I, who was against the decision of the Three, built the first trap. And only I know the correct doorway.";
 const string Addon_Stone_05_2 = "Fjewheege Egdgsmkd Ygc slje asdkjhnead Gkjsdhad Uhnd Esfjwedbwe ewzbfujbwe Iuhdfb. Sebnejbuwd Weinfiwjf Ihwqpjrnn. Erfjkemvfj Hwoqmnyhan ckh.";
 func void Use_Addon_Stone_05()
 {
@@ -1238,7 +1238,7 @@ func void Use_Addon_Stone_05()
 // ---------------------------------------------------------------------------
 instance ItMi_Addon_Stone_03(C_Item) // Valley - Priester
 {
-	name						= "Blaue Steintafel";
+	name						= "Blue stone tablet";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -1257,7 +1257,7 @@ instance ItMi_Addon_Stone_03(C_Item) // Valley - Priester
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Eine blaue Steintafel";						count[2] = 0;
+	text[2]						= "A blue stone tablet";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	INV_ROTX					= - 90;
 	INV_ROTY					= 0;
@@ -1265,7 +1265,7 @@ instance ItMi_Addon_Stone_03(C_Item) // Valley - Priester
 };
 
 // ---------------------------------------------------------------------------
-const string Addon_Stone_03_1 = "KHARDIMON ersann die zweite Falle. Und nur der, der den Weg des Lichts bis zum Ende geht, wird die dritte Kammer erreichen.";
+const string Addon_Stone_03_1 = "KHARDIMON devised the second trap. And only he who follows the way of Light to the end will reach the third chamber.";
 const string Addon_Stone_03_2 = "KHARDIMON Weinfiwjf Ihwqpjrnn. Erfjkemvfj Hwoqmnyhan ckh. Gkjsdhad Uhnd Esfjwedbwe ewzbfujbwe.";
 func void Use_Addon_Stone_03()
 {
@@ -1298,7 +1298,7 @@ func void Use_Addon_Stone_03()
 // ---------------------------------------------------------------------------
 instance ItMi_Addon_Stone_04(C_Item) // DAS DING AUS DEM SENAT /SUMPF // Joly: Haus der Heiler
 {
-	name						= "Grüne Steintafel";
+	name						= "Green stone tablet";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -1317,7 +1317,7 @@ instance ItMi_Addon_Stone_04(C_Item) // DAS DING AUS DEM SENAT /SUMPF // Joly: H
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Eine grüne Steintafel";						count[2] = 0;
+	text[2]						= "A green stone tablet";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	INV_ROTX					= - 90;
 	INV_ROTY					= 0;
@@ -1325,7 +1325,7 @@ instance ItMi_Addon_Stone_04(C_Item) // DAS DING AUS DEM SENAT /SUMPF // Joly: H
 };
 
 // ---------------------------------------------------------------------------
-const string Addon_Stone_04_1 = "Die dritte Falle wurde von QUARHODRON erbaut, und nur er weiß, wie man die Pforte öffnet.";
+const string Addon_Stone_04_1 = "The third trap was built by QUARHODRON and only he knows how to open the portal.";
 const string Addon_Stone_04_2 = "Esfjwedbwe ewzbfujbwe. Fjewheege QUARHODRON Ygc slje asdkjhnead. Sebnejbuwd Weinfiwjf Ihwqpjrnn. Gkjsdhad Uhnd.";
 func void Use_Addon_Stone_04()
 {
@@ -1356,7 +1356,7 @@ func void Use_Addon_Stone_04()
 // ---------------------------------------------------------------------------
 instance ItMi_Addon_Stone_02(C_Item) // Bibliothek der Erbauer.
 {
-	name						= "Violette Steintafel";
+	name						= "Purple stone tablet";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -1375,7 +1375,7 @@ instance ItMi_Addon_Stone_02(C_Item) // Bibliothek der Erbauer.
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Eine violette Steintafel";					count[2] = 0;
+	text[2]						= "A purple stone tablet";					count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	INV_ROTX					= - 90;
 	INV_ROTY					= 0;
@@ -1383,9 +1383,9 @@ instance ItMi_Addon_Stone_02(C_Item) // Bibliothek der Erbauer.
 };
 
 // ---------------------------------------------------------------------------
-const string Addon_Stone_02_1 = "QUARHODRON war es auch, der mit der Hilfe von KHARDIMON das äußere Tor zum Tempel versiegelte. Keiner von beiden hat das Ritual überlebt.";
-const string Addon_Stone_02_2 = "Nur ich blieb zurück, um von den Ereignissen zu erzählen.";
-const string Addon_Stone_02_3 = "Ich hoffe, daß RHADEMES für alle Zeiten im Tempel verrottet!";
+const string Addon_Stone_02_1 = "It was also Quarhodron who sealed the outer gate of the temple with the help of KHARDIMON. Neither of them survived the ritual.";
+const string Addon_Stone_02_2 = "Only I remain to tell the tale.";
+const string Addon_Stone_02_3 = "I hope that RHADEMES rots for eternity in the temple!";
 const string Addon_Stone_02_4 = "QUARHODRON Ygc slje asdkjhnead. KHARDIMON Weinfiwjf Ihwqpjrnn. Erfjkemvfj Hwoqmnyhan ckh. Fjewheege Egdgsmkd Esfjwedbwe asdkjhnead. Gkjsdhad Uhnd.";
 const string Addon_Stone_02_5 = "Revfnbrebuiwe ewohjfribwe wef. Sebnejbuwd Weinfiwjf Ihwqpjrnn.";
 const string Addon_Stone_02_6 = "Erfjkemvfj RHADEMES Fjewheege Egdgsmkd!";
@@ -1427,7 +1427,7 @@ func void Use_Addon_Stone_02()
 
 instance ItMI_Addon_Kompass_Mis(C_Item)
 {
-	name						= "Goldener Kompass";
+	name						= "Golden Compass";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -1452,7 +1452,7 @@ instance ItMI_Addon_Kompass_Mis(C_Item)
 
 instance ItSE_Addon_FrancisChest(C_Item)
 {
-	name						= "Schatzkiste";
+	name						= "Treasure Chest";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1465,8 +1465,8 @@ instance ItSE_Addon_FrancisChest(C_Item)
 
 	value						= 200;
 
-	description					= "Eine Schatzkiste";
-	text[0]						= "Die Kiste ziemlich schwer.";					count[0] = 0;
+	description					= "A treasure chest";
+	text[0]						= "The chest is very heavy.";					count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
@@ -1489,7 +1489,7 @@ func void FrancisChest()
 
 instance ITWR_Addon_FrancisAbrechnung_Mis(C_ITEM)
 {
-	name						= "Heuerbuch";
+	name						= "Paybook";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= 0;
@@ -1511,38 +1511,38 @@ instance ITWR_Addon_FrancisAbrechnung_Mis(C_ITEM)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string FrancisAbrechnung_Mis_1 = "Kauffahrer 'Seejungfrau'";
-const string FrancisAbrechnung_Mis_2 = "Beute gesamt: 14560 Gold";
+const string FrancisAbrechnung_Mis_1 = "Merchantman 'Mermaid'";
+const string FrancisAbrechnung_Mis_2 = "Total booty: 14560 gold";
 const string FrancisAbrechnung_Mis_3 = "-----------------------";
-const string FrancisAbrechnung_Mis_4 = "Mannschaft : 9840 ";
-const string FrancisAbrechnung_Mis_5 = "Offiziere   : 2500 ";
-const string FrancisAbrechnung_Mis_6 = "Kapitän    : 1000 ";
+const string FrancisAbrechnung_Mis_4 = "Crew: 9840";
+const string FrancisAbrechnung_Mis_5 = "Officers: 2500";
+const string FrancisAbrechnung_Mis_6 = "Captain: 1000";
 const string FrancisAbrechnung_Mis_7 = "-----------------------";
-const string FrancisAbrechnung_Mis_8 = "eigener Anteil: 2220";
-const string FrancisAbrechnung_Mis_9 = "Fernhändler 'Miriam'";
-const string FrancisAbrechnung_Mis_10 = "Beute gesamt: 4890 Gold";
+const string FrancisAbrechnung_Mis_8 = "Personal share: 2220";
+const string FrancisAbrechnung_Mis_9 = "Merchant vessel 'Miriam'";
+const string FrancisAbrechnung_Mis_10 = "Total booty: 4890 gold";
 const string FrancisAbrechnung_Mis_11 = "-----------------------";
-const string FrancisAbrechnung_Mis_12 = "Mannschaft : 2390 ";
-const string FrancisAbrechnung_Mis_13 = "Offiziere   : 500 ";
-const string FrancisAbrechnung_Mis_14 = "Kapitän    : 500 ";
+const string FrancisAbrechnung_Mis_12 = "Crew: 2390";
+const string FrancisAbrechnung_Mis_13 = "Officers: 500";
+const string FrancisAbrechnung_Mis_14 = "Captain: 500";
 const string FrancisAbrechnung_Mis_15 = "----------------------";
-const string FrancisAbrechnung_Mis_16 = "eigener Anteil: 1000 ";
-const string FrancisAbrechnung_Mis_17 = "Handelsschiff 'Nico'";
-const string FrancisAbrechnung_Mis_18 = "Beute gesamt: 9970 ";
+const string FrancisAbrechnung_Mis_16 = "Personal share: 1000";
+const string FrancisAbrechnung_Mis_17 = "Merchant ship 'Nico'";
+const string FrancisAbrechnung_Mis_18 = "Total booty: 9970";
 const string FrancisAbrechnung_Mis_19 = "----------------------";
-const string FrancisAbrechnung_Mis_20 = "Mannschaft : 5610 ";
-const string FrancisAbrechnung_Mis_21 = "Offiziere   : 1500";
-const string FrancisAbrechnung_Mis_22 = "Kapitän    : 1000";
+const string FrancisAbrechnung_Mis_20 = "Crew: 5610";
+const string FrancisAbrechnung_Mis_21 = "Officers: 1500";
+const string FrancisAbrechnung_Mis_22 = "Captain: 1000";
 const string FrancisAbrechnung_Mis_23 = "----------------------";
-const string FrancisAbrechnung_Mis_24 = "eigener Anteil: 1860";
-const string FrancisAbrechnung_Mis_25 = "Kauffahrer 'Maria'";
-const string FrancisAbrechnung_Mis_26 = "Beute gesamt: 7851 Gold";
+const string FrancisAbrechnung_Mis_24 = "Personal share: 1860";
+const string FrancisAbrechnung_Mis_25 = "Merchantman 'Maria'";
+const string FrancisAbrechnung_Mis_26 = "Total booty: 7851 gold";
 const string FrancisAbrechnung_Mis_27 = "----------------------";
-const string FrancisAbrechnung_Mis_28 = "Mannschaft : 4400 ";
-const string FrancisAbrechnung_Mis_29 = "Offiziere   : 750 ";
-const string FrancisAbrechnung_Mis_30 = "Kapitän    : 1000 ";
+const string FrancisAbrechnung_Mis_28 = "Crew: 4400";
+const string FrancisAbrechnung_Mis_29 = "Officers: 750";
+const string FrancisAbrechnung_Mis_30 = "Captain: 1000";
 const string FrancisAbrechnung_Mis_31 = "----------------------";
-const string FrancisAbrechnung_Mis_32 = "eigener Anteil: 1701 ";
+const string FrancisAbrechnung_Mis_32 = "Personal share: 1701";
 func void UseFrancisAbrechnung_Mis()
 {
 	var int nDocID;
@@ -1586,7 +1586,7 @@ func void UseFrancisAbrechnung_Mis()
 				Doc_PrintLine	(nDocID, 0, "");
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_PrintLine	(nDocID, 1, FrancisAbrechnung_Mis_17);
@@ -1629,7 +1629,7 @@ func void UseFrancisAbrechnung_Mis()
 
 instance ITWR_Addon_GregsLogbuch_Mis(C_ITEM)
 {
-	name						= "Logbuch";
+	name						= "Log book";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= 0;
@@ -1642,7 +1642,7 @@ instance ITWR_Addon_GregsLogbuch_Mis(C_ITEM)
 
 	value						= 100;
 
-	description					= "Logbuch von Greg";
+	description					= "Greg's log book";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -1651,12 +1651,12 @@ instance ITWR_Addon_GregsLogbuch_Mis(C_ITEM)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string GregsLogbuch_1 = "Ich kann diesen Strand nicht mehr sehen. Überall Sand. Ich kann schon gar nicht mehr richtig schlafen, weil es überall juckt. Wird Zeit, dass Raven das Gold für die Gefangen rüberschiebt und wir wieder in See stechen können. Werde wohl mal ein ernstes Wort mit dem Aufgeblasen Fatzke sprechen müssen.";
-const string GregsLogbuch_2 = "Was erlaubt sich dieses Arsch? Hat mich von seinen stinkenden Schergen am Tor abwimmeln lassen. Der wird mich noch kennenlernen! Seinen Speichellecker Bloodwyn werde ich eigenhändig zu Fischfutter verarbeiten";
-const string GregsLogbuch_3 = "Wenn er nicht bald zahlt, werde ich andere Seiten aufziehen. ";
-const string GregsLogbuch_4 = "Die Banditen werden langsam aufsässig. Die letzte Lieferung haben sie immer noch nicht bezahlt. Wir haben einfach zu wenig Informationen. Ich muss rausfinden, was Raven hier will.";
-const string GregsLogbuch_5 = "Ich werde mit dem Großteil der Mannschaft zum Festland fahren und das Erz in Sicherheit bringen. Francis bleibt mit ein paar Leuten hier und befestigt das Lager. ";
-const string GregsLogbuch_6 = "Damit die Zeit nicht ungenutzt verstreicht, habe ich Bones die Rüstung gegeben. Er wird für mich ins Banditenlager schleichen und dort rausfinden, was Raven vorhat.";
+const string GregsLogbuch_1 = "I've seen more than enough of this beach. Sand everywhere. I can't even sleep right any more because everything itches. It's time that Raven forked over the gold for the prisoners and we put to sea again. I'll have to have a word with the puffed-up jerk.";
+const string GregsLogbuch_2 = "How dare that ass? He made his stinking henchmen at the gate send me away. He'll have me to reckon with! I'll turn his bootlicker Bloodwyn into fish food with my own hands.";
+const string GregsLogbuch_3 = "If he doesn't pay soon, I'll have to get tough.";
+const string GregsLogbuch_4 = "The bandits are getting brazen. They still haven't paid for the last delivery. We just don't have enough information. I have to find out what Raven wants here.";
+const string GregsLogbuch_5 = "I'll take the majority of the crew to the mainland and secure the ore. Francis will stay behind with a few people and fortify the camp.";
+const string GregsLogbuch_6 = "So the time doesn't go to waste, I gave Bones the armor. He'll sneak into the bandit camp for me and find out what Raven is planning there.";
 func void UseGregsLogbuch()
 {
 	var int nDocID;
@@ -1677,7 +1677,7 @@ func void UseGregsLogbuch()
 				Doc_PrintLines	(nDocID, 0, GregsLogbuch_3);
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLines	(nDocID, 1, GregsLogbuch_4);
 				Doc_PrintLine	(nDocID, 1, "");
@@ -1690,7 +1690,7 @@ func void UseGregsLogbuch()
 };
 
 // -----------------------------------------------------------------------
-// Bloodwyns Truhenschlüssel - Schwere Garderüstung
+// Bloodwyns TruhenschlÃ¼ssel - Schwere GarderÃ¼stung
 // -----------------------------------------------------------------------
 instance ITKE_Addon_Bloodwyn_01(C_Item)
 {
@@ -1704,17 +1704,17 @@ instance ITKE_Addon_Bloodwyn_01(C_Item)
 
 	value						= Value_Key_01;
 
-	description					= "Bloodwyn's Schlüssel";
+	description					= "Bloodwyn's key";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Passt zu einer Truhe";						count[2] = 0;
+	text[2]						= "Fits a chest";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
 // -----------------------------------------------------------------------
-// Heiler Truhenschlüssel -
+// Heiler TruhenschlÃ¼ssel -
 // -----------------------------------------------------------------------
 instance ITKE_Addon_Heiler(C_Item)
 {
@@ -1728,18 +1728,18 @@ instance ITKE_Addon_Heiler(C_Item)
 
 	value						= Value_Key_01;
 
-	description					= "Schlüssel eines Steinwächters";
+	description					= "A stone sentinel's key";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Passt zu einer Truhe";						count[2] = 0;
-	text[3]						= "In einem seltsamen alten Gebäude im Sumpf";	count[3] = 0;
+	text[2]						= "Fits a chest";						count[2] = 0;
+	text[3]						= "In a strange old building in the swamp";	count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
 instance ItMi_TempelTorKey(C_ITEM)
 {
-	name						= "Steintafel des Quarhodron";
+	name						= "Stone tablet of Quarhodron";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -1755,10 +1755,10 @@ instance ItMi_TempelTorKey(C_ITEM)
 	description					= "";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel zum Tempel Adanos.";			count[2] = 0;
+	text[2]						= "The key to the temple of Adanos";			count[2] = 0;
 };
 
-const string TempelTorKey_1 = "  Jhehedra Akhantar";
+const string TempelTorKey_1 = " Jhehedra Akhantar";
 func void Use_TempelTorKey()
 {
 	var int nDocID;
@@ -1784,7 +1784,7 @@ func void Use_TempelTorKey()
 // -----------------------------------------------------------------------
 instance ItMi_Addon_Bloodwyn_Kopf(C_Item)
 {
-	name						= "Bloodwyn's Kopf";
+	name						= "Bloodwyn's head";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1807,7 +1807,7 @@ instance ItMi_Addon_Bloodwyn_Kopf(C_Item)
 
 instance ItWR_Addon_TreasureMap(C_Item)
 {
-	name						= "Schatzkarte";
+	name						= "Treasure map";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -1822,7 +1822,7 @@ instance ItWR_Addon_TreasureMap(C_Item)
 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "Auf der Karte sind einige Stellen markiert.";count[1] = 0;
+	text[1]						= "Some places are marked on the map.";count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
@@ -1849,7 +1849,7 @@ func void Use_TreasureMap()
 
 instance ItMi_Addon_GregsTreasureBottle_MIS(C_Item)
 {
-	name						= "Flaschenpost";
+	name						= "Message in a bottle";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1865,7 +1865,7 @@ instance ItMi_Addon_GregsTreasureBottle_MIS(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "In der Flasche befindet sich ein Stück Papier";count[2] = 0;
+	text[2]						= "There is a piece of paper in the bottle";count[2] = 0;
 };
 
 func void Use_GregsBottle()
@@ -1876,7 +1876,7 @@ func void Use_GregsBottle()
 /******************************************************************************************/
 instance itmi_erolskelch(C_Item)
 {
-	name						= "Zerkratzte silberne Schale";
+	name						= "Scratched silver bowl";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;

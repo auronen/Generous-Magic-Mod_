@@ -1,5 +1,5 @@
 // ************************************************************************************************
-// Wert von Tiertrophäen
+// Wert von TiertrophÃ¤en
 // ************************************************************************************************
 
 // Addon
@@ -48,7 +48,7 @@ const int Value_Keilerfur = 15;
 /*****************ADDON*************************************************************************/
 instance ItAt_Addon_BCKopf(C_Item)
 {
-	name						= "Kopf";
+	name						= "Head";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -58,7 +58,7 @@ instance ItAt_Addon_BCKopf(C_Item)
 
 	value						= Value_BCKopf;
 
-	description					= "Kopf der Fangheuschrecke";
+	description					= "Mantis head";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -70,7 +70,7 @@ instance ItAt_Addon_BCKopf(C_Item)
 /******************************************************************************************/
 instance ItAt_Meatbugflesh(C_Item)
 {
-	name						= "Wanzenfleisch";
+	name						= "Bug Meat";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -100,7 +100,7 @@ func void Use_Meatbugflesh()
 /******************************************************************************************/
 instance ItAt_SheepFur(C_Item)
 {
-	name						= "Schafsfell";
+	name						= "Sheep Skin";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -122,7 +122,7 @@ instance ItAt_SheepFur(C_Item)
 /******************************************************************************************/
 instance ItAt_WolfFur(C_Item)
 {
-	name						= "Wolfsfell";
+	name						= "Wolf Skin";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -144,7 +144,7 @@ instance ItAt_WolfFur(C_Item)
 /******************************************************************************************/
 instance ItAt_BugMandibles(C_Item)
 {
-	name						= "Feldräuberzangen";
+	name						= "Field Raider Mandibles";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -166,7 +166,7 @@ instance ItAt_BugMandibles(C_Item)
 /******************************************************************************************/
 instance ItAt_Claw(C_Item)
 {
-	name						= "Krallen";
+	name						= "Claws";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -188,7 +188,7 @@ instance ItAt_Claw(C_Item)
 /******************************************************************************************/
 instance ItAt_LurkerClaw(C_Item)
 {
-	name						= "Lurker Klaue";
+	name						= "Lurker Claw";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -210,7 +210,7 @@ instance ItAt_LurkerClaw(C_Item)
 /******************************************************************************************/
 instance ItAt_Teeth(C_Item)
 {
-	name						= "Zähne";
+	name						= "Teeth";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -232,7 +232,7 @@ instance ItAt_Teeth(C_Item)
 /******************************************************************************************/
 instance ItAt_CrawlerMandibles(C_Item)
 {
-	name						= "Minecrawlerzangen";
+	name						= "Minecrawler Mandibles";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -246,10 +246,10 @@ instance ItAt_CrawlerMandibles(C_Item)
 	value						= Value_CrawlerMandibles;
 
 	description					= name;
-	text[0]						= "Die Zangen können aufgebrochen, ";			count[0] = 0;
-	text[1]						= "und das Sekret darin geschlürft werden.";	count[1] = 0;
-	text[2]						= "Es regeniert die magische Kraft.";			count[2] = 0;
-	text[3]						= "Verliert mit der Zeit seine Wirkung.";		count[3] = 0;
+	text[0]						= "The mandibles can be opened";			count[0] = 0;
+	text[1]						= "in order to drink the secretion inside them.";	count[1] = 0;
+	text[2]						= "This regenerates magic power.";			count[2] = 0;
+	text[3]						= "The effect fades in time.";		count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -271,7 +271,7 @@ func void Use_Mandibles()
 /******************************************************************************************/
 instance ItAt_Wing(C_Item)
 {
-	name						= "Flügel";
+	name						= "Wings";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -293,7 +293,7 @@ instance ItAt_Wing(C_Item)
 /******************************************************************************************/
 instance ItAt_Sting(C_Item)
 {
-	name						= "Stachel";
+	name						= "Stinger";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -308,8 +308,8 @@ instance ItAt_Sting(C_Item)
 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "Der Stachel";								count[1] = 0;
-	text[2]						= "enthält ein giftiges Sekret";				count[2] = 0;
+	text[1]						= "The stinger";								count[1] = 0;
+	text[2]						= "contains a poisonous secretion.";				count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -345,7 +345,7 @@ func void Use_Sting()
 /******************************************************************************************/
 instance itat_LurkerSkin(C_Item) // REPTILE Skin
 {
-	name						= "Reptilienhaut";
+	name						= "Reptile skin";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -355,7 +355,7 @@ instance itat_LurkerSkin(C_Item) // REPTILE Skin
 
 	value						= Value_ReptileSkin;
 
-	description					= "Die Haut eines Reptils";
+	description					= "The skin of a reptile";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -367,7 +367,7 @@ instance itat_LurkerSkin(C_Item) // REPTILE Skin
 /******************************************************************************************/
 instance ItAt_WargFur(C_Item)
 {
-	name						= "Wargfell";
+	name						= "Warg Skin";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -389,7 +389,7 @@ instance ItAt_WargFur(C_Item)
 /******************************************************************************************/
 instance ItAt_Addon_KeilerFur(C_Item)
 {
-	name						= "Keilerfell";
+	name						= "Boarskin";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -411,7 +411,7 @@ instance ItAt_Addon_KeilerFur(C_Item)
 /******************************************************************************************/
 instance ItAt_DrgSnapperHorn(C_Item)
 {
-	name						= "Horn eines DrachenSnappers";
+	name						= "Horn of a Dragon Snapper";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -433,7 +433,7 @@ instance ItAt_DrgSnapperHorn(C_Item)
 /******************************************************************************************/
 instance ItAt_CrawlerPlate(C_Item)
 {
-	name						= "Minecrawler Panzerplatten";
+	name						= "Minecrawler Plates";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -455,7 +455,7 @@ instance ItAt_CrawlerPlate(C_Item)
 /******************************************************************************************/
 instance ItAt_ShadowFur(C_Item)
 {
-	name						= "Fell eines Schattenläufers";
+	name						= "Hide of a Shadowbeast";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -477,7 +477,7 @@ instance ItAt_ShadowFur(C_Item)
 /******************************************************************************************/
 instance ItAt_SharkSkin(C_Item)
 {
-	name						= "Haut eines Sumpfhais";
+	name						= "Skin of a Swampshark";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -499,7 +499,7 @@ instance ItAt_SharkSkin(C_Item)
 /******************************************************************************************/
 instance ItAt_TrollFur(C_Item)
 {
-	name						= "Trollfell";
+	name						= "Troll Hide";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -521,7 +521,7 @@ instance ItAt_TrollFur(C_Item)
 /******************************************************************************************/
 instance ItAt_TrollBlackFur(C_Item)
 {
-	name						= "Fell eines schwarzen Trolls";
+	name						= "Hide of a Black Troll";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -543,7 +543,7 @@ instance ItAt_TrollBlackFur(C_Item)
 /******************************************************************************************/
 instance ItAt_WaranFiretongue(C_Item)
 {
-	name						= "Flammenzunge";
+	name						= "Tongue of Fire";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -565,7 +565,7 @@ instance ItAt_WaranFiretongue(C_Item)
 /******************************************************************************************/
 instance ItAt_ShadowHorn(C_Item)
 {
-	name						= "Horn eines Schattenläufers";
+	name						= "Horn of a Shadowbeast";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -587,7 +587,7 @@ instance ItAt_ShadowHorn(C_Item)
 /******************************************************************************************/
 instance ItAt_SharkTeeth(C_Item)
 {
-	name						= "Zähne eines Sumpfhais";
+	name						= "Teeth of a Swampshark";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -609,7 +609,7 @@ instance ItAt_SharkTeeth(C_Item)
 /******************************************************************************************/
 instance ItAt_TrollTooth(C_Item)
 {
-	name						= "Trollhauer";
+	name						= "Troll Tusk";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -632,7 +632,7 @@ instance ItAt_TrollTooth(C_Item)
 /******************************************************************************************/
 instance ItAt_StoneGolemHeart(C_Item)
 {
-	name						= "Herz eines Steingolems";
+	name						= "Heart of a Stone Golem";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -656,7 +656,7 @@ instance ItAt_StoneGolemHeart(C_Item)
 /******************************************************************************************/
 instance ItAt_FireGolemHeart(C_Item)
 {
-	name						= "Herz eines Feuergolems";
+	name						= "Heart of a Fire Golem";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -680,7 +680,7 @@ instance ItAt_FireGolemHeart(C_Item)
 /******************************************************************************************/
 instance ItAt_IceGolemHeart(C_Item)
 {
-	name						= "Herz eines Eisgolems";
+	name						= "Heart of an Ice Golem";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -704,7 +704,7 @@ instance ItAt_IceGolemHeart(C_Item)
 /******************************************************************************************/
 instance ItAt_GoblinBone(C_Item)
 {
-	name						= "Knochen eines Goblins";
+	name						= "Goblin's Bone";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -726,7 +726,7 @@ instance ItAt_GoblinBone(C_Item)
 /******************************************************************************************/
 instance ItAt_SkeletonBone(C_Item)
 {
-	name						= "Knochen eines Skeletts";
+	name						= "Skeleton's Bone";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -748,7 +748,7 @@ instance ItAt_SkeletonBone(C_Item)
 /******************************************************************************************/
 instance ItAt_DemonHeart(C_Item)
 {
-	name						= "Herz eines Dämonen";
+	name						= "Heart of a Demon";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -768,11 +768,11 @@ instance ItAt_DemonHeart(C_Item)
 };
 
 //**************************************************************************
-//					Drachentrophäen
+//					DrachentrophÃ¤en
 //**************************************************************************
 instance ItAt_UndeadDragonSoulStone(C_Item)
 {
-	name						= "Seelenstein des Untoten Drachens";
+	name						= "Undead Dragon's Soul Stone";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -795,7 +795,7 @@ instance ItAt_UndeadDragonSoulStone(C_Item)
 /******************************************************************************************/
 instance ItAt_IcedragonHeart(C_Item)
 {
-	name						= "Herz eines Eisdrachen";
+	name						= "Heart of an Ice Dragon";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -817,7 +817,7 @@ instance ItAt_IcedragonHeart(C_Item)
 /******************************************************************************************/
 instance ItAt_RockdragonHeart(C_Item)
 {
-	name						= "Herz eines Felsdrachen";
+	name						= "Heart of a Rock Dragon";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -839,7 +839,7 @@ instance ItAt_RockdragonHeart(C_Item)
 /******************************************************************************************/
 instance ItAt_SwampdragonHeart(C_Item)
 {
-	name						= "Herz eines Sumpfdrachens";
+	name						= "Heart of a Swamp Dragon";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -861,7 +861,7 @@ instance ItAt_SwampdragonHeart(C_Item)
 /******************************************************************************************/
 instance ItAt_FiredragonHeart(C_Item)
 {
-	name						= "Herz eines Feuerdrachen";
+	name						= "Heart of a Fire Dragon";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -883,7 +883,7 @@ instance ItAt_FiredragonHeart(C_Item)
 /******************************************************************************************/
 instance ItAt_DragonBlood(C_Item)
 {
-	name						= "Drachenblut";
+	name						= "Dragon Blood";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -906,7 +906,7 @@ instance ItAt_DragonBlood(C_Item)
 /******************************************************************************************/
 instance ItAt_DragonScale(C_Item)
 {
-	name						= "Drachenschuppen";
+	name						= "Dragon Scales";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;

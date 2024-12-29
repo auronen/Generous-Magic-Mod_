@@ -47,17 +47,17 @@ func void DIA_BDT_1_STANDARD_Info()
 
 	if (randy == 0)
 	{
-		AI_Output(self, other, "DIA_BDT_1_STANDARD_01_00"); //Geh mir aus den Augen!
+		AI_Output(self, other, "DIA_BDT_1_STANDARD_01_00"); //Get out of my sight!
 	};
 
 	if (randy == 1)
 	{
-		AI_Output(self, other, "DIA_BDT_1_STANDARD_01_01"); //Suchst du Ärger?
+		AI_Output(self, other, "DIA_BDT_1_STANDARD_01_01"); //Are you looking for trouble?
 	};
 
 	if (randy == 2)
 	{
-		AI_Output(self, other, "DIA_BDT_1_STANDARD_01_02"); //Geh, solange du noch kannst!
+		AI_Output(self, other, "DIA_BDT_1_STANDARD_01_02"); //Leave while you still can!
 	};
 
 	AI_StopProcessInfos(self);

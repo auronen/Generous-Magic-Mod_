@@ -80,16 +80,16 @@ func int DIA_Addon_Skip_Hello_Condition()
 
 func void DIA_Addon_Skip_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_00"); //Sieh mal einer an, wer dem alten Skip hier über den Weg läuft.
-	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_01"); //(übertrieben) Ich kenne dich!
-	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_02"); //Die Bucht in der Nähe der Stadt, erinnerst du dich?
-	AI_Output(other, self, "DIA_Addon_Skip_Hello_15_03"); //Skip! Richtig?
-	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_04"); //(stolz) Ich sehe, ich habe einen bleibenden Eindruck hinterlassen.
-	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_05"); //Aber ich habe deine Visage zwischendurch NOCH irgendwo gesehen...
-	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_06"); //Ah! Sicher!
+	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_00"); //What have we here, crossing the path of old Skip again?
+	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_01"); //(exaggerated) I know you!
+	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_02"); //The bay near the city, remember?
+	AI_Output(other, self, "DIA_Addon_Skip_Hello_15_03"); //Skip! Right?
+	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_04"); //(proudly) I see I made a lasting impression.
+	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_05"); //But I've seen your mug ELSEWHERE in the meantime ...
+	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_06"); //But of course!
 	B_UseFakeScroll();
-	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_07"); //Naja. Schlecht getroffen, aber du BIST es.
-	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_08"); //Mach dir nichts draus. Mein Steckbrief sieht genau so dämlich aus.
+	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_07"); //Oh well. Not a great likeness, but it's certainly YOU.
+	AI_Output(self, other, "DIA_Addon_Skip_Hello_08_08"); //Don't let it get to you. My own wanted poster looks just as daft.
 	Npc_ExchangeRoutine(self, "Start");
 };
 
@@ -102,7 +102,7 @@ instance DIA_Addon_SkipADW_BaltramPaket(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_SkipADW_BaltramPaket_Condition;
 	information		= DIA_Addon_SkipADW_BaltramPaket_Info;
-	description		= "Ich habe ein Paket von Baltram für dich.";
+	description		= "I've got a package for you, from Baltram.";
 };
 
 func int DIA_Addon_SkipADW_BaltramPaket_Condition()
@@ -115,10 +115,10 @@ func int DIA_Addon_SkipADW_BaltramPaket_Condition()
 
 func void DIA_Addon_SkipADW_BaltramPaket_Info()
 {
-	AI_Output(other, self, "DIA_Addon_SkipADW_BaltramPaket_15_00"); //Ich habe ein Paket von Baltram für dich.
-	AI_Output(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_01"); //(grinst) Der Typ muß ganz schön scharf sein auf unseren Rum, wenn er seine Ware bis HIERHIN hinterherschippern läßt.
+	AI_Output(other, self, "DIA_Addon_SkipADW_BaltramPaket_15_00"); //I've got a package for you, from Baltram.
+	AI_Output(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_01"); //(grinning) That guy must be really keen on our rum if he sends his goods after us all the way HERE.
 	B_GiveInvItems(other, self, ItMi_Packet_Baltram4Skip_Addon, 1);
-	AI_Output(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_02"); //Hier, gib ihm die 2 Flaschen Rum. Die dritte habe ich gesoffen, als ich auf ihn gewartet habe.
+	AI_Output(self, other, "DIA_Addon_SkipADW_BaltramPaket_08_02"); //Here, give him these 2 bottles of rum. I quaffed the third one while I was waiting for him.
 	B_GiveInvItems(self, other, ItFo_Addon_Rum, 2);
 	B_GivePlayerXP(XP_Addon_Skip_BaltramPaket);
 	B_LogEntry(TOPIC_Addon_BaltramSkipTrade, LogText_Addon_SkipsRumToBaltram);
@@ -134,7 +134,7 @@ instance DIA_Addon_Skip_Job(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Skip_Job_Condition;
 	information		= DIA_Addon_Skip_Job_Info;
-	description		= "Was machst du hier?";
+	description		= "What are you doing here?";
 };
 
 func int DIA_Addon_Skip_Job_Condition()
@@ -144,8 +144,8 @@ func int DIA_Addon_Skip_Job_Condition()
 
 func void DIA_Addon_Skip_Job_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_Job_15_00"); //Was machst du hier?
-	AI_Output(self, other, "DIA_Addon_Skip_Job_08_01"); //Ich bin gerade aus Khorinis zurück und jetzt warte ich darauf, dass Greg wiederkommt.
+	AI_Output(other, self, "DIA_Addon_Skip_Job_15_00"); //What are you doing here?
+	AI_Output(self, other, "DIA_Addon_Skip_Job_08_01"); //I've just come back from Khorinis and now I'm waiting for Greg to return.
 };
 
 // ************************************************************
@@ -157,7 +157,7 @@ instance DIA_Addon_Skip_ADW_GregGetroffen(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Skip_ADW_GregGetroffen_Condition;
 	information		= DIA_Addon_Skip_ADW_GregGetroffen_Info;
-	description		= "Ich hab Greg in Khorinis gesehen.";
+	description		= "I saw Greg in Khorinis.";
 };
 
 func int DIA_Addon_Skip_ADW_GregGetroffen_Condition()
@@ -172,16 +172,16 @@ func int DIA_Addon_Skip_ADW_GregGetroffen_Condition()
 
 func void DIA_Addon_Skip_ADW_GregGetroffen_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_ADW_GregGetroffen_15_00"); //Ich hab Greg in Khorinis gesehen.
-	AI_Output(self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_01"); //Wirklich? Verdammt! Dann muß was schiefgelaufen sein.
-	AI_Output(self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_02"); //Er sollte eigentlich längst mit unserem Schiff hier sein.
-	AI_Output(self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_03"); //(nachdenklich) Es wird wohl das Beste sein, wenn ich nach Khorinis zurückfahre und dort auf ihn warte...
-	AI_Output(self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_04"); //(seufzt) Aber heute bestimmt nicht mehr. Ich bin ja gerade erst hier angekommen.
+	AI_Output(other, self, "DIA_Addon_Skip_ADW_GregGetroffen_15_00"); //I saw Greg in Khorinis.
+	AI_Output(self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_01"); //Really? Damn! Something must have gone wrong then.
+	AI_Output(self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_02"); //He should have been here with our ship some time ago.
+	AI_Output(self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_03"); //(pensively) I suppose I should go back to Khorinis and wait for him there ...
+	AI_Output(self, other, "DIA_Addon_Skip_ADW_GregGetroffen_08_04"); //(sighs) But certainly not today. I only just arrived here.
 	B_GivePlayerXP(XP_Ambient);
 };
 
 // ************************************************************
-// 			  			Überfahrt - PERM
+// 			  			Ãœberfahrt - PERM
 // ************************************************************
 var int Skip_Transport_Variation;
 // ------------------------------------------------------------
@@ -192,7 +192,7 @@ instance DIA_Addon_Skip_Transport(C_INFO)
 	condition		= DIA_Addon_Skip_Transport_Condition;
 	information		= DIA_Addon_Skip_Transport_Info;
 	permanent		= TRUE;
-	description		= "Kannst du mich nach Khorinis bringen?";
+	description		= "Can you take me to Khorinis?";
 };
 
 func int DIA_Addon_Skip_Transport_Condition()
@@ -206,25 +206,25 @@ func int DIA_Addon_Skip_Transport_Condition()
 
 func void DIA_Addon_Skip_Transport_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_Transport_15_00"); //Kannst du mich nach Khorinis bringen?
+	AI_Output(other, self, "DIA_Addon_Skip_Transport_15_00"); //Can you take me to Khorinis?
 	if (GregIsBack == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_Transport_08_01"); //Nee. Ich fahre später. Werd' mir erstmal 'nen ordentlichen Schluck Grog genehmigen.
+		AI_Output(self, other, "DIA_Addon_Skip_Transport_08_01"); //No way. I'm not leaving now. I'll find myself a decent swig of grog first.
 	}
 	else if (Skip_Transport_Variation == 0)
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_Transport_08_02"); //Bist du verrückt? Wir haben unser SCHIFF verloren, Mann!
-		AI_Output(self, other, "DIA_Addon_Skip_Transport_08_03"); //Mit unserem letzten Boot werd ich keine Spazierfahrt machen, nur weil du zu faul bist, deinen Hintern SELBER nach Khorinis zu schwingen!
+		AI_Output(self, other, "DIA_Addon_Skip_Transport_08_02"); //Are you out of your mind? We've lost our SHIP, man!
+		AI_Output(self, other, "DIA_Addon_Skip_Transport_08_03"); //I'm not taking our last boat out for a spin just because you're too lazy to get your butt over to Khorinis BY YOURSELF!
 		Skip_Transport_Variation = 1;
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_Transport_08_04"); //Wie oft noch? Nein!
+		AI_Output(self, other, "DIA_Addon_Skip_Transport_08_04"); //For the last time: NO!
 	};
 };
 
 // ************************************************************
-// 			 			Banditen + Rüstung
+// 			 			Banditen + RÃ¼stung
 // ************************************************************
 // ------------------------------------------------------------
 // 							About Bandits
@@ -235,7 +235,7 @@ instance DIA_Addon_Skip_Bandits(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Skip_Bandits_Condition;
 	information		= DIA_Addon_Skip_Bandits_Info;
-	description		= "Was kannst du mir über die Banditen erzählen?";
+	description		= "What can you tell me about the bandits?";
 };
 
 func int DIA_Addon_Skip_Bandits_Condition()
@@ -245,24 +245,24 @@ func int DIA_Addon_Skip_Bandits_Condition()
 
 func void DIA_Addon_Skip_Bandits_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_Bandits_15_00"); //Was kannst du mir über die Banditen erzählen?
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_01"); //Die Banditen?! Sie greifen uns AN!
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_02"); //Was meinst du, warum wir die Palisade bauen?
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_03"); //Wir haben die Drecksäcke selber hier rübergeschippert.
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_04"); //Haben mit ihnen gehandelt. Junge, ich sag dir die haben soviel Gold, daß es ihnen aus den Ohren wieder rauskommt!
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_05"); //Sie waren bereit, jeden Preis für ein Fass Rum zu bezahlen.
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_06"); //Aber die Zeiten sind vorbei. Jetzt ist Krieg!
-	AI_Output(other, self, "DIA_Addon_Erol_Bandits_15_06"); //Was ist passiert?
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_07"); //Die Mistkerle hatten ihre letzte Lieferung nicht bezahlt.
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_08"); //Also bin ich hin und wollte sehen, wo unser Gold bleibt.
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_09"); //Aber als ich in den Sumpf kam, griffen die Schweine mich an!
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_10"); //Und das ist noch nicht alles. Sie haben Angus und Hank umgelegt! Zwei von unseren besten Jungs!
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_11"); //Geh bloß nicht in den Sumpf, sag ich dir!
-	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_12"); //Die greifen alles an, was nicht so zerlumpt rumläuft wie sie.
+	AI_Output(other, self, "DIA_Addon_Skip_Bandits_15_00"); //What can you tell me about the bandits?
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_01"); //The bandits?! They're ATTACKING us!
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_02"); //Why do you think we're building this palisade?
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_03"); //We brought those scumbags over here ourselves.
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_04"); //We used to trade with them. Boy, let me tell you, they've got more gold than they'll ever know what to do with!
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_05"); //They were prepared to pay any price for a bottle of rum.
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_06"); //But those times are past. It's war now!
+	AI_Output(other, self, "DIA_Addon_Erol_Bandits_15_06"); //What happened?
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_07"); //Those bastards hadn't paid for their last shipment.
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_08"); //So I went there to see what had become of our gold.
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_09"); //But when I got to the swamp, the swine attacked me!
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_10"); //And that's not all. They killed Angus and Hank! Two of our best people.
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_11"); //Just stay away from that swamp, I tell you.
+	AI_Output(self, other, "DIA_Addon_Skip_Bandits_08_12"); //They'll go after anyone who doesn't look as shabby as they do.
 };
 
 // ------------------------------------------------------------
-// 						Banditenrüstung
+// 						BanditenrÃ¼stung
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_ArmorPrice(C_INFO)
 {
@@ -270,7 +270,7 @@ instance DIA_Addon_Skip_ArmorPrice(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Skip_ArmorPrice_Condition;
 	information		= DIA_Addon_Skip_ArmorPrice_Info;
-	description		= "Ich brauche eine Banditenrüstung!";
+	description		= "I need bandit's armor.";
 };
 
 func int DIA_Addon_Skip_ArmorPrice_Condition()
@@ -284,19 +284,19 @@ func int DIA_Addon_Skip_ArmorPrice_Condition()
 
 func void DIA_Addon_Skip_ArmorPrice_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_ArmorPrice_15_00"); //Ich brauche eine Banditenrüstung.
-	AI_Output(self, other, "DIA_Addon_Skip_ArmorPrice_08_01"); //Du willst da reingehen? Bist du Wahnsinnig?
-	AI_Output(self, other, "DIA_Addon_Skip_ArmorPrice_08_02"); //Wenn die Typen rausfinden, daß du nicht zu ihnen gehörst, machen die Hackfleich aus dir!
-	AI_Output(other, self, "DIA_Addon_Skip_ArmorPrice_15_02"); //Hast du eine Ahnung, wo ich so eine Rüstung finden kann?
-	AI_Output(self, other, "DIA_Addon_Skip_ArmorPrice_08_03"); //(seufzt) Du läßt nicht locker, was? Also gut. Wir hatten mal eine hier.
-	AI_Output(self, other, "DIA_Addon_Skip_ArmorPrice_08_04"); //Greg hat sie sicher noch irgendwo oben in seiner Hütte.
-	AI_Output(self, other, "DIA_Addon_Skip_ArmorPrice_08_05"); //Wenn er wieder da ist, kannst du sie ihm vielleicht abkaufen...
+	AI_Output(other, self, "DIA_Addon_Skip_ArmorPrice_15_00"); //I need bandit's armor.
+	AI_Output(self, other, "DIA_Addon_Skip_ArmorPrice_08_01"); //You want to go in there? Are you insane? 
+	AI_Output(self, other, "DIA_Addon_Skip_ArmorPrice_08_02"); //Once those guys find out you're not one of them, you're sausage meat!
+	AI_Output(other, self, "DIA_Addon_Skip_ArmorPrice_15_02"); //Do you have any idea where I could find armor like that?
+	AI_Output(self, other, "DIA_Addon_Skip_ArmorPrice_08_03"); //(sighs) You don't give up easily, do you? All right. We used to have a suit.
+	AI_Output(self, other, "DIA_Addon_Skip_ArmorPrice_08_04"); //Greg's probably still got it somewhere up in his hut.
+	AI_Output(self, other, "DIA_Addon_Skip_ArmorPrice_08_05"); //Maybe you can buy it from him when he gets back ...
 
 	B_LogEntry(TOPIC_Addon_BDTRuestung, TOPIC_Addon_BDTRuestung_1);
 };
 
 // ------------------------------------------------------------
-// 						In Gregs Hütte
+// 						In Gregs HÃ¼tte
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_GregsHut(C_INFO)
 {
@@ -304,7 +304,7 @@ instance DIA_Addon_Skip_GregsHut(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Skip_GregsHut_Condition;
 	information		= DIA_Addon_Skip_GregsHut_Info;
-	description		= "Hast du eine Ahnung, wie ich in Gregs Hütte komme?";
+	description		= "Can you tell me how to get into Greg's hut?";
 };
 
 func int DIA_Addon_Skip_GregsHut_Condition()
@@ -318,10 +318,10 @@ func int DIA_Addon_Skip_GregsHut_Condition()
 
 func void DIA_Addon_Skip_GregsHut_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_GregsHut_15_00"); //Hast du eine Ahnung, wie ich in die Hütte komme?
-	AI_Output(self, other, "DIA_Addon_Skip_GregsHut_08_01"); //Hauahah! Immer langsam!
-	AI_Output(self, other, "DIA_Addon_Skip_GregsHut_08_02"); //Du willst dich doch nicht einfach so an Gregs Krempel vergreifen?
-	AI_Output(self, other, "DIA_Addon_Skip_GregsHut_08_03"); //Als er abfuhr, hat er Francis den Schlüssel gegeben, und ihm befohlen, NIEMANDEN in seine Hütte zu lassen.
+	AI_Output(other, self, "DIA_Addon_Skip_GregsHut_15_00"); //Can you tell me how to get into his hut?
+	AI_Output(self, other, "DIA_Addon_Skip_GregsHut_08_01"); //Whoa there! Not so fast!
+	AI_Output(self, other, "DIA_Addon_Skip_GregsHut_08_02"); //You weren't thinking of ransacking Greg's stuff, were you?
+	AI_Output(self, other, "DIA_Addon_Skip_GregsHut_08_03"); //When he left, he gave the key to Francis and told him not to let ANYONE into his hut.
 
 	B_LogEntry(TOPIC_Addon_BDTRuestung, TOPIC_Addon_BDTRuestung_2);
 
@@ -329,7 +329,7 @@ func void DIA_Addon_Skip_GregsHut_Info()
 };
 
 // ------------------------------------------------------------
-//					Über Francis --> Samuel
+//					Ãœber Francis --> Samuel
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_Francis(C_INFO)
 {
@@ -337,7 +337,7 @@ instance DIA_Addon_Skip_Francis(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Skip_Francis_Condition;
 	information		= DIA_Addon_Skip_Francis_Info;
-	description		= "Was kannst du mir über Francis erzählen?";
+	description		= "What can you tell me about Francis?";
 };
 
 func int DIA_Addon_Skip_Francis_Condition()
@@ -350,13 +350,13 @@ func int DIA_Addon_Skip_Francis_Condition()
 
 func void DIA_Addon_Skip_Francis_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_Francis_15_00"); //Was kannst du mir über Francis erzählen?
-	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_01"); //Francis ist unser Schatzmeister.
-	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_02"); //Der Käpt'n vertraut ihm. Deswegen hat er ihm auch wohl das Kommando übergeben.
-	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_03"); //Obwohl ihn keiner von den Jungs hier wirklich ernst nimmt.
-	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_04"); //Wenn du mehr wissen willst, rede mit Samuel.
-	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_05"); //Er hat in der kleinen Höhle nördlich von hier seine Schnapsbrennerei.
-	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_06"); //Es gibt niemanden hier im Lager, über den Samuel NICHT 'ne Menge weiß...
+	AI_Output(other, self, "DIA_Addon_Skip_Francis_15_00"); //What can you tell me about Francis?
+	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_01"); //Francis is our treasurer.
+	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_02"); //The Captain trusts him. That's probably why he left him in command.
+	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_03"); //But none of the boys here really take him seriously.
+	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_04"); //If you want to know more, talk to Samuel.
+	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_05"); //He's got his still in the little cave north of here.
+	AI_Output(self, other, "DIA_Addon_Skip_Francis_08_06"); //There isn't a soul in this camp Samuel DOESN'T know all kinds of things about ...
 
 	B_LogEntry(TOPIC_Addon_BDTRuestung, TOPIC_Addon_BDTRuestung_3);
 };
@@ -373,7 +373,7 @@ instance DIA_Addon_Skip_Raven(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Skip_Raven_Condition;
 	information		= DIA_Addon_Skip_Raven_Info;
-	description		= "Bist du Raven schon mal begegnet?";
+	description		= "Have you ever met Raven?";
 };
 
 func int DIA_Addon_Skip_Raven_Condition()
@@ -386,12 +386,12 @@ func int DIA_Addon_Skip_Raven_Condition()
 
 func void DIA_Addon_Skip_Raven_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_Raven_15_00"); //Bist du Raven schon mal begegnet?
-	AI_Output(self, other, "DIA_Addon_Skip_Raven_08_01"); //Allerdings. Ich war bei Henry, vorne am Tor. Da hab' ich gesehen, wie Raven einige von seinen Jungs bei dem Turm im Süden postiert hat.
-	AI_Output(self, other, "DIA_Addon_Skip_Raven_08_02"); //Ganz in der Nähe des Lagers. (lacht) Ich schätze, die sollen uns ausspionieren.
-	AI_Output(self, other, "DIA_Addon_Skip_Raven_08_03"); //Ich hab auch gesehen, wie er seine Leute behandelt, wenn sie nicht tun, was er will.
-	AI_Output(self, other, "DIA_Addon_Skip_Raven_08_04"); //Jeder, der ihm nicht auf's Wort gehorcht, bringt er er eiskalt um.
-	AI_Output(self, other, "DIA_Addon_Skip_Raven_08_05"); //Vor Raven musst du dich in Acht nehmen, sag ich dir.
+	AI_Output(other, self, "DIA_Addon_Skip_Raven_15_00"); //Have you ever met Raven?
+	AI_Output(self, other, "DIA_Addon_Skip_Raven_08_01"); //Certainly. When I was with Henry, up at the gate, I watched Raven place some of his boys at the tower to the south.
+	AI_Output(self, other, "DIA_Addon_Skip_Raven_08_02"); //Just a stone's throw from our camp. (laughs) I guess they're supposed to spy on us.
+	AI_Output(self, other, "DIA_Addon_Skip_Raven_08_03"); //I've also seen how he treats his people when they don't do his bidding.
+	AI_Output(self, other, "DIA_Addon_Skip_Raven_08_04"); //He'll make short shrift of anyone who doesn't obey his orders to the letter.
+	AI_Output(self, other, "DIA_Addon_Skip_Raven_08_05"); //Mark my words: stay well away from Raven.
 };
 
 // ************************************************************
@@ -409,7 +409,7 @@ instance DIA_Addon_Skip_AngusHank(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Skip_AngusHank_Condition;
 	information		= DIA_Addon_Skip_AngusHank_Info;
-	description		= "Erzähl mir mehr über Angus und Hank.";
+	description		= "Tell me more about Angus and Hank.";
 };
 
 func int DIA_Addon_Skip_AngusHank_Condition()
@@ -422,16 +422,16 @@ func int DIA_Addon_Skip_AngusHank_Condition()
 
 func void DIA_Addon_Skip_AngusHank_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_AngusnHank_15_00"); //Erzähl mir mehr über Angus und Hank.
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_01"); //Angus und Hank sollten sich mit ein paar von den Banditen vorm Lager treffen.
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_02"); //Sie hatten jede Menge Krempel dabei. Alles, was die Mistkerle bei uns bestellt hatten.
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_03"); //Schmiedestahl und Dietriche und so'n Zeug.
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_04"); //Aber sie kamen nie zurück. Diese Banditenschweine haben sie mit Sicherheit um die Ecke gebracht!
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_05"); //Morgan und Bill haben die beiden gesucht - ohne Erfolg.
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_06"); //Bill war ziemlich fertig wegen der Sache. Er war mit den beiden befreundet.
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_07"); //Er ist noch jung, ihn nimmt sowas noch richtig mit.
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_08"); //Wir anderen haben's mit Fassung getragen. Die Waren sind ja noch zu verschmerzen. (seufzt) Aber der Grog, den sie dabei hatten...
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_09"); //(sauer) Das waren mindestens 20 Flaschen!
+	AI_Output(other, self, "DIA_Addon_Skip_AngusnHank_15_00"); //Tell me more about Angus and Hank.
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_01"); //Angus and Hank were supposed to meet with some bandits in front of the camp.
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_02"); //They were carrying all kinds of supplies. Everything those bastards had ordered from us.
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_03"); //Forged steel and lock picks and whatnot. 
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_04"); //But they never came back. The bandit swine must have done away with them!
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_05"); //Morgan and Bill went out to look for them - without any success.
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_06"); //Bill was pretty devastated. They were both friends of his.
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_07"); //He's still young, these things really get to him.
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_08"); //The rest of us took it in our stride. The goods we can afford to lose. (sighs) But the grog they were carrying ...
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHank_08_09"); //(angry) We're talking at least 20 bottles!
 	MIS_ADDON_SkipsGrog = LOG_RUNNING;
 
 	Log_CreateTopic(TOPIC_Addon_SkipsGrog, LOG_MISSION);
@@ -450,7 +450,7 @@ instance DIA_Addon_Skip_AngusHankDead(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Skip_AngusHankDead_Condition;
 	information		= DIA_Addon_Skip_AngusHankDead_Info;
-	description		= "Wegen Angus und Hank.";
+	description		= "About Angus and Hank ...";
 };
 
 func int DIA_Addon_Skip_AngusHankDead_Condition()
@@ -464,19 +464,19 @@ func int DIA_Addon_Skip_AngusHankDead_Condition()
 
 func void DIA_Addon_Skip_AngusHankDead_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_AngusnHankDead_15_00"); //Wegen Angus und Hank...
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHankDead_08_01"); //Was?
-	AI_Output(other, self, "DIA_Addon_Skip_AngusnHankDead_15_01"); //Ich habe sie gefunden.
+	AI_Output(other, self, "DIA_Addon_Skip_AngusnHankDead_15_00"); //About Angus and Hank ...
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHankDead_08_01"); //What?
+	AI_Output(other, self, "DIA_Addon_Skip_AngusnHankDead_15_01"); //I found them.
 	// AI_Output(self,other, "DIA_Addon_Skip_AngusnHankDead_08_02"); // Sie sind tot, richtig?
-	AI_Output(other, self, "DIA_Addon_Skip_AngusnHankDead_15_03"); //Sie sind tot.
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHankDead_08_03"); //(zu sich) Mausetot - die armen Teufel!
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHankDead_08_04"); //Tja, hatte ich auch nicht anders erwartet.
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHankDead_08_05"); //Du solltest die Sache Bill erzählen, falls du's nicht schon getan hast.
-	AI_Output(self, other, "DIA_Addon_Skip_AngusnHankDead_08_06"); //Aber bring's ihm schonend bei - er ist noch jung.
+	AI_Output(other, self, "DIA_Addon_Skip_AngusnHankDead_15_03"); //They're dead.
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHankDead_08_03"); //(to himself) Dead as doornails - poor devils!
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHankDead_08_04"); //Well, it was only to be expected.
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHankDead_08_05"); //You should tell Bill if you haven't done so yet.
+	AI_Output(self, other, "DIA_Addon_Skip_AngusnHankDead_08_06"); //But break it to him gently - he's still young.
 };
 
 // ------------------------------------------------------------
-// 			 			Kenne den Mörder
+// 			 			Kenne den MÃ¶rder
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_AngusHankMurder(C_INFO)
 {
@@ -484,7 +484,7 @@ instance DIA_Addon_Skip_AngusHankMurder(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Skip_AngusHankMurder_Condition;
 	information		= DIA_Addon_Skip_AngusHankMurder_Info;
-	description		= "Ich kenne den Mörder von Angus und Hank.";
+	description		= "I know who murdered Angus and Hank.";
 };
 
 func int DIA_Addon_Skip_AngusHankMurder_Condition()
@@ -498,21 +498,21 @@ func int DIA_Addon_Skip_AngusHankMurder_Condition()
 
 func void DIA_Addon_Skip_AngusHankMurder_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_JuanMurder_15_00"); //Ich kenne den Mörder von Angus und Hank.
+	AI_Output(other, self, "DIA_Addon_Skip_JuanMurder_15_00"); //I know who murdered Angus and Hank.
 	if (MIS_ADDON_SkipsGrog == LOG_SUCCESS)
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_AngusHankMurder_08_01"); //Schön für dich. Die beiden sind tot. Wen interessiert sowas dann noch?
-		AI_Output(self, other, "DIA_Addon_Skip_AngusHankMurder_08_02"); //Rache hat noch keinen Piraten Reich gemacht.
-		AI_Output(self, other, "DIA_Addon_Skip_AngusHankMurder_08_03"); //Hauptsache ich hab meinen Grog wieder.
+		AI_Output(self, other, "DIA_Addon_Skip_AngusHankMurder_08_01"); //Good for you. They're both dead. So who cares now?
+		AI_Output(self, other, "DIA_Addon_Skip_AngusHankMurder_08_02"); //No pirate ever got rich through vengeance.
+		AI_Output(self, other, "DIA_Addon_Skip_AngusHankMurder_08_03"); //Just as long as I have my grog back.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_AngusHankMurder_08_04"); //Der Mörder interessiert mich nicht! Was ist mit meinem Grog?!
+		AI_Output(self, other, "DIA_Addon_Skip_AngusHankMurder_08_04"); //I don't care who murdered them. What about my grog?!
 	};
 };
 
 // ------------------------------------------------------------
-// 							Grog zurück
+// 							Grog zurÃ¼ck
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_Grog(C_INFO)
 {
@@ -521,7 +521,7 @@ instance DIA_Addon_Skip_Grog(C_INFO)
 	condition		= DIA_Addon_Skip_Grog_Condition;
 	information		= DIA_Addon_Skip_Grog_Info;
 	permanent		= TRUE;
-	description		= "Wegen des Grogs...";
+	description		= "Here's your 20 bottles.";
 };
 
 func int DIA_Addon_Skip_Grog_Condition()
@@ -534,18 +534,18 @@ func int DIA_Addon_Skip_Grog_Condition()
 
 func void DIA_Addon_Skip_Grog_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_Grog_15_00"); //Wegen des Grogs ...
+	AI_Output(other, self, "DIA_Addon_Skip_Grog_15_00"); //About that grog ...
 
 	if (Npc_HasItems(other, Itfo_Addon_Grog) >= 20)
 	{
 		Info_ClearChoices(DIA_Addon_Skip_Grog);
 		Info_AddChoice(DIA_Addon_Skip_Grog, DIALOG_BACK, DIA_Addon_Skip_Grog_back);
-		Info_AddChoice(DIA_Addon_Skip_Grog, "Hier hast du deine 20 Flaschen", DIA_Addon_Skip_Grog_geben);
+		Info_AddChoice(DIA_Addon_Skip_Grog, "Here's your 20 bottles.", DIA_Addon_Skip_Grog_geben);
 	}
 	else
 	{
-		AI_Output(other, self, "DIA_Addon_Skip_Grog_15_01"); //Dir fehlen 20 Flaschen, sagst du?
-		AI_Output(self, other, "DIA_Addon_Skip_Grog_08_02"); //Ja, verdammt. Das war mein gesamter Vorrat.
+		AI_Output(other, self, "DIA_Addon_Skip_Grog_15_01"); //You're missing 20 bottles, right?
+		AI_Output(self, other, "DIA_Addon_Skip_Grog_08_02"); //Yes, damnit. My entire stock.
 	};
 };
 
@@ -556,7 +556,7 @@ func void DIA_Addon_Skip_Grog_back()
 
 func void DIA_Addon_Skip_Grog_geben()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_Grog_geben_15_00"); //Hier hast du deine 20 Flaschen.
+	AI_Output(other, self, "DIA_Addon_Skip_Grog_geben_15_00"); //Here's your 20 bottles.
 	B_GiveInvItems(other, self, Itfo_Addon_Grog, 20);
 
 	B_LogEntry(TOPIC_Addon_SkipsGrog, TOPIC_Addon_SkipsGrog_4);
@@ -564,32 +564,32 @@ func void DIA_Addon_Skip_Grog_geben()
 	MIS_ADDON_SkipsGrog = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Addon_SkipsGrog);
 
-	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_01"); //Was denn? Umsonst?
-	AI_Output(other, self, "DIA_Addon_Skip_Grog_geben_15_02"); //Naja ...
-	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_03"); //Ok. Ich werde sie dir bezahlen.
-	AI_Output(other, self, "DIA_Addon_Skip_Grog_geben_15_04"); //Hast du vielleicht irgendwas Interessanteres als Gold?
-	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_05"); //Mmh. Mal sehen. Ich habe hier so einen Ring.
-	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_06"); //Hab ich vor Jahren in einer stickigen Hafenkneipe beim Glückspiel gewonnen.
-	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_07"); //Der Kerl sagte damals, er sei magisch. Keine Ahnung, ob das stimmt.
-	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_08"); //Vielleicht willst du ihn statt dem Geld?
+	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_01"); //What? Really? Just like that?
+	AI_Output(other, self, "DIA_Addon_Skip_Grog_geben_15_02"); //Weeell ...
+	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_03"); //Okay. I'll pay for them.
+	AI_Output(other, self, "DIA_Addon_Skip_Grog_geben_15_04"); //Haven't you got anything more interesting than gold?
+	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_05"); //Mmh. Let's see. I've got this ring here.
+	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_06"); //I won it gambling in a filthy dockside tavern years ago.
+	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_07"); //Back then, the guy told me it was magic. No idea whether that's true.
+	AI_Output(self, other, "DIA_Addon_Skip_Grog_geben_08_08"); //Maybe you want that instead of money?
 
 	Info_ClearChoices(DIA_Addon_Skip_Grog);
-	Info_AddChoice(DIA_Addon_Skip_Grog, "Gib mir das Geld.", DIA_Addon_Skip_Grog_gold);
-	Info_AddChoice(DIA_Addon_Skip_Grog, "Gib mir den Ring.", DIA_Addon_Skip_Grog_ring);
+	Info_AddChoice(DIA_Addon_Skip_Grog, "Give me the money.", DIA_Addon_Skip_Grog_gold);
+	Info_AddChoice(DIA_Addon_Skip_Grog, "Give me the ring.", DIA_Addon_Skip_Grog_ring);
 };
 
 func void DIA_Addon_Skip_Grog_ring()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_Grog_ring_15_00"); //Gib mir den Ring.
-	AI_Output(self, other, "DIA_Addon_Skip_Grog_ring_08_01"); //Hier hast du ihn.
+	AI_Output(other, self, "DIA_Addon_Skip_Grog_ring_15_00"); //Give me the ring.
+	AI_Output(self, other, "DIA_Addon_Skip_Grog_ring_08_01"); //Here you are.
 	B_GiveInvItems(self, other, ItRi_Prot_Edge_02, 1);
 	Info_ClearChoices(DIA_Addon_Skip_Grog);
 };
 
 func void DIA_Addon_Skip_Grog_gold()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_Grog_gold_15_00"); //Gib mir das Geld.
-	AI_Output(self, other, "DIA_Addon_Skip_Grog_gold_08_01"); //In Ordnung.
+	AI_Output(other, self, "DIA_Addon_Skip_Grog_gold_15_00"); //Give me the money.
+	AI_Output(self, other, "DIA_Addon_Skip_Grog_gold_08_01"); //All right.
 	var int GrogKohle;
 	GrogKohle = (Value_Grog * 20);
 	B_GiveInvItems(self, other, ItMi_Gold, GrogKohle);
@@ -605,7 +605,7 @@ instance DIA_Addon_Skip_News(C_INFO)
 	nr				= 888;
 	condition		= DIA_Addon_Skip_News_Condition;
 	information		= DIA_Addon_Skip_News_Info;
-	description		= "Hast du was zu verkaufen?";
+	description		= "Have you got anything to sell?";
 };
 
 func int DIA_Addon_Skip_News_Condition()
@@ -615,8 +615,8 @@ func int DIA_Addon_Skip_News_Condition()
 
 func void DIA_Addon_Skip_News_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_News_15_00"); //Hast du was zu verkaufen?
-	AI_Output(self, other, "DIA_Addon_Skip_News_08_01"); //Wenn du handeln willst, geh zu Garrett. Der kümmert sich um unsere Lagerbestände.
+	AI_Output(other, self, "DIA_Addon_Skip_News_15_00"); //Have you got anything to sell?
+	AI_Output(self, other, "DIA_Addon_Skip_News_08_01"); //If you want to trade, go to Garett. He's in charge of our supplies.
 
 	Log_CreateTopic(Topic_Addon_PIR_Trader, LOG_NOTE);
 	B_LogEntry(Topic_Addon_PIR_Trader, Log_Text_Addon_GarettTrade);
@@ -636,7 +636,7 @@ instance DIA_Addon_Skip_Anheuern(C_INFO)
 	nr				= 11;
 	condition		= DIA_Addon_Skip_Anheuern_Condition;
 	information		= DIA_Addon_Skip_Anheuern_Info;
-	description		= "Du sollst mir helfen.";
+	description		= "You're supposed to help me.";
 };
 
 func int DIA_Addon_Skip_Anheuern_Condition()
@@ -649,19 +649,19 @@ func int DIA_Addon_Skip_Anheuern_Condition()
 
 func void DIA_Addon_Skip_Anheuern_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_Anheuern_15_00"); //Du sollst mir helfen.
-	AI_Output(self, other, "DIA_Addon_Skip_Anheuern_08_01"); //Worum geht's?
-	AI_Output(other, self, "DIA_Addon_Skip_Anheuern_15_01"); //Der Canyon wartet.
+	AI_Output(other, self, "DIA_Addon_Skip_Anheuern_15_00"); //You're supposed to help me.
+	AI_Output(self, other, "DIA_Addon_Skip_Anheuern_08_01"); //With what?
+	AI_Output(other, self, "DIA_Addon_Skip_Anheuern_15_01"); //The canyon awaits.
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_Anheuern_08_02"); //Ich sehe, du hast schon ein paar Jungs mit. Das ist gut!
+		AI_Output(self, other, "DIA_Addon_Skip_Anheuern_08_02"); //I see you're taking some of the lads along. Good thing! 
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_Anheuern_08_03"); //Nimm bloß noch ein paar Jungs mit!
+		AI_Output(self, other, "DIA_Addon_Skip_Anheuern_08_03"); //You'd better bring some of the boys!
 	};
 
-	AI_Output(self, other, "DIA_Addon_Skip_Anheuern_08_04"); //Der Canyon ist mordsgefährlich!
+	AI_Output(self, other, "DIA_Addon_Skip_Anheuern_08_04"); //That canyon is dangerous as hell!
 };
 
 // ------------------------------------------------------------
@@ -674,7 +674,7 @@ instance DIA_Addon_Skip_ComeOn(C_INFO)
 	condition		= DIA_Addon_Skip_ComeOn_Condition;
 	information		= DIA_Addon_Skip_ComeOn_Info;
 	permanent		= TRUE;
-	description		= "Komm mit.";
+	description		= "Come with me.";
 };
 
 func int DIA_Addon_Skip_ComeOn_Condition()
@@ -689,15 +689,15 @@ func int DIA_Addon_Skip_ComeOn_Condition()
 
 func void DIA_Addon_Skip_ComeOn_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_ComeOn_15_00"); //Komm mit.
+	AI_Output(other, self, "DIA_Addon_Skip_ComeOn_15_00"); //Come with me.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_ComeOn_08_02"); //Warte. Lass uns erstmal in den Canyon zurückgehen...
+		AI_Output(self, other, "DIA_Addon_Skip_ComeOn_08_02"); //Wait. Let's go back into the canyon first ...
 		AI_StopProcessInfos(self);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_ComeOn_08_01"); //Auf geht's!
+		AI_Output(self, other, "DIA_Addon_Skip_ComeOn_08_01"); //Let's go!
 		if (C_BodyStateContains(self, BS_SIT))
 		{
 			AI_StandUp(self);
@@ -723,7 +723,7 @@ instance DIA_Addon_Skip_GoHome(C_INFO)
 	condition		= DIA_Addon_Skip_GoHome_Condition;
 	information		= DIA_Addon_Skip_GoHome_Info;
 	permanent		= TRUE;
-	description		= "Ich brauch dich nicht mehr.";
+	description		= "I no longer need you.";
 };
 
 func int DIA_Addon_Skip_GoHome_Condition()
@@ -736,8 +736,8 @@ func int DIA_Addon_Skip_GoHome_Condition()
 
 func void DIA_Addon_Skip_GoHome_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skip_GoHome_15_00"); //Ich brauch dich nicht mehr.
-	AI_Output(self, other, "DIA_Addon_Skip_GoHome_08_01"); //Tja, das war's dann. Ich bin im Lager.
+	AI_Output(other, self, "DIA_Addon_Skip_GoHome_15_00"); //I no longer need you.
+	AI_Output(self, other, "DIA_Addon_Skip_GoHome_08_01"); //Well, that was that, then. You'll find me in the camp.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine(self, "START");
@@ -767,14 +767,14 @@ func int DIA_Addon_Skip_TooFar_Condition()
 
 func void DIA_Addon_Skip_TooFar_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Skip_TooFar_08_01"); //Das ist weit genug!
+	AI_Output(self, other, "DIA_Addon_Skip_TooFar_08_01"); //This is far enough!
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_TooFar_08_02"); //Wenn du unbedingt weitergehen willst, dann ohne uns!
+		AI_Output(self, other, "DIA_Addon_Skip_TooFar_08_02"); //If you insist on going further, count us out!
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Skip_TooFar_08_03"); //Wenn du unbedingt weitergehen willst, dann ohne mich.
+		AI_Output(self, other, "DIA_Addon_Skip_TooFar_08_03"); //If you insist on going further, count me out!
 	};
 
 	B_Addon_PiratesGoHome();
@@ -806,8 +806,8 @@ func int DIA_Addon_Skip_Treffpunkt_Condition()
 
 func void DIA_Addon_Skip_Treffpunkt_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Skip_Add_08_00"); //Wenn wir uns verlieren sollten, treffen wir und hier am Wasserloch wieder.
-	AI_Output(self, other, "DIA_Addon_Skip_Add_08_02"); //Lass uns weitergehen!
+	AI_Output(self, other, "DIA_Addon_Skip_Add_08_00"); //If we lose track of each other, let's meet up here at the watering hole.
+	AI_Output(self, other, "DIA_Addon_Skip_Add_08_02"); //Let's move on!
 
 	AI_StopProcessInfos(self);
 };
@@ -835,7 +835,7 @@ func int DIA_Addon_Skip_Orks_Condition()
 
 func void DIA_Addon_Skip_Orks_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Skip_Add_08_01"); //Orks! Ich hasse die Biester!
+	AI_Output(self, other, "DIA_Addon_Skip_Add_08_01"); //Orcs! I hate those things!
 
 	AI_StopProcessInfos(self);
 };
@@ -863,9 +863,9 @@ func int DIA_Addon_Skip_AllRazorsDead_Condition()
 
 func void DIA_Addon_Skip_AllRazorsDead_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Skip_Add_08_03"); //Sieht so aus, als wenn wir alle Razor erwischt hätten.
-	AI_Output(self, other, "DIA_Addon_Skip_Add_08_04"); //Wir können noch ein bißchen durch die Gegend ziehen, wenn du willst.
-	AI_Output(self, other, "DIA_Addon_Skip_Add_08_05"); //Hauptsache, wir bleiben im Canyon.
+	AI_Output(self, other, "DIA_Addon_Skip_Add_08_03"); //Looks like we got all of the razors.
+	AI_Output(self, other, "DIA_Addon_Skip_Add_08_04"); //We could roam around a little longer if you want to.
+	AI_Output(self, other, "DIA_Addon_Skip_Add_08_05"); //Just as long as we stay in the canyon. 
 
 	AI_StopProcessInfos(self);
 };

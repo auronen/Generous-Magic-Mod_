@@ -5,7 +5,7 @@
 prototype Mst_Default_Swamprat(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Sumpfratte";
+	name							= "Swamp Rat";
 	guild							= GIL_MOLERAT;
 	level							= 12;
 

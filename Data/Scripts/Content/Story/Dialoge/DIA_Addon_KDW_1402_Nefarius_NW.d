@@ -32,7 +32,7 @@ instance DIA_Addon_Nefarius_NW_PICKPOCKET(C_INFO)
 	condition		= DIA_Addon_Nefarius_NW_PICKPOCKET_Condition;
 	information		= DIA_Addon_Nefarius_NW_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description		= "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };
 
 func int DIA_Addon_Nefarius_NW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Nefarius_Hallo(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Nefarius_Hallo_Condition;
 	information		= DIA_Addon_Nefarius_Hallo_Info;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_Nefarius_Hallo_Condition()
@@ -94,11 +94,11 @@ func int DIA_Addon_Nefarius_Hallo_Condition()
 
 func void DIA_Addon_Nefarius_Hallo_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_Hallo_15_00"); //Wie sieht's aus?
-	AI_Output(self, other, "DIA_Addon_Nefarius_Hallo_05_01"); //Was machst DU denn hier? Das ist ja eine Überraschung.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Hallo_05_02"); //Ich dachte, man hätte dich getötet.
-	AI_Output(other, self, "DIA_Addon_Nefarius_Hallo_15_03"); //Beinahe.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Hallo_05_04"); //Es gab einen riesen Wirbel um dich, weißt du das? Ich habe Saturas kaum wieder erkannt, so außer sich war er wegen der Sache damals.
+	AI_Output(other, self, "DIA_Addon_Nefarius_Hallo_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Addon_Nefarius_Hallo_05_01"); //What are YOU doing here? This is certainly a surprise.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Hallo_05_02"); //I thought you had been killed.
+	AI_Output(other, self, "DIA_Addon_Nefarius_Hallo_15_03"); //Almost.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Hallo_05_04"); //There was quite a fuss about you, you know that? I hardly recognized Saturas, he was so beside himself about that business back then.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -110,7 +110,7 @@ instance DIA_Addon_Nefarius_keineahnung(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Nefarius_keineahnung_Condition;
 	information		= DIA_Addon_Nefarius_keineahnung_Info;
-	description		= "Was ist das für ein Portal?";
+	description		= "What sort of portal is that?";
 };
 
 func int DIA_Addon_Nefarius_keineahnung_Condition()
@@ -123,10 +123,10 @@ func int DIA_Addon_Nefarius_keineahnung_Condition()
 
 func void DIA_Addon_Nefarius_keineahnung_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_keineahnung_15_00"); //Was ist das für ein Portal?
-	AI_Output(self, other, "DIA_Addon_Nefarius_keineahnung_05_01"); //Wir vermuten, dass es in das verlorene Tal führt, in dem die alte Kultur ihre Stadt gehabt haben muss.
-	AI_Output(self, other, "DIA_Addon_Nefarius_keineahnung_05_02"); //Aber der Stein hinter dem Portal besteht aus meterdickem, massiven Fels.
-	AI_Output(self, other, "DIA_Addon_Nefarius_keineahnung_05_03"); //Auch gibt es keine Anzeichen für Teleportationsmagie. Sehr mysteriös ...
+	AI_Output(other, self, "DIA_Addon_Nefarius_keineahnung_15_00"); //What sort of portal is that?
+	AI_Output(self, other, "DIA_Addon_Nefarius_keineahnung_05_01"); //We suspect that it leads to the lost valley where the ancient culture must have had their city.
+	AI_Output(self, other, "DIA_Addon_Nefarius_keineahnung_05_02"); //But the stone behind the portal is made of massive rock, yards thick.
+	AI_Output(self, other, "DIA_Addon_Nefarius_keineahnung_05_03"); //Also, there are no signs of teleportation magic. Very mysterious...
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -138,7 +138,7 @@ instance DIA_Addon_Nefarius_WieMechanik(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Nefarius_WieMechanik_Condition;
 	information		= DIA_Addon_Nefarius_WieMechanik_Info;
-	description		= "Weißt du schon, wie man es aktiviert?";
+	description		= "Do you know how to activate it?";
 };
 
 func int DIA_Addon_Nefarius_WieMechanik_Condition()
@@ -151,10 +151,10 @@ func int DIA_Addon_Nefarius_WieMechanik_Condition()
 
 func void DIA_Addon_Nefarius_WieMechanik_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_WieMechanik_15_00"); //Weißt du schon, wie man es aktiviert?
-	AI_Output(self, other, "DIA_Addon_Nefarius_WieMechanik_05_01"); //Eines der fehlenden Ornamente scheint eine Art magischer SCHLÜSSEL zu sein.
-	AI_Output(self, other, "DIA_Addon_Nefarius_WieMechanik_05_03"); //Wir werden es brauchen, um weiterzukommen.
-	AI_Output(self, other, "DIA_Addon_Nefarius_WieMechanik_05_02"); //Es muß genau in die ringförmige Vertiefung neben dem Portal passen.
+	AI_Output(other, self, "DIA_Addon_Nefarius_WieMechanik_15_00"); //Do you know how to activate it?
+	AI_Output(self, other, "DIA_Addon_Nefarius_WieMechanik_05_01"); //One of the missing ornaments seems to be a sort of magical KEY.
+	AI_Output(self, other, "DIA_Addon_Nefarius_WieMechanik_05_03"); //We'll need it to get any farther.
+	AI_Output(self, other, "DIA_Addon_Nefarius_WieMechanik_05_02"); //It has to fit exactly into the ring-shaped hollow next to the portal.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -166,7 +166,7 @@ instance DIA_Addon_Nefarius_SCbringOrnaments(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Nefarius_SCbringOrnaments_Condition;
 	information		= DIA_Addon_Nefarius_SCbringOrnaments_Info;
-	description		= "Ich habe einen Teil des Ornament mitgebracht.";
+	description		= "I brought a part of the ornament.";
 };
 
 func int DIA_Addon_Nefarius_SCbringOrnaments_Condition()
@@ -179,14 +179,14 @@ func int DIA_Addon_Nefarius_SCbringOrnaments_Condition()
 
 func void DIA_Addon_Nefarius_SCbringOrnaments_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_SCbringOrnaments_15_00"); //Ich habe einen Teil des Ornaments mitgebracht.
-	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_01"); //(begeistert) Ja? Das ist ja großartig.
-	AI_Output(other, self, "DIA_Addon_Nefarius_SCbringOrnaments_15_02"); //Hast du eine Ahnung, wo die anderen Teile sind?
-	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_03"); //Den alten Inschriften nach wurde es in vier Teile zerbrochen.
-	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_04"); //Und es siehst so aus, als könnten sich die Teile immer noch auf der Insel befinden ...
-	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_05"); //Ich habe mit Merdarions Hilfe einige der Inschriften übersetzt.
-	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_06"); //Dort finden sich Hinweise darauf, wo die verbliebenen Stücke sind.
-	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_07"); //Hier. Auf dieser Karte habe ich einige Stellen markiert.
+	AI_Output(other, self, "DIA_Addon_Nefarius_SCbringOrnaments_15_00"); //I brought a part of the ornament.
+	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_01"); //(excited) Really? That's terrific.
+	AI_Output(other, self, "DIA_Addon_Nefarius_SCbringOrnaments_15_02"); //Do you have any idea where the other parts are?
+	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_03"); //According to the ancient inscriptions, it was broken into four pieces.
+	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_04"); //And it looks as though the parts are still to be found on the island...
+	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_05"); //With Merdarion's help, I have translated some of the inscriptions.
+	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_06"); //There are hints as to where the remaining pieces are.
+	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_07"); //Here. I've marked some of the places on this map.
 	CreateInvItems(self, ItWr_Map_NewWorld_Ornaments_Addon, 1);
 	B_GiveInvItems(self, other, ItWr_Map_NewWorld_Ornaments_Addon, 1);
 	MIS_Addon_Nefarius_BringMissingOrnaments = LOG_RUNNING;
@@ -197,10 +197,10 @@ func void DIA_Addon_Nefarius_SCbringOrnaments_Info()
 	Log_AddEntry(TOPIC_Addon_Ornament, TOPIC_Addon_Ornament_2);
 
 	B_StartotherRoutine(BAU_4300_Addon_Cavalorn, "OrnamentSteinring");
-	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_08"); //Sieh dich dort um.
-	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_09"); //Du solltest auf alte Bauwerke achten. Vielleicht sind sie schon etwas verfallen und nicht mehr klar erkennbar.
-	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_10"); //Es könnte alles Mögliche sein. Ein großer Findling, ein Steinkreis, ein Mausoleum oder ähnliches.
-	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_11"); //Aber, was rede ich? Du wirst es schon finden. Viel Erfolg.
+	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_08"); //Look around there.
+	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_09"); //You should pay attention to old structures. They might be somewhat deteriorated and no longer clearly recognizable.
+	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_10"); //It could be almost anything. A large rock, a stone circle, a mausoleum or something similar.
+	AI_Output(self, other, "DIA_Addon_Nefarius_SCbringOrnaments_05_11"); //But, what am I saying? You'll find it. Good luck.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -212,7 +212,7 @@ instance DIA_Addon_Nefarius_WhyPortalClosed(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Nefarius_WhyPortalClosed_Condition;
 	information		= DIA_Addon_Nefarius_WhyPortalClosed_Info;
-	description		= "Aus welchem Grund wurde das Ornament zerbrochen?";
+	description		= "Why was the ornament broken?";
 };
 
 func int DIA_Addon_Nefarius_WhyPortalClosed_Condition()
@@ -225,11 +225,11 @@ func int DIA_Addon_Nefarius_WhyPortalClosed_Condition()
 
 func void DIA_Addon_Nefarius_WhyPortalClosed_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_WhyPortalClosed_15_00"); //Aus welchem Grund wurde das Ornament zerbrochen?
-	AI_Output(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_01"); //Wer auch immer das getan hat, wollte verhindern, dass das Portal jemals wieder geöffnet wird.
-	AI_Output(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_02"); //Je länger ich auf die Inschriften starre, desto mehr erkenne ich, dass die Priester der alten Kultur wahrlich keine Dummköpfe waren.
-	AI_Output(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_03"); //Es gab einen guten Grund, dass sie die Region dahinter unzugänglich gemacht haben.
-	AI_Output(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_04"); //Wir wissen nicht, was uns dort erwarten wird. Aber sicherlich ist es nichts Gutes ...
+	AI_Output(other, self, "DIA_Addon_Nefarius_WhyPortalClosed_15_00"); //Why was the ornament broken?
+	AI_Output(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_01"); //Whoever did it wanted to prevent the portal from ever being opened again.
+	AI_Output(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_02"); //The longer I stare at the inscriptions, the more I realize that the priests of the ancient culture really were no fools.
+	AI_Output(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_03"); //There was a good reason that they made the region back there inaccessible.
+	AI_Output(self, other, "DIA_Addon_Nefarius_WhyPortalClosed_05_04"); //We don't know what awaits us there. But it certainly isn't anything good...
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -242,7 +242,7 @@ instance DIA_Addon_Nefarius_MissingOrnaments(C_INFO)
 	condition		= DIA_Addon_Nefarius_MissingOrnaments_Condition;
 	information		= DIA_Addon_Nefarius_MissingOrnaments_Info;
 	permanent		= TRUE;
-	description		= "Wegen der fehlenden Ornamente...";
+	description		= "About the missing ornaments...";
 };
 
 func int DIA_Addon_Nefarius_MissingOrnaments_Condition()
@@ -254,12 +254,12 @@ func int DIA_Addon_Nefarius_MissingOrnaments_Condition()
 };
 
 var int MissingOrnamentsCounter;
-const int Addon_NefariussMissingOrnamentsOffer = 100; // Joly:Kohle für ein Ornament
+const int Addon_NefariussMissingOrnamentsOffer = 100; // Joly:Kohle fÃ¼r ein Ornament
 
 func void DIA_Addon_Nefarius_MissingOrnaments_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_00"); //Wegen der fehlenden Ornamente ...
-	AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_01"); //(erwartungsvoll) Ja?
+	AI_Output(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_00"); //About the missing ornaments...
+	AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_01"); //(expectant) Yes?
 
 	if (Npc_HasItems(other, ItMi_Ornament_Addon) >= 1)
 	{
@@ -272,7 +272,7 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info()
 
 		if (MissingOrnamentsCount == 1)
 		{
-			AI_Output(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_02"); //Hier. Ich hab noch eins.
+			AI_Output(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_02"); //Here. I have another.
 			B_GivePlayerXP(XP_Addon_BringMissingOrnament);
 			Npc_RemoveInvItems(other, ItMi_Ornament_Addon, 1);
 			AI_PrintScreen(PRINT_ItemGegeben, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2); // "1 Gegenstand gegeben"
@@ -280,10 +280,10 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info()
 		}
 		else
 		{
-			AI_Output(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_03"); //Ich hab sie gefunden.
+			AI_Output(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_03"); //I found them.
 
 			Npc_RemoveInvItems(other, ItMi_Ornament_Addon, MissingOrnamentsCount);
-			concatText = ConcatStrings(IntToString(MissingOrnamentsCount), PRINT_ItemsGegeben); // "x Gegenstände gegeben"
+			concatText = ConcatStrings(IntToString(MissingOrnamentsCount), PRINT_ItemsGegeben); // "x GegenstÃ¤nde gegeben"
 			AI_PrintScreen(concatText, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 			XP_Addon_BringMissingOrnaments = (MissingOrnamentsCount * XP_Addon_BringMissingOrnament);
@@ -292,25 +292,25 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info()
 			B_GivePlayerXP(XP_Addon_BringMissingOrnaments);
 		};
 
-		AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_04"); //Das ist großartig.
+		AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_04"); //That's terrific.
 
 		if (MissingOrnamentsCounter == 1)
 		{
-			AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_05"); //Jetzt fehlen noch zwei. Vielleicht findest du sie ja auch noch.
+			AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_05"); //Now only two more are missing. Maybe you can find them, too.
 		}
 		else if (MissingOrnamentsCounter == 2)
 		{
-			AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_06"); //Eins fehlt jetzt noch, dann haben wir sie alle zusammen.
+			AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_06"); //Now only one is missing, then we'll have them all together.
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_07"); //Jetzt habe ich sie alle. Jetzt müssen wir sie nur noch zusammenfügen.
-			AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_08"); //Wir müssen mit vereinten Kräften wirken, um das Ornament wieder zu einen Ring zusammenzufügen.
+			AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_07"); //Now I have them all. Now all we have to do is put them together.
+			AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_08"); //We will have to use our combined powers to fit the ornament back into a ring.
 
 			MIS_Addon_Nefarius_BringMissingOrnaments = LOG_SUCCESS;
 		};
 
-		AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_09"); //Hier. Ich kann dir für deine Mühen einige Goldmünzen geben.
+		AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_09"); //Here. I can give you some gold coins for your trouble.
 
 		MissingOrnamentsGeld = (MissingOrnamentsCount * Addon_NefariussMissingOrnamentsOffer);
 
@@ -319,7 +319,7 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info()
 
 		if (MIS_Addon_Nefarius_BringMissingOrnaments == LOG_SUCCESS)
 		{
-			AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_10"); //Folge mir!
+			AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_10"); //Follow me!
 			AI_StopProcessInfos(self);
 			Npc_ExchangeRoutine(self, "PreRingritual");
 			B_StartotherRoutine(KDW_1400_Addon_Saturas_NW, "PreRingritual");
@@ -331,9 +331,9 @@ func void DIA_Addon_Nefarius_MissingOrnaments_Info()
 	}
 	else
 	{
-		AI_Output(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_11"); //Wie viele waren es nochmal?
-		AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_12"); //Insgesamt sind es vier ...
-		AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_13"); //Die anderen solltest du dort finden, wo ich die Markierungen auf deiner Karte gemacht habe.
+		AI_Output(other, self, "DIA_Addon_Nefarius_MissingOrnaments_15_11"); //How many were there again?
+		AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_12"); //There are four in all...
+		AI_Output(self, other, "DIA_Addon_Nefarius_MissingOrnaments_05_13"); //You should find the others where I have marked the map.
 	};
 };
 
@@ -360,7 +360,7 @@ func int DIA_Addon_Nefarius_Ringritual_Condition()
 
 func void DIA_Addon_Nefarius_Ringritual_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Nefarius_Ringritual_05_00"); //So. Und nun geh zur Seite.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Ringritual_05_00"); //There. And now step aside.
 	Npc_SetRefuseTalk(self, 60);
 	RitualRingRuns = LOG_RUNNING;
 	B_LogEntry(TOPIC_Addon_Ornament, TOPIC_Addon_Ornament_3);
@@ -397,10 +397,10 @@ func int DIA_Addon_Nefarius_RingRitualEnds_Condition()
 
 func void DIA_Addon_Nefarius_RingRitualEnds_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_00"); //Das Ornament ist wieder zusammengesetzt.
-	AI_Output(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_01"); //Da du uns die notwendigen Bruchstücke dafür gebracht hast, sollst du sie auch ins Portal einsetzen.
-	AI_Output(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_02"); //Geh zu Saturas und lass dir den zusammengesetzten Ring geben.
-	AI_Output(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_03"); //Das Portal wird sich dann hoffentlich öffnen.
+	AI_Output(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_00"); //The ornament has been put back together.
+	AI_Output(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_01"); //Since you brought us the necessary fragments, you should also set them into the portal.
+	AI_Output(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_02"); //Go to Saturas and let him give you the reassembled ring.
+	AI_Output(self, other, "DIA_Addon_Nefarius_RingRitualEnds_05_03"); //Hopefully, the portal will then open.
 
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "Start");
@@ -422,7 +422,7 @@ instance DIA_Addon_Nefarius_OpenedPortal(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Nefarius_OpenedPortal_Condition;
 	information		= DIA_Addon_Nefarius_OpenedPortal_Info;
-	description		= "Was nun?";
+	description		= "What now?";
 };
 
 func int DIA_Addon_Nefarius_OpenedPortal_Condition()
@@ -435,6 +435,6 @@ func int DIA_Addon_Nefarius_OpenedPortal_Condition()
 
 func void DIA_Addon_Nefarius_OpenedPortal_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_OpenedPortal_15_00"); //Was nun?
-	AI_Output(self, other, "DIA_Addon_Nefarius_OpenedPortal_05_01"); //Worauf wartest du? Geh schon und mach uns den Weg frei.
+	AI_Output(other, self, "DIA_Addon_Nefarius_OpenedPortal_15_00"); //What now?
+	AI_Output(self, other, "DIA_Addon_Nefarius_OpenedPortal_05_01"); //What are you waiting for? Go and get out of our way.
 };

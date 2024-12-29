@@ -39,7 +39,7 @@ instance MENU_STATUS (C_MENU_DEF)
 	items[21]	= "MENU_ITEM_ATTRIBUTE_4";
 
 
-	// Rüstungswerte
+	// RÃ¼stungswerte
 	
 	items[22]	= "MENU_ITEM_ARMOR_HEADING";
 	// ---------------------------------------------
@@ -125,7 +125,7 @@ const int STAT_B_X4 = 7700; //Ende der B-Spalte (zum zentrieren der Headings)
 // ----- Zeilen / Blockanfang ------
 // 1. Spalte
 const int STAT_PLYHEAD_Y	= 1000;
-const int STAT_PLY_Y 		= 1450; //Gilde / Punkteblock (1000 + 300 Fonthöhe + 150 Abstand)
+const int STAT_PLY_Y 		= 1450; //Gilde / Punkteblock (1000 + 300 FonthÃ¶he + 150 Abstand)
 
 const int STAT_ATRHEAD_Y  	= 3250; 
 const int STAT_ATR_Y 		= 3700; //Attributsblock
@@ -137,7 +137,7 @@ const int STAT_ARM_Y 		= 5650; //Armorblock
 const int STAT_TALHEAD_Y  	= 1000;
 const int STAT_TAL_Y  		= 1450; //2. Spalte - Talentblock
 
-// ----- Zeilengrösse ------
+// ----- ZeilengrÃ¶sse ------
 const int STAT_DY =  300;
 
 
@@ -150,7 +150,7 @@ const int STAT_DY =  300;
 // ---------------
 instance MENU_ITEM_STATUS_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	 	= "CHARAKTERPROFIL";
+	text[0]	 	= "CHARACTER";
 	posx		= STAT_A_X1;				posy = STAT_PLYHEAD_Y;	
 	dimx 		= STAT_A_X4 - STAT_A_X1;	dimy = STAT_DY;
 	fontName	= STAT_FONT_DEFAULT;
@@ -168,7 +168,7 @@ instance MENU_ITEM_PLAYERGUILD(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LEVEL_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X2;				posy = STAT_PLY_Y + STAT_DY*0;
-	text[0]		= "Stufe";	
+	text[0]		= "Level";	
 	fontName	= STAT_FONT_DEFAULT;		
 	flags		= flags & ~IT_SELECTABLE; //Selectable wird mit &! rausgeworfen - alle andern Flags bleiben, wie sie sind
 };
@@ -191,7 +191,7 @@ instance MENU_ITEM_TALENT_7_TITLE(C_MENU_ITEM_DEF)
 instance MENU_ITEM_TALENT_7_CIRCLE(C_MENU_ITEM_DEF) 
 {
 	posx 		= STAT_A_X2;				posy = STAT_PLY_Y + STAT_DY*1;	
-	text[0]		= "Kreis"; 
+	text[0]		= "Circle"; 
 	fontName 	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE; 
 };
@@ -206,7 +206,7 @@ instance MENU_ITEM_TALENT_7_SKILL(C_MENU_ITEM_DEF)
 instance MENU_ITEM_EXP_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_PLY_Y + STAT_DY*2;	
-	text[0]		= "Erfahrung"; 
+	text[0]		= "Experience"; 
 	fontName 	= STAT_FONT_DEFAULT;	
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -222,7 +222,7 @@ INSTANCE MENU_ITEM_EXP(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LEVEL_NEXT_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_PLY_Y + STAT_DY*3;	
-	text[0]		= "Nächste Stufe";
+	text[0]		= "Next Level";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -238,7 +238,7 @@ INSTANCE MENU_ITEM_LEVEL_NEXT(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LEARN_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_PLY_Y + STAT_DY*4;	
-	text[0]		= "Lernpunkte";	
+	text[0]		= "Learning Pts.";	
 	fontName 	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -259,16 +259,16 @@ INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATRHEAD_Y;
 	dimx 		= STAT_A_X4 - STAT_A_X1;	dimy = STAT_DY;
-	text[0]		= "ATTRIBUTE";	
+	text[0]		= "ATTRIBUTES";	
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };
 
-// ------ Stärke ------
+// ------ StÃ¤rke ------
 INSTANCE MENU_ITEM_ATTRIBUTE_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*0;
-	text[0]		= "Stärke";
+	text[0]		= "Strength";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -284,7 +284,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_1(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_2_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*1;
-	text[0]		= "Geschick";
+	text[0]		= "Dexterity";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -316,7 +316,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_3(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_4_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*3;
-	text[0]		= "Lebensenergie";
+	text[0]		= "Hitpoints";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -330,14 +330,14 @@ INSTANCE MENU_ITEM_ATTRIBUTE_4(C_MENU_ITEM_DEF)
 
 
 // --------------
-// Rüstungsschutz
+// RÃ¼stungsschutz
 // --------------
 
 INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARMHEAD_Y;
 	dimx 		= STAT_A_X4 - STAT_A_X1;	dimy = STAT_DY;
-	text[0]		= "RÜSTUNGSSCHUTZ";
+	text[0]		= "PROTECTION";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };
@@ -346,7 +346,7 @@ INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*0;
-	text[0]		= "vor Waffen";
+	text[0]		= "Weapons";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -362,7 +362,7 @@ INSTANCE MENU_ITEM_ARMOR_1(C_MENU_ITEM_DEF)
 instance MENU_ITEM_ARMOR_2_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*1;	
-	text[0]		= "vor Geschossen";
+	text[0]		= "Projectiles";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -378,7 +378,7 @@ INSTANCE MENU_ITEM_ARMOR_2(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_3_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*2;
-	text[0]		= "vor Drachenfeuer";
+	text[0]		= "Dragon fire";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -394,7 +394,7 @@ INSTANCE MENU_ITEM_ARMOR_3(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_4_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*3;
-	text[0]		= "vor Magie";
+	text[0]		= "Magic";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -416,7 +416,7 @@ INSTANCE MENU_ITEM_TALENTS_HEADING(C_MENU_ITEM_DEF)
 
 	posx		= STAT_B_X1; 				posy = STAT_TALHEAD_Y;
 	dimx 		= STAT_B_X4 - STAT_B_X1;	dimy = STAT_DY;
-	text[0]		= "TALENTE";
+	text[0]		= "SKILLS";
 	fontName	= STAT_FONT_DEFAULT;	
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };

@@ -30,7 +30,7 @@ instance DIA_Rega_HALLO(C_INFO)
 	nr				= 3;
 	condition		= DIA_Rega_HALLO_Condition;
 	information		= DIA_Rega_HALLO_Info;
-	description		= "Wie geht's?";
+	description		= "How's it going?";
 };
 
 func int DIA_Rega_HALLO_Condition()
@@ -40,32 +40,32 @@ func int DIA_Rega_HALLO_Condition()
 
 func void DIA_Rega_HALLO_Info()
 {
-	AI_Output(other, self, "DIA_Rega_HALLO_15_00"); //Wie geht's?
+	AI_Output(other, self, "DIA_Rega_HALLO_15_00"); //How's it going?
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 	{
-		AI_Output(self, other, "DIA_Rega_HALLO_17_01"); //Du kommst aus der Stadt, nicht wahr?
+		AI_Output(self, other, "DIA_Rega_HALLO_17_01"); //You're from the city, aren't you?
 	}
 	else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		AI_Output(self, other, "DIA_Rega_HALLO_17_02"); //Die bist einer von Onars Söldnern, nicht wahr?
+		AI_Output(self, other, "DIA_Rega_HALLO_17_02"); //You're one of Onar's mercenaries, aren't you?
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output(self, other, "DIA_Rega_HALLO_17_03"); //Du bist ein Magier, nicht wahr?
+		AI_Output(self, other, "DIA_Rega_HALLO_17_03"); //You're a magician, aren't you?
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Rega_HALLO_17_04"); //Du bist keiner von uns, nicht wahr?
+		AI_Output(self, other, "DIA_Rega_HALLO_17_04"); //You're not one of us, huh?
 	};
 
-	AI_Output(self, other, "DIA_Rega_HALLO_17_05"); //Mach lieber, dass du hier wegkommst.
-	AI_Output(other, self, "DIA_Rega_HALLO_15_06"); //Warum?
-	AI_Output(self, other, "DIA_Rega_HALLO_17_07"); //Hier war es zwar früher nicht das Paradies, aber zumindest hatte man seine Ruhe, wenn man seine Arbeit für Sekob gemacht hat.
-	AI_Output(self, other, "DIA_Rega_HALLO_17_08"); //Aber in letzter Zeit ist es unerträglich geworden.
+	AI_Output(self, other, "DIA_Rega_HALLO_17_05"); //I'd get out of here if I were you.
+	AI_Output(other, self, "DIA_Rega_HALLO_15_06"); //Why?
+	AI_Output(self, other, "DIA_Rega_HALLO_17_07"); //This wasn't a paradise before, but at least we were left in peace as long as we did our work for Sekob.
+	AI_Output(self, other, "DIA_Rega_HALLO_17_08"); //But lately it has become unbearable.
 	if (Kapitel < 3)
 	{
-		AI_Output(self, other, "DIA_Rega_HALLO_17_09"); //Überall Banditen, Feldräuber zerstören die ganze Ernte und der Großbauer ist auch immer grausamer geworden.
+		AI_Output(self, other, "DIA_Rega_HALLO_17_09"); //Bandits are everywhere, field raiders destroy the entire harvest, and the landowner is getting to be pretty brutal.
 	};
 };
 
@@ -78,7 +78,7 @@ instance DIA_Rega_ONAR(C_INFO)
 	nr				= 4;
 	condition		= DIA_Rega_ONAR_Condition;
 	information		= DIA_Rega_ONAR_Info;
-	description		= "Hast du Angst vor dem Großbauern?";
+	description		= "Are you afraid of the landowner, then?";
 };
 
 func int DIA_Rega_ONAR_Condition()
@@ -93,9 +93,9 @@ func int DIA_Rega_ONAR_Condition()
 
 func void DIA_Rega_ONAR_Info()
 {
-	AI_Output(other, self, "DIA_Rega_ONAR_15_00"); //Hast du Angst vor dem Großbauern?
-	AI_Output(self, other, "DIA_Rega_ONAR_17_01"); //Klar. Wenn dem Großbauer irgendjemand nicht passt, hetzt er seine Söldner auf ihn und kurze Zeit später ist man verschwunden.
-	AI_Output(self, other, "DIA_Rega_ONAR_17_02"); //Also hält man hier besser die Klappe.
+	AI_Output(other, self, "DIA_Rega_ONAR_15_00"); //Are you afraid of the landowner, then?
+	AI_Output(self, other, "DIA_Rega_ONAR_17_01"); //You bet. If the landowner doesn't like people's faces, he sends his mercenaries after them, and that's the last you see of them.
+	AI_Output(self, other, "DIA_Rega_ONAR_17_02"); //So we prefer to keep our mouths closed.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -107,7 +107,7 @@ instance DIA_Rega_SLD(C_INFO)
 	nr				= 5;
 	condition		= DIA_Rega_SLD_Condition;
 	information		= DIA_Rega_SLD_Info;
-	description		= "Sollten sich die Söldner nicht um die Feldräuber kümmern?";
+	description		= "Shouldn't the mercenaries take care of the field raiders?";
 };
 
 func int DIA_Rega_SLD_Condition()
@@ -122,9 +122,9 @@ func int DIA_Rega_SLD_Condition()
 
 func void DIA_Rega_SLD_Info()
 {
-	AI_Output(other, self, "DIA_Rega_SLD_15_00"); //Sollten sich die Söldner nicht um die Feldräuber kümmern?
-	AI_Output(self, other, "DIA_Rega_SLD_17_01"); //Ich weiß nicht, wofür sie bezahlt werden, aber sicher nicht, um uns kleinen Leuten zu helfen.
-	AI_Output(self, other, "DIA_Rega_SLD_17_02"); //Das Feldräuberproblem ist Sache der kleinen Bauern, die die Felder bei ihm gepachtet haben.
+	AI_Output(other, self, "DIA_Rega_SLD_15_00"); //Shouldn't the mercenaries take care of the field raiders?
+	AI_Output(self, other, "DIA_Rega_SLD_17_01"); //I don't know what they're being paid for, but certainly not to help us common people.
+	AI_Output(self, other, "DIA_Rega_SLD_17_02"); //The field raider problem is left to the small farmers who rent the fields from him.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -136,7 +136,7 @@ instance DIA_Rega_BANDITEN(C_INFO)
 	nr				= 6;
 	condition		= DIA_Rega_BANDITEN_Condition;
 	information		= DIA_Rega_BANDITEN_Info;
-	description		= "Wie schützt ihr euch vor den Banditen?";
+	description		= "How do you protect yourselves against the bandits?";
 };
 
 func int DIA_Rega_BANDITEN_Condition()
@@ -149,8 +149,8 @@ func int DIA_Rega_BANDITEN_Condition()
 
 func void DIA_Rega_BANDITEN_Info()
 {
-	AI_Output(other, self, "DIA_Rega_BANDITEN_15_00"); //Wie schützt ihr euch vor den Banditen?
-	AI_Output(self, other, "DIA_Rega_BANDITEN_17_01"); //Gar nicht. Wir laufen weg. Was sonst?
+	AI_Output(other, self, "DIA_Rega_BANDITEN_15_00"); //How do you protect yourselves against the bandits?
+	AI_Output(self, other, "DIA_Rega_BANDITEN_17_01"); //We don't. We run away. What else?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -162,7 +162,7 @@ instance DIA_Rega_BRONKO(C_INFO)
 	nr				= 7;
 	condition		= DIA_Rega_BRONKO_Condition;
 	information		= DIA_Rega_BRONKO_Info;
-	description		= "(nach Bronko fragen)";
+	description		= "(ask about Bronco)";
 };
 
 func int DIA_Rega_BRONKO_Condition()
@@ -178,8 +178,8 @@ func int DIA_Rega_BRONKO_Condition()
 
 func void DIA_Rega_BRONKO_Info()
 {
-	AI_Output(other, self, "DIA_Rega_BRONKO_15_00"); //Was ist das eigentlich für ein grimmiger Typ da?
-	AI_Output(self, other, "DIA_Rega_BRONKO_17_01"); //Sei mir nicht böse, aber ich will hier keinen Ärger, ok? Frag jemand anders.
+	AI_Output(other, self, "DIA_Rega_BRONKO_15_00"); //So who's the nasty guy over there?
+	AI_Output(self, other, "DIA_Rega_BRONKO_17_01"); //Don't get me wrong, but I don't want to get into trouble. Go ask somebody else.
 
 	AI_StopProcessInfos(self);
 };
@@ -194,7 +194,7 @@ instance DIA_Rega_PERMKAP1(C_INFO)
 	condition		= DIA_Rega_PERMKAP1_Condition;
 	information		= DIA_Rega_PERMKAP1_Info;
 	permanent		= TRUE;
-	description		= "Lass dich nicht unterkriegen.";
+	description		= "Keep your chin up.";
 };
 
 func int DIA_Rega_PERMKAP1_Condition()
@@ -207,23 +207,23 @@ func int DIA_Rega_PERMKAP1_Condition()
 
 func void DIA_Rega_PERMKAP1_Info()
 {
-	AI_Output(other, self, "DIA_Rega_PERMKAP1_15_00"); //Lass dich nicht unterkriegen.
+	AI_Output(other, self, "DIA_Rega_PERMKAP1_15_00"); //Keep your chin up.
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 	{
-		AI_Output(self, other, "DIA_Rega_PERMKAP1_17_01"); //Du hast gut reden. Du lebst ja auch in der Stadt.
+		AI_Output(self, other, "DIA_Rega_PERMKAP1_17_01"); //That's easy for you to say. You live in town, after all.
 	}
 	else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		AI_Output(self, other, "DIA_Rega_PERMKAP1_17_02"); //Wenn ihr Söldner ein bisschen erträglicher wärt, dann wäre alles andere nicht so schlimm.
+		AI_Output(self, other, "DIA_Rega_PERMKAP1_17_02"); //If you mercenaries weren't quite so unbearable, everything else wouldn't be so bad.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output(self, other, "DIA_Rega_PERMKAP1_17_03"); //Von euch Magiern sieht man immer weniger. Ich hoffe, dass du nicht der Letzte bist. Wir brauchen euch. Jetzt mehr denn je.
+		AI_Output(self, other, "DIA_Rega_PERMKAP1_17_03"); //There's fewer and fewer magicians about. I hope you're not the last one. We need you - now more than ever.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Rega_PERMKAP1_17_04"); //Nicht so einfach, wenn man für Sekob, den Menschenschinder, arbeitet.
+		AI_Output(self, other, "DIA_Rega_PERMKAP1_17_04"); //That's not so easy if you're working for Sekob the slave-driver.
 	};
 
 	AI_StopProcessInfos(self);

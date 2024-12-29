@@ -1,5 +1,5 @@
 //******************************************
-//   Gorn in der Oldworld als Drachenj‰ger
+//   Gorn in der Oldworld als Drachenj√§ger
 //******************************************
 
 instance PC_Fighter_DJG(Npc_Default)

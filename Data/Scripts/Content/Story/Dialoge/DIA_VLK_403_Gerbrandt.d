@@ -51,7 +51,7 @@ instance DIA_Gerbrandt_PICKPOCKET(C_INFO)
 	condition		= DIA_Gerbrandt_PICKPOCKET_Condition;
 	information		= DIA_Gerbrandt_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre einfach seinen Geldbeutel zu stehlen)";
+	description		= "(It would be simple to steal his purse.)";
 };
 
 func int DIA_Gerbrandt_PICKPOCKET_Condition()
@@ -104,7 +104,7 @@ instance DIA_Gerbrandt_Hello(C_INFO)
 	nr				= 5;
 	condition		= DIA_Gerbrandt_Hello_Condition;
 	information		= DIA_Gerbrandt_Hello_Info;
-	description		= "Was machst du hier?";
+	description		= "What are you doing here?";
 };
 
 func int DIA_Gerbrandt_Hello_Condition()
@@ -119,66 +119,66 @@ func int DIA_Gerbrandt_Hello_Condition()
 
 func void DIA_Gerbrandt_Hello_Info()
 {
-	AI_Output(other, self, "DIA_Gerbrandt_Hello_15_00"); //Was machst du hier?
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_10_01"); //Wer bist du denn? Anscheinend bist du neu und hast noch nicht mitbekommen, wie das hier läuft.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_10_02"); //Man nennt mich Gerbrandt. Für dich: Herr Gerbrandt! Verstanden?
+	AI_Output(other, self, "DIA_Gerbrandt_Hello_15_00"); //What are you doing here?
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_10_01"); //Who are you, then? Looks like you're new and have no idea what goes on around here.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_10_02"); //They call me Gerbrandt. To you, that's: Mr. Gerbrandt, sir. Got it?
 
 	Info_ClearChoices(DIA_Gerbrandt_Hello);
-	Info_AddChoice(DIA_Gerbrandt_Hello, "Verstanden, Gerbrandt.", DIA_Gerbrandt_Hello_No);
-	Info_AddChoice(DIA_Gerbrandt_Hello, "Ja, Herr Gerbrandt.", DIA_Gerbrandt_Hello_Yes);
+	Info_AddChoice(DIA_Gerbrandt_Hello, "I got it, Gerbrandt.", DIA_Gerbrandt_Hello_No);
+	Info_AddChoice(DIA_Gerbrandt_Hello, "I get the point, Mr. Gerbrandt, sir.", DIA_Gerbrandt_Hello_Yes);
 };
 
 func void DIA_Gerbrandt_Hello_No()
 {
-	AI_Output(other, self, "DIA_Gerbrandt_Hello_No_15_00"); //Verstanden, Gerbrandt.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_No_10_01"); //Du reißt ganz schön das Maul auf. Du solltest mir gegenüber ein bisschen mehr Respekt zeigen, sonst bekommst du hier noch ganz gewaltige Probleme.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_No_10_02"); //Ich sage hier, wo es lang geht. Wenn wer Ärger macht, bekommt er Ärger mit mir und sollte schleunigst die Stadt verlassen, denn wenn ich mit ihm fertig bin, wird er sich wünschen, mir nie begnet zu sein.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_No_10_03"); //Die meisten der Leute im Hafen arbeiten für mich und wenn du irgendwann mal Arbeit suchst, solltest du zusehen, dass ich dich in guter Erinnerung habe.
+	AI_Output(other, self, "DIA_Gerbrandt_Hello_No_15_00"); //I got it, Gerbrandt.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_No_10_01"); //Careful with that big mouth of yours. You had better show me a little more respect, or you're headed for all kinds of trouble here.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_No_10_02"); //I call the shots here. Whoever causes trouble has to answer to me and had better skip town in a hurry, because once I'm done with him, he'll wish he'd never laid eyes on me.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_No_10_03"); //Most people around the harbor work for me. If you're ever looking for work, you had better see to it that my memories of you are pleasant ones.
 
 	Info_ClearChoices(DIA_Gerbrandt_Hello);
 };
 
 func void DIA_Gerbrandt_Hello_Yes()
 {
-	AI_Output(other, self, "DIA_Gerbrandt_Hello_Yes_15_00"); //Ja, Herr Gerbrandt.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_10_01"); //Zumindest verstehst du schnell, wie hier der Hase läuft.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_10_02"); //Wenn meine Geschäfte mal wieder besser laufen, kann ich so einen kräftigen Burschen wie dich bestimmt gebrauchen.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_10_03"); //Du würdest einen prima Lagerverwalter abgeben.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_10_04"); //Kannst du lesen?
+	AI_Output(other, self, "DIA_Gerbrandt_Hello_Yes_15_00"); //I get the point, Mr. Gerbrandt, sir.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_10_01"); //At least it didn't take you long to grasp how the wind blows around here.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_10_02"); //As soon as business starts picking up again, I can surely find a use for a strapping lad like you.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_10_03"); //You would make an excellent depot master.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_10_04"); //Can you read?
 
 	Info_ClearChoices(DIA_Gerbrandt_Hello);
-	Info_AddChoice(DIA_Gerbrandt_Hello, "Nein.", DIA_Gerbrandt_Hello_Yes_No);
-	Info_AddChoice(DIA_Gerbrandt_Hello, "Ich will keinen Job.", DIA_Gerbrandt_Hello_NoJob);
-	Info_AddChoice(DIA_Gerbrandt_Hello, "Natürlich.", DIA_Gerbrandt_Hello_Yes_Yes);
+	Info_AddChoice(DIA_Gerbrandt_Hello, "No.", DIA_Gerbrandt_Hello_Yes_No);
+	Info_AddChoice(DIA_Gerbrandt_Hello, "I don't want a job.", DIA_Gerbrandt_Hello_NoJob);
+	Info_AddChoice(DIA_Gerbrandt_Hello, "Of course.", DIA_Gerbrandt_Hello_Yes_Yes);
 };
 
 func void DIA_Gerbrandt_Hello_Yes_No()
 {
-	AI_Output(other, self, "DIA_Gerbrandt_Hello_Yes_No_15_00"); //Nein.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_No_10_01"); //Macht nichts, ein paar Säcke wirst du ja wohl tragen können.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_No_10_02"); //Wenn ich mit dir zufrieden bin, bekommst du vielleicht sogar eine Festanstellung. Bei mir gibt es immer was zu tun.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_No_10_03"); //Also, wenn die ersten Schiffe wieder anlegen, erwarte ich dich.
+	AI_Output(other, self, "DIA_Gerbrandt_Hello_Yes_No_15_00"); //No.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_No_10_01"); //Never mind, at least you'll be able to lug a few sacks about.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_No_10_02"); //If I am satisfied with you, I might even offer you a permanent position. There is enough to do around here.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_No_10_03"); //Well, then, I'll expect you when the first ships come back here to dock.
 
 	Info_ClearChoices(DIA_Gerbrandt_Hello);
 };
 
 func void DIA_Gerbrandt_Hello_NoJob()
 {
-	AI_Output(other, self, "DIA_Gerbrandt_Hello_NoJob_15_00"); //Ich will keinen Job.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_NoJob_10_01"); //Du kommst dir wohl ziemlich schlau vor. Pass mal auf, hier bekommt niemand einen Job, wenn ich es nicht zulasse.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_NoJob_10_02"); //Wenn du mir also weiter so dumm kommst, dann kannst du dir einen verwanzten Strohsack zum Schlafen suchen, mehr wirst du dir ohnehin nicht leisten können.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_NoJob_10_03"); //Es wird die Zeit kommen, da wirst du bei mir um einen Job betteln.
+	AI_Output(other, self, "DIA_Gerbrandt_Hello_NoJob_15_00"); //I don't want a job.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_NoJob_10_01"); //You think you're awfully clever. Watch it, no one can get a job here as long as I don't approve.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_NoJob_10_02"); //So if you keep giving me the lip like that, you can find yourself a bug-infested straw tick to sleep on, because that will be all you can afford.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_NoJob_10_03"); //The time will come when you'll beg me to give you a job.
 
 	Info_ClearChoices(DIA_Gerbrandt_Hello);
 };
 
 func void DIA_Gerbrandt_Hello_Yes_Yes()
 {
-	AI_Output(other, self, "DIA_Gerbrandt_Hello_Yes_Yes_15_00"); //Natürlich.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_Yes_10_01"); //Gut, gut. Geschultes Personal bekommt man selten.
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_Yes_10_02"); //Wie siehts mit Referenzen aus?
-	AI_Output(other, self, "DIA_Gerbrandt_Hello_Yes_Yes_15_03"); //Referenzen?
-	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_Yes_10_04"); //Schon gut. Ich werde mir dein Gesicht merken. Wenn der Handel wieder in Schwung kommt, melde dich bei mir. Vielleicht habe ich dann einen Job für dich.
+	AI_Output(other, self, "DIA_Gerbrandt_Hello_Yes_Yes_15_00"); //Of course.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_Yes_10_01"); //Fine, fine. Trained staff is hard to come by.
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_Yes_10_02"); //How about your references?
+	AI_Output(other, self, "DIA_Gerbrandt_Hello_Yes_Yes_15_03"); //References?
+	AI_Output(self, other, "DIA_Gerbrandt_Hello_Yes_Yes_10_04"); //All right, I shall remember your face. Once trade picks up again, come and see me. I just might have a job for you then.
 
 	Info_ClearChoices(DIA_Gerbrandt_Hello);
 };
@@ -189,9 +189,9 @@ func void DIA_Gerbrandt_Hello_Yes_Yes()
 
 func void B_GErbrandt_PissOff()
 {
-	AI_Output(self, other, "B_Gerbrandt_PissOff_10_00"); //Was soll das werden, willst du dich über mich lustig machen?
-	AI_Output(self, other, "B_Gerbrandt_PissOff_10_01"); //Du und dein Freund Diego haben schon genug Unheil angerichtet.
-	AI_Output(self, other, "B_Gerbrandt_PissOff_10_02"); //Lass mich in Ruhe!
+	AI_Output(self, other, "B_Gerbrandt_PissOff_10_00"); //What is that about - are you trying to mock me?
+	AI_Output(self, other, "B_Gerbrandt_PissOff_10_01"); //You and your buddy Diego have wreaked enough havoc already.
+	AI_Output(self, other, "B_Gerbrandt_PissOff_10_02"); //Leave me alone!
 
 	// Patch m.f. Wenn diego kommt und er wird gefragt, geht er nicht los, weil losgehen steht in exit info und durch diesen Ai_Stop wird das umgangen
 	if (DIEGO_COMING != TRUE) // NICHT, wenn Diego kommt
@@ -206,7 +206,7 @@ instance DIA_Gerbrandt_Perm(C_INFO)
 	condition		= DIA_Gerbrandt_Perm_Condition;
 	information		= DIA_Gerbrandt_Perm_Info;
 	permanent		= TRUE;
-	description		= "Gibt's was Neues?";
+	description		= "Any news?";
 };
 
 func int DIA_Gerbrandt_Perm_Condition()
@@ -219,19 +219,19 @@ func int DIA_Gerbrandt_Perm_Condition()
 
 func void DIA_Gerbrandt_Perm_Info()
 {
-	AI_Output(other, self, "DIA_Gerbrandt_Perm_15_00"); //Gibt's was Neues?
+	AI_Output(other, self, "DIA_Gerbrandt_Perm_15_00"); //Anything new?
 
 	if (Kapitel <= 2)
 	{
 		if ((hero.guild != GIL_KDF)
 		&& (hero.guild != GIL_PAL))
 		{
-			AI_Output(self, other, "DIA_Gerbrandt_Perm_10_01"); //Leute wie du haben hier oben nichts zu suchen. Hier wohnt die ehrbare Gesellschaft, keine Streuner und auch keine Ganoven.
-			AI_Output(self, other, "DIA_Gerbrandt_Perm_10_02"); //Wenn du es schaffen solltest, zu Ansehen und Vermögen zu kommen, bist du hier eventuell auch gerne gesehen.
+			AI_Output(self, other, "DIA_Gerbrandt_Perm_10_01"); //People like you have no business up here. This is where the respectable society resides, and not tramps or crooks.
+			AI_Output(self, other, "DIA_Gerbrandt_Perm_10_02"); //If you should ever succeed in becoming wealthy and respectable, you might find yourself more welcome here.
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Gerbrandt_Perm_10_03"); //Ich kann nicht klagen, ehrenwerter Herr.
+			AI_Output(self, other, "DIA_Gerbrandt_Perm_10_03"); //I cannot complain, honorable Sir.
 		};
 	}
 	else if (Kapitel >= 3)
@@ -241,12 +241,12 @@ func void DIA_Gerbrandt_Perm_Info()
 			if ((hero.guild != GIL_KDF)
 			&& (hero.guild != GIL_PAL))
 			{
-				AI_Output(self, other, "DIA_Gerbrandt_Perm_10_04"); //Ich kenne so Typen wie dich, du weißt einfach nicht, wo dein Platz ist.
-				AI_Output(self, other, "DIA_Gerbrandt_Perm_10_05"); //Ich werde mal mit dem Statthalter über die Sicherheitsmaßnahmen für das obere Viertel sprechen.
+				AI_Output(self, other, "DIA_Gerbrandt_Perm_10_04"); //I have seen the likes of you - you simply don't know your place.
+				AI_Output(self, other, "DIA_Gerbrandt_Perm_10_05"); //I shall have a talk with the governor concerning appropriate safety measures for the upper end of town.
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Gerbrandt_Perm_10_06"); //Das geht nur mich was an. Ich habe zu tun!
+				AI_Output(self, other, "DIA_Gerbrandt_Perm_10_06"); //That's nobody's business but mine. I'm busy!
 			};
 		}
 		else
@@ -267,7 +267,7 @@ instance DIA_Gerbrandt_GreetingsFromDiego(C_INFO)
 	nr				= 10;
 	condition		= DIA_Gerbrandt_GreetingsFromDiego_Condition;
 	information		= DIA_Gerbrandt_GreetingsFromDiego_Info;
-	description		= "Ich soll dir schöne Grüße von Diego bestellen.";
+	description		= "Diego says hello.";
 };
 
 func int DIA_Gerbrandt_GreetingsFromDiego_Condition()
@@ -281,20 +281,20 @@ func int DIA_Gerbrandt_GreetingsFromDiego_Condition()
 
 func void DIA_Gerbrandt_GreetingsFromDiego_Info()
 {
-	AI_Output(other, self, "DIA_Gerbrandt_GreetingsFromDiego_15_00"); //Ich soll dir schöne Grüße von Diego bestellen.
-	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_01"); //(erschrocken) Was? Wer? Welcher Diego?
-	AI_Output(other, self, "DIA_Gerbrandt_GreetingsFromDiego_15_02"); //Und ich soll dir diesen Brief geben.
+	AI_Output(other, self, "DIA_Gerbrandt_GreetingsFromDiego_15_00"); //Diego says hello.
+	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_01"); //(scared) What? Who? What Diego?
+	AI_Output(other, self, "DIA_Gerbrandt_GreetingsFromDiego_15_02"); //And he wants me to give you this letter.
 
 	B_GiveInvItems(other, self, ItWr_DiegosLetter_MIS, 1);
 	B_UseFakeScroll();
 
-	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_03"); //(aufgwühlt) Das kann nicht sein. Nein. Ich bin erledigt.
-	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_04"); //(ängstlich) Ist er in der Stadt?
-	AI_Output(other, self, "DIA_Gerbrandt_GreetingsFromDiego_15_05"); //Wer?
-	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_06"); //Diego natürlich!
-	AI_Output(other, self, "DIA_Gerbrandt_GreetingsFromDiego_15_07"); //Ja, ich wollte mich gleich mit ihm hier treffen.
-	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_08"); //(verzweifelt, zu sich selbst) Dann ist es aus. Alles ist aus.
-	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_09"); //Ich hab keine Zeit, ich muss hier weg. Schnell. Wenn er mich hier findet, ist alles aus.
+	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_03"); //(agitated) That can't be. No. I'm a goner!
+	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_04"); //(fearfully) Is he in town, then?
+	AI_Output(other, self, "DIA_Gerbrandt_GreetingsFromDiego_15_05"); //Who?
+	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_06"); //Diego, of course!
+	AI_Output(other, self, "DIA_Gerbrandt_GreetingsFromDiego_15_07"); //Yes, I am going to meet him here shortly.
+	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_08"); //(desperately, to himself) This is the end, then. All is lost.
+	AI_Output(self, other, "DIA_Gerbrandt_GreetingsFromDiego_10_09"); //I've got no time, I need to get out of here. Quick. If he finds me here, I'm done for.
 
 	MIS_DiegosResidence = LOG_SUCCESS;
 

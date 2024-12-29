@@ -168,7 +168,7 @@ func void Rtn_Start_0()
 	TA_Stand_ArmsCrossed(23, 00, 08, 00, "XXX");
 };
 
-const string _PRINT_LVL_UP = "Level Up!  Lernpunkte:";
+const string _PRINT_LVL_UP = "Level up! Learning points:";
 const string _PRINT_HP = "  Hitpoints:";
 //***************************************************************************
 //	Hero bekommt Level (1-50)
@@ -245,7 +245,7 @@ func void B_SetHeroWeapon()
 };
 
 //***************************************************************************
-//	Hero bekommt Ausrüstung
+//	Hero bekommt AusrÃ¼stung
 //***************************************************************************
 func void B_SetHeroEquipment()
 {
@@ -1553,7 +1553,7 @@ func void CH_Level_50()
 	B_SetHeroWeapon();
 	B_SetHeroEquipment();
 }; //*********************************************
-// Geschick und Stärke
+// Geschick und StÃ¤rke
 //*********************************************
 // ---------------------------
 var int AttributeStart;
@@ -1613,7 +1613,7 @@ func void DIA_CH_Attribute_Stopper_Info()
 };
 
 //*********************************************
-// Attribute Stärke
+// Attribute StÃ¤rke
 //*********************************************
 instance DIA_CH_Strength(C_INFO)
 {
@@ -1838,7 +1838,7 @@ instance DIA_CH_MAGIE_Stopper(C_INFO)
 	condition		= DIA_CH_MAGIE_Stopper_Condition;
 	information		= DIA_CH_MAGIE_Stopper_Info;
 	permanent		= TRUE;
-	description		= "ZURÜCK";
+	description		= "BACK";
 };
 
 func int DIA_CH_MAGIE_Stopper_Condition()
@@ -2342,7 +2342,7 @@ func void CH_Training_Runen_Circle_4_SPL_Pyrokinesis()
 };
 
 //**********************************************************
-// Fünfter Kreis
+// FÃ¼nfter Kreis
 // --------------------------
 //**********************************************************
 func void DIA_CH_Runen_5()
@@ -3019,7 +3019,7 @@ func void DIA_CH_Dieb_Schleichen_Info()
 };
 
 //*********************************************
-// Dieb Schlösser öffnen
+// Dieb SchlÃ¶sser Ã¶ffnen
 //*********************************************
 instance DIA_CH_Dieb_Picklock(C_INFO)
 {
@@ -3090,7 +3090,7 @@ func void DIA_CH_Dieb_Alle_Info()
 };
 
 //***************************************************************************
-// Talente Diebesfähigkeiten
+// Talente DiebesfÃ¤higkeiten
 //***************************************************************************
 func void DIA_CH_Dieb_Alle_BACK()
 {
@@ -3263,7 +3263,7 @@ func void DIA_CH_Misc_Alchemie_Stopper_Info()
 };
 
 //*********************************************
-// Heiltränke aller Art
+// HeiltrÃ¤nke aller Art
 //*********************************************
 instance DIA_CH_Misc_Health(C_INFO)
 {
@@ -3339,7 +3339,7 @@ func void CH_Training_Alchemy_POTION_Perm_Health()
 };
 
 //*********************************************
-// Manatränke aller Art
+// ManatrÃ¤nke aller Art
 //*********************************************
 instance DIA_CH_Misc_Mana(C_INFO)
 {
@@ -3415,7 +3415,7 @@ func void CH_Training_Alchemy_POTION_Perm_Mana()
 };
 
 //*********************************************
-// Spezielle Tränke
+// Spezielle TrÃ¤nke
 //*********************************************
 instance DIA_CH_Misc_Special(C_INFO)
 {
@@ -3917,7 +3917,7 @@ func void CH_Training_TROPHYS_Mandibles()
 };
 
 // --------------------------------------------
-// Animal Trophys Blut, Hörner, Schuppen
+// Animal Trophys Blut, HÃ¶rner, Schuppen
 // --------------------------------------------
 instance DIA_CH_Misc_Animal_other(C_INFO)
 {

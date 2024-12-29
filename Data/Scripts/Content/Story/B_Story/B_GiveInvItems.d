@@ -50,7 +50,7 @@ func int B_GiveInvItems(var C_Npc giver, var C_Npc taker, var int itemInstance, 
 			}
 			else
 			{
-				concatText = ConcatStrings(IntToString(amount), PRINT_ItemsGegeben); // "x Gegenst‰nde gegeben"
+				concatText = ConcatStrings(IntToString(amount), PRINT_ItemsGegeben); // "x Gegenst√§nde gegeben"
 				concatText = ConcatStrings(concatText, " (");
 				concatText = ConcatStrings(concatText, itemname);
 				concatText = ConcatStrings(concatText, ")");
@@ -75,7 +75,7 @@ func int B_GiveInvItems(var C_Npc giver, var C_Npc taker, var int itemInstance, 
 			}
 			else
 			{
-				concatText = ConcatStrings(IntToString(amount), PRINT_ItemsErhalten); // "x Gegenst‰nde erhalten"
+				concatText = ConcatStrings(IntToString(amount), PRINT_ItemsErhalten); // "x Gegenst√§nde erhalten"
 				concatText = ConcatStrings(concatText, " (");
 				concatText = ConcatStrings(concatText, itemname);
 				concatText = ConcatStrings(concatText, ")");

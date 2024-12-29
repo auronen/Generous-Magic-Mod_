@@ -32,7 +32,7 @@ instance DIA_Addon_Riordian_NW_PICKPOCKET(C_INFO)
 	condition		= DIA_Addon_Riordian_NW_PICKPOCKET_Condition;
 	information		= DIA_Addon_Riordian_NW_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description		= "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };
 
 func int DIA_Addon_Riordian_NW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Riordian_Hallo(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Riordian_Hallo_Condition;
 	information		= DIA_Addon_Riordian_Hallo_Info;
-	description		= "Was machst du da?";
+	description		= "What are you doing?";
 };
 
 func int DIA_Addon_Riordian_Hallo_Condition()
@@ -94,11 +94,11 @@ func int DIA_Addon_Riordian_Hallo_Condition()
 
 func void DIA_Addon_Riordian_Hallo_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Riordian_Hallo_15_00"); //Was machst du da?
-	AI_Output(self, other, "DIA_Addon_Riordian_Hallo_10_01"); //Ich erforsche die Kultur des alten Volkes.
-	AI_Output(self, other, "DIA_Addon_Riordian_Hallo_10_02"); //Aus den Inschriften geht hervor, dass sie lange vor unserer Zeit lebten.
-	AI_Output(self, other, "DIA_Addon_Riordian_Hallo_10_03"); //Ich weiß noch nicht genau WANN sie diese Hallen errichtet haben, aber ihre Zivilisation war weit entwickelt.
-	AI_Output(self, other, "DIA_Addon_Riordian_Hallo_10_04"); //Sie haben jenseits der Berge eine Stadt errichtet. (nachdenklich) Und einen Tempel für Adanos.
+	AI_Output(other, self, "DIA_Addon_Riordian_Hallo_15_00"); //What are you doing?
+	AI_Output(self, other, "DIA_Addon_Riordian_Hallo_10_01"); //I am studying the culture of the ancient people.
+	AI_Output(self, other, "DIA_Addon_Riordian_Hallo_10_02"); //Based on the inscriptions, they lived long before our time.
+	AI_Output(self, other, "DIA_Addon_Riordian_Hallo_10_03"); //I don't know exactly WHEN they erected these halls, but their civilization was highly developed.
+	AI_Output(self, other, "DIA_Addon_Riordian_Hallo_10_04"); //They built a city on the other side of the mountains. (considering) And a temple for Adanos.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -110,7 +110,7 @@ instance DIA_Addon_Riordian_Alter(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Riordian_Alter_Condition;
 	information		= DIA_Addon_Riordian_Alter_Info;
-	description		= "Wie alt schätzt du den Bau hier?";
+	description		= "How old do you think the building here is?";
 };
 
 func int DIA_Addon_Riordian_Alter_Condition()
@@ -123,8 +123,8 @@ func int DIA_Addon_Riordian_Alter_Condition()
 
 func void DIA_Addon_Riordian_Alter_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Riordian_Alter_15_00"); //Wie alt schätzt du den Bau hier?
-	AI_Output(self, other, "DIA_Addon_Riordian_Alter_10_01"); //Nun. Ich kann noch nichts Genaues sagen, aber er muss schon mehrere hundert Jahre alt sein.
+	AI_Output(other, self, "DIA_Addon_Riordian_Alter_15_00"); //How old do you think the building here is?
+	AI_Output(self, other, "DIA_Addon_Riordian_Alter_10_01"); //Well. I still can't say exactly, but it must be several hundred years old.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -136,7 +136,7 @@ instance DIA_Addon_Riordian_Atlantis(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Riordian_Atlantis_Condition;
 	information		= DIA_Addon_Riordian_Atlantis_Info;
-	description		= "Eine verlorene Stadt auf der Insel von Khorinis?";
+	description		= "A lost city on the island of Khorinis?";
 };
 
 func int DIA_Addon_Riordian_Atlantis_Condition()
@@ -149,12 +149,12 @@ func int DIA_Addon_Riordian_Atlantis_Condition()
 
 func void DIA_Addon_Riordian_Atlantis_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Riordian_Atlantis_15_00"); //Eine verlorene Stadt auf der Insel von Khorinis?
-	AI_Output(self, other, "DIA_Addon_Riordian_Atlantis_10_01"); //Ja. Bisher haben wir in dem Glauben gelebt, die ganze Insel zu kennen.
-	AI_Output(self, other, "DIA_Addon_Riordian_Atlantis_10_02"); //Wir sind davon ausgegangen, der komplette Nordosten der Insel wäre ein gewaltiges Bergmassiv.
-	AI_Output(self, other, "DIA_Addon_Riordian_Atlantis_10_03"); //Doch wir haben uns geirrt.
-	AI_Output(self, other, "DIA_Addon_Riordian_Atlantis_10_04"); //Hinter diesen Bergen liegt ein Tal. Dort befand sich die Stadt des alten Volkes.
-	AI_Output(self, other, "DIA_Addon_Riordian_Atlantis_10_05"); //(seufzt) Nur zu gerne würde ich die Bauwerke der Stadt sehen, aber wahrscheinlich sind längst zu Staub zerfallen ...
+	AI_Output(other, self, "DIA_Addon_Riordian_Atlantis_15_00"); //A lost city on the island of Khorinis?
+	AI_Output(self, other, "DIA_Addon_Riordian_Atlantis_10_01"); //Yes. Until now, we lived in the belief that we knew the whole island.
+	AI_Output(self, other, "DIA_Addon_Riordian_Atlantis_10_02"); //We assumed that the entire northeast of the island was one enormous mountain range.
+	AI_Output(self, other, "DIA_Addon_Riordian_Atlantis_10_03"); //But we were wrong.
+	AI_Output(self, other, "DIA_Addon_Riordian_Atlantis_10_04"); //Behind these mountains lies a valley. The city of the ancient people was located there.
+	AI_Output(self, other, "DIA_Addon_Riordian_Atlantis_10_05"); //(sighs) I would only too gladly see the buildings of the city, but they have probably fallen to dust long ago...
 
 	B_LogEntry(TOPIC_Addon_KDW, TOPIC_Addon_KDW_1);
 };
@@ -168,7 +168,7 @@ instance DIA_Addon_Riordian_SaturasWantYou(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Riordian_SaturasWantYou_Condition;
 	information		= DIA_Addon_Riordian_SaturasWantYou_Info;
-	description		= "Saturas wünscht dich zu sehen.";
+	description		= "Saturas wants to see you.";
 };
 
 func int DIA_Addon_Riordian_SaturasWantYou_Condition()
@@ -182,13 +182,13 @@ func int DIA_Addon_Riordian_SaturasWantYou_Condition()
 
 func void DIA_Addon_Riordian_SaturasWantYou_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Riordian_SaturasWantYou_15_00"); //Saturas wünscht dich zu sehen.
-	AI_Output(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_01"); //Ist er mit seinen Nachforschungen schon weiter gekommen? Dann werde ich sofort zu ihm gehen.
+	AI_Output(other, self, "DIA_Addon_Riordian_SaturasWantYou_15_00"); //Saturas wants to see you.
+	AI_Output(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_01"); //Has he gotten further with his investigation? Then I will go to him immediately.
 
 	if (Nefarius_NW.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_02"); //Wenn du mehr über diese Anlagen erfahren willst, sprich mit Nefarius.
-		AI_Output(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_03"); //Er befindet sich weiter hinten in diesen Gewölben.
+		AI_Output(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_02"); //If you want to learn more about this complex, talk to Nefarius.
+		AI_Output(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_03"); //You'll find him farther back in these vaults.
 	};
 
 	AI_StopProcessInfos(self);
@@ -208,7 +208,7 @@ instance DIA_Addon_Riordian_Perm(C_INFO)
 	condition		= DIA_Addon_Riordian_Perm_Condition;
 	information		= DIA_Addon_Riordian_Perm_Info;
 	permanent		= TRUE;
-	description		= "Schon was Neues herausgefunden?";
+	description		= "Found out anything new?";
 };
 
 func int DIA_Addon_Riordian_Perm_Condition()
@@ -221,15 +221,15 @@ func int DIA_Addon_Riordian_Perm_Condition()
 
 func void DIA_Addon_Riordian_Perm_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Riordian_Perm_15_00"); //Schon was Neues herausgefunden?
+	AI_Output(other, self, "DIA_Addon_Riordian_Perm_15_00"); //Found out anything new?
 	if (Riordian_PermNews == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_Riordian_Perm_10_01"); //Es hat sich bestätigt. Die alte Kultur hat tatsächlich an Adanos geglaubt!
+		AI_Output(self, other, "DIA_Addon_Riordian_Perm_10_01"); //It has been confirmed. The ancient culture did indeed believe in Adanos!
 		Riordian_PermNews = TRUE;
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Riordian_Perm_10_02"); //Nicht wirklich. Komm später noch einmal zu mir.
+		AI_Output(self, other, "DIA_Addon_Riordian_Perm_10_02"); //Not really. Come back again later.
 	};
 
 	AI_StopProcessInfos(self);
@@ -244,7 +244,7 @@ instance DIA_Addon_Riordian_TeachPre(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Riordian_TeachPre_Condition;
 	information		= DIA_Addon_Riordian_TeachPre_Info;
-	description		= "Vatras gab mir dieses Amulett des suchenden Irrlichts...";
+	description		= "Vatras gave me this amulet of the searching will-o'-the-wisp...";
 };
 
 func int DIA_Addon_Riordian_TeachPre_Condition()
@@ -258,10 +258,10 @@ func int DIA_Addon_Riordian_TeachPre_Condition()
 
 func void DIA_Addon_Riordian_TeachPre_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Riordian_TeachPre_15_00"); //Vatras gab mir dieses Amulett des suchenden Irrlichts ...
-	AI_Output(self, other, "DIA_Addon_Riordian_TeachPre_10_01"); //Ah! (besonnen) Ein seltenes Artefakt. Mit seiner Hilfe kannst du das Irrlicht trainieren, wusstest du das?
-	AI_Output(other, self, "DIA_Addon_Riordian_TeachPre_15_02"); //Kannst du mir dabei helfen?
-	AI_Output(self, other, "DIA_Addon_Riordian_TeachPre_10_03"); //Gerne. Ich habe mich lange mit dieser Art von Magie beschäftigt.
+	AI_Output(other, self, "DIA_Addon_Riordian_TeachPre_15_00"); //Vatras gave me this amulet of the searching will-o'-the-wisp...
+	AI_Output(self, other, "DIA_Addon_Riordian_TeachPre_10_01"); //Ah! (circumspectly) A rare artifact. You can use it to train the will-o'-the-wisp, did you know that?
+	AI_Output(other, self, "DIA_Addon_Riordian_TeachPre_15_02"); //Can you help me with that?
+	AI_Output(self, other, "DIA_Addon_Riordian_TeachPre_10_03"); //Gladly. I have worked with this sort of magic for a long time.
 	Riordian_Addon_TeachPlayer = TRUE;
 
 	Log_CreateTopic(TOPIC_Addon_KDWTeacher, LOG_NOTE);
@@ -278,7 +278,7 @@ instance DIA_Addon_Riordian_Teach(C_INFO)
 	condition		= DIA_Addon_Riordian_Teach_Condition;
 	information		= DIA_Addon_Riordian_Teach_Info;
 	permanent		= TRUE;
-	description		= "Zeig mir, wie ich mein Irrlicht zu unterrichte.";
+	description		= "Show me how I can train my will-o'-the-wisp.";
 };
 
 var int DIA_Addon_Riordian_Teach_NoPerm;

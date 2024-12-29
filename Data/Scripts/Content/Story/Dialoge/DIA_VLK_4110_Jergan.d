@@ -30,7 +30,7 @@ instance DIA_Jergan_Hallo(C_INFO)
 	nr				= 2;
 	condition		= DIA_Jergan_Hallo_Condition;
 	information		= DIA_Jergan_Hallo_Info;
-	description		= "Warum stehst du hier rum?";
+	description		= "What are you standing around here for?";
 };
 
 func int DIA_Jergan_Hallo_Condition()
@@ -40,8 +40,8 @@ func int DIA_Jergan_Hallo_Condition()
 
 func void DIA_Jergan_Hallo_Info()
 {
-	AI_Output(other, self, "DIA_Jergan_Hallo_15_00"); //Warum stehst du hier rum?
-	AI_Output(self, other, "DIA_Jergan_Hallo_13_01"); //Ich komme aus der Burg. Sie haben mich geschickt, nach den Vermissten zu suchen und die Gegend zu erkunden.
+	AI_Output(other, self, "DIA_Jergan_Hallo_15_00"); //What are you standing around here for?
+	AI_Output(self, other, "DIA_Jergan_Hallo_13_01"); //I come from the castle. They've sent me to look for those missing, and to check out the area.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -53,7 +53,7 @@ instance DIA_Jergan_Vermisste(C_INFO)
 	nr				= 2;
 	condition		= DIA_Jergan_Vermisste_Condition;
 	information		= DIA_Jergan_Vermisste_Info;
-	description		= "Vermisste?";
+	description		= "Those missing?";
 };
 
 func int DIA_Jergan_Vermisste_Condition()
@@ -66,9 +66,9 @@ func int DIA_Jergan_Vermisste_Condition()
 
 func void DIA_Jergan_Vermisste_Info()
 {
-	AI_Output(other, self, "DIA_Jergan_Vermisste_15_00"); //Vermisste?
-	AI_Output(self, other, "DIA_Jergan_Vermisste_13_01"); //Beim Angriff der Drachen sind einige abgehauen. Die Meisten haben es nicht geschafft - wen wundert's !?
-	AI_Output(self, other, "DIA_Jergan_Vermisste_13_02"); //Aber wenn es noch Überlebende gibt, werde ich sie zurückbringen.
+	AI_Output(other, self, "DIA_Jergan_Vermisste_15_00"); //Those missing?
+	AI_Output(self, other, "DIA_Jergan_Vermisste_13_01"); //Some fled when the dragons attacked. Most of them didn't make it - no surprise there!
+	AI_Output(self, other, "DIA_Jergan_Vermisste_13_02"); //But if there are any survivors left, I'll bring them back.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -80,7 +80,7 @@ instance DIA_Jergan_Burg(C_INFO)
 	nr				= 3;
 	condition		= DIA_Jergan_Burg_Condition;
 	information		= DIA_Jergan_Burg_Info;
-	description		= "Kannst du mir helfen, in die Burg zu kommen? ";
+	description		= "Can you help me get into the castle?";
 };
 
 func int DIA_Jergan_Burg_Condition()
@@ -94,9 +94,9 @@ func int DIA_Jergan_Burg_Condition()
 
 func void DIA_Jergan_Burg_Info()
 {
-	AI_Output(other, self, "DIA_Jergan_Burg_15_00"); //Kannst du mir helfen, in die Burg zu kommen?
-	AI_Output(self, other, "DIA_Jergan_Burg_13_01"); //Klar, aber du musst mir einen Gefallen tun.
-	AI_Output(self, other, "DIA_Jergan_Burg_13_02"); //Wenn du es bis in die Burg schaffst, dann sprich mit dem Paladin Oric. Sag ihm, dass es seinen Bruder oben am Pass erwischt hat.
+	AI_Output(other, self, "DIA_Jergan_Burg_15_00"); //Can you help me get into the castle?
+	AI_Output(self, other, "DIA_Jergan_Burg_13_01"); //Sure, but you have to do me a favor.
+	AI_Output(self, other, "DIA_Jergan_Burg_13_02"); //If you can make it to the castle, talk to the paladin Oric. Tell him that his brother bought it up there at the pass.
 
 	Log_CreateTopic(Topic_OricBruder, LOG_MISSION);
 	Log_SetTopicStatus(Topic_OricBruder, LOG_RUNNING);
@@ -113,7 +113,7 @@ instance DIA_Jergan_Gegend(C_INFO)
 	condition		= DIA_Jergan_Gegend_Condition;
 	information		= DIA_Jergan_Gegend_Info;
 	permanent		= TRUE;
-	description		= "Was muss ich über diese Gegend hier wissen?";
+	description		= "What do I need to know about this area?";
 };
 
 func int DIA_Jergan_Gegend_Condition()
@@ -129,12 +129,12 @@ func void DIA_Jergan_Gegend_Info()
 {
 	if (Jergan_Tell == FALSE)
 	{
-		AI_Output(other, self, "DIA_Jergan_Gegend_15_00"); //Was muss ich über diese Gegend hier wissen?
-		AI_Output(self, other, "DIA_Jergan_Gegend_13_01"); //Wenn du überleben willst, dann geh zurück - wo auch immer du hergekommen bist.
-		AI_Output(self, other, "DIA_Jergan_Gegend_13_02"); //Die Grünfelle belagern seit Wochen die Burg - und irgendwo verstecken sich auch diese Drachen.
+		AI_Output(other, self, "DIA_Jergan_Gegend_15_00"); //What do I need to know about this area?
+		AI_Output(self, other, "DIA_Jergan_Gegend_13_01"); //If you want to live, go back to wherever you came from.
+		AI_Output(self, other, "DIA_Jergan_Gegend_13_02"); //The greenhides have laid siege to the castle for weeks now - and those dragons are hiding out somewhere, too.
 	};
 
-	AI_Output(self, other, "DIA_Jergan_Gegend_13_03"); //Das ganze Minental wimmelt nur so von Orks - ganz egal, wo du hinwillst, das wird kein Spaziergang.
+	AI_Output(self, other, "DIA_Jergan_Gegend_13_03"); //The entire Valley of Mines is teeming with orcs - no matter where you're headed, this won't be a picnic.
 	Jergan_Tell = TRUE;
 };
 
@@ -147,7 +147,7 @@ instance DIA_Jergan_Hilfe(C_INFO)
 	nr				= 3;
 	condition		= DIA_Jergan_Hilfe_Condition;
 	information		= DIA_Jergan_Hilfe_Info;
-	description		= "Wie komme ich in die Burg?";
+	description		= "How can I get into the castle?";
 };
 
 func int DIA_Jergan_Hilfe_Condition()
@@ -161,11 +161,11 @@ func int DIA_Jergan_Hilfe_Condition()
 
 func void DIA_Jergan_Hilfe_Info()
 {
-	AI_Output(other, self, "DIA_Jergan_Hilfe_15_00"); //Wie komme ich in die Burg?
-	AI_Output(self, other, "DIA_Jergan_Hilfe_13_01"); //Zunächst mal kannst du den direkten Weg vergessen. Aber wenn du die Burg einmal umkreist, hast du von der Rückseite eine Chance.
-	AI_Output(self, other, "DIA_Jergan_Hilfe_13_02"); //Du solltest die Wege meiden und den Fluss nutzen. Am Besten, du schwimmst ein Stück flussabwärts. Von da an ist es leichter.
-	AI_Output(self, other, "DIA_Jergan_Hilfe_13_03"); //Hinter der Burg steht eine Orkramme. Darüber kommst du hinein - schleich dich so nahe wie möglich an die Orks ran und dann lauf.
-	AI_Output(self, other, "DIA_Jergan_Hilfe_13_04"); //Wenn du schnell genug bist, kannst du es schaffen.
+	AI_Output(other, self, "DIA_Jergan_Hilfe_15_00"); //How can I get into the castle?
+	AI_Output(self, other, "DIA_Jergan_Hilfe_13_01"); //First of all, you can forget the direct path. But if you walk around the castle, you might have a chance from the back.
+	AI_Output(self, other, "DIA_Jergan_Hilfe_13_02"); //You should stay away from the paths and use the river. It will be best if you swim downstream for a stretch. It should be easier from there.
+	AI_Output(self, other, "DIA_Jergan_Hilfe_13_03"); //The orcs have set up a ram behind the castle. You can get in that way - creep up on the orcs as closely as you can, and then run for it.
+	AI_Output(self, other, "DIA_Jergan_Hilfe_13_04"); //You might just make it if you're fast enough.
 };
 
 // 2. Begegnung
@@ -178,7 +178,7 @@ instance DIA_Jergan_Mine(C_INFO)
 	nr				= 3;
 	condition		= DIA_Jergan_Mine_Condition;
 	information		= DIA_Jergan_Mine_Info;
-	description		= "Was machst du hier?";
+	description		= "What are you doing here?";
 };
 
 func int DIA_Jergan_Mine_Condition()
@@ -191,9 +191,9 @@ func int DIA_Jergan_Mine_Condition()
 
 func void DIA_Jergan_Mine_Info()
 {
-	AI_Output(other, self, "DIA_Jergan_Mine_15_00"); //Was machst du hier?
-	AI_Output(self, other, "DIA_Jergan_Mine_13_01"); //Ich bin Kundschafter. Ich ziehe durch die Gegend. Aber die ganzen Snapper haben's mir nicht einfach gemacht.
-	AI_Output(self, other, "DIA_Jergan_Mine_13_02"); //Ist 'ne gute Zeit, um sich ein paar Trophäen an Land zu ziehen - vorrausgesetzt, man versteht was davon.
+	AI_Output(other, self, "DIA_Jergan_Mine_15_00"); //What are you doing here?
+	AI_Output(self, other, "DIA_Jergan_Mine_13_01"); //I'm a scout. I roam the country. But all those snappers haven't made it easy for me.
+	AI_Output(self, other, "DIA_Jergan_Mine_13_02"); //It's a good time to land a few trophies - provided you know what you're doing.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -205,7 +205,7 @@ instance DIA_Jergan_Claw(C_INFO)
 	nr				= 3;
 	condition		= DIA_Jergan_Claw_Condition;
 	information		= DIA_Jergan_Claw_Info;
-	description		= "Kannst du mir das beibringen?";
+	description		= "Can you teach me how to do that?";
 };
 
 func int DIA_Jergan_Claw_Condition()
@@ -220,8 +220,8 @@ func int DIA_Jergan_Claw_Condition()
 
 func void DIA_Jergan_Claw_Info()
 {
-	AI_Output(other, self, "DIA_Jergan_Claw_15_00"); //Kannst du mir das beibringen?
-	AI_Output(self, other, "DIA_Jergan_Claw_13_01"); //Ich kann dir zeigen, wie du den Biestern die Krallen rausziehst, wenn sie tot sind.
+	AI_Output(other, self, "DIA_Jergan_Claw_15_00"); //Can you teach me how to do that?
+	AI_Output(self, other, "DIA_Jergan_Claw_13_01"); //I can show you how to pull the claws off those things once they're dead.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -234,7 +234,7 @@ instance DIA_Jergan_Teach(C_INFO)
 	condition		= DIA_Jergan_Teach_Condition;
 	information		= DIA_Jergan_Teach_Info;
 	permanent		= TRUE;
-	description		= "(Krallen ziehen lernen)";
+	description		= "(Learn to remove claws)";
 };
 
 func int DIA_Jergan_Teach_Condition()
@@ -249,12 +249,12 @@ func int DIA_Jergan_Teach_Condition()
 
 func void DIA_Jergan_Teach_Info()
 {
-	AI_Output(other, self, "DIA_Jergan_Teach_15_00"); //Zeig mir, wie ich Krallen ziehe.
+	AI_Output(other, self, "DIA_Jergan_Teach_15_00"); //Show me how to pull claws.
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, other, TROPHY_Claws))
 	{
-		AI_Output(self, other, "DIA_Jergan_Teach_13_01"); //Wichtig ist, dass du die Krallen mit einem Ruck entfernst. Nicht lange rumzögern oder mit 'ner Klinge stochern.
-		AI_Output(self, other, "DIA_Jergan_Teach_13_02"); //Auf diese Weise kannst du nicht nur Snappern, sondern auch Waranen und Schattenläufern die Krallen abziehen.
+		AI_Output(self, other, "DIA_Jergan_Teach_13_01"); //The important thing is to remove the claws with a jerk. Don't be too hesitant, and don't go poking with a blade.
+		AI_Output(self, other, "DIA_Jergan_Teach_13_02"); //You don't only pull the claws from snappers that way, but also from lizards and shadowbeasts.
 	};
 };
 
@@ -267,7 +267,7 @@ instance DIA_Jergan_Diego(C_INFO)
 	nr				= 9;
 	condition		= DIA_Jergan_Diego_Condition;
 	information		= DIA_Jergan_Diego_Info;
-	description		= "Weißt du, wo Diego steckt?";
+	description		= "Do you know where Diego got to? ";
 };
 
 func int DIA_Jergan_Diego_Condition()
@@ -282,15 +282,15 @@ func int DIA_Jergan_Diego_Condition()
 
 func void DIA_Jergan_Diego_Info()
 {
-	AI_Output(other, self, "DIA_Jergan_Diego_15_00"); //Weißt du, wo Diego steckt?
-	AI_Output(self, other, "DIA_Jergan_Diego_13_01"); //Diego? Er war bei Silvestros Schürfern dabei. Aber er hat sich abgesetzt.
-	AI_Output(self, other, "DIA_Jergan_Diego_13_02"); //Ich sah ihn mit zwei Rittern und einer Kiste, gar nicht weit von hier.
-	AI_Output(self, other, "DIA_Jergan_Diego_13_03"); //Du kannst doch von hier den alten Wachturm sehen. Geh dorthin und dann in Richtung Burg.
-	AI_Output(self, other, "DIA_Jergan_Diego_13_04"); //Rechter Hand führt ein Pfad zwischen den Felsen entlang. Dorthin sind sie gegangen.
+	AI_Output(other, self, "DIA_Jergan_Diego_15_00"); //Do you know where Diego got to?
+	AI_Output(self, other, "DIA_Jergan_Diego_13_01"); //Diego? He was one of Silvestro's scrapers. But he's made himself scarce.
+	AI_Output(self, other, "DIA_Jergan_Diego_13_02"); //I saw him with two knights and a box, not so far from here.
+	AI_Output(self, other, "DIA_Jergan_Diego_13_03"); //You can see the old watchtower from here, right? Go over there, and then towards the castle.
+	AI_Output(self, other, "DIA_Jergan_Diego_13_04"); //A path leads through the rocks to the right. That's where they went.
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Rudelführer getötet
+//	RudelfÃ¼hrer getÃ¶tet
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Jergan_Leader(C_INFO)
 {
@@ -313,18 +313,18 @@ func int DIA_Jergan_Leader_Condition()
 
 func void DIA_Jergan_Leader_Info()
 {
-	AI_Output(self, other, "DIA_Jergan_Leader_13_00"); //Du hast den Rudelführer also getötet. Und - hast du der Bestie die Krallen abgezogen?
+	AI_Output(self, other, "DIA_Jergan_Leader_13_00"); //So you killed the leader of the pack. And - did you get the claws off that beast?
 
 	if (Npc_HasItems(other, ItAt_ClawLeader) >= 1)
 	{
-		AI_Output(other, self, "DIA_Jergan_Leader_15_01"); //Ja.
-		AI_Output(self, other, "DIA_Jergan_Leader_13_02"); //Sind bestimmt 'ne Menge wert. Es gibt Typen, die sammeln so was.
-		AI_Output(self, other, "DIA_Jergan_Leader_13_03"); //Wenn du den richtigen Käufer findest, bekommst du einen Haufen Gold dafür.
+		AI_Output(other, self, "DIA_Jergan_Leader_15_01"); //Yes.
+		AI_Output(self, other, "DIA_Jergan_Leader_13_02"); //They're certainly worth a lot. There are some fellows who collect this stuff.
+		AI_Output(self, other, "DIA_Jergan_Leader_13_03"); //If you find the right buyer, you'll get a heap of gold for that.
 	}
 	else
 	{
-		AI_Output(other, self, "DIA_Jergan_Leader_15_04"); //Nein.
-		AI_Output(self, other, "DIA_Jergan_Leader_13_05"); //Solltest du machen. Die sind bestimmt eine Menge wert.
+		AI_Output(other, self, "DIA_Jergan_Leader_15_04"); //No.
+		AI_Output(self, other, "DIA_Jergan_Leader_13_05"); //You should do that. I'm sure they're worth a fortune.
 	};
 };
 

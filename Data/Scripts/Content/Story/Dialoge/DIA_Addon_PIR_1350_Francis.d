@@ -25,10 +25,10 @@ func void DIA_Addon_Francis_EXIT_Info()
 };
 
 // ************************************************************
-// 			  			In Gregs Hütte rein
+// 			  			In Gregs HÃ¼tte rein
 // ************************************************************
 // ------------------------------------------------------------
-// 			  		Spieler kennt Hütte nicht
+// 			  		Spieler kennt HÃ¼tte nicht
 // ------------------------------------------------------------
 instance DIA_Addon_Francis_First(C_INFO)
 {
@@ -36,7 +36,7 @@ instance DIA_Addon_Francis_First(C_INFO)
 	nr				= 1;
 	condition		= DIA_Addon_Francis_First_Condition;
 	information		= DIA_Addon_Francis_First_Info;
-	description		= "Ist das deine Hütte?";
+	description		= "Is this your hut?";
 };
 
 func int DIA_Addon_Francis_First_Condition()
@@ -51,13 +51,13 @@ func int DIA_Addon_Francis_First_Condition()
 
 func void DIA_Addon_Francis_First_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Francis_GregsHut_15_00"); //Ist das deine Hütte?
-	AI_Output(self, other, "DIA_Addon_Francis_GregsHut_13_01"); //Nein, sie gehört Greg.
+	AI_Output(other, self, "DIA_Addon_Francis_GregsHut_15_00"); //Is this your hut?
+	AI_Output(self, other, "DIA_Addon_Francis_GregsHut_13_01"); //No, it belongs to Greg.
 	Knows_GregsHut = TRUE;
 };
 
 // ------------------------------------------------------------
-// 			  			Ich muß da rein!
+// 			  			Ich muÃŸ da rein!
 // ------------------------------------------------------------
 instance DIA_Addon_Francis_LetMeIn(C_INFO)
 {
@@ -65,7 +65,7 @@ instance DIA_Addon_Francis_LetMeIn(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Francis_LetMeIn_Condition;
 	information		= DIA_Addon_Francis_LetMeIn_Info;
-	description		= "Ich muss in Gregs Hütte.";
+	description		= "I must get into Greg's hut.";
 };
 
 func int DIA_Addon_Francis_LetMeIn_Condition()
@@ -80,10 +80,10 @@ func int DIA_Addon_Francis_LetMeIn_Condition()
 
 func void DIA_Addon_Francis_LetMeIn_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Francis_LetMeIn_15_00"); //Ich muss in Gregs Hütte.
-	AI_Output(self, other, "DIA_Addon_Francis_LetMeIn_13_01"); //Vergiß es!
-	AI_Output(self, other, "DIA_Addon_Francis_LetMeIn_13_02"); //Greg ist nicht da. Und ich hab' die Tür verschlossen und passe auf, dass niemand auf dumme Gedanken kommt und versucht, die Hütte zu plündern.
-	AI_Output(self, other, "DIA_Addon_Francis_LetMeIn_13_03"); //Also schipper wieder ab, oder ich mach dir Beine!
+	AI_Output(other, self, "DIA_Addon_Francis_LetMeIn_15_00"); //I must get into Greg's hut.
+	AI_Output(self, other, "DIA_Addon_Francis_LetMeIn_13_01"); //Forget it!
+	AI_Output(self, other, "DIA_Addon_Francis_LetMeIn_13_02"); //Greg's not there. And I've locked the door and see to it that nobody sneaks around here to do a little looting. 
+	AI_Output(self, other, "DIA_Addon_Francis_LetMeIn_13_03"); //So make yourself scarce, or I'll let you have it!
 };
 
 // ------------------------------------------------------------
@@ -95,7 +95,7 @@ instance DIA_Addon_Francis_AboutGreg(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Francis_AboutGreg_Condition;
 	information		= DIA_Addon_Francis_AboutGreg_Info;
-	description		= "Greg ist dein Boss?";
+	description		= "Greg is your boss?";
 };
 
 func int DIA_Addon_Francis_AboutGreg_Condition()
@@ -109,20 +109,20 @@ func int DIA_Addon_Francis_AboutGreg_Condition()
 
 func void DIA_Addon_Francis_AboutGreg_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Francis_AboutGreg_15_00"); //Greg ist dein Boss?
-	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_01"); //Jetzt komm mir bloß nicht damit, daß du ihn kennst!
-	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_02"); //Jeder Seefahrer, ach, was sag ich, jede verfluchte Landratte auf der Insel kennt den schrecklichen Käpt'n Greg!
-	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_03"); //(schnöselig) Er hat MIR das Kommando übergeben!
-	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_04"); //Ich bin ihm dafür verantwortlich, daß das faule Pack hier das macht, was er angeordnet hat!
-	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_05"); //Einige von den Jungs hier denken vielleicht, sie können machen was sie wollen, nur weil der Käpt'n nicht da ist.
-	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_06"); //Aber DIE werden sich noch wundern, wenn Greg zurückkommt.
-	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_07"); //Ich werde ihm alles erzählen, was hier vorgefallen ist, hörst du?
-	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_08"); //Auch, wer versucht hat in seine Hütte zu kommen.
-	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_09"); //Also zieh Leine, oder du bekommst den Ärger deines Lebens.
+	AI_Output(other, self, "DIA_Addon_Francis_AboutGreg_15_00"); //Greg is your boss?
+	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_01"); //Now don't try and tell me that you know him!
+	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_02"); //Any sailor - even any cursed landlubber on this island - knows the terrible Cap'n Greg!
+	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_03"); //(snootily) And he left ME in command!
+	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_04"); //I'm responsible for making those lazy bums do what he commanded!
+	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_05"); //Some of the boys may think they can do whatever they bloody well want now that the Captain's not here.
+	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_06"); //Won't THEY be surprised when Greg comes back. 
+	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_07"); //I'll tell him everything that's been going on here, got it?
+	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_08"); //Including who's been trying to get into his hut.
+	AI_Output(self, other, "DIA_Addon_Francis_AboutGreg_13_09"); //So make yourself scarce, or you'll be in a load of trouble.
 };
 
 // ------------------------------------------------------------
-// 		  			Gib mir Schlüssel + Bestechung!
+// 		  			Gib mir SchlÃ¼ssel + Bestechung!
 // ------------------------------------------------------------
 var int Francis_bezahlt;
 instance DIA_Addon_Francis_Key(C_INFO)
@@ -132,7 +132,7 @@ instance DIA_Addon_Francis_Key(C_INFO)
 	condition		= DIA_Addon_Francis_Key_Condition;
 	information		= DIA_Addon_Francis_Key_Info;
 	permanent		= TRUE;
-	description		= "Gib mir den Schlüssel zu Gregs Hütte!";
+	description		= "Give me the key to Greg's hut!";
 };
 
 func int DIA_Addon_Francis_Key_Condition()
@@ -146,13 +146,13 @@ func int DIA_Addon_Francis_Key_Condition()
 
 func void DIA_Addon_Francis_Key_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Francis_Key_15_00"); //Gib mir den Schlüssel zu Gregs Hütte!
-	AI_Output(self, other, "DIA_Addon_Francis_Key_13_01"); //Du machst wohl Witze!
+	AI_Output(other, self, "DIA_Addon_Francis_Key_15_00"); //Give me the key to Greg's hut!
+	AI_Output(self, other, "DIA_Addon_Francis_Key_13_01"); //You must be joking!
 
 	Info_ClearChoices(DIA_Addon_Francis_Key);
-	Info_AddChoice(DIA_Addon_Francis_Key, "Ich denk nochmal drüber nach...", DIA_Addon_Francis_Key_BACK);
-	Info_AddChoice(DIA_Addon_Francis_Key, "Ich gebe dir 2000 Goldstücke!", DIA_Addon_Francis_Key_2000Gold);
-	Info_AddChoice(DIA_Addon_Francis_Key, "Ich gebe dir 1000 Goldstücke!", DIA_Addon_Francis_Key_1000Gold);
+	Info_AddChoice(DIA_Addon_Francis_Key, "I'll think about it...", DIA_Addon_Francis_Key_BACK);
+	Info_AddChoice(DIA_Addon_Francis_Key, "I'll give you 2000 gold pieces!", DIA_Addon_Francis_Key_2000Gold);
+	Info_AddChoice(DIA_Addon_Francis_Key, "I'll give you 1000 gold pieces!", DIA_Addon_Francis_Key_1000Gold);
 };
 
 func void DIA_Addon_Francis_Key_BACK()
@@ -162,29 +162,29 @@ func void DIA_Addon_Francis_Key_BACK()
 
 func void DIA_Addon_Francis_Key_1000Gold()
 {
-	AI_Output(other, self, "DIA_Addon_Francis_Key_1000Gold_15_00"); //Ich gebe dir 1000 Goldstücke!
-	AI_Output(self, other, "DIA_Addon_Francis_Key_1000Gold_13_01"); //Für den Verrat an meinen Kapitän ist das ein bisschen wenig. Findest du nicht?
-	AI_Output(self, other, "DIA_Addon_Francis_Key_1000Gold_13_02"); //Du solltest aufpassen, was du sagst! Sonst zieh ich dir das Fell über die Ohren!
+	AI_Output(other, self, "DIA_Addon_Francis_Key_1000Gold_15_00"); //I'll give you 1000 gold pieces!
+	AI_Output(self, other, "DIA_Addon_Francis_Key_1000Gold_13_01"); //That's not quite enough to make me betray my Captain, I'm afraid.
+	AI_Output(self, other, "DIA_Addon_Francis_Key_1000Gold_13_02"); //Be careful what you say, or I'll have your hide!
 };
 
 func void DIA_Addon_Francis_Key_2000Gold()
 {
-	AI_Output(other, self, "DIA_Addon_Francis_Key_2000Gold_15_00"); //Ich gebe dir 2000 Goldstücke!
+	AI_Output(other, self, "DIA_Addon_Francis_Key_2000Gold_15_00"); //I'll give you 2000 gold pieces!
 
 	if (Npc_HasItems(other, ItMI_Gold) >= 2000)
 	{
-		AI_Output(self, other, "DIA_Addon_Francis_Key_2000Gold_13_01"); //Junge, was du verlangst, ist Meuterei!
-		AI_Output(self, other, "DIA_Addon_Francis_Key_2000Gold_13_02"); //(zu sich) Aber, wenn ich es mir so recht überlege...
-		AI_Output(self, other, "DIA_Addon_Francis_Key_2000Gold_13_03"); //Ach, gib schon her. Muss ja keiner erfahren.
-		AI_Output(self, other, "DIA_Addon_Francis_Key_2000Gold_13_04"); //Hier hast du den Schlüssel!
-		AI_Output(self, other, "DIA_Addon_Francis_Key_2000Gold_13_05"); //Aber mach schnell, bevor Greg wiederkommt! Und kein Wort zu den anderen, klar?!
+		AI_Output(self, other, "DIA_Addon_Francis_Key_2000Gold_13_01"); //Boy, what you're asking for is mutiny.
+		AI_Output(self, other, "DIA_Addon_Francis_Key_2000Gold_13_02"); //(to himself) But, on second thought ...
+		AI_Output(self, other, "DIA_Addon_Francis_Key_2000Gold_13_03"); //Oh well, give it here. No-one needs to know.
+		AI_Output(self, other, "DIA_Addon_Francis_Key_2000Gold_13_04"); //Here's the key!
+		AI_Output(self, other, "DIA_Addon_Francis_Key_2000Gold_13_05"); //But hurry up before Greg comes back. And not a word to the others, understood?!
 		B_GiveInvItems(other, self, ItMi_Gold, 2000);
 		B_GiveInvItems(self, other, ITKE_Greg_ADDON_MIS, 1);
 		Francis_bezahlt = TRUE;
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_FrancisNotEnoughGold_13_05"); //(lacht) Ha! Soviel hast du doch gar nicht!
+		AI_Output(self, other, "DIA_Addon_FrancisNotEnoughGold_13_05"); //(laughs) Ha! I bet you don't have that much!
 	};
 
 	Info_ClearChoices(DIA_Addon_Francis_Key);
@@ -200,7 +200,7 @@ instance DIA_Addon_Francis_AufsMaul(C_INFO)
 	condition		= DIA_Addon_Francis_AufsMaul_Condition;
 	information		= DIA_Addon_Francis_AufsMaul_Info;
 	permanent		= TRUE;
-	description		= "Na, dann lass mal sehen, was du drauf hast.";
+	description		= "Well, then, let's see what you've got.";
 };
 
 func int DIA_Addon_Francis_AufsMaul_Condition()
@@ -214,9 +214,9 @@ func int DIA_Addon_Francis_AufsMaul_Condition()
 
 func void DIA_Addon_Francis_AufsMaul_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Francis_AufsMaul_15_00"); //Na, dann lass mal sehen, was du drauf hast.
-	AI_Output(self, other, "DIA_Addon_Francis_AufsMaul_13_01"); //(schrill) Was? Ich bin hier der Käpt'n!
-	AI_Output(self, other, "DIA_Addon_Francis_AufsMaul_13_02"); //Ich werde dir Respekt beibringen, du Landratte!
+	AI_Output(other, self, "DIA_Addon_Francis_AufsMaul_15_00"); //Well, then, let's see what you've got.
+	AI_Output(self, other, "DIA_Addon_Francis_AufsMaul_13_01"); //(shrilly) What? I'm the Captain here! 
+	AI_Output(self, other, "DIA_Addon_Francis_AufsMaul_13_02"); //I'll teach you respect, you landlubber!
 
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -232,7 +232,7 @@ instance DIA_Addon_Francis_Buch(C_INFO)
 	condition		= DIA_Addon_Francis_Buch_Condition;
 	information		= DIA_Addon_Francis_Buch_Info;
 	permanent		= TRUE;
-	description		= "Ich habe dein Versteck gefunden...";
+	description		= "I found your cache...";
 };
 
 func int DIA_Addon_Francis_Buch_Condition()
@@ -245,42 +245,42 @@ func int DIA_Addon_Francis_Buch_Condition()
 
 func void DIA_Addon_Francis_Buch_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Francis_Key_Business_15_03"); //Ich habe dein Versteck gefunden. Deinen Schatz und ein Heuerbuch. Das ist doch dein Buch, oder?
-	AI_Output(self, other, "DIA_Addon_Francis_Buch_13_01"); //Äh... Das Buch hab ich noch nie gesehen...
-	AI_Output(self, other, "DIA_Addon_Francis_Buch_13_02"); //Und.. äh... Und selbst WENN mir das Buch gehören würde...
-	AI_Output(self, other, "DIA_Addon_Francis_Buch_13_03"); //Du glaubst doch nicht im ERNST, daß die Jungs DIR die Geschichte nur wegen ein paar vergilbter Zetteln abkaufen, oder?
-	AI_Output(other, self, "DIA_Addon_Francis_Key_Business_15_01"); //Du hast sie alle um ihren Anteil betrogen.
-	AI_Output(self, other, "DIA_Addon_Francis_Buch_13_04"); //Äh... Warte mal...
+	AI_Output(other, self, "DIA_Addon_Francis_Key_Business_15_03"); //I found your hiding-place. Your treasure and your paybook. This is your book, isn't it?
+	AI_Output(self, other, "DIA_Addon_Francis_Buch_13_01"); //Er ... I've never seen this book before.
+	AI_Output(self, other, "DIA_Addon_Francis_Buch_13_02"); //And ... Er ... even IF this were my book ...
+	AI_Output(self, other, "DIA_Addon_Francis_Buch_13_03"); //You don't REALLY believe the lads will buy YOUR story based on a few yellowed pages, do you?
+	AI_Output(other, self, "DIA_Addon_Francis_Key_Business_15_01"); //You cheated them all out of their shares.
+	AI_Output(self, other, "DIA_Addon_Francis_Buch_13_04"); //Er ... wait a minute ...
 	if (Npc_HasItems(self, ITKE_Greg_ADDON_MIS))
 	{
 		if (Npc_KnowsInfo(other, DIA_Addon_Francis_LetMeIn))
 		{
-			AI_Output(self, other, "DIA_Addon_Francis_Buch_13_05"); //(schleimig) Du wolltest doch den Schlüssel zu Gregs Hütte...
+			AI_Output(self, other, "DIA_Addon_Francis_Buch_13_05"); //(slimily) You wanted the key to Greg's hut, didn't you?
 		};
 
-		AI_Output(self, other, "DIA_Addon_Francis_Buch_13_06"); //Ich GEBE dir den Schlüssel zu Gregs Hütte!
-		AI_Output(self, other, "DIA_Addon_Francis_Buch_13_07"); //Da drinnen sind 'ne Menge wertvolle Sachen...
-		AI_Output(self, other, "DIA_Addon_Francis_Buch_13_08"); //(nervös) Aber du gibst mir das Buch und hälst die Schnauze, klar?
+		AI_Output(self, other, "DIA_Addon_Francis_Buch_13_06"); //I'll GIVE you the key to Greg's hut!
+		AI_Output(self, other, "DIA_Addon_Francis_Buch_13_07"); //There's plenty of valuable stuff in there ...
+		AI_Output(self, other, "DIA_Addon_Francis_Buch_13_08"); //(nervously) But you'll give me the book and keep your trap shut, right?
 		B_GiveInvItems(other, self, ITWR_Addon_FrancisAbrechnung_Mis, 1);
 		B_GiveInvItems(self, other, ITKE_Greg_ADDON_MIS, 1);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Francis_Buch_13_09"); //Mach bloß keinen Scheiß!
+		AI_Output(self, other, "DIA_Addon_Francis_Buch_13_09"); //Just don't do anything stupid!
 		if ((Francis_bezahlt == TRUE)
 		&& (Npc_HasItems(self, itmi_gold) >= 2000))
 		{
-			AI_Output(self, other, "DIA_Addon_Francis_Buch_13_10"); //Hier sind deine 2000 Goldstücke!
-			AI_Output(self, other, "DIA_Addon_Francis_Buch_13_11"); //Und ich leg noch 500 drauf
+			AI_Output(self, other, "DIA_Addon_Francis_Buch_13_10"); //Here's your 2000 pieces of gold!
+			AI_Output(self, other, "DIA_Addon_Francis_Buch_13_11"); //And I'll add another 500.
 			B_GiveInvItems(self, other, itmi_gold, 2500);
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Addon_Francis_Buch_13_12"); //Hier sind 500 Goldstücke!
+			AI_Output(self, other, "DIA_Addon_Francis_Buch_13_12"); //Here's 500 gold pieces!
 			B_GiveInvItems(self, other, itmi_gold, 500);
 		};
 
-		AI_Output(self, other, "DIA_Addon_Francis_Buch_13_13"); //(hastig) Und jetzt gib mir das Ding...
+		AI_Output(self, other, "DIA_Addon_Francis_Buch_13_13"); //(hastily) And now give me that thing ...
 		B_GiveInvItems(other, self, ITWR_Addon_FrancisAbrechnung_Mis, 1);
 	};
 
@@ -297,7 +297,7 @@ instance DIA_Francis_PICKPOCKET(C_INFO)
 	condition		= DIA_Francis_PICKPOCKET_Condition;
 	information		= DIA_Francis_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre einfach seinen Schlüssel zu stehlen)";
+	description		= "(It would be easy to steal his key)";
 };
 
 func int DIA_Francis_PICKPOCKET_Condition()
@@ -330,7 +330,7 @@ func void DIA_Francis_PICKPOCKET_DoIt()
 	else
 	{
 		AI_StopProcessInfos(self);
-		B_Attack(self, other, AR_Theft, 1); // AR_Theft führt zu NEWS!
+		B_Attack(self, other, AR_Theft, 1); // AR_Theft fÃ¼hrt zu NEWS!
 	};
 
 	Info_ClearChoices(DIA_Francis_PICKPOCKET);
@@ -367,9 +367,9 @@ func void DIA_Francis_Ausgeschissen_Info()
 {
 	if (!Npc_IsDead(Greg))
 	{
-		AI_Output(self, other, "DIA_Addon_Francis_Ausgeschissen_13_00"); //(wütend) Wegen dir läßt mich Greg jetzt hier Bretter sägen, bis es auf der ganzen Insel kein Holz mehr gibt!
+		AI_Output(self, other, "DIA_Addon_Francis_Ausgeschissen_13_00"); //(furious) Thanks to you, Greg is making me saw planks now until there's no wood left on the island.
 	};
 
-	AI_Output(self, other, "DIA_Addon_Francis_Ausgeschissen_13_01"); //Lass mich bloß in Ruhe!
+	AI_Output(self, other, "DIA_Addon_Francis_Ausgeschissen_13_01"); //Just leave me alone!
 	AI_StopProcessInfos(self);
 };

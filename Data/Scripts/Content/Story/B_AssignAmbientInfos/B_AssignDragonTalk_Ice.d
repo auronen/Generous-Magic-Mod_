@@ -23,7 +23,7 @@ func void DIA_Dragon_Ice_Exit_Info()
 	Npc_RemoveInvItems(other, ItMi_InnosEye_MIS, 1);
 	CreateInvItems(other, ItMi_InnosEye_Discharged_MIS, 1);
 
-	AI_Output(self, other, "DIA_Dragon_Ice_Exit_20_00"); //Die Kraft des Auges ist erloschen und deine Zeit ist nun abgelaufen.
+	AI_Output(self, other, "DIA_Dragon_Ice_Exit_20_00"); //The power of the Eye is extinguished, and your time has run out.
 
 	AI_StopProcessInfos(self);
 	DragonTalk_Exit_Free = FALSE;
@@ -64,16 +64,16 @@ func int DIA_Dragon_Ice_Hello_Condition()
 
 func void DIA_Dragon_Ice_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Warum störst du meine Ruhe? Muss ich mich noch weiter eingraben, damit ich endlich Ruhe vor euch lästigen Winzlingen habe?
+	AI_Output(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Why do you disturb my rest? Must I bury myself still farther, just so you annoying little mites will finally leave me alone?
 	if (Mis_KilledDragons == 0)
 	{
-		AI_Output(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Ein sprechender Drache. Dem Auge Innos' sei Dank.
+		AI_Output(other, self, "DIA_Dragon_Ice_Hello_15_01"); //A talking dragon. Thanks be to the Eye of Innos.
 	};
 
-	AI_Output(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Ihr Menschen seid ein so seltsames Volk. Hinweggefegt durch den Odem des Todes, findet sich doch immer noch jemand, der sich aus der Asche erhebt und sich zum Helden berufen fühlt.
-	AI_Output(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Aber das wird bald ein Ende haben. Ich werde persönlich dafür sorgen, dass so bald keiner von euch mehr aufsteht.
-	AI_Output(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Sei still. Mit der mir verliehenen Macht des heiligen Auges befehle ich dir, meine Fragen zu beantworten.
-	AI_Output(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ha, ha, ha. Frag du nur. Dein Wissen wird dir nichts nützen.
+	AI_Output(self, other, "DIA_Dragon_Ice_Hello_20_02"); //You humans are curious creatures. Swept away by the icy winds of death, there will always be at least one who rises from the ashes, thinking he is destined to be a hero.
+	AI_Output(self, other, "DIA_Dragon_Ice_Hello_20_03"); //But that will soon be over. I shall personally see to it that none of you will rise again any time soon.
+	AI_Output(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Silence. With the power of the sacred Eye which has been bestowed upon me, I order you to answer my questions.
+	AI_Output(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ha ha ha. Ask away, then. Your knowledge will not help you.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -84,7 +84,7 @@ instance DIA_Dragon_Ice_WERBISTDU(C_INFO)
 	nr				= 5;
 	condition		= DIA_Dragon_Ice_WERBISTDU_Condition;
 	information		= DIA_Dragon_Ice_WERBISTDU_Info;
-	description		= "Wer bist du?";
+	description		= "Who are you?";
 };
 
 func int DIA_Dragon_Ice_WERBISTDU_Condition()
@@ -97,8 +97,8 @@ func int DIA_Dragon_Ice_WERBISTDU_Condition()
 
 func void DIA_Dragon_Ice_WERBISTDU_Info()
 {
-	AI_Output(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //Wer bist du?
-	AI_Output(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Ich bin Finkregh. Herr über Schnee und Eis, Hüter der Zusammenkunft und zu guter Letzt dein Tod.
+	AI_Output(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //Who are you?
+	AI_Output(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //I am Finkregh. Lord of ice and snow, Guardian of the Congress and, ultimately, your death.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -109,7 +109,7 @@ instance DIA_Dragon_Ice_BELIAR(C_INFO)
 	nr				= 6;
 	condition		= DIA_Dragon_Ice_BELIAR_Condition;
 	information		= DIA_Dragon_Ice_BELIAR_Info;
-	description		= "Welchem Gott dient ihr?";
+	description		= "Which god do you serve?";
 };
 
 func int DIA_Dragon_Ice_BELIAR_Condition()
@@ -122,11 +122,11 @@ func int DIA_Dragon_Ice_BELIAR_Condition()
 
 func void DIA_Dragon_Ice_BELIAR_Info()
 {
-	AI_Output(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //Welchem Gott dient ihr?
-	AI_Output(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Welcher verfluchte Gott konnte es überhaupt zulassen, dass ihr verachtenswerten Kreaturen auf dieser Erde wandelt.
-	AI_Output(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //Mach dir keine Mühe, den Sinn unserer Zusammenkunft zu verstehen, kleiner Held.
-	AI_Output(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Beliar hat es nicht nur zugelassen, dass wir jetzt hier sind, er hat es uns sogar befohlen.
-	AI_Output(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Beflügelt von seinen heiligen Worten werden wir nicht eher ruhen, als dass wir seinen Willen in die Tat umgesetzt haben.
+	AI_Output(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //Which god do you serve?
+	AI_Output(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //What accursed god could ever allow despicable creatures such as you to walk this earth?
+	AI_Output(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //Do not trouble yourself trying to understand the meaning of our gathering, little hero.
+	AI_Output(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Beliar has not only permitted us to be here - he has even commanded it.
+	AI_Output(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Inspired by his holy words, we shall not rest until his will is made deed.
 };
 
 //**********************************************************************************

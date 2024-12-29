@@ -10,7 +10,7 @@ instance SLD_801_Torlof_DI(Npc_Default)
 	name							= "Torlof";
 	npctype							= NpcType_Main;
 	guild							= GIL_SLD;
-	flags							= NPC_FLAG_IMMORTAL; // Joly:letzter NSC, der stehen bleiben muß -> Letzter Dialog!! // NPC_FLAG_IMMORTAL oder 0
+	flags							= NPC_FLAG_IMMORTAL; // Joly:letzter NSC, der stehen bleiben muÃŸ -> Letzter Dialog!! // NPC_FLAG_IMMORTAL oder 0
 
 	voice							= 1;
 	id								= 8010;
@@ -35,7 +35,7 @@ instance SLD_801_Torlof_DI(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 40); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 40); // Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

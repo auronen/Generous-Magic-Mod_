@@ -79,15 +79,15 @@ func int DIA_Joe_Hallo_Condition()
 
 func void DIA_Joe_Hallo_Info()
 {
-	AI_Output(self, other, "DIA_Joe_Hallo_10_00"); //Hey, danke Mann, vielen Dank. Ich dachte schon ich komme hier nie wieder raus!
+	AI_Output(self, other, "DIA_Joe_Hallo_10_00"); //Hey, thanks, man, I mean, thank you, really. There I was thinking I'd never get out of here...
 	TOPIC_END_Joe = TRUE;
 	B_GivePlayerXP((XP_Ambient * 4));
 
-	AI_Output(other, self, "DIA_Joe_Hallo_15_01"); //Was machst du HIER?
-	AI_Output(self, other, "DIA_Joe_Hallo_10_02"); //Ich bin eingsperrt worden. Die Tür war auf und ich wollte mal einen Blick riskieren - aber als ich drin war, kam die Wache und hat wieder abgesperrt.
-	AI_Output(self, other, "DIA_Joe_Hallo_10_03"); //Das ist eine dumme Geschichte - ich wäre dir sehr dankbar, wenn das unter uns bliebe.
-	AI_Output(other, self, "DIA_Joe_Hallo_15_04"); //Verstehe, ist ja auch nicht gerade eine Heldentat gewesen.
-	AI_Output(self, other, "DIA_Joe_Hallo_10_05"); //Ich brauche jetzt wohl etwas zu trinken.
+	AI_Output(other, self, "DIA_Joe_Hallo_15_01"); //What are you doing HERE?
+	AI_Output(self, other, "DIA_Joe_Hallo_10_02"); //I got locked in. The door was open and all I wanted was to have a little looksee - but as soon as I was inside, the watch came and locked the damn door.
+	AI_Output(self, other, "DIA_Joe_Hallo_10_03"); //This is somewhat embarrassing - I'd be very grateful if it could remain just between you and me.
+	AI_Output(other, self, "DIA_Joe_Hallo_15_04"); //I understand, that wasn't exactly something to be proud of.
+	AI_Output(self, other, "DIA_Joe_Hallo_10_05"); //I think I need a drink now.
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "START");
 };
@@ -102,7 +102,7 @@ instance DIA_Joe_Perm(C_INFO)
 	condition		= DIA_Joe_Perm_Condition;
 	information		= DIA_Joe_Perm_Info;
 	permanent		= TRUE;
-	description		= "Alles in Ordnung?";
+	description		= "Everything all right?";
 };
 
 func int DIA_Joe_Perm_Condition()
@@ -115,8 +115,8 @@ func int DIA_Joe_Perm_Condition()
 
 func void DIA_Joe_Perm_Info()
 {
-	AI_Output(other, self, "DIA_Joe_Perm_15_00"); //Alles in Ordnung?
-	AI_Output(self, other, "DIA_Joe_Perm_10_01"); //Danke, dass du mich befreit hast.
+	AI_Output(other, self, "DIA_Joe_Perm_15_00"); //Everything all right?
+	AI_Output(self, other, "DIA_Joe_Perm_10_01"); //Thanks for setting me free.
 
 	AI_StopProcessInfos(self);
 };
@@ -130,7 +130,7 @@ instance DIA_Joe_Sign(C_INFO)
 	nr				= 2;
 	condition		= DIA_Joe_Sign_Condition;
 	information		= DIA_Joe_Sign_Info;
-	description		= "(Diebeszeichen zeigen)";
+	description		= "(Show thieves' signal)";
 };
 
 func int DIA_Joe_Sign_Condition()
@@ -145,8 +145,8 @@ func int DIA_Joe_Sign_Condition()
 func void DIA_Joe_Sign_Info()
 {
 	AI_PlayAni(other, "T_YES");
-	AI_Output(self, other, "DIA_Joe_Sign_10_00"); //Ach, sieh an, wir haben gemeinsame Freunde. Dann will ich mich mal für meine Rettung erkenntlich zeigen.
-	AI_Output(self, other, "DIA_Joe_Sign_10_01"); //Hier, nimm diese Dietriche - du kannst sie bestimmt gebrauchen.
+	AI_Output(self, other, "DIA_Joe_Sign_10_00"); //Hey, what do you know - we have mutual friends. In that case, let me express my gratitude for being rescued.
+	AI_Output(self, other, "DIA_Joe_Sign_10_01"); //Here, take these lock picks - I'm sure you'll find them useful.
 
 	B_GiveInvItems(self, other, ItKE_Lockpick, 5);
 

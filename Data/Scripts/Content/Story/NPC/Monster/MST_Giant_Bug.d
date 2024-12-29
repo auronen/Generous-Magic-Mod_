@@ -5,7 +5,7 @@
 prototype Mst_Default_Giant_Bug(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Feldräuber";
+	name							= "Field Raider";
 	guild							= GIL_GIANT_BUG;
 	level							= 8;
 
@@ -94,13 +94,13 @@ instance Giant_Bug(Mst_Default_Giant_Bug)
 };
 
 //**************************************
-//	junge Giant_Bug (für Spielstart)
+//	junge Giant_Bug (fÃ¼r Spielstart)
 //**************************************
 
 instance YGiant_Bug(Mst_Default_Giant_Bug)
 {
 	// -------- NPC --------
-	name							= "Junger Feldräuber";
+	name							= "Young Field Raider";
 	level							= 2;
 
 	// -------- attributes --------
@@ -137,7 +137,7 @@ instance YGiant_Bug(Mst_Default_Giant_Bug)
 instance YGiant_Bug_VinoRitual1(Mst_Default_Giant_Bug)
 {
 	// -------- NPC --------
-	name							= "Junger Feldräuber";
+	name							= "Young Field Raider";
 	level							= 4;
 
 	// -------- attributes --------
@@ -174,7 +174,7 @@ instance YGiant_Bug_VinoRitual1(Mst_Default_Giant_Bug)
 instance YGiant_Bug_VinoRitual2(Mst_Default_Giant_Bug)
 {
 	// -------- NPC --------
-	name							= "Junger Feldräuber";
+	name							= "Young Field Raider";
 	level							= 4;
 
 	// -------- attributes --------
@@ -209,7 +209,7 @@ instance YGiant_Bug_VinoRitual2(Mst_Default_Giant_Bug)
 };
 
 //**************************************
-//	Lobarts_Giant_Bug s (für Miliz Aufnahmemission)
+//	Lobarts_Giant_Bug s (fÃ¼r Miliz Aufnahmemission)
 //**************************************
 
 instance Lobarts_Giant_Bug1(Mst_Default_Giant_Bug)

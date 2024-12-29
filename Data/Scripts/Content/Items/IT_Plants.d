@@ -33,7 +33,7 @@ const int Value_Perm_Herb = 500; const int HP_Perm_Herb = 5;
 
 instance ItPl_Weed(C_Item)
 {
-	name						= "Unkraut";
+	name						= "Weeds";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -58,7 +58,7 @@ instance ItPl_Weed(C_Item)
 
 instance ItPl_Beet(C_Item)
 {
-	name						= "Feldrübe";
+	name						= "Turnip";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -88,7 +88,7 @@ func void Use_Beet()
 /******************************************************************************************/
 instance ItPl_SwampHerb(C_Item)
 {
-	name						= "Sumpfkraut";
+	name						= "Swampweed";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -121,7 +121,7 @@ func void Use_SwampHerb()
 /******************************************************************************************/
 instance ItPl_Mana_Herb_01(C_Item)
 {
-	name						= "Feuernessel";
+	name						= "Fire Nettle";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -151,7 +151,7 @@ func void Use_Mana_Herb_01()
 /******************************************************************************************/
 instance ItPl_Mana_Herb_02(C_Item)
 {
-	name						= "Feuerkraut";
+	name						= "Fireweed";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -181,7 +181,7 @@ func void Use_Mana_Herb_02()
 /******************************************************************************************/
 instance ItPl_Mana_Herb_03(C_Item)
 {
-	name						= "Feuerwurzel";
+	name						= "Fire Root";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -211,7 +211,7 @@ func void Use_Mana_Herb_03()
 /******************************************************************************************/
 instance ItPl_Health_Herb_01(C_Item)
 {
-	name						= "Heilpflanze";
+	name						= "Healing Plant";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -241,7 +241,7 @@ func void Use_Health_Herb_01()
 /******************************************************************************************/
 instance ItPl_Health_Herb_02(C_Item)
 {
-	name						= "Heilkraut";
+	name						= "Healing Herb";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -271,7 +271,7 @@ func void Use_Health_Herb_02()
 /******************************************************************************************/
 instance ItPl_Health_Herb_03(C_Item)
 {
-	name						= "Heilwurzel";
+	name						= "Healing Root";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -301,7 +301,7 @@ func void Use_Health_Herb_03()
 /******************************************************************************************/
 instance ItPl_Dex_Herb_01(C_Item)
 {
-	name						= "Goblin Beeren";
+	name						= "Goblin Berries";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -331,7 +331,7 @@ func void USE_Dex_Herb_01()
 /******************************************************************************************/
 instance ItPl_Strength_Herb_01(C_Item)
 {
-	name						= "Drachenwurzel";
+	name						= "Dragonroot";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -361,7 +361,7 @@ func void USE_Strength_Herb_01()
 /******************************************************************************************/
 instance ItPl_Speed_Herb_01(C_Item)
 {
-	name						= "Snapperkraut";
+	name						= "Snapperweed";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -391,7 +391,7 @@ func void Use_Speed_Herb_01()
 /******************************************************************************************/
 instance ItPl_Mushroom_01(C_Item)
 {
-	name						= "Dunkelpilz";
+	name						= "Dark Mushroom";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -434,7 +434,7 @@ func void Use_Mushroom_01()
 /******************************************************************************************/
 instance ItPl_Mushroom_02(C_Item)
 {
-	name						= "Buddlerfleisch";
+	name						= "Digger Meat";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -464,7 +464,7 @@ func void Use_Mushroom_02()
 /******************************************************************************************/
 instance ItPl_Blueplant(C_Item)
 {
-	name						= "Blauflieder";
+	name						= "Blue Elder";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -495,7 +495,7 @@ func void Use_Blueplant()
 /******************************************************************************************/
 instance ItPl_Forestberry(C_Item)
 {
-	name						= "Waldbeere";
+	name						= "Woodland Berry";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -527,7 +527,7 @@ func void Use_Forestberry()
 /******************************************************************************************/
 instance ItPl_Planeberry(C_Item)
 {
-	name						= "Weidenbeere";
+	name						= "Meadow Berry";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -559,12 +559,12 @@ func void Use_Planeberry()
 /******************************************************************************************/
 
 //******************************************************************************************
-//		Pflanze zum brauen von temporären und permanten Tränken
+//		Pflanze zum brauen von temporÃ¤ren und permanten TrÃ¤nken
 //******************************************************************************************
 
 instance ItPl_Temp_Herb(C_Item)
 {
-	name						= "Feldknöterich";
+	name						= "Meadow Knotweed";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -593,7 +593,7 @@ func void Use_Temp_Herb()
 
 instance ItPl_Perm_Herb(C_Item)
 {
-	name						= "Kronstöckel";
+	name						= "King's Sorrel";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI | ITEM_MISSION;

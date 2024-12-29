@@ -22,7 +22,7 @@ func void DIA_Angar_NW_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  	  Ich habe alle Drachen getötet. (Perm Kap 5)
+// 	  	  Ich habe alle Drachen getÃ¶tet. (Perm Kap 5)
 // ************************************************************
 instance DIA_Angar_NW_AllDragonsDead(C_INFO)
 {
@@ -30,7 +30,7 @@ instance DIA_Angar_NW_AllDragonsDead(C_INFO)
 	nr				= 59;
 	condition		= DIA_Angar_NW_AllDragonsDead_Condition;
 	information		= DIA_Angar_NW_AllDragonsDead_Info;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Angar_NW_AllDragonsDead_Condition()
@@ -40,11 +40,11 @@ func int DIA_Angar_NW_AllDragonsDead_Condition()
 
 func void DIA_Angar_NW_AllDragonsDead_Info()
 {
-	AI_Output(other, self, "DIA_Angar_NW_AllDragonsDead_15_00"); //Wie sieht's aus?
-	AI_Output(self, other, "DIA_Angar_NW_AllDragonsDead_04_01"); //Ganz gut. Ich habe nur immer noch diese miesen Kopfschmerzen, obwohl sie schon besser geworden sind, seit ich nicht mehr im Minental bin.
+	AI_Output(other, self, "DIA_Angar_NW_AllDragonsDead_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Angar_NW_AllDragonsDead_04_01"); //Quite well. But I still have these miserable headaches, although they've gotten better since I'm no longer in the Valley of the Mines.
 	if (Angar_IsOnBoard != LOG_SUCCESS)
 	{
-		AI_Output(self, other, "DIA_Angar_NW_AllDragonsDead_04_02"); //Ich bleibe erst einmal hier. Dann weißt du, wo du mich finden kannst, wenn du mich brauchst.
+		AI_Output(self, other, "DIA_Angar_NW_AllDragonsDead_04_02"); //I'll stay here. Then you'll know where to find me if you need me.
 	};
 };
 
@@ -58,7 +58,7 @@ instance DIA_Angar_NW_KnowWhereEnemy(C_INFO)
 	condition		= DIA_Angar_NW_KnowWhereEnemy_Condition;
 	information		= DIA_Angar_NW_KnowWhereEnemy_Info;
 	permanent		= TRUE;
-	description		= "Ich werde Khorinis verlassen. Würdest du mitkommen?";
+	description		= "I'm going to leave Khorinis. Would you like to join me?";
 };
 
 func int DIA_Angar_NW_KnowWhereEnemy_Condition()
@@ -73,8 +73,8 @@ func int DIA_Angar_NW_KnowWhereEnemy_Condition()
 
 func void DIA_Angar_NW_KnowWhereEnemy_Info()
 {
-	AI_Output(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_00"); //Ich werde Khorinis verlassen. Würdest du mitkommen?
-	AI_Output(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_01"); //Je weiter ich von dem Minental weg komme, um so besser. Wann geht's los?
+	AI_Output(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_00"); //I'm going to leave Khorinis. Would you like to join me?
+	AI_Output(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_01"); //The farther I get from the Valley of Mines, the better. When do we go?
 
 	Log_CreateTopic(TOPIC_Crew, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING);
@@ -82,21 +82,21 @@ func void DIA_Angar_NW_KnowWhereEnemy_Info()
 
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_02"); //Momentan habe ich schon genug Leute für das Schiff zusammen. Ich komme vielleicht später noch einmal auf dich zurück.
-		AI_Output(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_03"); //Gut. Ich bin hier, wenn du mich brauchst.
+		AI_Output(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_02"); //Right now, I've got enough people to man the ship. Maybe I'll get back to you later.
+		AI_Output(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_03"); //Fine. I'm here if you need me.
 	}
 	else
 	{
 		Info_ClearChoices(DIA_Angar_NW_KnowWhereEnemy);
-		Info_AddChoice(DIA_Angar_NW_KnowWhereEnemy, "Ich sag dir noch, wenn´s los geht.", DIA_Angar_NW_KnowWhereEnemy_No);
-		Info_AddChoice(DIA_Angar_NW_KnowWhereEnemy, "Komm zum Hafen. Ich komme später nach.", DIA_Angar_NW_KnowWhereEnemy_Yes);
+		Info_AddChoice(DIA_Angar_NW_KnowWhereEnemy, "I'll let you know when it's time to go.", DIA_Angar_NW_KnowWhereEnemy_No);
+		Info_AddChoice(DIA_Angar_NW_KnowWhereEnemy, "Go to the harbor, then. I'll meet you there later.", DIA_Angar_NW_KnowWhereEnemy_Yes);
 	};
 };
 
 func void DIA_Angar_NW_KnowWhereEnemy_Yes()
 {
-	AI_Output(other, self, "DIA_Angar_NW_KnowWhereEnemy_Yes_15_00"); //Komm zum Hafen. Ich komme später nach.
-	AI_Output(self, other, "DIA_Angar_NW_KnowWhereEnemy_Yes_04_01"); //Bin schon unterwegs.
+	AI_Output(other, self, "DIA_Angar_NW_KnowWhereEnemy_Yes_15_00"); //Go to the harbor, then. I'll meet you there later.
+	AI_Output(self, other, "DIA_Angar_NW_KnowWhereEnemy_Yes_04_01"); //On my way.
 
 	self.flags = NPC_FLAG_IMMORTAL;
 	Angar_IsOnBoard = LOG_SUCCESS;
@@ -117,8 +117,8 @@ func void DIA_Angar_NW_KnowWhereEnemy_Yes()
 
 func void DIA_Angar_NW_KnowWhereEnemy_No()
 {
-	AI_Output(other, self, "DIA_Angar_NW_KnowWhereEnemy_No_15_00"); //Ich sag dir noch, wann's los geht.
-	AI_Output(self, other, "DIA_Angar_NW_KnowWhereEnemy_No_04_01"); //Gut.
+	AI_Output(other, self, "DIA_Angar_NW_KnowWhereEnemy_No_15_00"); //I'll let you know when it's time to go.
+	AI_Output(self, other, "DIA_Angar_NW_KnowWhereEnemy_No_04_01"); //Good.
 
 	Angar_IsOnBoard = LOG_OBSOLETE;
 	Info_ClearChoices(DIA_Angar_NW_KnowWhereEnemy);
@@ -134,7 +134,7 @@ instance DIA_Angar_NW_LeaveMyShip(C_INFO)
 	condition		= DIA_Angar_NW_LeaveMyShip_Condition;
 	information		= DIA_Angar_NW_LeaveMyShip_Info;
 	permanent		= TRUE;
-	description		= "Bleib hier und kuriere deine Schmerzen.";
+	description		= "Stay here and take care of your pain.";
 };
 
 func int DIA_Angar_NW_LeaveMyShip_Condition()
@@ -148,8 +148,8 @@ func int DIA_Angar_NW_LeaveMyShip_Condition()
 
 func void DIA_Angar_NW_LeaveMyShip_Info()
 {
-	AI_Output(other, self, "DIA_Angar_NW_LeaveMyShip_15_00"); //Bleib hier und kuriere deine Schmerzen.
-	AI_Output(self, other, "DIA_Angar_NW_LeaveMyShip_04_01"); //Na gut. Ich gehe wieder zurück. Ist vielleicht auch besser so.
+	AI_Output(other, self, "DIA_Angar_NW_LeaveMyShip_15_00"); //Stay here and take care of your pain.
+	AI_Output(self, other, "DIA_Angar_NW_LeaveMyShip_04_01"); //All right. I'll go back. Maybe it's better that way.
 
 	Angar_IsOnBoard = LOG_OBSOLETE; // Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit!
 	crewmember_Count = (Crewmember_Count - 1);
@@ -158,7 +158,7 @@ func void DIA_Angar_NW_LeaveMyShip_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Angar_NW_StillNeedYou(C_INFO)
 {
@@ -167,7 +167,7 @@ instance DIA_Angar_NW_StillNeedYou(C_INFO)
 	condition		= DIA_Angar_NW_StillNeedYou_Condition;
 	information		= DIA_Angar_NW_StillNeedYou_Info;
 	permanent		= TRUE;
-	description		= "Komm zurück an Bord.";
+	description		= "Come back on board.";
 };
 
 func int DIA_Angar_NW_StillNeedYou_Condition()
@@ -182,8 +182,8 @@ func int DIA_Angar_NW_StillNeedYou_Condition()
 
 func void DIA_Angar_NW_StillNeedYou_Info()
 {
-	AI_Output(other, self, "DIA_Angar_NW_StillNeedYou_15_00"); //Komm zurück an Bord.
-	AI_Output(self, other, "DIA_Angar_NW_StillNeedYou_04_01"); //Du bist ja schlimmer als ich. Ein bisschen mehr Entschlossenheit würde dir gut tun. Bis nachher.
+	AI_Output(other, self, "DIA_Angar_NW_StillNeedYou_15_00"); //Come back on board.
+	AI_Output(self, other, "DIA_Angar_NW_StillNeedYou_04_01"); //You're worse than I am. A bit more decisiveness would do you good. See you later.
 
 	self.flags = NPC_FLAG_IMMORTAL;
 	Angar_IsOnBoard = LOG_SUCCESS;
@@ -246,7 +246,7 @@ instance DIA_Angar_NW_FOUNDAMULETT(C_INFO)
 	nr				= 7;
 	condition		= DIA_Angar_NW_FOUNDAMULETT_Condition;
 	information		= DIA_Angar_NW_FOUNDAMULETT_Info;
-	description		= "Ich habe dein Amulett gefunden.";
+	description		= "I found your amulet.";
 };
 
 func int DIA_Angar_NW_FOUNDAMULETT_Condition()

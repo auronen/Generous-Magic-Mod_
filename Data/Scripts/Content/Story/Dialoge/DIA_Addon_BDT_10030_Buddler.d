@@ -31,7 +31,7 @@ instance DIA_Addon_BDT_10030_Buddler_Hi(C_INFO)
 	condition		= DIA_Addon_10030_Buddler_Hi_Condition;
 	information		= DIA_Addon_10030_Buddler_Hi_Info;
 	permanent		= TRUE;
-	description		= "Alles klar bei dir?";
+	description		= "Everything all right with you?";
 };
 
 func int DIA_Addon_10030_Buddler_Hi_Condition()
@@ -41,16 +41,16 @@ func int DIA_Addon_10030_Buddler_Hi_Condition()
 
 func void DIA_Addon_10030_Buddler_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10030_Buddler_Hi_15_00"); //Alles klar bei dir?
+	AI_Output(other, self, "DIA_Addon_BDT_10030_Buddler_Hi_15_00"); //Everything all right with you?
 
 	if (Sklaven_Flucht == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01"); //Die Sklaven machen uns die großen Brocken weg.
-		AI_Output(self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02"); //(grinst) Wir ernten dann später die goldenen Früchte.
+		AI_Output(self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01"); //The slaves are getting the big chunks out of our way.
+		AI_Output(self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02"); //(grins) Then we'll harvest the golden fruit later.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_03"); //Jetzt holen wir uns das süße Gold.
+		AI_Output(self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_03"); //Now we'll get the sweet gold.
 		AI_StopProcessInfos(self);
 	};
 };

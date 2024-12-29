@@ -32,7 +32,7 @@ instance DIA_Addon_Myxir_NW_PICKPOCKET(C_INFO)
 	condition		= DIA_Addon_Myxir_NW_PICKPOCKET_Condition;
 	information		= DIA_Addon_Myxir_NW_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description		= "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };
 
 func int DIA_Addon_Myxir_NW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Myxir_Hallo(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Myxir_Hallo_Condition;
 	information		= DIA_Addon_Myxir_Hallo_Info;
-	description		= "Alles klar?";
+	description		= "Everything all right?";
 };
 
 func int DIA_Addon_Myxir_Hallo_Condition()
@@ -94,8 +94,8 @@ func int DIA_Addon_Myxir_Hallo_Condition()
 
 func void DIA_Addon_Myxir_Hallo_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Alles klar?
-	AI_Output(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Ganz schön mutig von dir, hier einfach so reinzuspazieren.
+	AI_Output(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Everything all right?
+	AI_Output(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //It's very brave of you to just walk in here.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -107,7 +107,7 @@ instance DIA_Addon_Myxir_WasMachstDu(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Myxir_WasMachstDu_Condition;
 	information		= DIA_Addon_Myxir_WasMachstDu_Info;
-	description		= "Was machst du hier?";
+	description		= "What are you doing here?";
 };
 
 func int DIA_Addon_Myxir_WasMachstDu_Condition()
@@ -120,11 +120,11 @@ func int DIA_Addon_Myxir_WasMachstDu_Condition()
 
 func void DIA_Addon_Myxir_WasMachstDu_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //Was machst du hier?
-	AI_Output(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //Ich studiere die Sprache der Erbauer.
-	AI_Output(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //Die Sprache ist der Schlüssel zum Verständnis des alten Volkes.
-	AI_Output(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Jeder von uns muss sie erlernen, sonst wäre diese Expedition beendet, bevor sie überhaupt angefangen hat.
-	AI_Output(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //Die Erbauer haben Steintafeln benutzt, um ihr Wissen weiterzugeben. Leider sind viele davon zerbrochen oder wurden schon vor langer Zeit gestohlen.
+	AI_Output(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //What are you doing here?
+	AI_Output(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //I'm studying the language of the builders.
+	AI_Output(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //The language is the key to understanding the ancient people.
+	AI_Output(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Each one of us must learn it, or this expedition will be over before it even begins.
+	AI_Output(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //The builders used stone tablets to pass on their knowledge. Unfortunately, many of them are broken or were stolen long ago.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -136,7 +136,7 @@ instance DIA_Addon_Myxir_Steintafeln(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Myxir_Steintafeln_Condition;
 	information		= DIA_Addon_Myxir_Steintafeln_Info;
-	description		= "Was steht denn so auf diesen Steintafeln?";
+	description		= "What's on these stone tablets, then?";
 };
 
 func int DIA_Addon_Myxir_Steintafeln_Condition()
@@ -149,10 +149,10 @@ func int DIA_Addon_Myxir_Steintafeln_Condition()
 
 func void DIA_Addon_Myxir_Steintafeln_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //Was steht denn so auf diesen Steintafeln?
-	AI_Output(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //Sie enthalten das gesammelte Wissen des alten Volkes.
-	AI_Output(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Manche von ihnen erhöhen auf magische Weise das Wissen über Kampf und Magie.
-	AI_Output(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Für jemanden, der die Tafeln lesen kann, sind sie ein wahrer Schatz.
+	AI_Output(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //What's on these stone tablets, then?
+	AI_Output(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //They contain the collected knowledge of the ancient people.
+	AI_Output(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Some of them increase knowledge of combat and magic by magical means.
+	AI_Output(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //For someone who can read the tablets, they are a real treasure.
 
 	Log_CreateTopic(TOPIC_Addon_Stoneplates, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Stoneplates, LOG_RUNNING);
@@ -168,7 +168,7 @@ instance DIA_Addon_Myxir_WillYouTeachMe(C_INFO)
 	nr				= 10;
 	condition		= DIA_Addon_Myxir_WillYouTeachMe_Condition;
 	information		= DIA_Addon_Myxir_WillYouTeachMe_Info;
-	description		= "Kannst du mir das Lesen der fremden Sprache beibringen?";
+	description		= "Can you teach me to read the language?";
 };
 
 func int DIA_Addon_Myxir_WillYouTeachMe_Condition()
@@ -181,8 +181,8 @@ func int DIA_Addon_Myxir_WillYouTeachMe_Condition()
 
 func void DIA_Addon_Myxir_WillYouTeachMe_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00"); //Kannst du mir das Lesen der fremden Sprache beibringen?
-	AI_Output(self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01"); //Tja. Warum eigentlich nicht? Ich gebe gerne mein Wissen an dich weiter.
+	AI_Output(other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00"); //Can you teach me to read the language?
+	AI_Output(self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01"); //Well. Why not? I'll gladly pass on my knowledge to you.
 	Myxir_Addon_TeachPlayer = TRUE;
 
 	Log_CreateTopic(TOPIC_Addon_Stoneplates, LOG_MISSION);
@@ -203,7 +203,7 @@ instance DIA_Addon_Myxir_Teach(C_INFO)
 	condition		= DIA_Addon_Myxir_Teach_Condition;
 	information		= DIA_Addon_Myxir_Teach_Info;
 	permanent		= TRUE;
-	description		= "Lehre mich die fremde Sprache.";
+	description		= "Teach me that language.";
 };
 
 var int DIA_Addon_Myxir_Teach_NoPerm;

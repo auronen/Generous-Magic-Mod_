@@ -3,22 +3,22 @@
 // ***************************************************
 func void B_AssignSchiffswachenGuard(var C_Npc Schiffswache)
 {
-	if ((MIS_ShipIsFree == TRUE) // Joly: SC darf jetzt auf´s Schiff!!!!
-	|| (MIS_SCVisitShip == LOG_RUNNING)) // Joly: Für die Kurzzeitige Erlaubnis, das Schiff zu besuchen! Muß nach der Aktion wieder geändert werden, z. B = 0;
+	if ((MIS_ShipIsFree == TRUE) // Joly: SC darf jetzt aufÂ´s Schiff!!!!
+	|| (MIS_SCVisitShip == LOG_RUNNING)) // Joly: FÃ¼r die Kurzzeitige Erlaubnis, das Schiff zu besuchen! MuÃŸ nach der Aktion wieder geÃ¤ndert werden, z. B = 0;
 	{
 		if (Schiffswache.voice == 4)
 		{
-			AI_Output(self, other, "DIA_Pal_Schiffswache_Ambient_04_00"); //Wir beobachten dich. Denk daran.
+			AI_Output(self, other, "DIA_Pal_Schiffswache_Ambient_04_00"); //We are watching you. Remember that.
 		};
 
 		if (Schiffswache.voice == 9)
 		{
-			AI_Output(self, other, "DIA_Pal_Schiffswache_Ambient_09_01"); //Mach keinen Mist, solange du hier bist.
+			AI_Output(self, other, "DIA_Pal_Schiffswache_Ambient_09_01"); //Don't get into trouble while you're here.
 		};
 
 		if (Schiffswache.voice == 12)
 		{
-			AI_Output(self, other, "DIA_Pal_Schiffswache_Ambient_12_02"); //Lass dir nicht einfallen, hier was zu klauen, klar?
+			AI_Output(self, other, "DIA_Pal_Schiffswache_Ambient_12_02"); //Don't even think of stealing anything here, got it?
 		};
 
 		AI_StopProcessInfos(Schiffswache);
@@ -57,34 +57,34 @@ func void B_AssignSchiffswachenInfos(var C_Npc Schiffswache)
 	{
 		if (Schiffswache.voice == 4)
 		{
-			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_04_00"); //Die verdammten Orks haben Garonds Burg gestürmt. Wir müssen sofort handeln.
+			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_04_00"); //The damned orcs have stormed Garond's castle. We must act at once.
 		};
 
 		if (Schiffswache.voice == 9)
 		{
-			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Wenn wir den Verräter zu fassen kriegen, der das Haupttor der Burg geöffnet hat, machen wir kurzen Prozess mit ihm.
+			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_09_01"); //If we ever get hold of that traitor who opened the main gate to the castle, we'll make short work of him.
 		};
 
 		if (Schiffswache.voice == 12)
 		{
-			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_12_02"); //Wir können nicht mehr lange warten. Unsere Jungs im Minental brauchen unsere Hilfe, bevor der nächste Orksturm kommt.
+			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_12_02"); //We can't wait much longer. Our boys in the Valley of Mines need our help before the next wave of orcs attacks.
 		};
 	}
 	else
 	{
 		if (Schiffswache.voice == 4)
 		{
-			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Garond hat zur allgemeinen Mobilmachung aufgerufen. Bald brechen wir auf ins Minental.
+			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Garond has called for a general mobilization. We'll set out for the Valley of Mines soon.
 		};
 
 		if (Schiffswache.voice == 9)
 		{
-			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_09_04"); //Jetzt treten wir den Orks in den Arsch!
+			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_09_04"); //The orcs must finally be taught a lesson.
 		};
 
 		if (Schiffswache.voice == 12)
 		{
-			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_12_05"); //Ich kann's kaum erwarten, den Orks die Stirn zu bieten. Bald geht es los.
+			AI_Output(self, other, "DIA_Pal_Schiffswache_AmbientKap5_12_05"); //I can barely wait to give those orcs what for. We'll get started soon.
 		};
 	};
 

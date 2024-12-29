@@ -5,7 +5,7 @@
 prototype Mst_Default_Gobbo_Skeleton(C_NPC)
 {
 	// -------- NPC --------
-	name							= "Goblin Skelett";
+	name							= "Goblin Skeleton";
 	guild							= GIL_GOBBO_SKELETON;
 	level							= 15;
 
@@ -81,7 +81,7 @@ instance Gobbo_Skeleton(Mst_Default_Gobbo_Skeleton)
 	// -------- visuals --------
 	B_SetVisuals_Gobbo_Skeleton();
 
-	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 
@@ -99,7 +99,7 @@ instance Gobbo_Skeleton(Mst_Default_Gobbo_Skeleton)
 instance Summoned_Gobbo_Skeleton(Mst_Default_Gobbo_Skeleton)
 {
 	// -------- NPC --------
-	name							= "Beschworenes Skelett";
+	name							= "Summoned Skeleton";
 	guild							= GIL_SUMMONED_GOBBO_SKELETON;
 	level							= 0;
 
@@ -113,7 +113,7 @@ instance Summoned_Gobbo_Skeleton(Mst_Default_Gobbo_Skeleton)
 	aivar[AIV_PARTYMEMBER]			= TRUE;
 
 	B_SetAttitude(self, ATT_FRIENDLY);
-	Npc_SetToFightMode(self, ItMw_1H_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1H_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 
@@ -126,7 +126,7 @@ instance Summoned_Gobbo_Skeleton(Mst_Default_Gobbo_Skeleton)
 };
 
 //************************************
-//	Gobbo_Skeleton im OW Dämonenturm
+//	Gobbo_Skeleton im OW DÃ¤monenturm
 //************************************
 instance Gobbo_SkeletonOWDemonTower(Mst_Default_Gobbo_Skeleton)
 {
@@ -137,7 +137,7 @@ instance Gobbo_SkeletonOWDemonTower(Mst_Default_Gobbo_Skeleton)
 	// -------- visuals --------
 	B_SetVisuals_Gobbo_Skeleton();
 
-	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 

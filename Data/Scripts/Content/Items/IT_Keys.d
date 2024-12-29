@@ -9,7 +9,7 @@ const int Value_Key_03 = 3;
 
 instance ItKe_Lockpick(C_Item)
 {
-	name						= "Dietrich";
+	name						= "Lockpick";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -29,12 +29,12 @@ instance ItKe_Lockpick(C_Item)
 };
 
 //******************************************************************************************
-//	Prototyp Schlüssel
+//	Prototyp SchlÃ¼ssel
 //******************************************************************************************
 
 instance ItKe_Key_01(C_Item)
 {
-	name						= "Schlüssel";
+	name						= "Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= 0;
@@ -55,7 +55,7 @@ instance ItKe_Key_01(C_Item)
 
 instance ItKe_Key_02(C_Item)
 {
-	name						= "Schlüssel";
+	name						= "Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= 0;
@@ -76,7 +76,7 @@ instance ItKe_Key_02(C_Item)
 
 instance ItKe_Key_03(C_Item)
 {
-	name						= "Schlüssel";
+	name						= "Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= 0;
@@ -96,12 +96,12 @@ instance ItKe_Key_03(C_Item)
 };
 
 //****************************************************************************
-//			Turm Schlüssel City
+//			Turm SchlÃ¼ssel City
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_City_Tower_01(C_Item)
 {
-	name						= "Turm Schlüssel";
+	name						= "Tower Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -119,12 +119,12 @@ instance ItKe_City_Tower_01(C_Item)
 };
 
 //****************************************************************************
-//			Turm Schlüssel City 02
+//			Turm SchlÃ¼ssel City 02
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_City_Tower_02(C_Item)
 {
-	name						= "Turm Schlüssel";
+	name						= "Tower Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -142,12 +142,12 @@ instance ItKe_City_Tower_02(C_Item)
 };
 
 //****************************************************************************
-//			Turm Schlüssel City 03
+//			Turm SchlÃ¼ssel City 03
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_City_Tower_03(C_Item)
 {
-	name						= "Turm Schlüssel";
+	name						= "Tower Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -165,12 +165,12 @@ instance ItKe_City_Tower_03(C_Item)
 };
 
 //****************************************************************************
-//			Turm Schlüssel City 04
+//			Turm SchlÃ¼ssel City 04
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_City_Tower_04(C_Item)
 {
-	name						= "Turm Schlüssel";
+	name						= "Tower Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -188,12 +188,12 @@ instance ItKe_City_Tower_04(C_Item)
 };
 
 //****************************************************************************
-//			Turm Schlüssel City 05
+//			Turm SchlÃ¼ssel City 05
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_City_Tower_05(C_Item)
 {
-	name						= "Turm Schlüssel";
+	name						= "Tower Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -211,12 +211,12 @@ instance ItKe_City_Tower_05(C_Item)
 };
 
 //****************************************************************************
-//			Turm Schlüssel City 06
+//			Turm SchlÃ¼ssel City 06
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_City_Tower_06(C_Item)
 {
-	name						= "Turm Schlüssel";
+	name						= "Tower Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;

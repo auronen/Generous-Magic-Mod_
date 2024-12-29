@@ -33,13 +33,13 @@ instance DJG_713_Biff_NW(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 65); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 65); // Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);
 
 	// -------- equipped weapons --------
-	EquipItem(self, ItMw_2h_Sld_Axe); // Joly: Axt!!!!! Biff keine andere Waffe geben!!!!!!!!! DOCH DEFAULT MÄSSIG- die instanz gibts nicht mehr
+	EquipItem(self, ItMw_2h_Sld_Axe); // Joly: Axt!!!!! Biff keine andere Waffe geben!!!!!!!!! DOCH DEFAULT MÃ„SSIG- die instanz gibts nicht mehr
 
 	// -------- daily routine --------
 	daily_routine = Rtn_Start_7130;

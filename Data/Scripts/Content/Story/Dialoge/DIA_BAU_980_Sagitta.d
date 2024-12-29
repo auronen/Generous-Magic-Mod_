@@ -33,7 +33,7 @@ instance DIA_Sagitta_HALLO(C_INFO)
 	nr				= 4;
 	condition		= DIA_Sagitta_HALLO_Condition;
 	information		= DIA_Sagitta_HALLO_Info;
-	description		= "Ganz alleine hier draußen?";
+	description		= "All by yourself out here?";
 };
 
 func int DIA_Sagitta_HALLO_Condition()
@@ -43,35 +43,35 @@ func int DIA_Sagitta_HALLO_Condition()
 
 func void DIA_Sagitta_HALLO_Info()
 {
-	AI_Output(other, self, "DIA_Sagitta_HALLO_15_00"); //Ganz alleine hier draußen?
-	AI_Output(self, other, "DIA_Sagitta_HALLO_17_01"); //Sag, was du von mir willst und dann geh wieder. Ich habe zu tun.
+	AI_Output(other, self, "DIA_Sagitta_HALLO_15_00"); //All by yourself out here?
+	AI_Output(self, other, "DIA_Sagitta_HALLO_17_01"); //Tell me what you want of me, and then go away. I'm busy.
 
 	Info_ClearChoices(DIA_Sagitta_HALLO);
 	Info_AddChoice(DIA_Sagitta_HALLO, DIALOG_BACK, DIA_Sagitta_HALLO_ende);
-	Info_AddChoice(DIA_Sagitta_HALLO, "Kannst du mich heilen?", DIA_Sagitta_HALLO_Heil);
-	Info_AddChoice(DIA_Sagitta_HALLO, "Was machst du hier draußen?", DIA_Sagitta_HALLO_was);
-	Info_AddChoice(DIA_Sagitta_HALLO, "Wer bist du?", DIA_Sagitta_HALLO_wer);
+	Info_AddChoice(DIA_Sagitta_HALLO, "Can you heal me?", DIA_Sagitta_HALLO_Heil);
+	Info_AddChoice(DIA_Sagitta_HALLO, "What are you doing out here?", DIA_Sagitta_HALLO_was);
+	Info_AddChoice(DIA_Sagitta_HALLO, "Who are you?", DIA_Sagitta_HALLO_wer);
 };
 
 func void DIA_Sagitta_HALLO_wer()
 {
-	AI_Output(other, self, "DIA_Sagitta_HALLO_wer_15_00"); //Wer bist du?
-	AI_Output(self, other, "DIA_Sagitta_HALLO_wer_17_01"); //Du hast noch nicht von mir gehört?
-	AI_Output(self, other, "DIA_Sagitta_HALLO_wer_17_02"); //Kräuterhexe sagen sie. Giftmischerin sagen sie.
-	AI_Output(self, other, "DIA_Sagitta_HALLO_wer_17_03"); //Doch wenn es ihnen dreckig geht, erinnern sich alle an die gute Sagitta mit ihren heilenden Kräutern.
+	AI_Output(other, self, "DIA_Sagitta_HALLO_wer_15_00"); //Who are you?
+	AI_Output(self, other, "DIA_Sagitta_HALLO_wer_17_01"); //You haven't heard of me, then?
+	AI_Output(self, other, "DIA_Sagitta_HALLO_wer_17_02"); //Herb witch, they say. Quack, they call me.
+	AI_Output(self, other, "DIA_Sagitta_HALLO_wer_17_03"); //But when they're in a bad way, they all suddenly remember good old Sagitta and her healing herbs.
 };
 
 func void DIA_Sagitta_HALLO_was()
 {
-	AI_Output(other, self, "DIA_Sagitta_HALLO_was_15_00"); //Was machst du hier draußen?
-	AI_Output(self, other, "DIA_Sagitta_HALLO_was_17_01"); //Ich lebe hier, seit ich denken kann, und widme mich meinen Kräutern.
-	AI_Output(self, other, "DIA_Sagitta_HALLO_was_17_02"); //Der Wald ist mein Freund. Er bietet mir alles, was ich brauche.
+	AI_Output(other, self, "DIA_Sagitta_HALLO_was_15_00"); //What are you doing out here?
+	AI_Output(self, other, "DIA_Sagitta_HALLO_was_17_01"); //I've been living here for as long as I can think, attending to my herbs.
+	AI_Output(self, other, "DIA_Sagitta_HALLO_was_17_02"); //The forest is my friend. It offers me all that I need.
 };
 
 func void DIA_Sagitta_HALLO_Heil()
 {
-	AI_Output(other, self, "DIA_Sagitta_HALLO_Heil_15_00"); //Kannst du mich heilen?
-	AI_Output(self, other, "DIA_Sagitta_HALLO_Heil_17_01"); //Deswegen bist du doch gekommen, oder? Du musst es mir nur sagen, wenn dir etwas fehlt.
+	AI_Output(other, self, "DIA_Sagitta_HALLO_Heil_15_00"); //Can you heal me?
+	AI_Output(self, other, "DIA_Sagitta_HALLO_Heil_17_01"); //That's what you came for, isn't it? Just let me know when there's something wrong with you.
 
 	Log_CreateTopic(Topic_SoldierTrader, LOG_NOTE);
 	B_LogEntry(Topic_SoldierTrader, Topic_SoldierTrader_1);
@@ -92,7 +92,7 @@ instance DIA_Sagitta_TeachAlchemyRequest(C_INFO)
 	condition		= DIA_Sagitta_TeachAlchemyRequest_Condition;
 	information		= DIA_Sagitta_TeachAlchemyRequest_Info;
 	permanent		= TRUE;
-	description		= "Kannst du mir deine Kräuterkunst beibringen?";
+	description		= "Can you teach me your herbal lore?";
 };
 
 func int DIA_Sagitta_TeachAlchemyRequest_Condition()
@@ -107,46 +107,46 @@ func int DIA_Sagitta_TeachAlchemyRequest_Condition()
 var int DIA_Sagitta_TeachAlchemyRequest_OneTime;
 func void DIA_Sagitta_TeachAlchemyRequest_Info()
 {
-	AI_Output(other, self, "DIA_Sagitta_TeachAlchemyRequest_15_00"); //Kannst du mir deine Kräuterkunst beibringen?
+	AI_Output(other, self, "DIA_Sagitta_TeachAlchemyRequest_15_00"); //Can you teach me your herbal lore?
 
 	if (DIA_Sagitta_TeachAlchemyRequest_OneTime == FALSE)
 	{
-		AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_01"); //Interessant. Bisher hat mich selten jemand danach gefragt.
-		AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_02"); //Du willst also mein Schüler sein? Dann wirst du erst den Ernst deines Anliegens unter Beweis stellen müssen.
-		AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_03"); //Ich arbeite zurzeit an einem sehr seltenen Trank aus erlesenen Kräutern und Säften.
-		AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_04"); //Wenn du mir eine Zutat, ein äußerst seltenes Kraut, das ich nicht hier habe, besorgen kannst, werde ich dich ausbilden.
+		AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_01"); //How interesting. I don't get asked that very often.
+		AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_02"); //So you want to be my student? Then you'll first have to prove that you're request is serious.
+		AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_03"); //At the moment, I'm working on a very rare potion made from exquisite herbs and juices.
+		AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_04"); //If you can get me one ingredient - a very rare herb which I don't have here - I shall train you.
 		DIA_Sagitta_TeachAlchemyRequest_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_05"); //Das sagte ich bereits. Erst wenn du mir diese seltene Zutat besorgen kannst.
+		AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_17_05"); //I already told you: yes, after you get me that rare ingredient.
 	};
 
 	Info_ClearChoices(DIA_Sagitta_TeachAlchemyRequest);
-	Info_AddChoice(DIA_Sagitta_TeachAlchemyRequest, "Kein Interesse.", DIA_Sagitta_TeachAlchemyRequest_nein);
-	Info_AddChoice(DIA_Sagitta_TeachAlchemyRequest, "Wo werde ich diese Zutat finden?", DIA_Sagitta_TeachAlchemyRequest_wo);
-	Info_AddChoice(DIA_Sagitta_TeachAlchemyRequest, "Was für eine Zutat ist das?", DIA_Sagitta_TeachAlchemyRequest_was);
+	Info_AddChoice(DIA_Sagitta_TeachAlchemyRequest, "Sorry, not interested.", DIA_Sagitta_TeachAlchemyRequest_nein);
+	Info_AddChoice(DIA_Sagitta_TeachAlchemyRequest, "Where can I find this ingredient?", DIA_Sagitta_TeachAlchemyRequest_wo);
+	Info_AddChoice(DIA_Sagitta_TeachAlchemyRequest, "What ingredient is that?", DIA_Sagitta_TeachAlchemyRequest_was);
 };
 
 func void DIA_Sagitta_TeachAlchemyRequest_was()
 {
-	AI_Output(other, self, "DIA_Sagitta_TeachAlchemyRequest_was_15_00"); //Was für eine Zutat ist das?
-	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_was_17_01"); //Es handelt sich um eine sehr seltene Pflanze. Das Kraut nennt sich Sonnenaloe. Du erkennst es an seinem intensiven mandelartigen Geruch.
+	AI_Output(other, self, "DIA_Sagitta_TeachAlchemyRequest_was_15_00"); //What ingredient is that?
+	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_was_17_01"); //It's an extremely rare plant - an herb called sun aloe. You can recognize it by its intensive almond scent.
 };
 
 func void DIA_Sagitta_TeachAlchemyRequest_wo()
 {
-	AI_Output(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_15_00"); //Wo werde ich diese Zutat finden?
-	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_01"); //Das Kraut, das ich brauche, gedeiht nur an den Stellen, an dem es die richtigen Nährstoffe bekommt.
-	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_02"); //Diese befinden sich in den Exkrementen eines schwarzen Trolls.
-	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_03"); //Deshalb ist es für mich auch so schwierig, an das Kraut zu kommen, verstehst du?
-	Info_AddChoice(DIA_Sagitta_TeachAlchemyRequest, "Mal sehen, ob ich es irgendwo auftreiben kann.", DIA_Sagitta_TeachAlchemyRequest_wo_ja);
+	AI_Output(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_15_00"); //Where can I find this ingredient?
+	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_01"); //The herb I require only grows in places where it can get all the nutrients it needs.
+	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_02"); //These are found in the excrements of a black troll.
+	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_17_03"); //That's why it's so difficult for me to get the herb, you see?
+	Info_AddChoice(DIA_Sagitta_TeachAlchemyRequest, "Let's see if I can get hold of it somewhere.", DIA_Sagitta_TeachAlchemyRequest_wo_ja);
 };
 
 func void DIA_Sagitta_TeachAlchemyRequest_wo_ja()
 {
-	AI_Output(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_15_00"); //Mal sehen, ob ich es irgendwo auftreiben kann.
-	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_17_01"); //Na dann, viel Glück bei deiner Suche.
+	AI_Output(other, self, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_15_00"); //Let's see if I can get hold of it somewhere.
+	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_wo_ja_17_01"); //Well, then, good luck with your search.
 	Info_ClearChoices(DIA_Sagitta_TeachAlchemyRequest);
 	MIS_Sagitta_Herb = LOG_RUNNING;
 
@@ -157,8 +157,8 @@ func void DIA_Sagitta_TeachAlchemyRequest_wo_ja()
 
 func void DIA_Sagitta_TeachAlchemyRequest_nein()
 {
-	AI_Output(other, self, "DIA_Sagitta_TeachAlchemyRequest_nein_15_00"); //Kein Interesse.
-	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_nein_17_01"); //Dann verschwende nicht weiter meine Zeit mit deinem Unsinn.
+	AI_Output(other, self, "DIA_Sagitta_TeachAlchemyRequest_nein_15_00"); //Sorry, not interested.
+	AI_Output(self, other, "DIA_Sagitta_TeachAlchemyRequest_nein_17_01"); //Then stop wasting my time with your nonsense.
 	Info_ClearChoices(DIA_Sagitta_TeachAlchemyRequest);
 };
 
@@ -171,7 +171,7 @@ instance DIA_Sagitta_Sagitta_Herb(C_INFO)
 	nr				= 3;
 	condition		= DIA_Sagitta_Sagitta_Herb_Condition;
 	information		= DIA_Sagitta_Sagitta_Herb_Info;
-	description		= "Ich habe das Sonnenaloe gefunden.";
+	description		= "I found the sun aloe.";
 };
 
 func int DIA_Sagitta_Sagitta_Herb_Condition()
@@ -186,8 +186,8 @@ func int DIA_Sagitta_Sagitta_Herb_Condition()
 
 func void DIA_Sagitta_Sagitta_Herb_Info()
 {
-	AI_Output(other, self, "DIA_Sagitta_Sagitta_Herb_15_00"); //Ich habe das Sonnenaloe gefunden.
-	AI_Output(self, other, "DIA_Sagitta_Sagitta_Herb_17_01"); //Ich danke dir. Und nun frag mich, was du über das Tränkebrauen wissen willst.
+	AI_Output(other, self, "DIA_Sagitta_Sagitta_Herb_15_00"); //I found the sun aloe.
+	AI_Output(self, other, "DIA_Sagitta_Sagitta_Herb_17_01"); //Thank you. And now ask me whatever you want to know about brewing potions.
 	B_GiveInvItems(other, self, ItPl_Sagitta_Herb_MIS, 1);
 	Sagitta_TeachAlchemy = TRUE;
 	MIS_Sagitta_Herb = LOG_SUCCESS;
@@ -204,7 +204,7 @@ instance DIA_Sagitta_Teach(C_INFO)
 	condition		= DIA_Sagitta_Teach_Condition;
 	information		= DIA_Sagitta_Teach_Info;
 	permanent		= TRUE;
-	description		= "Welche Tränke kann ich bei dir Brauen lernen?";
+	description		= "What potions can you teach me to brew?";
 };
 
 // ----------------------------------------
@@ -225,7 +225,7 @@ func void DIA_Sagitta_Teach_Info()
 {
 	var int talente;
 	talente = 0;
-	AI_Output(other, self, "DIA_Sagitta_Teach_15_00"); //Welche Tränke kann ich bei dir brauen lernen?
+	AI_Output(other, self, "DIA_Sagitta_Teach_15_00"); //What potions can you teach me to brew?
 
 	if ((PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	|| (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
@@ -291,20 +291,20 @@ func void DIA_Sagitta_Teach_Info()
 	{
 		if (Alchemy_Explain != TRUE)
 		{
-			AI_Output(self, other, "DIA_Sagitta_Teach_17_01"); //Bevor ich dir meine Alchemiekunst beibringe, werde ich dir erst unterbreiten, was du zum Tränkebrauen alles benötigst.
-			AI_Output(self, other, "DIA_Sagitta_Teach_17_02"); //Die Küche der Tränkebrauerei ist der Alchemietisch. Du brauchst dazu eine leere Laborwasserflasche, um den gebrauten Trank darin aufzubewahren.
-			AI_Output(self, other, "DIA_Sagitta_Teach_17_03"); //Dann fügst du die gebrauchten Ingredienzien hinzu, und fertig ist der Trank.
-			AI_Output(self, other, "DIA_Sagitta_Teach_17_04"); //Dieses Wissen kannst du natürlich bei mir lernen.
+			AI_Output(self, other, "DIA_Sagitta_Teach_17_01"); //Before I teach you my art of alchemy, I'm first going to tell you what all you need to brew potions.
+			AI_Output(self, other, "DIA_Sagitta_Teach_17_02"); //The alchemist's bench serves as the kitchen for brewing potions. You will need an empty laboratory flask in which to store the brewed potion.
+			AI_Output(self, other, "DIA_Sagitta_Teach_17_03"); //Then you add the required ingredients, and there's your potion.
+			AI_Output(self, other, "DIA_Sagitta_Teach_17_04"); //You can learn this knowledge from me, of course.
 			Alchemy_Explain = TRUE;
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Sagitta_Teach_17_05"); //Welcher Trank soll's denn nun sein?
+			AI_Output(self, other, "DIA_Sagitta_Teach_17_05"); //So which potion shall it be?
 		};
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Sagitta_Teach_17_06"); //Du weißt schon alles, was ich dir beibringen könnte.
+		AI_Output(self, other, "DIA_Sagitta_Teach_17_06"); //You already know everything I could teach you.
 		DIA_Sagitta_Teach_permanent = TRUE;
 	};
 };
@@ -362,11 +362,11 @@ func void DIA_Sagitta_Teach_Perm_Dex()
 instance DIA_Sagitta_HEAL(C_INFO)
 {
 	npc				= BAU_980_Sagitta;
-	nr				= 99; // Joly: braucht ne hohe Nummer, denn wird in den späteren Kapiteln auch verwendet.
+	nr				= 99; // Joly: braucht ne hohe Nummer, denn wird in den spÃ¤teren Kapiteln auch verwendet.
 	condition		= DIA_Sagitta_HEAL_Condition;
 	information		= DIA_Sagitta_HEAL_Info;
 	permanent		= TRUE;
-	description		= "Heile mich.";
+	description		= "Heal me.";
 };
 
 func int DIA_Sagitta_HEAL_Condition()
@@ -379,17 +379,17 @@ func int DIA_Sagitta_HEAL_Condition()
 
 func void DIA_Sagitta_HEAL_Info()
 {
-	AI_Output(other, self, "DIA_Sagitta_HEAL_15_00"); //Heile mich.
+	AI_Output(other, self, "DIA_Sagitta_HEAL_15_00"); //Heal me.
 
 	if (hero.attribute [ATR_HITPOINTS] < hero.attribute[ATR_HITPOINTS_MAX])
 	{
-		AI_Output(self, other, "DIA_Sagitta_HEAL_17_01"); //Lass mich sehen. Mmh. Meine Salbe lindert deine schlimmsten Wunden.
+		AI_Output(self, other, "DIA_Sagitta_HEAL_17_01"); //Let me see. Mmh. My ointment will take care of the worst of your wounds.
 		hero.attribute [ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
 		PrintScreen(PRINT_FullyHealed, - 1, - 1, FONT_Screen, 2);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Sagitta_HEAL_17_02"); //Du bedarfst zurzeit keiner Heilung.
+		AI_Output(self, other, "DIA_Sagitta_HEAL_17_02"); //You don't need healing at the moment.
 	};
 };
 
@@ -404,7 +404,7 @@ instance DIA_Sagitta_TRADE(C_INFO)
 	information		= DIA_Sagitta_TRADE_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Welche Ware hast du anzubieten?";
+	description		= "What wares do you have to offer?";
 };
 
 func int DIA_Sagitta_TRADE_Condition()
@@ -417,9 +417,9 @@ func int DIA_Sagitta_TRADE_Condition()
 
 func void DIA_Sagitta_TRADE_Info()
 {
-	AI_Output(other, self, "DIA_Sagitta_TRADE_15_00"); //Welche Ware hast du anzubieten?
+	AI_Output(other, self, "DIA_Sagitta_TRADE_15_00"); //What wares do you have to offer?
 	B_GiveTradeInv(self);
-	AI_Output(self, other, "DIA_Sagitta_TRADE_17_01"); //Sag mir, was du willst.
+	AI_Output(self, other, "DIA_Sagitta_TRADE_17_01"); //Tell me what you want.
 };
 
 // #####################################################################
@@ -465,7 +465,7 @@ instance DIA_Sagitta_OBSESSION(C_INFO)
 	nr				= 30;
 	condition		= DIA_Sagitta_OBSESSION_Condition;
 	information		= DIA_Sagitta_OBSESSION_Info;
-	description		= "Ich habe so ein beklemmendes Gefühl.";
+	description		= "I've got this feeling of trepidation. I need help.";
 };
 
 func int DIA_Sagitta_OBSESSION_Condition()
@@ -480,9 +480,9 @@ func int DIA_Sagitta_OBSESSION_Condition()
 
 func void DIA_Sagitta_OBSESSION_Info()
 {
-	AI_Output(other, self, "DIA_Sagitta_OBSESSION_15_00"); //Ich habe so ein beklemmendes Gefühl. Ich brauche Hilfe.
-	AI_Output(self, other, "DIA_Sagitta_OBSESSION_17_01"); //Ich sehe dir an, dass der Schlaf dir keine Erholung bringen wird. Du warst dem schwarzen Blick der Suchenden zu lange ausgesetzt.
-	AI_Output(self, other, "DIA_Sagitta_OBSESSION_17_02"); //Gehe zu Pyrokar, dem obersten Magier des Klosters. Meine bescheidenen Mittel reichen da nicht aus.
+	AI_Output(other, self, "DIA_Sagitta_OBSESSION_15_00"); //I've got this feeling of trepidation. I need help.
+	AI_Output(self, other, "DIA_Sagitta_OBSESSION_17_01"); //I can see that sleep will not be enough for you to recuperate. You have been exposed to the black look of the Seekers.
+	AI_Output(self, other, "DIA_Sagitta_OBSESSION_17_02"); //Go to Pyrokar, the highest magician of the monastery. My humble remedies are not enough
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -494,7 +494,7 @@ instance DIA_Sagitta_Thekla(C_INFO)
 	nr				= 3;
 	condition		= DIA_Sagitta_Thekla_Condition;
 	information		= DIA_Sagitta_Thekla_Info;
-	description		= "Thekla hat mich geschickt, ein Päckchen für sie abzuholen.";
+	description		= "Thekla sent me to pick up a package for her.";
 };
 
 func int DIA_Sagitta_Thekla_Condition()
@@ -508,9 +508,9 @@ func int DIA_Sagitta_Thekla_Condition()
 
 func void DIA_Sagitta_Thekla_Info()
 {
-	AI_Output(other, self, "DIA_Sagitta_Thekla_15_00"); //Thekla hat mich geschickt, ein Päckchen für sie abzuholen.
-	AI_Output(self, other, "DIA_Sagitta_Thekla_17_01"); //Ah, ja. Ich hatte sie eigentlich schon vor Tagen hier erwartet.
-	AI_Output(self, other, "DIA_Sagitta_Thekla_17_02"); //Hier hast du das Päckchen. Pass gut darauf auf!
+	AI_Output(other, self, "DIA_Sagitta_Thekla_15_00"); //Thekla sent me to pick up a package for her.
+	AI_Output(self, other, "DIA_Sagitta_Thekla_17_01"); //Ah, yes. I had actually expected her days ago.
+	AI_Output(self, other, "DIA_Sagitta_Thekla_17_02"); //Here's the package. Take good care of it!
 	B_GivePlayerXP(XP_AmbientKap3);
 	B_GiveInvItems(self, other, ItMi_TheklasPaket, 1);
 };
@@ -559,7 +559,7 @@ instance DIA_Sagitta_HEALRANDOLPH(C_INFO)
 	condition		= DIA_Sagitta_HEALRANDOLPH_Condition;
 	information		= DIA_Sagitta_HEALRANDOLPH_Info;
 	permanent		= TRUE;
-	description		= "Randolph hat Entzugserscheinungen.";
+	description		= "Randolph has withdrawal symptoms.";
 };
 
 var int DIA_Sagitta_HEALRANDOLPH_GotOne;
@@ -577,43 +577,43 @@ func int DIA_Sagitta_HEALRANDOLPH_Condition()
 
 func void DIA_Sagitta_HEALRANDOLPH_Info()
 {
-	AI_Output(other, self, "DIA_Sagitta_HEALRANDOLPH_15_00"); //Randolph hat Entzugserscheinungen.
+	AI_Output(other, self, "DIA_Sagitta_HEALRANDOLPH_15_00"); //Randolph has withdrawal symptoms.
 
 	if (DIA_Sagitta_HEALRANDOLPH_KnowsPrice == FALSE)
 	{
-		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_17_01"); //Der Junge hat es immer noch nicht gelernt, was?
+		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_17_01"); //When is that fellow ever going to learn?
 		DIA_Sagitta_HEALRANDOLPH_KnowsPrice = TRUE;
 	};
 
 	if (DIA_Sagitta_HEALRANDOLPH_GotOne == TRUE)
 	{
-		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_17_02"); //Du hast schon eine Portion für ihn von mir bekommen. Mach mir damit bloß keinen Unsinn.
+		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_17_02"); //I already gave you a dose for him. Just don't mess around with it.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_17_03"); //Ich werde ihm ein Mittel geben. Das wird ihm über die nächsten Tage hinweg helfen.
+		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_17_03"); //I'm going to give him a remedy. That will see him through the next couple of days.
 	};
 
-	AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_17_04"); //Es kostet dich 300 Goldmünzen.
+	AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_17_04"); //That comes to 300 gold coins, then.
 
 	if (DIA_Sagitta_HEALRANDOLPH_KnowsPrice == FALSE)
 	{
-		AI_Output(other, self, "DIA_Sagitta_HEALRANDOLPH_15_05"); //Was?
-		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_17_06"); //Umsonst ist der Tod, Kleiner.
+		AI_Output(other, self, "DIA_Sagitta_HEALRANDOLPH_15_05"); //What?
+		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_17_06"); //The only thing you get for free is death, kid.
 	};
 
 	Info_ClearChoices(DIA_Sagitta_HEALRANDOLPH);
-	Info_AddChoice(DIA_Sagitta_HEALRANDOLPH, "Nö. Nicht für so einen Quatsch.", DIA_Sagitta_HEALRANDOLPH_no);
-	Info_AddChoice(DIA_Sagitta_HEALRANDOLPH, "Hier hast du das Geld.", DIA_Sagitta_HEALRANDOLPH_geld);
+	Info_AddChoice(DIA_Sagitta_HEALRANDOLPH, "Nah. Not for nonsense like that.", DIA_Sagitta_HEALRANDOLPH_no);
+	Info_AddChoice(DIA_Sagitta_HEALRANDOLPH, "Here's your money.", DIA_Sagitta_HEALRANDOLPH_geld);
 };
 
 func void DIA_Sagitta_HEALRANDOLPH_geld()
 {
-	AI_Output(other, self, "DIA_Sagitta_HEALRANDOLPH_geld_15_00"); //Hier hast du das Geld.
+	AI_Output(other, self, "DIA_Sagitta_HEALRANDOLPH_geld_15_00"); //Here's your money.
 
 	if (B_GiveInvItems(other, self, ItMi_Gold, 300))
 	{
-		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_01"); //Sehr gut. Du kannst dir das Geld vom ihm ja wiederholen.
+		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_01"); //Very good. You can always get the money back from him.
 		CreateInvItems(self, ItPo_HealRandolph_MIS, 1);
 		B_GiveInvItems(self, other, ItPo_HealRandolph_MIS, 1);
 		DIA_Sagitta_HEALRANDOLPH_GotOne = TRUE;
@@ -621,7 +621,7 @@ func void DIA_Sagitta_HEALRANDOLPH_geld()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_02"); //Erst, wenn du das Geld hast, kommen wir ins Geschäft.
+		AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_geld_17_02"); //We can't do business unless you've got the money.
 	};
 
 	Info_ClearChoices(DIA_Sagitta_HEALRANDOLPH);
@@ -629,8 +629,8 @@ func void DIA_Sagitta_HEALRANDOLPH_geld()
 
 func void DIA_Sagitta_HEALRANDOLPH_no()
 {
-	AI_Output(other, self, "DIA_Sagitta_HEALRANDOLPH_no_15_00"); //Nö. Nicht für so einen Quatsch.
-	AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_no_17_01"); //(lacht) Hat er dir kein Geld gegeben? Das sieht ihm ähnlich.
+	AI_Output(other, self, "DIA_Sagitta_HEALRANDOLPH_no_15_00"); //Nah. Not for nonsense like that.
+	AI_Output(self, other, "DIA_Sagitta_HEALRANDOLPH_no_17_01"); //(laughs) He didn't give you any money? That's so like him!
 	Info_ClearChoices(DIA_Sagitta_HEALRANDOLPH);
 };
 

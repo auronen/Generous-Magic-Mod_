@@ -43,9 +43,9 @@ func int DIA_Edda_Hallo_Condition()
 
 func void DIA_Edda_Hallo_Info()
 {
-	AI_Output(other, self, "DIA_Edda_Hallo_15_00"); //Was kochst du da?
-	AI_Output(self, other, "DIA_Edda_Hallo_17_01"); //Eine Fischsuppe. Sie ist nicht besonders würzig, aber wenigstens heiß.
-	AI_Output(self, other, "DIA_Edda_Hallo_17_02"); //Du kannst gerne einen Teller probieren.
+	AI_Output(other, self, "DIA_Edda_Hallo_15_00"); //What are you cooking there?
+	AI_Output(self, other, "DIA_Edda_Hallo_17_01"); //A fish soup. It's not all that tasty, but at least it's hot.
+	AI_Output(self, other, "DIA_Edda_Hallo_17_02"); //You can try a plateful if you like.
 };
 
 // ************************************************************
@@ -57,7 +57,7 @@ instance DIA_Edda_Stadt(C_INFO)
 	nr				= 5;
 	condition		= DIA_Edda_Stadt_Condition;
 	information		= DIA_Edda_Stadt_Info;
-	description		= "Was kannst du mir über die Stadt sagen?";
+	description		= "What can you tell me about the city?";
 };
 
 func int DIA_Edda_Stadt_Condition()
@@ -67,12 +67,12 @@ func int DIA_Edda_Stadt_Condition()
 
 func void DIA_Edda_Stadt_Info()
 {
-	AI_Output(other, self, "DIA_Edda_Stadt_15_00"); //Was kannst du mir über die Stadt sagen?
-	AI_Output(self, other, "DIA_Edda_Stadt_17_01"); //Die meisten Bürger der Stadt haben Angst vor Dieben, deshalb ist es keine gute Idee, fremde Häuser zu betreten.
-	AI_Output(self, other, "DIA_Edda_Stadt_17_02"); //Aber wenn du einen Platz zum Schlafen suchst, kannst du gerne in meiner Hütte schlafen. Ich habe noch ein Bett frei.
-	AI_Output(other, self, "DIA_Edda_Stadt_15_03"); //Hast du keine Angst vor Dieben?
-	AI_Output(self, other, "DIA_Edda_Stadt_17_04"); //Das einzig Wertvolle, was ich je besaß, ist mir schon genommen worden.
-	AI_Output(self, other, "DIA_Edda_Stadt_17_05"); //Meine Innos-Statue wurde mir gestohlen.
+	AI_Output(other, self, "DIA_Edda_Stadt_15_00"); //What can you tell me about the city?
+	AI_Output(self, other, "DIA_Edda_Stadt_17_01"); //Most citizens in this town are afraid of thieves. Therefore, it is not a good idea to enter strange houses.
+	AI_Output(self, other, "DIA_Edda_Stadt_17_02"); //But if you're looking for a place to stay overnight, you're welcome to sleep in my hut. There's an extra bed that you can have.
+	AI_Output(other, self, "DIA_Edda_Stadt_15_03"); //Aren't you afraid of thieves?
+	AI_Output(self, other, "DIA_Edda_Stadt_17_04"); //The only valuable thing I ever owned has already been taken.
+	AI_Output(self, other, "DIA_Edda_Stadt_17_05"); //Someone stole my statue of Innos.
 
 	Edda_Schlafplatz = TRUE;
 	Wld_AssignRoomToGuild("hafen08", GIL_NONE);
@@ -87,7 +87,7 @@ instance DIA_Edda_Kochen(C_INFO)
 	nr				= 6;
 	condition		= DIA_Edda_Kochen_Condition;
 	information		= DIA_Edda_Kochen_Info;
-	description		= "Kannst du mir eine Suppe kochen?";
+	description		= "Could you cook me some soup?";
 };
 
 func int DIA_Edda_Kochen_Condition()
@@ -97,12 +97,12 @@ func int DIA_Edda_Kochen_Condition()
 
 func void DIA_Edda_Kochen_Info()
 {
-	AI_Output(other, self, "DIA_Edda_Kochen_15_00"); //Kannst du mir eine Suppe kochen?
-	AI_Output(self, other, "DIA_Edda_Kochen_17_01"); //Ich koche für alle Leute. Auch für dich, wenn du willst. Du musst mir nur einen Fisch bringen.
+	AI_Output(other, self, "DIA_Edda_Kochen_15_00"); //Could you cook me some soup?
+	AI_Output(self, other, "DIA_Edda_Kochen_17_01"); //I cook for everybody. For you, too, if you want. All you need to do is bring me a fish.
 };
 
 // ************************************************************
-// 		tägliche Suppe abholen
+// 		tÃ¤gliche Suppe abholen
 // ************************************************************
 instance DIA_Edda_Suppe(C_INFO)
 {
@@ -111,7 +111,7 @@ instance DIA_Edda_Suppe(C_INFO)
 	condition		= DIA_Edda_Suppe_Condition;
 	information		= DIA_Edda_Suppe_Info;
 	permanent		= TRUE;
-	description		= "Kannst du mir eine Suppe kochen?";
+	description		= "Could you cook me some soup?";
 };
 
 func int DIA_Edda_Suppe_Condition()
@@ -124,28 +124,28 @@ func int DIA_Edda_Suppe_Condition()
 
 func void DIA_Edda_Suppe_Info()
 {
-	AI_Output(other, self, "DIA_Edda_Suppe_15_00"); //Kannst du mir eine Suppe kochen?
+	AI_Output(other, self, "DIA_Edda_Suppe_15_00"); //Could you cook me some soup?
 
 	if (Wld_GetDay() == 0)
 	{
-		AI_Output(self, other, "DIA_Edda_Suppe_17_02"); //Ab Morgen kannst du dir jeden Tag eine Suppe holen.
+		AI_Output(self, other, "DIA_Edda_Suppe_17_02"); //Starting tomorrow, you can come and get some soup every day.
 	}
 	else if (Edda_Day != Wld_GetDay())
 	{
 		if (B_GiveInvItems(other, self, ItFo_Fish, 1))
 		{
-			AI_Output(self, other, "DIA_Edda_Suppe_17_01"); //Nichts leichter als das. Hier, nimm einen Teller.
+			AI_Output(self, other, "DIA_Edda_Suppe_17_01"); //Nothing could be simpler. Here, have a plate.
 			B_GiveInvItems(self, other, ItFo_Fishsoup, 1);
 			Edda_Day = Wld_GetDay();
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Edda_Suppe_17_04"); //Bring mir einen Fisch, dann koche ich dir eine leckere Suppe.
+			AI_Output(self, other, "DIA_Edda_Suppe_17_04"); //Bring me a fish, and I'll cook you a tasty soup.
 		};
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Edda_Suppe_17_03"); //Heute nicht mehr. Komm Morgen wieder.
+		AI_Output(self, other, "DIA_Edda_Suppe_17_03"); //No, not today. Come back tomorrow.
 	};
 };
 
@@ -158,7 +158,7 @@ instance DIA_Edda_Statue(C_INFO)
 	nr				= 6;
 	condition		= DIA_Edda_Statue_Condition;
 	information		= DIA_Edda_Statue_Info;
-	description		= "Ich habe hier eine Innos-Statue für dich.";
+	description		= "Look, I've got a statue of Innos for you.";
 };
 
 func int DIA_Edda_Statue_Condition()
@@ -172,9 +172,9 @@ func int DIA_Edda_Statue_Condition()
 
 func void DIA_Edda_Statue_Info()
 {
-	AI_Output(other, self, "DIA_Edda_Statue_15_00"); //Ich habe hier eine Innos-Statue für dich.
-	AI_Output(self, other, "DIA_Edda_Statue_17_01"); //Oh - vielen, vielen Dank! Möge Innos sein Licht über dich erstrahlen lassen ...
-	AI_Output(other, self, "DIA_Edda_Statue_15_02"); //Ja ja, schon gut.
+	AI_Output(other, self, "DIA_Edda_Statue_15_00"); //Look, I've got a statue of Innos for you.
+	AI_Output(self, other, "DIA_Edda_Statue_17_01"); //Oh - thank you very, very much. May Innos let his light shine on you ...
+	AI_Output(other, self, "DIA_Edda_Statue_15_02"); //Yeah, never mind.
 
 	B_GiveInvItems(other, self, ItMI_InnosStatue, 1);
 	B_GivePlayerXP(XP_Edda_Statue);
@@ -190,7 +190,7 @@ instance DIA_Edda_PICKPOCKET(C_INFO)
 	condition		= DIA_Edda_PICKPOCKET_Condition;
 	information		= DIA_Edda_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre ein Kinderspiel ihre Statue zu stehlen)";
+	description		= "(It would be child's play to steal her statue)";
 };
 
 func int DIA_Edda_PICKPOCKET_Condition()

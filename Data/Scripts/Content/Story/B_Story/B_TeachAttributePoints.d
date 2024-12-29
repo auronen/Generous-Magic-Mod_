@@ -23,12 +23,12 @@ func int B_TeachAttributePoints(var C_Npc slf, var C_Npc oth, var int attrib, va
 		return FALSE;
 	};
 
-	// ------ Lernen NICHT über teacherMax ------
+	// ------ Lernen NICHT Ã¼ber teacherMax ------
 	var int realAttribute;
-if (attrib == ATR_STRENGTH)	{ realAttribute = oth.attribute[ATR_STRENGTH]; } // Umwandeln von const-Parameter in VAR für folgende if-Abfrage
+if (attrib == ATR_STRENGTH)	{ realAttribute = oth.attribute[ATR_STRENGTH]; } // Umwandeln von const-Parameter in VAR fÃ¼r folgende if-Abfrage
 	else if (attrib == ATR_DEXTERITY) { realAttribute = oth.attribute[ATR_DEXTERITY]; }
 	else if (attrib == ATR_MANA_MAX) { realAttribute = oth.attribute[ATR_MANA_MAX]; };
-	if (realAttribute >= teacherMAX) // Wenn der Spieler schon das teacherMAX erreicht oder überschritten hat
+	if (realAttribute >= teacherMAX) // Wenn der Spieler schon das teacherMAX erreicht oder Ã¼berschritten hat
 	{
 		concatText = ConcatStrings(PRINT_NoLearnOverPersonalMAX, IntToString(teacherMAX));
 		PrintScreen(concatText, -1, -1, FONT_Screen, 2);

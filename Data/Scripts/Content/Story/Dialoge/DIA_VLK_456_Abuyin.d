@@ -79,9 +79,9 @@ func int DIA_Abuyin_Hallo_Condition()
 
 func void DIA_Abuyin_Hallo_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Abuyin_Hallo_13_00"); //(überlegt) ... Merkwürdig. Es scheint mir so, als wäre ich dir schon einmal begegnet, Reisender ...
-	AI_Output(self, other, "DIA_Addon_Abuyin_Hallo_13_01"); //Nun ... groß sind die Geheimnisse von Zeit und Raum ... Oh, verzeih mir meine Unhöflichkeit, Sohn der Geduld. Ich habe dich noch gar nicht begrüßt ...
-	AI_Output(self, other, "DIA_Addon_Abuyin_Hallo_13_02"); //Willkommen Freund, nimm Platz auf meinen bescheidenen Teppichen und genieße in Ruhe eine Pfeife.
+	AI_Output(self, other, "DIA_Addon_Abuyin_Hallo_13_00"); //(thinking) ... How strange. It seems to me that I have met you before, traveler ...
+	AI_Output(self, other, "DIA_Addon_Abuyin_Hallo_13_01"); //Well ... great are the mysteries of time and space... Oh, please forgive my rudeness, son of patience. I have not even greeted you yet.
+	AI_Output(self, other, "DIA_Addon_Abuyin_Hallo_13_02"); //Welcome, friend, take a seat on my humble rugs and enjoy a pipe in peace.
 };
 
 // ************************************************************
@@ -93,7 +93,7 @@ instance DIA_Abuyin_du(C_INFO)
 	nr				= 2;
 	condition		= DIA_Abuyin_du_Condition;
 	information		= DIA_Abuyin_du_Info;
-	description		= "Wer bist du?";
+	description		= "Who are you?";
 };
 
 func int DIA_Abuyin_du_Condition()
@@ -103,8 +103,8 @@ func int DIA_Abuyin_du_Condition()
 
 func void DIA_Abuyin_du_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_du_15_00"); //Wer bist du?
-	AI_Output(self, other, "DIA_Abuyin_du_13_01"); //Mein Name ist Abuyin ibn Djadir ibn Omar Kalid ben Hadji al Sharidi. Ich bin Seher und Weissager, Sterndeuter und Tabak-Anbieter.
+	AI_Output(other, self, "DIA_Abuyin_du_15_00"); //Who are you?
+	AI_Output(self, other, "DIA_Abuyin_du_13_01"); //My name is Abuyin ibn Djadir ibn Omar Kalid ben Hadji al Sharidi. I am a seer and a prophet, an astrologer, and a purveyor of tobacco.
 };
 
 // ************************************************************
@@ -116,7 +116,7 @@ instance DIA_Abuyin_Kraut(C_INFO)
 	nr				= 2;
 	condition		= DIA_Abuyin_Kraut_Condition;
 	information		= DIA_Abuyin_Kraut_Info;
-	description		= "Was für ein Kraut bietest du an?";
+	description		= "What kind of tobacco do you offer?";
 };
 
 func int DIA_Abuyin_Kraut_Condition()
@@ -129,9 +129,9 @@ func int DIA_Abuyin_Kraut_Condition()
 
 func void DIA_Abuyin_Kraut_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Kraut_15_00"); //Was für ein Kraut bietest du an?
-	AI_Output(self, other, "DIA_Abuyin_Kraut_13_01"); //Meine Pfeifen sind gefüllt mit würzigem, erfrischenden Apfeltabak.
-	AI_Output(self, other, "DIA_Abuyin_Kraut_13_02"); //Du darfst dich jederzeit bedienen, Sohn der Abenteuer.
+	AI_Output(other, self, "DIA_Abuyin_Kraut_15_00"); //What kind of tobacco do you offer?
+	AI_Output(self, other, "DIA_Abuyin_Kraut_13_01"); //My pipes are filled with spicy, refreshing apple tobacco.
+	AI_Output(self, other, "DIA_Abuyin_Kraut_13_02"); //Help yourself whenever you want, Son of Adventure.
 };
 
 // ************************************************************
@@ -143,7 +143,7 @@ instance DIA_Abuyin_anderen(C_INFO)
 	nr				= 2;
 	condition		= DIA_Abuyin_anderen_Condition;
 	information		= DIA_Abuyin_anderen_Info;
-	description		= "Hast du auch anderen Tabak? ";
+	description		= "Do you have other tobacco as well?";
 };
 
 func int DIA_Abuyin_anderen_Condition()
@@ -156,12 +156,12 @@ func int DIA_Abuyin_anderen_Condition()
 
 func void DIA_Abuyin_anderen_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_anderen_15_00"); //Hast du auch anderen Tabak?
-	AI_Output(self, other, "DIA_Abuyin_anderen_13_01"); //Ich stelle nur den besten Tabak zu Verfügung. Diese Apfelmischung ist eine Sinfonie aus meiner Heimat, den südlichen Inseln.
-	AI_Output(self, other, "DIA_Abuyin_anderen_13_02"); //Aber natürlich bin ich jederzeit bereit, anderen Tabak auszuprobieren - sofern es jemandem gelingt, einen wirklich guten Tabak herzustellen.
-	AI_Output(other, self, "DIA_Abuyin_anderen_15_03"); //Wie geht das?
-	AI_Output(self, other, "DIA_Abuyin_anderen_13_04"); //Nimm als Grundlage meinen Apfeltabak. Und dann versuche, ihn mit einer anderen Zutat zu kombinieren.
-	AI_Output(self, other, "DIA_Abuyin_anderen_13_05"); //Das machst du an einem Labortisch, vorrausgesetzt, du beherrschst die Grundkenntnisse der Alchemie.
+	AI_Output(other, self, "DIA_Abuyin_anderen_15_00"); //Do you have other tobacco as well?
+	AI_Output(self, other, "DIA_Abuyin_anderen_13_01"); //I offer only the very best tobacco. This apple blend is a symphony from my homeland, the Southern Isles.
+	AI_Output(self, other, "DIA_Abuyin_anderen_13_02"); //But, of course, I'm always open to trying a different sort of tobacco - if somebody should succeed in producing a really good tobacco.
+	AI_Output(other, self, "DIA_Abuyin_anderen_15_03"); //How is that done?
+	AI_Output(self, other, "DIA_Abuyin_anderen_13_04"); //Start with my apple tobacco as a basis. And then try combining it with another ingredient.
+	AI_Output(self, other, "DIA_Abuyin_anderen_13_05"); //This is done at an alchemist's bench, provided you know the essentials of alchemy.
 };
 
 // ************************************************************
@@ -173,7 +173,7 @@ instance DIA_Abuyin_Woher(C_INFO)
 	nr				= 2;
 	condition		= DIA_Abuyin_Woher_Condition;
 	information		= DIA_Abuyin_Woher_Info;
-	description		= "Woher bekomme ich Apfeltabak?";
+	description		= "Where can I get apple tobacco?";
 };
 
 func int DIA_Abuyin_Woher_Condition()
@@ -186,9 +186,9 @@ func int DIA_Abuyin_Woher_Condition()
 
 func void DIA_Abuyin_Woher_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Woher_15_00"); //Woher bekomme ich Apfeltabak?
-	AI_Output(self, other, "DIA_Abuyin_Woher_13_01"); //Zwei Portionen gebe ich dir, magst du damit in deiner Weisheit tun, was immer du willst.
-	AI_Output(self, other, "DIA_Abuyin_Woher_13_02"); //Wenn es dich nach mehr verlangt, dann lenke deine Schritte zu Zuris, dem Meister der Tränke. Er stellt diesen Tabak her und verkauft ihn auch.
+	AI_Output(other, self, "DIA_Abuyin_Woher_15_00"); //Where can I get apple tobacco?
+	AI_Output(self, other, "DIA_Abuyin_Woher_13_01"); //I shall give you two portions. It is up to you in your wisdom to do with them whatever you want.
+	AI_Output(self, other, "DIA_Abuyin_Woher_13_02"); //If you crave more, then direct your steps towards Zuris, the Master of Potions. He produces this tobacco and he sells it, too.
 
 	B_GiveInvItems(self, other, ItMi_ApfelTabak, 2);
 };
@@ -196,10 +196,10 @@ func void DIA_Abuyin_Woher_Info()
 // ************************************************************
 func void B_TabakProbieren()
 {
-	AI_Output(self, other, "DIA_Abuyin_Mischung_Nichts_13_00"); //Lass mich deinen Tabak probieren.
+	AI_Output(self, other, "DIA_Abuyin_Mischung_Nichts_13_00"); //Let me try your tobacco.
 	CreateInvItems(self, ItMi_Joint, 1);
 	B_UseItem(self, ItMi_Joint);
-	AI_Output(self, other, "DIA_Abuyin_Mischung_Nichts_13_01"); //Nein, diese Mischung finde ich nicht sehr bekömmlich. Aber vielleicht findet sich ein anderer, der diesen ... äh ... Genuss zu schätzen weiß.
+	AI_Output(self, other, "DIA_Abuyin_Mischung_Nichts_13_01"); //No, I'm afraid this mixture does not agree with me. But maybe you'll find somebody else who really appreciates this ... er ... delicacy.
 };
 
 // ************************************************************
@@ -212,7 +212,7 @@ instance DIA_Abuyin_Mischung(C_INFO)
 	condition		= DIA_Abuyin_Mischung_Condition;
 	information		= DIA_Abuyin_Mischung_Info;
 	permanent		= TRUE;
-	description		= "Ich habe eine neue Tabakmischung ...";
+	description		= "I've got a new tobacco blend ...";
 };
 
 func int DIA_Abuyin_Mischung_Condition()
@@ -230,7 +230,7 @@ func int DIA_Abuyin_Mischung_Condition()
 
 func void DIA_Abuyin_Mischung_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Mischung_15_00"); //Ich habe eine neue Tabakmischung ...
+	AI_Output(other, self, "DIA_Abuyin_Mischung_15_00"); //I've got a new tobacco blend ...
 
 	Info_ClearChoices(DIA_Abuyin_Mischung);
 	Info_AddChoice(DIA_Abuyin_Mischung, DIALOG_BACK, DIA_Abuyin_Mischung_BACK);
@@ -286,15 +286,15 @@ func void DIA_Abuyin_Mischung_Super()
 {
 	B_GiveInvItems(other, self, ItMi_Honigtabak, 1);
 
-	AI_Output(self, other, "DIA_Abuyin_Mischung_Super_13_00"); //Lass mich deinen Tabak probieren.
+	AI_Output(self, other, "DIA_Abuyin_Mischung_Super_13_00"); //Let me try your tobacco.
 	CreateInvItems(self, ItMi_Joint, 1);
 	B_UseItem(self, ItMi_Joint);
-	AI_Output(self, other, "DIA_Abuyin_Mischung_Super_13_01"); //Das schmeckt ausgezeichnet! Etwas Besseres habe ich noch nie zuvor geraucht!
-	AI_Output(self, other, "DIA_Abuyin_Mischung_Super_13_02"); //Wie hast du diese Mischung hergestellt?
-	AI_Output(other, self, "DIA_Abuyin_Mischung_Super_15_03"); //Ich habe den Tabak mit Honig gemischt.
-	AI_Output(self, other, "DIA_Abuyin_Mischung_Super_13_04"); //Das hast du gut getan, Vater der Mischkunst. Es wäre mir eine Freude, wenn ich meine armseligen Pfeifen damit füllen könnte.
-	AI_Output(other, self, "DIA_Abuyin_Mischung_Super_15_05"); //Stopf du mal.
-	AI_Output(self, other, "DIA_Abuyin_Mischung_Super_13_06"); //Danke, Sohn der Großzügigkeit. Keine andere Mischung wäre so gut wie diese. Alles, was du mir davon bringst, werde ich dir abkaufen.
+	AI_Output(self, other, "DIA_Abuyin_Mischung_Super_13_01"); //This tastes incredible! I've never had a better smoke in my life!
+	AI_Output(self, other, "DIA_Abuyin_Mischung_Super_13_02"); //How did you prepare this blend?
+	AI_Output(other, self, "DIA_Abuyin_Mischung_Super_15_03"); //I mixed the tobacco with honey.
+	AI_Output(self, other, "DIA_Abuyin_Mischung_Super_13_04"); //You have done well, Father of the Art of Blending. I would be delighted to fill my miserable pipes with this.
+	AI_Output(other, self, "DIA_Abuyin_Mischung_Super_15_05"); //Fill 'er up, then.
+	AI_Output(self, other, "DIA_Abuyin_Mischung_Super_13_06"); //Thank you, Son of Generosity. No other blend could be as good as this one. I shall buy every bit you can bring me of this.
 
 	Abuyin_Honigtabak = TRUE;
 	B_GivePlayerXP((XP_Ambient) * 2);
@@ -312,7 +312,7 @@ instance DIA_Abuyin_Trade(C_INFO)
 	condition		= DIA_Abuyin_Trade_Condition;
 	information		= DIA_Abuyin_Trade_Info;
 	permanent		= TRUE;
-	description		= "Ich habe Honigtabak für dich.";
+	description		= "I've got some honey tobacco for you.";
 };
 
 func int DIA_Abuyin_Trade_Condition()
@@ -330,12 +330,12 @@ func void DIA_Abuyin_Trade_Info()
 
 	Abuyin_Score = (Npc_HasItems(other, Itmi_Honigtabak) * Value_Itmi_Honigtabak);
 
-	AI_Output(other, self, "DIA_Abuyin_Trade_15_00"); //Ich habe Honigtabak für dich.
+	AI_Output(other, self, "DIA_Abuyin_Trade_15_00"); //I've got some honey tobacco for you.
 
 	B_GiveInvItems(other, self, ItmI_HonigTabak, Npc_HasItems(other, Itmi_Honigtabak));
 	B_GiveInvItems(self, other, ItmI_Gold, Abuyin_Score);
 
-	AI_Output(self, other, "DIA_Abuyin_Trade_13_01"); //Es ist mir ein Vergnügen, mit dir Geschäfte zu machen.
+	AI_Output(self, other, "DIA_Abuyin_Trade_13_01"); //It is a great pleasure doing business with you.
 };
 
 // ************************************************************
@@ -347,7 +347,7 @@ instance DIA_Abuyin_Herb(C_INFO)
 	nr				= 2;
 	condition		= DIA_Abuyin_Herb_Condition;
 	information		= DIA_Abuyin_Herb_Info;
-	description		= "Hast du Interesse an diesem Krautpaket?";
+	description		= "Are you interested in this package of weeds?";
 };
 
 func int DIA_Abuyin_Herb_Condition()
@@ -360,11 +360,11 @@ func int DIA_Abuyin_Herb_Condition()
 
 func void DIA_Abuyin_Herb_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Herb_15_00"); //Hast du Interesse an diesem Krautpaket?
-	AI_Output(self, other, "DIA_Abuyin_Herb_13_01"); //Ein Paket voller Kraut - doch nicht etwa Sumpfkraut? Oh, geh weg damit, Sohn der Unvorsichtigkeit!
-	AI_Output(self, other, "DIA_Abuyin_Herb_13_02"); //Wenn die Stadtwache mich damit erwischt, komme ich ins Gefängnis - und dir wird es nicht anders ergehen!
-	AI_Output(self, other, "DIA_Abuyin_Herb_13_03"); //Wenn du vorhast, das Zeug zu verkaufen, dann rate ich dir - verlasse die Stadt.
-	AI_Output(self, other, "DIA_Abuyin_Herb_13_04"); //Sieh zu, das du es irgendwo außerhalb der Stadtmauern loswirst! Hier drinnen ist Ärger das einzige, was du dafür bekommst.
+	AI_Output(other, self, "DIA_Abuyin_Herb_15_00"); //Are you interested in this package of weeds?
+	AI_Output(self, other, "DIA_Abuyin_Herb_13_01"); //A package of herbs - that's not swampweed, is it? Oh, take it away, Son of Improvidence.
+	AI_Output(self, other, "DIA_Abuyin_Herb_13_02"); //If the city guards catch me with that, they'll throw me into jail - and you will fare no better!
+	AI_Output(self, other, "DIA_Abuyin_Herb_13_03"); //If you're planning to sell this stuff, I advise you - leave this town.
+	AI_Output(self, other, "DIA_Abuyin_Herb_13_04"); //Try and get rid of it somewhere outside of the city walls. In here, all you can get for it is trouble galore.
 };
 
 // ************************************************************
@@ -376,7 +376,7 @@ instance DIA_Abuyin_Weissagung(C_INFO)
 	nr				= 2;
 	condition		= DIA_Abuyin_Weissagung_Condition;
 	information		= DIA_Abuyin_Weissagung_Info;
-	description		= "Kannst du mir eine Weissagung geben?";
+	description		= "Can you make me a prophecy?";
 };
 
 func int DIA_Abuyin_Weissagung_Condition()
@@ -390,11 +390,11 @@ func int DIA_Abuyin_Weissagung_Condition()
 
 func void DIA_Abuyin_Weissagung_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Weissagung_15_00"); //Kannst du mir eine Weissagung geben?
-	AI_Output(self, other, "DIA_Abuyin_Weissagung_13_01"); //Meine Dienste stehen dir für bescheidenen Lohn zur Verfügung, oh Vater der Großzügigkeit.
-	AI_Output(other, self, "DIA_Abuyin_Weissagung_15_02"); //Wie viel willst du haben?
-	AI_Output(self, other, "DIA_Abuyin_Weissagung_13_03"); //Für bescheidene 25 Münzen werde ich für dich einen Blick in die Zeit riskieren.
-	AI_Output(self, other, "DIA_Abuyin_Weissagung_13_04"); //Doch bedenke - die Zukunft ist immer ungewiss, und ich bin nur in der Lage, Bruchstücke aus der Zeit zu erfassen.
+	AI_Output(other, self, "DIA_Abuyin_Weissagung_15_00"); //Can you make me a prophecy?
+	AI_Output(self, other, "DIA_Abuyin_Weissagung_13_01"); //My services are yours for a modest fee, oh Father of Generosity.
+	AI_Output(other, self, "DIA_Abuyin_Weissagung_15_02"); //How much do you want?
+	AI_Output(self, other, "DIA_Abuyin_Weissagung_13_03"); //For a paltry 25 coins, I shall risk a glance through time for you.
+	AI_Output(self, other, "DIA_Abuyin_Weissagung_13_04"); //But remember - the future is always uncertain. All I can do is glimpse some fragments of time.
 };
 
 // ************************************************************
@@ -407,7 +407,7 @@ instance DIA_Abuyin_Zukunft(C_INFO)
 	condition		= DIA_Abuyin_Zukunft_Condition;
 	information		= DIA_Abuyin_Zukunft_Info;
 	permanent		= TRUE;
-	description		= "Erzähl mir von der Zukunft (25 Gold zahlen)";
+	description		= "Tell me about the future (pay 25 gold).";
 };
 
 // ---------------------------------------
@@ -425,17 +425,17 @@ func int DIA_Abuyin_Zukunft_Condition()
 
 func void DIA_Abuyin_Zukunft_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Zukunft_15_00"); //Erzähl mir von der Zukunft.
+	AI_Output(other, self, "DIA_Abuyin_Zukunft_15_00"); //Tell me about the future.
 
 	if (B_GiveInvItems(other, self, ItMI_Gold, 25))
 	{
-		AI_Output(self, other, "DIA_Abuyin_Zukunft_13_01"); //Gut, Suchender des Wissens. Ich werde mich nun in Trance begeben. Bist du bereit?
+		AI_Output(self, other, "DIA_Abuyin_Zukunft_13_01"); //All right, Seeker of Knowledge. I shall now enter a state of trance. Are you ready?
 		Info_ClearChoices(DIA_Abuyin_Zukunft);
-		Info_AddChoice(DIA_Abuyin_Zukunft, "Ich bin bereit", DIA_Abuyin_Zukunft_Trance);
+		Info_AddChoice(DIA_Abuyin_Zukunft, "I am ready!", DIA_Abuyin_Zukunft_Trance);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Abuyin_Zukunft_13_02"); //Oh Vater der Münzen, für einen Blick in die Zeit bitte ich dich um eine Gabe von 25 Goldstücken.
+		AI_Output(self, other, "DIA_Abuyin_Zukunft_13_02"); //Oh Father of Coins, I ask you for 25 gold pieces in return for a glimpse into the future.
 	};
 };
 
@@ -444,15 +444,15 @@ func void DIA_Abuyin_Zukunft_Trance()
 	AI_PlayAni(self, "T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT", self, self, 0, 0, 0, FALSE);
 
-	AI_Output(self, other, "DIA_Abuyin_Zukunft_Trance_13_00"); //(Trance)... Orks ... sie bewachen einen Zugang ... ein alter Stollen ... das Tal der Minen ...
-	AI_Output(self, other, "DIA_Abuyin_Zukunft_Trance_13_01"); //(Trance) ... Männer mit strahlenden Rüstungen ... ein Magier ... dein Freund ist bei ihnen ... er wartet auf dich ...
-	AI_Output(self, other, "DIA_Abuyin_Zukunft_Trance_13_02"); //(Trance) ... Feuer! Ein Angriff ... ein mächtiges Wesen ... die Flammen ... viele ... werden sterben ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft_Trance_13_00"); //(Trance) ... Orcs ... they are guarding an entry ... an old tunnel ... the Valley of Mines ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft_Trance_13_01"); //(Trance) ... Men in shining armor ... a magician ... your friend is with them ... he is waiting for you ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft_Trance_13_02"); //(Trance) ... Fire! An attack ... a mighty creature ... the flames ... many ... shall die ...
 
-	AI_Output(self, other, "DIA_Addon_Abuyin_Zukunft_Trance_13_00"); //(Trance) ... was ist das ... ? Eine Stadt ... Ruinen ... Quarhodron in Jharkendar ...
-	AI_Output(self, other, "DIA_Addon_Abuyin_Zukunft_Trance_13_01"); //(Trance) ... er wird gerufen ... Quarhodron in Jharkendar!
+	AI_Output(self, other, "DIA_Addon_Abuyin_Zukunft_Trance_13_00"); //(Trance) ... what is that ... ? A city... Ruins ... Quarhodron in Jharkendar ...
+	AI_Output(self, other, "DIA_Addon_Abuyin_Zukunft_Trance_13_01"); //(Trance) ... he is summoned ... Quarhodron in Jharkendar!
 
 	AI_PlayAni(self, "T_HEASHOOT_2_STAND");
-	AI_Output(self, other, "DIA_Abuyin_Zukunft_Trance_13_03"); //... Tut mir Leid - die Vision ist vorüber. Ich sehe nichts mehr.
+	AI_Output(self, other, "DIA_Abuyin_Zukunft_Trance_13_03"); //... I'm sorry - the vision is over. There's nothing more I can see.
 
 	DIA_Abuyin_Zukunft_permanent = TRUE;
 	Abuyin_Zukunft = 1;
@@ -471,7 +471,7 @@ instance DIA_Abuyin_Nochmal(C_INFO)
 	condition		= DIA_Abuyin_Nochmal_Condition;
 	information		= DIA_Abuyin_Nochmal_Info;
 	permanent		= TRUE;
-	description		= "Kannst du mir noch eine Weissagung geben?";
+	description		= "Could you make me another prophecy?";
 };
 
 func int DIA_Abuyin_Nochmal_Condition()
@@ -484,14 +484,14 @@ func int DIA_Abuyin_Nochmal_Condition()
 
 func void DIA_Abuyin_Nochmal_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Nochmal_15_00"); //Kannst du mir noch eine Weissagung geben?
-	AI_Output(self, other, "DIA_Abuyin_Nochmal_13_01"); //Oh, Sohn der geheimnisvollen Zukunft, es ist mir nicht möglich, den Schleier der Zeit zu lüften.
-	AI_Output(self, other, "DIA_Abuyin_Nochmal_13_02"); //Erst wenn die Zeit mir ein weiteres Zeichen schenkt, kann ich wieder für dich sehen.
+	AI_Output(other, self, "DIA_Abuyin_Nochmal_15_00"); //Can you make me another prophecy?
+	AI_Output(self, other, "DIA_Abuyin_Nochmal_13_01"); //Oh Son of the Mysterious Future, it is not within my power to lift the veil of time.
+	AI_Output(self, other, "DIA_Abuyin_Nochmal_13_02"); //Only when time sends me another omen shall I be able to see for you again.
 
 	if (Abuyin_Erzaehlt == FALSE)
 	{
-		AI_Output(other, self, "DIA_Abuyin_Nochmal_15_03"); //Wann wird das sein?
-		AI_Output(self, other, "DIA_Abuyin_Nochmal_13_04"); //Wenn die Zukunft zur Gegenwart geworden ist und du deine Reise fortgesetzt hast.
+		AI_Output(other, self, "DIA_Abuyin_Nochmal_15_03"); //When will that be?
+		AI_Output(self, other, "DIA_Abuyin_Nochmal_13_04"); //When the future has become present and you have continued your journey.
 		Abuyin_Erzaehlt = TRUE;
 	};
 };
@@ -506,9 +506,9 @@ func void DIA_Abuyin_Nochmal_Info()
 
 func void B_Abuyin_Weissagung()
 {
-	AI_Output(other, self, "B_Abuyin_Weissagung_15_00"); //Kannst du mir eine Weissagung geben?
-	AI_Output(self, other, "B_Abuyin_Weissagung_13_01"); //Ja, die Zeit ist voran geschritten und ich werde dir für ein paar Münzen eine Weissagung geben.
-	AI_Output(other, self, "B_Abuyin_Weissagung_15_02"); //Wie viel willst du?
+	AI_Output(other, self, "B_Abuyin_Weissagung_15_00"); //Can you make me a prophecy?
+	AI_Output(self, other, "B_Abuyin_Weissagung_13_01"); //Yes, time has progressed and I shall give you a prophecy in return for a few coins.
+	AI_Output(other, self, "B_Abuyin_Weissagung_15_02"); //How much?
 };
 
 // ************************************************************
@@ -520,7 +520,7 @@ instance DIA_Abuyin_Weissagung2(C_INFO)
 	nr				= 2;
 	condition		= DIA_Abuyin_Weissagung2_Condition;
 	information		= DIA_Abuyin_Weissagung2_Info;
-	description		= "Kannst du mir eine Weissagung geben?";
+	description		= "Can you make me a prophecy?";
 };
 
 func int DIA_Abuyin_Weissagung2_Condition()
@@ -535,7 +535,7 @@ func int DIA_Abuyin_Weissagung2_Condition()
 func void DIA_Abuyin_Weissagung2_Info()
 {
 	B_Abuyin_Weissagung();
-	AI_Output(self, other, "DIA_Abuyin_Weissagung2_13_00"); //Für bescheidene 100 Münzen werde ich für dich einen Blick in die Zeit riskieren.
+	AI_Output(self, other, "DIA_Abuyin_Weissagung2_13_00"); //For a paltry 100 coins, I shall risk a glance through time for you.
 };
 
 // ************************************************************
@@ -548,7 +548,7 @@ instance DIA_Abuyin_Zukunft2(C_INFO)
 	condition		= DIA_Abuyin_Zukunft2_Condition;
 	information		= DIA_Abuyin_Zukunft2_Info;
 	permanent		= TRUE;
-	description		= "Erzähl mir von der Zukunft (100 Gold zahlen)";
+	description		= "Tell me about the future (pay 100 gold).";
 };
 
 // ---------------------------------------
@@ -566,18 +566,18 @@ func int DIA_Abuyin_Zukunft2_Condition()
 
 func void DIA_Abuyin_Zukunft2_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Zukunft2_15_00"); //Erzähl mir von der Zukunft.
+	AI_Output(other, self, "DIA_Abuyin_Zukunft2_15_00"); //Tell me about the future.
 
 	if (B_GiveInvItems(other, self, ItMI_Gold, 100))
 	{
-		AI_Output(self, other, "DIA_Abuyin_Zukunft2_13_01"); //Gut, Sohn der Tapferkeit. Ich werde mich nun in Trance begeben. Bist du bereit?
+		AI_Output(self, other, "DIA_Abuyin_Zukunft2_13_01"); //All right, Son of Bravery. I shall now enter a state of trance. Are you ready?
 
 		Info_ClearChoices(DIA_Abuyin_Zukunft2);
-		Info_AddChoice(DIA_Abuyin_Zukunft2, "Ich bin bereit.", DIA_Abuyin_Zukunft2_Trance);
+		Info_AddChoice(DIA_Abuyin_Zukunft2, "I am ready!", DIA_Abuyin_Zukunft2_Trance);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Abuyin_Zukunft2_13_02"); //Oh Vater der Münzen, für einen Blick in die Zeit bitte ich dich um eine Gabe von 100 Goldstücken.
+		AI_Output(self, other, "DIA_Abuyin_Zukunft2_13_02"); //Oh Father of Coins, I ask you for 100 gold pieces in return for a glimpse into the future.
 	};
 };
 
@@ -586,12 +586,12 @@ func void DIA_Abuyin_Zukunft2_Trance()
 	AI_PlayAni(self, "T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT", self, self, 0, 0, 0, FALSE);
 
-	AI_Output(self, other, "DIA_Abuyin_Zukunft2_Trance_13_00"); //(TRANCE) ... Ein Söldner ... er wird dich brauchen ... ein schrecklicher Mord ... das Auge ...
-	AI_Output(self, other, "DIA_Abuyin_Zukunft2_Trance_13_01"); //(TRANCE) ... die finsteren Schergen ... sie kommen ...sie suchen nach dir ... ein Wächter wird fallen ...
-	AI_Output(self, other, "DIA_Abuyin_Zukunft2_Trance_13_02"); //(TRANCE) ... doch werden sich die drei vereinigen ... erst dann wirst du erhalten, was dir zusteht ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft2_Trance_13_00"); //(Trance) ... A mercenary ... he will need you ... a terrible murder ... the Eye ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft2_Trance_13_01"); //(Trance) ... the sinister henchmen ... they are coming ... searching for you ... a guardian will fall ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft2_Trance_13_02"); //(Trance) ... but the three shall unite ... only then shall you receive what is yours ...
 
 	AI_PlayAni(self, "T_HEASHOOT_2_STAND");
-	AI_Output(self, other, "DIA_Abuyin_Zukunft2_Trance_13_03"); //Das war alles. Mehr kann ich nicht sehen.
+	AI_Output(self, other, "DIA_Abuyin_Zukunft2_Trance_13_03"); //That's all. There's nothing more I can see.
 
 	DIA_Abuyin_Zukunft2_permanent = TRUE;
 	Abuyin_Zukunft = 2;
@@ -617,7 +617,7 @@ instance DIA_Abuyin_Weissagung3(C_INFO)
 	nr				= 2;
 	condition		= DIA_Abuyin_Weissagung3_Condition;
 	information		= DIA_Abuyin_Weissagung3_Info;
-	description		= "Kannst du mir eine Weissagung geben?";
+	description		= "Can you make me a prophecy?";
 };
 
 func int DIA_Abuyin_Weissagung3_Condition()
@@ -632,7 +632,7 @@ func int DIA_Abuyin_Weissagung3_Condition()
 func void DIA_Abuyin_Weissagung3_Info()
 {
 	B_Abuyin_Weissagung();
-	AI_Output(self, other, "DIA_Abuyin_Weissagung3_13_00"); //Für bescheidene 250 Münzen werde ich für dich einen Blick in die Zeit riskieren.
+	AI_Output(self, other, "DIA_Abuyin_Weissagung3_13_00"); //For a paltry 250 coins, I shall risk a glance through time for you.
 };
 
 // ************************************************************
@@ -645,7 +645,7 @@ instance DIA_Abuyin_Zukunft3(C_INFO)
 	condition		= DIA_Abuyin_Zukunft3_Condition;
 	information		= DIA_Abuyin_Zukunft3_Info;
 	permanent		= TRUE;
-	description		= "Erzähl mir von der Zukunft (250 Gold zahlen)";
+	description		= "Tell me about the future (pay 250 gold).";
 };
 
 // ---------------------------------------
@@ -663,18 +663,18 @@ func int DIA_Abuyin_Zukunft3_Condition()
 
 func void DIA_Abuyin_Zukunft3_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Zukunft3_15_00"); //Erzähl mir von der Zukunft.
+	AI_Output(other, self, "DIA_Abuyin_Zukunft3_15_00"); //Tell me about the future.
 
 	if (B_GiveInvItems(other, self, ItMI_Gold, 250))
 	{
-		AI_Output(self, other, "DIA_Abuyin_Zukunft3_13_01"); //Gut, Sohn des Wissens. Ich werde mich nun in Trance begeben. Bist du bereit?
+		AI_Output(self, other, "DIA_Abuyin_Zukunft3_13_01"); //All right, Son of Knowledge. I shall now enter a state of trance. Are you ready?
 
 		Info_ClearChoices(DIA_Abuyin_Zukunft3);
-		Info_AddChoice(DIA_Abuyin_Zukunft3, "Ich bin bereit.", DIA_Abuyin_Zukunft3_Trance);
+		Info_AddChoice(DIA_Abuyin_Zukunft3, "I am ready!", DIA_Abuyin_Zukunft3_Trance);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Abuyin_Zukunft3_13_02"); //Oh Vater der Münzen, für einen Blick in die Zeit bitte ich dich um eine Gabe von 250 Goldstücken.
+		AI_Output(self, other, "DIA_Abuyin_Zukunft3_13_02"); //Oh Father of Coins, I ask you for 250 gold pieces in return for a glimpse into the future.
 	};
 };
 
@@ -683,12 +683,12 @@ func void DIA_Abuyin_Zukunft3_Trance()
 	AI_PlayAni(self, "T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT", self, self, 0, 0, 0, FALSE);
 
-	AI_Output(self, other, "DIA_Abuyin_Zukunft3_Trance_13_00"); //(Trance) ... du wirst erzwingen ... was niemandem sonst bestimmt ...
-	AI_Output(self, other, "DIA_Abuyin_Zukunft3_Trance_13_01"); //(Trance) ... über Glut und Schnee ... durch Eis und Flammen ...
-	AI_Output(self, other, "DIA_Abuyin_Zukunft3_Trance_13_02"); //(Trance) ... Männer in fremden Rüstungen ... ein Sumpf ... Echsen ... sie erwarten dich.
+	AI_Output(self, other, "DIA_Abuyin_Zukunft3_Trance_13_00"); //(Trance) ... you shall force ... what is nobody's destiny but yours ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft3_Trance_13_01"); //(Trance) ... through fire and snow ... through ice and flames ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft3_Trance_13_02"); //(Trance) ... Men in foreign armor ... a swamp ... lizards ... they await you ...
 
 	AI_PlayAni(self, "T_HEASHOOT_2_STAND");
-	AI_Output(self, other, "DIA_Abuyin_Zukunft3_Trance_13_03"); //Das war alles. Mehr kann ich nicht sehen.
+	AI_Output(self, other, "DIA_Abuyin_Zukunft3_Trance_13_03"); //That's all. There's nothing more I can see.
 
 	DIA_Abuyin_Zukunft3_permanent = TRUE;
 	Abuyin_Zukunft = 3;
@@ -714,7 +714,7 @@ instance DIA_Abuyin_Weissagung4(C_INFO)
 	nr				= 2;
 	condition		= DIA_Abuyin_Weissagung4_Condition;
 	information		= DIA_Abuyin_Weissagung4_Info;
-	description		= "Kannst du mir eine Weissagung geben?";
+	description		= "Can you make me a prophecy?";
 };
 
 func int DIA_Abuyin_Weissagung4_Condition()
@@ -729,7 +729,7 @@ func int DIA_Abuyin_Weissagung4_Condition()
 func void DIA_Abuyin_Weissagung4_Info()
 {
 	B_Abuyin_Weissagung();
-	AI_Output(self, other, "DIA_Abuyin_Weissagung4_13_00"); //Für bescheidene 500 Münzen werde ich für dich einen Blick in die Zeit riskieren.
+	AI_Output(self, other, "DIA_Abuyin_Weissagung4_13_00"); //For a paltry 500 coins, I shall risk a glance through time for you.
 };
 
 // ************************************************************
@@ -742,7 +742,7 @@ instance DIA_Abuyin_Zukunft4(C_INFO)
 	condition		= DIA_Abuyin_Zukunft4_Condition;
 	information		= DIA_Abuyin_Zukunft4_Info;
 	permanent		= TRUE;
-	description		= "Erzähl mir von der Zukunft (500 Gold zahlen)";
+	description		= "Tell me about the future (pay 500 gold).";
 };
 
 // ---------------------------------------
@@ -760,18 +760,18 @@ func int DIA_Abuyin_Zukunft4_Condition()
 
 func void DIA_Abuyin_Zukunft4_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Zukunft4_15_00"); //Erzähl mir von der Zukunft.
+	AI_Output(other, self, "DIA_Abuyin_Zukunft4_15_00"); //Tell me about the future.
 
 	if (B_GiveInvItems(other, self, ItMI_Gold, 500))
 	{
-		AI_Output(self, other, "DIA_Abuyin_Zukunft4_13_01"); //Gut, Sohn des Wissens. Ich werde mich nun in Trance begeben. Bist du bereit?
+		AI_Output(self, other, "DIA_Abuyin_Zukunft4_13_01"); //All right, Son of Knowledge. I shall now enter a state of trance. Are you ready?
 
 		Info_ClearChoices(DIA_Abuyin_Zukunft4);
-		Info_AddChoice(DIA_Abuyin_Zukunft4, "Ich bin bereit.", DIA_Abuyin_Zukunft4_Trance);
+		Info_AddChoice(DIA_Abuyin_Zukunft4, "I am ready!", DIA_Abuyin_Zukunft4_Trance);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Abuyin_Zukunft4_13_02"); //Oh Vater der Münzen, für einen Blick in die Zeit bitte ich dich um eine Gabe von 500 Goldstücken.
+		AI_Output(self, other, "DIA_Abuyin_Zukunft4_13_02"); //Oh Father of Coins, I ask you for 500 gold pieces in return for a glimpse into the future.
 	};
 };
 
@@ -780,12 +780,12 @@ func void DIA_Abuyin_Zukunft4_Trance()
 	AI_PlayAni(self, "T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT", self, self, 0, 0, 0, FALSE);
 
-	AI_Output(self, other, "DIA_Abuyin_Zukunft4_Trance_13_00"); //(Trance) ... der Ort des Wissens ... ein anderes Land ... ein dunkler Ort weit entfernt ...
-	AI_Output(self, other, "DIA_Abuyin_Zukunft4_Trance_13_01"); //(Trance) ... mutige Gefährten ...du wirst deine Wahl treffen ...
-	AI_Output(self, other, "DIA_Abuyin_Zukunft4_Trance_13_02"); //(Trance) ... ein Tempel ... liegt dort einsam in Adanos' Reich ... verborgen im Nebel ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft4_Trance_13_00"); //(Trance) ... the place of knowledge ... another country ... a dark place far away ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft4_Trance_13_01"); //(Trance) ... brave companions ... you shall make your choice ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft4_Trance_13_02"); //(Trance) ... a temple ... lies lonely in the realm of Adanos ... hidden in the fog ...
 
 	AI_PlayAni(self, "T_HEASHOOT_2_STAND");
-	AI_Output(self, other, "DIA_Abuyin_Zukunft4_Trance_13_03"); //Das war alles. Mehr kann ich nicht sehen.
+	AI_Output(self, other, "DIA_Abuyin_Zukunft4_Trance_13_03"); //That's all. There's nothing more I can see.
 
 	DIA_Abuyin_Zukunft4_permanent = TRUE;
 	Abuyin_Zukunft = 4;
@@ -811,7 +811,7 @@ instance DIA_Abuyin_Weissagung5(C_INFO)
 	nr				= 2;
 	condition		= DIA_Abuyin_Weissagung5_Condition;
 	information		= DIA_Abuyin_Weissagung5_Info;
-	description		= "Kannst du mir eine Weissagung geben?";
+	description		= "Can you make me a prophecy?";
 };
 
 func int DIA_Abuyin_Weissagung5_Condition()
@@ -826,7 +826,7 @@ func int DIA_Abuyin_Weissagung5_Condition()
 func void DIA_Abuyin_Weissagung5_Info()
 {
 	B_Abuyin_Weissagung();
-	AI_Output(self, other, "DIA_Abuyin_Weissagung5_13_00"); //Für bescheidene 1000 Münzen werde ich für dich einen Blick in die Zeit riskieren.
+	AI_Output(self, other, "DIA_Abuyin_Weissagung5_13_00"); //For a paltry 1000 coins, I shall risk a glance through time for you.
 };
 
 // ************************************************************
@@ -839,7 +839,7 @@ instance DIA_Abuyin_Zukunft5(C_INFO)
 	condition		= DIA_Abuyin_Zukunft5_Condition;
 	information		= DIA_Abuyin_Zukunft5_Info;
 	permanent		= TRUE;
-	description		= "Erzähl mir von der Zukunft (1000 Gold zahlen)";
+	description		= "Tell me about the future (pay 1000 gold).";
 };
 
 // ---------------------------------------
@@ -857,18 +857,18 @@ func int DIA_Abuyin_Zukunft5_Condition()
 
 func void DIA_Abuyin_Zukunft5_Info()
 {
-	AI_Output(other, self, "DIA_Abuyin_Zukunft5_15_00"); //Erzähl mir von der Zukunft.
+	AI_Output(other, self, "DIA_Abuyin_Zukunft5_15_00"); //Tell me about the future.
 
 	if (B_GiveInvItems(other, self, ItMI_Gold, 1000))
 	{
-		AI_Output(self, other, "DIA_Abuyin_Zukunft5_13_01"); //Gut, Sohn des Wissens. Ich werde mich nun in Trance begeben. Bist du bereit?
+		AI_Output(self, other, "DIA_Abuyin_Zukunft5_13_01"); //All right, Son of Knowledge. I shall now enter a state of trance. Are you ready?
 
 		Info_ClearChoices(DIA_Abuyin_Zukunft5);
-		Info_AddChoice(DIA_Abuyin_Zukunft5, "Ich bin bereit.", DIA_Abuyin_Zukunft5_Trance);
+		Info_AddChoice(DIA_Abuyin_Zukunft5, "I am ready!", DIA_Abuyin_Zukunft5_Trance);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Abuyin_Zukunft5_13_02"); //Oh Vater der Münzen, für einen Blick in die Zeit bitte ich dich um eine Gabe von 1000 Goldstücken.
+		AI_Output(self, other, "DIA_Abuyin_Zukunft5_13_02"); //Oh Father of Coins, I ask you for 1000 gold pieces in return for a glimpse into the future.
 	};
 };
 
@@ -877,12 +877,12 @@ func void DIA_Abuyin_Zukunft5_Trance()
 	AI_PlayAni(self, "T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT", self, self, 0, 0, 0, FALSE);
 
-	AI_Output(self, other, "DIA_Abuyin_Zukunft5_Trance_13_00"); //(Trance) ... Dunkelheit zieht über das Land ... das Böse wird triumphieren ...
-	AI_Output(self, other, "DIA_Abuyin_Zukunft5_Trance_13_01"); //(Trance) ... der König wird den Krieg gegen die Orks verlieren ...
-	AI_Output(self, other, "DIA_Abuyin_Zukunft5_Trance_13_02"); //(Trance) ... du wirst zurückkehren, aber du wirst keine Ruhe finden ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft5_Trance_13_00"); //(Trance) ... Darkness pervades the land ... evil will triumph ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft5_Trance_13_01"); //(Trance) ... the King shall lose his war against the orcs ...
+	AI_Output(self, other, "DIA_Abuyin_Zukunft5_Trance_13_02"); //(Trance) ... you shall return, but you shall not find peace ...
 
 	AI_PlayAni(self, "T_HEASHOOT_2_STAND");
-	AI_Output(self, other, "DIA_Abuyin_Zukunft5_Trance_13_03"); //Das war alles. Mehr kann ich nicht sehen.
+	AI_Output(self, other, "DIA_Abuyin_Zukunft5_Trance_13_03"); //That's all. There's nothing more I can see.
 
 	DIA_Abuyin_Zukunft5_permanent = TRUE;
 	Abuyin_Zukunft = 5;

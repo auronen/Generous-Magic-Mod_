@@ -5,7 +5,7 @@
 prototype Mst_Default_DragonSnapper(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Drachen-Snapper";
+	name							= "Dragon Snapper";
 	guild							= GIL_SNAPPER;
 	level							= 40;
 
@@ -105,7 +105,7 @@ instance DragonSnapper(Mst_Default_DragonSnapper)
 instance Gaans_Snapper(Mst_Default_DragonSnapper)
 {
 	// -------- NPC --------
-	name							= "Schnaubender Drachen-Snapper";
+	name							= "Snorting Dragon Snapper";
 
 	// -------- attributes --------
 

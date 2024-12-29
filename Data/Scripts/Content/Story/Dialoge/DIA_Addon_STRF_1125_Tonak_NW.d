@@ -31,7 +31,7 @@ instance DIA_Addon_Tonak_NW_Hi(C_INFO)
 	condition		= DIA_Addon_Tonak_NW_Hi_Condition;
 	information		= DIA_Addon_Tonak_NW_Hi_Info;
 	permanent		= TRUE;
-	description		= "Na, jetzt wieder auf'm Feld arbeiten?";
+	description		= "So, back to working in the fields?";
 };
 
 func int DIA_Addon_Tonak_NW_Hi_Condition()
@@ -41,13 +41,13 @@ func int DIA_Addon_Tonak_NW_Hi_Condition()
 
 func void DIA_Addon_Tonak_NW_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Tonak_NW_Hi_15_00"); //Na, jetzt wieder auf'm Feld arbeiten?
-	AI_Output(self, other, "DIA_Addon_Tonak_NW_Hi_03_01"); //Hey, mein Lebensretter! Ja, jetzt ist wieder Knochenarbeit angesagt.
+	AI_Output(other, self, "DIA_Addon_Tonak_NW_Hi_15_00"); //So, back to working in the fields?
+	AI_Output(self, other, "DIA_Addon_Tonak_NW_Hi_03_01"); //Hey, the guy who saved my life! Yeah, it's more hard labor for me now.
 
 	if (!Npc_IsDead(Egill)
 	&& !Npc_IsDead(Ehnim))
 	{
-		AI_Output(self, other, "DIA_Addon_Tonak_NW_Hi_03_02"); //Vor allem mit diesen beiden bekloppten Brüdern. Oh Mann, SO schlimm war es doch nicht bei den Banditen ...
+		AI_Output(self, other, "DIA_Addon_Tonak_NW_Hi_03_02"); //Especially with those two nutty brothers. Oh man, the bandits weren't THAT bad ...
 	};
 };
 

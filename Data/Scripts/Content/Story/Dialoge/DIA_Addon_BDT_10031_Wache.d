@@ -40,10 +40,10 @@ func int DIA_Addon_10031_Wache_Scatty_Condition()
 
 func void DIA_Addon_10031_Wache_Scatty_Info()
 {
-	AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00"); //Hey, willst du buddeln gehen? Dann vergiss nicht, dich bei Scatty einzudecken.
-	AI_Output(other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01"); //Was brauche ich denn?
-	AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02"); //Nun zumindest 'ne Spitzhacke. Etwas Proviant kann auch nicht schaden.
-	AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03"); //Oder wie wäre es mit Heiltränken? Da unten gibt's Minecrawler.
+	AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00"); //Hey, do you want to go digging? Then don't forget to stock up with Scatty.
+	AI_Output(other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01"); //What do I need then?
+	AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02"); //Well, at the very least a pickaxe. And some provisions can't hurt.
+	AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03"); //Or how 'bout some healing potions? There are minecrawlers down there.
 	AI_StopProcessInfos(self);
 };
 
@@ -59,7 +59,7 @@ instance DIA_Addon_BDT_10031_Wache_Hi(C_INFO)
 	condition		= DIA_Addon_10031_Wache_Hi_Condition;
 	information		= DIA_Addon_10031_Wache_Hi_Info;
 	permanent		= TRUE;
-	description		= "Alles klar?";
+	description		= "Everything all right?";
 };
 
 func int DIA_Addon_10031_Wache_Hi_Condition()
@@ -69,15 +69,15 @@ func int DIA_Addon_10031_Wache_Hi_Condition()
 
 func void DIA_Addon_10031_Wache_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10031_Wache_Hi_15_00"); //Alles klar?
+	AI_Output(other, self, "DIA_Addon_BDT_10031_Wache_Hi_15_00"); //Everything all right?
 
 	if ((Sklaven_Flucht == TRUE)
 	&& (Wache_Joker == FALSE))
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01"); //Junge, Junge. Die Sklaven hatten es aber ziemlich eilig.
-		AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02"); //Als sie gehört haben, dass sie frei sind, sind sie gerannt wie die Hasen!
+		AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01"); //Boy, oh boy. The slaves sure were in a hurry.
+		AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02"); //When they heard they were free, they ran like rabbits!
 		Wache_Joker = TRUE;
 	};
 
-	AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03"); //Ja. Also mach keinen Ärger, dann bleibt auch alles klar.
+	AI_Output(self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03"); //Yeah. So, don't make any trouble and everything will be all right.
 };

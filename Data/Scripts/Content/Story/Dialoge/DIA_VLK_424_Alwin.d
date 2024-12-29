@@ -66,7 +66,7 @@ instance DIA_Alwin_Sheep(C_INFO)
 	nr				= 3;
 	condition		= DIA_Alwin_Sheep_Condition;
 	information		= DIA_Alwin_Sheep_Info;
-	description		= "Sind das deine Schafe?";
+	description		= "Are those your sheep?";
 };
 
 func int DIA_Alwin_Sheep_Condition()
@@ -76,9 +76,9 @@ func int DIA_Alwin_Sheep_Condition()
 
 func void DIA_Alwin_Sheep_Info()
 {
-	AI_Output(other, self, "DIA_Alwin_Sheep_15_00"); //Sind das deine Schafe?
-	AI_Output(self, other, "DIA_Alwin_Sheep_12_01"); //Mir gehört nur das eine, das auf den Namen Lucy hört. (lacht) Das ist meine Frau - die Lucy.
-	AI_Output(self, other, "DIA_Alwin_Sheep_12_02"); //Die Schafe gehören der Miliz. Alle Schafe, die sie von den Bauern einkassieren, bringen sie zu mir.
+	AI_Output(other, self, "DIA_Alwin_Sheep_15_00"); //Are those your sheep?
+	AI_Output(self, other, "DIA_Alwin_Sheep_12_01"); //The only one that belongs to me is the one that answers to the name of Lucy. (laughs) That's my wife - Lucy.
+	AI_Output(self, other, "DIA_Alwin_Sheep_12_02"); //The sheep belong to the militia. All the sheep they collect from the farmers they bring to me.
 };
 
 //***************************************************
@@ -104,10 +104,10 @@ func int DIA_Alwin_Fellan_Condition()
 
 func void DIA_Alwin_Fellan_Info()
 {
-	AI_Output(self, other, "DIA_Alwin_Fellan_12_00"); //Junge, das Gehämmer von diesem Irren macht mich total fertig!
-	AI_Output(other, self, "DIA_Alwin_Fellan_15_01"); //Wen meinst du?
-	AI_Output(self, other, "DIA_Alwin_Fellan_12_02"); //Hörst du nicht das Hämmern? Wer hämmert denn den ganzen Tag im Hafenviertel?
-	AI_Output(self, other, "DIA_Alwin_Fellan_12_03"); //Ich meine den irren Fellan. Der hämmert jeden Tag an seiner Hütte herum.
+	AI_Output(self, other, "DIA_Alwin_Fellan_12_00"); //Boy, that lunatic's hammering is wearing me down.
+	AI_Output(other, self, "DIA_Alwin_Fellan_15_01"); //Who are you talking about?
+	AI_Output(self, other, "DIA_Alwin_Fellan_12_02"); //Can't you hear that hammering? Who do you think hammers all day long in the harbor district?
+	AI_Output(self, other, "DIA_Alwin_Fellan_12_03"); //I mean that lunatic Fellan. He takes the hammer to his hut every day.
 };
 
 //***************************************************
@@ -119,7 +119,7 @@ instance DIA_Alwin_FellanRunning(C_INFO)
 	nr				= 2;
 	condition		= DIA_Alwin_FellanRunning_Condition;
 	information		= DIA_Alwin_FellanRunning_Info;
-	description		= "Ich könnte mich um Fellan kümmern ...";
+	description		= "I could take care of Fellan ...";
 };
 
 func int DIA_Alwin_FellanRunning_Condition()
@@ -133,11 +133,11 @@ func int DIA_Alwin_FellanRunning_Condition()
 
 func void DIA_Alwin_FellanRunning_Info()
 {
-	AI_Output(other, self, "DIA_Alwin_FellanRunning_15_00"); //Ich könnte mich um Fellan kümmern ...
-	AI_Output(self, other, "DIA_Alwin_FellanRunning_12_01"); //Du willst mir helfen? Was hast du davon?
-	AI_Output(other, self, "DIA_Alwin_FellanRunning_15_02"); //Sag du's mir.
-	AI_Output(self, other, "DIA_Alwin_FellanRunning_12_03"); //Ach so sieht's aus! Na gut - wenn du es schaffst, dass er mit dem Gehämmer aufhört, zahle ich dir 25 Goldstücke.
-	AI_Output(self, other, "DIA_Alwin_FellanRunning_12_04"); //Aber eins sag ich dir gleich - mit dem Kerl kannst du nicht reden. Der ist irre. Da helfen nur ein paar ordentliche Schläge!
+	AI_Output(other, self, "DIA_Alwin_FellanRunning_15_00"); //I could take care of Fellan ...
+	AI_Output(self, other, "DIA_Alwin_FellanRunning_12_01"); //You want to help me? What's in it for you?
+	AI_Output(other, self, "DIA_Alwin_FellanRunning_15_02"); //You tell me.
+	AI_Output(self, other, "DIA_Alwin_FellanRunning_12_03"); //Oh, that's how it is! All right - if you can get him to stop hammering, I'll pay you 25 gold pieces.
+	AI_Output(self, other, "DIA_Alwin_FellanRunning_12_04"); //But I'll tell you one thing right now - you can't talk to the guy. He's nuts. The only thing that will help is a few decent punches!
 
 	MIS_AttackFellan = LOG_RUNNING;
 
@@ -146,31 +146,31 @@ func void DIA_Alwin_FellanRunning_Info()
 	B_LogEntry(TOPIC_Alwin, TOPIC_Alwin_1);
 
 	Info_ClearChoices(DIA_Alwin_FellanRunning);
-	Info_AddChoice(DIA_Alwin_FellanRunning, "Ich werd sehen, was ich machen kann...", DIA_Alwin_FellanRunning_Ok);
+	Info_AddChoice(DIA_Alwin_FellanRunning, "I'll see what I can do ...", DIA_Alwin_FellanRunning_Ok);
 	if ((hero.guild != GIL_MIL)
 	&& (hero.guild != GIL_PAL)
 	&& (hero.guild != GIL_KDF))
 	{
-		Info_AddChoice(DIA_Alwin_FellanRunning, "Wenn ich ihn verprügele bekomme ich doch Ärger mit der Miliz...", DIA_Alwin_FellanRunning_Problems);
+		Info_AddChoice(DIA_Alwin_FellanRunning, "If I beat him up, I'll just get into trouble with the militia ...", DIA_Alwin_FellanRunning_Problems);
 	};
 };
 
 func void DIA_Alwin_FellanRunning_Ok()
 {
-	AI_Output(other, self, "DIA_Alwin_FellanRunning_Ok_15_00"); //Ich werd sehen, was ich machen kann ...
-	AI_Output(self, other, "DIA_Alwin_FellanRunning_Ok_12_01"); //Du kannst es dir ja noch überlegen. Denk daran, ich zahle dir 25 Goldmünzen.
+	AI_Output(other, self, "DIA_Alwin_FellanRunning_Ok_15_00"); //I'll see what I can do ...
+	AI_Output(self, other, "DIA_Alwin_FellanRunning_Ok_12_01"); //You can think about it. Remember, I'll pay you 25 gold coins.
 
 	Info_ClearChoices(DIA_Alwin_FellanRunning);
 };
 
 func void DIA_Alwin_FellanRunning_Problems()
 {
-	AI_Output(other, self, "DIA_Alwin_FellanRunning_Problems_15_00"); //Wenn ich ihn verprügele, bekomme ich doch Ärger mit der Miliz ...
-	AI_Output(self, other, "DIA_Alwin_Add_12_00"); //Hier im Hafenviertel kümmert sich keiner um Schlägereien...
-	AI_Output(self, other, "DIA_Alwin_Add_12_01"); //Nur wenn du hier was klaust, oder dich an den Schafen vergreifst, bekomst du Ärger.
+	AI_Output(other, self, "DIA_Alwin_FellanRunning_Problems_15_00"); //If I beat him up, I'll just get into trouble with the militia ...
+	AI_Output(self, other, "DIA_Alwin_Add_12_00"); //Down here at the harbor, no one pays much attention to brawls ...
+	AI_Output(self, other, "DIA_Alwin_Add_12_01"); //But if you steal around here, or mess with the sheep, you'll be in trouble.
 
-	// AI_Output(self,other,"DIA_Alwin_FellanRunning_Problems_12_01"); // Der irre Fellan wird nicht zur Miliz rennen und dich anzeigen. Du könntest höchstens ein Problem bekommen, wenn seine Nachbarn was davon mitbekommen.
-	// AI_Output(self,other,"DIA_Alwin_FellanRunning_Problems_12_02"); // Schlägereien sind hier nicht gerne gesehen, und je mehr Zeugen es gibt, desto schlimmer wird die Sache.
+	// AI_Output(self,other,"DIA_Alwin_FellanRunning_Problems_12_01"); // Der irre Fellan wird nicht zur Miliz rennen und dich anzeigen. Du kÃ¶nntest hÃ¶chstens ein Problem bekommen, wenn seine Nachbarn was davon mitbekommen.
+	// AI_Output(self,other,"DIA_Alwin_FellanRunning_Problems_12_02"); // SchlÃ¤gereien sind hier nicht gerne gesehen, und je mehr Zeugen es gibt, desto schlimmer wird die Sache.
 	// AI_Output(self,other,"DIA_Alwin_FellanRunning_Problems_12_03"); // Aber wenn du ihn dazu bringst, dass ER dich angreift, werden alle Leute, die den Kampf mitkriegen, auf deiner Seite sein.
 };
 
@@ -183,7 +183,7 @@ instance DIA_Alwin_FellanSuccess(C_INFO)
 	nr				= 4;
 	condition		= DIA_Alwin_FellanSuccess_Condition;
 	information		= DIA_Alwin_FellanSuccess_Info;
-	description		= "Fellan wird nicht mehr hämmern.";
+	description		= "Fellan will hammer no longer.";
 };
 
 func int DIA_Alwin_FellanSuccess_Condition()
@@ -198,12 +198,12 @@ func int DIA_Alwin_FellanSuccess_Condition()
 
 func void DIA_Alwin_FellanSuccess_Info()
 {
-	AI_Output(other, self, "DIA_Alwin_FellanSuccess_15_00"); //Fellan wird nicht mehr hämmern.
-	AI_Output(self, other, "DIA_Alwin_FellanSuccess_12_01"); //Hörst du das? Kein Hämmern mehr. Endlich. Ich dachte schon, der Kerl hört nie auf.
+	AI_Output(other, self, "DIA_Alwin_FellanSuccess_15_00"); //Fellan will hammer no longer.
+	AI_Output(self, other, "DIA_Alwin_FellanSuccess_12_01"); //Hear that? No more hammering. At last. I thought the fellow would never quit.
 
 	if (Npc_IsDead(Fellan) == FALSE)
 	{
-		AI_Output(self, other, "DIA_Alwin_FellanSuccess_12_02"); //Damit hast du mir einen großen Gefallen getan. Weißt du was, ich gebe dir dafür 30 Goldstücke.
+		AI_Output(self, other, "DIA_Alwin_FellanSuccess_12_02"); //You've done me a huge favor. You know what, I'll give you 30 gold pieces.
 
 		B_GiveInvItems(self, other, ItMi_Gold, 30);
 
@@ -226,7 +226,7 @@ instance DIA_Alwin_Endlos(C_INFO)
 	condition		= DIA_Alwin_Endlos_Condition;
 	information		= DIA_Alwin_Endlos_Info;
 	permanent		= TRUE;
-	description		= "Und, was machen die Schafe?";
+	description		= "And, how are the sheep?";
 };
 
 func int DIA_Alwin_Endlos_Condition()
@@ -239,41 +239,41 @@ func int DIA_Alwin_Endlos_Condition()
 
 func void DIA_Alwin_Endlos_Info()
 {
-	AI_Output(other, self, "DIA_Alwin_Endlos_15_00"); //Und, was machen die Schafe?
+	AI_Output(other, self, "DIA_Alwin_Endlos_15_00"); //And, how are the sheep?
 
 	if ((MIS_AttackFellan != LOG_SUCCESS)
 	&& (Npc_IsDead(Fellan) == FALSE))
 	{
-		AI_Output(self, other, "DIA_Alwin_Endlos_12_01"); //Das Gehämmer von Fellan macht sie noch verrückt. Irgendwann werden sie völlig durchdrehen.
+		AI_Output(self, other, "DIA_Alwin_Endlos_12_01"); //Fellan's hammering is going to drive them crazy. One of these days they'll go completely to pieces.
 	}
 	else if (Kapitel <= 2)
 	{
-		AI_Output(self, other, "DIA_Alwin_Endlos_12_02"); //Die Schafe fressen und werden immer fetter. Genau wie meine Frau. HAHAHA (lacht schallend)
+		AI_Output(self, other, "DIA_Alwin_Endlos_12_02"); //The sheep eat and get fatter and fatter. Just like my wife. HAHAHA (laughs loudly)
 	}
 	else if (Kapitel == 3)
 	{
 		if (MIS_RescueBennet != LOG_SUCCESS)
 		{
-			AI_Output(self, other, "DIA_Alwin_Endlos_12_03"); //Eines werde ich wohl schlachten müssen. Für die Henkersmahlzeit!
-			AI_Output(other, self, "DIA_Alwin_Endlos_15_04"); //Wofür?
-			AI_Output(self, other, "DIA_Alwin_Endlos_12_05"); //Für den Söldner, der den Paladin ermordet hat. Er wird natürlich hingerichtet.
-			AI_Output(self, other, "DIA_Alwin_Endlos_12_06"); //Ich muss mich nur noch entscheiden, welches von den Viechern auf die Schlachtbank kommt.
+			AI_Output(self, other, "DIA_Alwin_Endlos_12_03"); //I'll probably have to slaughter one of them. For the last meal!
+			AI_Output(other, self, "DIA_Alwin_Endlos_15_04"); //For what?
+			AI_Output(self, other, "DIA_Alwin_Endlos_12_05"); //For the mercenary who murdered the paladin. Of course he'll be executed.
+			AI_Output(self, other, "DIA_Alwin_Endlos_12_06"); //I just have to decide which of the creatures will go to the slaughtering-block.
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Alwin_Endlos_12_07"); //Lucy ist echt glücklich, dass sie noch am Leben ist.
-			AI_Output(other, self, "DIA_Alwin_Endlos_15_08"); //Ich dachte, Lucy ist deine Frau.
-			AI_Output(self, other, "DIA_Alwin_Endlos_12_09"); //Das stimmt, aber ich hab das Schaf auch Lucy genannt. Ich meine das Schaf, welches für die Henkermahlzeit von diesem Bennet vorgesehen war.
-			AI_Output(self, other, "DIA_Alwin_Endlos_12_10"); //Aber das hat sich ja erledigt. Lucy wird sich freuen.
+			AI_Output(self, other, "DIA_Alwin_Endlos_12_07"); //Lucy is really lucky to be alive.
+			AI_Output(other, self, "DIA_Alwin_Endlos_15_08"); //I thought you said Lucy was your wife.
+			AI_Output(self, other, "DIA_Alwin_Endlos_12_09"); //Right, but I also called the sheep Lucy. I mean the sheep that was meant for the last meal for that Bennet.
+			AI_Output(self, other, "DIA_Alwin_Endlos_12_10"); //But that all worked out. Lucy will be glad.
 		};
 	}
 	else if (Kapitel == 4)
 	{
-		AI_Output(self, other, "DIA_Alwin_Endlos_12_11"); //Auf Dauer ist es ganz schön langweilig, den Schafen beim Fressen zuzusehen.
+		AI_Output(self, other, "DIA_Alwin_Endlos_12_11"); //As time goes by, watching the sheep eat gets to be pretty boring.
 	}
 	else // Kapitel 5
 	{
-		AI_Output(self, other, "DIA_Alwin_Endlos_12_12"); //Ich nehme Abschied von ihnen. Lord Hagen hat angeordnet, dass alle Schafe als Proviant für seine Armee dienen sollen.
-		AI_Output(self, other, "DIA_Alwin_Endlos_12_13"); //Na ja, dann habe ich wenigstens wieder mehr Zeit für meine Frau.
+		AI_Output(self, other, "DIA_Alwin_Endlos_12_12"); //I'm saying goodbye to them. Lord Hagen has ordered that all the sheep are to serve as provisions for his army.
+		AI_Output(self, other, "DIA_Alwin_Endlos_12_13"); //Well, then at least I'll have more time for my wife.
 	};
 };

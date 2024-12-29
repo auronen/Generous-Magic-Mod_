@@ -62,7 +62,7 @@ instance ItRi_Prot_Fire_01(C_Item) // in einem von Halvors Fischen
 
 	value						= Value_Ri_ProtFire;
 
-	description					= " Flammenschutzring";
+	description					= "Flame Protection Ring";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Fire;								count[2] = Ri_ProtFire;
@@ -104,7 +104,7 @@ instance ItRi_Prot_Fire_02(C_Item) // MayaTurm2 (Truhe)
 
 	value						= Value_Ri_ProtFire02;
 
-	description					= "FeuerRing";
+	description					= "Fire Ring";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Fire;								count[2] = Ri_ProtFire02;
@@ -146,7 +146,7 @@ instance ItRi_Prot_Point_01(C_Item) // Constantinos Schutzring
 
 	value						= Value_Ri_ProtPoint;
 
-	description					= "Ring der Holzhaut";
+	description					= "Ring of Wooden Skin";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Point;								count[2] = Ri_ProtPoint;
@@ -188,7 +188,7 @@ instance ItRi_Prot_Point_02(C_Item) // Beim Schwarzen Troll / Auf Dacheninsel ->
 
 	value						= Value_Ri_ProtPoint02;
 
-	description					= "Ring der Steinhaut";
+	description					= "Ring of Stone Skin";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Point;								count[2] = Ri_ProtPoint02;
@@ -211,7 +211,7 @@ func void UnEquip_ItRi_Prot_Point_02()
 };
 
 /******************************************************************************************/
-instance ItRi_Prot_Edge_01(C_Item) // bei Cassia als Belohnung // Höhle OW// PassNW bei den Orks
+instance ItRi_Prot_Edge_01(C_Item) // bei Cassia als Belohnung // HÃ¶hle OW// PassNW bei den Orks
 {
 	name						= NAME_Ring;
 
@@ -230,7 +230,7 @@ instance ItRi_Prot_Edge_01(C_Item) // bei Cassia als Belohnung // Höhle OW// Pas
 
 	value						= Value_Ri_ProtEdge;
 
-	description					= "Ring der Eisenhaut";
+	description					= "Ring of Iron Skin";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Edge;								count[2] = Ri_ProtEdge;
@@ -274,7 +274,7 @@ instance ItRi_Prot_Edge_02(C_Item) // Im Alten Lager
 
 	value						= Value_Ri_ProtEdge02;
 
-	description					= "Ring der Erzhaut";
+	description					= "Ring of Ore Skin";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Edge;								count[2] = Ri_ProtEdge02;
@@ -318,7 +318,7 @@ instance ItRi_Prot_Mage_01(C_ITEM) // XARDAS RING
 
 	value						= Value_Ri_ProtMage;
 
-	description					= "Ring der Geisteskraft";
+	description					= "Ring of Spirit";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Magic;								count[2] = Ri_ProtMage;
@@ -341,7 +341,7 @@ func void UnEquip_ItRi_Prot_Mage_01()
 };
 
 /******************************************************************************************/
-instance ItRi_Prot_Mage_02(C_ITEM) // Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4 // ricelordhütte OW
+instance ItRi_Prot_Mage_02(C_ITEM) // Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4 // ricelordhÃ¼tte OW
 {
 	name						= NAME_Ring;
 
@@ -360,7 +360,7 @@ instance ItRi_Prot_Mage_02(C_ITEM) // Joly: von Neoras, wenn SC ihm Drachenei br
 
 	value						= Value_Ri_ProtMage02;
 
-	description					= "Ring der Verteidigung";
+	description					= "Ring of Defense";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Magic;								count[2] = Ri_ProtMage02;
@@ -403,7 +403,7 @@ instance ItRi_Prot_Total_01(C_ITEM) // Bei Lutero
 
 	value						= Value_Ri_ProtTotal;
 
-	description					= "Ring der Unbezwingbarkeit";
+	description					= "Ring of Inconquerability";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Prot_Magic;								count[1] = Ri_TProtMage;
 	text[2]						= NAME_Prot_Fire;								count[2] = Ri_TProtFire;
@@ -453,7 +453,7 @@ instance ItRi_Prot_Total_02(C_ITEM) // bei Lutero ab Kapitel 4 zu kaufen
 
 	value						= Value_Ri_ProtTotal02;
 
-	description					= "Ring der Unbesiegbarkeit";
+	description					= "Ring of Invincibility";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Prot_Magic;								count[1] = Ri_TProtMage02;
 	text[2]						= NAME_Prot_Fire;								count[2] = Ri_TProtFire02;
@@ -503,7 +503,7 @@ instance ItRi_Dex_01(C_Item) // bei Vatras Kap2.
 
 	value						= Value_Ri_Dex;
 
-	description					= "Ring der Gewandtheit";
+	description					= "Ring of Skill";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Dex;								count[2] = Ri_Dex;
@@ -526,7 +526,7 @@ func void UnEquip_ItRi_Dex_01()
 };
 
 /******************************************************************************************/
-instance ItRi_Dex_02(C_Item) // Joly:in OW Nähe Alter DT
+instance ItRi_Dex_02(C_Item) // Joly:in OW NÃ¤he Alter DT
 {
 	name						= NAME_Ring;
 
@@ -545,7 +545,7 @@ instance ItRi_Dex_02(C_Item) // Joly:in OW Nähe Alter DT
 
 	value						= Value_Ri_Dex02;
 
-	description					= "Ring der Geschicklichkeit";
+	description					= "Ring of Dexterity";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Dex;								count[2] = Ri_Dex02;
@@ -587,7 +587,7 @@ instance ItRi_Hp_01(C_Item)
 
 	value						= Value_Ri_Hp;
 
-	description					= "Ring der Lebenskraft";
+	description					= "Ring of Life";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_HP;								count[2] = Ri_Hp;
@@ -638,7 +638,7 @@ instance ItRi_Hp_02(C_Item)
 
 	value						= Value_Ri_Hp02;
 
-	description					= "Ring der Lebendigkeit";
+	description					= "Ring of Liveliness";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_HP;								count[2] = Ri_Hp02;
@@ -689,7 +689,7 @@ instance ItRi_Str_01(C_Item)
 
 	value						= Value_Ri_Strg;
 
-	description					= "Ring der Kraft";
+	description					= "Ring of Force";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Str;								count[2] = Ri_Strg;
@@ -731,7 +731,7 @@ instance ItRi_Str_02(C_Item)
 
 	value						= Value_Ri_Strg02;
 
-	description					= "Ring der Stärke";
+	description					= "Ring of Strength";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Str;								count[2] = Ri_Strg02;
@@ -773,7 +773,7 @@ instance ItRi_Mana_01(C_Item)
 
 	value						= Value_Ri_Mana;
 
-	description					= "Ring der Magie";
+	description					= "Ring of Magic";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Mana;								count[2] = Ri_Mana;
@@ -825,7 +825,7 @@ instance ItRi_Mana_02(C_Item)
 
 	value						= Value_Ri_Mana02;
 
-	description					= "Ring der astralen Kraft";
+	description					= "Ring of Astral Power";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Mana;								count[2] = Ri_Mana02;
@@ -877,7 +877,7 @@ instance ItRi_Hp_Mana_01(C_Item)
 
 	value						= Value_Ri_HpMana;
 
-	description					= "Ring der Erleuchtung";
+	description					= "Ring of Enlightenment";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Mana;								count[2] = Ri_HpMana_Mana;
@@ -941,7 +941,7 @@ instance ItRi_Dex_Strg_01(C_Item)
 
 	value						= Value_Ri_DexStrg;
 
-	description					= "Ring der Macht";
+	description					= "Ring of Power";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Str;								count[2] = 4;

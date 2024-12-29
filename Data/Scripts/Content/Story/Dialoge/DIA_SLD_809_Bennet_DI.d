@@ -31,7 +31,7 @@ instance DIA_Bennet_DI_Hello(C_INFO)
 	condition		= DIA_Bennet_DI_Hello_Condition;
 	information		= DIA_Bennet_DI_Hello_Info;
 	permanent		= TRUE;
-	description		= "Kommst du zurecht?";
+	description		= "Are you doing all right?";
 };
 
 func int DIA_Bennet_DI_Hello_Condition()
@@ -44,15 +44,15 @@ func int DIA_Bennet_DI_Hello_Condition()
 
 func void DIA_Bennet_DI_Hello_Info()
 {
-	AI_Output(other, self, "DIA_Bennet_DI_Hello_15_00"); //Kommst du zurecht?
+	AI_Output(other, self, "DIA_Bennet_DI_Hello_15_00"); //Are you doing all right?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output(self, other, "DIA_Bennet_DI_Hello_06_01"); //Die Schmiede auf dem Schiff ist schon ein bisschen eingerostet. Kommt vom Meersalz. Wird etwas schwieriger sein, hier etwas Gescheites hinzukriegen. Aber sonst ...
+		AI_Output(self, other, "DIA_Bennet_DI_Hello_06_01"); //The smithy on the ship is a little on the rusty side. It's the sea salt that does it. It may be a little difficult to produce anything decent here. But apart from that...
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Bennet_DI_Hello_06_02"); //Wenn die Orks nicht wieder kommen, schon.
+		AI_Output(self, other, "DIA_Bennet_DI_Hello_06_02"); //Yes, provided the orcs don't come back.
 	};
 };
 
@@ -67,7 +67,7 @@ instance DIA_Bennet_DI_TRADE(C_INFO)
 	information		= DIA_Bennet_DI_TRADE_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Welche Waffen kannst du mir verkaufen?";
+	description		= "What weapons can you sell me?";
 };
 
 func int DIA_Bennet_DI_TRADE_Condition()
@@ -80,9 +80,9 @@ func int DIA_Bennet_DI_TRADE_Condition()
 
 func void DIA_Bennet_DI_TRADE_Info()
 {
-	AI_Output(other, self, "DIA_Bennet_DI_TRADE_15_00"); //Welche Waffen kannst du mir verkaufen?
+	AI_Output(other, self, "DIA_Bennet_DI_TRADE_15_00"); //What weapons can you sell me?
 	B_GiveTradeInv(self);
-	AI_Output(self, other, "DIA_Bennet_DI_TRADE_06_01"); //Nur die besten. Das weißt du doch.
+	AI_Output(self, other, "DIA_Bennet_DI_TRADE_06_01"); //Only the best. You know that.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -95,7 +95,7 @@ instance DIA_Bennet_DI_Smith(C_INFO)
 	condition		= DIA_Bennet_DI_Smith_Condition;
 	information		= DIA_Bennet_DI_Smith_Info;
 	permanent		= TRUE;
-	description		= "Kannst du mir deine Schmiedekunst beibringen?";
+	description		= "Can you teach me your craft?";
 };
 
 func int DIA_Bennet_DI_Smith_Condition()
@@ -109,8 +109,8 @@ func int DIA_Bennet_DI_Smith_Condition()
 
 func void DIA_Bennet_DI_Smith_Info()
 {
-	AI_Output(other, self, "DIA_Bennet_DI_Smith_15_00"); //Kannst du mir deine Schmiedekunst beibringen?
-	AI_Output(self, other, "DIA_Bennet_DI_Smith_06_01"); //Kommt drauf an, was du machen willst.
+	AI_Output(other, self, "DIA_Bennet_DI_Smith_15_00"); //Can you teach me your craft?
+	AI_Output(self, other, "DIA_Bennet_DI_Smith_06_01"); //Depends on what you want to make.
 
 	Info_ClearChoices(DIA_Bennet_DI_Smith);
 	Info_AddChoice(DIA_Bennet_DI_Smith, DIALOG_BACK, DIA_Bennet_DI_Smith_BACK);
@@ -225,7 +225,7 @@ instance DIA_Bennet_TeachSTR(C_INFO)
 	condition		= DIA_Bennet_TeachSTR_Condition;
 	information		= DIA_Bennet_TeachSTR_Info;
 	permanent		= TRUE;
-	description		= "Ich will stärker werden.";
+	description		= "I want to get stronger.";
 };
 
 func int DIA_Bennet_TeachSTR_Condition()
@@ -238,8 +238,8 @@ func int DIA_Bennet_TeachSTR_Condition()
 
 func void DIA_Bennet_TeachSTR_Info()
 {
-	AI_Output(other, self, "DIA_Bennet_TeachSTR_15_00"); //Ich will stärker werden.
-	AI_Output(self, other, "DIA_Bennet_TeachSTR_06_01"); //Ein starker Arm wird in Zeiten wie diesen gebraucht.
+	AI_Output(other, self, "DIA_Bennet_TeachSTR_15_00"); //I want to become stronger.
+	AI_Output(self, other, "DIA_Bennet_TeachSTR_06_01"); //In times like these, a strong arm is what's needed.
 
 	Info_ClearChoices(DIA_Bennet_TeachSTR);
 	Info_AddChoice(DIA_Bennet_TeachSTR, DIALOG_BACK, DIA_Bennet_TeachSTR_Back);
@@ -273,7 +273,7 @@ instance DIA_Bennet_DI_DragonEgg(C_INFO)
 	nr				= 99;
 	condition		= DIA_Bennet_DI_DragonEgg_Condition;
 	information		= DIA_Bennet_DI_DragonEgg_Info;
-	description		= "Ich habe hier ein Drachenei.";
+	description		= "I've got a dragon egg here.";
 };
 
 func int DIA_Bennet_DI_DragonEgg_Condition()
@@ -286,10 +286,10 @@ func int DIA_Bennet_DI_DragonEgg_Condition()
 
 func void DIA_Bennet_DI_DragonEgg_Info()
 {
-	AI_Output(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //Ich habe hier ein Drachenei.
-	AI_Output(self, other, "DIA_Bennet_DI_DragonEgg_06_01"); //Und?
-	AI_Output(other, self, "DIA_Bennet_DI_DragonEgg_15_02"); //Nun. Ich dachte ...
-	AI_Output(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //Ich weiß, was du denkst. Vergiss es, behalte das Ding. Ich will es nicht.
+	AI_Output(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //I've got a dragon egg here.
+	AI_Output(self, other, "DIA_Bennet_DI_DragonEgg_06_01"); //Well?
+	AI_Output(other, self, "DIA_Bennet_DI_DragonEgg_15_02"); //Well. I thought ...
+	AI_Output(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //I know what you're thinking. Forget it, keep the thing. I don't want it.
 	B_GivePlayerXP(XP_Ambient);
 };
 
@@ -303,7 +303,7 @@ instance DIA_Bennet_DI_UndeadDragonDead(C_INFO)
 	condition		= DIA_Bennet_DI_UndeadDragonDead_Condition;
 	information		= DIA_Bennet_DI_UndeadDragonDead_Info;
 	permanent		= TRUE;
-	description		= "Wir haben hier alles erledigt.";
+	description		= "We've done all we needed to do.";
 };
 
 func int DIA_Bennet_DI_UndeadDragonDead_Condition()
@@ -316,8 +316,8 @@ func int DIA_Bennet_DI_UndeadDragonDead_Condition()
 
 func void DIA_Bennet_DI_UndeadDragonDead_Info()
 {
-	AI_Output(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //Wir haben hier alles erledigt.
-	AI_Output(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //Freut mich zu hören. Ich kann diese olle Schmiede nicht mehr sehen. Ich brauche wieder festen Boden unter den Füßen.
+	AI_Output(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //We've done all we needed to do.
+	AI_Output(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //I'm glad to hear that. I've had just about enough of this old smithy. I need to plant my feet on firm ground once more.
 	AI_StopProcessInfos(self);
 };
 

@@ -9,7 +9,7 @@ const int Value_Addon_Joint_01 = 60;
 // ---------------------------------------------------------------------
 instance ItMi_GoldNugget_Addon(C_Item)
 {
-	name						= "Goldbrocken";
+	name						= "Gold nugget";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -30,11 +30,11 @@ instance ItMi_GoldNugget_Addon(C_Item)
 };
 
 // ---------------------------------------------------------------------
-//	Weiße Perle
+//	WeiÃŸe Perle
 // ---------------------------------------------------------------------
 instance ItMi_Addon_WhitePearl(C_Item)
 {
-	name						= "Perle";
+	name						= "Pearl";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -55,11 +55,11 @@ instance ItMi_Addon_WhitePearl(C_Item)
 };
 
 // ---------------------------------------------------------------------
-//	Grüner Novize
+//	GrÃ¼ner Novize
 // ---------------------------------------------------------------------
 instance ItMi_Addon_Joint_01(C_Item)
 {
-	name						= "Grüner Novize";
+	name						= "Green Novice";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -103,7 +103,7 @@ func void Use_Addon_Joint_01()
 //****************************************************************************
 instance ItMi_BaltramPaket(C_Item)
 {
-	name						= "Baltram's Lieferung";
+	name						= "Baltram's Shipment";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -116,18 +116,18 @@ instance ItMi_BaltramPaket(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein schweres Paket";							count[2] = 0;
-	text[3]						= "voller guter Sachen";						count[3] = 0;
-	text[4]						= "vom Bauern Akil";							count[4] = 0;
+	text[2]						= "A heavy package of";							count[2] = 0;
+	text[3]						= "good things.";						count[3] = 0;
+	text[4]						= "from Akil the farmer";							count[4] = 0;
 };
 
 //****************************************************************************
-//				Baltrams Lieferung für Skip
+//				Baltrams Lieferung fÃ¼r Skip
 //			---------------------------------------------
 //****************************************************************************
 instance ItMi_Packet_Baltram4Skip_Addon(C_Item)
 {
-	name						= "Paket für Skip";
+	name						= "Package for Skip";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -140,15 +140,15 @@ instance ItMi_Packet_Baltram4Skip_Addon(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Dieses schwere Paket";						count[2] = 0;
-	text[3]						= "voller guter Sachen";						count[3] = 0;
-	text[4]						= "ist für den Piraten Skip bestimmt";			count[4] = 0;
+	text[2]						= "This heavy package";						count[2] = 0;
+	text[3]						= "good things.";						count[3] = 0;
+	text[4]						= "is meant for the pirate Skip";			count[4] = 0;
 };
 
 /******************************************************************************************/
 instance ItMi_BromorsGeld_Addon(C_Item)
 {
-	name						= "Bromors Goldene Schale";
+	name						= "Bromor's golden bowl";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -161,15 +161,15 @@ instance ItMi_BromorsGeld_Addon(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Name 'Bromor' ist mit";					count[2] = 0;
-	text[3]						= "einem scharfen Gegenstand in den";			count[3] = 0;
-	text[4]						= "Boden der Schale geritzt worden.";			count[4] = 0;
+	text[2]						= "The name 'Bromor' is";					count[2] = 0;
+	text[3]						= "scratched into the bottom";			count[3] = 0;
+	text[4]						= "of the bowl with a sharp object.";			count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
 instance ItSe_ADDON_CavalornsBeutel(C_Item)
 {
-	name						= "Cavalorns Lederbeutel";
+	name						= "Cavalorn's leather bag";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -184,9 +184,9 @@ instance ItSe_ADDON_CavalornsBeutel(C_Item)
 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "Am Bund hängt ein Schild";					count[1] = 0;
-	text[2]						= "mit dem Namen 'Cavalorn'";					count[2] = 0;
-	text[3]						= "1 Brocken Erz befinden sich darin";			count[3] = 0;
+	text[1]						= "It bears a tag with";					count[1] = 0;
+	text[2]						= "the name 'Cavalorn'";					count[2] = 0;
+	text[3]						= "There is 1 lump of ore inside";			count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -206,7 +206,7 @@ func void Use_CavalornsBeutel()
 //**************************************
 instance ItMi_Skull(C_Item)
 {
-	name						= "Schädel";
+	name						= "Skull";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -266,7 +266,7 @@ func void Use_Cello()
 
 instance ItMi_IECelloBow(C_Item)
 {
-	name						= "CelloBow";
+	name						= "Cello bow";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -315,7 +315,7 @@ func void Use_Drum()
 
 instance ItMi_IEDrumScheit(C_Item)
 {
-	name						= "Drumscheit";
+	name						= "Tromba marina";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -343,7 +343,7 @@ func void Use_Drumscheit()
 
 instance ItMi_IEDrumStick(C_Item)
 {
-	name						= "DrumStick";
+	name						= "Drumstick";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -364,7 +364,7 @@ instance ItMi_IEDrumStick(C_Item)
 
 instance ItMi_IEDudelBlau(C_Item)
 {
-	name						= "Blauer Dudelsack";
+	name						= "Blue bagpipes";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -392,7 +392,7 @@ func void Use_Dudel()
 
 instance ItMi_IEDudelGelb(C_Item)
 {
-	name						= "Gelber Dudelsack";
+	name						= "Yellow bagpipes";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -416,7 +416,7 @@ instance ItMi_IEDudelGelb(C_Item)
 
 instance ItMi_IEHarfe(C_Item)
 {
-	name						= "Harfe";
+	name						= "Harp";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -444,7 +444,7 @@ func void Use_Harfe()
 
 instance ItMi_IELaute(C_Item)
 {
-	name						= "Laute";
+	name						= "Lute";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -476,7 +476,7 @@ func void Use_Laute()
 //****************************************************************************
 instance ItMi_Addon_Lennar_Paket(C_Item)
 {
-	name						= "Klimperndes Paket";
+	name						= "Jingling package";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -492,9 +492,9 @@ instance ItMi_Addon_Lennar_Paket(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Da sind Dietriche drin";						count[2] = 0;
+	text[2]						= "There are lock picks inside";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
-	text[4]						= "Viele Dietriche";							count[4] = 0;
+	text[4]						= "Many lock picks";							count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
@@ -508,7 +508,7 @@ func void Use_LennarPaket()
 
 instance ItMi_Zeitspalt_Addon(C_Item)
 {
-	name						= "Schwarzes Erz";
+	name						= "Black ore";
 
 	mainflag					= ITEM_KAT_POTIONS;
 	flags						= ITEM_MULTI;
@@ -528,7 +528,7 @@ instance ItMi_Zeitspalt_Addon(C_Item)
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Wirkung unbekannt";							count[3] = 0;
+	text[3]						= "Effects unknown.";							count[3] = 0;
 	INV_ZBIAS					= INVCAM_ENTF_MISC_STANDARD;
 };
 

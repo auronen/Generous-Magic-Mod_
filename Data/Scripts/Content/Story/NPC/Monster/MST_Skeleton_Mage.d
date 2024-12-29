@@ -5,7 +5,7 @@
 prototype Mst_Default_Skeleton_Mage(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Skelettmagier";
+	name							= "Skeleton Mage";
 	guild							= GIL_SKELETON_MAGE;
 	level							= 30;
 

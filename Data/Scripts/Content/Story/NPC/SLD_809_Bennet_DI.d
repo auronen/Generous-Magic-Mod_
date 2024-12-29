@@ -35,7 +35,7 @@ instance SLD_809_Bennet_DI(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 40); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 40); // Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

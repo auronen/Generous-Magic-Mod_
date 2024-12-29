@@ -197,7 +197,7 @@ instance Zombie04(Mst_Default_Zombie)
 instance Zombie_Addon_Knecht(Mst_Default_Zombie)
 {
 	// -------- NPC --------
-	name							= "Raven's Knecht";
+	name							= "Raven's Henchman";
 
 	// -------- attributes --------
 
@@ -222,7 +222,7 @@ instance Zombie_Addon_Knecht(Mst_Default_Zombie)
 instance Zombie_Addon_Bloodwyn(Mst_Default_Zombie)
 {
 	// -------- NPC --------
-	name							= "Erweckter Bloodwyn";
+	name							= "Bloodwyn Awakened";
 	level							= 25;
 
 	// -------- attributes --------
@@ -533,7 +533,7 @@ instance MayaZombie04(Mst_Default_Zombie)
 };
 
 //*************
-//	Einer der Totenw‰chter
+//	Einer der Totenw√§chter
 //*************
 
 instance MayaZombie04_Totenw(Mst_Default_Zombie)

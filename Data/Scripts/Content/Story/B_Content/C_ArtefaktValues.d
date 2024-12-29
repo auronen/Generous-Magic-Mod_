@@ -4,11 +4,11 @@ Checkt welchen Bonus der Spieler durch Artefakt Sets bekommt
 
 C_HP_ArtefaktValue(Hitpoints)
 C_MA_ArtefaktValue(Mana)
-C_STR_ArtefaktValue(Stärke)
+C_STR_ArtefaktValue(StÃ¤rke)
 
 */
 // ------------------------------------------------------------------------------------------
-// Check für Artefakt Set der Heiler (Bonus Berechnung)
+// Check fÃ¼r Artefakt Set der Heiler (Bonus Berechnung)
 // ------------------------------------------------------------------------------------------
 func int C_HP_ArtefaktValue()
 {
@@ -60,13 +60,13 @@ func int C_HP_ArtefaktValue()
 		HP_Artefakt_Value = HP_Ring_Solo_Bonus; // 30
 	};
 
-	// für Diagnose Print(IntToString(HP_Artefakt_Value) );
+	// fÃ¼r Diagnose Print(IntToString(HP_Artefakt_Value) );
 
 	return HP_Artefakt_Value;
 };
 
 // ------------------------------------------------------------------------------------------
-// Check für Artefakt Set der Priester (Bonus Berechnung)
+// Check fÃ¼r Artefakt Set der Priester (Bonus Berechnung)
 // ------------------------------------------------------------------------------------------
 func int C_MA_ArtefaktValue()
 {
@@ -118,13 +118,13 @@ func int C_MA_ArtefaktValue()
 		MA_Artefakt_Value = MA_Ring_Solo_Bonus; // 30
 	};
 
-	// für Diagnose Print(IntToString(MA_Artefakt_Value) );
+	// fÃ¼r Diagnose Print(IntToString(MA_Artefakt_Value) );
 
 	return MA_Artefakt_Value;
 };
 
 // ------------------------------------------------------------------------------------------
-// Check für Artefakt Set der Krieger (Bonus Berechnung)
+// Check fÃ¼r Artefakt Set der Krieger (Bonus Berechnung)
 // ------------------------------------------------------------------------------------------
 func int C_STR_ArtefaktValue()
 {
@@ -176,7 +176,7 @@ func int C_STR_ArtefaktValue()
 		STR_Artefakt_Value = STR_Ring_Solo_Bonus; // 30
 	};
 
-	// für Diagnose Print(IntToString(MA_Artefakt_Value) );
+	// fÃ¼r Diagnose Print(IntToString(MA_Artefakt_Value) );
 
 	return STR_Artefakt_Value;
 };

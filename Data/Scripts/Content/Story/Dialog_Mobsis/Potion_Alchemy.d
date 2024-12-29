@@ -2,7 +2,7 @@
 // POTIONALCHEMY_S1
 // --------------
 // Funktion wird durch Labortisch-Mobsi-Benutzung aufgerufen!
-// benötigtes Item dafür: ItMi_Flask
+// benÃ¶tigtes Item dafÃ¼r: ItMi_Flask
 // *****************************************************
 func void POTIONALCHEMY_S1()
 {
@@ -49,7 +49,7 @@ func void PC_PotionAlchemy_End_Info()
 };
 
 //*******************************************************
-// Tränke herstellen Dialoge
+// TrÃ¤nke herstellen Dialoge
 // --------
 //********************************************************
 
@@ -65,7 +65,7 @@ instance PC_Booze_Start(C_Info)
 	condition		= PC_Booze_Start_Condition;
 	information		= PC_Booze_Start_Info;
 	permanent		= TRUE;
-	description		= "Schnaps brennen";
+	description		= "Distill booze";
 };
 
 func int PC_Booze_Start_Condition()
@@ -119,7 +119,7 @@ instance PC_Booze_Lou(C_Info)
 	condition		= PC_Booze_Lou_Condition;
 	information		= PC_Booze_Lou_Info;
 	permanent		= TRUE;
-	description		= "Lou's Hammer versuchen...";
+	description		= "Try Lou's Hammer...";
 };
 
 func int PC_Booze_Lou_Condition()
@@ -164,7 +164,7 @@ instance PC_Booze_Schlaf(C_Info)
 	condition		= PC_Booze_Schlaf_Condition;
 	information		= PC_Booze_Schlaf_Info;
 	permanent		= TRUE;
-	description		= "Lou's Hammer mit doppelter Menge Rum.";
+	description		= "Lou's Hammer with twice the rum";
 };
 
 func int PC_Booze_Schlaf_Condition()
@@ -209,7 +209,7 @@ instance PC_Booze_SchnellerHering(C_Info)
 	condition		= PC_Booze_SchnellerHering_Condition;
 	information		= PC_Booze_SchnellerHering_Info;
 	permanent		= TRUE;
-	description		= "Schnellen Hering mixen.";
+	description		= "Mix a Hasty Herring";
 };
 
 func int PC_Booze_SchnellerHering_Condition()
@@ -254,7 +254,7 @@ instance PC_Charge_InnosEye(C_INFO)
 	condition		= PC_Charge_InnosEye_Condition;
 	information		= PC_Charge_InnosEye_Info;
 	permanent		= TRUE;
-	description		= "Das Auge Innos wieder aufladen.";
+	description		= "Recharge the Eye of Innos";
 };
 
 func int PC_Charge_InnosEye_Condition()
@@ -305,7 +305,7 @@ func void PC_Charge_InnosEye_Info()
 };
 
 //*******************************************************
-// Mana Tränke
+// Mana TrÃ¤nke
 //*******************************************************
 var int ManaStart;
 // ----------------------
@@ -316,7 +316,7 @@ instance PC_Mana_Start(C_Info)
 	condition		= PC_Mana_Start_Condition;
 	information		= PC_Mana_Start_Info;
 	permanent		= TRUE;
-	description		= "Manatränke brauen";
+	description		= "Brew mana potions";
 };
 
 func int PC_Mana_Start_Condition()
@@ -370,7 +370,7 @@ instance PC_ItPo_Mana_01(C_INFO)
 	condition		= PC_ItPo_Mana_01_Condition;
 	information		= PC_ItPo_Mana_01_Info;
 	permanent		= TRUE;
-	description		= "Mana Essenz (2 Feuernesseln, 1 Feldknöterich)";
+	description		= "Mana essence (2 fire nettles, 1 meadow knotweed)";
 };
 
 func int PC_ItPo_Mana_01_Condition()
@@ -413,7 +413,7 @@ instance PC_ItPo_Mana_02(C_INFO)
 	condition		= PC_ItPo_Mana_02_Condition;
 	information		= PC_ItPo_Mana_02_Info;
 	permanent		= TRUE;
-	description		= "Mana extract (2 Fireweeds, 1 Blue Elder) "; 
+	description		= "Mana extract (2 fireweeds, 1 meadow knotweed) "; 
 };
 
 func int PC_ItPo_Mana_02_Condition()
@@ -456,7 +456,7 @@ instance PC_ItPo_Mana_03(C_INFO)
 	condition		= PC_ItPo_Mana_03_Condition;
 	information		= PC_ItPo_Mana_03_Info;
 	permanent		= TRUE;
-	description		= "Mana elixir (2 Fire Roots, 1 Meadow Knotweed)"; 
+	description		= "Mana elixir (2 fire roots, 1 meadow knotweed)"; 
 };
 
 func int PC_ItPo_Mana_03_Condition()
@@ -497,7 +497,7 @@ instance PC_ItPo_Mana_04(C_INFO)
 	condition		= PC_ItPo_Mana_04_Condition;
 	information		= PC_ItPo_Mana_04_Info;
 	permanent		= TRUE;
-	description		= "Mana potion (3 Mana Essences, 1 Meadow Knotweed)"; 
+	description		= "Mana potion (3 Mana essences, 1 meadow knotweed)"; 
 };
 
 func int PC_ItPo_Mana_04_Condition()
@@ -531,7 +531,7 @@ func void PC_ItPo_Mana_04_Info()
 };
 
 //*******************************************************
-// Heiltränke
+// HeiltrÃ¤nke
 //*******************************************************
 var int HealthStart;
 // ----------------------
@@ -542,7 +542,7 @@ instance PC_Health_Start(C_Info)
 	condition		= PC_Health_Start_Condition;
 	information		= PC_Health_Start_Info;
 	permanent		= TRUE;
-	description		= "Heiltränke brauen";
+	description		= "Brew healing potions";
 };
 
 func int PC_Health_Start_Condition()
@@ -596,7 +596,7 @@ instance PC_ItPo_Health_01(C_INFO)
 	condition		= PC_ItPo_Health_01_Condition;
 	information		= PC_ItPo_Health_01_Info;
 	permanent		= TRUE;
-	description		= "Essence of healing (2 Healing Plants, 1 Woodland Berry)"; 
+	description		= "Essence of healing (2 healing plants, 1 meadow knotweed)"; 
 };
 
 func int PC_ItPo_Health_01_Condition()
@@ -639,7 +639,7 @@ instance PC_ItPo_Health_02(C_INFO)
 	condition		= PC_ItPo_Health_02_Condition;
 	information		= PC_ItPo_Health_02_Info;
 	permanent		= TRUE;
-	description		= "Extract of healing (2 Healing Herbs, 1 Blue Plant)"; 
+	description		= "Extract of healing (2 healing herbs, 1 meadow knotweed)"; 
 };
 
 func int PC_ItPo_Health_02_Condition()
@@ -682,7 +682,7 @@ instance PC_ItPo_Health_03(C_INFO)
 	condition		= PC_ItPo_Health_03_Condition;
 	information		= PC_ItPo_Health_03_Info;
 	permanent		= TRUE;
-	description		= "Elixier der Heilung (2 Heilwurzeln, 1 Feldknöterich)";
+	description		= "Elixir of healing (2 healing roots, 1 meadow knotweed)";
 };
 
 func int PC_ItPo_Health_03_Condition()
@@ -723,7 +723,7 @@ instance PC_ItPo_Health_04(C_INFO)
 	condition		= PC_ItPo_Health_04_Condition;
 	information		= PC_ItPo_Health_04_Info;
 	permanent		= TRUE;
-	description		= "Heiltrunk (3 Essenzen der Heilung, 1 Feldknöterich)";
+	description		= "Healing potions (3 essences of healing, 1 meadow knotweed)";
 };
 
 func int PC_ItPo_Health_04_Condition()
@@ -757,7 +757,7 @@ func void PC_ItPo_Health_04_Info()
 };
 
 //*******************************************************
-// Spezielle Tränke
+// Spezielle TrÃ¤nke
 //*******************************************************
 var int SpecialStart;
 // ----------------------
@@ -768,7 +768,7 @@ instance PC_Special_Start(C_Info)
 	condition		= PC_Special_Start_Condition;
 	information		= PC_Special_Start_Info;
 	permanent		= TRUE;
-	description		= "Spezielle Tränke brauen";
+	description		= "Brew special potions";
 };
 
 func int PC_Special_Start_Condition()
@@ -822,7 +822,7 @@ instance PC_ItPo_Addon_Geist(C_INFO)
 	condition		= PC_ItPo_Addon_Geist_Condition;
 	information		= PC_ItPo_Addon_Geist_Info;
 	permanent		= TRUE;
-	description		= "Elixier der Geistveränderung";
+	description		= "Elixir of Mental Alteration";
 };
 
 func int PC_ItPo_Addon_Geist_Condition()
@@ -875,7 +875,7 @@ instance PC_ItPo_Perm_Health(C_INFO)
 	condition		= PC_ItPo_Perm_Health_Condition;
 	information		= PC_ItPo_Perm_Health_Info;
 	permanent		= TRUE;
-	description		= "Elixir of Life (1 Healing Root, 1 King's Sorrel, 1 Meadow Knotweed)"; 
+	description		= "Elixir of life (1 healing root, 1 king's sorrel)"; 
 };
 
 func int PC_ItPo_Perm_Health_Condition()
@@ -918,7 +918,7 @@ instance PC_ItPo_Perm_Mana(C_INFO)
 	condition		= PC_ItPo_Perm_Mana_Condition;
 	information		= PC_ItPo_Perm_Mana_Info;
 	permanent		= TRUE;
-	description		= "Elixier of Spirit (1 Fire Root, 1 King's Sorrel, Meadow Knotweed)"; 
+	description		= "Elixier of spirit (1 fire root, 1 king's sorrel)"; 
 };
 
 func int PC_ItPo_Perm_Mana_Condition()
@@ -961,7 +961,7 @@ instance PC_ItPo_Dex(C_INFO)
 	condition		= PC_ItPo_Dex_Condition;
 	information		= PC_ItPo_Dex_Info;
 	permanent		= TRUE;
-	description		= "Potion of Dexterity (1 Goblin Berry, 1 King's Sorrel, Meadow Knotweed)"; 
+	description		= "Potion of dexterity (1 goblin berry, 1 king's sorrel)"; 
 };
 
 func int PC_ItPo_Dex_Condition()
@@ -1004,7 +1004,7 @@ instance PC_ItPo_Strg(C_INFO)
 	condition		= PC_ItPo_Strg_Condition;
 	information		= PC_ItPo_Strg_Info;
 	permanent		= TRUE;
-	description		= "Potion of strength (1 Dragonroot, 1 King's Sorrel, Meadow Knotweed)"; 
+	description		= "Potion of strength (1 dragonroot, 1 king's sorrel)"; 
 };
 
 func int PC_ItPo_Strg_Condition()
@@ -1046,7 +1046,7 @@ instance PC_ItPo_Speed(C_INFO)
 	condition		= PC_ItPo_Speed_Condition;
 	information		= PC_ItPo_Speed_Info;
 	permanent		= TRUE;
-	description		= "Trank der Geschwindigkeit (1 Snapperkraut, 1 Feldknöterich)";
+	description		= "Potion of speed (1 snapperweed, 1 meadow knotweed)";
 };
 
 func int PC_ItPo_Speed_Condition()
@@ -1091,7 +1091,7 @@ instance PC_Tabak_Start(C_Info)
 	condition		= PC_Tabak_Start_Condition;
 	information		= PC_Tabak_Start_Info;
 	permanent		= TRUE;
-	description		= "Tabak mischen und Stengel drehen";
+	description		= "Blend tobacco and roll reefers";
 };
 
 func int PC_Tabak_Start_Condition()
@@ -1147,7 +1147,7 @@ instance PC_ItMi_Joint(C_INFO)
 	condition		= PC_ItMi_Joint_Condition;
 	information		= PC_ItMi_Joint_Info;
 	permanent		= TRUE;
-	description		= "Sumpfkraut verarbeiten (1 Stengel)";
+	description		= "Process swampweed (1 stalk)";
 };
 
 func int PC_ItMi_Joint_Condition()
@@ -1178,7 +1178,7 @@ func void PC_ItMi_Joint_Info()
 };
 
 //*******************************************************
-//	Grünen Novizen herstellen
+//	GrÃ¼nen Novizen herstellen
 //*******************************************************
 instance PC_ItMi_Addon_Joint_01(C_INFO)
 {
@@ -1187,7 +1187,7 @@ instance PC_ItMi_Addon_Joint_01(C_INFO)
 	condition		= PC_ItMi_Addon_Joint_01_Condition;
 	information		= PC_ItMi_Addon_Joint_01_Info;
 	permanent		= TRUE;
-	description		= "Grünen Novizen herstellen (1 Stengel)";
+	description		= "Make green novice (1 reefer)";
 };
 
 func int PC_ItMi_Addon_Joint_01_Condition()
@@ -1230,7 +1230,7 @@ instance PC_ItMi_Tabak(C_INFO)
 	condition		= PC_ItMi_Tabak_Condition;
 	information		= PC_ItMi_Tabak_Info;
 	permanent		= TRUE;
-	description		= "Tabak mischen...";
+	description		= "Blend tobacco ...";
 };
 
 func int PC_ItMi_Tabak_Condition()
@@ -1253,17 +1253,17 @@ func void PC_ItMi_Tabak_Info()
 
 	if (Npc_HasItems(hero, ItFo_Honey) >= 1)
 	{
-		Info_AddChoice(PC_ItMi_Tabak, "...mit Honig", PC_ItMi_Tabak_Honey);
+		Info_AddChoice(PC_ItMi_Tabak, "... with honey", PC_ItMi_Tabak_Honey);
 	};
 
 	if (Npc_HasItems(hero, ItPl_SwampHerb) >= 1)
 	{
-		Info_AddChoice(PC_ItMi_Tabak, "...mit Sumpfkraut", PC_ItMi_Tabak_Swampherb);
+		Info_AddChoice(PC_ItMi_Tabak, "... with swampweed", PC_ItMi_Tabak_Swampherb);
 	};
 
 	if (Npc_HasItems(hero, ItPl_Mushroom_01) >= 1)
 	{
-		Info_AddChoice(PC_ItMi_Tabak, "...mit Dunkelpilz", PC_ItMi_Tabak_Mushroom_01);
+		Info_AddChoice(PC_ItMi_Tabak, "... with murky mushroom", PC_ItMi_Tabak_Mushroom_01);
 	};
 };
 
@@ -1302,7 +1302,7 @@ instance PC_ItPo_MegaDrink(C_INFO)
 	condition		= PC_ItPo_MegaDrink_Condition;
 	information		= PC_ItPo_MegaDrink_Info;
 	permanent		= TRUE;
-	description		= "Dracheneitrunk (10 Drachenei, 1 schwarze Perle, 1 Schwefel)";
+	description		= "Dragon egg potion (10 dragon eggs, 1 black pearl, 1 sulfur)";
 };
 
 func int PC_ItPo_MegaDrink_Condition()

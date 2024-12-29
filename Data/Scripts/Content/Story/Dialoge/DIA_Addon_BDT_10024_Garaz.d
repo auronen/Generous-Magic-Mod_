@@ -76,9 +76,9 @@ func int DIA_Addon_Garaz_Probleme_Condition()
 
 func void DIA_Addon_Garaz_Probleme_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Garaz_Probleme_08_00"); //Warte mal.
-	AI_Output(other, self, "DIA_Addon_Garaz_Probleme_15_01"); //Gibt's Probleme?
-	AI_Output(self, other, "DIA_Addon_Garaz_Probleme_08_02"); //Minecrawler. Jede Menge Minecrawler. Wir sind hier auf ein Nest gestoßen.
+	AI_Output(self, other, "DIA_Addon_Garaz_Probleme_08_00"); //Wait a minute.
+	AI_Output(other, self, "DIA_Addon_Garaz_Probleme_15_01"); //Is there a problem?
+	AI_Output(self, other, "DIA_Addon_Garaz_Probleme_08_02"); //Minecrawlers. Lots and lots of minecrawlers. We've run into a nest here.
 };
 
 // ---------------------------------------------------------------------
@@ -90,7 +90,7 @@ instance DIA_Addon_Garaz_Hi(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Garaz_Hi_Condition;
 	information		= DIA_Addon_Garaz_Hi_Info;
-	description		= "Warum greifen wir die Crawler nicht an? ";
+	description		= "Why don't we attack the crawlers?";
 };
 
 func int DIA_Addon_Garaz_Hi_Condition()
@@ -104,13 +104,13 @@ func int DIA_Addon_Garaz_Hi_Condition()
 
 func void DIA_Addon_Garaz_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garaz_Hi_15_00"); //Warum greifen wir die Crawler nicht an?
-	AI_Output(self, other, "DIA_Addon_Garaz_Hi_08_01"); //Hab ich auch gefragt. Aber die Garde hatte 'Wichtigeres' zu tun.
-	AI_Output(self, other, "DIA_Addon_Garaz_Hi_08_02"); //Bloodwyn es mir überlassen, dieses Problem aus der Welt zu schaffen.
-	AI_Output(other, self, "DIA_Addon_Garaz_Hi_15_03"); //Ich schätze, du hast nicht vor, dich mit den Crawlern anzulegen.
-	AI_Output(self, other, "DIA_Addon_Garaz_Hi_08_04"); //Warum sollte ich? Damit wir an das Gold kommen, das in der Höhle ist?
-	AI_Output(self, other, "DIA_Addon_Garaz_Hi_08_05"); //Das Meiste wird sich eh Bloodwyn reinziehen. Und für das bisschen, das ich kriege, riskiere ich nicht meinen Hals.
-	AI_Output(self, other, "DIA_Addon_Garaz_Hi_08_06"); //Wenn DU dich mit den Crawlern anlegen willst - lass dich nicht aufhalten. Nur - lock sie nicht alle hier rauf, ja?
+	AI_Output(other, self, "DIA_Addon_Garaz_Hi_15_00"); //Why don't we attack the crawlers?
+	AI_Output(self, other, "DIA_Addon_Garaz_Hi_08_01"); //I asked that, too. But the guards had 'more important things' to do.
+	AI_Output(self, other, "DIA_Addon_Garaz_Hi_08_02"); //Bloodwyn has left it to me to remove this problem.
+	AI_Output(other, self, "DIA_Addon_Garaz_Hi_15_03"); //I don't suppose you're planning to fight the crawlers.
+	AI_Output(self, other, "DIA_Addon_Garaz_Hi_08_04"); //Why should I? So that we can get at the gold in the cave?
+	AI_Output(self, other, "DIA_Addon_Garaz_Hi_08_05"); //Bloodwyn will just take most of it for himself anyway. And I'm not risking my neck for the little bit I'd get.
+	AI_Output(self, other, "DIA_Addon_Garaz_Hi_08_06"); //If YOU want to fight the crawlers - don't let me stop you. Only - don't lure them all out here, okay?
 };
 
 // ---------------------------------------------------------------------
@@ -122,7 +122,7 @@ instance DIA_Addon_Garaz_Bloodwyn(C_INFO)
 	nr				= 8;
 	condition		= DIA_Addon_Garaz_Bloodwyn_Condition;
 	information		= DIA_Addon_Garaz_Bloodwyn_Info;
-	description		= "Kannst du mir noch was über Bloodwyn sagen?";
+	description		= "Can you tell me more about Bloodwyn?";
 };
 
 func int DIA_Addon_Garaz_Bloodwyn_Condition()
@@ -137,12 +137,12 @@ func int DIA_Addon_Garaz_Bloodwyn_Condition()
 
 func void DIA_Addon_Garaz_Bloodwyn_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garaz_Bloodwyn_15_00"); //Kannst du mir noch was über Bloodwyn sagen?
-	AI_Output(self, other, "DIA_Addon_Garaz_Bloodwyn_08_01"); //Ja. Er ist ein goldgieriger Bastard. Er kontrolliert jede neue Ader und jeden Klumpen.
-	AI_Output(self, other, "DIA_Addon_Garaz_Bloodwyn_08_02"); //Für Gold ist ihm kein Weg zu weit. Aber wir sind ihm scheißegal.
-	AI_Output(other, self, "DIA_Addon_Garaz_Bloodwyn_15_03"); //Und sonst?
-	AI_Output(self, other, "DIA_Addon_Garaz_Bloodwyn_08_04"); //Er hält sich für den Größten und kann's nicht leiden, wenn jemand besser da steht als er. Okay - ich würde trotzdem nicht gegen ihn antreten wollen.
-	AI_Output(self, other, "DIA_Addon_Garaz_Bloodwyn_08_05"); //Geh ihm am Besten aus dem Weg und reize ihn nicht - es sei denn, du willst, dass er wütend wird und seine Beherrschung verliert ...
+	AI_Output(other, self, "DIA_Addon_Garaz_Bloodwyn_15_00"); //Can you tell me more about Bloodwyn?
+	AI_Output(self, other, "DIA_Addon_Garaz_Bloodwyn_08_01"); //Yes. He's a gold-hungry bastard. He inspects every new vein and every nugget.
+	AI_Output(self, other, "DIA_Addon_Garaz_Bloodwyn_08_02"); //He can't go too far out of his way for gold. But we don't mean shit to him.
+	AI_Output(other, self, "DIA_Addon_Garaz_Bloodwyn_15_03"); //And otherwise?
+	AI_Output(self, other, "DIA_Addon_Garaz_Bloodwyn_08_04"); //He thinks he's the greatest and can't stand it if someone is better off than he is. Okay - I wouldn't go up against him, even so.
+	AI_Output(self, other, "DIA_Addon_Garaz_Bloodwyn_08_05"); //Just stay out of his way and don't provoke him - unless you want him to get furious and lose control...
 
 	B_LogEntry(Topic_Addon_Tempel, Topic_Addon_Tempel_1);
 	Log_AddEntry(Topic_Addon_Tempel, Topic_Addon_Tempel_2);
@@ -157,7 +157,7 @@ instance DIA_Addon_Garaz_Sieg(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Garaz_Sieg_Condition;
 	information		= DIA_Addon_Garaz_Sieg_Info;
-	description		= "Die Crawler sind erledigt.";
+	description		= "The crawlers are history.";
 };
 
 func int DIA_Addon_Garaz_Sieg_Condition()
@@ -171,9 +171,9 @@ func int DIA_Addon_Garaz_Sieg_Condition()
 
 func void DIA_Addon_Garaz_Sieg_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garaz_Sieg_15_00"); //So, das sollte es gewesen sein. Die Crawler sind erledigt.
-	AI_Output(self, other, "DIA_Addon_Garaz_Sieg_08_01"); //Bloodwyn ist schon auf dem Weg. Das ist doch das, was du wolltest, oder?
-	AI_Output(self, other, "DIA_Addon_Garaz_Sieg_08_02"); //Ich meine, du hast die Crawler abgemetzelt, damit Bloodwyn herkommt. Also, was immer du vorhast, tu es JETZT.
+	AI_Output(other, self, "DIA_Addon_Garaz_Sieg_15_00"); //So, that should be it. The crawlers are finished.
+	AI_Output(self, other, "DIA_Addon_Garaz_Sieg_08_01"); //Bloodwyn is already on the way. That's what you wanted, isn't it?
+	AI_Output(self, other, "DIA_Addon_Garaz_Sieg_08_02"); //I mean, you slaughtered the crawlers so Bloodwyn would come here. So, whatever you're planning, do it NOW.
 
 	B_StartOtherRoutine(Bloodwyn, "GOLD");
 };
@@ -201,8 +201,8 @@ func int DIA_Addon_Garaz_Blood_Condition()
 
 func void DIA_Addon_Garaz_Blood_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Garaz_Blood_08_00"); //Du hast es diesem Penner ja ordentlich gezeigt. Saubere Leistung.
-	AI_Output(self, other, "DIA_Addon_Garaz_Blood_08_01"); //Dann werde ich mich mal in der Höhle umsehen.
+	AI_Output(self, other, "DIA_Addon_Garaz_Blood_08_00"); //You sure showed that bum. Nice work.
+	AI_Output(self, other, "DIA_Addon_Garaz_Blood_08_01"); //Then I'll take a look around the cave.
 
 	B_GivePlayerXP(XP_Ambient);
 	AI_StopProcessInfos(self);
@@ -233,7 +233,7 @@ func int DIA_Addon_Garaz_Gold_Condition()
 
 func void DIA_Addon_Garaz_Gold_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Garaz_Gold_08_00"); //Wow, Mann, hier gibt's echt 'ne Menge Gold.
-	AI_Output(self, other, "DIA_Addon_Garaz_Gold_08_01"); //Um an die Brocken ganz oben zu kommen, bräuchten wir schon eine Leiter.
-	AI_Output(self, other, "DIA_Addon_Garaz_Gold_08_02"); //Aber seit dem Fall der Barriere benutzt niemand mehr Leitern ... ist eigentlich sehr schade ...
+	AI_Output(self, other, "DIA_Addon_Garaz_Gold_08_00"); //Wow, man, there sure is a lot of gold here.
+	AI_Output(self, other, "DIA_Addon_Garaz_Gold_08_01"); //To get to the chunks up there, we'd actually need a ladder.
+	AI_Output(self, other, "DIA_Addon_Garaz_Gold_08_02"); //But since the fall of the Barrier, nobody's been using ladders any more... it's really too bad...
 };

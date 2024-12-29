@@ -1,7 +1,7 @@
 instance BDT_1002_Bandit_L(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Herumtreiber";
+	name							= "Loafer";
 	npctype							= NPCTYPE_AMBIENT;
 	guild							= GIL_BDT;
 	flags							= 0; // NPC_FLAG_IMMORTAL oder 0
@@ -24,7 +24,7 @@ instance BDT_1002_Bandit_L(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 30); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 30); // Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

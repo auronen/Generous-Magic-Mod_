@@ -31,7 +31,7 @@ instance DIA_Addon_Pardos_NW_Hi(C_INFO)
 	condition		= DIA_Addon_Pardos_NW_Hi_Condition;
 	information		= DIA_Addon_Pardos_NW_Hi_Info;
 	permanent		= TRUE;
-	description		= "Alles klar bei dir?";
+	description		= "How's it going with you?";
 };
 
 func int DIA_Addon_Pardos_NW_Hi_Condition()
@@ -41,9 +41,9 @@ func int DIA_Addon_Pardos_NW_Hi_Condition()
 
 func void DIA_Addon_Pardos_NW_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Pardos_NW_Hi_15_00"); //Alles klar bei dir?
-	AI_Output(self, other, "DIA_Addon_Pardos_NW_Hi_03_01"); //(grinst) Hey, mein Retter. Danke noch mal, jetzt kann ich mich den ganzen Tag ausruhen.
-	AI_Output(other, self, "DIA_Addon_Pardos_NW_Hi_15_02"); //Alles klar, ich zieh dann mal weiter.
+	AI_Output(other, self, "DIA_Addon_Pardos_NW_Hi_15_00"); //How's it going with you?
+	AI_Output(self, other, "DIA_Addon_Pardos_NW_Hi_03_01"); //(grins) Hey, if it isn't my rescuer. Thanks again, now I can just relax all day.
+	AI_Output(other, self, "DIA_Addon_Pardos_NW_Hi_15_02"); //All right, I'll be moving on, then.
 };
 
 // ************************************************************

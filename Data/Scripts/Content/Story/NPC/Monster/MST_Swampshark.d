@@ -5,7 +5,7 @@
 prototype Mst_Default_Swampshark(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Sumpfhai";
+	name							= "Swampshark";
 	guild							= GIL_SWAMPSHARK;
 	level							= 24;
 

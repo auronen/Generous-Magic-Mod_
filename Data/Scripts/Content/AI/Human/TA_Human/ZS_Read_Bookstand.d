@@ -1,5 +1,5 @@
 // ***********************
-// NSC benutzt Buchst‰nder
+// NSC benutzt Buchst√§nder
 // ***********************
 
 func void ZS_Read_Bookstand()

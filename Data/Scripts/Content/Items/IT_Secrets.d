@@ -4,7 +4,7 @@
 //****************************************************************************
 instance ItSe_ErzFisch(C_Item)
 {
-	name						= "Kugeliger Fisch";
+	name						= "Ball-shaped Fish";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -20,7 +20,7 @@ instance ItSe_ErzFisch(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Irgendwas ist in diesem Fisch versteckt";	count[2] = 0;
+	text[2]						= "Something is hidden inside this fish.";	count[2] = 0;
 };
 
 func void Use_ErzFisch()
@@ -34,7 +34,7 @@ func void Use_ErzFisch()
 //****************************************************************************
 instance ItSe_GoldFisch(C_Item)
 {
-	name						= "Schwerer Fisch";
+	name						= "Heavy Fish";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -50,7 +50,7 @@ instance ItSe_GoldFisch(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Irgendwas ist in diesem Fisch versteckt";	count[2] = 0;
+	text[2]						= "Something is hidden inside this fish.";	count[2] = 0;
 };
 
 func void Use_GoldFisch()
@@ -64,7 +64,7 @@ func void Use_GoldFisch()
 //****************************************************************************
 instance ItSe_Ringfisch(C_Item)
 {
-	name						= "Kleiner Fisch";
+	name						= "Small Fish";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -80,7 +80,7 @@ instance ItSe_Ringfisch(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Irgendwas ist in diesem Fisch versteckt";	count[2] = 0;
+	text[2]						= "Something is hidden inside this fish.";	count[2] = 0;
 };
 
 func void Use_Ringfisch()
@@ -94,7 +94,7 @@ func void Use_Ringfisch()
 //****************************************************************************
 instance ItSe_LockpickFisch(C_Item)
 {
-	name						= "Leichter Fisch";
+	name						= "Light Fish";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -110,7 +110,7 @@ instance ItSe_LockpickFisch(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Irgendwas ist in diesem Fisch versteckt";	count[2] = 0;
+	text[2]						= "Something is hidden inside this fish.";	count[2] = 0;
 };
 
 func void Use_LockpickFisch()
@@ -126,7 +126,7 @@ func void Use_LockpickFisch()
 // ------------- 25 Gold -----------------------
 instance ItSe_GoldPocket25(C_Item)
 {
-	name						= "Lederbeutel";
+	name						= "Leather Satchel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -139,10 +139,10 @@ instance ItSe_GoldPocket25(C_Item)
 
 	value						= 25;
 
-	description					= "Ein Lederbeutel";
+	description					= "A leather bag.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein paar Münzen klimpern darin";				count[2] = 0;
+	text[2]						= "There are a few coins jingling inside.";				count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -156,7 +156,7 @@ func void GoldPocket25()
 // ------------- 50 Gold -----------------------
 instance ItSe_GoldPocket50(C_Item)
 {
-	name						= "Lederbeutel";
+	name						= "Leather Satchel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -169,10 +169,10 @@ instance ItSe_GoldPocket50(C_Item)
 
 	value						= 50;
 
-	description					= "Ein Lederbeutel";
+	description					= "A leather bag.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Beutel ist voller Münzen";				count[2] = 0;
+	text[2]						= "The bag is full of coins.";				count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -186,7 +186,7 @@ func void GoldPocket50()
 // ------------- 100 Gold -----------------------
 instance ItSe_GoldPocket100(C_Item)
 {
-	name						= "Lederbeutel";
+	name						= "Leather Satchel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -199,11 +199,11 @@ instance ItSe_GoldPocket100(C_Item)
 
 	value						= 100;
 
-	description					= "Ein Lederbeutel";
+	description					= "A leather bag.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein schwerer Beutel";						count[2] = 0;
-	text[3]						= "gefüllt mit goldenen Münzen";				count[3] = 0;
+	text[2]						= "A heavy bag full";						count[2] = 0;
+	text[3]						= "of gold coins.";				count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -216,7 +216,7 @@ func void GoldPocket100()
 // ------------- Hannas Beutel -----------------------
 instance ItSe_HannasBeutel(C_Item)
 {
-	name						= "Lederbeutel";
+	name						= "Leather Satchel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -229,10 +229,10 @@ instance ItSe_HannasBeutel(C_Item)
 
 	value						= 100;
 
-	description					= "Ein Lederbeutel";
+	description					= "A leather bag.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Hanna hat ihn mir gegeben";					count[2] = 0;
+	text[2]						= "Hanna gave it to me.";					count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;

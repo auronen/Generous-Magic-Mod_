@@ -1,5 +1,5 @@
 //****************************************************************************
-//			Schlüssel für Xardas Truhe
+//			SchlÃ¼ssel fÃ¼r Xardas Truhe
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Xardas(C_Item)
@@ -17,17 +17,17 @@ instance ItKe_Xardas(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein Truhenschlüssel";						count[2] = 0;
-	text[3]						= "von Xardas";									count[3] = 0;
+	text[2]						= "A key to a chest";						count[2] = 0;
+	text[3]						= "belonging to Xardas.";									count[3] = 0;
 };
 
 //**********************************************************************************
-//	Canthars Kompromittierender Brief für Sarah die Händlerin
+//	Canthars Kompromittierender Brief fÃ¼r Sarah die HÃ¤ndlerin
 // ----------------------------------------------------------------------------------
 
 instance ItWr_Canthars_KomproBrief_MIS(C_Item)
 {
-	name						= "Brief";
+	name						= "Letter";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -40,7 +40,7 @@ instance ItWr_Canthars_KomproBrief_MIS(C_Item)
 
 	value						= 0;
 
-	description					= "Canthars Brief für die Händlerin Sarah";
+	description					= "Canthar's letter to the merchant Sarah.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -49,17 +49,17 @@ instance ItWr_Canthars_KomproBrief_MIS(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string Canthars_KomproBrief_1 = " Letzte Ermahnung";
-const string Canthars_KomproBrief_2 = " Ich habe dir schon mehrere Male auf";
-const string Canthars_KomproBrief_3 = " liebenswürdigste Weise mitgeteilt,";
-const string Canthars_KomproBrief_4 = " daß ich die Waffen, die ich bei dir";
-const string Canthars_KomproBrief_5 = " vor einer Woche bestellt habe, dringend";
-const string Canthars_KomproBrief_6 = " brauche.";
-const string Canthars_KomproBrief_7 = " Wenn ich nicht bald, etwas von dir höre,";
-const string Canthars_KomproBrief_8 = " Sarah, dann sehe ich mich gezwungen,";
-const string Canthars_KomproBrief_9 = " andere Seiten auf zu ziehen. Ich hoffe,";
-const string Canthars_KomproBrief_10 = " wir verstehen uns!!!!!!!!!!!!";
-const string Canthars_KomproBrief_11 = "     Onar";
+const string Canthars_KomproBrief_1 = " Last Warning";
+const string Canthars_KomproBrief_2 = " I have already reminded you several";
+const string Canthars_KomproBrief_3 = " times in the friendliest";
+const string Canthars_KomproBrief_4 = " terms that I urgently require the";
+const string Canthars_KomproBrief_5 = " weapons I ordered from you a week";
+const string Canthars_KomproBrief_6 = " ago.";
+const string Canthars_KomproBrief_7 = " If I don't hear from you very soon,";
+const string Canthars_KomproBrief_8 = " Sarah, I will be forced to change my";
+const string Canthars_KomproBrief_9 = " attitude to you. I hope we understand";
+const string Canthars_KomproBrief_10 = " each other!!!!!!!!!!!!";
+const string Canthars_KomproBrief_11 = " Onar";
 func void Use_Canthars_KomproBrief()
 {
 	var int nDocID;
@@ -96,7 +96,7 @@ func void Use_Canthars_KomproBrief()
 //****************************************************************************
 instance ItMw_2h_Rod(C_Item)
 {
-	name						= "Rod's Zweihänder";
+	name						= "Rod's Two-Hander";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_2HD_SWD;
@@ -127,7 +127,7 @@ instance ItMw_2h_Rod(C_Item)
 //***************
 instance ItMi_CoragonsSilber(C_Item)
 {
-	name						= "Coragons Silber";
+	name						= "Coragon's Silver";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -147,11 +147,11 @@ instance ItMi_CoragonsSilber(C_Item)
 };
 
 //*******************************
-// Päckchen für Thekla von Sagitta
+// PÃ¤ckchen fÃ¼r Thekla von Sagitta
 //*******************************
 instance ItMi_TheklasPaket(C_Item)
 {
-	name						= "Theklas Päckchen";
+	name						= "Thekla's Parcel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -188,7 +188,7 @@ func void Use_TheklasPacket()
 //*******************************
 instance ItMi_MariasGoldPlate(C_Item)
 {
-	name						= "Schwerer Goldteller";
+	name						= "Heavy Gold Plate";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -201,8 +201,8 @@ instance ItMi_MariasGoldPlate(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Auf der Teller sind die Namen";				count[2] = 0;
-	text[3]						= "Onar und Maria eingraviert.";				count[3] = 0;
+	text[2]						= "The plate is engraved with the";				count[2] = 0;
+	text[3]						= "names Onar and Maria.";				count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -230,7 +230,7 @@ instance ItRi_ValentinosRing(C_Item) // bei Cassia als Belohnung
 
 	value						= Value_Ri_ProtEdge;
 
-	description					= "Valentinos Ring";
+	description					= "Valentino's Ring";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Edge;								count[2] = Ri_ProtEdge;
@@ -255,7 +255,7 @@ func void UnEquip_ValentinosRing()
 };
 
 //****************************************************************************
-//			Schlüssel für Dexter Truhe
+//			SchlÃ¼ssel fÃ¼r Dexter Truhe
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Dexter(C_Item)
@@ -273,17 +273,17 @@ instance ItKe_Dexter(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein Truhenschlüssel";						count[2] = 0;
-	text[3]						= "von Dexter";									count[3] = 0;
+	text[2]						= "A key to a chest";						count[2] = 0;
+	text[3]						= "belonging to Dexter.";									count[3] = 0;
 };
 
 //**********************************************************************************
-//	Constantinos Kräuterliste
+//	Constantinos KrÃ¤uterliste
 // ----------------------------------------------------------------------------------
 
 instance ItWr_Kraeuterliste(C_Item)
 {
-	name						= "Liste";
+	name						= "List";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -296,7 +296,7 @@ instance ItWr_Kraeuterliste(C_Item)
 
 	value						= 0;
 
-	description					= "Constantinos Kräuterliste";
+	description					= "Constantino's list of herbs.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -305,20 +305,20 @@ instance ItWr_Kraeuterliste(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string Kraeuterliste_1 = "Alchemistische Kräuter";
-const string Kraeuterliste_2 = "Heilpflanze";
-const string Kraeuterliste_3 = "Heilkraut";
-const string Kraeuterliste_4 = "Heilwurzel";
-const string Kraeuterliste_5 = "Feuernessel";
-const string Kraeuterliste_6 = "Feuerkraut";
-const string Kraeuterliste_7 = "Feuerwurzel";
-const string Kraeuterliste_8 = "Goblin Beere";
-const string Kraeuterliste_9 = "Drachenwurzel";
-const string Kraeuterliste_10 = "Snapperkraut";
-const string Kraeuterliste_11 = "Feldknöterich";
-const string Kraeuterliste_12 = "Kronstöckl";
-const string Kraeuterliste_13 = "Anmerkung: Lass dir doch von einem Lehrlings - Anwärter die Pflanzen bringen, dann weißt du ob er was taugt. ";
-const string Kraeuterliste_14 = "Gruß, Zuris";
+const string Kraeuterliste_1 = "Alchemical Herbs";
+const string Kraeuterliste_2 = "Healing Plant";
+const string Kraeuterliste_3 = "Healing Herb";
+const string Kraeuterliste_4 = "Healing Root";
+const string Kraeuterliste_5 = "Fire Nettle";
+const string Kraeuterliste_6 = "Fireweed";
+const string Kraeuterliste_7 = "Fire Root";
+const string Kraeuterliste_8 = "Goblin Berry";
+const string Kraeuterliste_9 = "Dragonroot";
+const string Kraeuterliste_10 = "Snapperweed";
+const string Kraeuterliste_11 = "Meadow Knotweed";
+const string Kraeuterliste_12 = "King's Sorrel";
+const string Kraeuterliste_13 = "Note: Let a potential apprentice fetch the plants for you. That way you'll know if he's any good. ";
+const string Kraeuterliste_14 = "Regards, Zuris.";
 func void Use_Kraeuterliste()
 {
 	var int nDocID;
@@ -347,7 +347,7 @@ func void Use_Kraeuterliste()
 				Doc_PrintLines	(nDocID, 0, Kraeuterliste_13);
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, Kraeuterliste_14);
-				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 
 	Doc_Show(nDocID);
 };
@@ -358,7 +358,7 @@ func void Use_Kraeuterliste()
 
 instance ItWr_ManaRezept(C_Item)
 {
-	name						= "Rezept";
+	name						= "Recipe";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -371,7 +371,7 @@ instance ItWr_ManaRezept(C_Item)
 
 	value						= 20;
 
-	description					= "Rezept der magischen Essenz";
+	description					= "Recipe for magical essence.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -380,14 +380,14 @@ instance ItWr_ManaRezept(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string ManaRezept_1 = "Magische Tränke";
-const string ManaRezept_2 = "Zur Herstellung von Tränken der magischen Kraft, benötigt der kundige Alchemist:";
-const string ManaRezept_3 = "Feuernessel";
-const string ManaRezept_4 = "Feuerkraut";
-const string ManaRezept_5 = "Feuerwurzel";
-const string ManaRezept_6 = "Dazu braucht er jeweils eine Pflanze ";
-const string ManaRezept_7 = "Feldknöterich";
-const string ManaRezept_8 = "Meister Neoras ";
+const string ManaRezept_1 = "Magic Potions";
+const string ManaRezept_2 = "To brew magic potions, a skilled alchemist needs:";
+const string ManaRezept_3 = "Fire Nettle";
+const string ManaRezept_4 = "Fireweed";
+const string ManaRezept_5 = "Fire Root";
+const string ManaRezept_6 = "He also requires a plant of";
+const string ManaRezept_7 = "Meadow Knotweed";
+const string ManaRezept_8 = "Master Neoras";
 func void Use_ManaRezept()
 {
 	var int nDocID;
@@ -410,7 +410,7 @@ func void Use_ManaRezept()
 				Doc_PrintLine	(nDocID, 0, ManaRezept_7);
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, ManaRezept_8);
-				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 
 	Doc_Show(nDocID);
 };
@@ -419,7 +419,7 @@ func void Use_ManaRezept()
 
 instance ItWr_Passierschein(C_Item)
 {
-	name						= "Passierschein";
+	name						= "Pass";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -436,17 +436,17 @@ instance ItWr_Passierschein(C_Item)
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Mit diesem Schein";							count[3] = 0;
-	text[4]						= "komme ich an den Stadtwachen vorbei.";		count[4] = 0;
+	text[3]						= "These papers permit me to";							count[3] = 0;
+	text[4]						= "pass the city guards.";		count[4] = 0;
 };
 
-const string Passierschein_1 = "     Passierschein";
-const string Passierschein_2 = "         Khorinis";
-const string Passierschein_3 = " Diese Urkunde berechtigt seinen";
-const string Passierschein_4 = " Besitzer, sich auf unbestimmte Zeit in den";
-const string Passierschein_5 = " unteren Vierteln von Khorinis aufzuhalten.";
-const string Passierschein_6 = "     Larius";
-const string Passierschein_7 = "     königlicher Statthalter";
+const string Passierschein_1 = " Pass";
+const string Passierschein_2 = " Khorinis ";
+const string Passierschein_3 = " This document entitles the";
+const string Passierschein_4 = " bearer to move freely in the lower areas";
+const string Passierschein_5 = " of Khorinis for an unlimited time period.";
+const string Passierschein_6 = " Larius";
+const string Passierschein_7 = " the King's governor";
 func void UsePassierschein()
 {
 	var int nDocID;
@@ -479,12 +479,12 @@ func void UsePassierschein()
 };
 
 //****************************************************************************
-//				Kraut Paket für MIS_ANDRE_WAREHOUSE
+//				Kraut Paket fÃ¼r MIS_ANDRE_WAREHOUSE
 //			---------------------------------------------
 //****************************************************************************
 instance ItMi_HerbPaket(C_Item)
 {
-	name						= "Kraut- Paket";
+	name						= "Parcel of Weed";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -497,19 +497,19 @@ instance ItMi_HerbPaket(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein schweres, klebriges Paket,";				count[2] = 0;
-	text[3]						= "das nach Sumpfkraut stinkt";					count[3] = 0;
+	text[2]						= "A heavy, sticky package that";				count[2] = 0;
+	text[3]						= "stinks of swampweed.";					count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = 200;
 };
 
 //****************************************************************************
-//				Lagerhaus Schlüssel für MIS_ANDRE_WAREHOUSE
+//				Lagerhaus SchlÃ¼ssel fÃ¼r MIS_ANDRE_WAREHOUSE
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Storage(C_Item)
 {
-	name						= "Lagerhaus- Schlüssel";
+	name						= "Storehouse Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -522,8 +522,8 @@ instance ItKe_Storage(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel vom";							count[2] = 0;
-	text[3]						= "Lagerhaus am Hafen";							count[3] = 0;
+	text[2]						= "The key to the harbor";							count[2] = 0;
+	text[3]						= "storehouse.";							count[3] = 0;
 };
 
 const int HP_Hering = 20;
@@ -533,7 +533,7 @@ const int HP_Hering = 20;
 //****************************************************************************
 instance ItFo_SmellyFish(C_Item)
 {
-	name						= "Hering";
+	name						= "Herring";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -546,7 +546,7 @@ instance ItFo_SmellyFish(C_Item)
 
 	value						= 0;
 
-	description					= "Ein Hering";
+	description					= "A herring.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Bonus_HP;								count[1] = HP_Hering;
 	text[2]						= "";											count[2] = 0;
@@ -566,7 +566,7 @@ func void Use_SmellyFish()
 //****************************************************************************
 instance ItFo_HalvorFish_MIS(C_Item)
 {
-	name						= "Seltsamer Fisch";
+	name						= "Strange Fish";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -579,11 +579,11 @@ instance ItFo_HalvorFish_MIS(C_Item)
 
 	value						= 0;
 
-	description					= "Seltsam aussehender Fisch";
+	description					= "A weird-looking fish.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Irgendwas stimmt nicht mit diesem Fisch.";	count[2] = 0;
-	text[3]						= "Sieht aus, als wäre er zugenäht...";			count[3] = 0;
+	text[2]						= "There's something wrong with this fish.";	count[2] = 0;
+	text[3]						= "Looks like it's been sewn up ...";			count[3] = 0;
 };
 
 func void Use_HalvorFish()
@@ -598,7 +598,7 @@ func void Use_HalvorFish()
 //****************************************************************************
 instance ItWr_HalvorMessage(C_Item)
 {
-	name						= "Stinkender Zettel";
+	name						= "Stinking Note";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -614,13 +614,13 @@ instance ItWr_HalvorMessage(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Dieser Zettel war in einem Fisch versteckt";	count[2] = 0;
+	text[2]						= "This note was hidden inside a fish.";	count[2] = 0;
 };
 
-const string HalvorMessage_1 = " Haltet euren Hintern unten Jungs! ";
-const string HalvorMessage_2 = " Die Miliz ist aufmerksam geworden.";
-const string HalvorMessage_3 = " Keine Überfälle mehr, bis ich mich wieder melde!";
-const string HalvorMessage_4 = "     Halvor";
+const string HalvorMessage_1 = " Keep your heads low, guys! ";
+const string HalvorMessage_2 = " The militia's getting suspicious.";
+const string HalvorMessage_3 = " Don't do anything until you hear from me again!";
+const string HalvorMessage_4 = " Halvor";
 func void UseHalvorMessage()
 {
 	Knows_Halvor = TRUE;
@@ -684,7 +684,7 @@ func void Use_HalvorFish()
 
 instance ItMw_AlriksSword_Mis(C_Item)
 {
-	name						= "Alrik´s Schwert";
+	name						= "Alrik's Sword";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_MISSION | ITEM_SWD;
@@ -729,7 +729,7 @@ func void UnEquip_AlriksSword()
 //****************************************************************************
 instance ItWr_VatrasMessage(C_Item)
 {
-	name						= "Versiegelte Botschaft";
+	name						= "Sealed Message";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -745,15 +745,15 @@ instance ItWr_VatrasMessage(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Eine Botschaft von Vatras";					count[2] = 0;
-	text[3]						= "für die Magier des Feuers";					count[3] = 0;
+	text[2]						= "A message from Vatras";					count[2] = 0;
+	text[3]						= "for the Fire Mages.";					count[3] = 0;
 };
 
-const string VatrasMessage_1 = "Werter Isgaroth,";
-const string VatrasMessage_2 = "Ich spüre mehr und mehr die Anwesenheit einer anderen Macht.";
-const string VatrasMessage_3 = "Eine Macht, die uns nicht unbekannt ist. Mag es sein, das Diener Beliars nahe sind?";
-const string VatrasMessage_4 = "Möglich das ich irre, aber ich denke es wäre angebracht, das Vater Pyrokar sich der Angelegenheit annimmt. ";
-const string VatrasMessage_5 = "Mögen unsere Gebete erhört werden.";
+const string VatrasMessage_1 = "Dear Isgaroth,";
+const string VatrasMessage_2 = "I sense the ever-growing presence of another force.";
+const string VatrasMessage_3 = "It's a force so far unknown to us. Can it be that there are vassals of Beliar near?";
+const string VatrasMessage_4 = "I could be mistaken, but I believe Father Pyrokar would be wise to take the matter in hand. ";
+const string VatrasMessage_5 = "May our prayers be answered.";
 const string VatrasMessage_6 = "Vatras";
 func void UseVatrasMessage()
 {
@@ -778,12 +778,12 @@ func void UseVatrasMessage()
 
 //****************************************************************************
 //				Botschaft von Vatras an die Magier des Feuers
-//				Das Siegel wurde geöffnet
+//				Das Siegel wurde geÃ¶ffnet
 //			---------------------------------------------
 //****************************************************************************
 instance ItWr_VatrasMessage_Open(C_Item)
 {
-	name						= "Botschaft";
+	name						= "Message";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -799,16 +799,16 @@ instance ItWr_VatrasMessage_Open(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Eine Botschaft von Vatras";					count[2] = 0;
-	text[3]						= "für die Magier des Feuers";					count[3] = 0;
-	text[4]						= "Das Siegel ist gebrochen";					count[4] = 0;
+	text[2]						= "A message from Vatras";					count[2] = 0;
+	text[3]						= "for the Fire Mages.";					count[3] = 0;
+	text[4]						= "The seal has been broken.";					count[4] = 0;
 };
 
-const string VatrasMessageOpen_1 = "Werter Isgaroth,";
-const string VatrasMessageOpen_2 = "Ich spüre mehr und mehr die Anwesenheit einer anderen Macht.";
-const string VatrasMessageOpen_3 = "Eine Macht, die uns nicht unbekannt ist. Mag es sein, das Diener Beliars nahe sind?";
-const string VatrasMessageOpen_4 = "Möglich das ich irre, aber ich denke es wäre angebracht, das Vater Pyrokar sich der Angelegenheit annimmt. ";
-const string VatrasMessageOpen_5 = "Mögen unsere Gebete erhört werden.";
+const string VatrasMessageOpen_1 = "Dear Isgaroth,";
+const string VatrasMessageOpen_2 = "I sense the ever-growing presence of another force.";
+const string VatrasMessageOpen_3 = "It's a force so far unknown to us. Can it be that there are vassals of Beliar near?";
+const string VatrasMessageOpen_4 = "I could be mistaken, but I believe Father Pyrokar would be wise to take the matter in hand. ";
+const string VatrasMessageOpen_5 = "May our prayers be answered.";
 const string VatrasMessageOpen_6 = "Vatras";
 func void UseVatrasMessageOpen()
 {
@@ -831,11 +831,11 @@ func void UseVatrasMessageOpen()
 };
 
 //****************************************************
-//		Hotelschlüssel
+//		HotelschlÃ¼ssel
 //****************************************************
 instance ItKe_Hotel(C_Item)
 {
-	name						= "Zimmerschlüssel";
+	name						= "Room Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -848,16 +848,16 @@ instance ItKe_Hotel(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Zimmerschlüssel";						count[2] = 0;
-	text[3]						= "vom Hotel";									count[3] = 0;
+	text[2]						= "The key to the hotel";						count[2] = 0;
+	text[3]						= "room.";									count[3] = 0;
 };
 
 //****************************************************
-//		Schlüssel zur Diebesgilde
+//		SchlÃ¼ssel zur Diebesgilde
 //****************************************************
 instance ItKe_ThiefGuildKey_MIS(C_Item)
 {
-	name						= "verrosteter Schlüssel";
+	name						= "Rusty Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -870,15 +870,15 @@ instance ItKe_ThiefGuildKey_MIS(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Meersalz hat diesen Schlüssel zerfressen";	count[2] = 0;
+	text[2]						= "This key has been damaged by salty seawater.";	count[2] = 0;
 };
 
 //****************************************************
-//		Schlüssel zur Diebesgilde vom Hotel
+//		SchlÃ¼ssel zur Diebesgilde vom Hotel
 //****************************************************
 instance ItKe_ThiefGuildKey_Hotel_MIS(C_Item)
 {
-	name						= "Rostiger Schlüssel";
+	name						= "Rusty Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -891,11 +891,11 @@ instance ItKe_ThiefGuildKey_Hotel_MIS(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Kellerschlüssel vom Hotel";				count[2] = 0;
+	text[2]						= "The key to the hotel cellar.";				count[2] = 0;
 };
 
 //****************************************************
-//		Pfortenschlüssel Tempel von Innos
+//		PfortenschlÃ¼ssel Tempel von Innos
 //****************************************************
 instance ItKe_Innos_MIS(C_Item)
 {
@@ -912,12 +912,12 @@ instance ItKe_Innos_MIS(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel zur Pforte";					count[2] = 0;
-	text[3]						= "des Innos Klosters";							count[3] = 0;
+	text[2]						= "The key to the portal of the";					count[2] = 0;
+	text[3]						= "monastery of Innos.";							count[3] = 0;
 };
 
 //****************************************************************************
-//			Schlüssel Vorratskammer Kloster
+//			SchlÃ¼ssel Vorratskammer Kloster
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_KlosterSchatz(C_Item)
@@ -935,12 +935,12 @@ instance ItKe_KlosterSchatz(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel zur ";							count[2] = 0;
-	text[3]						= "Schatzkammer im Kloster";					count[3] = 0;
+	text[2]						= "The key to the monastery's";							count[2] = 0;
+	text[3]						= "treasury.";					count[3] = 0;
 };
 
 //****************************************************************************
-//			Schlüssel Vorratskammer Kloster
+//			SchlÃ¼ssel Vorratskammer Kloster
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_KlosterStore(C_Item)
@@ -958,12 +958,12 @@ instance ItKe_KlosterStore(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel zur ";							count[2] = 0;
-	text[3]						= "Vorratskammer im Kloster";					count[3] = 0;
+	text[2]						= "The key to the monastery's";							count[2] = 0;
+	text[3]						= "larder.";					count[3] = 0;
 };
 
 //****************************************************************************
-//			Schlüssel Schlafgemach Player
+//			SchlÃ¼ssel Schlafgemach Player
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_KDFPlayer(C_Item)
@@ -981,12 +981,12 @@ instance ItKe_KDFPlayer(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel zum ";							count[2] = 0;
-	text[3]						= "Gemach im Kloster";							count[3] = 0;
+	text[2]						= "The key to the chamber";							count[2] = 0;
+	text[3]						= "in the monastery.";							count[3] = 0;
 };
 
 //****************************************************************************
-//			Schlüssel Bibliothek Kloster
+//			SchlÃ¼ssel Bibliothek Kloster
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_KlosterBibliothek(C_Item)
@@ -1004,8 +1004,8 @@ instance ItKe_KlosterBibliothek(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel zur ";							count[2] = 0;
-	text[3]						= "Bibliothek im Kloster";						count[3] = 0;
+	text[2]						= "The key to the monastery's";							count[2] = 0;
+	text[3]						= "library.";						count[3] = 0;
 };
 
 //****************************************************************************
@@ -1014,7 +1014,7 @@ instance ItKe_KlosterBibliothek(C_Item)
 //****************************************************************************
 instance ItFo_Schafswurst(C_Item)
 {
-	name						= "Schafswurst";
+	name						= "Sheep Sausage";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -1060,7 +1060,7 @@ instance ItPo_Perm_LittleMana(C_Item)
 
 	value						= 150;
 
-	description					= "Essenz des Geistes";
+	description					= "Essence of Spirit";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Bonus_ManaMax;							count[1] = 3;
 	text[2]						= "";											count[2] = 0;
@@ -1076,11 +1076,11 @@ func void UseItPo_LittleMana()
 };
 
 //****************************************************
-//		Hammer Innos, für Golem Prüfung
+//		Hammer Innos, fÃ¼r Golem PrÃ¼fung
 //****************************************************
 instance Holy_Hammer_MIS(C_Item)
 {
-	name						= "Heiliger Hammer";
+	name						= "Sacred Hammer";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_MISSION | ITEM_2HD_AXE;
@@ -1111,19 +1111,19 @@ instance Holy_Hammer_MIS(C_Item)
 	*/
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Schaden:                 ??";				count[2] = 0;
-	text[3]						= "benötigte Stärke:        ??";				count[3] = 0;
-	text[4]						= "Zweihandwaffe             ";					count[4] = 0;
-	text[5]						= "Wert:  nicht einschätzbar";					count[5] = value;
+	text[2]						= "Damage:                 ??";				count[2] = 0;
+	text[3]						= "Strength required:        ??";				count[3] = 0;
+	text[4]						= "Two-Handed Weapon";					count[4] = 0;
+	text[5]						= "Value:  unable to determine";					count[5] = value;
 };
 
 //****************************************************************************
-//			Schlüssel für die Truhe in der Magierhöhle
+//			SchlÃ¼ssel fÃ¼r die Truhe in der MagierhÃ¶hle
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_MagicChest(C_Item)
 {
-	name						= "Alter Schlüssel";
+	name						= "Old Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -1136,18 +1136,18 @@ instance ItKe_MagicChest(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Eine alter eiserner Schlüssel.";				count[2] = 0;
-	text[3]						= "Er könnnte zu einem ";						count[3] = 0;
-	text[4]						= "Vorhängeschloss gehören.";					count[4] = 0;
+	text[2]						= "An old iron key.";				count[2] = 0;
+	text[3]						= "It could belong to a";						count[3] = 0;
+	text[4]						= "padlock.";					count[4] = 0;
 };
 
 //****************************************************************************
-//			gefälschter Passierschein von Lee
+//			gefÃ¤lschter Passierschein von Lee
 //			---------------------------------------------
 //****************************************************************************
 instance ItWr_Passage_MIS(C_Item)
 {
-	name						= "Friedensangebot an die Paladine";
+	name						= "Peace Offer for the Paladins";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -1164,18 +1164,18 @@ instance ItWr_Passage_MIS(C_Item)
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Mit diesem Schein,sollte ich bei ";			count[3] = 0;
-	text[4]						= "Lord Hagen vorgelassen werden";				count[4] = 0;
+	text[3]						= "With this note I should be able to";			count[3] = 0;
+	text[4]						= "see Lord Hagen.";				count[4] = 0;
 };
 
-const string Passage_1 = "Ehrenwerter Lord Hagen,";
-const string Passage_2 = "Wir beide wissen um die Lage, in der Ihr euch befindet. Ich schlage daher folgenden Handel vor: ";
-const string Passage_3 = "Ihr erteilt mir und allen meinen Männern Generalabsolution vor Innos und dem König. ";
-const string Passage_4 = "Im Gegenzug bieten wir unsere Dienste für die Verteidigung der Stadt und des umliegenden Landes an. ";
-const string Passage_5 = "Desweiteren werde ich dafür sorgen, daß meine Männer von den umliegenden Höfen fernbleiben - natürlich mit Ausnahme des Hofes von Onar, auf dem wir weiterhin stationiert bleiben werden.";
-const string Passage_6 = "Ich weiß, daß auf dem Schiff, mit dem Ihr zum Festland aubrechen werdet, noch Platz für mich und einige meiner Männer ist. Wenn Ihr in See stecht, will ich an Bord sein.";
-const string Passage_7 = "Ich ersuche Euch, trefft Eure Entscheidung mit aller Euch gegebenen Weisheit. ";
-const string Passage_8 = "gezeichnet   General Lee";
+const string Passage_1 = "Honored Lord Hagen,";
+const string Passage_2 = "We are both aware of your situation. I therefore propose the following arrangement:";
+const string Passage_3 = "Grant my men and myself total absolution before Innos and before the King.";
+const string Passage_4 = "In return, we offer to assist you in the defense of the town and the surrounding lands.";
+const string Passage_5 = "Moreover, I personally shall see to it that my men steer clear of the surrounding farms - except, of course, that of Onar, where we will continue to be stationed.";
+const string Passage_6 = "I am aware that there is enough room for myself and some of my men on the ship aboard which you will depart to the mainland. When you set sail, I want to be on board.";
+const string Passage_7 = "I beseech you: Make your decision with all the wisdom given to you.";
+const string Passage_8 = "Signed General Lee";
 func void UsePassage()
 {
 	var int nDocID;
@@ -1197,7 +1197,7 @@ func void UsePassage()
 				Doc_PrintLines	(nDocID, 0, Passage_7);
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, Passage_8);
-				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 
 	Doc_Show(nDocID);
 };
@@ -1209,7 +1209,7 @@ func void UsePassage()
 
 instance ItWr_BanditLetter_MIS(C_Item)
 {
-	name						= "Nachricht";
+	name						= "Message";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -1230,21 +1230,21 @@ instance ItWr_BanditLetter_MIS(C_Item)
 	text[4]						= "";											count[4] = 0;
 };
 
-const string BanditLetter_1 = "Haltet alle Männer auf, ";
-const string BanditLetter_2 = " die aus den Bergen kommen.";
-const string BanditLetter_3 = "Falls jemand den Pass entlangkommt, ";
-const string BanditLetter_4 = " ist es wahrscheinlich ein alter Mann.";
-const string BanditLetter_5 = "Lasst euch nicht von ihm täuschen - ";
-const string BanditLetter_6 = " er ist ein gefählicher Hexer.   ";
-const string BanditLetter_7 = "Behaltet den Kerl im Auge";
-const string BanditLetter_8 = "Kann gut sein, das der Typ den wir suchen, ";
-const string BanditLetter_9 = " mit ihm Kontakt aufnimmt. ";
-const string BanditLetter_10 = "Mit diesem Brief schicke ich euch ";
-const string BanditLetter_11 = " dreissig Goldstücke. ";
-const string BanditLetter_12 = "Nochmal dreissig bekommt derjenige, ";
-const string BanditLetter_13 = " der den Mann tötet. ";
-const string BanditLetter_14 = "Bringt seinen Kopf zur alten Mine, beim Großbauer.";
-const string BanditLetter_15 = ".....D.";
+const string BanditLetter_1 = "Stop all men who come";
+const string BanditLetter_2 = " from the mountains.";
+const string BanditLetter_3 = "If someone comes along the pass,";
+const string BanditLetter_4 = " it will probably be an old man.";
+const string BanditLetter_5 = "Don't let him fool you -";
+const string BanditLetter_6 = " he is a dangerous sorcerer. ";
+const string BanditLetter_7 = "Keep an eye on him.";
+const string BanditLetter_8 = "It's possible the guy we're looking for";
+const string BanditLetter_9 = " will contact him. ";
+const string BanditLetter_10 = "With this letter I'm sending you";
+const string BanditLetter_11 = " thirty pieces of gold.";
+const string BanditLetter_12 = "I will give another thirty to anyone";
+const string BanditLetter_13 = " who kills the man.";
+const string BanditLetter_14 = "Bring his head to the old mine near the landowner.";
+const string BanditLetter_15 = "...D.";
 func void UseBanditLetter()
 {
 	var int nDocID;
@@ -1256,7 +1256,7 @@ func void UseBanditLetter()
 
 		Log_CreateTopic(Topic_Bandits, LOG_MISSION);
 		Log_SetTopicStatus(Topic_Bandits, LOG_RUNNING);
-		B_LogEntry(Topic_Bandits, "Der Anführer der Banditen ist Dexter. Er versteckt sich bei einer Mine, beim Großbauer.");
+		B_LogEntry(Topic_Bandits, "Der AnfÃ¼hrer der Banditen ist Dexter. Er versteckt sich bei einer Mine, beim GroÃŸbauer.");
 		MIS_Steckbriefe = LOG_RUNNING;
 	};
 
@@ -1298,7 +1298,7 @@ func void UseBanditLetter()
 //****************************************************************************
 instance ItWr_Poster_MIS(C_Item)
 {
-	name						= "Steckbrief";
+	name						= "Wanted Note";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -1315,7 +1315,7 @@ instance ItWr_Poster_MIS(C_Item)
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Ein Bild von mir!";							count[3] = 0;
+	text[3]						= "A picture of me!";							count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 };
 
@@ -1329,12 +1329,12 @@ func void UsePoster()
 };
 
 //****************************************************************************
-//				Banditen Truhen Schlüssel
+//				Banditen Truhen SchlÃ¼ssel
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Bandit(C_Item)
 {
-	name						= "Truhenschlüssel";
+	name						= "Chest Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1347,8 +1347,8 @@ instance ItKe_Bandit(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel";								count[2] = 0;
-	text[3]						= "gehörte einem Banditen";						count[3] = 0;
+	text[2]						= "The key belonged";								count[2] = 0;
+	text[3]						= "to a bandit.";						count[3] = 0;
 };
 
 //****************************************************************************
@@ -1357,7 +1357,7 @@ instance ItKe_Bandit(C_Item)
 //****************************************************************************
 instance ItRw_Bow_L_03_MIS(C_Item)
 {
-	name						= "Jagdbogen";
+	name						= "Hunting Bow";
 
 	mainflag					= ITEM_KAT_FF;
 	flags						= ITEM_BOW | ITEM_MISSION;
@@ -1380,7 +1380,7 @@ instance ItRw_Bow_L_03_MIS(C_Item)
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Damage;									count[2] = damageTotal;
 	text[3]						= NAME_Dex_needed;								count[3] = cond_value[2];
-	text[4]						= "Bosper's Jagdbogen";							count[4] = 0;
+	text[4]						= "Bosper's hunting bow.";							count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
@@ -1407,7 +1407,7 @@ instance ItRi_Prot_Point_01_MIS(C_Item)
 
 	value						= Value_Ri_ProtPoint;
 
-	description					= "Schutz des Holzes ";
+	description					= "Wood Protection";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Point;								count[2] = Ri_ProtPoint;
@@ -1435,7 +1435,7 @@ func void UnEquip_ItRi_Prot_Point_01_MIS()
 //****************************************************************************
 instance ItMi_EddasStatue(C_Item)
 {
-	name						= "Innos Statue";
+	name						= "Statue of Innos";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -1448,19 +1448,19 @@ instance ItMi_EddasStatue(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Innos Herr der Gerechtigkeit ";				count[2] = 0;
-	text[3]						= "segne und behüte mich";						count[3] = 0;
-	text[4]						= "auf das mir kein Unheil widerfahre";			count[4] = 0;
+	text[2]						= "Innos, Lord of Justice";				count[2] = 0;
+	text[3]						= "bless and guard me,";						count[3] = 0;
+	text[4]						= "and spare me from harm.";			count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
 //****************************************************************************
-//				Crypta-Schlüssel
+//				Crypta-SchlÃ¼ssel
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_EVT_CRYPT_01(C_Item)
 {
-	name						= "Alter Messingschlüssel";
+	name						= "Old Brass key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1473,12 +1473,12 @@ instance ItKe_EVT_CRYPT_01(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel vom Skelett in Raum 1";		count[2] = 0;
+	text[2]						= "The key from the skeleton in room 1";		count[2] = 0;
 };
 
 instance ItKe_EVT_CRYPT_02(C_Item)
 {
-	name						= "Alter Messingschlüssel";
+	name						= "Old Brass key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1491,12 +1491,12 @@ instance ItKe_EVT_CRYPT_02(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel vom Skelett in Raum 2";		count[2] = 0;
+	text[2]						= "The key from the skeleton in room 2";		count[2] = 0;
 };
 
 instance ItKe_EVT_CRYPT_03(C_Item)
 {
-	name						= "Alter Messingschlüssel";
+	name						= "Old Brass key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1509,14 +1509,14 @@ instance ItKe_EVT_CRYPT_03(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel vom Skelett Raum 3";			count[2] = 0;
+	text[2]						= "The key from the skeleton in room 3";			count[2] = 0;
 };
 
 const int VALUE_ITAR_PAL_SKEL = 500;
 
 instance ITAR_PAL_SKEL(C_Item)
 {
-	name						= "Alte Ritterrüstung";
+	name						= "Old Knight's Armor";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -1546,12 +1546,12 @@ instance ITAR_PAL_SKEL(C_Item)
 };
 
 //****************************************************************************
-//				Schlüssel zu Valentinos Truhe
+//				SchlÃ¼ssel zu Valentinos Truhe
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Valentino(C_Item)
 {
-	name						= "Truhen Schlüssel";
+	name						= "Chest Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1564,17 +1564,17 @@ instance ItKe_Valentino(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Truhenschlüssel";						count[2] = 0;
-	text[3]						= "von Valentino";								count[3] = 0;
+	text[2]						= "The key to a chest";						count[2] = 0;
+	text[3]						= "belonging to Valentino.";								count[3] = 0;
 };
 
 //****************************************************************************
-//				Schlüssel zur Truhe OV Noname Typen
+//				SchlÃ¼ssel zur Truhe OV Noname Typen
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Buerger(C_Item)
 {
-	name						= "Truhen Schlüssel";
+	name						= "Chest Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1587,17 +1587,17 @@ instance ItKe_Buerger(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Lag auf einer Fensterbank rum";				count[2] = 0;
+	text[2]						= "It was lying around on a windowsill.";				count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 };
 
 //****************************************************************************
-//				Schlüssel Richter Truhe
+//				SchlÃ¼ssel Richter Truhe
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Richter(C_Item)
 {
-	name						= "Truhen Schlüssel";
+	name						= "Chest Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1610,17 +1610,17 @@ instance ItKe_Richter(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Truhenschlüssel";						count[2] = 0;
-	text[3]						= "des Richters";								count[3] = 0;
+	text[2]						= "The key to a chest";						count[2] = 0;
+	text[3]						= "belonging to the judge.";								count[3] = 0;
 };
 
 //****************************************************************************
-//				Schlüssel Salandril
+//				SchlÃ¼ssel Salandril
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Salandril(C_Item)
 {
-	name						= "Truhen Schlüssel";
+	name						= "Chest Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1633,17 +1633,17 @@ instance ItKe_Salandril(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "von Salandril dem Alchemisten";				count[2] = 0;
+	text[2]						= "belonging to Salandril the Alchemist.";				count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 };
 
 //****************************************************************************
-//				Schlüssel Truhe ...wo die Paladine schlafen
+//				SchlÃ¼ssel Truhe ...wo die Paladine schlafen
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_PaladinTruhe(C_Item)
 {
-	name						= "Truhen Schlüssel";
+	name						= "Chest Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1656,8 +1656,8 @@ instance ItKe_PaladinTruhe(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein kleiner Messingschlüssel";				count[2] = 0;
-	text[3]						= "aus dem Haus der Paladine";					count[3] = 0;
+	text[2]						= "A small brass key from";				count[2] = 0;
+	text[3]						= "the house of the paladins.";					count[3] = 0;
 };
 
 //****************************************************************************
@@ -1679,11 +1679,11 @@ instance ItKe_ThiefTreasure(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein kleiner Schlüssel";						count[2] = 0;
+	text[2]						= "A small key.";						count[2] = 0;
 };
 
 //****************************************************************************
-//				Diebsgilde Fingers Tür
+//				Diebsgilde Fingers TÃ¼r
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Fingers(C_Item)
@@ -1701,8 +1701,8 @@ instance ItKe_Fingers(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein rostiger Türschlüssel";					count[2] = 0;
-	text[3]						= "aus der Kanalisation";						count[3] = 0;
+	text[2]						= "A rusty door key";					count[2] = 0;
+	text[3]						= "from the sewers.";						count[3] = 0;
 };
 
 //**********************************************************************************
@@ -1711,7 +1711,7 @@ instance ItKe_Fingers(C_Item)
 
 instance ItWr_Schuldenbuch(C_ITEM)
 {
-	name						= "Schulden Buch";
+	name						= "Book of Debts";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= 0;
@@ -1724,7 +1724,7 @@ instance ItWr_Schuldenbuch(C_ITEM)
 
 	value						= 100;
 
-	description					= "Lehmar's Schuldenbuch";
+	description					= "Lehmar's book of debts.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -1733,13 +1733,13 @@ instance ItWr_Schuldenbuch(C_ITEM)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string SchuldBuch_1 = "Geschäfte und Schulden";
-const string SchuldBuch_2 = "Ich Meister Thorben, Schreiner von Khorinis, schulde dem ehrenwerten Herrn Lehmar 200 Goldmünzen";
-const string SchuldBuch_3 = "             Thorben";
-const string SchuldBuch_4 = "Ich Coragon, Wirt in Khorinis, schulde dem ehrenwerten Herrn Lehmar 150 Goldmünzen";
-const string SchuldBuch_5 = "             Coragon";
-const string SchuldBuch_6 = "Ich, Hanna, Besitzerin des Hotels in Khorinis, schulde Herrn Lehmar 250 Goldmünzen.";
-const string SchuldBuch_7 = "               Hanna";
+const string SchuldBuch_1 = "Deals and Debts";
+const string SchuldBuch_2 = "I, Master Thorben, carpenter of Khorinis, owe to the honorable Lehmar a debt of 200 gold coins.";
+const string SchuldBuch_3 = " Thorben";
+const string SchuldBuch_4 = "I, Coragon, innkeeper of Khorinis, owe the honorable Lehmar a debt of 150 in gold.";
+const string SchuldBuch_5 = " Coragon";
+const string SchuldBuch_6 = "I, Hanna, hotelier of Khorinis, owe the honorable Lehmar a debt of 250 gold coins.";
+const string SchuldBuch_7 = " Hanna";
 func void UseSchuldBuch()
 {
 	var int nDocID;
@@ -1770,7 +1770,7 @@ func void UseSchuldBuch()
 				Doc_PrintLine	(nDocID, 0, "");
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				// Doc_SetFont( nDocID, 1, FONT_BookHeadline ); // -1 -> all pages
 				// Doc_PrintLine	(nDocID, 1, "");
 				// Doc_PrintLines	(nDocID, 1, "StandardBuch Seite 2");
@@ -1792,7 +1792,7 @@ func void UseSchuldBuch()
 
 instance ItPl_Sagitta_Herb_MIS(C_Item)
 {
-	name						= "Sonnenaloe";
+	name						= "Sun Aloe";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -1814,12 +1814,12 @@ instance ItPl_Sagitta_Herb_MIS(C_Item)
 };
 
 //****************************************************************************
-//			Schlüssel für die obernen Schlafzimmer in der Taverne (MITTE DER WELT!)
+//			SchlÃ¼ssel fÃ¼r die obernen Schlafzimmer in der Taverne (MITTE DER WELT!)
 //			---------------------------------------------
 //****************************************************************************
 instance ITKE_ORLAN_HOTELZIMMER(C_Item)
 {
-	name						= "Zimmerschlüssel";
+	name						= "Room Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1832,13 +1832,13 @@ instance ITKE_ORLAN_HOTELZIMMER(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "der Tarverne ´Zur Toten Harpie´";			count[2] = 0;
+	text[2]						= "from the tavern 'The Dead Harpy'.";			count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 };
 
 instance ItRw_DragomirsArmbrust_MIS(C_Item)
 {
-	name						= "Dragomir´s Armbrust";
+	name						= "Dragomir's Crossbow";
 
 	mainflag					= ITEM_KAT_FF;
 	flags						= ITEM_CROSSBOW;

@@ -30,7 +30,7 @@ instance DIA_Elena_HALLO(C_INFO)
 	nr				= 1;
 	condition		= DIA_Elena_HALLO_Condition;
 	information		= DIA_Elena_HALLO_Info;
-	description		= "Hallo, schönes Kind.";
+	description		= "Hello, pretty girl.";
 };
 
 func int DIA_Elena_HALLO_Condition()
@@ -40,14 +40,14 @@ func int DIA_Elena_HALLO_Condition()
 
 func void DIA_Elena_HALLO_Info()
 {
-	AI_Output(other, self, "DIA_Elena_HALLO_15_00"); //Hallo, schönes Kind.
+	AI_Output(other, self, "DIA_Elena_HALLO_15_00"); //Hello, pretty girl.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output(self, other, "DIA_Elena_HALLO_16_01"); //Na? Wo haben sie dich denn laufen lassen?
+		AI_Output(self, other, "DIA_Elena_HALLO_16_01"); //Hm. Just where did you escape from?
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Elena_HALLO_16_02"); //Was willst du?
+		AI_Output(self, other, "DIA_Elena_HALLO_16_02"); //What did you want?
 	};
 };
 
@@ -60,7 +60,7 @@ instance DIA_Elena_Aufstand(C_INFO)
 	nr				= 2;
 	condition		= DIA_Elena_Aufstand_Condition;
 	information		= DIA_Elena_Aufstand_Info;
-	description		= "Ich habe gehört, ihr lehnt euch gegen den König auf?";
+	description		= "They say you are revolting against the King?";
 };
 
 func int DIA_Elena_Aufstand_Condition()
@@ -73,11 +73,11 @@ func int DIA_Elena_Aufstand_Condition()
 
 func void DIA_Elena_Aufstand_Info()
 {
-	AI_Output(other, self, "DIA_Elena_Aufstand_15_00"); //Ich habe gehört, ihr lehnt euch gegen den König auf?
-	AI_Output(self, other, "DIA_Elena_Aufstand_16_01"); //Mein Vater hat beschlossen, dass es an der Zeit ist, dass wir uns selbst verteidigen.
+	AI_Output(other, self, "DIA_Elena_Aufstand_15_00"); //They say you are revolting against the King?
+	AI_Output(self, other, "DIA_Elena_Aufstand_16_01"); //My father has decided that it's time we defended ourselves.
 	if (other.guild != GIL_MIL)
 	{
-		AI_Output(self, other, "DIA_Elena_Aufstand_16_02"); //Die Milizen haben uns sowieso nie geholfen. Die waren nur hier, um unsere Waren wegzuschleppen.
+		AI_Output(self, other, "DIA_Elena_Aufstand_16_02"); //The militia never helped us anyway. They only came here to drag off our provisions.
 	};
 };
 
@@ -90,7 +90,7 @@ instance DIA_Elena_Arbeit(C_INFO)
 	nr				= 3;
 	condition		= DIA_Elena_Arbeit_Condition;
 	information		= DIA_Elena_Arbeit_Info;
-	description		= "Welche Arbeit gibt es hier auf dem Hof?";
+	description		= "What kind of work is to be had here on the farm?";
 };
 
 func int DIA_Elena_Arbeit_Condition()
@@ -104,12 +104,12 @@ func int DIA_Elena_Arbeit_Condition()
 
 func void DIA_Elena_Arbeit_Info()
 {
-	AI_Output(other, self, "DIA_Elena_Arbeit_15_00"); //Welche Arbeit gibt es hier auf dem Hof?
-	AI_Output(self, other, "DIA_Elena_Arbeit_16_01"); //Mein Vater zahlt Geld an alle Männer, die helfen, den Hof zu verteidigen.
-	AI_Output(self, other, "DIA_Elena_Arbeit_16_02"); //Hast du Interesse? Du siehst mir nicht wie jemand aus, der an Feldarbeit interessiert ist.
-	AI_Output(other, self, "DIA_Elena_Arbeit_15_03"); //Wie viel zahlt dein Vater?
-	AI_Output(self, other, "DIA_Elena_Arbeit_16_04"); //Das musst du schon mit ihm selbst aushandeln.
-	AI_Output(self, other, "DIA_Elena_Arbeit_16_05"); //Ich weiß nur, dass jeder der Söldner hier täglich seinen Sold bekommt.
+	AI_Output(other, self, "DIA_Elena_Arbeit_15_00"); //What kind of work is to be had here on the farm?
+	AI_Output(self, other, "DIA_Elena_Arbeit_16_01"); //My father pays money to all the men who help defend the farm.
+	AI_Output(self, other, "DIA_Elena_Arbeit_16_02"); //Are you interested? You don't look like someone who has a passion for field labor.
+	AI_Output(other, self, "DIA_Elena_Arbeit_15_03"); //How much does your father pay?
+	AI_Output(self, other, "DIA_Elena_Arbeit_16_04"); //You'd have to negotiate that with him.
+	AI_Output(self, other, "DIA_Elena_Arbeit_16_05"); //All I know is that each mercenary here gets paid every day.
 };
 
 // ************************************************************
@@ -121,7 +121,7 @@ instance DIA_Elena_Regeln(C_INFO)
 	nr				= 4;
 	condition		= DIA_Elena_Regeln_Condition;
 	information		= DIA_Elena_Regeln_Info;
-	description		= "Gibt es hier irgendwelche Regeln, die ich beachten sollte?";
+	description		= "Are there any rules here that I should stick to?";
 };
 
 func int DIA_Elena_Regeln_Condition()
@@ -135,11 +135,11 @@ func int DIA_Elena_Regeln_Condition()
 
 func void DIA_Elena_Regeln_Info()
 {
-	AI_Output(other, self, "DIA_Elena_Regeln_15_00"); //Gibt es hier irgendwelche Regeln, die ich beachten sollte?
-	AI_Output(self, other, "DIA_Elena_Regeln_16_01"); //Du fasst hier nichts an, was dir nicht gehört.
-	AI_Output(self, other, "DIA_Elena_Regeln_16_02"); //Du marschierst nicht in Bereiche, in denen du nichts zu suchen hast.
-	AI_Output(self, other, "DIA_Elena_Regeln_16_03"); //Und wenn du vor hast, dich zu prügeln, halt dich an die Söldner.
-	AI_Output(self, other, "DIA_Elena_Regeln_16_04"); //Wenn du Schlägereien mit den Bauern anfängst, hast du hier alle gegen dich.
+	AI_Output(other, self, "DIA_Elena_Regeln_15_00"); //Are there any rules here that I should stick to?
+	AI_Output(self, other, "DIA_Elena_Regeln_16_01"); //You don't touch anything here that isn't yours.
+	AI_Output(self, other, "DIA_Elena_Regeln_16_02"); //You stay away from areas that are none of your business.
+	AI_Output(self, other, "DIA_Elena_Regeln_16_03"); //And if you must pick a fight, stick to the mercenaries.
+	AI_Output(self, other, "DIA_Elena_Regeln_16_04"); //If you start a brawl with the farmers, everybody here will be against you.
 };
 
 // ************************************************************
@@ -151,7 +151,7 @@ instance DIA_Elena_AUFGABE(C_INFO)
 	nr				= 5;
 	condition		= DIA_Elena_AUFGABE_Condition;
 	information		= DIA_Elena_AUFGABE_Info;
-	description		= "Was ist deine Aufgabe hier?";
+	description		= "What's your job here?";
 };
 
 func int DIA_Elena_AUFGABE_Condition()
@@ -164,9 +164,9 @@ func int DIA_Elena_AUFGABE_Condition()
 
 func void DIA_Elena_AUFGABE_Info()
 {
-	AI_Output(other, self, "DIA_Elena_AUFGABE_15_00"); //Was ist deine Aufgabe hier?
-	AI_Output(self, other, "DIA_Elena_AUFGABE_16_01"); //Ich verkaufe die Waren unseres Hofes. Wenn du etwas kaufen möchtest, musst du's mir nur sagen.
-	AI_Output(self, other, "DIA_Elena_AUFGABE_16_02"); //Aber ich warne dich. Bei mir wird nicht gefeilscht und nicht gestohlen, klar?
+	AI_Output(other, self, "DIA_Elena_AUFGABE_15_00"); //What's your job here?
+	AI_Output(self, other, "DIA_Elena_AUFGABE_16_01"); //I sell the goods that we produce. If you want to buy something, just let me know.
+	AI_Output(self, other, "DIA_Elena_AUFGABE_16_02"); //But let me warn you. I won't stand for either haggling or stealing, understood?
 
 	Log_CreateTopic(Topic_SoldierTrader, LOG_NOTE);
 	B_LogEntry(Topic_SoldierTrader, Topic_SoldierTrader_2);
@@ -187,7 +187,7 @@ instance DIA_Elena_TRADE(C_INFO)
 	information		= DIA_Elena_TRADE_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Zeig mir deine Ware!";
+	description		= "Show me your wares!";
 };
 
 func int DIA_Elena_TRADE_Condition()
@@ -201,9 +201,9 @@ func int DIA_Elena_TRADE_Condition()
 
 func void DIA_Elena_TRADE_Info()
 {
-	AI_Output(other, self, "DIA_Elena_TRADE_15_00"); //Zeig mir deine Ware!
+	AI_Output(other, self, "DIA_Elena_TRADE_15_00"); //Show me your wares!
 	B_GiveTradeInv(self);
-	AI_Output(self, other, "DIA_Elena_TRADE_16_01"); //Was kann ich dir anbieten?
+	AI_Output(self, other, "DIA_Elena_TRADE_16_01"); //What can I offer you?
 };
 
 // ************************************************************
@@ -216,7 +216,7 @@ instance DIA_Elena_PERM(C_INFO)
 	condition		= DIA_Elena_PERM_Condition;
 	information		= DIA_Elena_PERM_Info;
 	permanent		= TRUE;
-	description		= "Ist was Bedeutendes passiert in letzter Zeit?";
+	description		= "Has anything significant happened lately?";
 };
 
 func int DIA_Elena_PERM_Condition()
@@ -229,30 +229,30 @@ func int DIA_Elena_PERM_Condition()
 
 func void DIA_Elena_PERM_Info()
 {
-	AI_Output(other, self, "DIA_Elena_PERM_15_00"); //Ist was Bedeutendes passiert in letzter Zeit?
+	AI_Output(other, self, "DIA_Elena_PERM_15_00"); //Has anything significant happened lately?
 
 	if (kapitel <= 1)
 	{
-		AI_Output(self, other, "DIA_Elena_PERM_16_01"); //Vor einigen Tagen hat mein Vater erlassen, dass wir nichts mehr in der Stadt verkaufen dürfen.
-		AI_Output(self, other, "DIA_Elena_PERM_16_02"); //Darum bleibe ich hier auf dem Hof und verkaufe meine Ware nur noch an Besucher.
+		AI_Output(self, other, "DIA_Elena_PERM_16_01"); //A few days ago, my father decreed that we're no longer allowed to sell anything in town.
+		AI_Output(self, other, "DIA_Elena_PERM_16_02"); //So now I'm staying here on the farm and selling my wares to visitors only.
 
 		Elena_Trade_mit_mir = TRUE;
 	}
 	else if (Kapitel == 2)
 	{
-		AI_Output(self, other, "DIA_Elena_PERM_16_03"); //Die Milizangriffe auf die umliegenden Höfe scheinen sich zu häufen. Nur eine Frage der Zeit, bis mein Vater einschreitet.
+		AI_Output(self, other, "DIA_Elena_PERM_16_03"); //The militia attacks on the neighboring farms are getting more frequent. Only a question of time until my father will intervene.
 	}
 	else if (Kapitel == 3)
 	{
-		AI_Output(self, other, "DIA_Elena_PERM_16_04"); //Das Land ist ziemlich unsicher geworden. Keiner wagt sich weiter als bis zu den eigenen Feldern. In der Stadt ist schon lange keiner von uns mehr gewesen.
+		AI_Output(self, other, "DIA_Elena_PERM_16_04"); //The land has become quite unsafe. Now no one ventures beyond his own fields. It's been a long time since any of us has been to town.
 	}
 	else if (kapitel == 4)
 	{
-		AI_Output(self, other, "DIA_Elena_PERM_16_05"); //Die Söldner sind immer unruhiger geworden. Doch seit Sylvio mit seinen Jungs weg ist, scheinen sie sich ein bisschen zu entspannen.
+		AI_Output(self, other, "DIA_Elena_PERM_16_05"); //The mercenaries have become more and more restless. But since Sylvio and his boys have left, they seem to relax a little.
 	}
 	else // Kapitel 5
 	{
-		AI_Output(self, other, "DIA_Elena_PERM_16_06"); //Alle reden nur noch von dem bevorstehenden Angriff der Orks. Aber ich glaube nicht so recht daran. Ich denke, hier auf dem Hof sind wir vor ihnen sicher.
+		AI_Output(self, other, "DIA_Elena_PERM_16_06"); //Everybody keeps talking about the impending orc attack. But I don't really believe in that. I think we're safe from them here on the farm.
 	};
 };
 
@@ -271,7 +271,7 @@ instance DIA_Elena_MINENANTEIL(C_INFO)
 	nr				= 2;
 	condition		= DIA_Elena_MINENANTEIL_Condition;
 	information		= DIA_Elena_MINENANTEIL_Info;
-	description		= "Du verkaufst Minenanteile?";
+	description		= "You're selling mine shares?";
 };
 
 func int DIA_Elena_MINENANTEIL_Condition()
@@ -286,8 +286,8 @@ func int DIA_Elena_MINENANTEIL_Condition()
 
 func void DIA_Elena_MINENANTEIL_Info()
 {
-	AI_Output(other, self, "DIA_Elena_MINENANTEIL_15_00"); //Du verkaufst Minenanteile?
-	AI_Output(self, other, "DIA_Elena_MINENANTEIL_16_01"); //Und wenn schon. Ich habe sie ja auch für teures Geld kaufen müssen.
+	AI_Output(other, self, "DIA_Elena_MINENANTEIL_15_00"); //You're selling mine shares?
+	AI_Output(self, other, "DIA_Elena_MINENANTEIL_16_01"); //So what. I paid an arm and a leg for them myself.
 	B_GivePlayerXP(XP_Ambient);
 };
 

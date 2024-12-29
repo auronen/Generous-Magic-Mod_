@@ -3,7 +3,7 @@ instance Mil_337_Mika(Npc_Default)
 	// -------- NPC --------
 	name							= "Mika";
 	npctype							= NpcType_Main;
-	guild							= GIL_OUT; // Joly: Wenn GIL_OUT Probleme macht, bitte mir Bescheid geben!!! Björn
+	guild							= GIL_OUT; // Joly: Wenn GIL_OUT Probleme macht, bitte mir Bescheid geben!!! BjÃ¶rn
 	flags							= 0;
 
 	voice							= 12;

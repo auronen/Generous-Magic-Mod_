@@ -7,7 +7,7 @@
 func void B_GiveTradeInv(var C_Npc slf)
 {
 //******************************************************************
-//	Hier muss jeder Händler eingetragen werden!!!!!!!
+//	Hier muss jeder HÃ¤ndler eingetragen werden!!!!!!!
 //******************************************************************
 
 	// ADDON

@@ -5,11 +5,11 @@
 const int Value_Fackel = 2;
 
 // ************************************************************************************************
-// 	Fackel muﬂ ihre Instanznamen behalten
+// 	Fackel mu√ü ihre Instanznamen behalten
 // ************************************************************************************************
 instance ItLsTorch(C_Item)
 {
-	name						= "Fackel";
+	name						= "Torch";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_TORCH | ITEM_MULTI;
@@ -23,7 +23,7 @@ instance ItLsTorch(C_Item)
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Eine Fackel";								count[3] = 0;
+	text[3]						= "A torch.";								count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -31,7 +31,7 @@ instance ItLsTorch(C_Item)
 /******************************************************************************************/
 instance ItLsTorchburning(C_Item)
 {
-	name						= "Brennende Fackel";
+	name						= "Burning Torch";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_TORCH;
@@ -45,13 +45,13 @@ instance ItLsTorchburning(C_Item)
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Eine Fackel";								count[3] = 0;
+	text[3]						= "A torch.";								count[3] = 0;
 };
 
 /******************************************************************************************/
 instance ItLsTorchburned(C_Item)
 {
-	name						= "Fackel";
+	name						= "Torch";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_TORCH | ITEM_MULTI;
@@ -65,7 +65,7 @@ instance ItLsTorchburned(C_Item)
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Eine ausgebrannte Fackel";					count[3] = 0;
+	text[3]						= "A burnt out torch.";					count[3] = 0;
 };
 
 // *****************
@@ -74,7 +74,7 @@ instance ItLsTorchburned(C_Item)
 
 instance ItLsTorchFirespit(C_Item)
 {
-	name						= "Fackel";
+	name						= "Torch";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_TORCH;

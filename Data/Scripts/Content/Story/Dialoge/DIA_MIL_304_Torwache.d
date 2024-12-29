@@ -31,7 +31,7 @@ instance DIA_Mil_304_Torwache_WASMACHSTDU(C_INFO)
 	condition		= DIA_Mil_304_Torwache_WASMACHSTDU_Condition;
 	information		= DIA_Mil_304_Torwache_WASMACHSTDU_Info;
 	permanent		= TRUE;
-	description		= "Wie geht's denn so?";
+	description		= "So how are things?";
 };
 
 func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition()
@@ -44,15 +44,15 @@ func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition()
 
 func void DIA_Mil_304_Torwache_WASMACHSTDU_Info()
 {
-	AI_Output(other, self, "DIA_Mil_304_Torwache_WASMACHSTDU_15_00"); //Wie geht's denn so?
+	AI_Output(other, self, "DIA_Mil_304_Torwache_WASMACHSTDU_15_00"); //So how are things?
 	if ((hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF))
 	{
-		AI_Output(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //Ich kann nicht klagen. Ich verrichte meine Pflicht, so wie Innos es von mir verlangt.
+		AI_Output(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //I can't complain. I do my duty as Innos expects of me.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Hey, versuch hier nicht die 'Hey, wie geht's'-Nummer abzuziehen. Geh mir einfach aus den Augen, okay?
+		AI_Output(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Hey, don't try pulling that 'so how are things' number here. Just get out of my sight, okay?
 	};
 
 	AI_StopProcessInfos(self);

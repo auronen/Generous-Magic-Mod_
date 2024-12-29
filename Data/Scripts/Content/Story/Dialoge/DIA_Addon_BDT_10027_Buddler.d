@@ -31,7 +31,7 @@ instance DIA_Addon_BDT_10027_Buddler_Hi(C_INFO)
 	condition		= DIA_Addon_10027_Buddler_Hi_Condition;
 	information		= DIA_Addon_10027_Buddler_Hi_Info;
 	permanent		= TRUE;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_10027_Buddler_Hi_Condition()
@@ -41,15 +41,15 @@ func int DIA_Addon_10027_Buddler_Hi_Condition()
 
 func void DIA_Addon_10027_Buddler_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10027_Buddler_Hi_15_00"); //Wie sieht's aus?
+	AI_Output(other, self, "DIA_Addon_BDT_10027_Buddler_Hi_15_00"); //How's it going?
 
 	if (Sklaven_Flucht == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01"); //Ich habe lange genug für die Erzbarone geknechtet. Gut, dass jetzt andere buddeln.
+		AI_Output(self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01"); //I slaved away for the ore barons long enough. It's good that someone else is digging now.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02"); //Verdammt. Jetzt müssen wir wohl wieder selber hacken, was?
+		AI_Output(self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02"); //Damn. Now we'll have to go back to digging ourselves, huh?
 	};
 };
 
@@ -73,8 +73,8 @@ func int DIA_Addon_10027_Buddler_Hacken_Condition()
 func void DIA_Addon_10027_Buddler_Hacken_Info()
 {
 	B_Say(other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output(self, other, "DIA_Addon_10027_Buddler_Hacken_11_00"); //Kopfarbeit, Junge. Goldhacken ist reine Kopfsache. Versuch nicht, den Fels zu bezwingen - er ist härter als du.
-	AI_Output(self, other, "DIA_Addon_10027_Buddler_Hacken_11_01"); //Mach dich von allem frei - und versuche, eins zu werden mit dem Gold. Dann ist es ist wie ein Gebet, eine Meditation.
+	AI_Output(self, other, "DIA_Addon_10027_Buddler_Hacken_11_00"); //Brain work, boy. Mining gold is a purely mental procedure. Don't try to force the rock - it's harder than you.
+	AI_Output(self, other, "DIA_Addon_10027_Buddler_Hacken_11_01"); //Free your mind of everything - and try to become one with the gold. Then it is like meditation, a prayer.
 
 	B_Upgrade_Hero_HackChance(10);
 };

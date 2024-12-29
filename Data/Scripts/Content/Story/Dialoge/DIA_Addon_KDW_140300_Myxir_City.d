@@ -31,7 +31,7 @@ instance DIA_Addon_Myxir_CITY_HelloCITY(C_INFO)
 	condition		= DIA_Addon_Myxir_CITY_HelloCITY_Condition;
 	information		= DIA_Addon_Myxir_CITY_HelloCITY_Info;
 	permanent		= TRUE;
-	description		= "Du wirst jetzt in der Stadt bleiben?";
+	description		= "Will you stay in the city now?";
 };
 
 func int DIA_Addon_Myxir_CITY_HelloCITY_Condition()
@@ -42,19 +42,19 @@ func int DIA_Addon_Myxir_CITY_HelloCITY_Condition()
 var int DIA_Addon_Myxir_CITY_HelloCITY_OneTime;
 func void DIA_Addon_Myxir_CITY_HelloCITY_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //Du wirst jetzt in der Stadt bleiben?
-	AI_Output(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01"); //Einer von uns muss ja HIER sein, wenn Vatras die Stadt verlässt.
+	AI_Output(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //Will you stay in the city now?
+	AI_Output(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01"); //One of us has to be HERE if Vatras leaves the city.
 
 	VatrasAbloeseIstDa = TRUE;
 
 	if ((RavenIsDead == TRUE)
 	&& (DIA_Addon_Myxir_CITY_HelloCITY_OneTime == FALSE))
 	{
-		AI_Output(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_02"); //Eins wollte ich dir noch sagen.
-		AI_Output(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_03"); //Das war wirklich eine wahre Heldentat, die du in Jharkendar vollbracht hast.
-		AI_Output(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_04"); //Leider bin ich mit meinen Aufgaben hier in Khorinis noch nicht am Ende.
-		AI_Output(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_05"); //Schon, aber ich bin sicher, dass du auch diese meistern wirst, Bewahrer.
-		AI_Output(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_06"); //Wir werden sehen.
+		AI_Output(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_02"); //One more thing I wanted to say to you.
+		AI_Output(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_03"); //That really was a heroic feat that you accomplished in Jharkendar.
+		AI_Output(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_04"); //Unfortunately, I'm still not finished with my tasks here in Khorinis.
+		AI_Output(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_05"); //True, but I am sure that you will master them as well, Preserver.
+		AI_Output(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_06"); //We'll see.
 		DIA_Addon_Myxir_CITY_HelloCITY_OneTime = TRUE;
 		B_GivePlayerXP(XP_Ambient);
 	};
@@ -70,7 +70,7 @@ instance DIA_Addon_Myxir_CITY_Teach(C_INFO)
 	condition		= DIA_Addon_Myxir_CITY_Teach_Condition;
 	information		= DIA_Addon_Myxir_CITY_Teach_Info;
 	permanent		= TRUE;
-	description		= "Lehre mich die fremde Sprache.";
+	description		= "Teach me that language.";
 };
 
 var int DIA_Addon_Myxir_CITY_Teach_NoPerm;

@@ -23,7 +23,7 @@ func void DIA_Dragon_Rock_Exit_Info()
 	Npc_RemoveInvItems(other, ItMi_InnosEye_MIS, 1);
 	CreateInvItems(other, ItMi_InnosEye_Discharged_MIS, 1);
 
-	AI_Output(self, other, "DIA_Dragon_Rock_Exit_20_00"); //Genug der Worte. Deine kurzweilige Macht ist dahin. Das Auge ist kraftlos. Jetzt wirst du sterben.
+	AI_Output(self, other, "DIA_Dragon_Rock_Exit_20_00"); //Enough words. Your temporary power is exhausted. The Eye has lost its strength. Prepare to die.
 
 	AI_StopProcessInfos(self);
 	DragonTalk_Exit_Free = FALSE;
@@ -51,15 +51,15 @@ func int DIA_Dragon_Rock_Hello_Condition()
 
 func void DIA_Dragon_Rock_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Noch so ein vermessener Wicht, der sich auf meinen Felsen traut. Ihr kleinen Menschen. So mutig, doch so zerbrechlich.
+	AI_Output(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Yet another presumptuous wight who dares to climb my rock. You little humans. So brave, and yet so fragile.
 	if (Mis_KilledDragons == 0)
 	{
-		AI_Output(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Du kannst tatsächlich sprechen.
+		AI_Output(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Hey, you can actually talk.
 	};
 
-	AI_Output(self, other, "DIA_Dragon_Rock_Hello_20_02"); //Ich werde dir die Eingeweide herausreißen und dich an die Ratten verfüttern.
-	AI_Output(other, self, "DIA_Dragon_Rock_Add_15_00"); //Nicht so schnell. Ich trage das Auge Innos bei mir. Du wirst mir gehorchen und mir meine Fragen beantworten.
-	AI_Output(self, other, "DIA_Dragon_Rock_Hello_20_04"); //(Brüllt) Arrh. Stell deine Fragen.
+	AI_Output(self, other, "DIA_Dragon_Rock_Hello_20_02"); //I shall tear out your entrails and feed them to the rats.
+	AI_Output(other, self, "DIA_Dragon_Rock_Add_15_00"); //Not so fast. I bear the Eye of Innos. You will obey me and answer my questions.
+	AI_Output(self, other, "DIA_Dragon_Rock_Hello_20_04"); //(bellows) Arrh. Ask your questions.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -70,7 +70,7 @@ instance DIA_Dragon_Rock_WERBISTDU(C_INFO)
 	nr				= 6;
 	condition		= DIA_Dragon_Rock_WERBISTDU_Condition;
 	information		= DIA_Dragon_Rock_WERBISTDU_Info;
-	description		= "Wer bist du?";
+	description		= "Who are you?";
 };
 
 func int DIA_Dragon_Rock_WERBISTDU_Condition()
@@ -83,8 +83,8 @@ func int DIA_Dragon_Rock_WERBISTDU_Condition()
 
 func void DIA_Dragon_Rock_WERBISTDU_Info()
 {
-	AI_Output(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //Wer bist du?
-	AI_Output(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Ich heiße Pedrakhan und ich werde dir ganz langsam das Fell abziehen, wenn ich dich zu fassen kriege.
+	AI_Output(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //Who are you?
+	AI_Output(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //I am called Pedrakhan and I shall slowly skin you alive when I catch you.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -95,7 +95,7 @@ instance DIA_Dragon_Rock_HIERARCHIE(C_INFO)
 	nr				= 7;
 	condition		= DIA_Dragon_Rock_HIERARCHIE_Condition;
 	information		= DIA_Dragon_Rock_HIERARCHIE_Info;
-	description		= "Wer von euch Drachen ist der Stärkste?";
+	description		= "Who is the strongest among you dragons?";
 };
 
 func int DIA_Dragon_Rock_HIERARCHIE_Condition()
@@ -108,12 +108,12 @@ func int DIA_Dragon_Rock_HIERARCHIE_Condition()
 
 func void DIA_Dragon_Rock_HIERARCHIE_Info()
 {
-	AI_Output(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Wer von euch Drachen ist der Stärkste?
-	AI_Output(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //Unsere Macht beziehen wir aus den Elementen dieser Welt. Ihre Hierarchie ist klar und einfach.
-	AI_Output(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //Aus weicher Erde geformtes Land spendet Leben für alle Kreaturen unter der Sonne. Doch verschlingt es dich mit Haut und Haaren, wenn man ihm zu nahe kommt.
-	AI_Output(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //Mit Stolz erhebt sich der Fels, der lieber bricht, als jemals nachzugeben, und begräbt so die Unachtsamen unter sich. Und doch bietet er den besten Schutz vor den Gezeiten.
-	AI_Output(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //Der Funke des Lebens lebt in den tiefen Feuern dieser Erde. Und doch verbrennt das Feuer alles in einem Atemzug und hinterlässt nicht mehr als Asche.
-	AI_Output(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Alle unsere Elemente erhalten und zerstören. Nur im zu hartem Guss erstarrten Wasser wird alles zur ewig verweilenden Salzsäule, wo kaum Leben möglich ist.
+	AI_Output(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Who is the strongest among you dragons?
+	AI_Output(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //We draw our power from the elements of this world. Their hierarchy is clear and simple.
+	AI_Output(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //Land formed of soft earth bestows life on all creatures under the sun. Yet it will open up and swallow you entirely if you get too close to it.
+	AI_Output(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //The rock, which would rather break than ever surrender, towers with pride and buries the careless beneath itself. And yet it offers the best protection from the tide.
+	AI_Output(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //The spark of life lives in the deep fires of this world. And yet the fire incinerates everything in a breath, leaving nothing but ashes.
+	AI_Output(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //All our elements preserve and destroy. But only in water that has become hard and solid as rock will everything be transformed into an eternal pillar of salt where life is barely possible.
 };
 
 //**********************************************************************************

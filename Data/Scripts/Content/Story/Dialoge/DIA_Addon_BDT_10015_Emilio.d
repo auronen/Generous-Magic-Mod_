@@ -66,7 +66,7 @@ instance DIA_Addon_BDT_10015_Emilio_Hi(C_INFO)
 	nr				= 1;
 	condition		= DIA_Addon_Emilio_Hi_Condition;
 	information		= DIA_Addon_Emilio_Hi_Info;
-	description		= "Du siehst aus wie ein Buddler.";
+	description		= "You look like a digger.";
 };
 
 func int DIA_Addon_Emilio_Hi_Condition()
@@ -76,8 +76,8 @@ func int DIA_Addon_Emilio_Hi_Condition()
 
 func void DIA_Addon_Emilio_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10015_Emilio_Hi_15_00"); //Du siehst aus wie ein Buddler.
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Hi_10_01"); //Ich BIN ein Buddler. Als ich das letzte mal in der Mine war, habe ich geschuftet wie ein Blöder.
+	AI_Output(other, self, "DIA_Addon_BDT_10015_Emilio_Hi_15_00"); //You look like a digger.
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Hi_10_01"); //I AM a digger. The last time I was in the mine, I worked my ass off.
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -98,7 +98,7 @@ instance DIA_Addon_BDT_10015_Emilio_Gold(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Emilio_Gold_Condition;
 	information		= DIA_Addon_Emilio_Gold_Info;
-	description		= "Was passiert mit dem Gold aus der Mine?";
+	description		= "What happens to the gold from the mine?";
 };
 
 func int DIA_Addon_Emilio_Gold_Condition()
@@ -111,10 +111,10 @@ func int DIA_Addon_Emilio_Gold_Condition()
 
 func void DIA_Addon_Emilio_Gold_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10015_Emilio_Gold_15_00"); //Was passiert mit dem Gold aus der Mine?
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_01"); //Thorus sammelt es ein und verteilt es. Keiner darf behalten, was er geschürft hat.
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_02"); //Jeder bekommt nur einen Teil des Goldes - damit auch die Jäger und Wachen nicht leer ausgehen.
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_03"); //Ich find's okay. Seit dieser Regelung gibt's weniger Tote und die Schürfer bekommen immer noch mehr als die Typen, die draußen rumhängen.
+	AI_Output(other, self, "DIA_Addon_BDT_10015_Emilio_Gold_15_00"); //What happens to the gold from the mine?
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_01"); //Thorus collects it and then distributes it. No one is allowed to keep what he mines.
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_02"); //Everybody gets only a part of the gold - that way even the hunters and guards get their share.
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_03"); //I think that's okay. Since we've had that rule, there have been fewer deaths, and the miners still get more than the guys who hang around outside.
 };
 
 // ----------------------------------------------------------------------
@@ -126,7 +126,7 @@ instance DIA_Addon_BDT_10015_Emilio_Stein(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Emilio_Stein_Condition;
 	information		= DIA_Addon_Emilio_Stein_Info;
-	description		= "Was hat es mit diesen roten Steinen auf sich?";
+	description		= "What's the deal with these red stones?";
 };
 
 func int DIA_Addon_Emilio_Stein_Condition()
@@ -139,11 +139,11 @@ func int DIA_Addon_Emilio_Stein_Condition()
 
 func void DIA_Addon_Emilio_Stein_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10015_Emilio_Stein_15_00"); //Was hat es mit diesen roten Steinen auf sich?
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_01"); //Das ist 'ne Sache die sich Thorus und Esteban ausgedacht haben.
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_02"); //Thorus kümmert sich um die Goldverteilung und Esteban organsisiert die Arbeiter für die Mine.
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_03"); //Er will natürlich nicht jedesmal zu Thorus rennen, wenn er jemanden in die Mine schickt.
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_04"); //Deshalb drückt er uns einfach eine dieser roten Steintafeln in die Hand und Thorus lässt uns dann rein. Ist wie 'ne Eintrittskarte.
+	AI_Output(other, self, "DIA_Addon_BDT_10015_Emilio_Stein_15_00"); //What's the deal with these red stones?
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_01"); //That's something Thorus and Esteban thought up.
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_02"); //Thorus takes care of the gold distribution and Esteban organizes the workers for the mine.
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_03"); //Of course, he doesn't want to run to Thorus every time he sends someone to the mine.
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_04"); //That's why he gives us one of these red stone tablets and Thorus lets us in then. It's like a pass.
 };
 
 // ---------------------------------------------------------------------
@@ -157,7 +157,7 @@ instance DIA_Addon_Emilio_Attentat(C_INFO)
 	condition		= DIA_Addon_Emilio_Attentat_Condition;
 	information		= DIA_Addon_Emilio_Attentat_Info;
 	permanent		= TRUE;
-	description		= "Was weißt du über das Attentat?";
+	description		= "What do you know about the attack?";
 };
 
 func int DIA_Addon_Emilio_Attentat_Condition()
@@ -179,15 +179,15 @@ func int DIA_Addon_Emilio_Attentat_Condition()
 
 func void DIA_Addon_Emilio_Attentat_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Emilio_Attentat_15_00"); //Was weißt du über das Attentat?
+	AI_Output(other, self, "DIA_Addon_Emilio_Attentat_15_00"); //What do you know about the attack?
 	if (Emilio_Switch == 0)
 	{
-		AI_Output(self, other, "DIA_Addon_Emilio_Attentat_10_01"); //(ängstlich) Hey Mann, damit habe ich nichts zu tun!
+		AI_Output(self, other, "DIA_Addon_Emilio_Attentat_10_01"); //(scared) Hey, man, I didn't have anything to do with it!
 		Emilio_Switch = 1;
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Emilio_Attentat_10_02"); //(ängstlich) GAR NICHTS!
+		AI_Output(self, other, "DIA_Addon_Emilio_Attentat_10_02"); //(scared) NOTHING AT ALL!
 		Emilio_Switch = 0;
 	};
 };
@@ -216,17 +216,17 @@ func void DIA_Addon_Emilio_Senyan_Info()
 {
 	if (Senyan_Called == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_00"); //(forschend) Sag mal, WARUM hat Senyan gerufen 'Seht mal, wen wir hier haben'?
-		AI_Output(other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_01"); //(trocken) Unbezahlte Rechnungen.
+		AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_00"); //(searchingly) Tell me, WHY did Senyan yell, 'Look who we have here'?
+		AI_Output(other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_01"); //(drily) Unpaid debts.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_02"); //Du hast Senyan umgelegt!
+		AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_02"); //You killed Senyan!
 	};
 
-	AI_Output(other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_03"); //Hast du damit ein Problem?
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_04"); //(eilig) Nein Mann, damit hab ich kein Problem.
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_05"); //Ganz im Gegenteil. (abfällig) Der Mistkerl hat für Esteban gearbeitet.
+	AI_Output(other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_03"); //Do you have a problem with that?
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_04"); //(hastily) No, man, I don't have a problem with it.
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_05"); //Quite the opposite. (snidely) The bastard worked for Esteban.
 
 	Senyan_CONTRA = LOG_SUCCESS;
 	B_LogEntry(Topic_Addon_Esteban, Topic_Addon_Esteban_9);
@@ -241,7 +241,7 @@ instance DIA_Addon_Emilio_Jetzt(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Emilio_Jetzt_Condition;
 	information		= DIA_Addon_Emilio_Jetzt_Info;
-	description		= "Warum bist du jetzt nicht in der Mine?";
+	description		= "Why aren't you in the mine now?";
 };
 
 func int DIA_Addon_Emilio_Jetzt_Condition()
@@ -254,9 +254,9 @@ func int DIA_Addon_Emilio_Jetzt_Condition()
 
 func void DIA_Addon_Emilio_Jetzt_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Emilio_Jetzt_15_00"); //Warum bist du jetzt nicht in der Mine?
-	AI_Output(self, other, "DIA_Addon_Emilio_Jetzt_10_01"); //(etwas unsicher) Ich war lang genug in der Mine und hab' bis zum Umfallen geackert. Jetzt brauche ich erst mal ein paar Tage Ruhe.
-	AI_Output(self, other, "DIA_Addon_Emilio_Jetzt_10_02"); //(seufzt, etwas unsicher) Bevor ich mir meinen nächsten roten Stein hole.
+	AI_Output(other, self, "DIA_Addon_Emilio_Jetzt_15_00"); //Why aren't you in the mine now?
+	AI_Output(self, other, "DIA_Addon_Emilio_Jetzt_10_01"); //(somewhat unsure) I was in the mine long enough and slaved away until I was about to fall over. Now I need a few days' rest.
+	AI_Output(self, other, "DIA_Addon_Emilio_Jetzt_10_02"); //(sighs, somewhat unsure) Before I get my next red stone.
 };
 
 // ----------------------------------------------------------------------
@@ -268,7 +268,7 @@ instance DIA_Addon_Emilio_VonEmilio(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Emilio_VonEmilio_Condition;
 	information		= DIA_Addon_Emilio_VonEmilio_Info;
-	description		= "Lennar hat mir ein bißchen was über dich erzählt...";
+	description		= "Lennar told me a bit about you...";
 };
 
 func int DIA_Addon_Emilio_VonEmilio_Condition()
@@ -282,17 +282,17 @@ func int DIA_Addon_Emilio_VonEmilio_Condition()
 
 func void DIA_Addon_Emilio_VonEmilio_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Emilio_VonEmilio_15_00"); //Lennar hat mir ein bisschen was über dich erzählt ...
-	AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_01"); //Lennar? Der Typ ist ein Idiot! Das musst du doch gemerkt haben.
-	AI_Output(other, self, "DIA_Addon_Emilio_VonEmilio_15_02"); //Er sagt, du warst nicht mehr in der Mine, seit das Attentat passiert ist.
-	AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_03"); //(eingeschüchtert) Ich ... weiß nichts!
+	AI_Output(other, self, "DIA_Addon_Emilio_VonEmilio_15_00"); //Lennar told me a bit about you...
+	AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_01"); //Lennar? That guy's an idiot. You must have noticed.
+	AI_Output(other, self, "DIA_Addon_Emilio_VonEmilio_15_02"); //He said you haven't been in the mine since the attack happened.
+	AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_03"); //(intimidated) I... don't know anything!
 
 	if (!Npc_IsDead(Senyan))
 	{
-		AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_04"); //Du arbeitest doch mit diesem Senyan zusammen!
-		AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_05"); //Ihr steckt doch beide mit Esteban unter einer Decke! Ich hab genau gehört, was ihr gequatscht habt!
-		AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_06"); //Bisher hat Esteban sich einen Dreck um ums gekümmert. Warum sollte ich seinen Leuten trauen?
-		AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_07"); //Lass mich in Ruhe!
+		AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_04"); //You are working together with that Senyan!
+		AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_05"); //You're both in cahoots with Esteban! I heard exactly what you were blabbing about!
+		AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_06"); //Up to now Esteban hasn't given a damn about us. Why should I trust his people.
+		AI_Output(self, other, "DIA_Addon_Emilio_VonEmilio_10_07"); //Leave me alone!
 		AI_StopProcessInfos(self);
 	};
 
@@ -308,7 +308,7 @@ instance DIA_Addon_Emilio_HilfMir(C_INFO)
 	nr				= 7;
 	condition		= DIA_Addon_Emilio_HilfMir_Condition;
 	information		= DIA_Addon_Emilio_HilfMir_Info;
-	description		= "Hilf mir, den Auftraggeber des Attentats zu finden!";
+	description		= "Help me find out who was behind the attack!";
 };
 
 func int DIA_Addon_Emilio_HilfMir_Condition()
@@ -322,12 +322,12 @@ func int DIA_Addon_Emilio_HilfMir_Condition()
 
 func void DIA_Addon_Emilio_HilfMir_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Emilio_HilfMir_15_00"); //Hilf mir, den Auftraggeber des Attentats zu finden!
-	AI_Output(self, other, "DIA_Addon_Emilio_HilfMir_10_01"); //Nein! Damit will ich nichts zu tun haben!
-	AI_Output(other, self, "DIA_Addon_Emilio_HilfMir_15_02"); //Wenn einem Idioten wie Lennar auffällt, dass du dich merkwürdig verhältst, kann es nicht mehr lange dauern, bis auch Esteban dahinter kommt.
-	AI_Output(self, other, "DIA_Addon_Emilio_HilfMir_10_03"); //(windet sich) Ich ... Scheiße! Ich sag dir nur einen Namen. Mehr nicht.
-	AI_Output(other, self, "DIA_Addon_Emilio_HilfMir_15_04"); //Ich höre.
-	AI_Output(self, other, "DIA_Addon_Emilio_HilfMir_10_05"); //Huno ... geh zu Huno. Er muss was über die Sache wissen.
+	AI_Output(other, self, "DIA_Addon_Emilio_HilfMir_15_00"); //Help me find out who was behind the attack!
+	AI_Output(self, other, "DIA_Addon_Emilio_HilfMir_10_01"); //No! I don't want anything to do with it!
+	AI_Output(other, self, "DIA_Addon_Emilio_HilfMir_15_02"); //If an idiot like Lennar notices that you're behaving oddly, it won't take long before Esteban finds out, too.
+	AI_Output(self, other, "DIA_Addon_Emilio_HilfMir_10_03"); //(squirming) I... shit! I'll tell you one name. Nothing more.
+	AI_Output(other, self, "DIA_Addon_Emilio_HilfMir_15_04"); //I'm listening.
+	AI_Output(self, other, "DIA_Addon_Emilio_HilfMir_10_05"); //Huno... go to Huno. He must know something about this business.
 	Emilio_TellAll = TRUE;
 
 	B_LogEntry(Topic_Addon_Esteban, Topic_Addon_Esteban_11);
@@ -342,7 +342,7 @@ instance DIA_Addon_Emilio_GegenEsteban(C_INFO)
 	nr				= 8;
 	condition		= DIA_Addon_Emilio_GegenEsteban_Condition;
 	information		= DIA_Addon_Emilio_GegenEsteban_Info;
-	description		= "Was hast du gegen Esteban?";
+	description		= "What do you have against Esteban?";
 };
 
 func int DIA_Addon_Emilio_GegenEsteban_Condition()
@@ -355,12 +355,12 @@ func int DIA_Addon_Emilio_GegenEsteban_Condition()
 
 func void DIA_Addon_Emilio_GegenEsteban_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Emilio_GegenEsteban_15_00"); //Was hast du gegen Esteban?
-	AI_Output(self, other, "DIA_Addon_Emilio_GegenEsteban_10_01"); //Das Schwein denkt nur an's Abkassieren.
-	AI_Output(self, other, "DIA_Addon_Emilio_GegenEsteban_10_02"); //Alle paar Tage wird einer von uns von einem Crawler gefressen.
-	AI_Output(self, other, "DIA_Addon_Emilio_GegenEsteban_10_03"); //Aber Esteban will einfach keine Kämpfer in die Mine schicken.
-	AI_Output(self, other, "DIA_Addon_Emilio_GegenEsteban_10_04"); //Und warum? Die Typen gehören zu 'Ravens Leibgarde' und Esteban hat Schiss, ihnen was zu sagen.
-	AI_Output(self, other, "DIA_Addon_Emilio_GegenEsteban_10_05"); //Stattdessen lässt er uns lieber verrecken!
+	AI_Output(other, self, "DIA_Addon_Emilio_GegenEsteban_15_00"); //What do you have against Esteban?
+	AI_Output(self, other, "DIA_Addon_Emilio_GegenEsteban_10_01"); //All that swine thinks about is money.
+	AI_Output(self, other, "DIA_Addon_Emilio_GegenEsteban_10_02"); //Every few days one of us gets eaten by a crawler.
+	AI_Output(self, other, "DIA_Addon_Emilio_GegenEsteban_10_03"); //But Esteban just won't send any fighters into the mine.
+	AI_Output(self, other, "DIA_Addon_Emilio_GegenEsteban_10_04"); //And why? Those guys belong to 'Raven's bodyguards' and Esteban is scared shitless to tell them.
+	AI_Output(self, other, "DIA_Addon_Emilio_GegenEsteban_10_05"); //He'd rather let us get killed!
 };
 
 // ----------------------------------------------------------------------
@@ -390,7 +390,7 @@ func void DIA_Addon_Emilio_Mine_Info()
 	B_Say(other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems(other, self, ItmI_Addon_Stone_01, 1);
 
-	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Mine_10_00"); //So, du bist jetzt also der Boss hier. Okay, dann werde ich mal losziehen.
+	AI_Output(self, other, "DIA_Addon_BDT_10015_Emilio_Mine_10_00"); //So now you're the boss here. Okay, then I'll get going.
 
 	Player_SentBuddler = (Player_SentBuddler + 1);
 	B_GivePlayerXP(XP_Addon_MINE);
@@ -408,7 +408,7 @@ instance DIA_Addon_Emilio_Hacker(C_INFO)
 	condition		= DIA_Addon_Emilio_Hacker_Condition;
 	information		= DIA_Addon_Emilio_Hacker_Info;
 	permanent		= TRUE;
-	description		= "Wie läuft's?";
+	description		= "What's up?";
 };
 
 func int DIA_Addon_Emilio_Hacker_Condition()
@@ -421,6 +421,6 @@ func int DIA_Addon_Emilio_Hacker_Condition()
 
 func void DIA_Addon_Emilio_Hacker_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10004_Emilio_Hacker_15_00"); //Wie läuft's?
-	AI_Output(self, other, "DIA_Addon_BDT_10004_Emilio_Hacker_10_01"); //Ich rackere mich ganz schön ab, na Hauptsache, ich werd nicht von einem Crawler gefressen.
+	AI_Output(other, self, "DIA_Addon_BDT_10004_Emilio_Hacker_15_00"); //What's up?
+	AI_Output(self, other, "DIA_Addon_BDT_10004_Emilio_Hacker_10_01"); //I'm really slaving away. Well, the main thing is, I won't get eaten by a crawler.
 };

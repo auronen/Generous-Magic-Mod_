@@ -9,7 +9,7 @@ instance Spell_MassDeath(C_Spell_Proto)
 {
 	time_per_mana = 0;
 	damage_per_level = SPL_Damage_MassDeath;
-	targetCollectAlgo = TARGET_COLLECT_NONE; // Opfer werden aber erst durch Kollision mit dem Effekt getötet
+	targetCollectAlgo = TARGET_COLLECT_NONE; // Opfer werden aber erst durch Kollision mit dem Effekt getÃ¶tet
 };
 
 func int Spell_Logic_Massdeath(var int manaInvested)

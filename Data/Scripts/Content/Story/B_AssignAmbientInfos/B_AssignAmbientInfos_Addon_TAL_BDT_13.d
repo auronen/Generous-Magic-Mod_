@@ -29,7 +29,7 @@ instance DIA_Addon_TAL_BDT_13_Hi(C_INFO)
 	condition		= DIA_Addon_TAL_BDT_13_Hi_Condition;
 	information		= DIA_Addon_TAL_BDT_13_Hi_Info;
 	permanent		= TRUE;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_TAL_BDT_13_Hi_Condition()
@@ -39,9 +39,9 @@ func int DIA_Addon_TAL_BDT_13_Hi_Condition()
 
 func void DIA_Addon_TAL_BDT_13_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00"); //Wie sieht's aus?
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01"); //Entweder du wirst von 'nem Vieh gefressen oder du wirst von 'nem Vieh gefressen.
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02"); //Dieser Sumpf wird noch unser Grab ...
+	AI_Output(other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01"); //Either you'll get eaten by a beast or you'll get eaten by a beast.
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02"); //This swamp will be our grave...
 };
 
 // *************************************************************************
@@ -53,7 +53,7 @@ instance DIA_Addon_TAL_BDT_13_Tal(C_INFO)
 	condition		= DIA_Addon_TAL_BDT_13_Tal_Condition;
 	information		= DIA_Addon_TAL_BDT_13_Tal_Info;
 	permanent		= TRUE;
-	description		= "Was weißt du über dieses Tal?";
+	description		= "What do you know about this valley?";
 };
 
 func int DIA_Addon_TAL_BDT_13_Tal_Condition()
@@ -63,9 +63,9 @@ func int DIA_Addon_TAL_BDT_13_Tal_Condition()
 
 func void DIA_Addon_TAL_BDT_13_Tal_Info()
 {
-	AI_Output(other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00"); //Was weißt du über dieses Tal?
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01"); //Hier gibt's haufenweise altes Zeug. Raven hat uns den Auftrag gegeben, alles einzusammeln.
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02"); //Keine Ahnung, was er damit will, aber niemand, der bei Verstand ist, wird seinen Hals für ein paar alte Steine riskieren ...
+	AI_Output(other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00"); //What do you know about this valley?
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01"); //There's loads of old stuff here. Raven's ordered us to gather up everything.
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02"); //No idea what he wants with it, but nobody in his right mind would risk his neck for a few old rocks...
 };
 
 // *************************************************************************
@@ -77,7 +77,7 @@ instance DIA_Addon_TAL_BDT_13_News(C_INFO)
 	condition		= DIA_Addon_TAL_BDT_13_News_Condition;
 	information		= DIA_Addon_TAL_BDT_13_News_Info;
 	permanent		= TRUE;
-	description		= "Gibt's was Neues?";
+	description		= "Is there anything new?";
 };
 
 func int DIA_Addon_TAL_BDT_13_News_Condition()
@@ -87,13 +87,13 @@ func int DIA_Addon_TAL_BDT_13_News_Condition()
 
 func void DIA_Addon_TAL_BDT_13_News_Info()
 {
-	AI_Output(other, self, "DIA_Addon_TAL_BDT_13_News_15_00"); //Gibt's was Neues?
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_News_13_01"); //Diese Piraten haben wir ganz schön über's Ohr gehauen.
-	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_News_13_02"); //Sie haben uns Gefangene besorgt, aber nicht eine Münze dafür gesehen. Kein Wunder, dass die sauer sind.
+	AI_Output(other, self, "DIA_Addon_TAL_BDT_13_News_15_00"); //Is there anything new?
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_News_13_01"); //We really put one over on those pirates.
+	AI_Output(self, other, "DIA_Addon_TAL_BDT_13_News_13_02"); //They provided us with prisoners, but never saw a coin for it. No wonder they're angry.
 
 	if (BDT_13_einmal == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_TAL_BDT_13_News_13_03"); //Aber was wollen sie machen? Das Lager angreifen? (lacht) HAHAHA.
+		AI_Output(self, other, "DIA_Addon_TAL_BDT_13_News_13_03"); //But what can they do? Attack the camp? (laughs) HAHAHA.
 		BDT_13_einmal = TRUE;
 	};
 };

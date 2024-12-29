@@ -1,7 +1,7 @@
 instance Mil_306_Tuerwache(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Richterhaus Wache";
+	name							= "Judge's House Guard";
 	npctype							= NPCTYPE_AMBIENT;
 	guild							= GIL_MIL;
 	flags							= 0;

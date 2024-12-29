@@ -55,11 +55,11 @@ func void DIA_Kati_SLDNOCHDA_Info()
 
 	if (Hilfe == FALSE)
 	{
-		AI_Output(self, other, "DIA_Kati_SLDNOCHDA_16_00"); //Mein Mann wird von diesen Halsabschneidern bedroht! Wir sind königstreue Bürger der Stadt, und die Söldner wollen uns ausrauben!
+		AI_Output(self, other, "DIA_Kati_SLDNOCHDA_16_00"); //Those cutthroats are threatening my husband! We are citizens of the town, loyal to the king, and the mercenaries are planning to rob us!
 		Hilfe = TRUE;
 	};
 
-	AI_Output(self, other, "DIA_Kati_SLDNOCHDA_16_01"); //Jetzt steh doch da nicht herum. Tu doch irgendwas. Hilf uns.
+	AI_Output(self, other, "DIA_Kati_SLDNOCHDA_16_01"); //Now don't you just stand there. Do something then! Help us.
 	Akils_SLDStillthere = TRUE;
 	Log_CreateTopic(TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
@@ -77,7 +77,7 @@ instance DIA_Kati_HALLO(C_INFO)
 	nr				= 5;
 	condition		= DIA_Kati_HALLO_Condition;
 	information		= DIA_Kati_HALLO_Info;
-	description		= "Bist du in Ordnung?";
+	description		= "Are you all right?";
 };
 
 func int DIA_Kati_HALLO_Condition()
@@ -91,11 +91,11 @@ func int DIA_Kati_HALLO_Condition()
 
 func void DIA_Kati_HALLO_Info()
 {
-	AI_Output(other, self, "DIA_Kati_HALLO_15_00"); //Bist du in Ordnung?
+	AI_Output(other, self, "DIA_Kati_HALLO_15_00"); //Are you all right?
 
 	if (Npc_IsDead(Akil))
 	{
-		AI_Output(self, other, "DIA_Kati_HALLO_16_01"); //(schluchzt) Mein geliebter Mann ist tot! Oh Innos, warum strafst du mich so hart?
+		AI_Output(self, other, "DIA_Kati_HALLO_16_01"); //(sobs) My beloved husband is dead! Oh Innos, why do you punish me so hard?
 
 		Npc_ExchangeRoutine(self, "Start");
 		B_StartOtherRoutine(Randolph, "Start");
@@ -104,7 +104,7 @@ func void DIA_Kati_HALLO_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Kati_HALLO_16_02"); //Ja, mir geht's gut, danke.
+		AI_Output(self, other, "DIA_Kati_HALLO_16_02"); //Yes, I'm fine, thank you.
 	};
 };
 
@@ -117,7 +117,7 @@ instance DIA_Kati_ESSEN(C_INFO)
 	nr				= 12;
 	condition		= DIA_Kati_ESSEN_Condition;
 	information		= DIA_Kati_ESSEN_Info;
-	description		= "Akil meinte, du hättet eine Mahlzeit für mich.";
+	description		= "Akil says you've got a meal for me.";
 };
 
 func int DIA_Kati_ESSEN_Condition()
@@ -131,9 +131,9 @@ func int DIA_Kati_ESSEN_Condition()
 
 func void DIA_Kati_ESSEN_Info()
 {
-	AI_Output(other, self, "DIA_Kati_ESSEN_15_00"); //Akil meinte, du hättet eine Mahlzeit für mich.
-	AI_Output(self, other, "DIA_Kati_ESSEN_16_01"); //Es sind schwere Zeiten für uns angebrochen, seit die Barriere nicht mehr da ist und das Land unsicher geworden ist.
-	AI_Output(self, other, "DIA_Kati_ESSEN_16_02"); //Hier hast du einen Laib Brot, etwas Fleisch und einen Schluck Wasser. Mehr kann ich leider nicht entbehren.
+	AI_Output(other, self, "DIA_Kati_ESSEN_15_00"); //Akil says you've got a meal for me.
+	AI_Output(self, other, "DIA_Kati_ESSEN_16_01"); //We've hit some hard times ever since the Barrier fell and the land is no longer safe.
+	AI_Output(self, other, "DIA_Kati_ESSEN_16_02"); //Here's a loaf of bread, a little meat and some water. That's all I can spare, I'm afraid.
 
 	B_GiveInvItems(self, other, ItFo_Bread, 1);
 	B_GiveInvItems(self, other, ItFo_Water, 1);
@@ -149,7 +149,7 @@ instance DIA_Kati_Baltram(C_INFO)
 	nr				= 4;
 	condition		= DIA_Kati_Baltram_Condition;
 	information		= DIA_Kati_Baltram_Info;
-	description		= "Baltram schickt mich... ";
+	description		= "Baltram sent me ...";
 };
 
 func int DIA_Kati_Baltram_Condition()
@@ -164,8 +164,8 @@ func int DIA_Kati_Baltram_Condition()
 
 func void DIA_Kati_Baltram_Info()
 {
-	AI_Output(other, self, "DIA_Kati_Baltram_15_00"); //Baltram schickt mich. Ich soll eine Lieferung für ihn abholen.
-	AI_Output(self, other, "DIA_Kati_Baltram_16_01"); //Ja natürlich. Hier, ich habe schon alles zusammen gepackt.
+	AI_Output(other, self, "DIA_Kati_Baltram_15_00"); //Baltram sent me. I'm supposed to pick up a shipment for him.
+	AI_Output(self, other, "DIA_Kati_Baltram_16_01"); //Yes, of course. Here, I've packed it all up.
 	CreateInvItems(self, ItMi_BaltramPaket, 1);
 	B_GiveInvItems(self, other, ItMi_BaltramPaket, 1);
 	Lieferung_Geholt = TRUE;
@@ -180,7 +180,7 @@ instance DIA_Kati_BAUERNAUFSTAND(C_INFO)
 	nr				= 6;
 	condition		= DIA_Kati_BAUERNAUFSTAND_Condition;
 	information		= DIA_Kati_BAUERNAUFSTAND_Info;
-	description		= "Warum wehrt ihr euch nicht gegen Onars Unterdrückung?";
+	description		= "Why don't you defend yourselves against Onar's tyranny? ";
 };
 
 func int DIA_Kati_BAUERNAUFSTAND_Condition()
@@ -193,9 +193,9 @@ func int DIA_Kati_BAUERNAUFSTAND_Condition()
 
 func void DIA_Kati_BAUERNAUFSTAND_Info()
 {
-	AI_Output(other, self, "DIA_Kati_BAUERNAUFSTAND_15_00"); //Warum wehrt ihr euch nicht gegen Onars Unterdrückung?
-	AI_Output(self, other, "DIA_Kati_BAUERNAUFSTAND_16_01"); //Wir stadtnahen Bauern sind besser beraten, uns mit der Miliz der Stadt gut zu stellen, als auf Onars Söldner zu bauen.
-	AI_Output(self, other, "DIA_Kati_BAUERNAUFSTAND_16_02"); //Es gibt da aber auch noch Bengar und Sekob, die lieber ihren Hof aufgeben würden, als für den König zu arbeiten.
+	AI_Output(other, self, "DIA_Kati_BAUERNAUFSTAND_15_00"); //Why don't you defend yourselves against Onar's tyranny?
+	AI_Output(self, other, "DIA_Kati_BAUERNAUFSTAND_16_01"); //For us farmers near the city, it makes more sense to stay on the good side of the city militia than to rely on Onar's mercenaries.
+	AI_Output(self, other, "DIA_Kati_BAUERNAUFSTAND_16_02"); //On the other hand, there's Bengar and Sekob who would rather give up their farms than work for the king.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -207,7 +207,7 @@ instance DIA_Kati_ANDEREHOEFE(C_INFO)
 	nr				= 7;
 	condition		= DIA_Kati_ANDEREHOEFE_Condition;
 	information		= DIA_Kati_ANDEREHOEFE_Info;
-	description		= "Wo finde ich die Höfe von Bengar und Sekob?";
+	description		= "Where do I find the farms of Bengar and Sekob?";
 };
 
 func int DIA_Kati_ANDEREHOEFE_Condition()
@@ -220,8 +220,8 @@ func int DIA_Kati_ANDEREHOEFE_Condition()
 
 func void DIA_Kati_ANDEREHOEFE_Info()
 {
-	AI_Output(other, self, "DIA_Kati_ANDEREHOEFE_15_00"); //Wo finde ich die Höfe von Bengar und Sekob?
-	AI_Output(self, other, "DIA_Kati_ANDEREHOEFE_16_01"); //Sie liegen nicht weit vom Hofe des Großbauern entfernt. Geh weiter nach Osten. Dort wirst du sie finden.
+	AI_Output(other, self, "DIA_Kati_ANDEREHOEFE_15_00"); //Where do I find the farms of Bengar and Sekob?
+	AI_Output(self, other, "DIA_Kati_ANDEREHOEFE_16_01"); //They're not far from the farm where the landowner lives. Go east from here, and you'll find them.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -233,7 +233,7 @@ instance DIA_Kati_HIERWEG(C_INFO)
 	nr				= 9;
 	condition		= DIA_Kati_HIERWEG_Condition;
 	information		= DIA_Kati_HIERWEG_Info;
-	description		= "Habt ihr nie daran gedacht, hier weg zu gehen?";
+	description		= "Haven't you ever considered moving away from here?";
 };
 
 func int DIA_Kati_HIERWEG_Condition()
@@ -246,10 +246,10 @@ func int DIA_Kati_HIERWEG_Condition()
 
 func void DIA_Kati_HIERWEG_Info()
 {
-	AI_Output(other, self, "DIA_Kati_HIERWEG_15_00"); //Habt ihr nie daran gedacht, hier weg zu gehen?
-	AI_Output(self, other, "DIA_Kati_HIERWEG_16_01"); //Aus diesem Teil des Landes kommt man nicht so einfach weg. Das ganze Land ist umschlossen von einer hohen Felskette, die unüberwindlich ist.
-	AI_Output(self, other, "DIA_Kati_HIERWEG_16_02"); //Die beiden einzigen Wege von hier fort sind der Pass ins alte Minental und der Hafen.
-	AI_Output(self, other, "DIA_Kati_HIERWEG_16_03"); //Da wir uns die Überfahrt mit dem Schiff nicht leisten können, und das Minental ein Land ohne Wiederkehr ist, werden wir hier bleiben müssen.
+	AI_Output(other, self, "DIA_Kati_HIERWEG_15_00"); //Haven't you ever considered moving away from here?
+	AI_Output(self, other, "DIA_Kati_HIERWEG_16_01"); //It's not easy to get away from this part of the country. All the land is walled in by a high, insurmountable chain of mountains.
+	AI_Output(self, other, "DIA_Kati_HIERWEG_16_02"); //The only two ways out of here are the pass to the Valley of Mines, and the harbor.
+	AI_Output(self, other, "DIA_Kati_HIERWEG_16_03"); //Since we cannot afford passage on a ship, and the Valley of Mines is a place of no return, we're going to have to stay here.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -261,7 +261,7 @@ instance DIA_Kati_PASS(C_INFO)
 	nr				= 10;
 	condition		= DIA_Kati_PASS_Condition;
 	information		= DIA_Kati_PASS_Info;
-	description		= "Was weißt du über den Pass?";
+	description		= "What do you know about the pass?";
 };
 
 func int DIA_Kati_PASS_Condition()
@@ -274,8 +274,8 @@ func int DIA_Kati_PASS_Condition()
 
 func void DIA_Kati_PASS_Info()
 {
-	AI_Output(other, self, "DIA_Kati_PASS_15_00"); //Was weißt du über den Pass?
-	AI_Output(self, other, "DIA_Kati_PASS_16_01"); //Ich bin selbst noch nie dort gewesen. Er muss aber irgendwo bei Bengars Hof auf dem Weidenplateau sein.
+	AI_Output(other, self, "DIA_Kati_PASS_15_00"); //What do you know about the pass?
+	AI_Output(self, other, "DIA_Kati_PASS_16_01"); //I've never been there myself. But it must be somewhere near Bengar's farm on the high pastures.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -288,7 +288,7 @@ instance DIA_Kati_PERMKAP1(C_INFO)
 	condition		= DIA_Kati_PERMKAP1_Condition;
 	information		= DIA_Kati_PERMKAP1_Info;
 	permanent		= TRUE;
-	description		= "Pass auf deinen Mann auf.";
+	description		= "Look out for your husband.";
 };
 
 func int DIA_Kati_PERMKAP1_Condition()
@@ -309,8 +309,8 @@ func int DIA_Kati_PERMKAP1_Condition()
 
 func void DIA_Kati_PERMKAP1_Info()
 {
-	AI_Output(other, self, "DIA_Kati_PERMKAP1_15_00"); //Pass auf deinen Mann auf.
-	AI_Output(self, other, "DIA_Kati_PERMKAP1_16_01"); //Ich werde mich bemühen.
+	AI_Output(other, self, "DIA_Kati_PERMKAP1_15_00"); //Look out for your husband.
+	AI_Output(self, other, "DIA_Kati_PERMKAP1_16_01"); //I shall do my best.
 	AI_StopProcessInfos(self);
 };
 
@@ -358,7 +358,7 @@ instance DIA_Kati_PERM(C_INFO)
 	condition		= DIA_Kati_PERM_Condition;
 	information		= DIA_Kati_PERM_Info;
 	permanent		= TRUE;
-	description		= "Immer noch alles in Ordnung bei dir?";
+	description		= "Everything still fine with you?";
 };
 
 func int DIA_Kati_PERM_Condition()
@@ -372,9 +372,9 @@ func int DIA_Kati_PERM_Condition()
 
 func void DIA_Kati_PERM_Info()
 {
-	AI_Output(other, self, "DIA_Kati_PERM_15_00"); //Immer noch alles in Ordnung bei dir?
-	AI_Output(self, other, "DIA_Kati_PERM_16_01"); //Es geht schon. Ich frage mich nur, wie lange wir diese schwarzen Teufel noch erdulden müssen.
-	AI_Output(self, other, "DIA_Kati_PERM_16_02"); //Ich kann es nicht mehr ertragen. Sie schleichen ums Haus und machen so seltsame Geräusche.
+	AI_Output(other, self, "DIA_Kati_PERM_15_00"); //Everything still fine with you?
+	AI_Output(self, other, "DIA_Kati_PERM_16_01"); //We can manage. I just wonder how much longer we're going to have to endure these devils in black.
+	AI_Output(self, other, "DIA_Kati_PERM_16_02"); //I can't stand it any more. They sneak around the house, making those funny noises.
 };
 
 // #####################################################################

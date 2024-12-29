@@ -44,10 +44,10 @@ func int DIA_Fed_HALLO_Condition()
 
 func void DIA_Fed_HALLO_Info()
 {
-	AI_Output(self, other, "DIA_Fed_HALLO_08_00"); //Was willst du von mir? Ich werde nirgendwo hingehen!
-	AI_Output(other, self, "DIA_Fed_HALLO_15_01"); //Bleib ganz ruhig - niemand will, dass du irgendwo hingehst.
-	AI_Output(self, other, "DIA_Fed_HALLO_08_02"); //Innos sei Dank. Weißt du, in den letzten Tagen haben immer wieder Männer das Lager verlassen - von denen ist keiner wiedergekommen.
-	AI_Output(self, other, "DIA_Fed_HALLO_08_03"); //Die wurden alle von den Snappern gefressen. Aber ich nicht. Ich werde hier einfach so lange hacken, bis alles vorbei ist.
+	AI_Output(self, other, "DIA_Fed_HALLO_08_00"); //What do you want from me? I'm not going anywhere!
+	AI_Output(other, self, "DIA_Fed_HALLO_15_01"); //Stay calm, relax - no one wants you to go anywhere.
+	AI_Output(self, other, "DIA_Fed_HALLO_08_02"); //Thank Innos. You know, over the last few days, several men have left the camp - and not one of them has come back.
+	AI_Output(self, other, "DIA_Fed_HALLO_08_03"); //They were all eaten by snappers. But not me. I'll just stay put here until it's all over.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -59,7 +59,7 @@ instance DIA_Fed_Snapper(C_INFO)
 	nr				= 3;
 	condition		= DIA_Fed_Snapper_Condition;
 	information		= DIA_Fed_Snapper_Info;
-	description		= "Was weißt du über die Snapper?";
+	description		= "What do you know about the snappers?";
 };
 
 func int DIA_Fed_Snapper_Condition()
@@ -72,11 +72,11 @@ func int DIA_Fed_Snapper_Condition()
 
 func void DIA_Fed_Snapper_Info()
 {
-	AI_Output(other, self, "DIA_Fed_Snapper_15_00"); //Was weißt du über die Snapper?
-	AI_Output(self, other, "DIA_Fed_Snapper_08_01"); //Bilgot hat sie nachts beobachtet. Ein paar von ihnen stehen unten an dem Tümpel, unten am Fuß des dunklen Turms.
-	AI_Output(self, other, "DIA_Fed_Snapper_08_02"); //Andere sind genau über uns - auf der Felsklippe. Die warten so lange ab, bis wir völlig erschöpft sind.
-	AI_Output(self, other, "DIA_Fed_Snapper_08_03"); //Wir haben uns hier selber in die Enge getrieben. Bald werden sie das Lager angreifen - und werden ihr blutiges Festmahl halten ...
-	AI_Output(other, self, "DIA_Fed_Snapper_15_04"); //Verstehe.
+	AI_Output(other, self, "DIA_Fed_Snapper_15_00"); //What do you know about the snappers?
+	AI_Output(self, other, "DIA_Fed_Snapper_08_01"); //Bilgot watches them at night. A few of them are down at the pool at the base of the dark tower.
+	AI_Output(self, other, "DIA_Fed_Snapper_08_02"); //Others are right above us - on top of the cliff. They're just waiting until we're all exhausted.
+	AI_Output(self, other, "DIA_Fed_Snapper_08_03"); //We managd to trap ourselves here. Soon they'll attack the camp - and have their bloody feast ...
+	AI_Output(other, self, "DIA_Fed_Snapper_15_04"); //I see.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -89,7 +89,7 @@ instance DIA_Fed_Perm(C_INFO)
 	condition		= DIA_Fed_Perm_Condition;
 	information		= DIA_Fed_Perm_Info;
 	permanent		= TRUE;
-	description		= "Geht's dir gut?";
+	description		= "Are you all right?";
 };
 
 func int DIA_Fed_Perm_Condition()
@@ -99,16 +99,16 @@ func int DIA_Fed_Perm_Condition()
 
 func void DIA_Fed_Perm_Info()
 {
-	AI_Output(other, self, "DIA_Fed_Perm_15_00"); //Geht's dir gut?
+	AI_Output(other, self, "DIA_Fed_Perm_15_00"); //Are you all right?
 
 	if (MIS_Fajeth_Kill_Snapper != LOG_SUCCESS)
 	{
-		AI_Output(self, other, "DIA_Fed_Perm_08_01"); //Die Snapper sind da draußen. Kannst du sie riechen ...? Ich rieche sie ...
+		AI_Output(self, other, "DIA_Fed_Perm_08_01"); //The snappers are out there. Can you smell them ...? I can smell them ...
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Fed_Perm_08_02"); //Die Snapper haben sich anscheinend zurückgezogen. Aber das heißt nichts. Die kommen wieder - oder es kommen Wölfe, oder Warane, oder die Orks.
-		AI_Output(self, other, "DIA_Fed_Perm_08_03"); //Und über kurz oder lang werden sie uns erwischen und unsere toten Körper verspeisen ...
+		AI_Output(self, other, "DIA_Fed_Perm_08_02"); //The snappers seem to have pulled back. But that doesn't mean anything. They'll come back - or the wolves, or the lizards, or the orcs.
+		AI_Output(self, other, "DIA_Fed_Perm_08_03"); //And sooner or later they'll get us and feed on our dead bodies ...
 	};
 
 	AI_StopProcessInfos(self);

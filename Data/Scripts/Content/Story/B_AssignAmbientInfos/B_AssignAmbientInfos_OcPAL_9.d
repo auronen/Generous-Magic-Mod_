@@ -29,7 +29,7 @@ instance DIA_OCPAL_9_PEOPLE(C_INFO)
 	condition		= DIA_OCPAL_9_PEOPLE_Condition;
 	information		= DIA_OCPAL_9_PEOPLE_Info;
 	permanent		= TRUE;
-	description		= "Wer hat hier das Kommando?";
+	description		= "Who's in command here?";
 };
 
 func int DIA_OCPAL_9_PEOPLE_Condition()
@@ -39,8 +39,8 @@ func int DIA_OCPAL_9_PEOPLE_Condition()
 
 func void DIA_OCPAL_9_PEOPLE_Info()
 {
-	AI_Output(other, self, "DIA_OCPAL_9_PEOPLE_15_00"); //Wer hat hier das Kommando?
-	AI_Output(self, other, "DIA_OCPAL_9_PEOPLE_09_01"); //Garond ist der Kommandant der Burg. Er ist nicht gerade um seine Aufgabe zu beneiden.
+	AI_Output(other, self, "DIA_OCPAL_9_PEOPLE_15_00"); //Who's in command here?
+	AI_Output(self, other, "DIA_OCPAL_9_PEOPLE_09_01"); //Garond is the commander of the castle. You can't exactly envy him his job.
 };
 
 // *************************************************************************
@@ -52,7 +52,7 @@ instance DIA_OCPAL_9_LOCATION(C_INFO)
 	condition		= DIA_OCPAL_9_LOCATION_Condition;
 	information		= DIA_OCPAL_9_LOCATION_Info;
 	permanent		= TRUE;
-	description		= "Was weißt du über dieses Tal?";
+	description		= "What do you know about this valley?";
 };
 
 func int DIA_OCPAL_9_LOCATION_Condition()
@@ -62,9 +62,9 @@ func int DIA_OCPAL_9_LOCATION_Condition()
 
 func void DIA_OCPAL_9_LOCATION_Info()
 {
-	AI_Output(other, self, "DIA_OCPAL_9_LOCATION_15_00"); //Was weißt du über dieses Tal?
-	AI_Output(self, other, "DIA_OCPAL_9_LOCATION_09_01"); //Im Osten haben die Orks einen großen Schutzwall errichtet. Ich vermute, um ihren Nachschub zu sichern. Hinter dem Wall gibt es eine Stelle, an der Schiffe anlegen können.
-	AI_Output(self, other, "DIA_OCPAL_9_LOCATION_09_02"); //Ich hoffe, dass die Orks so schnell keinen Nachschub bekommen. Mir reicht schon, womit wir es JETZT zu tun haben.
+	AI_Output(other, self, "DIA_OCPAL_9_LOCATION_15_00"); //What do you know about this valley?
+	AI_Output(self, other, "DIA_OCPAL_9_LOCATION_09_01"); //In the east, the orcs have built a huge protective wall - to protect their supplies, I suppose. Behind the wall, there's a place where they can dock their ships.
+	AI_Output(self, other, "DIA_OCPAL_9_LOCATION_09_02"); //I hope the orcs don't get their supplies too quickly. What we have to deal with NOW is enough for me.
 };
 
 // *************************************************************************
@@ -76,7 +76,7 @@ instance DIA_OCPAL_9_STANDARD(C_INFO)
 	condition		= DIA_OCPAL_9_STANDARD_Condition;
 	information		= DIA_OCPAL_9_STANDARD_Info;
 	permanent		= TRUE;
-	description		= "Wie ist die Lage?";
+	description		= "How are things?";
 };
 
 func int DIA_OCPAL_9_STANDARD_Condition()
@@ -86,22 +86,22 @@ func int DIA_OCPAL_9_STANDARD_Condition()
 
 func void DIA_OCPAL_9_STANDARD_Info()
 {
-	AI_Output(other, self, "DIA_OCPAL_4_STANDARD_15_00"); //Wie ist die Lage?
+	AI_Output(other, self, "DIA_OCPAL_4_STANDARD_15_00"); //How are things?
 
 	if (Kapitel <= 3)
 	{
-		AI_Output(self, other, "DIA_OCPAL_4_STANDARD_09_01"); //Die Drachen haben schon wieder angegriffen! Aber Innos wird uns im Kampf schützen. Die Kreaturen Beliars werden einen hohen Blutzoll zahlen!
+		AI_Output(self, other, "DIA_OCPAL_4_STANDARD_09_01"); //The dragons have attacked again! But Innos will protect us in battle. The creatures of Beliar will pay a high toll in blood!
 	};
 
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output(self, other, "DIA_OCPAL_4_STANDARD_09_02"); //Drachenjäger! Sie hätten uns lieber Paladine schicken sollen!
+			AI_Output(self, other, "DIA_OCPAL_4_STANDARD_09_02"); //Dragon hunters! They should have sent us paladins!
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_OCPAL_4_STANDARD_09_03"); //Die Drachen wären wir los - jetzt können wir uns um die Orks kümmern!
+			AI_Output(self, other, "DIA_OCPAL_4_STANDARD_09_03"); //Now that we're rid of those dragons, we can take care of the orcs!
 		};
 	};
 
@@ -109,11 +109,11 @@ func void DIA_OCPAL_9_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output(self, other, "DIA_OCPAL_4_STANDARD_09_04"); //Wir müssen das Erz aufs Schiff schaffen und dann nichts wie weg aus diesem verfluchten Land.
+			AI_Output(self, other, "DIA_OCPAL_4_STANDARD_09_04"); //We need to get the ore onto the ship and then get the hell out of this accursed land.
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_OCPAL_4_STANDARD_09_05"); //Verrat! Das Tor hätte niemals geöffnet werden dürfen. Tod allen Verrätern!
+			AI_Output(self, other, "DIA_OCPAL_4_STANDARD_09_05"); //Treason! The gate should never have been opened. Death to all traitors!
 		};
 	};
 };

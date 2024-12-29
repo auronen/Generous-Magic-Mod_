@@ -913,7 +913,7 @@ instance CastlemineDMT(Default_AmbientDementor) // Joly: spricht den SC mit sein
 instance DragonIsle_Keymaster(Default_AmbientDementor)
 {
 	// -------- NPC --------
-	name							= "Schlüsselmeister";
+	name							= "Key Master";
 
 	id								= 1236;
 
@@ -929,7 +929,7 @@ instance DragonIsle_Keymaster(Default_AmbientDementor)
 	// -------- fighting skills --------
 
 	// -------- inventory --------
-	CreateInvItem(self, ItKe_EVT_UNDEAD_02); // der Schlüssel ist wichtig für die Türen zu den Zuggittern
+	CreateInvItem(self, ItKe_EVT_UNDEAD_02); // der SchlÃ¼ssel ist wichtig fÃ¼r die TÃ¼ren zu den Zuggittern
 
 	// -------- daily routine --------
 	start_aistate = ZS_Stand_Dementor;

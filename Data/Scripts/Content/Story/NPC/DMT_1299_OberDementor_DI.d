@@ -1,7 +1,7 @@
 instance DMT_1299_OberDementor_DI(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Schwarzmagier";
+	name							= "Black Magician";
 	npctype							= NpcType_Main;
 	guild							= GIL_DMT;
 	flags							= 0;

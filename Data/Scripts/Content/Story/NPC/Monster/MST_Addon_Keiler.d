@@ -5,7 +5,7 @@
 prototype Mst_Default_Keiler(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Keiler";
+	name							= "Boar";
 	guild							= GIL_WOLF;
 	level							= 6;
 

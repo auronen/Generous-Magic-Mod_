@@ -4,7 +4,7 @@
 
 Magierstab rot, blau, gold
 Zweihandkeule, Einhandkeule(Holz, Stein)
-Steinhammer(Maya TX) klein(einhand), groﬂ(zweihand)
+Steinhammer(Maya TX) klein(einhand), gro√ü(zweihand)
 
 Sichelstab(Zweihand, Stab mit Sichelklinge)
 
@@ -19,9 +19,9 @@ ItMW_Addon_Stab04 // Sichelstab, Ulthar's Stab ab KAP1 Klosterkauf
 ItMW_Addon_Stab05 // Goldener Zauberstab ab KAP1 Klosterkauf
 
 ItMW_Addon_Hacker_1h_01 // Machete ab KAP1 zu kaufen +3
-ItMW_Addon_Hacker_2h_01 // Groﬂe Machete ab KAP1 zu kaufen +3
+ItMW_Addon_Hacker_2h_01 // Gro√üe Machete ab KAP1 zu kaufen +3
 ItMW_Addon_Keule_1h_01 // Keule, Windknecht finden ab kap 1
-ItMW_Addon_Keule_2h_01 // Groﬂe Keule, Sturmknecht finden in Addonworld
+ItMW_Addon_Keule_2h_01 // Gro√üe Keule, Sturmknecht finden in Addonworld
 
 */
 
@@ -30,7 +30,7 @@ ItMW_Addon_Keule_2h_01 // Groﬂe Keule, Sturmknecht finden in Addonworld
 // -------------------------------------------------------
 instance ItMW_Addon_Knife01(C_Item)
 {
-	name						= "Wolfsmesser";
+	name						= "Wolf Knife";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_SWD;
@@ -291,7 +291,7 @@ instance ItMW_Addon_Hacker_1h_01(C_Item)
 /********************************************************************************/
 instance ItMW_Addon_Hacker_1h_02(C_Item)
 {
-	name						= "Alte Machete";
+	name						= "Old machete";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_SWD;
@@ -323,7 +323,7 @@ instance ItMW_Addon_Hacker_1h_02(C_Item)
 /********************************************************************************/
 instance ItMW_Addon_Hacker_2h_01(C_Item)
 {
-	name						= "Riesenmachete";
+	name						= "Giant machete";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_2HD_SWD;
@@ -355,7 +355,7 @@ instance ItMW_Addon_Hacker_2h_01(C_Item)
 /********************************************************************************/
 instance ItMW_Addon_Hacker_2h_02(C_Item)
 {
-	name						= "Alte Riesenmachete";
+	name						= "Old giant machete";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_2HD_SWD;
@@ -387,7 +387,7 @@ instance ItMW_Addon_Hacker_2h_02(C_Item)
 // *****************************************************
 instance ItMW_Addon_Keule_1h_01(C_Item)
 {
-	name						= "Windknecht";
+	name						= "Wind cudgel";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_AXE;
@@ -419,7 +419,7 @@ instance ItMW_Addon_Keule_1h_01(C_Item)
 // *****************************************************
 instance ItMW_Addon_Keule_2h_01(C_Item) // Sturmknecht 2h Holzkeule
 {
-	name						= "Sturmknecht";
+	name						= "Storm cudgel";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_2HD_AXE;
@@ -435,7 +435,7 @@ instance ItMW_Addon_Keule_2h_01(C_Item) // Sturmknecht 2h Holzkeule
 	range						= RANGE_Sturmknecht;
 
 	on_equip					= UnEquip_2H_10; // MALUS WAFFE MUSS umgekehrt sein.
-	on_unequip					= Equip_2H_10; // erhˆhen
+	on_unequip					= Equip_2H_10; // erh√∂hen
 
 	value						= Value_Sturmknecht;
 
@@ -451,7 +451,7 @@ instance ItMW_Addon_Keule_2h_01(C_Item) // Sturmknecht 2h Holzkeule
 // *****************************************************
 instance ItMw_FrancisDagger_Mis(C_Item)
 {
-	name						= "Guter Dolch";
+	name						= "Good dagger";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_SWD | ITEM_MISSION;
@@ -483,7 +483,7 @@ instance ItMw_FrancisDagger_Mis(C_Item)
 // *****************************************************
 instance ItMw_RangerStaff_Addon(C_Item)
 {
-	name						= "Kampfstab des 'Rings des Wassers'";
+	name						= "Ring of Water' Quarterstaff";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_2HD_AXE;
@@ -513,7 +513,7 @@ instance ItMw_RangerStaff_Addon(C_Item)
 
 instance ItMw_Addon_PIR2hAxe(C_Item)
 {
-	name						= "Plankenbrecher";
+	name						= "Plank breaker";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_2HD_AXE;
@@ -542,7 +542,7 @@ instance ItMw_Addon_PIR2hAxe(C_Item)
 //*********************************************************
 instance ItMw_Addon_PIR2hSword(C_Item)
 {
-	name						= "Enterschwert";
+	name						= "Cutlass";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_2HD_SWD;
@@ -571,7 +571,7 @@ instance ItMw_Addon_PIR2hSword(C_Item)
 //*********************************************************
 instance ItMw_Addon_PIR1hAxe(C_Item)
 {
-	name						= "Enteraxt";
+	name						= "Boarding pike";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_AXE;
@@ -600,7 +600,7 @@ instance ItMw_Addon_PIR1hAxe(C_Item)
 //*********************************************************
 instance ItMw_Addon_PIR1hSword(C_Item)
 {
-	name						= "Entermesser";
+	name						= "Boarding knife";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_SWD;
@@ -629,7 +629,7 @@ instance ItMw_Addon_PIR1hSword(C_Item)
 // *****************************************************
 instance ItMw_Addon_BanditTrader(C_Item)
 {
-	name						= "Degen der Banditen";
+	name						= "Bandits' rapier";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_SWD;
@@ -648,7 +648,7 @@ instance ItMw_Addon_BanditTrader(C_Item)
 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "Der Buchstabe 'F.' ist in den Knauf geritzt.";count[1] = 0;
+	text[1]						= "The letter 'F.' is scratched in the pommel.";count[1] = 0;
 	text[2]						= NAME_Damage;									count[2] = damageTotal;
 	text[3]						= NAME_Dex_needed;								count[3] = cond_value[2];
 	text[4]						= NAME_OneHanded;								count[4] = 0;
@@ -693,7 +693,7 @@ instance ItMw_Addon_Betty(C_Item)
 
 instance ItRw_Addon_MagicArrow(C_Item)
 {
-	name						= "Magischer Pfeil";
+	name						= "Magic arrow";
 
 	mainflag					= ITEM_KAT_MUN;
 	flags						= ITEM_BOW | ITEM_MULTI;
@@ -724,7 +724,7 @@ instance ItRw_Addon_MagicArrow(C_Item)
 
 instance ItRw_Addon_FireArrow(C_Item)
 {
-	name						= "Feuerpfeil";
+	name						= "Fire Arrow";
 
 	mainflag					= ITEM_KAT_MUN;
 	flags						= ITEM_BOW | ITEM_MULTI;
@@ -755,7 +755,7 @@ instance ItRw_Addon_FireArrow(C_Item)
 
 instance ItRw_Addon_MagicBow(C_Item)
 {
-	name						= "Magischer Bogen";
+	name						= "Magic bow";
 
 	mainflag					= ITEM_KAT_FF;
 	flags						= ITEM_BOW;
@@ -786,7 +786,7 @@ instance ItRw_Addon_MagicBow(C_Item)
 
 instance ItRw_Addon_FireBow(C_Item)
 {
-	name						= "Feuerbogen";
+	name						= "Firebow";
 
 	mainflag					= ITEM_KAT_FF;
 	flags						= ITEM_BOW;
@@ -819,7 +819,7 @@ instance ItRw_Addon_FireBow(C_Item)
 
 instance ItRw_Addon_MagicBolt(C_Item)
 {
-	name						= "Magischer Bolzen";
+	name						= "Magic quarrel";
 
 	mainflag					= ITEM_KAT_MUN;
 	flags						= ITEM_CROSSBOW | ITEM_MULTI;
@@ -849,7 +849,7 @@ instance ItRw_Addon_MagicBolt(C_Item)
 
 instance ItRw_Addon_MagicCrossbow(C_Item)
 {
-	name						= "Magische Armbrust";
+	name						= "Magic crossbow";
 
 	mainflag					= ITEM_KAT_FF;
 	flags						= ITEM_CROSSBOW;

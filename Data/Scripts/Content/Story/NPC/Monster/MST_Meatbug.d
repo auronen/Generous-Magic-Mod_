@@ -5,7 +5,7 @@
 prototype Mst_Default_Meatbug(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Fleischwanze";
+	name							= "Meatbug";
 	guild							= GIL_MEATBUG;
 	level							= 1;
 
@@ -36,7 +36,7 @@ prototype Mst_Default_Meatbug(C_Npc)
 	aivar[AIV_MM_WuselStart]		= OnlyRoutine;
 
 	// -------- fight tactic --------
-//	fight_tactic =; // k‰mpfen nicht!
+//	fight_tactic =; // k√§mpfen nicht!
 	senses = SENSE_SMELL;
 	senses_range = PERC_DIST_MONSTER_ACTIVE_MAX;
 

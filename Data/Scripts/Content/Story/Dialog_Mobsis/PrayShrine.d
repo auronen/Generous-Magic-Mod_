@@ -54,7 +54,7 @@ instance PC_PrayShrine_HEALSHRINE(C_Info)
 	condition		= PC_PrayShrine_HEALSHRINE_Condition;
 	information		= PC_PrayShrine_HEALSHRINE_Info;
 	permanent		= TRUE;
-	description		= "Schrein reinigen";
+	description		= "Purify shrine";
 };
 
 func int PC_PrayShrine_HEALSHRINE_Condition()
@@ -146,7 +146,7 @@ func void PC_PrayShrine_End_Info()
 };
 
 //*******************************************************
-// Für das Heil der Paladine beten
+// FÃ¼r das Heil der Paladine beten
 //*******************************************************
 instance PC_PrayShrine_Paladine(C_Info)
 {
@@ -154,7 +154,7 @@ instance PC_PrayShrine_Paladine(C_Info)
 	nr				= 3;
 	condition		= PC_PrayShrine_Paladine_Condition;
 	information		= PC_PrayShrine_Paladine_Info;
-	description		= "Ein Gebet für die Paladine sprechen.";
+	description		= "Say a prayer for the paladins.";
 };
 
 func int PC_PrayShrine_Paladine_Condition()
@@ -185,7 +185,7 @@ instance PC_PrayShrine_Pray(C_Info)
 	condition		= PC_PrayShrine_Pray_Condition;
 	information		= PC_PrayShrine_Pray_Info;
 	permanent		= TRUE;
-	description		= "Beten";
+	description		= "Pray";
 };
 
 func int PC_PrayShrine_Pray_Condition()
@@ -208,21 +208,21 @@ func void PC_PrayShrine_Pray_Info()
 	{
 		Info_ClearChoices(PC_PrayShrine_Pray);
 		Info_AddChoice(PC_PrayShrine_Pray, Dialog_Back, PC_PrayShrine_Pray_Back);
-		Info_AddChoice(PC_PrayShrine_Pray, "Ich will beten und spende 0 Goldstücke.", PC_PrayShrine_Pray_NoPay);
+		Info_AddChoice(PC_PrayShrine_Pray, "I want to pray and donate 0 gold pieces.", PC_PrayShrine_Pray_NoPay);
 
 		if (Npc_HasItems(hero, ItMi_Gold) >= 10)
 		{
-			Info_AddChoice(PC_PrayShrine_Pray, "Ich will beten und spende 10 Goldstücke.", PC_PrayShrine_Pray_SmallPay);
+			Info_AddChoice(PC_PrayShrine_Pray, "I want to pray and donate 10 gold pieces.", PC_PrayShrine_Pray_SmallPay);
 		};
 
 		if (Npc_HasItems(hero, ItMi_Gold) >= 50)
 		{
-			Info_AddChoice(PC_PrayShrine_Pray, "Ich will beten und spende 50 Goldstücke.", PC_PrayShrine_Pray_MediumPay);
+			Info_AddChoice(PC_PrayShrine_Pray, "I want to pray and donate 50 gold pieces.", PC_PrayShrine_Pray_MediumPay);
 		};
 
 		if (Npc_HasItems(hero, ItMi_Gold) >= 100)
 		{
-			Info_AddChoice(PC_PrayShrine_Pray, "Ich will beten und spende 100 Goldstücke.", PC_PrayShrine_Pray_BigPay);
+			Info_AddChoice(PC_PrayShrine_Pray, "I want to pray and donate 100 gold pieces.", PC_PrayShrine_Pray_BigPay);
 		};
 	};
 };

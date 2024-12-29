@@ -81,10 +81,10 @@ func int DIA_Addon_Skinner_Hi_Condition()
 
 func void DIA_Addon_Skinner_Hi_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Skinner_Hi_08_00"); //Warum weckst du mich, hä? Ich wette, du weißt es nicht mal ...
-	AI_Output(self, other, "DIA_Addon_Skinner_Hi_08_01"); //Nein - sag nichts. Jetzt ist es zu spät für Ausreden.
-	AI_Output(self, other, "DIA_Addon_Skinner_Hi_08_02"); //Jetzt hast du zwei Möglichkeiten. Du kämpfst gegen mich und meine Betty. Oder du versuchst, wegzulaufen.
-	AI_Output(self, other, "DIA_Addon_Skinner_Hi_08_03"); //An deiner Stelle würde ich laufen ...
+	AI_Output(self, other, "DIA_Addon_Skinner_Hi_08_00"); //Why did you wake me, eh? I bet you don't even know...
+	AI_Output(self, other, "DIA_Addon_Skinner_Hi_08_01"); //No - don't say anything. It's too late for excuses.
+	AI_Output(self, other, "DIA_Addon_Skinner_Hi_08_02"); //Now you have two choices. You can fight me and my Betty. Or you can try to run away.
+	AI_Output(self, other, "DIA_Addon_Skinner_Hi_08_03"); //In your place, I'd run...
 
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -99,7 +99,7 @@ instance DIA_Addon_Skinner_Attentat(C_INFO)
 	nr				= 9;
 	condition		= DIA_Addon_Skinner_Attentat_Condition;
 	information		= DIA_Addon_Skinner_Attentat_Info;
-	description		= "Wegen dem Attentat ...";
+	description		= "About the attack...";
 };
 
 func int DIA_Addon_Skinner_Attentat_Condition()
@@ -112,18 +112,18 @@ func int DIA_Addon_Skinner_Attentat_Condition()
 
 func void DIA_Addon_Skinner_Attentat_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Skinner_Attentat_15_00"); //Wegen des Attentats ...
-	AI_Output(self, other, "DIA_Addon_Skinner_Attentat_08_01"); //Was willst du?
+	AI_Output(other, self, "DIA_Addon_Skinner_Attentat_15_00"); //About the attack...
+	AI_Output(self, other, "DIA_Addon_Skinner_Attentat_08_01"); //What do you want?
 
 	Info_ClearChoices(DIA_Addon_Skinner_Attentat);
 
-	Info_AddChoice(DIA_Addon_Skinner_Attentat, "Esteban aus dem Weg schaffen", DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA);
-	Info_AddChoice(DIA_Addon_Skinner_Attentat, "Den Verräter zur Strecke bringen", DIA_Addon_Skinner_ATTENTAT_ADDON_PRO);
+	Info_AddChoice(DIA_Addon_Skinner_Attentat, "Get rid of Esteban", DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA);
+	Info_AddChoice(DIA_Addon_Skinner_Attentat, "Hunt down the traitor", DIA_Addon_Skinner_ATTENTAT_ADDON_PRO);
 };
 
 func void DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA()
 {
-	AI_Output(other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_15_00"); //Ich will Esteban aus dem Weg schaffen.
+	AI_Output(other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_15_00"); //I want to get Esteban out of the way.
 	AI_Output(self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_08_01"); //Super.
 
 	Judas_Counter = (Judas_Counter + 1);
@@ -133,8 +133,8 @@ func void DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA()
 
 func void DIA_Addon_Skinner_ATTENTAT_ADDON_PRO()
 {
-	AI_Output(other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_15_00"); //Ich werde den Verräter zur Strecke bringen.
-	AI_Output(self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_08_01"); //Scheiße.
+	AI_Output(other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_15_00"); //I want to track down the traitor.
+	AI_Output(self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_08_01"); //Shit.
 
 	Info_ClearChoices(DIA_Addon_Skinner_Attentat);
 };

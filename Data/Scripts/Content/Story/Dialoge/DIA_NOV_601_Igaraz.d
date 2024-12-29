@@ -54,11 +54,11 @@ func void DIA_Igaraz_Hello_Info()
 {
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output(self, other, "DIA_Igaranz_Hello_13_00"); //Was kann ich für dich tun, Bruder?
+		AI_Output(self, other, "DIA_Igaranz_Hello_13_00"); //What can I do for you, Brother?
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Igaranz_Hello_13_01"); //Was kann ich für dich tun?
+		AI_Output(self, other, "DIA_Igaranz_Hello_13_01"); //What can I do for you?
 	};
 };
 
@@ -71,7 +71,7 @@ instance DIA_Igaraz_Wurst(C_INFO)
 	nr				= 2;
 	condition		= DIA_Igaraz_Wurst_Condition;
 	information		= DIA_Igaraz_Wurst_Info;
-	description		= "Ich verteile gerade Würste.";
+	description		= "I'm busy distributing sausages.";
 };
 
 func int DIA_Igaraz_Wurst_Condition()
@@ -87,8 +87,8 @@ func int DIA_Igaraz_Wurst_Condition()
 
 func void DIA_Igaraz_Wurst_Info()
 {
-	AI_Output(other, self, "DIA_Igaraz_Wurst_15_00"); //Ich verteile gerade Würste.
-	AI_Output(self, other, "DIA_Igaraz_Wurst_13_01"); //So, dann arbeitest du für Gorax, was? Nun, dann gib mal her die Wurst.
+	AI_Output(other, self, "DIA_Igaraz_Wurst_15_00"); //I'm busy distributing sausages.
+	AI_Output(self, other, "DIA_Igaraz_Wurst_13_01"); //So you work for Gorax, huh? All right, pass the sausage, then.
 
 	B_GiveInvItems(other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben + 1);
@@ -112,7 +112,7 @@ instance DIA_Igaranz_NotWork(C_INFO)
 	nr				= 3;
 	condition		= DIA_Igaraz_NotWork_Condition;
 	information		= DIA_Igaraz_NotWork_Info;
-	description		= "Wieso arbeitest Du nicht?";
+	description		= "Why aren't you working?";
 };
 
 func int DIA_Igaraz_NotWork_Condition()
@@ -127,13 +127,13 @@ func int DIA_Igaraz_NotWork_Condition()
 
 func void DIA_Igaraz_NotWork_Info()
 {
-	AI_Output(other, self, "DIA_Igaranz_NotWork_15_00"); //Wieso arbeitest du nicht?
-	AI_Output(self, other, "DIA_Igaranz_NotWork_13_01"); //Es ist mir gestattet, die Lehren Innos' zu studieren. Ich suche die Weisheit in seinen Worten.
-	AI_Output(self, other, "DIA_Igaranz_NotWork_13_02"); //Eines Tages wird er mich erwählen - und dann werde ich die Prüfung der Magie bestehen und in den Kreis des Feuers eintreten.
+	AI_Output(other, self, "DIA_Igaranz_NotWork_15_00"); //Why aren't you working?
+	AI_Output(self, other, "DIA_Igaranz_NotWork_13_01"); //I am permitted to study the teachings of Innos. I seek wisdom in his words.
+	AI_Output(self, other, "DIA_Igaranz_NotWork_13_02"); //One day he will choose me - and then I shall take the test of magic and enter the Circle of Fire.
 };
 
 ///////////////////////////////////////////////////////////////////////
-// Wer sind die Erwählten?
+// Wer sind die ErwÃ¤hlten?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Igaranz_Choosen(C_INFO)
 {
@@ -142,7 +142,7 @@ instance DIA_Igaranz_Choosen(C_INFO)
 	condition		= DIA_Igaraz_Choosen_Condition;
 	information		= DIA_Igaraz_Choosen_Info;
 	permanent		= TRUE;
-	description		= "Wer sind die Erwählten?";
+	description		= "Who are the Chosen?";
 };
 
 func int DIA_Igaraz_Choosen_Condition()
@@ -158,14 +158,14 @@ func int DIA_Igaraz_Choosen_Condition()
 
 func void DIA_Igaraz_Choosen_Info()
 {
-	AI_Output(other, self, "DIA_Igaranz_Choosen_15_00"); //Wer sind die Erwählten?
-	AI_Output(self, other, "DIA_Igaranz_Choosen_13_01"); //Die Novizen, die Innos dazu bestimmt hat, die Prüfung der Magie abzulegen.
-	AI_Output(self, other, "DIA_Igaranz_Choosen_13_02"); //Derjenige, der sie besteht, wird in die Reihen der Feuermagier aufgenommen.
+	AI_Output(other, self, "DIA_Igaranz_Choosen_15_00"); //Who are the Chosen?
+	AI_Output(self, other, "DIA_Igaranz_Choosen_13_01"); //The novices whom Innos has ordained to take the test of magic.
+	AI_Output(self, other, "DIA_Igaranz_Choosen_13_02"); //He who passes it is accepted into the ranks of the Magicians of Fire.
 
 	Info_ClearChoices(DIA_Igaranz_Choosen);
 	Info_AddChoice(DIA_Igaranz_Choosen, Dialog_Back, DIA_Igaranz_Choosen_back);
-	Info_AddChoice(DIA_Igaranz_Choosen, "Was ist die Prüfung der Magie?", DIA_Igaranz_Choosen_TestOfMagic);
-	Info_AddChoice(DIA_Igaranz_Choosen, "Wie werde ich erwählt?", DIA_Igaranz_Choosen_HowChoosen);
+	Info_AddChoice(DIA_Igaranz_Choosen, "What is the Test of Magic?", DIA_Igaranz_Choosen_TestOfMagic);
+	Info_AddChoice(DIA_Igaranz_Choosen, "How can I be chosen?", DIA_Igaranz_Choosen_HowChoosen);
 };
 
 func void DIA_Igaranz_Choosen_back()
@@ -175,20 +175,20 @@ func void DIA_Igaranz_Choosen_back()
 
 func void DIA_Igaranz_Choosen_TestOfMagic()
 {
-	AI_Output(other, self, "DIA_Igaranz_Choosen_TestOfMagic_15_00"); //Was ist die Prüfung der Magie?
-	AI_Output(self, other, "DIA_Igaranz_Choosen_TestOfMagic_13_01"); //Eine Prüfung, die allen erwählten Novizen vom hohen Rat verkündet wird.
-	AI_Output(self, other, "DIA_Igaranz_Choosen_TestOfMagic_13_02"); //Es ist eine Aufgabe, bei der Glaube und Klugheit auf die Probe gestellt werden.
-	AI_Output(self, other, "DIA_Igaranz_Choosen_TestOfMagic_13_03"); //Alle erwählten Novizen nehmen daran teil - aber nur einem ist es möglich, sie erfolgreich abzulegen.
+	AI_Output(other, self, "DIA_Igaranz_Choosen_TestOfMagic_15_00"); //What is the Test of Magic?
+	AI_Output(self, other, "DIA_Igaranz_Choosen_TestOfMagic_13_01"); //A test which is announced by the high council to all chosen novices.
+	AI_Output(self, other, "DIA_Igaranz_Choosen_TestOfMagic_13_02"); //It is an assignment in which faith and cleverness are put to the test.
+	AI_Output(self, other, "DIA_Igaranz_Choosen_TestOfMagic_13_03"); //All the chosen novices take part - but it is only possible for one of them to complete it successfully.
 };
 
 func void DIA_Igaranz_Choosen_HowChoosen()
 {
-	AI_Output(other, self, "DIA_Igaranz_Choosen_HowChoosen_15_00"); //Wie werde ich erwählt?
-	AI_Output(self, other, "DIA_Igaranz_Choosen_HowChoosen_13_01"); //Darauf hast du keinen Einfluss. Innos alleine wählt seine Novizen, und der hohe Rat verkündet seinen Willen.
+	AI_Output(other, self, "DIA_Igaranz_Choosen_HowChoosen_15_00"); //How can I be chosen?
+	AI_Output(self, other, "DIA_Igaranz_Choosen_HowChoosen_13_01"); //You have no influence on that. Innos alone chooses his novices, and the High Council announces his will.
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Erzähl mir was über Innos Lehren
+//	ErzÃ¤hl mir was Ã¼ber Innos Lehren
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Igaranz_StudyInnos(C_INFO)
 {
@@ -196,7 +196,7 @@ instance DIA_Igaranz_StudyInnos(C_INFO)
 	nr				= 2;
 	condition		= DIA_Igaraz_StudyInnos_Condition;
 	information		= DIA_Igaraz_StudyInnos_Info;
-	description		= "Wie kann ich die Schriften studieren?";
+	description		= "How can I study the scriptures?";
 };
 
 func int DIA_Igaraz_StudyInnos_Condition()
@@ -212,13 +212,13 @@ func int DIA_Igaraz_StudyInnos_Condition()
 
 func void DIA_Igaraz_StudyInnos_Info()
 {
-	AI_Output(other, self, "DIA_Igaranz_StudyInnos_15_00"); //Wie kann ich die Schriften studieren?
-	AI_Output(self, other, "DIA_Igaranz_StudyInnos_13_01"); //Du musst Zugang zur Bibliothek bekommen.
-	AI_Output(self, other, "DIA_Igaranz_StudyInnos_13_02"); //Doch Meister Parlan wird dir nur den Schlüssel geben, wenn du vorher deine Pflichten erledigt hast.
+	AI_Output(other, self, "DIA_Igaranz_StudyInnos_15_00"); //How can I study the scriptures?
+	AI_Output(self, other, "DIA_Igaranz_StudyInnos_13_01"); //You must gain access to the library.
+	AI_Output(self, other, "DIA_Igaranz_StudyInnos_13_02"); //However, Master Parlan will only give you the key if you have first finished your duties.
 };
 
 //**************************************************************************
-//	ABSCHNITT 2 DIE PRÜFUNG DER MAGIE
+//	ABSCHNITT 2 DIE PRÃœFUNG DER MAGIE
 //**************************************************************************
 ///////////////////////////////////////////////////////////////////////
 //	Info CHOOSEN
@@ -244,7 +244,7 @@ func int DIA_Igaraz_IMTHEMAN_Condition()
 
 func void DIA_Igaraz_IMTHEMAN_Info()
 {
-	AI_Output(self, other, "DIA_Igaraz_IMTHEMAN_13_00"); //(stolz) Es ist geschehen. Innos hat mich erwählt und ich nehme teil an der Prüfung der Magie.
+	AI_Output(self, other, "DIA_Igaraz_IMTHEMAN_13_00"); //(proudly) It has happened. Innos has chosen me and I shall take part in the test of magic.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -256,7 +256,7 @@ instance DIA_Igaraz_METOO(C_INFO)
 	nr				= 19;
 	condition		= DIA_Igaraz_METOO_Condition;
 	information		= DIA_Igaraz_METOO_Info;
-	description		= "Ich bin mit von der Partie...";
+	description		= "I'm in it, too ...";
 };
 
 var int DIA_Igaraz_METOO_NOPERM;
@@ -273,16 +273,16 @@ func int DIA_Igaraz_METOO_Condition()
 
 func void DIA_Igaraz_METOO_Info()
 {
-	AI_Output(other, self, "DIA_Igaraz_METOO_15_00"); //Ich bin mit von der Partie - ich habe die Prüfung des Feuers gefordert.
-	AI_Output(self, other, "DIA_Igaraz_METOO_13_01"); //Du hast WAS getan? Also entweder bist du ein Liebling von Innos oder völlig verrückt.
-	AI_Output(other, self, "DIA_Igaraz_METOO_15_02"); //Ich habe schon 'ne Menge verrückter Sachen gemacht, dann werde ich das wohl auch schaffen ...
-	AI_Output(self, other, "DIA_Igaraz_METOO_13_03"); //Innos hält seine Hand über mich - deshalb werde ich diese Prüfung bestehen.
+	AI_Output(other, self, "DIA_Igaraz_METOO_15_00"); //I'm in it, too - I demanded the Test of Fire.
+	AI_Output(self, other, "DIA_Igaraz_METOO_13_01"); //You did WHAT? So either you are a favorite of Innos, or completely crazy.
+	AI_Output(other, self, "DIA_Igaraz_METOO_15_02"); //I've already done a lot of crazy things, so I'm positive I can pull this off, too ...
+	AI_Output(self, other, "DIA_Igaraz_METOO_13_03"); //Innos holds his hand over me - therefore I shall pass this test.
 
 	Info_ClearChoices(DIA_Igaraz_METOO);
 	Info_AddChoice(DIA_Igaraz_METOO, DIALOG_BACK, DIA_Igaraz_METOO_BACK);
-	Info_AddChoice(DIA_Igaraz_METOO, "Vielleicht können wir zusammenarbeiten... ", DIA_Igaraz_METOO_HELP);
-	Info_AddChoice(DIA_Igaraz_METOO, "Und, schon was rausgefunden?", DIA_Igaraz_METOO_TELL);
-	Info_AddChoice(DIA_Igaraz_METOO, "Hast du Agon oder Ulf gesehen?", DIA_Igaraz_METOO_AGON);
+	Info_AddChoice(DIA_Igaraz_METOO, "Maybe we could work together ...", DIA_Igaraz_METOO_HELP);
+	Info_AddChoice(DIA_Igaraz_METOO, "So, found anything out yet?", DIA_Igaraz_METOO_TELL);
+	Info_AddChoice(DIA_Igaraz_METOO, "Have you seen Agon or Ulf?", DIA_Igaraz_METOO_AGON);
 };
 
 func void DIA_Igaraz_METOO_BACK()
@@ -292,21 +292,21 @@ func void DIA_Igaraz_METOO_BACK()
 
 func void DIA_Igaraz_METOO_TELL()
 {
-	AI_Output(other, self, "DIA_Igaraz_METOO_TELL_15_00"); //Und, schon was herausgefunden?
-	AI_Output(self, other, "DIA_Igaraz_METOO_TELL_13_01"); //Da du es sowieso nicht schaffen wirst, kann ich es dir auch sagen:
-	AI_Output(self, other, "DIA_Igaraz_METOO_TELL_13_02"); //Spare dir deine Suche bei den Bauernhöfen - dort gibt es nichts, was dich weiterbringt.
+	AI_Output(other, self, "DIA_Igaraz_METOO_TELL_15_00"); //And, found out anything yet?
+	AI_Output(self, other, "DIA_Igaraz_METOO_TELL_13_01"); //Since you stand no chance anyway, I may as well tell you:
+	AI_Output(self, other, "DIA_Igaraz_METOO_TELL_13_02"); //Don't bother looking near the farms - there is nothing there that will get you anywhere.
 };
 
 func void DIA_Igaraz_METOO_HELP()
 {
-	AI_Output(other, self, "DIA_Igaraz_METOO_HELP_15_00"); //Vielleicht können wir zusammenarbeiten ...
-	AI_Output(self, other, "DIA_Igaraz_METOO_HELP_13_01"); //Vergiss es. Diese Mission werde ich alleine schaffen. Du wärst mir nur ein Klotz am Bein.
+	AI_Output(other, self, "DIA_Igaraz_METOO_HELP_15_00"); //Maybe we could work together ...
+	AI_Output(self, other, "DIA_Igaraz_METOO_HELP_13_01"); //Forget it. I'll accomplish this mission alone. You would just be a hindrance to me.
 };
 
 func void DIA_Igaraz_METOO_AGON()
 {
-	AI_Output(other, self, "DIA_Igaraz_METOO_AGON_15_00"); //Hast du Agon oder Ulf gesehen?
-	AI_Output(self, other, "DIA_Igaraz_METOO_AGON_13_01"); //Wir haben uns an der Herberge getrennt. Ich bin zu den Bauernhöfen gegangen und die beiden sind zusammen losgezogen - aber wohin, weiß ich nicht.
+	AI_Output(other, self, "DIA_Igaraz_METOO_AGON_15_00"); //Have you seen Agon or Ulf?
+	AI_Output(self, other, "DIA_Igaraz_METOO_AGON_13_01"); //We split up at the inn. I went to the farms and those two set out together - but where to, I don't know.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -318,7 +318,7 @@ instance DIA_Igaraz_ADD(C_INFO)
 	nr				= 23;
 	condition		= DIA_Igaraz_ADD_Condition;
 	information		= DIA_Igaraz_ADD_Info;
-	description		= "Weißt du etwas von einem 'lebenden Fels'?";
+	description		= "Do you know anything about a 'living rock'?";
 };
 
 func int DIA_Igaraz_ADD_Condition()
@@ -335,21 +335,21 @@ func int DIA_Igaraz_ADD_Condition()
 
 func void DIA_Igaraz_ADD_Info()
 {
-	AI_Output(other, self, "DIA_Igaraz_Add_15_00"); //Weißt du etwas von einem 'lebenden Fels'?
-	AI_Output(self, other, "DIA_Igaraz_Add_13_01"); //(lacht hämisch) Nein! Hat dir Serpentes diese Prüfung gegeben?
-	AI_Output(other, self, "DIA_Igaraz_Add_15_02"); //Ja, warum?
-	AI_Output(self, other, "DIA_Igaraz_Add_13_03"); //Ich könnte mir vorstellen, was er meint...
-	AI_Output(self, other, "DIA_Igaraz_Add_13_04"); //Du wärst nicht der erste, der an dieser Prüfung gescheitert ist...
-	AI_Output(other, self, "DIA_Igaraz_Add_15_05"); //Wo genau finde ich diesen lebenden Fels?
-	AI_Output(self, other, "DIA_Igaraz_Add_13_06"); //Folge einfach immer diesem Weg. Es ist ein ganzes Stück, dann kommst du an einem Fluß vorbei.
-	AI_Output(self, other, "DIA_Igaraz_Add_13_07"); //Geh einfach den Weg weiter den Berg hoch. Da oben muß es irgendwo sein.
-	AI_Output(self, other, "DIA_Igaraz_Add_13_08"); //Wenn du über eine Brücke kommst, bist du zu weit.
-	AI_Output(self, other, "DIA_Igaraz_Add_13_09"); //(lacht) WENN Du überhaupt soweit kommst...
-	AI_Output(self, other, "DIA_Igaraz_Add_13_10"); //Mehr werde ich dir nicht verraten.... (ironisch) schließlich ist es deine Prüfung...
+	AI_Output(other, self, "DIA_Igaraz_Add_15_00"); //Do you know anything about a 'living rock'?
+	AI_Output(self, other, "DIA_Igaraz_Add_13_01"); //(cackling) No! Did Serpentes give you this test?
+	AI_Output(other, self, "DIA_Igaraz_Add_15_02"); //Yes, why?
+	AI_Output(self, other, "DIA_Igaraz_Add_13_03"); //I think I can imagine what he means ...
+	AI_Output(self, other, "DIA_Igaraz_Add_13_04"); //You wouldn't be the first person to fail this test ...
+	AI_Output(other, self, "DIA_Igaraz_Add_15_05"); //Where exactly can I find this living rock?
+	AI_Output(self, other, "DIA_Igaraz_Add_13_06"); //Just keep following this path. After quite a while, you'll come to a river.
+	AI_Output(self, other, "DIA_Igaraz_Add_13_07"); //Just continue to follow the path up the mountain. It's got to be up there someplace.
+	AI_Output(self, other, "DIA_Igaraz_Add_13_08"); //When you come to a bridge, you've gone too far.
+	AI_Output(self, other, "DIA_Igaraz_Add_13_09"); //(laughs) IF you get that far in the first place ...
+	AI_Output(self, other, "DIA_Igaraz_Add_13_10"); //That's all I'm going to tell you ... (sarcastic) It's supposed to be your TEST after all!
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Perm Prüfung
+//	Info Perm PrÃ¼fung
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Igaraz_Pruefung(C_INFO)
 {
@@ -357,7 +357,7 @@ instance DIA_Igaraz_Pruefung(C_INFO)
 	nr				= 22;
 	condition		= DIA_Igaraz_Pruefung_Condition;
 	information		= DIA_Igaraz_Pruefung_Info;
-	description		= "Hast du was Neues rausgefunden?";
+	description		= "Have you found out anything new?";
 };
 
 func int DIA_Igaraz_Pruefung_Condition()
@@ -372,8 +372,8 @@ func int DIA_Igaraz_Pruefung_Condition()
 
 func void DIA_Igaraz_Pruefung_Info()
 {
-	AI_Output(other, self, "DIA_Igaraz_Pruefung_15_00"); //Hast du was Neues rausgefunden?
-	AI_Output(self, other, "DIA_Igaraz_Pruefung_13_01"); //Bisher noch nicht, aber ich suche weiter.
+	AI_Output(other, self, "DIA_Igaraz_Pruefung_15_00"); //Have you found out anything new?
+	AI_Output(self, other, "DIA_Igaraz_Pruefung_13_01"); //Not yet, but I'm still searching.
 
 	AI_StopProcessInfos(self);
 
@@ -409,20 +409,20 @@ func int DIA_Igaraz_Stein_Condition()
 
 func void DIA_Igaraz_Stein_Info()
 {
-	AI_Output(self, other, "DIA_Igaraz_Seufz_13_00"); //Hey, warte mal. Wir müssen reden ...
-	AI_Output(other, self, "DIA_Igaraz_Seufz_15_01"); //Das glaube ich jetzt nicht ...
-	AI_Output(self, other, "DIA_Igaraz_Seufz_13_02"); //Ich habe jahrelang auf diese Prüfung gewartet. Innos ist bei mir und ich MUSS diese Prüfung bestehen.
+	AI_Output(self, other, "DIA_Igaraz_Seufz_13_00"); //Hey, wait. We need to talk ...
+	AI_Output(other, self, "DIA_Igaraz_Seufz_15_01"); //Actually, I don't think so ...
+	AI_Output(self, other, "DIA_Igaraz_Seufz_13_02"); //I've waited years for this test. Innos is with me and I MUST pass this test.
 
 	if (Npc_KnowsInfo(other, DIA_Ulf_Abrechnung))
 	{
-		AI_Output(other, self, "DIA_Igaraz_Seufz_15_03"); //Das kommt mir bekannt vor.
+		AI_Output(other, self, "DIA_Igaraz_Seufz_15_03"); //That sounds familiar.
 	}
 	else
 	{
-		AI_Output(other, self, "DIA_Igaraz_Seufz_15_04"); //Da bist du nicht der Einzige.
+		AI_Output(other, self, "DIA_Igaraz_Seufz_15_04"); //You're not the only one who says that.
 	};
 
-	AI_Output(self, other, "DIA_Igaraz_Seufz_13_05"); //Genug gequatscht. Ich brauche das, was du gefunden hast. Also, Zeit für dich, zu sterben!
+	AI_Output(self, other, "DIA_Igaraz_Seufz_13_05"); //Enough chatter. I need what you found. So, time for you to die!
 
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_KILL, 0);
@@ -501,7 +501,7 @@ instance DIA_Igaranz_TalkAboutBabo(C_INFO)
 	nr				= 31;
 	condition		= DIA_Igaraz_TalkAboutBabo_Condition;
 	information		= DIA_Igaraz_TalkAboutBabo_Info;
-	description		= "Wir müssen uns mal über Babo unterhalten.";
+	description		= "We need to talk about Babo.";
 };
 
 func int DIA_Igaraz_TalkAboutBabo_Condition()
@@ -514,12 +514,12 @@ func int DIA_Igaraz_TalkAboutBabo_Condition()
 
 func void DIA_Igaraz_TalkAboutBabo_Info()
 {
-	AI_Output(other, self, "DIA_Igaranz_TalkAboutBabo_15_00"); //Wir müssen uns mal über Babo unterhalten.
-	AI_Output(self, other, "DIA_Igaranz_TalkAboutBabo_13_01"); //(reserviert) Ja, was ist denn los?
+	AI_Output(other, self, "DIA_Igaranz_TalkAboutBabo_15_00"); //We need to talk about Babo.
+	AI_Output(self, other, "DIA_Igaranz_TalkAboutBabo_13_01"); //(reserved) Yes, what's wrong?
 };
 
 //**************************************************************************
-//	Du hast etwas was Babo gehört
+//	Du hast etwas was Babo gehÃ¶rt
 //**************************************************************************
 instance DIA_Igaranz_BabosBelongings(C_INFO)
 {
@@ -527,7 +527,7 @@ instance DIA_Igaranz_BabosBelongings(C_INFO)
 	nr				= 31;
 	condition		= DIA_Igaraz_BabosBelongings_Condition;
 	information		= DIA_Igaraz_BabosBelongings_Info;
-	description		= "Du hast etwas, was Babo gehört.";
+	description		= "You've got something which belongs to Babo.";
 };
 
 func int DIA_Igaraz_BabosBelongings_Condition()
@@ -540,10 +540,10 @@ func int DIA_Igaraz_BabosBelongings_Condition()
 
 func void DIA_Igaraz_BabosBelongings_Info()
 {
-	AI_Output(other, self, "DIA_Igaranz_BabosBelongings_15_00"); //Du hast etwas, was Babo gehört.
-	AI_Output(self, other, "DIA_Igaranz_BabosBelongings_13_01"); //Was soll das sein?
-	AI_Output(other, self, "DIA_Igaranz_BabosBelongings_15_02"); //Ein paar Papiere und Babo hätte sie gerne zurück.
-	AI_Output(self, other, "DIA_Igaranz_BabosBelongings_13_03"); //(spöttisch) So, hätte er das. Das kann ich mir denken. Leider würde ich sie gerne behalten, was uns irgendwie in eine Zwickmühle bringt.
+	AI_Output(other, self, "DIA_Igaranz_BabosBelongings_15_00"); //You've got something which belongs to Babo.
+	AI_Output(self, other, "DIA_Igaranz_BabosBelongings_13_01"); //What might that be?
+	AI_Output(other, self, "DIA_Igaranz_BabosBelongings_15_02"); //A few papers. Babo would like them back.
+	AI_Output(self, other, "DIA_Igaranz_BabosBelongings_13_03"); //(mocking) He would, wouldn't he. I can imagine. Unfortunately, I prefer to keep them, which brings us to a bit of a dilemma.
 };
 
 //**************************************************************************
@@ -555,7 +555,7 @@ instance DIA_Igaranz_WhereDocs(C_INFO)
 	nr				= 31;
 	condition		= DIA_Igaraz_WhereDocs_Condition;
 	information		= DIA_Igaraz_WhereDocs_Info;
-	description		= "Wo hast du die Papiere?";
+	description		= "Where have you got the papers?";
 };
 
 func int DIA_Igaraz_WhereDocs_Condition()
@@ -568,14 +568,14 @@ func int DIA_Igaraz_WhereDocs_Condition()
 
 func void DIA_Igaraz_WhereDocs_Info()
 {
-	AI_Output(other, self, "DIA_Igaranz_WhereDocs_15_00"); //Wo hast du die Papiere?
-	AI_Output(self, other, "DIA_Igaranz_WhereDocs_13_01"); //(selbstgefällig) Nun, ich habe sie natürlich nicht bei mir. Ich fürchte, ich kann dir da nicht weiterhelfen.
-	AI_Output(other, self, "DIA_Igaranz_WhereDocs_15_02"); //Wo sind sie?
-	AI_Output(self, other, "DIA_Igaranz_WhereDocs_13_03"); //Ich habe sie sicher eingeschlossen. Und den Schlüssel wirst du nicht von mir bekommen.
+	AI_Output(other, self, "DIA_Igaranz_WhereDocs_15_00"); //Where have you got the papers?
+	AI_Output(self, other, "DIA_Igaranz_WhereDocs_13_01"); //(smugly) Well, of course I don't have them on me. I'm afraid I can't help you further.
+	AI_Output(other, self, "DIA_Igaranz_WhereDocs_15_02"); //Where are they?
+	AI_Output(self, other, "DIA_Igaranz_WhereDocs_13_03"); //I have them safely locked up. And you will never get the key from me.
 };
 
 //**************************************************************************
-//	Was soll Babo für dich tun?
+//	Was soll Babo fÃ¼r dich tun?
 //**************************************************************************
 instance DIA_Igaranz_BabosJob(C_INFO)
 {
@@ -583,7 +583,7 @@ instance DIA_Igaranz_BabosJob(C_INFO)
 	nr				= 31;
 	condition		= DIA_Igaraz_BabosJob_Condition;
 	information		= DIA_Igaraz_BabosJob_Info;
-	description		= "Was sollte Babo für dich tun?";
+	description		= "What was Babo supposed to do for you?";
 };
 
 func int DIA_Igaraz_BabosJob_Condition()
@@ -596,15 +596,15 @@ func int DIA_Igaraz_BabosJob_Condition()
 
 func void DIA_Igaraz_BabosJob_Info()
 {
-	AI_Output(other, self, "DIA_Igaranz_BabosJob_15_00"); //Was sollte Babo für dich tun?
-	AI_Output(self, other, "DIA_Igaranz_BabosJob_13_01"); //Wenn ich gewusst hätte, dass ich der Kleine wegen ein paar Sumpfkrautpflanzen gleich in die Hose macht, hätte ich dafür gesorgt, dass jemand anderer den Klostergarten pflegt.
-	AI_Output(other, self, "DIA_Igaranz_BabosJob_15_02"); //Er soll Sumpfkraut anpflanzen?
-	AI_Output(self, other, "DIA_Igaranz_BabosJob_13_03"); //Natürlich. Seitdem kein Zeugs mehr aus der Barriere kommt, ist der Preis in der Stadt um das Dreifache gestiegen.
-	AI_Output(self, other, "DIA_Igaranz_BabosJob_13_04"); //Es wäre für alle Beteiligten ein gutes Geschäft gewesen. Aber Babo wollte nicht mitspielen.
+	AI_Output(other, self, "DIA_Igaranz_BabosJob_15_00"); //What was Babo supposed to do for you?
+	AI_Output(self, other, "DIA_Igaranz_BabosJob_13_01"); //If I had known the baby would do it in his pants over a few swampweeds, then I would have seen to it that someone else took care of the monastery garden.
+	AI_Output(other, self, "DIA_Igaranz_BabosJob_15_02"); //He's supposed to grow swampweed?
+	AI_Output(self, other, "DIA_Igaranz_BabosJob_13_03"); //Of course. Since none of that stuff comes out from behind the barrier anymore, the price in the city has tripled.
+	AI_Output(self, other, "DIA_Igaranz_BabosJob_13_04"); //It could have been a good bargain for everyone involved. But Babo didn't want to play along.
 };
 
 //**************************************************************************
-//	Wieviel willst du für die Papiere haben?
+//	Wieviel willst du fÃ¼r die Papiere haben?
 //**************************************************************************
 instance DIA_Igaranz_Price(C_INFO)
 {
@@ -612,7 +612,7 @@ instance DIA_Igaranz_Price(C_INFO)
 	nr				= 31;
 	condition		= DIA_Igaraz_Price_Condition;
 	information		= DIA_Igaraz_Price_Info;
-	description		= "Wieviel willst du für Babos Papiere haben?";
+	description		= "How much do you want for the papers?";
 };
 
 func int DIA_Igaraz_Price_Condition()
@@ -625,10 +625,10 @@ func int DIA_Igaraz_Price_Condition()
 
 func void DIA_Igaraz_Price_Info()
 {
-	AI_Output(other, self, "DIA_Igaranz_Price_15_00"); //Wieviel willst du für die Papiere haben?
-	AI_Output(self, other, "DIA_Igaranz_Price_13_01"); //(lacht) Ha, eigentlich sind sie fast nicht zu bezahlen. So was bekommt man hier echt selten zu Gesicht.
-	AI_Output(self, other, "DIA_Igaranz_Price_13_02"); //Aber ich hab keine Lust, wegen so ein paar Goldstücken meine Zukunft aufs Spiel zu setzen.
-	AI_Output(self, other, "DIA_Igaranz_Price_13_03"); //300 Goldstücke und du kannst mit den Papieren machen, was du willst.
+	AI_Output(other, self, "DIA_Igaranz_Price_15_00"); //How much do you want for the papers?
+	AI_Output(self, other, "DIA_Igaranz_Price_13_01"); //(laughs) Ha, actually they're almost priceless. You very rarely see something like that here.
+	AI_Output(self, other, "DIA_Igaranz_Price_13_02"); //But I have no desire to wager my future against a few gold pieces.
+	AI_Output(self, other, "DIA_Igaranz_Price_13_03"); //300 gold pieces and you can do what you like with the papers.
 };
 
 //**************************************************************************
@@ -640,7 +640,7 @@ instance DIA_Igaranz_BuyIt(C_INFO)
 	nr				= 31;
 	condition		= DIA_Igaraz_BuyIt_Condition;
 	information		= DIA_Igaraz_BuyIt_Info;
-	description		= "Ich will die Papiere kaufen.";
+	description		= "I want to buy those papers.";
 };
 
 func int DIA_Igaraz_BuyIt_Condition()
@@ -654,8 +654,8 @@ func int DIA_Igaraz_BuyIt_Condition()
 
 func void DIA_Igaraz_BuyIt_Info()
 {
-	AI_Output(other, self, "DIA_Igaranz_BuyIt_15_00"); //Ich will die Papiere kaufen.
-	AI_Output(self, other, "DIA_Igaranz_BuyIt_13_01"); //Pass auf, ich kann hier jetzt nicht weg. Ich gebe dir den Schlüssel zu meiner Truhe, da ist sowieso nichts anderes drin.
+	AI_Output(other, self, "DIA_Igaranz_BuyIt_15_00"); //I want to buy those papers.
+	AI_Output(self, other, "DIA_Igaranz_BuyIt_13_01"); //Look, I can't leave here right now. I'll give you the key to my chest, there's nothing else in there anyway.
 
 	B_GiveInvItems(other, self, ItMi_Gold, 300);
 	B_GiveInvItems(self, other, ItKe_IgarazChest_mis, 1);
@@ -671,7 +671,7 @@ instance DIA_Igaraz_PICKPOCKET(C_INFO)
 	condition		= DIA_Igaraz_PICKPOCKET_Condition;
 	information		= DIA_Igaraz_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre einfach seinen Schlüssel zu stehlen)";
+	description		= "(It would be easy to steal his key)";
 };
 
 func int DIA_Igaraz_PICKPOCKET_Condition()
@@ -706,7 +706,7 @@ func void DIA_Igaraz_PICKPOCKET_DoIt()
 	{
 		B_ResetThiefLevel();
 		AI_StopProcessInfos(self);
-		B_Attack(self, other, AR_Theft, 1); // AR_Theft führt zu NEWS!
+		B_Attack(self, other, AR_Theft, 1); // AR_Theft fÃ¼hrt zu NEWS!
 	};
 };
 
@@ -788,7 +788,7 @@ instance DIA_Igaranz_Perm(C_INFO)
 	nr				= 2;
 	condition		= DIA_Igaraz_Perm_Condition;
 	information		= DIA_Igaraz_Perm_Info;
-	description		= "Hast du was interessantes für mich?";
+	description		= "Have you got anything interesting for me?";
 };
 
 func int DIA_Igaraz_Perm_Condition()
@@ -803,8 +803,8 @@ func int DIA_Igaraz_Perm_Condition()
 
 func void DIA_Igaraz_Perm_Info()
 {
-	AI_Output(other, self, "DIA_Igaranz_Perm_15_00"); //Hast du was Interessantes für mich?
-	AI_Output(self, other, "DIA_Igaranz_Perm_13_01"); //Ähm ... nein.
+	AI_Output(other, self, "DIA_Igaranz_Perm_15_00"); //Have you got anything interesting for me?
+	AI_Output(self, other, "DIA_Igaranz_Perm_13_01"); //Ehm ... no.
 
 	AI_StopProcessInfos(self);
 };

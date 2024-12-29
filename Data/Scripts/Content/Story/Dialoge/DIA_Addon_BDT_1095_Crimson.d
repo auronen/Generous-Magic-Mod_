@@ -67,7 +67,7 @@ instance DIA_Addon_Crimson_Hi(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Crimson_Hi_Condition;
 	information		= DIA_Addon_Crimson_Hi_Info;
-	description		= "Was machst du? Schmilzt du Gold ein?";
+	description		= "What are you doing? Are you melting down your gold?";
 };
 
 func int DIA_Addon_Crimson_Hi_Condition()
@@ -77,10 +77,10 @@ func int DIA_Addon_Crimson_Hi_Condition()
 
 func void DIA_Addon_Crimson_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Crimson_Hi_15_00"); //Was machst du? Schmilzt du dein Gold ein?
-	AI_Output(self, other, "DIA_Addon_Crimson_Hi_10_01"); //Nein, ich putze Gemüse. Natürlich schmelze ich Gold ein - und ich mache Münzen daraus.
-	AI_Output(self, other, "DIA_Addon_Crimson_Hi_10_02"); //Denn stell dir vor: Eines schönen Abends kommt Raven um die Ecke und drückt mir einen Münzstempel in die Hand.
-	AI_Output(self, other, "DIA_Addon_Crimson_Hi_10_03"); //Aus einem einzigen Goldbrocken kann ich einen Haufen Münzen prägen - ich bin so gut, dass man den Unterschied nicht mal merkt!
+	AI_Output(other, self, "DIA_Addon_Crimson_Hi_15_00"); //What are you doing? Are you melting down your gold?
+	AI_Output(self, other, "DIA_Addon_Crimson_Hi_10_01"); //No, I'm washing vegetables. Of course, I'm melting down gold - and I'm making coins out of it.
+	AI_Output(self, other, "DIA_Addon_Crimson_Hi_10_02"); //Because, just imagine: one fine evening Raven comes along and shoves a coin die in my hands.
+	AI_Output(self, other, "DIA_Addon_Crimson_Hi_10_03"); //Out of one single gold nugget, I can mint a heap of coins - I'm so good that no one can tell the difference!
 };
 
 // ---------------------------------------------------------------------
@@ -92,7 +92,7 @@ instance DIA_Addon_Crimson_How(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Crimson_How_Condition;
 	information		= DIA_Addon_Crimson_How_Info;
-	description		= "Wieviel Münzen gibst du mir für einen Brocken?";
+	description		= "How many coins will you give me for one nugget?";
 };
 
 func int DIA_Addon_Crimson_How_Condition()
@@ -105,8 +105,8 @@ func int DIA_Addon_Crimson_How_Condition()
 
 func void DIA_Addon_Crimson_How_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Crimson_How_15_00"); //Wie viele Münzen gibst du mir für einen Brocken?
-	AI_Output(self, other, "DIA_Addon_Crimson_How_10_01"); //Na ja, ich kenne dich zwar nicht, aber ich mach dir einen Freundschaftspreis. Für einen Brocken gebe ich dir ...
+	AI_Output(other, self, "DIA_Addon_Crimson_How_15_00"); //How many coins will you give me for one nugget?
+	AI_Output(self, other, "DIA_Addon_Crimson_How_10_01"); //Well, I don't know you at all, but I'll make you a special price. For one nugget I'll give you...
 	B_Say_Gold(self, other, 10);
 };
 
@@ -119,7 +119,7 @@ instance DIA_Addon_Crimson_Feilsch(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Crimson_Feilsch_Condition;
 	information		= DIA_Addon_Crimson_Feilsch_Info;
-	description		= "Lass uns feilschen! ";
+	description		= "Let's haggle!";
 };
 
 func int DIA_Addon_Crimson_Feilsch_Condition()
@@ -132,10 +132,10 @@ func int DIA_Addon_Crimson_Feilsch_Condition()
 
 func void DIA_Addon_Crimson_Feilsch_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Crimson_Feilsch_15_00"); //Lass uns feilschen!
-	AI_Output(self, other, "DIA_Addon_Crimson_Feilsch_10_01"); //Hmm ... nein. Das ist ein Standard Preis den JEDER kriegt.
-	AI_Output(other, self, "DIA_Addon_Crimson_Feilsch_15_02"); //Ich dachte, das wäre ein Freundschaftspreis.
-	AI_Output(self, other, "DIA_Addon_Crimson_Feilsch_10_03"); //Ist es auch. Wir sind doch alle Freunde hier.
+	AI_Output(other, self, "DIA_Addon_Crimson_Feilsch_15_00"); //Let's haggle!
+	AI_Output(self, other, "DIA_Addon_Crimson_Feilsch_10_01"); //Hmm...no. That's the standard price EVERYONE gets.
+	AI_Output(other, self, "DIA_Addon_Crimson_Feilsch_15_02"); //I thought that was a special price.
+	AI_Output(self, other, "DIA_Addon_Crimson_Feilsch_10_03"); //It is. Everyone here is special to me.
 };
 
 // ---------------------------------------------------------------------
@@ -148,7 +148,7 @@ instance DIA_Addon_Crimson_Gold(C_INFO)
 	condition		= DIA_Addon_Crimson_Gold_Condition;
 	information		= DIA_Addon_Crimson_Gold_Info;
 	permanent		= TRUE;
-	description		= "Goldbrocken tauschen ...";
+	description		= "Trade gold nuggets...";
 };
 
 func int DIA_Addon_Crimson_Gold_Condition()
@@ -161,19 +161,19 @@ func int DIA_Addon_Crimson_Gold_Condition()
 
 func void DIA_Addon_Crimson_Gold_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Crimson_Gold_15_00"); //Lass uns tauschen ...
+	AI_Output(other, self, "DIA_Addon_Crimson_Gold_15_00"); //Let's trade...
 
 	Info_ClearChoices(DIA_Addon_Crimson_Gold);
 	Info_AddChoice(DIA_Addon_Crimson_Gold, DIALOG_BACK, DIA_Addon_Crimson_Gold_BACK);
 
 	if (Npc_HasItems(other, ItMi_GoldNugget_Addon) >= 1)
 	{
-		Info_AddChoice(DIA_Addon_Crimson_Gold, "Alle Goldbrocken tauschen", DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice(DIA_Addon_Crimson_Gold, "1 Goldbrocken tauschen", DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice(DIA_Addon_Crimson_Gold, "Trade all gold nuggets", DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice(DIA_Addon_Crimson_Gold, "Trade 1 gold nugget", DIA_Addon_Crimson_Gold_1);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Crimson_Gold_10_01"); //Du hast aber keinen Goldbrocken dabei.
+		AI_Output(self, other, "DIA_Addon_Crimson_Gold_10_01"); //But you don't have any gold nuggets on you.
 	};
 };
 
@@ -195,8 +195,8 @@ func void DIA_Addon_Crimson_Gold_ALLE()
 
 	if (Npc_HasItems(other, ItMi_GoldNugget_Addon) >= 1)
 	{
-		Info_AddChoice(DIA_Addon_Crimson_Gold, "Alle Goldbrocken tauschen", DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice(DIA_Addon_Crimson_Gold, "   1 Goldbrocken tauschen", DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice(DIA_Addon_Crimson_Gold, "Trade all gold nuggets", DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice(DIA_Addon_Crimson_Gold, "Trade 1 gold nugget", DIA_Addon_Crimson_Gold_1);
 	};
 };
 
@@ -210,14 +210,14 @@ func void DIA_Addon_Crimson_Gold_1()
 
 	if (Npc_HasItems(other, ItMi_GoldNugget_Addon) >= 1)
 	{
-		Info_AddChoice(DIA_Addon_Crimson_Gold, "Alle Goldbrocken tauschen", DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice(DIA_Addon_Crimson_Gold, "   1 Goldbrocken tauschen", DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice(DIA_Addon_Crimson_Gold, "Trade all gold nuggets", DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice(DIA_Addon_Crimson_Gold, "Trade 1 gold nugget", DIA_Addon_Crimson_Gold_1);
 	};
 };
 
 func void B_Say_CrimsonBeliar()
 {
-	AI_Output(self, other, "DIA_Addon_Crimson_FATAGN_LOS_10_00"); //(beschwörend) KHARDIMON FATAGN SCHATAR FATAGN BELIAR.
+	AI_Output(self, other, "DIA_Addon_Crimson_FATAGN_LOS_10_00"); //(conjuring) KHARDIMON FATAGN SHATAR FATAGN BELIAR.
 };
 
 // ---------------------------------------------------------------------
@@ -229,7 +229,7 @@ instance DIA_Addon_Crimson_Raven(C_INFO)
 	nr				= 9;
 	condition		= DIA_Addon_Crimson_Raven_Condition;
 	information		= DIA_Addon_Crimson_Raven_Info;
-	description		= "Was weißt du über Raven? ";
+	description		= "What do you know about Raven?";
 };
 
 func int DIA_Addon_Crimson_Raven_Condition()
@@ -242,14 +242,14 @@ func int DIA_Addon_Crimson_Raven_Condition()
 
 func void DIA_Addon_Crimson_Raven_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Crimson_Raven_15_00"); //Was weißt du über Raven?
-	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_01"); //Du glaubst es nicht. Ich war dabei. Ich habe gesehen, was er in der Gruft gemacht hat!
-	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_02"); //(furchtsam) Er hat seltsame Worte gemurmelt und gerufen. Immer wieder ...
+	AI_Output(other, self, "DIA_Addon_Crimson_Raven_15_00"); //What do you know about Raven?
+	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_01"); //You won't believe it. I was there. I saw what he did in the tomb!
+	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_02"); //(afraid) He mumbled and called some strange words. Over and over...
 	B_Say_CrimsonBeliar();
-	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_03"); //(laut) Und dann kam ein gleißendes Licht aus der Gruft und ich hörte ich den SCHREI.
-	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_04"); //(ruft) Oh ihr Götter, diese Stimme. Das war der Klang des Untergangs der Welt!
-	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_05"); //Raven hat mit ihr gesprochen, sie haben sich unterhalten - Raven und DIE Stimme!
-	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_06"); //Ich weiß nicht mehr, was sie erzählt haben - ich weiß nur, dass ich erst viele Stunden später wieder in der Lage war, meine Knochen zu bewegen.
+	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_03"); //(loudly) And then a blazing light came out of the tomb and I heard the SCREAM.
+	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_04"); //(calls) Oh, ye gods, that voice. That was the sound of the end of the world!
+	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_05"); //Raven spoke with it, they conversed - Raven and THAT voice!
+	AI_Output(self, other, "DIA_Addon_Crimson_Raven_10_06"); //I can't remember what they said - I just know that I could only master my limbs again many hours later, back in the camp.
 };
 
 // ---------------------------------------------------------------------
@@ -262,7 +262,7 @@ instance DIA_Addon_Crimson_FATAGN(C_INFO)
 	condition		= DIA_Addon_Crimson_FATAGN_Condition;
 	information		= DIA_Addon_Crimson_FATAGN_Info;
 	permanent		= TRUE;
-	description		= "Kannst du Raven's Worte noch mal wiederholen?";
+	description		= "Can you repeat Raven's words again?";
 };
 
 func int DIA_Addon_Crimson_FATAGN_Condition()
@@ -278,18 +278,18 @@ func void DIA_Addon_Crimson_FATAGN_Info()
 {
 	Crimson_SayBeliar = (Crimson_SayBeliar + 1);
 
-	AI_Output(other, self, "DIA_Addon_Crimson_FATAGN_15_00"); //Kannst du Ravens Worte noch mal wiederholen?
+	AI_Output(other, self, "DIA_Addon_Crimson_FATAGN_15_00"); //Can you repeat Raven's words again?
 
 	if (Crimson_SayBeliar <= 3)
 	{
-		AI_Output(self, other, "DIA_Addon_Crimson_FATAGN_10_01"); //Klar. Bist du bereit?
+		AI_Output(self, other, "DIA_Addon_Crimson_FATAGN_10_01"); //Sure. Are you ready?
 
 		Info_ClearChoices(DIA_Addon_Crimson_FATAGN);
 		Info_AddChoice(DIA_Addon_Crimson_FATAGN, "Okay.", DIA_Addon_Crimson_FATAGN_LOS);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Crimson_FATAGN_10_02"); //Ich glaube, wir lassen das mal besser ...
+		AI_Output(self, other, "DIA_Addon_Crimson_FATAGN_10_02"); //I think we had better leave it be...
 	};
 };
 

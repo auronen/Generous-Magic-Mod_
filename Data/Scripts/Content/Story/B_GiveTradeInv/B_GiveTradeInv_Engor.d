@@ -37,7 +37,7 @@ func void B_GiveTradeInv_Engor(var C_Npc slf)
 		CreateInvItems (slf,ItSc_PalMediumHeal , 1);
 		CreateInvItems (slf,ItSc_PalLight, 10); 
 		
-		// ------ Armbrüste -------
+		// ------ ArmbrÃ¼ste -------
 		CreateInvItems(slf, ItRw_Crossbow_L_01, 1);
 		CreateInvItems(slf, ItRw_Crossbow_L_02, 1);
 
@@ -54,7 +54,7 @@ func void B_GiveTradeInv_Engor(var C_Npc slf)
 		CreateInvItems(slf, ItPo_Health_01, 10);
 		CreateInvItems(slf, ItPo_Health_02, 5);
 		CreateInvItems(slf, ItPo_Health_03, 5);
-		CreateInvItems (slf, ItPo_Mana_01,	30);//Joly:hab ich schon eingefügt nach version 1.26e
+		CreateInvItems (slf, ItPo_Mana_01,	30);//Joly:hab ich schon eingefÃ¼gt nach version 1.26e
 		CreateInvItems (slf, ItPo_Mana_02,	30);
 		CreateInvItems(slf, ItFo_Sausage, 1);
 		CreateInvItems(slf, ItFo_Booze, 5);

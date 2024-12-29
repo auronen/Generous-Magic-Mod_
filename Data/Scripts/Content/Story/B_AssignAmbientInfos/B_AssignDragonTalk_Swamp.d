@@ -23,7 +23,7 @@ func void DIA_Dragon_Swamp_Exit_Info()
 	Npc_RemoveInvItems(other, ItMi_InnosEye_MIS, 1);
 	CreateInvItems(other, ItMi_InnosEye_Discharged_MIS, 1);
 
-	AI_Output(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //Die Macht des Auges ist verbraucht. Dein Leben endet hier, Mensch.
+	AI_Output(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //The power of the Eye is exhausted. Your life ends here, human.
 
 	Swampdragon = Hlp_GetNpc(dragon_swamp);
 
@@ -71,19 +71,19 @@ func int DIA_Dragon_Swamp_Hello_Condition()
 
 func void DIA_Dragon_Swamp_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Dragon_Swamp_Hello_20_00"); //Wehe dir, wenn du noch einen Schritt näher kommst!
+	AI_Output(self, other, "DIA_Dragon_Swamp_Hello_20_00"); //Woe unto you, if you come one step closer!
 
 	if (Mis_KilledDragons == 0)
 	{
-		AI_Output(other, self, "DIA_Dragon_Swamp_Hello_15_01"); //Ah. Das Auge Innos' scheint zu funktionieren.
+		AI_Output(other, self, "DIA_Dragon_Swamp_Hello_15_01"); //Ah. The Eye of Innos seems to work.
 	};
 
-	AI_Output(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //Es kamen schon viele deiner Art. Ich habe sie alle hinweg gefegt.
-	AI_Output(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //Spar dir die Mühe. Du machst mir keine Angst mit deinen Sprüchen, du stinkende Ausgeburt der Hölle.
-	AI_Output(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //Sag mir, was ich wissen will oder ich werde dich in deinem Blut ertrinken lassen.
-	AI_Output(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //Ha, ha, ha. Du kleiner Wurm wagst es, mir zu drohen? Nenn mir nur einen Grund, warum ich dich nicht gleich in tausend Stücke zerfetze.
-	AI_Output(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //Ich bin ein Gesandter Innos' und trage das geweihte Auge bei mir. Du hast keine Wahl. Du wirst dich meinem Willen beugen oder ich werde dich vernichten.
-	AI_Output(self, other, "DIA_Dragon_Swamp_Hello_20_07"); //(Brüllt) Arrh. Sag, was du von mir willst.
+	AI_Output(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //Many of your sort have come. I have swept them all away.
+	AI_Output(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //Save your breath. Your big words don't scare me, you stinking spawn of hell.
+	AI_Output(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //Tell me what I want to know, or I shall make you drown in your own blood.
+	AI_Output(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //Ha ha ha. You dare to threaten me, little worm? Name just one reason why I should not tear you into a thousand pieces right now.
+	AI_Output(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //I'm an envoy of Innos, and I carry the sacred Eye on me. You have no choice. You must surrender to my will, or be destroyed.
+	AI_Output(self, other, "DIA_Dragon_Swamp_Hello_20_07"); //(bellows) Arrh. Say what you want of me.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -94,7 +94,7 @@ instance DIA_Dragon_Swamp_WERBISTDU(C_INFO)
 	nr				= 6;
 	condition		= DIA_Dragon_Swamp_WERBISTDU_Condition;
 	information		= DIA_Dragon_Swamp_WERBISTDU_Info;
-	description		= "Wer bist du?";
+	description		= "Who are you?";
 };
 
 func int DIA_Dragon_Swamp_WERBISTDU_Condition()
@@ -107,8 +107,8 @@ func int DIA_Dragon_Swamp_WERBISTDU_Condition()
 
 func void DIA_Dragon_Swamp_WERBISTDU_Info()
 {
-	AI_Output(other, self, "DIA_Dragon_Swamp_WERBISTDU_15_00"); //Wer bist du?
-	AI_Output(self, other, "DIA_Dragon_Swamp_WERBISTDU_20_01"); //Mein Name ist Pandrodor. Und du wärest gut beraten, wenn du wieder unter den Stein kriechst, unter dem du hervorgekrochen bist.
+	AI_Output(other, self, "DIA_Dragon_Swamp_WERBISTDU_15_00"); //Who are you?
+	AI_Output(self, other, "DIA_Dragon_Swamp_WERBISTDU_20_01"); //My name is Pandrodor. And you would be well advised if you crawled back under the rock from whence you came.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -119,7 +119,7 @@ instance DIA_Dragon_Swamp_WOSINDDIEANDEREN(C_INFO)
 	nr				= 7;
 	condition		= DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition;
 	information		= DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info;
-	description		= "Wo finde ich den Rest von euch widerlichen Kreaturen?";
+	description		= "Where can I find the rest of you repulsive creatures?";
 };
 
 func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition()
@@ -132,10 +132,10 @@ func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition()
 
 func void DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info()
 {
-	AI_Output(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //Wo finde ich den Rest von euch widerlichen Kreaturen?
-	AI_Output(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //Die Elemente, aus denen alles gemacht ist, halten diese Welt zusammen.
-	AI_Output(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //Jedes einzelne steht für die Fähigkeit, einen Teil der Welt zu kontrollieren.
-	AI_Output(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //Suche nach den Elementen und du wirst die anderen finden.
+	AI_Output(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //Where can I find the rest of you repulsive creatures?
+	AI_Output(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //The elements, from which everything is made, hold this world together.
+	AI_Output(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //Each one stands for the ability to control a part of the world.
+	AI_Output(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //Search for the elements and you will find the others.
 };
 
 //**********************************************************************************

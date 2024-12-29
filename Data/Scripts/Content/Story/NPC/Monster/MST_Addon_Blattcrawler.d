@@ -5,7 +5,7 @@
 prototype Mst_Default_Blattcrawler(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Fangheuschrecke";
+	name							= "Mantis";
 	guild							= GIL_MINECRAWLER;
 	level							= 15;
 

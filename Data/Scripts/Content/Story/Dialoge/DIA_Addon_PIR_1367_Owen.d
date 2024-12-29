@@ -80,9 +80,9 @@ func int DIA_Addon_Owen_Hello_Condition()
 
 func void DIA_Addon_Owen_Hello_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Owen_Hello_15_00"); //Alles klar?
-	AI_Output(self, other, "DIA_Addon_Owen_Hello_13_01"); //Wer bist DU denn? Bist du einer der Banditen?
-	AI_Output(other, self, "DIA_Addon_Owen_Hello_15_02"); //Sehe ich etwa so aus?
+	AI_Output(other, self, "DIA_Addon_Owen_Hello_15_00"); //How's it look?
+	AI_Output(self, other, "DIA_Addon_Owen_Hello_13_01"); //Who are YOU? Are you one of the bandits?
+	AI_Output(other, self, "DIA_Addon_Owen_Hello_15_02"); //Do I look like one?
 
 	var C_Item itm; itm = Npc_GetEquippedArmor(other);
 
@@ -90,16 +90,16 @@ func void DIA_Addon_Owen_Hello_Info()
 	|| (Hlp_IsItem(itm, ItAr_Pir_L_Addon) == TRUE)
 	|| (Hlp_IsItem(itm, ItAr_Pir_H_Addon) == TRUE))
 	{
-		AI_Output(self, other, "DIA_Addon_Owen_Hello_13_03"); //Du trägst zwar unsere Kleidung, aber ich kenne dich nicht.
+		AI_Output(self, other, "DIA_Addon_Owen_Hello_13_03"); //You're wearing our clothes, but I don't know you.
 	}
 	else if ((Hlp_IsItem(itm, ItAr_BDT_M) == TRUE)
 	|| (Hlp_IsItem(itm, ItAr_BDT_H) == TRUE))
 	{
-		AI_Output(self, other, "DIA_Addon_Owen_Hello_13_04"); //Um ehrlich zu sein, irgendwie schon.
+		AI_Output(self, other, "DIA_Addon_Owen_Hello_13_04"); //To be honest, you do.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Owen_Hello_13_05"); //Nein. Nach deinen Klamotten zu urteilen, kommst du von weit her.
+		AI_Output(self, other, "DIA_Addon_Owen_Hello_13_05"); //No. Judging from your clothes, you've come a long way.
 	};
 };
 
@@ -112,7 +112,7 @@ instance DIA_Addon_Owen_WasMachen(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Owen_WasMachen_Condition;
 	information		= DIA_Addon_Owen_WasMachen_Info;
-	description		= "Was machst du hier?";
+	description		= "What are you doing here?";
 };
 
 func int DIA_Addon_Owen_WasMachen_Condition()
@@ -125,9 +125,9 @@ func int DIA_Addon_Owen_WasMachen_Condition()
 
 func void DIA_Addon_Owen_WasMachen_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Owen_WasMachen_15_00"); //Was machst du hier?
-	AI_Output(self, other, "DIA_Addon_Owen_WasMachen_13_01"); //Ich bin Holzfäller und besorge Holz für unser Lager.
-	AI_Output(self, other, "DIA_Addon_Owen_WasMachen_13_02"); //Ich schuffte hier, brech' mir fast das Kreuz und die anderen im Lager liegen in der Sonne.
+	AI_Output(other, self, "DIA_Addon_Owen_WasMachen_15_00"); //What are you doing here?
+	AI_Output(self, other, "DIA_Addon_Owen_WasMachen_13_01"); //I'm cutting wood for our camp.
+	AI_Output(self, other, "DIA_Addon_Owen_WasMachen_13_02"); //I'm slaving away here, almost breaking my back, and back in camp they're all lounging in the sun.
 };
 
 // ************************************************************
@@ -140,7 +140,7 @@ instance DIA_Addon_Owen_Perm(C_INFO)
 	condition		= DIA_Addon_Owen_Perm_Condition;
 	information		= DIA_Addon_Owen_Perm_Info;
 	permanent		= TRUE;
-	description		= "Und sonst?";
+	description		= "And?";
 };
 
 func int DIA_Addon_Owen_Perm_Condition()
@@ -154,8 +154,8 @@ func int DIA_Addon_Owen_Perm_Condition()
 
 func void DIA_Addon_Owen_Perm_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Owen_Perm_15_00"); //Und sonst?
-	AI_Output(self, other, "DIA_Addon_Owen_Perm_13_01"); //Wenn ich das alles vorher gewusst hätte, wär' ich niemals Pirat geworden.
+	AI_Output(other, self, "DIA_Addon_Owen_Perm_15_00"); //And?
+	AI_Output(self, other, "DIA_Addon_Owen_Perm_13_01"); //If I had known all this in advance, I'd never have become a pirate.
 };
 
 // ************************************************************
@@ -168,7 +168,7 @@ instance DIA_Addon_Owen_Henry(C_INFO)
 	condition		= DIA_Addon_Owen_Henry_Condition;
 	information		= DIA_Addon_Owen_Henry_Info;
 	permanent		= TRUE;
-	description		= "Henry wartet auf die Holzlieferung für die Palisade.";
+	description		= "Henry is waiting for the wood he needs for the palisade.";
 };
 
 func int DIA_Addon_Owen_Henry_Condition()
@@ -182,16 +182,16 @@ func int DIA_Addon_Owen_Henry_Condition()
 
 func void DIA_Addon_Owen_Henry_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Owen_Henry_15_00"); //Henry wartet auf die Holzlieferung für die Palisade.
+	AI_Output(other, self, "DIA_Addon_Owen_Henry_15_00"); //Henry is waiting for the wood he needs for the palisade.
 
 	if (MIS_Owen_FindMalcom != LOG_SUCCESS)
 	{
-		AI_Output(self, other, "DIA_Addon_Owen_Henry_13_01"); //Ich will erst mal wissen, was mit meinem Kumpel Malcom passiert ist.
+		AI_Output(self, other, "DIA_Addon_Owen_Henry_13_01"); //First I want to find out what has happened to my buddy Malcolm.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Owen_Henry_13_02"); //Ja, ja. Ich werd' ihm das dämliche Holz schon noch bringen.
-		AI_Output(self, other, "DIA_Addon_Owen_Henry_13_03"); //Geh hin und sag ihm das.
+		AI_Output(self, other, "DIA_Addon_Owen_Henry_13_02"); //Look, relax. I'll bring him that stupid wood sooner or later.
+		AI_Output(self, other, "DIA_Addon_Owen_Henry_13_03"); //Go and tell him that.
 
 		B_LogEntry(TOPIC_Addon_HolOwen, TOPIC_Addon_HolOwen_4);
 
@@ -214,7 +214,7 @@ instance DIA_Addon_Owen_MalcomStunt(C_INFO)
 	nr				= 1;
 	condition		= DIA_Addon_Owen_MalcomStunt_Condition;
 	information		= DIA_Addon_Owen_MalcomStunt_Info;
-	description		= "Was ist los?";
+	description		= "What's up?";
 };
 
 func int DIA_Addon_Owen_MalcomStunt_Condition()
@@ -227,15 +227,15 @@ func int DIA_Addon_Owen_MalcomStunt_Condition()
 
 func void DIA_Addon_Owen_MalcomStunt_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Owen_MalcomStunt_15_00"); //Was ist los?
-	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_01"); //Mein Kumpel Malcom ist weg.
-	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_02"); //Uns hat so ein Mistvieh von einem Lurker angegriffen.
-	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_03"); //Da sind wir in diese Höhle geflüchtet.
-	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_04"); //Leider kam der Lurker uns nach.
-	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_05"); //Malcom hat gegen ihn gekämpft und ist dann mit dem Biest zusammen in das Loch da hinten gefallen.
-	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_06"); //Da unten scheint Wasser zu sein.
-	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_07"); //Der Lurker und Malcom kämpften da unten noch eine Weile. Dann war es still.
-	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_08"); //Ich weiß nicht, ob er noch lebt oder schon tot ist.
+	AI_Output(other, self, "DIA_Addon_Owen_MalcomStunt_15_00"); //What's up?
+	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_01"); //My buddy Malcolm has disappeared.
+	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_02"); //One of those filthy lurkers attacked us.
+	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_03"); //So we fled into this cave.
+	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_04"); //But that lurker came after us.
+	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_05"); //Malcolm fought with it, and then they both fell into that hole over there.
+	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_06"); //Seems to be full of water.
+	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_07"); //The lurker and Malcolm continued to fight down there for a while. Then it went quiet.
+	AI_Output(self, other, "DIA_Addon_Owen_MalcomStunt_13_08"); //I've no idea whether he's still alive or not.
 
 	Log_CreateTopic(TOPIC_Addon_MalcomsStunt, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MalcomsStunt, LOG_RUNNING);
@@ -254,7 +254,7 @@ instance DIA_Addon_Owen_runter(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Owen_runter_Condition;
 	information		= DIA_Addon_Owen_runter_Info;
-	description		= "Wie kommt man denn die Felsspalte runter?";
+	description		= "How do I get down into that crevice?";
 };
 
 func int DIA_Addon_Owen_runter_Condition()
@@ -269,8 +269,8 @@ func int DIA_Addon_Owen_runter_Condition()
 
 func void DIA_Addon_Owen_runter_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Owen_runter_15_00"); //Wie kommt man denn die Felsspalte runter?
-	AI_Output(self, other, "DIA_Addon_Owen_runter_13_01"); //Keine Ahnung. Entweder man klettert runter oder man springt.
+	AI_Output(other, self, "DIA_Addon_Owen_runter_15_00"); //How do I get down into that crevice?
+	AI_Output(self, other, "DIA_Addon_Owen_runter_13_01"); //Beats me. You can either climb down or jump, I suppose.
 };
 
 // ------------------------------------------------------------
@@ -282,7 +282,7 @@ instance DIA_Addon_Owen_MalcomDead(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Owen_MalcomDead_Condition;
 	information		= DIA_Addon_Owen_MalcomDead_Info;
-	description		= "Dein Kumpel Malcom ist tot.";
+	description		= "Your pal Malcolm is dead.";
 };
 
 func int DIA_Addon_Owen_MalcomDead_Condition()
@@ -297,12 +297,12 @@ func int DIA_Addon_Owen_MalcomDead_Condition()
 
 func void DIA_Addon_Owen_MalcomDead_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Owen_MalcomDead_15_00"); //Dein Kumpel Malcom ist tot.
-	AI_Output(self, other, "DIA_Addon_Owen_MalcomDead_13_01"); //Das hab ich mir schon gedacht. Armes Schwein. Ich hätte ihm doch helfen sollen.
+	AI_Output(other, self, "DIA_Addon_Owen_MalcomDead_15_00"); //Your pal Malcolm is dead.
+	AI_Output(self, other, "DIA_Addon_Owen_MalcomDead_13_01"); //I thought as much. Poor devil. I should have helped him after all.
 	if (SC_MadeStunt == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_Owen_MalcomDead_13_02"); //Du bist echt mutig, weißt du das?
-		AI_Output(self, other, "DIA_Addon_Owen_MalcomDead_13_03"); //Ich hätte das mit dem Felsspalte nicht fertig gebracht.
+		AI_Output(self, other, "DIA_Addon_Owen_MalcomDead_13_02"); //You're really brave, you know that?
+		AI_Output(self, other, "DIA_Addon_Owen_MalcomDead_13_03"); //I couldn't have done that with the crevice.
 	};
 
 	B_LogEntry(TOPIC_Addon_MalcomsStunt, TOPIC_Addon_MalcomsStunt_3);

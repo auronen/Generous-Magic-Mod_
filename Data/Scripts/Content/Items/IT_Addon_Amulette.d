@@ -74,7 +74,7 @@ instance ItAm_Addon_Franco(C_Item)
 
 	value						= Value_ItAm_Addon_Franco;
 
-	description					= "Franco's Amulett";
+	description					= "Franco's amulet";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Str;								count[2] = STR_FRANCO;
@@ -130,7 +130,7 @@ instance ItAm_Addon_Health(C_Item) // Balken Eingang zur Mine
 
 	value						= Value_ItAm_Addon_Health;
 
-	description					= "Amulett der Heiler";
+	description					= "Amulet of the healer";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_HP;								count[2] = HP_Amulett_Solo_Bonus;
@@ -190,7 +190,7 @@ instance ItRi_Addon_Health_01(C_Item) // Entrance Ruine
 
 	value						= Value_ItRi_Addon_Health_01;
 
-	description					= "Ring der Heiler";
+	description					= "Ring of the healers";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_HP;								count[2] = HP_Ring_Solo_Bonus;
@@ -232,7 +232,7 @@ func void UnEquip_ItRi_Addon_Health_01()
 };
 
 // ---------------------------------------------------------------------------------------------------------
-instance ItRi_Addon_Health_02(C_Item) // Höhle zum Canyon
+instance ItRi_Addon_Health_02(C_Item) // HÃ¶hle zum Canyon
 {
 	name						= NAME_Ring;
 
@@ -251,7 +251,7 @@ instance ItRi_Addon_Health_02(C_Item) // Höhle zum Canyon
 
 	value						= Value_ItRi_Addon_Health_01;
 
-	description					= "Ring der Heiler";
+	description					= "Ring of the healers";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_HP;								count[2] = HP_Ring_Solo_Bonus;
@@ -313,7 +313,7 @@ instance ItAm_Addon_MANA(C_Item) // Joly: verteilt RAKEPLACE[19]
 
 	value						= Value_ItAm_Addon_MANA;
 
-	description					= "Amulett der Priester";
+	description					= "Amulet of the priests";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Mana;								count[2] = MA_Amulett_Solo_Bonus;
@@ -373,7 +373,7 @@ instance ItRi_Addon_MANA_01(C_Item) // Bloodhound mine
 
 	value						= Value_ItRi_Addon_MANA_01;
 
-	description					= "Ring der Priester";
+	description					= "Ring of the priests";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Mana;								count[2] = MA_Ring_Solo_Bonus;
@@ -433,7 +433,7 @@ instance ItRi_Addon_MANA_02(C_Item) // Senat
 
 	value						= Value_ItRi_Addon_Mana_01;
 
-	description					= "Ring der Priester";
+	description					= "Ring of the priests";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Mana;								count[2] = MA_Ring_Solo_Bonus;
@@ -474,9 +474,9 @@ func void UnEquip_ItRi_Addon_Mana_02()
 };
 
 // ------------------------------------------------------------------------------------------
-// Kumulatives Stärke Amulett (Maya)
+// Kumulatives StÃ¤rke Amulett (Maya)
 // ------------------------------------------------------------------------------------------
-instance ItAm_Addon_STR(C_Item) // feuerwaranhöhle strand
+instance ItAm_Addon_STR(C_Item) // feuerwaranhÃ¶hle strand
 {
 	name						= NAME_Amulett;
 
@@ -495,7 +495,7 @@ instance ItAm_Addon_STR(C_Item) // feuerwaranhöhle strand
 
 	value						= Value_ItAm_Addon_STR;
 
-	description					= "Amulett der Krieger";
+	description					= "Amulet of the warriors";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Edge;								count[2] = STR_Amulett_Solo_Bonus;
@@ -557,7 +557,7 @@ instance ItRi_Addon_STR_01(C_Item) // Geschenk von Greg
 
 	value						= Value_ItRi_Addon_STR_01;
 
-	description					= "Ring der Krieger";
+	description					= "Ring of the warriors";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Edge;								count[2] = STR_Ring_Solo_Bonus;
@@ -619,7 +619,7 @@ instance ItRi_Addon_STR_02(C_Item) // in Quarhodrons grab
 
 	value						= Value_ItRi_Addon_STR_01;
 
-	description					= "Ring der Krieger";
+	description					= "Ring of the warriors";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Edge;								count[2] = STR_Ring_Solo_Bonus;

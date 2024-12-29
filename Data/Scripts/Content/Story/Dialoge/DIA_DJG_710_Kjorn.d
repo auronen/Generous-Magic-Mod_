@@ -43,11 +43,11 @@ func int DIA_Kjorn_Hello_Condition()
 
 func void DIA_Kjorn_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Kjorn_Hello_06_00"); //Hey, komm mal her!
-	AI_Output(other, self, "DIA_Kjorn_Hello_15_01"); //Was willst du?
-	AI_Output(self, other, "DIA_Kjorn_Hello_06_02"); //Das Tal ist ziemlich gefährlich und ohne die richtige Ausrüstung ist man hier schnell tot.
-	AI_Output(other, self, "DIA_Kjorn_Hello_15_03"); //Ich nehme an, DU hast die richtige Ausrüstung.
-	AI_Output(self, other, "DIA_Kjorn_Hello_06_04"); //Du hast es erraten. Ich würde sie dir sogar verkaufen.
+	AI_Output(self, other, "DIA_Kjorn_Hello_06_00"); //Hey, come over here!
+	AI_Output(other, self, "DIA_Kjorn_Hello_15_01"); //What do you want?
+	AI_Output(self, other, "DIA_Kjorn_Hello_06_02"); //This valley is a dangerous place, and without the right equipment you'll find yourself dead in no time.
+	AI_Output(other, self, "DIA_Kjorn_Hello_15_03"); //I assume that YOU've got the right equipment.
+	AI_Output(self, other, "DIA_Kjorn_Hello_06_04"); //You guessed it. I might even sell it to you.
 };
 
 //*********************************************************************
@@ -61,7 +61,7 @@ instance DIA_Kjorn_TRADE(C_INFO)
 	information		= DIA_Kjorn_TRADE_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Was hast du anzubieten?";
+	description		= "What can you offer me?";
 };
 
 func int DIA_Kjorn_TRADE_Condition()
@@ -72,7 +72,7 @@ func int DIA_Kjorn_TRADE_Condition()
 func void DIA_Kjorn_TRADE_Info()
 {
 	B_GiveTradeInv(self);
-	AI_Output(other, self, "DIA_Kjorn_TRADE_15_00"); //Was hast du anzubieten?
+	AI_Output(other, self, "DIA_Kjorn_TRADE_15_00"); //What can you offer me?
 };
 
 //*********************************************************************
@@ -84,7 +84,7 @@ instance DIA_Kjorn_SellInfos(C_INFO)
 	nr				= 5;
 	condition		= DIA_Kjorn_SellInfos_Condition;
 	information		= DIA_Kjorn_SellInfos_Info;
-	description		= "Verkaufst du auch Informationen?";
+	description		= "Do you sell information as well?";
 };
 
 func int DIA_Kjorn_SellInfos_Condition()
@@ -94,14 +94,14 @@ func int DIA_Kjorn_SellInfos_Condition()
 
 func void DIA_Kjorn_SellInfos_Info()
 {
-	AI_Output(other, self, "DIA_Kjorn_SellInfos_15_00"); //Verkaufst du auch Informationen?
-	AI_Output(self, other, "DIA_Kjorn_SellInfos_06_01"); //Kommt drauf an. Wenn der Preis stimmt, werde ich dir alles sagen, was ich weiß.
-	AI_Output(other, self, "DIA_Kjorn_SellInfos_15_02"); //Wie viel verlangst du?
-	AI_Output(self, other, "DIA_Kjorn_SellInfos_06_03"); //Hmm, schwer zu sagen. Ich denke 50 Goldstücke für jede Information, die ich dir gebe, sind angemessen.
+	AI_Output(other, self, "DIA_Kjorn_SellInfos_15_00"); //Do you sell information as well?
+	AI_Output(self, other, "DIA_Kjorn_SellInfos_06_01"); //That depends. If the price is right, I'll tell you everything I know.
+	AI_Output(other, self, "DIA_Kjorn_SellInfos_15_02"); //How much do you charge?
+	AI_Output(self, other, "DIA_Kjorn_SellInfos_06_03"); //Hmm... hard to say. But I think that 50 gold pieces for every piece of information I give you sounds about right.
 };
 
 //*********************************************************************
-//	Ich brauche Infos über..
+//	Ich brauche Infos Ã¼ber..
 //*********************************************************************
 instance DIA_Kjorn_BuyInfos(C_INFO)
 {
@@ -110,7 +110,7 @@ instance DIA_Kjorn_BuyInfos(C_INFO)
 	condition		= DIA_Kjorn_BuyInfos_Condition;
 	information		= DIA_Kjorn_BuyInfos_Info;
 	permanent		= TRUE;
-	description		= "Ich brauche Informationen.";
+	description		= "I need some information.";
 };
 
 func int DIA_Kjorn_BuyInfos_Condition()
@@ -123,35 +123,35 @@ func int DIA_Kjorn_BuyInfos_Condition()
 
 func void DIA_Kjorn_BuyInfos_Info()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_15_00"); //Ich brauche Informationen.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_06_01"); //50 Goldstücke!
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_15_00"); //I need some information.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_06_01"); //50 gold pieces!
 
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
-	Info_AddChoice(DIA_Kjorn_BuyInfos, "Das ist mir zu teuer.", DIA_Kjorn_BuyInfos_HoldMoney);
+	Info_AddChoice(DIA_Kjorn_BuyInfos, "That's too expensive for me.", DIA_Kjorn_BuyInfos_HoldMoney);
 
 	if (Npc_HasItems(other, ItMi_Gold) >= 50)
 	{
-		Info_AddChoice(DIA_Kjorn_BuyInfos, "Ja, hier.", DIA_Kjorn_BuyInfos_GiveMoney);
+		Info_AddChoice(DIA_Kjorn_BuyInfos, "Yes, here.", DIA_Kjorn_BuyInfos_GiveMoney);
 	};
 };
 
 func void DIA_Kjorn_BuyInfos_HoldMoney()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_HoldMoney_15_00"); //Das ist mir zu teuer.
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_HoldMoney_15_00"); //That's too expensive for me.
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
 };
 
 func void DIA_Kjorn_BuyInfos_GiveMoney()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_GiveMoney_15_00"); //Ja, hier.
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_GiveMoney_15_00"); //Yes, here.
 
 	B_GiveInvItems(other, self, ItMi_Gold, 50);
 
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_GiveMoney_15_01"); //Jetzt erzähl mir ...
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_GiveMoney_15_01"); //Now tell me ...
 
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
 
-	// ----- Zurück -----
+	// ----- ZurÃ¼ck -----
 
 	Info_AddChoice(DIA_Kjorn_BuyInfos, DIALOG_BACK, DIA_Kjorn_BuyInfos_Back);
 
@@ -159,49 +159,49 @@ func void DIA_Kjorn_BuyInfos_GiveMoney()
 
 	if (KjornToldDragon == 0)
 	{
-		Info_AddChoice(DIA_Kjorn_BuyInfos, "...über die Drachen.", DIA_Kjorn_BuyInfos_Dragon1);
+		Info_AddChoice(DIA_Kjorn_BuyInfos, "... about the dragons.", DIA_Kjorn_BuyInfos_Dragon1);
 	}
 	else if (KjornToldDragon == 1)
 	{
-		Info_AddChoice(DIA_Kjorn_BuyInfos, "...mehr über die Drachen.", DIA_Kjorn_BuyInfos_Dragon2);
+		Info_AddChoice(DIA_Kjorn_BuyInfos, "... more about the dragons.", DIA_Kjorn_BuyInfos_Dragon2);
 	};
 
 	// ----- Das Minental -----
 
 	if (KjornToldColony == 0)
 	{
-		Info_AddChoice(DIA_Kjorn_BuyInfos, "...über das Minental.", DIA_Kjorn_BuyInfos_Colony1);
+		Info_AddChoice(DIA_Kjorn_BuyInfos, "... about the Valley of Mines.", DIA_Kjorn_BuyInfos_Colony1);
 	}
 	else if (KjornToldColony == 1)
 	{
-		Info_AddChoice(DIA_Kjorn_BuyInfos, "...mehr über das Minental.", DIA_Kjorn_BuyInfos_Colony2);
+		Info_AddChoice(DIA_Kjorn_BuyInfos, "... more about the Valley of Mines.", DIA_Kjorn_BuyInfos_Colony2);
 	};
 
 	// ----- die Burg -----
 
 	if (KJornToldOldCamp == 0)
 	{
-		Info_AddChoice(DIA_Kjorn_BuyInfos, "...über die Burg.", DIA_Kjorn_BuyInfos_OldCamp1);
+		Info_AddChoice(DIA_Kjorn_BuyInfos, "... about the castle.", DIA_Kjorn_BuyInfos_OldCamp1);
 	};
 
 	// ----- Die Orks -----
 
 	if (KjornToldOrks == 0)
 	{
-		Info_AddChoice(DIA_Kjorn_BuyInfos, "...über die Orks.", DIA_Kjorn_BuyInfos_Orks1);
+		Info_AddChoice(DIA_Kjorn_BuyInfos, "... about the orcs.", DIA_Kjorn_BuyInfos_Orks1);
 	}
 	else if (KjornToldOrks == 1)
 	{
-		Info_AddChoice(DIA_Kjorn_BuyInfos, "...mehr über die Orks.", DIA_Kjorn_BuyInfos_Orks2);
+		Info_AddChoice(DIA_Kjorn_BuyInfos, "... more about the orcs.", DIA_Kjorn_BuyInfos_Orks2);
 	};
 };
 
-// ------ Zurück -----
+// ------ ZurÃ¼ck -----
 
 func void DIA_Kjorn_BuyInfos_Back()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Back_15_00"); //Ach, gib mir einfach mein Gold zurück, ich hab's mir überlegt.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Back_06_01"); //Wie du meinst.
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Back_15_00"); //You know, just give me back my money, I changed my mind.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Back_06_01"); //Suit yourself.
 
 	B_GiveInvItems(self, other, ItMi_Gold, 50);
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
@@ -211,10 +211,10 @@ func void DIA_Kjorn_BuyInfos_Back()
 
 func void DIA_Kjorn_BuyInfos_Dragon1()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Dragon1_15_00"); //Erzähl mir etwas über die Drachen.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon1_06_01"); //Drachen sind uralte Geschöpfe von unglaublicher Macht. Einst lebten Tausende von ihnen auf der ganzen Welt verteilt.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon1_06_02"); //Seit über hundert Jahren hat man keinen mehr von ihnen gesehen.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon1_06_03"); //Ihr Blut ist heiß wie siedendes Öl. Wenn sie dir in die Augen blicken, verwandelt sich dein Herz in Stein. Hab ich gehört ...
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Dragon1_15_00"); //Tell me about the dragons.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon1_06_01"); //Dragons are ancient, incredibly powerful creatures. Once there were thousands of them living all over the world.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon1_06_02"); //It's been over a hundred years, though, that any of them were seen.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon1_06_03"); //Their blood is as hot as boiling oil. If they look into your eyes, your heart will turn to stone. So I've heard ...
 
 	KjornToldDragon = 1;
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
@@ -222,10 +222,10 @@ func void DIA_Kjorn_BuyInfos_Dragon1()
 
 func void DIA_Kjorn_BuyInfos_Dragon2()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Dragon2_15_00"); //Erzähl mir mehr über die Drachen.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon2_06_01"); //Drache ist nicht gleich Drache.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon2_06_02"); //Es gibt einige, die das gesamte Land mit einer meterdicken Eisschicht bedecken können.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon2_06_03"); //Andere leben lieber in sumpfiger Umgebung oder in Vulkanen.
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Dragon2_15_00"); //Tell me more about the dragons.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon2_06_01"); //But all dragons are not alike.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon2_06_02"); //Some of them could cover the entire land with a layer of ice several feet thick.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Dragon2_06_03"); //Others prefer living in swampy surroundings, or in volcanoes.
 
 	B_LogEntry(TOPIC_DRACHENJAGD, TOPIC_DRACHENJAGD_9);
 
@@ -237,11 +237,11 @@ func void DIA_Kjorn_BuyInfos_Dragon2()
 
 func void DIA_Kjorn_BuyInfos_Colony1()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Colony1_15_00"); //Erzähl mir etwas über das Minental.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony1_06_01"); //Das Minental von Khorinis ist im gesamten Land für sein magisches Erz berühmt.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony1_06_02"); //Diese Berge sind der einzige Ort, wo man das magische Erz finden kann.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony1_06_03"); //Eine aus diesem Erz geschmiedete Waffe ist nahezu unzerbrechlich und durchschneidet die stärkste Rüstung.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony1_06_04"); //Bis vor wenigen Wochen war das gesamte Tal von einer magischen Barriere umgeben, die undurchdringlich war und niemanden heraus gelassen hat.
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Colony1_15_00"); //Tell me about the Valley of Mines.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony1_06_01"); //The Valley of Mines of Khorinis is known all over the country for its magic ore.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony1_06_02"); //These mountains are the only place where the magic ore can be found.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony1_06_03"); //A weapon forged from this ore is virtually unbreakable and will cut through the strongest armor.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony1_06_04"); //Until a few weeks ago, the entire valley was surrounded by a magic barrier. It was impenetrable, and nobody could get out.
 
 	KjornToldColony = 1;
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
@@ -249,11 +249,11 @@ func void DIA_Kjorn_BuyInfos_Colony1()
 
 func void DIA_Kjorn_BuyInfos_Colony2()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Colony2_15_00"); //Erzähl mir mehr über das Minental.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony2_06_01"); //Das Tal hat sich sehr verändert in den letzten Tagen.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony2_06_02"); //Mit dem Auftauchen der Orks sind noch andere furchteinflößende Kreaturen gekommen, die es hier vorher nicht gegeben hat.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony2_06_03"); //Es soll hier noch vereinzelt ein paar Jäger geben, allerdings bin ich mir nicht sicher, ob die überhaupt noch leben.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony2_06_04"); //Das ganze Tal wirkt, als ob sich hier alle Geschöpfe Beliars zusammengerottet haben.
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Colony2_15_00"); //Tell me more about the Valley of Mines.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony2_06_01"); //The valley has changed a lot during these last few days.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony2_06_02"); //When the orcs came, other horrible creatures showed up as well, the likes of which have never been seen around here before.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony2_06_03"); //They say that a few lonely hunters are still about, but I'm not sure whether they're even still alive.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Colony2_06_04"); //It seems like all the creatures of Beliar have flocked together in this very valley.
 
 	KjornToldColony = 2;
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
@@ -263,9 +263,9 @@ func void DIA_Kjorn_BuyInfos_Colony2()
 
 func void DIA_Kjorn_BuyInfos_OldCamp1()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_OldCamp1_15_00"); //Erzähl mir etwas über die Burg.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_OldCamp1_06_01"); //Sie liegt ziemlich im Zentrum des Minentals.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_OldCamp1_06_02"); //Als das Tal noch ein Gefängnis war, haben die Erzbarone von dort den gesamten Erzhandel kontrolliert.
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_OldCamp1_15_00"); //Tell me about the castle.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_OldCamp1_06_01"); //It lies pretty much in the center of the Valley of Mines.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_OldCamp1_06_02"); //Back when the valley was still a prison, the ore barons controlled the entire ore trade from there.
 
 	KjornToldOldCamp = 1;
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
@@ -275,10 +275,10 @@ func void DIA_Kjorn_BuyInfos_OldCamp1()
 
 func void DIA_Kjorn_BuyInfos_Orks1()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Orks1_15_00"); //Erzähl mir etwas über die Orks.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Orks1_06_01"); //Die Orks sind erst seit kurzem hier. Ich meine, zumindest die Orks vor der Burg.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Orks1_06_02"); //Allerdings wundere ich mich, wie gut sie organisiert sind. Normalerweise greifen Orks ohne Rücksicht auf Verluste an.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Orks1_06_03"); //Diese Orks warten ab. Ich weiß nicht auf was, aber sie warten.
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Orks1_15_00"); //Tell me about the orcs.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Orks1_06_01"); //The orcs haven't been here for long. At least those orcs in front of the castle, that is.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Orks1_06_02"); //But I'm wondering about how well they're organized. Orcs usually attack blindly, no matter what.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Orks1_06_03"); //These orcs are biding their time. They're waiting, but we don't know for what.
 
 	KjornToldOrks = 1;
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
@@ -286,9 +286,9 @@ func void DIA_Kjorn_BuyInfos_Orks1()
 
 func void DIA_Kjorn_BuyInfos_Orks2()
 {
-	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Orks2_15_00"); //Erzähl mir mehr über die Orks.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Orks2_06_01"); //Angeführt werden die Orks von Elitekriegern. Diese Krieger sind sehr stark und schwer gerüstet. Sie zu besiegen ist fast unmöglich.
-	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Orks2_06_02"); //Ich habe mal gesehen, wie einer von ihnen eine ausgewachsene Eiche mit einem Hieb seiner Axt gefällt hat.
+	AI_Output(other, self, "DIA_Kjorn_BuyInfos_Orks2_15_00"); //Tell me more about the orcs.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Orks2_06_01"); //The orcs are led by elite warriors. Those warriors are very strong and heavily armored. They are almost impossible to defeat.
+	AI_Output(self, other, "DIA_Kjorn_BuyInfos_Orks2_06_02"); //I once saw one of them fell a fully-grown oak tree with one blow of his axe.
 
 	KjornToldOrks = 2;
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
@@ -303,7 +303,7 @@ instance DIA_Kjorn_AllDragonsDead(C_INFO)
 	nr				= 5;
 	condition		= DIA_Kjorn_AllDragonsDead_Condition;
 	information		= DIA_Kjorn_AllDragonsDead_Info;
-	description		= "Ich habe alle Drachen getötet!";
+	description		= "I killed all the dragons!";
 };
 
 func int DIA_Kjorn_AllDragonsDead_Condition()
@@ -316,9 +316,9 @@ func int DIA_Kjorn_AllDragonsDead_Condition()
 
 func void DIA_Kjorn_AllDragonsDead_Info()
 {
-	AI_Output(other, self, "DIA_Kjorn_AllDragonsDead_15_00"); //Ich habe alle Drachen getötet!
-	AI_Output(self, other, "DIA_Kjorn_AllDragonsDead_06_01"); //(lacht) Klar, und ich bin Paladin.
-	AI_Output(self, other, "DIA_Kjorn_AllDragonsDead_06_02"); //Du hast vielleicht EINEN getötet, aber alle? Das kannst du einem anderen erzählen.
+	AI_Output(other, self, "DIA_Kjorn_AllDragonsDead_15_00"); //I killed all the dragons!
+	AI_Output(self, other, "DIA_Kjorn_AllDragonsDead_06_01"); //(laughs) Sure, and I'm a paladin.
+	AI_Output(self, other, "DIA_Kjorn_AllDragonsDead_06_02"); //You might have killed ONE, but all of them? Go find somebody else who will believe you.
 };
 
 // ************************************************************

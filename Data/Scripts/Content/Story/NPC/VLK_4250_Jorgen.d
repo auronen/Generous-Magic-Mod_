@@ -10,7 +10,7 @@ instance VLK_4250_Jorgen(Npc_Default)
 	name							= "Jorgen";
 	npctype							= NpcType_Main;
 	guild							= GIL_NONE;
-	flags							= NPC_FLAG_IMMORTAL; // Joly: Immortal Kapitän fürs Schiff im Kapitel 5! Mortal, Optionale Kapitäne: Torlof und Jack!!!!!!!!!
+	flags							= NPC_FLAG_IMMORTAL; // Joly: Immortal KapitÃ¤n fÃ¼rs Schiff im Kapitel 5! Mortal, Optionale KapitÃ¤ne: Torlof und Jack!!!!!!!!!
 
 	voice							= 7;
 	id								= 4250;
@@ -30,7 +30,7 @@ instance VLK_4250_Jorgen(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 70); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 70); // Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

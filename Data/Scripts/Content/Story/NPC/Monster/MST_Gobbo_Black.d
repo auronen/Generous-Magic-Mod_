@@ -5,7 +5,7 @@
 prototype Mst_Default_Gobbo_Black(C_NPC)
 {
 	// -------- NPC --------
-	name							= "schwarzer Goblin";
+	name							= "Black Goblin";
 	guild							= GIL_GOBBO;
 	level							= 8;
 
@@ -83,7 +83,7 @@ instance Gobbo_Black(Mst_Default_Gobbo_Black)
 	// -------- visuals --------
 	B_SetVisuals_Gobbo_Black();
 
-	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 
@@ -106,7 +106,7 @@ instance Gobbo_DaronsStatuenKlauer(Mst_Default_Gobbo_Black)
 	// -------- visuals --------
 	B_SetVisuals_Gobbo_Black();
 
-	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 

@@ -5,7 +5,7 @@
 prototype Mst_Default_OrcWarrior(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Ork Krieger";
+	name							= "Orc Warrior";
 	guild							= GIL_ORC;
 	level							= 30;
 
@@ -169,7 +169,7 @@ instance OrcWarrior_Sit(Mst_Default_OrcWarrior)
 instance OrcWarrior_Harad(Mst_Default_OrcWarrior)
 {
 	// -------- NPC --------
-	name							= "Ork Späher";
+	name							= "Orc Scout";
 	level							= 15;
 
 	// -------- attributes --------

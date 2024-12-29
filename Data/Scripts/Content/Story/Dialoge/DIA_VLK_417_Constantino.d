@@ -81,7 +81,7 @@ func int DIA_Constantino_Hallo_Condition()
 func void DIA_Constantino_Hallo_Info()
 {
 	// ADDON AI_Output(self, other,"DIA_Constantino_Hallo_10_00"); // Was willst du? Hier gibt es nichts umsonst und ich werde dir auch nichts verkaufen.
-	AI_Output(self, other, "DIA_Addon_Constantino_Hallo_10_00"); //Was willst du? Hier gibt es nichts umsonst.
+	AI_Output(self, other, "DIA_Addon_Constantino_Hallo_10_00"); //What do you want? I'm not giving anything away.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -93,7 +93,7 @@ instance DIA_Constantino_AboutLehrling(C_INFO)
 	nr				= 1;
 	condition		= DIA_Constantino_AboutLehrling_Condition;
 	information		= DIA_Constantino_AboutLehrling_Info;
-	description		= "Ich bin auf der Suche nach einer Stelle als Lehrling.";
+	description		= "I'm looking to become an apprentice.";
 };
 
 func int DIA_Constantino_AboutLehrling_Condition()
@@ -103,8 +103,8 @@ func int DIA_Constantino_AboutLehrling_Condition()
 
 func void DIA_Constantino_AboutLehrling_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_AboutLehrling_15_00"); //Ich bin auf der Suche nach einer Stelle als Lehrling.
-	AI_Output(self, other, "DIA_Constantino_AboutLehrling_10_01"); //So? Und bei wem willst du anfangen?
+	AI_Output(other, self, "DIA_Constantino_AboutLehrling_15_00"); //I'm looking to become an apprentice.
+	AI_Output(self, other, "DIA_Constantino_AboutLehrling_10_01"); //Really? And with whom are you going to sign up?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -116,7 +116,7 @@ instance DIA_Constantino_Heilung(C_INFO)
 	nr				= 5;
 	condition		= DIA_Constantino_Heilung_Condition;
 	information		= DIA_Constantino_Heilung_Info;
-	description		= "Ich suche Heilung";
+	description		= "I'm in need of healing.";
 };
 
 func int DIA_Constantino_Heilung_Condition()
@@ -126,25 +126,25 @@ func int DIA_Constantino_Heilung_Condition()
 
 func void DIA_Constantino_Heilung_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_Heilung_15_00"); //Ich suche Heilung.
-	AI_Output(self, other, "DIA_Constantino_Heilung_10_01"); //(barsch) Wieso, bist du verletzt?
+	AI_Output(other, self, "DIA_Constantino_Heilung_15_00"); //I'm in need of healing.
+	AI_Output(self, other, "DIA_Constantino_Heilung_10_01"); //(curtly) Why, are you injured?
 
 	Info_ClearChoices(DIA_Constantino_Heilung);
-	Info_AddChoice(DIA_Constantino_Heilung, "Eigentlich nicht.", DIA_Constantino_Heilung_Nein);
-	Info_AddChoice(DIA_Constantino_Heilung, "Ja. ", DIA_Constantino_Heilung_Ja);
+	Info_AddChoice(DIA_Constantino_Heilung, "Not really.", DIA_Constantino_Heilung_Nein);
+	Info_AddChoice(DIA_Constantino_Heilung, "Yes.", DIA_Constantino_Heilung_Ja);
 };
 
 func void DIA_Constantino_Heilung_Ja()
 {
-	AI_Output(other, self, "DIA_Constantino_Heilung_Ja_15_00"); //Ja.
+	AI_Output(other, self, "DIA_Constantino_Heilung_Ja_15_00"); //Yes.
 
 	if (other.attribute[ATR_HITPOINTS] < other.attribute[ATR_HITPOINTS_MAX])
 	{
-		AI_Output(self, other, "DIA_Constantino_Heilung_Ja_10_01"); //Dann geh zu Vatras, der wird dich bestimmt heilen. Und blute nicht meinen Boden voll!
+		AI_Output(self, other, "DIA_Constantino_Heilung_Ja_10_01"); //Go to Vatras then, he'll patch you up all right. And stop bleeding all over my floor!
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Constantino_Heilung_Ja_10_02"); //Du hast nicht mal einen Kratzer und ich habe Wichtigeres zu tun, als mit dir zu plaudern.
+		AI_Output(self, other, "DIA_Constantino_Heilung_Ja_10_02"); //There's barely a scratch on you and I have more important things to do than talk to you.
 	};
 
 	AI_StopProcessInfos(self);
@@ -152,8 +152,8 @@ func void DIA_Constantino_Heilung_Ja()
 
 func void DIA_Constantino_Heilung_Nein()
 {
-	AI_Output(other, self, "DIA_Constantino_Heilung_Nein_15_00"); //Eigentlich nicht.
-	AI_Output(self, other, "DIA_Constantino_Heilung_Nein_10_01"); //Dann verschwinde, sonst ziehst du dir noch eine Verletzung zu.
+	AI_Output(other, self, "DIA_Constantino_Heilung_Nein_15_00"); //Not really.
+	AI_Output(self, other, "DIA_Constantino_Heilung_Nein_10_01"); //Get lost, then, or you may well suffer an injury.
 
 	AI_StopProcessInfos(self);
 };
@@ -167,7 +167,7 @@ instance DIA_Addon_Constantino_LestersKraeuter(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Constantino_LestersKraeuter_Condition;
 	information		= DIA_Addon_Constantino_LestersKraeuter_Info;
-	description		= "Kann ich dir Kräuter verkaufen?";
+	description		= "Can I sell you some herbs?";
 };
 
 func int DIA_Addon_Constantino_LestersKraeuter_Condition()
@@ -181,8 +181,8 @@ func int DIA_Addon_Constantino_LestersKraeuter_Condition()
 
 func void DIA_Addon_Constantino_LestersKraeuter_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Constantino_LestersKraeuter_15_00"); //Kann ich dir Kräuter verkaufen?
-	AI_Output(self, other, "DIA_Addon_Constantino_LestersKraeuter_10_01"); //Wenn du was anzubieten hast ...
+	AI_Output(other, self, "DIA_Addon_Constantino_LestersKraeuter_15_00"); //Can I sell you some herbs?
+	AI_Output(self, other, "DIA_Addon_Constantino_LestersKraeuter_10_01"); //If you have any to offer ...
 	B_GivePlayerXP(XP_Ambient);
 };
 
@@ -197,7 +197,7 @@ instance DIA_Constantino_Trade(C_INFO)
 	information		= DIA_Constantino_Trade_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Zeig mir deine Ware";
+	description		= "Show me your wares.";
 };
 
 func int DIA_Constantino_Trade_Condition()
@@ -208,7 +208,7 @@ func int DIA_Constantino_Trade_Condition()
 func void DIA_Constantino_Trade_Info()
 {
 	B_GiveTradeInv(self);
-	AI_Output(other, self, "DIA_Constantino_Trade_15_00"); //Zeig mir deine Ware.
+	AI_Output(other, self, "DIA_Constantino_Trade_15_00"); //Show me your wares.
 
 	if (Constantino_Logpatch1 == FALSE)
 	{
@@ -228,7 +228,7 @@ instance DIA_Constantino_BeiDir(C_INFO)
 	nr				= 1;
 	condition		= DIA_Constantino_BeiDir_Condition;
 	information		= DIA_Constantino_BeiDir_Info;
-	description		= "Ich will bei dir als Lehrling anfangen.";
+	description		= "I want to sign up with you as an apprentice.";
 };
 
 func int DIA_Constantino_BeiDir_Condition()
@@ -242,10 +242,10 @@ func int DIA_Constantino_BeiDir_Condition()
 
 func void DIA_Constantino_BeiDir_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_BeiDir_15_00"); //Ich will bei dir als Lehrling anfangen.
-	AI_Output(self, other, "DIA_Constantino_BeiDir_10_01"); //Bei MIR? Nein! Ich hatte schon einmal das zweifelhafte Vergnügen, mich mit einem Lehrling herumschlagen zu müssen.
-	AI_Output(self, other, "DIA_Constantino_BeiDir_10_02"); //Ich habe Jahre in seine Ausbildung investiert, und am Ende hat der arme Narr sich selbst vergiftet.
-	AI_Output(self, other, "DIA_Constantino_BeiDir_10_03"); //Fang bei einem der anderen Meister an!
+	AI_Output(other, self, "DIA_Constantino_BeiDir_15_00"); //I want to sign up with you as an apprentice.
+	AI_Output(self, other, "DIA_Constantino_BeiDir_10_01"); //With ME? No! I have already had the dubious pleasure once of grappling with an apprentice. That's quite enough for me.
+	AI_Output(self, other, "DIA_Constantino_BeiDir_10_02"); //I invested several years in his education, and in the end the poor fool up and poisoned himself.
+	AI_Output(self, other, "DIA_Constantino_BeiDir_10_03"); //Go sign up with one of the other masters!
 };
 
 // *******************************************************
@@ -258,7 +258,7 @@ instance DIA_Constantino_ZUSTIMMUNG(C_INFO)
 	condition		= DIA_Constantino_ZUSTIMMUNG_Condition;
 	information		= DIA_Constantino_ZUSTIMMUNG_Info;
 	permanent		= TRUE;
-	description		= "Ich will bei einem der anderen Meister anfangen.";
+	description		= "I want to sign up with one of the other masters.";
 };
 
 func int DIA_Constantino_ZUSTIMMUNG_Condition()
@@ -272,17 +272,17 @@ func int DIA_Constantino_ZUSTIMMUNG_Condition()
 
 func void DIA_Constantino_ZUSTIMMUNG_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_ZUSTIMMUNG_15_00"); //Ich will bei einem der anderen Meister anfangen.
-	AI_Output(self, other, "DIA_Constantino_ZUSTIMMUNG_10_01"); //Du kommst, um dir meine Zustimmung zu holen?
+	AI_Output(other, self, "DIA_Constantino_ZUSTIMMUNG_15_00"); //I want to sign up with one of the other masters.
+	AI_Output(self, other, "DIA_Constantino_ZUSTIMMUNG_10_01"); //You have come to ask my approval?
 	if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 	{
-		AI_Output(self, other, "DIA_Constantino_ZUSTIMMUNG_10_02"); //Hm - meinetwegen kannst du anfangen, bei wem du willst.
+		AI_Output(self, other, "DIA_Constantino_ZUSTIMMUNG_10_02"); //Hm - as far as I am concerned, you can sign up with whomever you like.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Constantino_ZUSTIMMUNG_10_03"); //Aber du wirst sie nicht bekommen! Ich habe Dinge über dich gehört, die dagegen sprechen!
-		AI_Output(self, other, "DIA_Constantino_ZUSTIMMUNG_10_04"); //Ich werde nicht dafür stimmen, dass ein Verbrecher wie du in unserer Stadt eine ehrenwerte Stellung bekommt.
-		AI_Output(self, other, "DIA_Constantino_ZUSTIMMUNG_10_05"); //Bevor du die Sache nicht beim Kommandanten der Stadtwache geregelt hast, sage ich nein!
+		AI_Output(self, other, "DIA_Constantino_ZUSTIMMUNG_10_03"); //Well, you're not going to get it! The things I've heard about you do not speak for you.
+		AI_Output(self, other, "DIA_Constantino_ZUSTIMMUNG_10_04"); //I shall not vote for a criminal such as yourself to attain an honorable position in our town.
+		AI_Output(self, other, "DIA_Constantino_ZUSTIMMUNG_10_05"); //Until you have settled this matter with the commander of the city guard, my answer shall be no!
 	};
 
 	if (Constantino_Logpatch2 == FALSE)
@@ -296,7 +296,7 @@ func void DIA_Constantino_ZUSTIMMUNG_Info()
 };
 
 // *******************************************************
-//						Was muß ich tun? // e3
+//						Was muÃŸ ich tun? // e3
 // *******************************************************
 instance DIA_Constantino_BringHerbs(C_INFO)
 {
@@ -304,7 +304,7 @@ instance DIA_Constantino_BringHerbs(C_INFO)
 	nr				= 1;
 	condition		= DIA_Constantino_BringHerbs_Condition;
 	information		= DIA_Constantino_BringHerbs_Info;
-	description		= "Was muss ich tun, damit DU mich als Lehrling aufnimmst?";
+	description		= "What will I have to do to become YOUR apprentice?";
 };
 
 func int DIA_Constantino_BringHerbs_Condition()
@@ -318,13 +318,13 @@ func int DIA_Constantino_BringHerbs_Condition()
 
 func void DIA_Constantino_BringHerbs_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_BringHerbs_15_00"); //Was muss ich tun, damit DU mich als Lehrling aufnimmst?
-	AI_Output(self, other, "DIA_Constantino_BringHerbs_10_01"); //(seufzt) Ich will nicht NOCH einen Dilettanten auf dem Gewissen haben.
-	AI_Output(self, other, "DIA_Constantino_BringHerbs_10_02"); //Es gibt eine Vielzahl von Kräutern, die in den unterschiedlichsten Variationen die unterschiedlichsten Wirkungen entfalten.
-	AI_Output(self, other, "DIA_Constantino_BringHerbs_10_03"); //Vermutlich kennst du nicht mal die Hälfte von ihnen.
-	AI_Output(self, other, "DIA_Constantino_BringHerbs_10_04"); //(seufzt) Hier - das ist eine Liste der wichtigsten Pflanzen.
+	AI_Output(other, self, "DIA_Constantino_BringHerbs_15_00"); //What will I have to do to become YOUR apprentice?
+	AI_Output(self, other, "DIA_Constantino_BringHerbs_10_01"); //(sighs) I couldn't bear yet ANOTHER dilettante on my conscience.
+	AI_Output(self, other, "DIA_Constantino_BringHerbs_10_02"); //There is a multitude of herbs out there. Used in different variations, they develop the most diverse effects.
+	AI_Output(self, other, "DIA_Constantino_BringHerbs_10_03"); //You probably don't even know half of them.
+	AI_Output(self, other, "DIA_Constantino_BringHerbs_10_04"); //(sighs) Here - this is a list of the most important plants.
 	B_GiveInvItems(self, other, ItWr_Kraeuterliste, 1);
-	AI_Output(self, other, "DIA_Constantino_BringHerbs_10_05"); //Bring mir eine Pflanze jeder Art, und werde ich noch mal darüber nachdenken, dich als Lehrling aufzunehmen.
+	AI_Output(self, other, "DIA_Constantino_BringHerbs_10_05"); //Bring me a plant of each kind, and I might reconsider taking you in as an apprentice.
 
 	MIS_Constantino_BringHerbs = LOG_RUNNING;
 	Log_CreateTopic(TOPIC_ConstantinoPlants, LOG_MISSION);
@@ -342,7 +342,7 @@ instance DIA_Constantino_HerbsRunning(C_INFO)
 	condition		= DIA_Constantino_HerbsRunning_Condition;
 	information		= DIA_Constantino_HerbsRunning_Info;
 	permanent		= TRUE;
-	description		= "Wegen der Pflanzen ...";
+	description		= "About the plants ...";
 };
 
 func int DIA_Constantino_HerbsRunning_Condition()
@@ -355,11 +355,11 @@ func int DIA_Constantino_HerbsRunning_Condition()
 
 func void DIA_Constantino_HerbsRunning_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_HerbsRunning_15_00"); //Wegen der Pflanzen ...
-	AI_Output(self, other, "DIA_Constantino_HerbsRunning_10_01"); //Wenn du es nicht alleine schaffst, bist du auch nicht als Alchemist zu gebrauchen!
+	AI_Output(other, self, "DIA_Constantino_HerbsRunning_15_00"); //About the plants ...
+	AI_Output(self, other, "DIA_Constantino_HerbsRunning_10_01"); //If you cannot handle that by yourself, you won't be any good as an alchemist either!
 
 	Info_ClearChoices(DIA_Constantino_HerbsRunning);
-	Info_AddChoice(DIA_Constantino_HerbsRunning, "Verstehe.", DIA_Constantino_HerbsRunning_Running);
+	Info_AddChoice(DIA_Constantino_HerbsRunning, "I see.", DIA_Constantino_HerbsRunning_Running);
 	if ((Npc_HasItems(other, ItPl_Mana_Herb_01) > 0)
 	&& (Npc_HasItems(other, ItPl_Mana_Herb_02) > 0)
 	&& (Npc_HasItems(other, ItPl_Mana_Herb_03) > 0)
@@ -372,16 +372,16 @@ func void DIA_Constantino_HerbsRunning_Info()
 	&& (Npc_HasItems(other, ItPl_Temp_Herb) > 0)
 	&& (Npc_HasItems(other, ItPl_Perm_Herb) > 0))
 	{
-		Info_AddChoice(DIA_Constantino_HerbsRunning, "Ich habe alle Pflanzen, die ich dir bringen sollte!", DIA_Constantino_HerbsRunning_Success);
+		Info_AddChoice(DIA_Constantino_HerbsRunning, "I've got all the plants I was supposed to bring you!", DIA_Constantino_HerbsRunning_Success);
 	};
 };
 
 func void DIA_Constantino_HerbsRunning_Success()
 {
-	AI_Output(other, self, "DIA_Constantino_HerbsRunning_Success_15_00"); //Ich habe alle Pflanzen, die ich dir bringen sollte!
-	AI_Output(self, other, "DIA_Constantino_HerbsRunning_Success_10_01"); //Was? Du willst mich doch auf den Arm nehmen!
+	AI_Output(other, self, "DIA_Constantino_HerbsRunning_Success_15_00"); //I've got all the plants I was supposed to bring you!
+	AI_Output(self, other, "DIA_Constantino_HerbsRunning_Success_10_01"); //What? You're pulling my leg, right?
 
-	// 11 Gegenstände gegeben (Pflanzen) HACK für Screen ADDON
+	// 11 GegenstÃ¤nde gegeben (Pflanzen) HACK fÃ¼r Screen ADDON
 	AI_PrintScreen(PRINT_GIVE_CONSTANTINO_PLANTS, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 	Npc_RemoveInvItems(other, ItPl_Mana_Herb_01, 1);
@@ -408,8 +408,8 @@ func void DIA_Constantino_HerbsRunning_Success()
 	CreateInvItems(self, ItPl_Temp_Herb, 1);
 	CreateInvItems(self, ItPl_Perm_Herb, 1);
 
-	AI_Output(self, other, "DIA_Constantino_HerbsRunning_Success_10_02"); //Bei Adanos! Es ist tatsächlich alles dabei.
-	AI_Output(self, other, "DIA_Constantino_HerbsRunning_Success_10_03"); //Aus dir könnte vielleicht doch noch ein brauchbarer Alchemist werden.
+	AI_Output(self, other, "DIA_Constantino_HerbsRunning_Success_10_02"); //By Adanos! It's all there all right.
+	AI_Output(self, other, "DIA_Constantino_HerbsRunning_Success_10_03"); //Who knows, maybe some day you could make a decent alchemist after all.
 
 	MIS_Constantino_BringHerbs = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Constantino_Herbs);
@@ -423,7 +423,7 @@ func void DIA_Constantino_HerbsRunning_Success()
 
 func void DIA_Constantino_HerbsRunning_Running()
 {
-	AI_Output(other, self, "DIA_Constantino_HerbsRunning_Running_15_00"); //Verstehe.
+	AI_Output(other, self, "DIA_Constantino_HerbsRunning_Running_15_00"); //I see.
 	Info_ClearChoices(DIA_Constantino_HerbsRunning);
 };
 
@@ -440,7 +440,7 @@ instance DIA_Constantino_LEHRLING(C_INFO)
 	condition		= DIA_Constantino_LEHRLING_Condition;
 	information		= DIA_Constantino_LEHRLING_Info;
 	permanent		= TRUE;
-	description		= "Kann ich jetzt bei dir als Lehrling anfangen?";
+	description		= "Can I become your apprentice now?";
 };
 
 func int DIA_Constantino_LEHRLING_Condition()
@@ -457,73 +457,73 @@ func void DIA_Constantino_LEHRLING_Info()
 	var int stimmen;
 	stimmen = 0;
 
-	AI_Output(other, self, "DIA_Constantino_LEHRLING_15_00"); //Kann ich jetzt bei dir als Lehrling anfangen?
+	AI_Output(other, self, "DIA_Constantino_LEHRLING_15_00"); //Can I become your apprentice now?
 
 	if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 	{
 		// ------ Constantino ------
-		AI_Output(self, other, "DIA_Constantino_LEHRLING_10_01"); //Was mich betrifft, ja.
+		AI_Output(self, other, "DIA_Constantino_LEHRLING_10_01"); //As far as I am concerned, yes.
 		stimmen = stimmen + 1;
 
 		// ------ Harad ------
 		if (Harad.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_02"); //Für Harad ist nur wichtig, dass du in der Lage bist, die Stadt zu verteidigen, falls die Orks kommen.
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_02"); //All that matters to Harad is that you will be able to defend the city if it is attacked by orcs.
 			if ((MIS_Harad_Orc == LOG_SUCCESS)
 			|| (MIS_HakonBandits == LOG_SUCCESS))
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_03"); //Und so wie es aussieht, hast du ihn davon überzeugt.
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_03"); //And it looks like you've got him convinced of that.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_04"); //Aber er hält dich für einen Feigling.
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_04"); //But he thinks you are a coward.
 			};
 		}
 		else // noch kein Dialog
 		{
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_05"); //Aber Harad sagt, er hat dich noch nie gesehen.
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_05"); //But Harad claims he has never seen you before.
 		};
 
 		// ------ Bosper ------
 		if (Bosper.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_06"); //Bosper hat sich sehr zurückhaltend über deine Qualitäten geäußert.
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_07"); //Ich vermute, er würde dich gerne selber als Lehrling haben.
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_06"); //Bosper has been quite reluctant to comment on your qualities.
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_07"); //I suppose he would like to take you on as an apprentice himself.
 			if ((MIS_Bosper_Bogen == LOG_SUCCESS)
 			|| (MIS_Bosper_WolfFurs == LOG_SUCCESS))
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_08"); //Aber am Ende hat er seine Zustimmung gegeben.
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_08"); //But he still agreed in the end.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_09"); //Aus diesem Grund seine Zustimmung zu verweigern, ist alles andere als rechtschaffen!
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_10"); //Aber wenn alle anderen Meister zustimmen, brauchst du seine Stimme nicht.
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_09"); //To withhold one's approval for this reason is certainly not an honorable thing to do!
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_10"); //But if all other masters approve, you won't need his vote.
 			};
 		}
 		else // noch kein Dialog
 		{
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_11"); //Und Bosper kennt dich noch nicht.
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_11"); //And Bosper doesn't know you yet.
 		};
 
 		// ------ Thorben ------
 		if (Thorben.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_12"); //Thorben ist ein sehr gläubiger Mann.
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_12"); //Thorben is a very religious man.
 			if (MIS_Thorben_GetBlessings == LOG_SUCCESS)
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_13"); //Er hat dir seinen Segen gegeben. Das ist ein gutes Zeichen.
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_13"); //He has given you his blessing. That is a good sign.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_14"); //Er wird dir seine Zustimmung nur mit dem Segen der Götter geben.
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_14"); //He will only give you his approval with the blessing of the gods.
 			};
 		}
 		else // noch kein Dialog
 		{
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_15"); //Thorben weiß nicht, wer du bist.
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_15"); //Thorben does not know who you are.
 		};
 
 		// ------ Matteo ------
@@ -531,21 +531,21 @@ func void DIA_Constantino_LEHRLING_Info()
 		{
 			if (MIS_Matteo_Gold == LOG_SUCCESS)
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_16"); //Was Matteo betrifft - er hat dich in den höchsten Tönen gelobt.
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_16"); //As for Matteo - he's singing your praises high and low.
 				stimmen = stimmen + 1;
 			}
 			else if (MIS_Matteo_Gold == LOG_RUNNING)
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_17"); //Matteo sagt, du schuldest ihm noch etwas. Wenn dir an seiner Stimme etwas liegt, solltest du die Sache bereinigen.
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_17"); //Matteo says there's still something you owe him. If you want his vote you had better take care of that little matter.
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_18"); //Matteo sagt, er hat noch nicht mit dir über die Sache geredet.
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_18"); //Matteo says he has not yet talked to you about this.
 			};
 		}
 		else // noch kein Dialog
 		{
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_19"); //Matteo sagt, er hat dich noch nie in seinem Laden gesehen.
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_19"); //Matteo says he has never seen you in his shop before.
 		};
 
 		// ------ AUSWERTUNG ------
@@ -553,37 +553,37 @@ func void DIA_Constantino_LEHRLING_Info()
 		{
 			if (stimmen == 5)
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_20"); //Damit hast du die Zustimmung aller Meister!
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_20"); //This means you have the approval of all masters!
 			}
 			else // == 4
 			{
-				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_21"); //Damit hast du die Zustimmung von vier Meistern. Das reicht aus, um als Lehrling aufgenommen zu werden.
+				AI_Output(self, other, "DIA_Constantino_LEHRLING_10_21"); //You now have the approval of four masters. That will suffice for you to be accepted as an apprentice.
 			};
 
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_22"); //Bist du bereit, deine Lehre bei mir zu beginnen?
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_22"); //Are you ready to begin your apprenticeship with me?
 
 			Info_ClearChoices(DIA_Constantino_LEHRLING);
-			Info_AddChoice(DIA_Constantino_LEHRLING, "Lass mich noch einmal darüber schlafen.", DIA_Constantino_LEHRLING_Later);
-			Info_AddChoice(DIA_Constantino_LEHRLING, "Ja, Meister.", DIA_Constantino_LEHRLING_Yes);
+			Info_AddChoice(DIA_Constantino_LEHRLING, "I need to sleep on it first.", DIA_Constantino_LEHRLING_Later);
+			Info_AddChoice(DIA_Constantino_LEHRLING, "Yes, Master.", DIA_Constantino_LEHRLING_Yes);
 		}
 		else // stimmen < 4
 		{
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_23"); //Du brauchst die Zustimmung von mindestens vier Meistern, um in der Unterstadt als Lehrling anfangen zu können.
-			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_24"); //Also solltest du mit allen reden, die noch nicht von dir überzeugt sind.
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_23"); //You need the approval of at least four masters in order to be able to start an apprenticeship in the lower part of town.
+			AI_Output(self, other, "DIA_Constantino_LEHRLING_10_24"); //This means that you should talk to all those who do not quite approve of you yet.
 		};
 	}
 	else // CITY CRIME > 0
 	{
-		AI_Output(self, other, "DIA_Constantino_LEHRLING_10_25"); //(verärgert) Unmöglich! Mir ist zu Ohren gekommen, dass du hier in Khorinis als Verbrecher angeklagt bist!
-		AI_Output(self, other, "DIA_Constantino_LEHRLING_10_26"); //Bevor du dies nicht mit dem Kommandanten der Stadtwache geklärt hast, werde ich dich nicht als Lehrling aufnehmen.
+		AI_Output(self, other, "DIA_Constantino_LEHRLING_10_25"); //(irritated) No way! I have heard rumors that you stand accused as a criminal here in Khorinis!
+		AI_Output(self, other, "DIA_Constantino_LEHRLING_10_26"); //I shall not take you on as an apprentice until you have settled this matter with the commander of the city guard.
 	};
 };
 
 func void DIA_Constantino_LEHRLING_Yes()
 {
-	AI_Output(other, self, "DIA_Constantino_LEHRLING_Yes_15_00"); //Ja, Meister.
-	AI_Output(self, other, "DIA_Constantino_LEHRLING_Yes_10_01"); //(seufzt) Gut! Ich hoffe, ich werde diese Entscheidung nicht bereuen.
-	AI_Output(self, other, "DIA_Constantino_LEHRLING_Yes_10_02"); //Ab sofort darfst du dich als mein Lehrling betrachten.
+	AI_Output(other, self, "DIA_Constantino_LEHRLING_Yes_15_00"); //Yes, Master.
+	AI_Output(self, other, "DIA_Constantino_LEHRLING_Yes_10_01"); //(sighs) All right then! I hope I'm not going to regret this decision.
+	AI_Output(self, other, "DIA_Constantino_LEHRLING_Yes_10_02"); //From this moment, you may consider yourself my apprentice.
 	Player_IsApprentice = APP_Constantino;
 	Npc_ExchangeRoutine(Lothar, "START");
 
@@ -601,8 +601,8 @@ func void DIA_Constantino_LEHRLING_Yes()
 
 func void DIA_Constantino_LEHRLING_Later()
 {
-	AI_Output(other, self, "DIA_Constantino_LEHRLING_Later_15_00"); //Lass mich noch einmal darüber schlafen.
-	AI_Output(self, other, "DIA_Constantino_LEHRLING_Later_10_01"); //Gut! Wenn du nicht wirklich mit ganzem Herzen bei der Sache bist, solltest du dich für einen anderen Weg entscheiden!
+	AI_Output(other, self, "DIA_Constantino_LEHRLING_Later_15_00"); //I need to sleep on it first.
+	AI_Output(self, other, "DIA_Constantino_LEHRLING_Later_10_01"); //All right! If you cannot really put your heart into this, you should choose a different calling.
 
 	Info_ClearChoices(DIA_Constantino_LEHRLING);
 };
@@ -637,8 +637,8 @@ func void DIA_Constantino_AlsLehrling_Info()
 {
 	if (B_GetGreatestPetzCrime(self) > CRIME_NONE)
 	{
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_00"); //(verärgert) Ich werde dich nicht weiter unterweisen, solange du in der Stadt eines Verbrechens angeklagt bist.
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_01"); //Geh zu Lord Andre und bring die Sache wieder ins Reine.
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_00"); //(irritated) I refuse to instruct you any further as long as you are accused of a crime in town.
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_01"); //Go to Lord Andre and set matters right again.
 		Constantino_Lehrling_Day = Wld_GetDay();
 		AI_StopProcessInfos(self);
 	}
@@ -647,10 +647,10 @@ func void DIA_Constantino_AlsLehrling_Info()
 	&& (Constantino_StartGuild != GIL_MIL)
 	&& (Constantino_MILKommentar == FALSE))
 	{
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_02"); //Du bist also der Miliz beigetreten? Ich habe schon davon gehört.
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_03"); //Mal eben schnell Lehrling werden und dann ab zur Miliz. Aber so einfach werde ich es dir nicht machen.
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_04"); //Ich erwarte, dass du dich an unsere Abmachung hältst und mir regelmäßig Pflanzen und Pilze bringst.
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_05"); //Wenn es dich überfordert, zwei Berufe auf einmal auszuüben, musst du eben weniger schlafen!
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_02"); //So you have joined the militia? I've already heard about that.
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_03"); //Get yourself apprenticed in a hurry, and then up and join the militia? I'm not going to make it that easy for you.
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_04"); //I expect you to stick to our agreement and bring me plants and mushrooms on a regular basis.
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_05"); //If it's too much for you to work two jobs at once, you'll just have to sleep less!
 		Constantino_MILKommentar = TRUE;
 		Constantino_Lehrling_Day = Wld_GetDay();
 	}
@@ -661,23 +661,23 @@ func void DIA_Constantino_AlsLehrling_Info()
 	&& (Constantino_StartGuild != GIL_PAL)
 	&& (Constantino_INNOSKommentar == FALSE))
 	{
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_06"); //Ich sehe, du bist in den Dienst Innos' getreten. Das bedeutet wohl, dass du von nun an weniger Zeit haben wirst, einem alten Mann seine Kräuter zu bringen.
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_07"); //Dennoch ist es eine große Ehre für mich, dich auf deinem Weg unterstützt zu haben.
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_08"); //Wenn du trotz deiner neuen Pflichten Zeit finden solltest, dich der Alchemie zu widmen, bist du bei mir immer herzlich willkommen.
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_06"); //I see you have entered the service of Innos. I guess that means that, from now on, you cannot spare a lot of time just to fetch herbs for an old man.
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_07"); //Still, I consider it a great honor to have supported you on your way.
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_08"); //If, in spite of your new duties, you should find the time to occupy yourself with alchemy, you can always be sure of a warm welcome here.
 		Constantino_INNOSKommentar = TRUE;
 	}
 
 	else if ((Constantino_Lehrling_Day <= (Wld_GetDay() - 4))
 	&& (Constantino_INNOSKommentar == FALSE))
 	{
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_09"); //Wo hast du dich herumgetrieben?
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_10"); //Ich erwarte mehr von meinem Lehrling, als alle Jubeljahre einmal bei mir reinzuschneien!
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_11"); //Hast du mir wenigstens Pilze mitgebracht?
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_09"); //What have you been up to?
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_10"); //I expect more of my apprentice than just dropping in at my place once in a blue moon!
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_11"); //Did you at least bring me some mushrooms?
 		Constantino_Lehrling_Day = Wld_GetDay();
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_12"); //Da bist du ja wieder ...
+		AI_Output(self, other, "DIA_Constantino_AlsLehrling_10_12"); //There you are again...
 		Constantino_Lehrling_Day = Wld_GetDay();
 	};
 };
@@ -691,7 +691,7 @@ instance DIA_Constantino_Aufgaben(C_INFO)
 	nr				= 2;
 	condition		= DIA_Constantino_Aufgaben_Condition;
 	information		= DIA_Constantino_Aufgaben_Info;
-	description		= "Was sind meine Aufgaben?";
+	description		= "What are my tasks?";
 };
 
 func int DIA_Constantino_Aufgaben_Condition()
@@ -704,11 +704,11 @@ func int DIA_Constantino_Aufgaben_Condition()
 
 func void DIA_Constantino_Aufgaben_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_Aufgaben_15_00"); //Was sind meine Aufgaben?
-	AI_Output(self, other, "DIA_Constantino_Aufgaben_10_01"); //Mir ist klar, dass ich von einem jungen Mann nicht erwarten kann, den ganzen Tag bei mir in der Stube zu verbringen.
-	AI_Output(self, other, "DIA_Constantino_Aufgaben_10_02"); //Du wirst mir von Zeit zurzeit die Pflanzen bringen, die ich brauche. Dafür unterweise ich dich in der Kunst der Alchemie.
-	AI_Output(self, other, "DIA_Constantino_Aufgaben_10_03"); //Die Flaschen kannst du bei mir kaufen. Die Zutaten wirst du dir zum größten Teil selbst besorgen müssen.
-	AI_Output(self, other, "DIA_Constantino_Aufgaben_10_04"); //Und ich erwarte von dir, dass du dich als Bürger der Stadt ordentlich aufführst.
+	AI_Output(other, self, "DIA_Constantino_Aufgaben_15_00"); //What are my tasks?
+	AI_Output(self, other, "DIA_Constantino_Aufgaben_10_01"); //I realize that I cannot expect a young man to spend all day indoors with me.
+	AI_Output(self, other, "DIA_Constantino_Aufgaben_10_02"); //From time to time, you shall bring me the plants I need. In return, I shall instruct you in the art of alchemy.
+	AI_Output(self, other, "DIA_Constantino_Aufgaben_10_03"); //You can buy the bottles from me. Most of the ingredients, however, you will have to get for yourself.
+	AI_Output(self, other, "DIA_Constantino_Aufgaben_10_04"); //And I expect you to behave properly as a citizen of this town.
 };
 
 // *******************************************************
@@ -720,7 +720,7 @@ instance DIA_Constantino_Mushrooms(C_INFO)
 	nr				= 2;
 	condition		= DIA_Constantino_Mushrooms_Condition;
 	information		= DIA_Constantino_Mushrooms_Info;
-	description		= "Welche Pflanzen soll ich bringen? ";
+	description		= "What plants am I supposed to bring?";
 };
 
 func int DIA_Constantino_Mushrooms_Condition()
@@ -733,9 +733,9 @@ func int DIA_Constantino_Mushrooms_Condition()
 
 func void DIA_Constantino_Mushrooms_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_Mushrooms_15_00"); //Welche Pflanzen soll ich bringen?
-	AI_Output(self, other, "DIA_Constantino_Mushrooms_10_01"); //Ich werde dir alles abkaufen, was du mir bringst - ich zahle dafür den üblichen Preis.
-	AI_Output(self, other, "DIA_Constantino_Mushrooms_10_02"); //Für Pilze allerdings werde ich dir einen besonderen Preis zahlen.
+	AI_Output(other, self, "DIA_Constantino_Mushrooms_15_00"); //What plants am I supposed to bring?
+	AI_Output(self, other, "DIA_Constantino_Mushrooms_10_01"); //I shall buy everything you bring me - and I'll pay the usual price.
+	AI_Output(self, other, "DIA_Constantino_Mushrooms_10_02"); //For mushrooms, however, I shall pay you a special price.
 
 	MIS_Constantino_Mushrooms = LOG_RUNNING;
 
@@ -753,7 +753,7 @@ instance DIA_Constantino_MushroomsRunning(C_INFO)
 	condition		= DIA_Constantino_MushroomsRunning_Condition;
 	information		= DIA_Constantino_MushroomsRunning_Info;
 	permanent		= TRUE;
-	description		= "Du wolltest Pilze ...";
+	description		= "You wanted mushrooms ...";
 };
 
 func int DIA_Constantino_MushroomsRunning_Condition()
@@ -766,19 +766,19 @@ func int DIA_Constantino_MushroomsRunning_Condition()
 
 func void DIA_Constantino_MushroomsRunning_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_MushroomsRunning_15_00"); //Du wolltest Pilze ...
+	AI_Output(other, self, "DIA_Constantino_MushroomsRunning_15_00"); //You wanted mushrooms ...
 
 	Info_ClearChoices(DIA_Constantino_MushroomsRunning);
-	Info_AddChoice(DIA_Constantino_MushroomsRunning, "Ich werde dir welche bringen...", DIA_Constantino_MushroomsRunning_Later);
+	Info_AddChoice(DIA_Constantino_MushroomsRunning, "I'm going to bring you some ...", DIA_Constantino_MushroomsRunning_Later);
 	if (Player_KnowsDunkelpilzBonus == FALSE)
 	{
-		Info_AddChoice(DIA_Constantino_MushroomsRunning, "Warum sind dir die Dinger so wichtig?", DIA_Constantino_MushroomsRunning_Why);
+		Info_AddChoice(DIA_Constantino_MushroomsRunning, "Why are those things so important?", DIA_Constantino_MushroomsRunning_Why);
 	};
 
 	if ((Npc_HasItems(other, ItPl_Mushroom_01) > 0)
 	|| (Npc_HasItems(other, ItPl_Mushroom_02) > 0))
 	{
-		Info_AddChoice(DIA_Constantino_MushroomsRunning, "Ich habe hier ein paar...", DIA_Constantino_MushroomsRunning_Sell);
+		Info_AddChoice(DIA_Constantino_MushroomsRunning, "I've got a few ...", DIA_Constantino_MushroomsRunning_Sell);
 	};
 };
 
@@ -788,8 +788,8 @@ func void DIA_Constantino_MushroomsRunning_Sell()
 
 	if (Npc_HasItems(other, ItPl_Mushroom_01) > 0)
 	{
-		AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Sell_15_00"); //Ich habe hier ein paar Dunkelpilze ...
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Sell_10_01"); //Ah! Das sind die besten! Gut gemacht! Hier hast du dein Gold!
+		AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Sell_15_00"); //I've got a few murky mushrooms here ...
+		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Sell_10_01"); //Ah! Those are the best! Well done! Here's your gold!
 		Dunkelpilz_dabei = TRUE;
 
 		Constantino_DunkelpilzCounter = Constantino_DunkelpilzCounter + Npc_HasItems(other, ItPl_Mushroom_01);
@@ -802,14 +802,14 @@ func void DIA_Constantino_MushroomsRunning_Sell()
 	{
 		if (Dunkelpilz_dabei == TRUE)
 		{
-			AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Sell_15_02"); //Und hier sind noch ein paar von den anderen ...
+			AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Sell_15_02"); //And here are some of the others ...
 		}
 		else
 		{
-			AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Sell_15_03"); //Ich habe hier ein paar Pilze!
+			AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Sell_15_03"); //I've got a few mushrooms here!
 		};
 
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Sell_10_04"); //Die sind zwar nicht so gut wie Dunkelpilze, aber ich werde sie trotzdem nehmen.
+		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Sell_10_04"); //These are not quite as good as murky mushrooms, but I'll take them anyway.
 
 		B_GiveInvItems(self, other, itmi_gold,(Npc_HasItems(other, ItPl_Mushroom_02) * Value_Mushroom_02));
 		B_GiveInvItems(other, self, ItPl_Mushroom_02, Npc_HasItems(other, ItPl_Mushroom_02));
@@ -820,32 +820,32 @@ func void DIA_Constantino_MushroomsRunning_Sell()
 
 func void DIA_Constantino_MushroomsRunning_Why()
 {
-	AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Why_15_00"); //Warum sind dir die Dinger so wichtig?
+	AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Why_15_00"); //Why are those things so important?
 	if (Constantino_DunkelpilzCounter == 0)
 	{
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_01"); //Du bist zwar mein Lehrling, aber alles werde ich dir nicht verraten.
+		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_01"); //Even though you are my apprentice, I won't tell you everything.
 	}
 	else if (Constantino_DunkelpilzCounter >= 50)
 	{
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_02"); //Also gut - du sollst es wissen. Aber du musst es für dich behalten.
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_03"); //Dunkelpilze tragen magische Energie in sich. Und jedesmal, wenn du einen isst, sammelt sich ein kleines bisschen dieser Energie in deinem Körper.
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_04"); //Wenn du eine ausreichende Menge von diesen Pilzen zu dir genommen hast, steigert das deine magische Energie ...
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_05"); //Hätte ich dir das vorher gesagt, hättest du die Pilze alle selber gefuttert, richtig?
-		AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Why_15_06"); //(seufzt) Oh, Mann!
+		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_02"); //All right - I shall tell you, then. But you must keep it to yourself.
+		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_03"); //Murky mushrooms are full of magic energy. And every time you eat one, a little bit of this energy will accumulate in your body.
+		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_04"); //Once you have eaten a sufficient amount of these mushrooms, your magic energy will increase ...
+		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_05"); //If I had told you that earlier, you would have gobbled up all the mushrooms yourself, wouldn't you?
+		AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Why_15_06"); //(sighs) Oh, man!
 
 		Player_KnowsDunkelpilzBonus = TRUE;
 		Info_ClearChoices(DIA_Constantino_MushroomsRunning);
 	}
 	else // 1 - 49
 	{
-		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_07"); //Das hast du mich schonmal gefragt. (verschmitzt) Wer weiß, vielleicht erzähle ich es dir eines Tages...
+		AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Why_10_07"); //You have already asked me that. (mischievously) Who knows, maybe some day I'll actually tell you...
 	};
 };
 
 func void DIA_Constantino_MushroomsRunning_Later()
 {
-	AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Later_15_00"); //Ich werde dir welche bringen ...
-	AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Later_10_01"); //Gut! Bring mir so viele, wie du nur finden kannst ...
+	AI_Output(other, self, "DIA_Constantino_MushroomsRunning_Later_15_00"); //I'm going to bring you some ...
+	AI_Output(self, other, "DIA_Constantino_MushroomsRunning_Later_10_01"); //Great! Bring me as many as you can find ...
 
 	Info_ClearChoices(DIA_Constantino_MushroomsRunning);
 };
@@ -859,7 +859,7 @@ instance DIA_Constantino_Alchemy(C_INFO)
 	nr				= 2;
 	condition		= DIA_Constantino_Alchemy_Condition;
 	information		= DIA_Constantino_Alchemy_Info;
-	description		= "Unterrichte mich in der Kunst der Alchemie!";
+	description		= "Instruct me in the art of alchemy!";
 };
 
 func int DIA_Constantino_Alchemy_Condition()
@@ -872,15 +872,15 @@ func int DIA_Constantino_Alchemy_Condition()
 
 func void DIA_Constantino_Alchemy_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_Alchemy_15_00"); //Unterrichte mich in der Kunst der Alchemie!
-	AI_Output(self, other, "DIA_Constantino_Alchemy_10_01"); //Gut. Zuerst einmal die Grundlagen.
-	AI_Output(self, other, "DIA_Constantino_Alchemy_10_02"); //Jeder Trank wird aus Pflanzen gemacht, denn sie besitzen die unterschiedlichsten Kräfte.
-	AI_Output(self, other, "DIA_Constantino_Alchemy_10_03"); //Sie tun nichts anderes, als mit all ihrer Kraft zu wachsen - und diese Kraft zu verändern, ist die Kunst der Alchimie.
-	AI_Output(self, other, "DIA_Constantino_Alchemy_10_04"); //Zur Herstellung eines Tranks am Alchemietisch brauchst du eine Laborflasche.
-	AI_Output(self, other, "DIA_Constantino_Alchemy_10_05"); //Du musst die richtige Rezeptur kennen und die entsprechenden Zutaten haben.
-	AI_Output(self, other, "DIA_Constantino_Alchemy_10_06"); //Es gibt eine Reihe von Rezepturen, die ich dir beibringen kann.
-	AI_Output(self, other, "DIA_Constantino_Alchemy_10_07"); //Tränke, die dir verlorene Kräfte zurückgeben und sogar solche, die deine Kräfte permanent verändern.
-	AI_Output(self, other, "DIA_Constantino_Alchemy_10_08"); //Du kannst nicht alles auf einmal lernen. Also wähle mit Bedacht, welches Wissen du dir aneignen willst.
+	AI_Output(other, self, "DIA_Constantino_Alchemy_15_00"); //Instruct me in the art of alchemy!
+	AI_Output(self, other, "DIA_Constantino_Alchemy_10_01"); //All right. Basics first.
+	AI_Output(self, other, "DIA_Constantino_Alchemy_10_02"); //Each potion is made of plants - they possess all kinds of powers.
+	AI_Output(self, other, "DIA_Constantino_Alchemy_10_03"); //They do nothing but put all their power into growth - and modifying this power is what the art of alchemy is about.
+	AI_Output(self, other, "DIA_Constantino_Alchemy_10_04"); //To prepare a potion at the alchemist's bench, you need a laboratory flask.
+	AI_Output(self, other, "DIA_Constantino_Alchemy_10_05"); //You need to know the correct formulation and have the appropriate ingredients.
+	AI_Output(self, other, "DIA_Constantino_Alchemy_10_06"); //There are quite a few formulations I could teach you.
+	AI_Output(self, other, "DIA_Constantino_Alchemy_10_07"); //Potions which restore your lost strength, and even potions which affect your strength permanently.
+	AI_Output(self, other, "DIA_Constantino_Alchemy_10_08"); //You cannot learn everything at once.
 
 	Constantino_TeachAlchemy = TRUE;
 
@@ -889,7 +889,7 @@ func void DIA_Constantino_Alchemy_Info()
 };
 
 // *******************************************************
-//					für Nicht-Lehrlinge
+//					fÃ¼r Nicht-Lehrlinge
 // *******************************************************
 instance DIA_Constantino_NewRecipes(C_INFO)
 {
@@ -897,7 +897,7 @@ instance DIA_Constantino_NewRecipes(C_INFO)
 	nr				= 2;
 	condition		= DIA_Constantino_NewRecipes_Condition;
 	information		= DIA_Constantino_NewRecipes_Info;
-	description		= "Ich bin auf der Suche nach neuen Rezepturen für Tränke.";
+	description		= "I'm looking for new recipes for potions.";
 };
 
 func int DIA_Constantino_NewRecipes_Condition()
@@ -912,11 +912,11 @@ func int DIA_Constantino_NewRecipes_Condition()
 
 func void DIA_Constantino_NewRecipes_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_NewRecipes_15_00"); //Ich bin auf der Suche nach neuen Rezepturen für Tränke.
-	AI_Output(self, other, "DIA_Constantino_NewRecipes_10_01"); //Hast du bereits Erfahrung mit der Alchemie.
-	AI_Output(other, self, "DIA_Constantino_NewRecipes_15_02"); //Ja, habe ich.
-	AI_Output(self, other, "DIA_Constantino_NewRecipes_10_03"); //Und du lebst noch ... das sind schon mal gute Voraussetzungen.
-	AI_Output(self, other, "DIA_Constantino_NewRecipes_10_04"); //Ich denke, ich kann dir einige Rezepturen verraten. Es kommt natürlich darauf an, was du wissen willst.
+	AI_Output(other, self, "DIA_Constantino_NewRecipes_15_00"); //I'm looking for new recipes for potions.
+	AI_Output(self, other, "DIA_Constantino_NewRecipes_10_01"); //Do you have any previous experience with alchemy?
+	AI_Output(other, self, "DIA_Constantino_NewRecipes_15_02"); //Yes, I do.
+	AI_Output(self, other, "DIA_Constantino_NewRecipes_10_03"); //Yet you are still alive ... those aren't bad qualifications.
+	AI_Output(self, other, "DIA_Constantino_NewRecipes_10_04"); //I think I can tell you a few formulations. It depends, of course, on what you want to know.
 
 	Constantino_TeachAlchemy = TRUE;
 	Log_CreateTopic(TOPIC_CityTeacher, LOG_NOTE);
@@ -933,7 +933,7 @@ instance DIA_Constantino_TEACH(C_INFO)
 	condition		= DIA_Constantino_TEACH_Condition;
 	information		= DIA_Constantino_TEACH_Info;
 	permanent		= TRUE;
-	description		= "Welche Rezepturen kannst du mir beibringen?";
+	description		= "What recipes can you teach me?";
 };
 
 func int DIA_Constantino_TEACH_Condition()
@@ -946,7 +946,7 @@ func int DIA_Constantino_TEACH_Condition()
 
 func void DIA_Constantino_TEACH_Info()
 {
-	AI_Output(other, self, "DIA_Constantino_TEACH_15_00"); //Welche Rezepturen kannst du mir beibringen?
+	AI_Output(other, self, "DIA_Constantino_TEACH_15_00"); //What recipes can you teach me?
 
 	if ((PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
@@ -956,11 +956,11 @@ func void DIA_Constantino_TEACH_Info()
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == TRUE))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_10_01"); //Tut mir Leid. Es gibt nichts mehr, was ich dir beibringen kann.
+		AI_Output(self, other, "DIA_Constantino_TEACH_10_01"); //I'm sorry. There is nothing else I could teach you.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_10_02"); //Ich kenne einige - triff deine Wahl selbst.
+		AI_Output(self, other, "DIA_Constantino_TEACH_10_02"); //I know a few - make your own choice.
 
 		Info_ClearChoices(DIA_Constantino_Teach);
 		Info_AddChoice(DIA_Constantino_Teach, DIALOG_BACK, DIA_Constantino_Teach_BACK);
@@ -1015,7 +1015,7 @@ func void DIA_Constantino_TEACH_Health01()
 {
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Health_01))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_Health01_10_00"); //Die Zutaten für eine Essenz der Heilung sind Heilpflanzen und Feldknöterich.
+		AI_Output(self, other, "DIA_Constantino_TEACH_Health01_10_00"); //The ingredients for an essence of healing are healing plants and meadow knotweed.
 	};
 
 	Info_ClearChoices(DIA_Constantino_Teach);
@@ -1025,8 +1025,8 @@ func void DIA_Constantino_TEACH_Health02()
 {
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Health_02))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_Health02_10_00"); //Um ein Extrakt der Heilung herzustellen, brauchst du Heilkräuter und Feldknöterich.
-		AI_Output(self, other, "DIA_Constantino_TEACH_Health02_10_01"); //Du musst aufpassen, dass du den Extrakt sehr vorsichtig erhitzt.
+		AI_Output(self, other, "DIA_Constantino_TEACH_Health02_10_00"); //To prepare a healing extract, you need healing herbs and meadow knotweed.
+		AI_Output(self, other, "DIA_Constantino_TEACH_Health02_10_01"); //Be sure to heat that extract very carefully.
 	};
 
 	Info_ClearChoices(DIA_Constantino_Teach);
@@ -1036,8 +1036,8 @@ func void DIA_Constantino_TEACH_Health03()
 {
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Health_03))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_Health03_10_00"); //Das Elixier der Heilung herzustellen, erfordert einiges an Erfahrung.
-		AI_Output(self, other, "DIA_Constantino_TEACH_Health03_10_01"); //Du brauchst Heilwurzeln und Feldknöterich. Sei diesmal beim Erhitzen besonders vorsichtig.
+		AI_Output(self, other, "DIA_Constantino_TEACH_Health03_10_00"); //Creating an elixir of healing takes quite a bit of experience.
+		AI_Output(self, other, "DIA_Constantino_TEACH_Health03_10_01"); //You need healing roots and meadow knotweed. Take special care when heating it this time.
 	};
 
 	Info_ClearChoices(DIA_Constantino_Teach);
@@ -1047,8 +1047,8 @@ func void DIA_Constantino_TEACH_PermHealth()
 {
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Perm_Health))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_PermHealth_10_00"); //Das Elixier des Lebens! Ein seltenes Gebräu. Nicht so sehr wegen des Aufwandes - der Trank ist recht einfach herzustellen.
-		AI_Output(self, other, "DIA_Constantino_TEACH_PermHealth_10_01"); //Aber die Zutaten sind sehr selten. Du brauchst Heilwurzeln und Kronstöckel.
+		AI_Output(self, other, "DIA_Constantino_TEACH_PermHealth_10_00"); //The elixir of life! A rare brew. Not so much because of the effort - the potion actually isn't all that hard to make.
+		AI_Output(self, other, "DIA_Constantino_TEACH_PermHealth_10_01"); //But the ingredients are very rare. You need healing roots and king's sorrel.
 	};
 
 	Info_ClearChoices(DIA_Constantino_Teach);
@@ -1058,8 +1058,8 @@ func void DIA_Constantino_TEACH_Mana01()
 {
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Mana_01))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_Mana01_10_00"); //Die Essenz der Magie ist der einfachste der magischen Tränke.
-		AI_Output(self, other, "DIA_Constantino_TEACH_Mana01_10_01"); //Nimm Feuernesseln und Feldknöterich und erhitze sie langsam.
+		AI_Output(self, other, "DIA_Constantino_TEACH_Mana01_10_00"); //The essence of magic is the simplest of magic potions.
+		AI_Output(self, other, "DIA_Constantino_TEACH_Mana01_10_01"); //Take fire nettles and meadow knotweed and heat them slowly.
 	};
 
 	Info_ClearChoices(DIA_Constantino_Teach);
@@ -1069,8 +1069,8 @@ func void DIA_Constantino_TEACH_Mana02()
 {
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Mana_02))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_Mana02_10_00"); //Da du schon einen Essenz der Magie herstellen kannst, wird es dir mit etwas Mühe sicher auch gelingen, einen Extrakt herzustellen.
-		AI_Output(self, other, "DIA_Constantino_TEACH_Mana02_10_01"); //Aber du brauchst das richtige Fingerspitzengefühl, wenn du den Sud auskochst. Nimm Feuerkraut und Feldknöterich für diesen Trank.
+		AI_Output(self, other, "DIA_Constantino_TEACH_Mana02_10_00"); //Since you can already prepare an essence of magic, with a little effort you should be able to produce an extract as well.
+		AI_Output(self, other, "DIA_Constantino_TEACH_Mana02_10_01"); //You need to put the right kind of feeling into decocting that brew. Use fireweed and meadow knotweed for this potion.
 	};
 
 	Info_ClearChoices(DIA_Constantino_Teach);
@@ -1080,8 +1080,8 @@ func void DIA_Constantino_TEACH_PermSTR()
 {
 	if (B_TeachPlayerTalentAlchemy(self, other, POTION_Perm_STR))
 	{
-		AI_Output(self, other, "DIA_Constantino_TEACH_PermSTR_10_00"); //Das Elixier der Stärke! Ein meisterlicher Trank. Du brauchst die seltenen Drachenwurzeln und Kronstöckl.
-		AI_Output(self, other, "DIA_Constantino_TEACH_PermSTR_10_01"); //Wenn du den Sud aufkochst, achte darauf, dass die Bläschen nicht zu groß werden, sonst erlebst du dein blaues Wunder!
+		AI_Output(self, other, "DIA_Constantino_TEACH_PermSTR_10_00"); //The elixir of strength! An excellent potion. You need the rare dragonroot and king's sorrel.
+		AI_Output(self, other, "DIA_Constantino_TEACH_PermSTR_10_01"); //When boiling the brew, don't let the bubbles get too big or you'll be in for a nasty surprise!
 	};
 
 	Info_ClearChoices(DIA_Constantino_Teach);

@@ -30,7 +30,7 @@ instance DIA_Babera_HALLO(C_INFO)
 	nr				= 1;
 	condition		= DIA_Babera_HALLO_Condition;
 	information		= DIA_Babera_HALLO_Info;
-	description		= "Hallo, schönes Mädchen.";
+	description		= "Hello, beautiful maid.";
 };
 
 func int DIA_Babera_HALLO_Condition()
@@ -40,8 +40,8 @@ func int DIA_Babera_HALLO_Condition()
 
 func void DIA_Babera_HALLO_Info()
 {
-	AI_Output(other, self, "DIA_Babera_HALLO_15_00"); //Hallo, schönes Mädchen.
-	AI_Output(self, other, "DIA_Babera_HALLO_16_01"); //Süßholzraspeln wirkt bei mir nicht, Junge. Sag, was du willst. Ich hab zu tun.
+	AI_Output(other, self, "DIA_Babera_HALLO_15_00"); //Hello, beautiful maid.
+	AI_Output(self, other, "DIA_Babera_HALLO_16_01"); //Stop trying to sweet-talk me, boy. Tell me what you want. I'm busy.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -53,7 +53,7 @@ instance DIA_Babera_WIESIEHTSAUS(C_INFO)
 	nr				= 2;
 	condition		= DIA_Babera_WIESIEHTSAUS_Condition;
 	information		= DIA_Babera_WIESIEHTSAUS_Info;
-	description		= "Wie läuft's mit der Feldarbeit?";
+	description		= "How's the field work coming?";
 };
 
 func int DIA_Babera_WIESIEHTSAUS_Condition()
@@ -66,33 +66,33 @@ func int DIA_Babera_WIESIEHTSAUS_Condition()
 
 func void DIA_Babera_WIESIEHTSAUS_Info()
 {
-	AI_Output(other, self, "DIA_Babera_WIESIEHTSAUS_15_00"); //Wie läuft's mit der Feldarbeit?
-	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //Guck dir die riesigen Felder an, die wir bestellen müssen, dann weißt du, wie es läuft.
-	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //Suchst du Landarbeit?
+	AI_Output(other, self, "DIA_Babera_WIESIEHTSAUS_15_00"); //How's the field work coming?
+	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //Look at these huge fields we have to work, and you know how it's coming.
+	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //Are you looking for farm work?
 
 	Info_ClearChoices(DIA_Babera_WIESIEHTSAUS);
 
 	if (hero.guild == GIL_NONE)
 	{
-		Info_AddChoice(DIA_Babera_WIESIEHTSAUS, "Nein. Eigentlich will ich Söldner werden.", DIA_Babera_WIESIEHTSAUS_Nein);
-		Info_AddChoice(DIA_Babera_WIESIEHTSAUS, "Vielleicht.", DIA_Babera_WIESIEHTSAUS_Vielleicht);
+		Info_AddChoice(DIA_Babera_WIESIEHTSAUS, "No. Actually, I want to become a mercenary.", DIA_Babera_WIESIEHTSAUS_Nein);
+		Info_AddChoice(DIA_Babera_WIESIEHTSAUS, "Maybe.", DIA_Babera_WIESIEHTSAUS_Vielleicht);
 	};
 };
 
 func void DIA_Babera_WIESIEHTSAUS_Vielleicht()
 {
-	AI_Output(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //Vielleicht.
-	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //Wenn das so ist, dann geh am Besten zu unserem Bauern Sekob, dem alten Menschenschinder. Der hat vielleicht was für dich.
-	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //Du kannst es natürlich auch auf Onars großem Hof am Ende der langen Allee versuchen.
-	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //Aber nimm dich vor den Söldnern in Acht. Sie mögen keine Fremden.
+	AI_Output(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //Maybe.
+	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //In that case, you should go and see our farmer Sekob, the old slave-driver. Maybe he's got something for you.
+	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //Of course, you could also try Onar's farm at the end of the long road.
+	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //But beware of the mercenaries. They don't take to strangers.
 
 	Info_ClearChoices(DIA_Babera_WIESIEHTSAUS);
 };
 
 func void DIA_Babera_WIESIEHTSAUS_Nein()
 {
-	AI_Output(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //Nein. Eigentlich will ich Söldner werden.
-	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //Dann bist du hier falsch. Die Söldner findest du meistens auf dem Hof des Großbauern.
+	AI_Output(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //No. Actually, I want to become a mercenary.
+	AI_Output(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //Then you're wrong here. You can usually find the mercenaries on the landowner's farm.
 
 	Info_ClearChoices(DIA_Babera_WIESIEHTSAUS);
 };
@@ -106,7 +106,7 @@ instance DIA_Babera_BRONKO(C_INFO)
 	nr				= 3;
 	condition		= DIA_Babera_BRONKO_Condition;
 	information		= DIA_Babera_BRONKO_Info;
-	description		= "(nach Bronko fragen)";
+	description		= "(ask about Bronco)";
 };
 
 func int DIA_Babera_BRONKO_Condition()
@@ -122,19 +122,19 @@ func int DIA_Babera_BRONKO_Condition()
 
 func void DIA_Babera_BRONKO_Info()
 {
-	AI_Output(other, self, "DIA_Babera_BRONKO_15_00"); //Sag mal, der grimmige Typ da...
-	AI_Output(self, other, "DIA_Babera_BRONKO_16_01"); //Das ist Bronko. Was ist mit ihm?
-	AI_Output(other, self, "DIA_Babera_BRONKO_15_02"); //Ist das euer Bauer?
-	AI_Output(self, other, "DIA_Babera_BRONKO_16_03"); //(lacht) Hat er dir das erzählt, ja? Sekob ist unser Bauer. Bronko ist nur ein Faulpelz und Tunichtgut. Aber er hat Bärenkräfte.
-	AI_Output(self, other, "DIA_Babera_BRONKO_16_04"); //Deswegen sagt keiner was, wenn er nicht arbeitet.
+	AI_Output(other, self, "DIA_Babera_BRONKO_15_00"); //Say, the nasty fellow over there ...
+	AI_Output(self, other, "DIA_Babera_BRONKO_16_01"); //That's Bronco. What about him?
+	AI_Output(other, self, "DIA_Babera_BRONKO_15_02"); //Is that your farmer?
+	AI_Output(self, other, "DIA_Babera_BRONKO_16_03"); //(laughs) Is that what he told you? Sekob is our farmer. Bronco is nothing but a layabout and ne'er-do-well. But strong as an ox.
+	AI_Output(self, other, "DIA_Babera_BRONKO_16_04"); //That's why nobody says anything when he doesn't work.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		AI_Output(self, other, "DIA_Babera_BRONKO_16_05"); //Die Einzigen, die er fürchtet, seid ihr Söldner.
+		AI_Output(self, other, "DIA_Babera_BRONKO_16_05"); //He fears no one except for you mercenaries.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Babera_BRONKO_16_06"); //Die Einzigen, die ihn zur Arbeit bewegen könnten, sind die Söldner. Vor denen hat er Angst.
+		AI_Output(self, other, "DIA_Babera_BRONKO_16_06"); //The only people who could get him to work are the mercenaries. He's afraid of them.
 	};
 
 	Babera_BronkoKeinBauer = TRUE;
@@ -149,7 +149,7 @@ instance DIA_Babera_Rosi(C_INFO)
 	nr				= 3;
 	condition		= DIA_Babera_Rosi_Condition;
 	information		= DIA_Babera_Rosi_Info;
-	description		= "Wo ist Rosi?";
+	description		= "Where's Rosi?";
 };
 
 func int DIA_Babera_Rosi_Condition()
@@ -164,8 +164,8 @@ func int DIA_Babera_Rosi_Condition()
 
 func void DIA_Babera_Rosi_Info()
 {
-	AI_Output(other, self, "DIA_Babera_Rosi_15_00"); //Wo ist Rosi?
-	AI_Output(self, other, "DIA_Babera_Rosi_16_01"); //Sie hat's hier nicht mehr ausgehalten und ist in den Wald Richtung Norden gegangen.
+	AI_Output(other, self, "DIA_Babera_Rosi_15_00"); //Where's Rosi?
+	AI_Output(self, other, "DIA_Babera_Rosi_16_01"); //She couldn't stand it here any longer and went north, into the woods.
 	B_LogEntry(TOPIC_RosisFlucht, TOPIC_RosisFlucht_1);
 	Log_AddEntry(TOPIC_bringRosiBackToSekob, TOPIC_bringRosiBackToSekob_2);
 };
@@ -180,7 +180,7 @@ instance DIA_Babera_DUSTOERST(C_INFO)
 	condition		= DIA_Babera_DUSTOERST_Condition;
 	information		= DIA_Babera_DUSTOERST_Info;
 	permanent		= TRUE;
-	description		= "Und sonst?";
+	description		= "And apart from that?";
 };
 
 func int DIA_Babera_DUSTOERST_Condition()
@@ -193,8 +193,8 @@ func int DIA_Babera_DUSTOERST_Condition()
 
 func void DIA_Babera_DUSTOERST_Info()
 {
-	AI_Output(other, self, "DIA_Babera_DUSTOERST_15_00"); //Und sonst?
-	AI_Output(self, other, "DIA_Babera_DUSTOERST_16_01"); //Ich hab zu tun.
+	AI_Output(other, self, "DIA_Babera_DUSTOERST_15_00"); //And apart from that?
+	AI_Output(self, other, "DIA_Babera_DUSTOERST_16_01"); //I'm busy.
 	AI_StopProcessInfos(self);
 };
 

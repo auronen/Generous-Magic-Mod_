@@ -5,7 +5,7 @@
 prototype Mst_Default_Addon_SwampGolem(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Sumpfgolem";
+	name							= "Swamp Golem";
 	guild							= GIL_SWAMPGOLEM;
 	level							= 25;
 

@@ -19,19 +19,19 @@ func int C_WantToAttackSheepKiller(var C_Npc slf, var C_Npc oth)
 		return FALSE;
 	};
 
-	// ------ Täter war Player und ich bin NpcType_Friend ------
+	// ------ TÃ¤ter war Player und ich bin NpcType_Friend ------
 	if (Npc_IsPlayer(oth) && (slf.npctype == NpcType_Friend))
 	{
 		return FALSE;
 	};
 
-	// ------ Täter hat gutenGrund,Schaf zu töten ------
+	// ------ TÃ¤ter hat gutenGrund,Schaf zu tÃ¶ten ------
 	if (C_NpcHasAttackReasonToKill(oth))
 	{
 		return FALSE;
 	};
 
-	// ------ Schaf aus Versehen getroffen ------ (wichtig für Magie, z.B. bei KdF im Kloster)
+	// ------ Schaf aus Versehen getroffen ------ (wichtig fÃ¼r Magie, z.B. bei KdF im Kloster)
 	if ((other.guild < GIL_SEPERATOR_HUM)
 	&& (other.aivar[AIV_ATTACKREASON] != AR_NONE))
 	{

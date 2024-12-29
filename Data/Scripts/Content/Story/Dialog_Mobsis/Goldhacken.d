@@ -1,6 +1,6 @@
 func int B_GoldMob_Bestimmung()
 {
-	// bin ich mobsi X und habe ich noch Gold übrig?
+	// bin ich mobsi X und habe ich noch Gold Ã¼brig?
 	if (Hlp_StrCmp(Npc_GetNearestWP(self), "ADW_MINE_PICK_01") && (GoldMob_01_Amount_MAX > GoldMob_01_Amount))
 	{
 		GoldMob_01_Amount = (GoldMob_01_Amount + 1);
@@ -156,7 +156,7 @@ instance PC_Goldhacken_Addon_Hour(C_Info)
 	condition		= PC_Goldhacken_Addon_Hour_Condition;
 	information		= PC_Goldhacken_Addon_Hour_Info;
 	permanent		= TRUE;
-	description		= "Einfach mal hacken. ";
+	description		= "Just chop a little.";
 };
 
 func int PC_Goldhacken_Addon_Hour_Condition()
@@ -236,7 +236,7 @@ func void PC_Goldhacken_Addon_Hour_Info()
 };
 
 //*******************************************************
-//	Goldhacken Trümmerschlag
+//	Goldhacken TrÃ¼mmerschlag
 //*******************************************************
 instance PC_Goldhacken_Addon_TSchlag(C_Info)
 {
@@ -245,7 +245,7 @@ instance PC_Goldhacken_Addon_TSchlag(C_Info)
 	condition		= PC_Goldhacken_Addon_TSchlag_Condition;
 	information		= PC_Goldhacken_Addon_TSchlag_Info;
 	permanent		= TRUE;
-	description		= "Trümmerschlag ansetzen.";
+	description		= "Give it a really good whack.";
 };
 
 func int PC_Goldhacken_Addon_TSchlag_Condition()
@@ -303,7 +303,7 @@ instance PC_Goldhacken_Addon_Chance(C_Info)
 	condition		= PC_Goldhacken_Addon_Chance_Condition;
 	information		= PC_Goldhacken_Addon_Chance_Info;
 	permanent		= TRUE;
-	description		= "(Eigene Fähigkeit prüfen)";
+	description		= "(assess own ability)";
 };
 
 func int PC_Goldhacken_Addon_Chance_Condition()

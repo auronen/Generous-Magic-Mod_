@@ -29,7 +29,7 @@ instance DIA_NOV_8_Fegen(C_INFO)
 	condition		= DIA_NOV_8_Fegen_Condition;
 	information		= DIA_NOV_8_Fegen_Info;
 	permanent		= TRUE;
-	description		= "Ich brauche Hilfe beim Fegen der Novizenkammern.";
+	description		= "I need help sweeping the novices' chambers.";
 };
 
 func int DIA_NOV_8_Fegen_Condition()
@@ -47,14 +47,14 @@ var int Feger3_Permanent;
 // -------------------------------
 func void DIA_NOV_8_Fegen_Info()
 {
-	AI_Output(other, self, "DIA_NOV_8_Fegen_15_00"); //Ich brauche Hilfe beim Fegen der Novizenkammern.
+	AI_Output(other, self, "DIA_NOV_8_Fegen_15_00"); //I need help sweeping the novices' chambers.
 
 	if (Hlp_GetInstanceID(Feger3) == Hlp_GetInstanceID(self))
 	{
 		if (Feger3_Permanent == FALSE)
 		{
-			AI_Output(self, other, "DIA_NOV_8_Fegen_08_01"); //Oh Mann. Du bist gerade mal hier und lässt dir direkt die Fegerei aufs Auge drücken?
-			AI_Output(self, other, "DIA_NOV_8_Fegen_08_02"); //Tröste dich, mir ist es genauso gegangen, als ich hier neu war. Und deswegen helfe ich dir. Wäre doch gelacht, wenn wir das nicht hinkriegen.
+			AI_Output(self, other, "DIA_NOV_8_Fegen_08_01"); //Oh, man. You just got here and you let them make you do the sweeping already?
+			AI_Output(self, other, "DIA_NOV_8_Fegen_08_02"); //Console yourself, it was exactly the same with me when I first got here. And that's why I'm going to help you. It would be ridiculous if we couldn't handle it.
 
 			NOV_Helfer = (NOV_Helfer + 1);
 			Feger3_Permanent = TRUE;
@@ -66,7 +66,7 @@ func void DIA_NOV_8_Fegen_Info()
 		}
 		else // if(Feger3_Permanent == TRUE)
 		{
-			AI_Output(self, other, "DIA_NOV_8_Fegen_08_03"); //Bruder, ich weiß, in welcher Situation du steckst. Und ich hab dir schon gesagt, dass ich dir helfe. Und das mach ich.
+			AI_Output(self, other, "DIA_NOV_8_Fegen_08_03"); //Brother, I know the situation you're in. And I already told you that I will help you. And that's what I'm doing.
 		};
 	};
 
@@ -74,7 +74,7 @@ func void DIA_NOV_8_Fegen_Info()
 
 	if ((Hlp_GetInstanceID(Feger3) == Hlp_GetInstanceID(self)) == FALSE)
 	{
-		AI_Output(self, other, "DIA_NOV_8_Fegen_08_04"); //Hey, ich würd's ja tun, aber ich bin schwer beschäftigt.
+		AI_Output(self, other, "DIA_NOV_8_Fegen_08_04"); //Hey, I'd do it, but I'm really busy.
 	};
 };
 
@@ -87,7 +87,7 @@ instance DIA_NOV_8_Wurst(C_INFO)
 	condition		= DIA_NOV_8_Wurst_Condition;
 	information		= DIA_NOV_8_Wurst_Info;
 	permanent		= TRUE;
-	description		= "Wie wär's mit 'ner leckeren Schafswurst?";
+	description		= "How about a delicious mutton sausage?";
 };
 
 func int DIA_NOV_8_Wurst_Condition()
@@ -103,8 +103,8 @@ func int DIA_NOV_8_Wurst_Condition()
 
 func void DIA_NOV_8_Wurst_Info()
 {
-	AI_Output(other, self, "DIA_NOV_8_Wurst_15_00"); //Wie wär's mit 'ner leckeren Schafswurst?
-	AI_Output(self, other, "DIA_NOV_8_Wurst_08_01"); //Da sage ich nicht nein. Danke Mann - das ist jetzt genau das Richtige.
+	AI_Output(other, self, "DIA_NOV_8_Wurst_15_00"); //How about a delicious mutton sausage?
+	AI_Output(self, other, "DIA_NOV_8_Wurst_08_01"); //I wouldn't say no to that. Thanks, man - that's just what I needed.
 
 	B_GiveInvItems(other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben + 1);
@@ -128,7 +128,7 @@ instance DIA_NOV_8_JOIN(C_INFO)
 	condition		= DIA_NOV_8_JOIN_Condition;
 	information		= DIA_NOV_8_JOIN_Info;
 	permanent		= TRUE;
-	description		= "Was muß ich tun, um Magier zu werden?";
+	description		= "What must I do to become a magician?";
 };
 
 func int DIA_NOV_8_JOIN_Condition()
@@ -141,9 +141,9 @@ func int DIA_NOV_8_JOIN_Condition()
 
 func void DIA_NOV_8_JOIN_Info()
 {
-	AI_Output(other, self, "DIA_NOV_8_JOIN_15_00"); //Was muß ich tun, um Magier zu werden?
-	AI_Output(self, other, "DIA_NOV_8_JOIN_08_01"); //Ein Erwählter Innos' wirst du erst, wenn die Hohen Magier des Feuers es zulassen.
-	AI_Output(self, other, "DIA_NOV_8_JOIN_08_02"); //Als Novizen ist es uns untersagt, uns mit der Runenmagie zu befassen - und nur mit der Erlaubnis der Magier dürfen wir die alten Schriften lesen.
+	AI_Output(other, self, "DIA_NOV_8_JOIN_15_00"); //What must I do to become a magician?
+	AI_Output(self, other, "DIA_NOV_8_JOIN_08_01"); //You will become a Chosen of Innos only when the High Magicians of Fire allow it.
+	AI_Output(self, other, "DIA_NOV_8_JOIN_08_02"); //As novices we are forbidden to study rune magic - and we may study the old scriptures only with the permission of the magicians.
 };
 
 // *************************************************************************
@@ -155,7 +155,7 @@ instance DIA_NOV_8_PEOPLE(C_INFO)
 	condition		= DIA_NOV_8_PEOPLE_Condition;
 	information		= DIA_NOV_8_PEOPLE_Info;
 	permanent		= TRUE;
-	description		= "Wer leitet das Kloster?";
+	description		= "Who is in charge of this monastery?";
 };
 
 func int DIA_NOV_8_PEOPLE_Condition()
@@ -165,9 +165,9 @@ func int DIA_NOV_8_PEOPLE_Condition()
 
 func void DIA_NOV_8_PEOPLE_Info()
 {
-	AI_Output(other, self, "DIA_NOV_8_PEOPLE_15_00"); //Wer leitet das Kloster?
-	AI_Output(self, other, "DIA_NOV_8_PEOPLE_08_01"); //Der hohe Rat. Er wird gebildet von den drei mächtigsten Magiern unseres Ordens. Sie beraten sich täglich in der Kirche.
-	AI_Output(self, other, "DIA_NOV_8_PEOPLE_08_02"); //Die Erwählten Innos' sind allesamt Magier. Innos hat sie mit dieser Gabe ausgestattet, damit sie seinen Willen auf Erden durchsetzen können.
+	AI_Output(other, self, "DIA_NOV_8_PEOPLE_15_00"); //Who is in charge of this monastery?
+	AI_Output(self, other, "DIA_NOV_8_PEOPLE_08_01"); //The High Council. It is composed of the three most powerful magicians of our order. They consult daily in the church.
+	AI_Output(self, other, "DIA_NOV_8_PEOPLE_08_02"); //The Chosen of Innos are all magicians. Innos has provided them with this gift, so that they are able to carry out his will on earth.
 };
 
 // *************************************************************************
@@ -179,7 +179,7 @@ instance DIA_NOV_8_LOCATION(C_INFO)
 	condition		= DIA_NOV_8_LOCATION_Condition;
 	information		= DIA_NOV_8_LOCATION_Info;
 	permanent		= TRUE;
-	description		= "Erzähl mir etwas über dieses Kloster.";
+	description		= "Tell me about this monastery.";
 };
 
 func int DIA_NOV_8_LOCATION_Condition()
@@ -189,10 +189,10 @@ func int DIA_NOV_8_LOCATION_Condition()
 
 func void DIA_NOV_8_LOCATION_Info()
 {
-	AI_Output(other, self, "DIA_NOV_8_LOCATION_15_00"); //Erzähl mir etwas über dieses Kloster.
-	AI_Output(self, other, "DIA_NOV_8_LOCATION_08_01"); //Es ist uralt. Es stammt noch aus der Zeit vor Rhobar, dem Ersten.
-	AI_Output(self, other, "DIA_NOV_8_LOCATION_08_02"); //Unter dem Kloster sind die Katakomben. Sie erstrecken sich bis tief in den Berg hinein.
-	// AI_Output(self, other, "DIA_NOV_8_LOCATION_08_03"); // Aber zur untersten Ebene haben nur die höchsten Geweihten Innos' Zutritt.
+	AI_Output(other, self, "DIA_NOV_8_LOCATION_15_00"); //Tell me about this monastery.
+	AI_Output(self, other, "DIA_NOV_8_LOCATION_08_01"); //It is ancient. It comes from the time before Rhobar the First.
+	AI_Output(self, other, "DIA_NOV_8_LOCATION_08_02"); //Under the monastery are the catacombs. They stretch deep into the mountain.
+	// AI_Output(self, other, "DIA_NOV_8_LOCATION_08_03"); // Aber zur untersten Ebene haben nur die hÃ¶chsten Geweihten Innos' Zutritt.
 };
 
 // *************************************************************************
@@ -204,7 +204,7 @@ instance DIA_NOV_8_STANDARD(C_INFO)
 	condition		= DIA_NOV_8_STANDARD_Condition;
 	information		= DIA_NOV_8_STANDARD_Info;
 	permanent		= TRUE;
-	description		= "Gibt's irgendwelche Neuigkeiten?";
+	description		= "Is there anything new?";
 };
 
 func int DIA_NOV_8_STANDARD_Condition()
@@ -214,18 +214,18 @@ func int DIA_NOV_8_STANDARD_Condition()
 
 func void DIA_NOV_8_STANDARD_Info()
 {
-	AI_Output(other, self, "DIA_NOV_8_STANDARD_15_00"); //Gibt's irgendwelche Neuigkeiten?
+	AI_Output(other, self, "DIA_NOV_8_STANDARD_15_00"); //Is there anything new?
 
 	if (Kapitel == 1)
 	{
 		if (other.guild == GIL_KDF)
 		{
-			AI_Output(self, other, "DIA_NOV_8_STANDARD_08_01"); //Das kann man wohl sagen. Es ist bestimmt schon seit über hundert Jahren nicht mehr vorgekommen, dass ein Novize in so kurzer Zeit in den Kreis des Feuers aufgenommen wurde!
-			AI_Output(self, other, "DIA_NOV_8_STANDARD_08_02"); //Ich hoffe, dass auch mir eines Tages diese Ehre zuteil wird. Ich werde hart dafür arbeiten.
+			AI_Output(self, other, "DIA_NOV_8_STANDARD_08_01"); //You could say so. It has been more than a hundred years since a novice was accepted so quickly into the Circle of Fire.
+			AI_Output(self, other, "DIA_NOV_8_STANDARD_08_02"); //I hope that this honor is also granted to me one day. I shall work hard for it.
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_NOV_8_STANDARD_08_03"); //Vor Kurzem sind die Paladine in Khorinis eingetroffen. Einer von ihnen ist hier im Kloster, um zu beten.
+			AI_Output(self, other, "DIA_NOV_8_STANDARD_08_03"); //The paladins arrived in Khorinis recently. One of them is here in the monastery to pray.
 		};
 	};
 
@@ -235,36 +235,36 @@ func void DIA_NOV_8_STANDARD_Info()
 		if ((Pedro_Traitor == TRUE)
 		&& (MIS_NovizenChase != LOG_SUCCESS)) // Kap 3b - SC weiss, das Pedro das Auge Innos geklaut hat
 		{
-			AI_Output(self, other, "DIA_NOV_3_STANDARD_08_04"); //Ich kann es noch gar nicht glauben. Einer von uns hat das Kloster verraten und das Auge Innos' gestohlen.
-			AI_Output(self, other, "DIA_NOV_3_STANDARD_08_05"); //Es war unsere Aufgabe, eine Gemeinschaft zu bilden, doch wir waren zu schwach, nur so konnte es Beliar gelingen, einen der Unsrigen auf seine Seite zu ziehen.
+			AI_Output(self, other, "DIA_NOV_3_STANDARD_08_04"); //I still can't believe it. One of us has betrayed the monastery and stolen the Eye of Innos.
+			AI_Output(self, other, "DIA_NOV_3_STANDARD_08_05"); //It was our task to build a community, but we were too weak. That is the only reason Beliar could have succeeded in drawing one of our own to his side.
 		}
 		else if (MIS_NovizenChase == LOG_SUCCESS) // Kap 3c - Das Auge Innos ist wieder da
 		{
-			AI_Output(self, other, "DIA_NOV_3_STANDARD_08_06"); //Innos sei gepriesen, wir konnten dem Feind das Auge Innos' wieder abnehmen.
-			AI_Output(self, other, "DIA_NOV_3_STANDARD_08_07"); //Dein Mut kann für viele verzweifelte Seelen ein Vorbild sein und ihnen helfen, diese dunklen Zeiten zu überstehen.
+			AI_Output(self, other, "DIA_NOV_3_STANDARD_08_06"); //Innos be praised, we were able to get the Eye back from the enemy.
+			AI_Output(self, other, "DIA_NOV_3_STANDARD_08_07"); //Your courage can be a model for many despairing souls and help them to survive these dark times.
 		}
 		else // Kap 2 - 3a
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output(self, other, "DIA_NOV_8_STANDARD_08_08"); //Ich habe von Drachen gehört und von einer Armee des Bösen. Innos steh uns bei!
+				AI_Output(self, other, "DIA_NOV_8_STANDARD_08_08"); //I have heard of dragons and an army of Evil. Innos be with us!
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_NOV_8_STANDARD_08_09"); //Der hohe Rat ist sehr besorgt über die Situation, in der sich unsere Paladine befinden. Es gibt seit einiger Zeit schon keine Nachricht aus dem Minental.
+				AI_Output(self, other, "DIA_NOV_8_STANDARD_08_09"); //The High Council is very concerned about the situation our paladins are in. There has been no news from the Valley of Mines for some time.
 			};
 		};
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output(self, other, "DIA_NOV_8_STANDARD_08_10"); //Nein. Und ich danke unserem Herrn dafür. Mit dem Auge Innos' wird es uns gelingen, die Drachen zu besiegen!
+		AI_Output(self, other, "DIA_NOV_8_STANDARD_08_10"); //No. And I thank our Lord for that. With the Eye of Innos we will be able to defeat the dragons!
 	};
 
 	if (Kapitel >= 5)
 	{
-		AI_Output(self, other, "DIA_NOV_8_STANDARD_08_11"); //Ja. Wir haben den Sieg über die Drachen errungen! Innos hat uns gezeigt, dass wir die Hoffnung niemals aufgeben dürfen.
-		AI_Output(self, other, "DIA_NOV_8_STANDARD_08_12"); //Doch es gibt viele Schatten und wir werden viele Feuer entzünden müssen, um sie zu vertreiben.
+		AI_Output(self, other, "DIA_NOV_8_STANDARD_08_11"); //Yes. We have achieved victory over the dragons! Innos has shown us that we must never give up hope.
+		AI_Output(self, other, "DIA_NOV_8_STANDARD_08_12"); //Yet there are many shadows and we shall have to light many fires to drive them away.
 	};
 };
 

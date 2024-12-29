@@ -1,4 +1,4 @@
-func void Use_BookstandDementor_S1() // Alchemiebücher
+func void Use_BookstandDementor_S1() // AlchemiebÃ¼cher
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 

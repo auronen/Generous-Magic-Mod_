@@ -20,9 +20,9 @@ func void DIA_Addon_Saturas_EXIT_Info()
 {
 	if (MIS_Addon_Saturas_BringRiordian2Me == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_Saturas_auftrag_14_01"); //Da du dir ohnehin nicht nehmen lassen wirst, auch die anderen Magier von ihrer Arbeit abzuhalten, kannst du einem von ihnen auch eine Nachricht von mir überbringen.
-		AI_Output(self, other, "DIA_Addon_Saturas_auftrag_14_02"); //Sag Riordian, dass ich ihn hier bei mir zu sehen wünsche.
-		AI_Output(self, other, "DIA_Addon_Saturas_auftrag_14_03"); //Er hält sich im hinteren Bereich des Gewölbes auf. Du wirst ihn schon finden.
+		AI_Output(self, other, "DIA_Addon_Saturas_auftrag_14_01"); //Since there's no way of stopping you from keeping the other Mages from doing their work, you might as well take a message from me to one of them.
+		AI_Output(self, other, "DIA_Addon_Saturas_auftrag_14_02"); //Tell Riordian that I wish to see him here.
+		AI_Output(self, other, "DIA_Addon_Saturas_auftrag_14_03"); //He is in the rear part of the vault. You will find him there.
 		MIS_Addon_Saturas_BringRiordian2Me = LOG_RUNNING;
 
 		Log_CreateTopic(TOPIC_Addon_HolRiordian, LOG_MISSION);
@@ -42,7 +42,7 @@ instance DIA_Addon_Saturas_Nefarius(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Saturas_Nefarius_Condition;
 	information		= DIA_Addon_Saturas_Nefarius_Info;
-	description		= "Ich soll für Nefarius die verlorenen Teile des Ornamentes finden.";
+	description		= "I am supposed to find the lost parts of the ornament for Nefarius.";
 };
 
 func int DIA_Addon_Saturas_Nefarius_Condition()
@@ -55,21 +55,21 @@ func int DIA_Addon_Saturas_Nefarius_Condition()
 
 func void DIA_Addon_Saturas_Nefarius_Info()
 {
-	AI_Output(other, self, "DIA_ADDON_Saturas_Nefarius_15_00"); //Ich soll für Nefarius die verlorenen Teile des Ornamentes finden.
-	AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_01"); //Was? Das ist ja unglaublich! Du steckst schon wieder mit drin?
-	AI_Output(other, self, "DIA_ADDON_Saturas_Nefarius_15_02"); //Keine Angst, ich bringe die Dinger schon her.
+	AI_Output(other, self, "DIA_ADDON_Saturas_Nefarius_15_00"); //I am supposed to find the lost parts of the ornament for Nefarius.
+	AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_01"); //What? That is unbelievable! You are involved again?
+	AI_Output(other, self, "DIA_ADDON_Saturas_Nefarius_15_02"); //Don't worry, I'll bring the things here.
 
 	if ((ORNAMENT_SWITCHED_FOREST == FALSE)
 	&& (Npc_HasItems(other, ItWr_Map_NewWorld_Ornaments_Addon)))
 	{
-		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_03"); //(seufzt) Weißt du wenigstens, wo du suchen musst?
-		AI_Output(other, self, "DIA_ADDON_Saturas_Nefarius_15_04"); //Nefarius hat mir diese Karte gegeben ...
-		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_05"); //Zeig her!
+		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_03"); //(sighs) Do you at least know what you are looking for?
+		AI_Output(other, self, "DIA_ADDON_Saturas_Nefarius_15_04"); //Nefarius gave me this map...
+		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_05"); //Show me!
 		B_UseFakeScroll();
-		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_06"); //Hmmm. Im großen Wald ist es ziemlich gefährlich. Du solltest nicht alleine gehen.
-		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_07"); //Such dir in Khorinis jemanden, der dich begleitet.
-		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_08"); //Ich will nicht, dass du von Monstern gefressen wirst - und das Ornament mit dir.
-		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_09"); //Hier hast du deine Karte wieder ...
+		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_06"); //Hmmm. It is very dangerous in the big forest. You should not go alone.
+		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_07"); //Look for someone to accompany you in Khorinis.
+		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_08"); //I do not want you eaten by monsters - and the ornament with you.
+		AI_Output(self, other, "DIA_ADDON_Saturas_Nefarius_14_09"); //Here is your map back...
 
 		Log_CreateTopic(TOPIC_Addon_Ornament, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_Ornament, LOG_RUNNING);
@@ -100,58 +100,58 @@ func int DIA_Addon_Saturas_Hallo_Condition()
 
 func void DIA_Addon_Saturas_Hallo_weisstdu()
 {
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_00"); //Hast du eigentlich die leiseste Ahnung, was du da getan hast?
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_01"); //Du hast das Gefüge der Magie derart durcheinander gebracht, dass es bis nach Khorinis zu hören war.
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_02"); //Du kannst von Glück sagen, dass die Barriere eines Tages einfach in sich zusammen gefallen ist.
-	AI_Output(other, self, "DIA_Addon_Saturas_Hallo_weißtdu_15_03"); //Worüber beschwerst du dich dann? Hat doch alles gut geklappt.
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_04"); //(poltert) Hüte deine Zunge!
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_05"); //(aufbrausent) Was zum Henker willst du hier überhaupt?
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_00"); //Do you have the slightest idea what you have done?
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_01"); //You have confused the structure of magic so much that it could be heard back in Khorinis.
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_02"); //Count yourself lucky that the Barrier simply collapsed one day.
+	AI_Output(other, self, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_15_03"); //What are you complaining about? It all worked out all right.
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_04"); //(ranting) Mind your tongue!
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_05"); //(boiling) What the blazes do you want here anyway?
 	Info_ClearChoices(DIA_Addon_Saturas_Hallo);
 };
 
 func void DIA_Addon_Saturas_Hallo_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_14_00"); //Bist du denn von Sinnen? Mach, dass du hier raus kommst.
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_14_01"); //In diesen Gewölben ist es zu gefährlich für Möchtegernabenteurer.
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_14_02"); //(verärgert) Aber sag mal, kenne ich dich nicht? Natürlich. Du Mistkerl ...
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_14_03"); //(verärgert) Glaube ja nicht, dass ich vergessen habe, wie du uns betrogen hast damals im neuen Lager.
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_14_00"); //Are you mad? Get out of here.
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_14_01"); //It is too dangerous in these vaults for a would-be adventurer.
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_14_02"); //(annoyed) But say, don't I know you? Of course. You bastard...
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_14_03"); //(annoyed) Don't think that I have forgotten how you betrayed us in the New Camp.
 
 	Info_ClearChoices(DIA_Addon_Saturas_Hallo);
-	Info_AddChoice(DIA_Addon_Saturas_Hallo, "Ich...", DIA_Addon_Saturas_Hallo_Video);
+	Info_AddChoice(DIA_Addon_Saturas_Hallo, "(embarrassed) I...", DIA_Addon_Saturas_Hallo_Video);
 };
 
 func void DIA_Addon_Saturas_Hallo_Video()
 {
 	PlayVideo("oreheap.bik");
-	AI_Output(self, other, "DIA_Addon_Saturas_Video_14_00"); //(verärgert) Du hast unserem Erzhaufen alle magische Macht entzogen und dann bist du einfach verschwunden!
-	AI_Output(self, other, "DIA_Addon_Saturas_Video_14_01"); //(verärgert) Was hast du dir eigentlich dabei gedacht?
+	AI_Output(self, other, "DIA_Addon_Saturas_Video_14_00"); //(annoyed) You drained our mound of ore of all magic power and then simply disappeared!
+	AI_Output(self, other, "DIA_Addon_Saturas_Video_14_01"); //(annoyed) What exactly did you think you were doing?
 
 	Info_ClearChoices(DIA_Addon_Saturas_Hallo);
-	Info_AddChoice(DIA_Addon_Saturas_Hallo, "Tut mir leid. Ich wusste nicht, was ich tat.", DIA_Addon_Saturas_Hallo_sorry);
-	Info_AddChoice(DIA_Addon_Saturas_Hallo, "Euer Plan hätte sowieso nicht funktioniert.", DIA_Addon_Saturas_Hallo_Spott);
-	Info_AddChoice(DIA_Addon_Saturas_Hallo, "Es war notwendig.", DIA_Addon_Saturas_Hallo_notwendig);
+	Info_AddChoice(DIA_Addon_Saturas_Hallo, "I'm sorry. I didn't know what I was doing.", DIA_Addon_Saturas_Hallo_sorry);
+	Info_AddChoice(DIA_Addon_Saturas_Hallo, "Your plan wouldn't have worked anyway.", DIA_Addon_Saturas_Hallo_Spott);
+	Info_AddChoice(DIA_Addon_Saturas_Hallo, "It was necessary.", DIA_Addon_Saturas_Hallo_notwendig);
 };
 
 func void DIA_Addon_Saturas_Hallo_notwendig()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_Hallo_notwendig_15_00"); //Es war notwendig. Ohne die Macht des Erzes hätte ich den Schläfer niemals besiegen können.
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_notwendig_14_01"); //(sauer) Was ist das für ein Gefasel? Schläfer? Besiegt?
+	AI_Output(other, self, "DIA_Addon_Saturas_Hallo_notwendig_15_00"); //It was necessary. Without the power of the ore, I could never have defeated the Sleeper.
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_notwendig_14_01"); //(angry) What sort of drivel is that? Sleeper? Defeated?
 	DIA_Addon_Saturas_Hallo_weisstdu();
 };
 
 func void DIA_Addon_Saturas_Hallo_Spott()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_00"); //Euer Plan hätte sowieso nicht funktioniert. Die Barriere mit dem Erzhaufen zu sprengen, ist der größte Unfug, den je gehört habe.
-	AI_Output(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_01"); //Ihr hättet euch am Ende damit noch selbst in die Luft gejagt.
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_02"); //(sauer) Das ist doch der Gipfel. Wer gibt dir das Recht, über uns und unsere Absichten zu richten?
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_03"); //Wenn ich nicht so ein friedliebender Mensch wäre, würde ich den Zorn Adanos' auf dich heraufbeschwören, mein Junge.
+	AI_Output(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_00"); //Your plan wouldn't have worked anyway. Blowing up the Barrier with the ore mound is the biggest nonsense I ever heard.
+	AI_Output(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_01"); //Ultimately, you would have blown yourselves sky high.
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_02"); //(angry) That is the limit! Who gave you the right to judge us and our intentions?
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_03"); //If I were not such a peaceful man, I would bring down the wrath of Adanos on you, my boy.
 	DIA_Addon_Saturas_Hallo_weisstdu();
 };
 
 func void DIA_Addon_Saturas_Hallo_sorry()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_Hallo_sorry_15_00"); //Tut mir Leid. Ich wusste nicht, was ich tat.
-	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_sorry_14_01"); //Ach? Und du glaubst, damit wäre das erledigt?
+	AI_Output(other, self, "DIA_Addon_Saturas_Hallo_sorry_15_00"); //I'm sorry. I didn't know what I was doing.
+	AI_Output(self, other, "DIA_Addon_Saturas_Hallo_sorry_14_01"); //Oh? And you think that settles it?
 	DIA_Addon_Saturas_Hallo_weisstdu();
 };
 
@@ -164,7 +164,7 @@ instance DIA_Addon_Saturas_keineAhnung(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Saturas_keineAhnung_Condition;
 	information		= DIA_Addon_Saturas_keineAhnung_Info;
-	description		= "Ich habe keine Ahnung.";
+	description		= "I haven't a clue.";
 };
 
 func int DIA_Addon_Saturas_keineAhnung_Condition()
@@ -177,9 +177,9 @@ func int DIA_Addon_Saturas_keineAhnung_Condition()
 
 func void DIA_Addon_Saturas_keineAhnung_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_keineAhnung_15_00"); //Ich habe keine Ahnung. Ich dachte, ich schau mal vorbei.
-	AI_Output(self, other, "DIA_Addon_Saturas_keineAhnung_14_01"); //Du verschwendest meine Zeit. Verschwinde hier.
-	AI_Output(self, other, "DIA_Addon_Saturas_keineAhnung_14_02"); //(zu sich) Ich werde dich mir später noch mal vorknöpfen.
+	AI_Output(other, self, "DIA_Addon_Saturas_keineAhnung_15_00"); //I have no idea. I thought I'd just drop in.
+	AI_Output(self, other, "DIA_Addon_Saturas_keineAhnung_14_01"); //You are wasting my time. Begone from here.
+	AI_Output(self, other, "DIA_Addon_Saturas_keineAhnung_14_02"); //(to himself) I shall deal with you later.
 
 	Log_CreateTopic(TOPIC_Addon_KDW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_KDW, LOG_RUNNING);
@@ -213,7 +213,7 @@ func int DIA_Addon_Saturas_raus_Condition()
 
 func void DIA_Addon_Saturas_raus_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Saturas_raus_14_00"); //Sieh zu, dass du hier wieder raus kommst, bevor dir hier noch was passiert.
+	AI_Output(self, other, "DIA_Addon_Saturas_raus_14_00"); //Begone from here before something happens to you.
 	AI_StopProcessInfos(self);
 };
 
@@ -226,7 +226,7 @@ instance DIA_Addon_Saturas_Lares(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Saturas_Lares_Condition;
 	information		= DIA_Addon_Saturas_Lares_Info;
-	description		= "Ich bin mit Lares hierher gekommen.";
+	description		= "I came here with Lares.";
 };
 
 func int DIA_Addon_Saturas_Lares_Condition()
@@ -239,10 +239,10 @@ func int DIA_Addon_Saturas_Lares_Condition()
 
 func void DIA_Addon_Saturas_Lares_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_Lares_15_00"); //Ich bin mit Lares hierher gekommen.
-	AI_Output(self, other, "DIA_Addon_Saturas_Lares_14_01"); //(besorgt) Lares? Wirklich? Wo ist er?
-	AI_Output(other, self, "DIA_Addon_Saturas_Lares_15_02"); //Ich bin allein. Lares ist zurück in die Stadt gegangen.
-	AI_Output(self, other, "DIA_Addon_Saturas_Lares_14_03"); //Was? Und er hat dich ganz allein zu uns geschickt? Was denkt er sich eigentlich?
+	AI_Output(other, self, "DIA_Addon_Saturas_Lares_15_00"); //I came here with Lares.
+	AI_Output(self, other, "DIA_Addon_Saturas_Lares_14_01"); //(concerned) Lares? Really? Where is he?
+	AI_Output(other, self, "DIA_Addon_Saturas_Lares_15_02"); //I am alone. Lares went back to the city.
+	AI_Output(self, other, "DIA_Addon_Saturas_Lares_14_03"); //What? And he sent you to us alone? What was he thinking?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -254,7 +254,7 @@ instance DIA_Addon_Saturas_Ornament(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Saturas_Ornament_Condition;
 	information		= DIA_Addon_Saturas_Ornament_Info;
-	description		= "Ich habe euer Ornament mitgebracht.";
+	description		= "I brought your ornament.";
 };
 
 func int DIA_Addon_Saturas_Ornament_Condition()
@@ -270,23 +270,23 @@ func int DIA_Addon_Saturas_Ornament_Condition()
 
 func void DIA_Addon_Saturas_Ornament_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_Ornament_15_00"); //Ich habe euer Ornament mitgebracht.
+	AI_Output(other, self, "DIA_Addon_Saturas_Ornament_15_00"); //I brought your ornament.
 	B_GiveInvItems(other, self, ItMi_Ornament_Addon_Vatras, 1);
-	AI_Output(self, other, "DIA_Addon_Saturas_Ornament_ADD_14_00"); //Was in aller Welt soll das bedeuten?
+	AI_Output(self, other, "DIA_Addon_Saturas_Ornament_ADD_14_00"); //What in all the world is that supposed to mean? 
 
 	if (Lares_Angekommen == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_Saturas_Ornament_14_01"); //Wer hat dir das gegeben? Sag nicht, dass Lares es dir einfach überlassen hat.
+		AI_Output(self, other, "DIA_Addon_Saturas_Ornament_14_01"); //Who gave you that? Don't tell me that Lares simply handed it over to you.
 	};
 
-	AI_Output(other, self, "DIA_Addon_Saturas_Ornament_15_02"); //Jetzt komm mal wieder runter. Ich habe es dir gebracht. Das wolltest du doch, oder?
-	AI_Output(self, other, "DIA_Addon_Saturas_Ornament_14_03"); //Schon. Aber es beunruhigt mich, dass DU schon wieder deine Finger im Spiel hast.
-	AI_Output(other, self, "DIA_Addon_Saturas_Ornament_15_04"); //Warum machst du so ein Theater um die alte Geschichte mit dem Erzhaufen?
-	AI_Output(other, self, "DIA_Addon_Saturas_Ornament_15_05"); //Immerhin habe ich damals schon für dich gearbeitet. Hast du dich da etwa nicht auf mich verlassen können?
-	AI_Output(self, other, "DIA_Addon_Saturas_Ornament_14_06"); //(seufzt) Und was hat es mir schlussendlich eingebracht? Mpfh, denk ja nicht, dass ich dir traue ...
+	AI_Output(other, self, "DIA_Addon_Saturas_Ornament_15_02"); //Come off it now. I brought it to you. You do want it, don't you?
+	AI_Output(self, other, "DIA_Addon_Saturas_Ornament_14_03"); //Certainly. But it disturbs me that YOU have your hand in the game once again.
+	AI_Output(other, self, "DIA_Addon_Saturas_Ornament_15_04"); //Why are you making such a big deal about that old business with the ore mound?
+	AI_Output(other, self, "DIA_Addon_Saturas_Ornament_15_05"); //After all, I already worked for you back then. And you can't say that I was unreliable.
+	AI_Output(self, other, "DIA_Addon_Saturas_Ornament_14_06"); //(sighs) And what did it ultimately get me? Mpfh, just don't think that I trust you...
 	MIS_Addon_Lares_Ornament2Saturas = LOG_SUCCESS;
 
-	// Joly: Monster auffüllen, die bei Lares gestört haben
+	// Joly: Monster auffÃ¼llen, die bei Lares gestÃ¶rt haben
 	Wld_InsertNpc(Bloodfly, "FP_ROAM_NW_TROLLAREA_RUINS_07");
 	Wld_InsertNpc(Giant_Bug, "FP_ROAM_NW_TROLLAREA_RUINS_03");
 	Wld_InsertNpc(Lurker, "NW_TROLLAREA_RIVERSIDE_01");
@@ -317,7 +317,7 @@ instance DIA_Addon_Saturas_geheimbund(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Saturas_geheimbund_Condition;
 	information		= DIA_Addon_Saturas_geheimbund_Info;
-	description		= "Ich will mich dem 'Ring des Wassers' anschließen.";
+	description		= "I want to join the 'Ring of Water'.";
 };
 
 func int DIA_Addon_Saturas_geheimbund_Condition()
@@ -332,19 +332,19 @@ func int DIA_Addon_Saturas_geheimbund_Condition()
 
 func void DIA_Addon_Saturas_geheimbund_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_geheimbund_15_00"); //Ich will mich dem 'Ring des Wassers' anschließen.
+	AI_Output(other, self, "DIA_Addon_Saturas_geheimbund_15_00"); //I want to join the 'Ring of Water'.
 
 	if (Lares_Angekommen == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_Saturas_geheimbund_14_01"); //(erbost) WAS? Woher weißt du das denn schon wieder? Wer …? LARES ... Ich bring ihn um!
-		AI_Output(self, other, "DIA_Addon_Saturas_geheimbund_14_02"); //Er hat gegen unsere erste Regel verstossen. Niemand spricht über den 'Ring des Wassers'.
+		AI_Output(self, other, "DIA_Addon_Saturas_geheimbund_14_01"); //(furious) WHAT? How do you know about that? Who...? LARES... I will kill him!
+		AI_Output(self, other, "DIA_Addon_Saturas_geheimbund_14_02"); //He has broken our first rule. Speak to no one about the 'Ring of Water'.
 	};
 
-	AI_Output(self, other, "DIA_Addon_Saturas_geheimbund_14_03"); //(völlig fertig) Ich weiß nicht, was ich dazu sagen soll. Ich traue dir nur, solange ich dich im Auge habe.
-	AI_Output(other, self, "DIA_Addon_Saturas_geheimbund_15_04"); //Es war Vatras, der mir alles über den Ring erzählt hat.
-	AI_Output(self, other, "DIA_Addon_Saturas_geheimbund_14_05"); //(resigniert) Was? Vatras? (sarkastisch) Großartig! Von allen Wassermagiern auf der Insel musstest du ausgerechnet an den einen geraten, der dich NICHT kennt ...
-	AI_Output(self, other, "DIA_Addon_Saturas_geheimbund_14_06"); //Ich warne dich: Mach dieses Mal keine Dummheiten!
-	AI_Output(other, self, "DIA_Addon_Saturas_geheimbund_15_07"); //(trocken) Ich werd' mir Mühe geben ...
+	AI_Output(self, other, "DIA_Addon_Saturas_geheimbund_14_03"); //(completely done in) I don't know what I should say. I only trust you where I can keep an eye on you.
+	AI_Output(other, self, "DIA_Addon_Saturas_geheimbund_15_04"); //It was Vatras who told me about the Ring.
+	AI_Output(self, other, "DIA_Addon_Saturas_geheimbund_14_05"); //(resigned) What? Vatras? (sarcastically) Wonderful! Of all the Water Mages on the island, you run into the who DOESN'T know you.
+	AI_Output(self, other, "DIA_Addon_Saturas_geheimbund_14_06"); //I'm warning you, don't do anything stupid this time.
+	AI_Output(other, self, "DIA_Addon_Saturas_geheimbund_15_07"); //(drily) I'll make an effort...
 
 	Log_CreateTopic(TOPIC_Addon_RingOfWater, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
@@ -360,7 +360,7 @@ instance DIA_Addon_Saturas_wasmachstdu(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Saturas_wasmachstdu_Condition;
 	information		= DIA_Addon_Saturas_wasmachstdu_Info;
-	description		= "Was machst du hier unten?";
+	description		= "What are you doing down here?";
 };
 
 func int DIA_Addon_Saturas_wasmachstdu_Condition()
@@ -373,11 +373,11 @@ func int DIA_Addon_Saturas_wasmachstdu_Condition()
 
 func void DIA_Addon_Saturas_wasmachstdu_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_wasmachstdu_15_00"); //Was machst du hier unten?
-	AI_Output(self, other, "DIA_Addon_Saturas_wasmachstdu_14_01"); //(ehrfürchtig) Diese Hallen beherbergen alte Geheimnisse. Rätselhafte Geheimnisse.
-	AI_Output(self, other, "DIA_Addon_Saturas_wasmachstdu_14_02"); //Die Inschriften und Wandmalereien lassen auf eine sehr alte Kultur schließen.
-	AI_Output(self, other, "DIA_Addon_Saturas_wasmachstdu_14_03"); //Alles, was du hier sehen kannst, ist in einer uns gänzlich unbekannten Sprache geschrieben.
-	AI_Output(self, other, "DIA_Addon_Saturas_wasmachstdu_14_04"); //Wir fangen gerade erst an, sie zu lernen und ihren Sinn zu erfassen.
+	AI_Output(other, self, "DIA_Addon_Saturas_wasmachstdu_15_00"); //What are you doing down here?
+	AI_Output(self, other, "DIA_Addon_Saturas_wasmachstdu_14_01"); //(reverently) These halls conceal ancient secrets. Mysterious secrets.
+	AI_Output(self, other, "DIA_Addon_Saturas_wasmachstdu_14_02"); //The inscriptions and murals indicate a very ancient culture.
+	AI_Output(self, other, "DIA_Addon_Saturas_wasmachstdu_14_03"); //Everything you can see here is written in a language completely unknown to us.
+	AI_Output(self, other, "DIA_Addon_Saturas_wasmachstdu_14_04"); //We are only just beginning to learn it and grasp its meaning.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -389,7 +389,7 @@ instance DIA_Addon_Saturas_Erdbeben(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Saturas_Erdbeben_Condition;
 	information		= DIA_Addon_Saturas_Erdbeben_Info;
-	description		= "Was sind das für seltsame Erdbeben?";
+	description		= "What sort of strange earthquakes are those?";
 };
 
 func int DIA_Addon_Saturas_Erdbeben_Condition()
@@ -404,11 +404,11 @@ func int DIA_Addon_Saturas_Erdbeben_Condition()
 
 func void DIA_Addon_Saturas_Erdbeben_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_Erdbeben_15_00"); //Was sind das für seltsame Erdbeben?
-	AI_Output(self, other, "DIA_Addon_Saturas_Erdbeben_14_01"); //Das ist eins der Rätsel, die ich versuche zu lösen.
-	AI_Output(self, other, "DIA_Addon_Saturas_Erdbeben_14_02"); //Das Gefüge der Magie wird irgendwo hinter diesen Bergen gestört.
-	AI_Output(self, other, "DIA_Addon_Saturas_Erdbeben_14_03"); //Ganz offensichtlich versucht da jemand mit aller Gewalt, einen mächtigen Zauber zu brechen.
-	AI_Output(self, other, "DIA_Addon_Saturas_Erdbeben_14_04"); //Ich fürchte, es dauert nicht lange, bis die ganze Insel von diesen Beben heimgesucht wird.
+	AI_Output(other, self, "DIA_Addon_Saturas_Erdbeben_15_00"); //What sort of strange earthquakes are those?
+	AI_Output(self, other, "DIA_Addon_Saturas_Erdbeben_14_01"); //That is one of the puzzles I am trying to solve.
+	AI_Output(self, other, "DIA_Addon_Saturas_Erdbeben_14_02"); //The structure of magic is being disturbed somewhere behind these mountains.
+	AI_Output(self, other, "DIA_Addon_Saturas_Erdbeben_14_03"); //Quite obviously, someone is trying with all his might to break a powerful magic.
+	AI_Output(self, other, "DIA_Addon_Saturas_Erdbeben_14_04"); //I fear it will not be long before the entire island is plagued by these tremors.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -420,7 +420,7 @@ instance DIA_Addon_Saturas_WhatsOrnament(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Saturas_WhatsOrnament_Condition;
 	information		= DIA_Addon_Saturas_WhatsOrnament_Info;
-	description		= "Warum ist euch dieses Ornament so wichtig?";
+	description		= "Why is this ornament so important to you?";
 };
 
 func int DIA_Addon_Saturas_WhatsOrnament_Condition()
@@ -435,9 +435,9 @@ func int DIA_Addon_Saturas_WhatsOrnament_Condition()
 
 func void DIA_Addon_Saturas_WhatsOrnament_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_WhatsOrnament_15_00"); //Warum ist euch dieses Ornament so wichtig?
-	AI_Output(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_01"); //(genervt) Es ist der Schlüssel zu einem Portal.
-	AI_Output(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_02"); //Mehr werde ich dir dazu nicht sagen.
+	AI_Output(other, self, "DIA_Addon_Saturas_WhatsOrnament_15_00"); //Why is this ornament so important to you?
+	AI_Output(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_01"); //(annoyed) It is the key to a portal.
+	AI_Output(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_02"); //I shall not tell you more.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -450,7 +450,7 @@ instance DIA_Addon_Saturas_ScRanger(C_INFO)
 	condition		= DIA_Addon_Saturas_ScRanger_Condition;
 	information		= DIA_Addon_Saturas_ScRanger_Info;
 	permanent		= TRUE;
-	description		= "Ich gehöre jetzt zum 'Ring des Wassers'.";
+	description		= "I belong to the 'Ring of Water' now.";
 };
 
 func int DIA_Addon_Saturas_ScRanger_Condition()
@@ -464,41 +464,41 @@ func int DIA_Addon_Saturas_ScRanger_Condition()
 
 func void DIA_Addon_Saturas_ScRanger_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_ScRanger_15_00"); //Ich gehöre jetzt zum 'Ring des Wassers'.
+	AI_Output(other, self, "DIA_Addon_Saturas_ScRanger_15_00"); //I belong to the 'Ring of Water' now.
 	var C_Item itm;
 	itm = Npc_GetEquippedArmor(other);
 
 	if (
-	((SCIsWearingRangerRing == TRUE) && (RangerRingIsLaresRing == FALSE)) // -> Der SC IST Ranger! SC trägt eigenen (nicht Lares') Ring
-	|| (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE) // -> Der SC IST Ranger! Nur als Ranger hat er diese Rüstung bekommen.
+	((SCIsWearingRangerRing == TRUE) && (RangerRingIsLaresRing == FALSE)) // -> Der SC IST Ranger! SC trÃ¤gt eigenen (nicht Lares') Ring
+	|| (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE) // -> Der SC IST Ranger! Nur als Ranger hat er diese RÃ¼stung bekommen.
 	)
 	{
 		if (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE)
 		{
-			AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_01"); //Wie ich sehe, trägst du die Rüstung unserer Kinder.
+			AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_01"); //As I see, you wear the armor of our children.
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_02"); //Wie ich sehe, trägst du unser geheimes Erkennungszeichen. Den Aquamarinring.
+			AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_02"); //As I see, you bear our secret sign. The aquamarine ring.
 		};
 
-		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_03"); //Und ich erkenne in deinen Augen, dass du die Wahrheit sagst.
-		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_04"); //(grummelt) Ist gut. Ich werde deine Aufnahme in unsere Reihen akzeptieren.
-		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_05"); //Aber bedenke, dass es auch mit einer großen Verantwortung verbunden ist.
-		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_06"); //Und ich will für dich hoffen, dass du ihr auch gerecht wirst.
+		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_03"); //And I see in your eyes that you speak the truth.
+		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_04"); //(mumbling) Very well. I shall accept your entrance into our ranks.
+		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_05"); //But bear in mind that this comes with a great responsibility.
+		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_06"); //And I hope for your sake that you will do it justice.
 		SaturasKnows_SC_IsRanger = TRUE;
 		B_LogEntry(TOPIC_Addon_RingOfWater, TOPIC_Addon_RingOfWater_11);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_07"); //Und woran soll ich jetzt erkennen, dass du zu uns gehörst?
+		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_07"); //And how can I tell that you are one of us now?
 
 		if (RangerRingIsLaresRing == TRUE)
 		{
-			AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_08"); //Der Aquamarinring, den du da trägst, gehört Lares. Das seh' ich doch.
+			AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_08"); //The aquamarine ring that you carry belongs to Lares. I can see that.
 		};
 
-		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_09"); // Willst mich wohl verarschen, was? Ich habe auch nichts anderes erwartet.
+		AI_Output(self, other, "DIA_Addon_Saturas_ScRanger_14_09"); // You are trying to trick me, aren't you? I expected nothing else.
 		AI_StopProcessInfos(self);
 	};
 };
@@ -513,7 +513,7 @@ instance DIA_Addon_Saturas_OpenPortal(C_INFO)
 	condition		= DIA_Addon_Saturas_OpenPortal_Condition;
 	information		= DIA_Addon_Saturas_OpenPortal_Info;
 	permanent		= TRUE;
-	description		= "Gib mir den Ring. Ich werde das Portal öffnen.";
+	description		= "Give me the ring. I shall open the portal.";
 };
 
 var int DIA_Addon_Saturas_OpenPortal_NoPerm;
@@ -528,17 +528,17 @@ func int DIA_Addon_Saturas_OpenPortal_Condition()
 
 func void DIA_Addon_Saturas_OpenPortal_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_OpenPortal_15_00"); //Gib mir den Ring. Ich werde das Portal öffnen.
+	AI_Output(other, self, "DIA_Addon_Saturas_OpenPortal_15_00"); //Give me the ring. I shall open the portal.
 
 	if (SaturasKnows_SC_IsRanger == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_01"); //(schlau) Gut! Als neues Mitglied unserer Kinder soll dir diese Ehre zuteil werden.
-		AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_02"); //Doch warte ich noch auf eine Nachricht von Vatras. Bevor ich sie nicht erhalten habe, können wir noch nicht gehen.
+		AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_01"); //(slyly) Good! As a new member of our children, you should be granted this honor.
+		AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_02"); //However, I am still waiting for a message from Vatras. Until I receive it, we cannot go.
 
 		if ((RangerMeetingRunning == LOG_SUCCESS)
 		&& ((Npc_HasItems(other, ItWr_Vatras2Saturas_FindRaven)) || (Npc_HasItems(other, ItWr_Vatras2Saturas_FindRaven_opened))))
 		{
-			AI_Output(other, self, "DIA_Addon_Saturas_OpenPortal_15_03"); //Ich HABE eine Nachricht von Vatras für dich.
+			AI_Output(other, self, "DIA_Addon_Saturas_OpenPortal_15_03"); //I HAVE a message from Vatras for you.
 
 			B_GiveInvItems(other, self, ItWr_Vatras2Saturas_FindRaven, (Npc_HasItems(other, ItWr_Vatras2Saturas_FindRaven)));
 			B_GiveInvItems(other, self, ItWr_Vatras2Saturas_FindRaven_opened, (Npc_HasItems(other, ItWr_Vatras2Saturas_FindRaven_opened)));
@@ -546,22 +546,22 @@ func void DIA_Addon_Saturas_OpenPortal_Info()
 			B_UseFakeScroll();
 			if (Vatras2Saturas_FindRaven_Open == TRUE)
 			{
-				AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_04"); //(verärgert)So so. Und du konntest natürlich nicht an dich halten und musstest sie unbedingt öffnen, ja?
-				AI_Output(other, self, "DIA_Addon_Saturas_OpenPortal_15_05"); //Nun, ähh ...
-				AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_06"); //(droht) Ich will nur für dich hoffen, dass mein noch sehr zartes Vertrauen in dich nicht bestraft wird.
+				AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_04"); //(annoyed) I see. And of course you couldn't restrain yourself and you absolutely had to open it, yes?
+				AI_Output(other, self, "DIA_Addon_Saturas_OpenPortal_15_05"); //Well, uhh...
+				AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_06"); //(threatening) I hope for your sake that my still very delicate trust in you will not be shaken.
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_07"); //(verwundert) Höchst interessant. Nun gut.
+				AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_07"); //(amazed) Very interesting. All right.
 				B_GivePlayerXP(XP_Ambient);
 			};
 
-			AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_08"); //Hier, nimm den Ring. Wir werden uns am Portal versammeln und auf dich warten.
+			AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_08"); //Here, take the ring. We shall gather at the portal and wait for you.
 
 			CreateInvItems(self, ItMi_PortalRing_Addon, 1);
 			B_GiveInvItems(self, other, ItMi_PortalRing_Addon, 1);
 
-			AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_09"); //Wenn Nefarius Recht hat, wird sich das Portal öffnen, sobald du Ring dort einsetzt.
+			AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_09"); //If Nefarius is right, the portal will open as soon as you insert the ring there.
 
 			DIA_Addon_Saturas_OpenPortal_NoPerm = TRUE;
 			B_LogEntry(TOPIC_Addon_Ornament, TOPIC_Addon_Ornament_7);
@@ -581,7 +581,7 @@ func void DIA_Addon_Saturas_OpenPortal_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_10"); //Solange Vatras mir kein eindeutiges Zeichen übermittelt, dass dir zu trauen ist, werde ich den Ring bei mir behalten.
+		AI_Output(self, other, "DIA_Addon_Saturas_OpenPortal_14_10"); //As long as Vatras has not given me a clear sign that you are to be trusted, I shall keep the ring myself.
 		Saturas_WillVertrauensBeweis = TRUE;
 		B_LogEntry(TOPIC_Addon_Ornament, TOPIC_Addon_Ornament_8);
 		AI_StopProcessInfos(self);
@@ -598,7 +598,7 @@ instance DIA_Addon_Saturas_PERM(C_INFO)
 	condition		= DIA_Addon_Saturas_PERM_Condition;
 	information		= DIA_Addon_Saturas_PERM_Info;
 	permanent		= TRUE;
-	description		= "Kannst du mir etwas über die Magie beibringen?";
+	description		= "Can you teach me anything about magic?";
 };
 
 func int DIA_Addon_Saturas_PERM_Condition()
@@ -611,7 +611,7 @@ func int DIA_Addon_Saturas_PERM_Condition()
 
 func void DIA_Addon_Saturas_PERM_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Saturas_PERM_15_00"); //Kannst du mir etwas über die Magie beibringen?
-	AI_Output(self, other, "DIA_Addon_Saturas_PERM_14_01"); //Damit du noch mehr im magischen Gefüge herumpfuschen kannst?
-	AI_Output(self, other, "DIA_Addon_Saturas_PERM_14_02"); //Nein. Für solche Späße habe ich jetzt keine Zeit.
+	AI_Output(other, self, "DIA_Addon_Saturas_PERM_15_00"); //Can you teach me anything about magic?
+	AI_Output(self, other, "DIA_Addon_Saturas_PERM_14_01"); //So that you can once again interfere with the magical structure?
+	AI_Output(self, other, "DIA_Addon_Saturas_PERM_14_02"); //No. I have no time for such games.
 };

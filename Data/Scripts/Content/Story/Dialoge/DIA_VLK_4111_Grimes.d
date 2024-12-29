@@ -46,8 +46,8 @@ func int DIA_Grimes_Hallo_Condition()
 
 func void DIA_Grimes_Hallo_Info()
 {
-	AI_Output(self, other, "DIA_Grimes_Hallo_05_00"); //Du? Wer hätte gedacht, dass wir uns noch mal wiedersehen würden?
-	AI_Output(self, other, "DIA_Grimes_Hallo_05_01"); //So, wie es aussieht, haben wir es wohl beide verstanden, am Leben zu bleiben, und wie du siehst, bin ich dem Schürfen treu geblieben.
+	AI_Output(self, other, "DIA_Grimes_Hallo_05_00"); //You? Who would have thought we'd see each other again.
+	AI_Output(self, other, "DIA_Grimes_Hallo_05_01"); //So it looks like we both know how to stay alive, and as you can see I've stuck with prospecting.
 
 	if (Grimes_First == FALSE)
 	{
@@ -70,7 +70,7 @@ instance DIA_Grimes_Erz(C_INFO)
 	nr				= 2;
 	condition		= DIA_Grimes_Erz_Condition;
 	information		= DIA_Grimes_Erz_Info;
-	description		= "Wie viel Erz habt ihr bereits gefördert? ";
+	description		= "How much ore have you already mined?";
 };
 
 func int DIA_Grimes_Erz_Condition()
@@ -84,9 +84,9 @@ func int DIA_Grimes_Erz_Condition()
 
 func void DIA_Grimes_Erz_Info()
 {
-	AI_Output(other, self, "DIA_Grimes_Erz_15_00"); //Wie viel Erz habt ihr bereits gefördert?
-	AI_Output(self, other, "DIA_Grimes_Erz_05_01"); //Ein paar Kisten. Aber davon ist nichts mehr hier.
-	AI_Output(self, other, "DIA_Grimes_Erz_05_02"); //Paladin Marcos hat beschlossen, das Erz zur Burg zu bringen, weil wir dauernd den Angriffen der Orks ausgesetzt waren.
+	AI_Output(other, self, "DIA_Grimes_Erz_15_00"); //How much ore have you already mined?
+	AI_Output(self, other, "DIA_Grimes_Erz_05_01"); //A few chests. But there's nothing of that left here.
+	AI_Output(self, other, "DIA_Grimes_Erz_05_02"); //Paladin Marcos decided to take the ore to the castle, because we were constantly being attacked by orcs.
 };
 
 // ************************************************************
@@ -98,7 +98,7 @@ instance DIA_Grimes_Weg(C_INFO)
 	nr				= 3;
 	condition		= DIA_Grimes_Weg_Condition;
 	information		= DIA_Grimes_Weg_Info;
-	description		= "Weißt du, welchen Weg Marcos genommen hat?";
+	description		= "Do you know which way Marcos went?";
 };
 
 func int DIA_Grimes_Weg_Condition()
@@ -112,9 +112,9 @@ func int DIA_Grimes_Weg_Condition()
 
 func void DIA_Grimes_Weg_Info()
 {
-	AI_Output(other, self, "DIA_Grimes_Weg_15_00"); //Weißt du, welchen Weg Marcos genommen hat?
-	AI_Output(self, other, "DIA_Grimes_Weg_05_01"); //Er hat nicht den direkten Weg genommen - stattdessen wollte er den Fluss dort überqueren, wo er gefroren ist.
-	AI_Output(self, other, "DIA_Grimes_Weg_05_02"); //Er wollte einen Bogen schlagen und sich der Burg von Westen her nähern.
+	AI_Output(other, self, "DIA_Grimes_Weg_15_00"); //Do you know which way Marcos went?
+	AI_Output(self, other, "DIA_Grimes_Weg_05_01"); //He didn't take the direct route - instead he wanted to cross the river where it was frozen.
+	AI_Output(self, other, "DIA_Grimes_Weg_05_02"); //He wanted to cut around and approach the castle from the west.
 };
 
 // ************************************************************
@@ -126,7 +126,7 @@ instance DIA_Grimes_Grimes(C_INFO)
 	nr				= 2;
 	condition		= DIA_Grimes_Grimes_Condition;
 	information		= DIA_Grimes_Grimes_Info;
-	description		= "Willst du nicht das Tal verlassen?";
+	description		= "Don't you want to leave the valley?";
 };
 
 func int DIA_Grimes_Grimes_Condition()
@@ -139,11 +139,11 @@ func int DIA_Grimes_Grimes_Condition()
 
 func void DIA_Grimes_Grimes_Info()
 {
-	AI_Output(other, self, "DIA_Grimes_Grimes_15_00"); //Willst du nicht das Tal verlassen?
-	AI_Output(self, other, "DIA_Grimes_Grimes_05_01"); //Nein, ich werde weiter Erz schürfen.
-	AI_Output(self, other, "DIA_Grimes_Grimes_05_02"); //Ich lass mich doch nicht von so ein paar Orks daran hindern - ich hab schon ganz andere Sachen erlebt.
-	AI_Output(self, other, "DIA_Grimes_Grimes_05_03"); //Damals, als wir noch in der alten Mine geschürft haben und auf einmal das Wasser hereinbrach ...
-	AI_Output(self, other, "DIA_Grimes_Grimes_05_04"); //Aber das sind alte Geschichten.
+	AI_Output(other, self, "DIA_Grimes_Grimes_15_00"); //Don't you want to leave the valley?
+	AI_Output(self, other, "DIA_Grimes_Grimes_05_01"); //No, I'll keep on mining ore.
+	AI_Output(self, other, "DIA_Grimes_Grimes_05_02"); //I'm not going to let a few orcs stop me - I've been through a lot more than that.
+	AI_Output(self, other, "DIA_Grimes_Grimes_05_03"); //Back then when we were digging in the old mine, and suddenly the water broke in ...
+	AI_Output(self, other, "DIA_Grimes_Grimes_05_04"); //But those are old stories.
 };
 
 // ************************************************************
@@ -156,7 +156,7 @@ instance DIA_Grimes_PERM(C_INFO)
 	condition		= DIA_Grimes_PERM_Condition;
 	information		= DIA_Grimes_PERM_Info;
 	permanent		= TRUE;
-	description		= "Was macht die Arbeit?";
+	description		= "How's your work?";
 };
 
 func int DIA_Grimes_PERM_Condition()
@@ -169,8 +169,8 @@ func int DIA_Grimes_PERM_Condition()
 
 func void DIA_Grimes_PERM_Info()
 {
-	AI_Output(other, self, "DIA_Grimes_PERM_15_00"); //Was macht die Arbeit?
-	AI_Output(self, other, "DIA_Grimes_PERM_05_01"); //Dieser Fels ist verdammt hartnäckig - fast so, als würde er sich dagegen wehren, dass wir uns das Erz holen.
+	AI_Output(other, self, "DIA_Grimes_PERM_15_00"); //How's your work?
+	AI_Output(self, other, "DIA_Grimes_PERM_05_01"); //This rock is damn stubborn - almost like it was trying to prevent us from taking the ore.
 };
 
 // ************************************************************
@@ -210,11 +210,11 @@ func void DIA_Grimes_PICKPOCKET_BACK()
 };
 
 /*
-Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen müssen.
+Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen mÃ¼ssen.
 Ich habe ihn gefunden.
-Er hält sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher.
+Er hÃ¤lt sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher.
 Innos sei dank...
 
 Nein, bisher nicht.
-Dann hoffe ich, das er ein Versteck für sich und das Erz gefunden hat.
+Dann hoffe ich, das er ein Versteck fÃ¼r sich und das Erz gefunden hat.
 */

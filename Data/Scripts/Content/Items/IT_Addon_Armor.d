@@ -12,7 +12,7 @@ const int VALUE_ITAR_Bloodwyn_Addon = 1300;
 // ******************************************************
 instance ITAR_PIR_L_Addon(C_Item)
 {
-	name						= "Piratenkleidung";
+	name						= "Pirate clothes";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -44,7 +44,7 @@ instance ITAR_PIR_L_Addon(C_Item)
 // ******************************************************
 instance ITAR_PIR_M_Addon(C_Item)
 {
-	name						= "Piratenrüstung";
+	name						= "Pirate armor";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -76,7 +76,7 @@ instance ITAR_PIR_M_Addon(C_Item)
 // ******************************************************
 instance ITAR_PIR_H_Addon(C_Item)
 {
-	name						= "Kapitäns Kleidung";
+	name						= "Captain's clothes";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -108,7 +108,7 @@ instance ITAR_PIR_H_Addon(C_Item)
 // ******************************************************
 instance ITAR_Thorus_Addon(C_Item)
 {
-	name						= "Schwere Gardistenrüstung";
+	name						= "Guard's heavy armor";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -128,7 +128,7 @@ instance ITAR_Thorus_Addon(C_Item)
 
 	value						= VALUE_ITAR_Thorus_Addon;
 
-	description					= "Rüstung von Raven's Garde";
+	description					= "Armor for Raven's guard";
 	text[0]						= PRINT_Addon_BDTArmor;							count[0] = 0;
 	text[1]						= NAME_Prot_Edge;								count[1] = protection[PROT_EDGE];
 	text[2]						= NAME_Prot_Point;								count[2] = protection[PROT_POINT];
@@ -140,7 +140,7 @@ instance ITAR_Thorus_Addon(C_Item)
 // ******************************************************
 instance ITAR_Raven_Addon(C_Item)
 {
-	name						= "Ravens Rüstung";
+	name						= "Raven's armor";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -172,7 +172,7 @@ instance ITAR_Raven_Addon(C_Item)
 // ******************************************************
 instance ITAR_OreBaron_Addon(C_Item)
 {
-	name						= "Erzbaronrüstung";
+	name						= "Ore baron armor";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -204,7 +204,7 @@ instance ITAR_OreBaron_Addon(C_Item)
 // ******************************************************
 instance ITAR_RANGER_Addon(C_Item)
 {
-	name						= "Rüstung des 'Rings des Wassers'";
+	name						= "Armor of the 'Ring of Water'";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -236,7 +236,7 @@ instance ITAR_RANGER_Addon(C_Item)
 // ******************************************************
 instance ITAR_Fake_RANGER(C_Item)
 {
-	name						= "zerissene Rüstung";
+	name						= "Broken armor";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -268,7 +268,7 @@ instance ITAR_Fake_RANGER(C_Item)
 // ******************************************************
 instance ITAR_KDW_L_Addon(C_Item)
 {
-	name						= "Leichte KDW";
+	name						= "Light CoW";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -300,7 +300,7 @@ instance ITAR_KDW_L_Addon(C_Item)
 // ******************************************************
 instance ITAR_Bloodwyn_Addon(C_Item)
 {
-	name						= "Bloodwyn Rüstung";
+	name						= "Bloodwyn's armor";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -332,7 +332,7 @@ instance ITAR_Bloodwyn_Addon(C_Item)
 // ******************************************************
 instance ITAR_MayaZombie_Addon(C_Item)
 {
-	name						= "alte Rüstung";
+	name						= "Old armor";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;
@@ -363,12 +363,12 @@ instance ITAR_MayaZombie_Addon(C_Item)
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-//	Magische Rüstungen
+//	Magische RÃ¼stungen
 //
 
 instance ItAr_FireArmor_Addon(C_Item)
 {
-	name						= "Magische Rüstung";
+	name						= "Magic armor";
 
 	mainflag					= ITEM_KAT_ARMOR;
 	flags						= 0;

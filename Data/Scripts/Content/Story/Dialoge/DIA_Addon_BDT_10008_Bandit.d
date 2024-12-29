@@ -81,11 +81,11 @@ func int DIA_Addon_10008_Bandit_Hi_Condition()
 
 func void DIA_Addon_10008_Bandit_Hi_Info()
 {
-	AI_Output(self, other, "DIA_Addon_10008_Bandit_Hi_01_00"); //NICHT wecken!
-	AI_Output(other, self, "DIA_Addon_10008_Bandit_Hi_15_01"); //Was???
-	AI_Output(self, other, "DIA_Addon_10008_Bandit_Hi_01_02"); //Wenn du dir selbst einen Gefallen tun willst, dann halte dich von Skinner fern.
-	AI_Output(self, other, "DIA_Addon_10008_Bandit_Hi_01_03"); //Der Kerl ist unberechenbar. Den Letzten, der ihn geweckt hat, hat er umgebracht.
-	AI_Output(self, other, "DIA_Addon_10008_Bandit_Hi_01_04"); //Lass ihn schlafen, das ist das Beste für alle.
+	AI_Output(self, other, "DIA_Addon_10008_Bandit_Hi_01_00"); //DON'T wake him!
+	AI_Output(other, self, "DIA_Addon_10008_Bandit_Hi_15_01"); //What???
+	AI_Output(self, other, "DIA_Addon_10008_Bandit_Hi_01_02"); //If you want to do yourself a favor, then stay away from Skinner.
+	AI_Output(self, other, "DIA_Addon_10008_Bandit_Hi_01_03"); //The fellow is unpredictable. He killed the last guy who woke him up.
+	AI_Output(self, other, "DIA_Addon_10008_Bandit_Hi_01_04"); //Let him sleep, for everybody's sake.
 };
 
 // --------------------------------------------------------------------
@@ -97,7 +97,7 @@ instance DIA_Addon_10008_Bandit_soup(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_10008_Bandit_soup_Condition;
 	information		= DIA_Addon_10008_Bandit_soup_Info;
-	description		= "Bist du ein Buddler?";
+	description		= "Are you a digger?";
 };
 
 func int DIA_Addon_10008_Bandit_soup_Condition()
@@ -107,12 +107,12 @@ func int DIA_Addon_10008_Bandit_soup_Condition()
 
 func void DIA_Addon_10008_Bandit_soup_Info()
 {
-	AI_Output(other, self, "DIA_Addon_10008_Bandit_soup_15_00"); //Bist du ein Buddler?
-	AI_Output(self, other, "DIA_Addon_10008_Bandit_soup_01_01"); //Wegen der Hose? Nein, ich trage sie nur, weil sie bequem ist.
-	AI_Output(self, other, "DIA_Addon_10008_Bandit_soup_01_02"); //Ich koche hier nur Fleischsuppe. Hier, kannst ja mal probieren - die macht stark.
+	AI_Output(other, self, "DIA_Addon_10008_Bandit_soup_15_00"); //Are you a digger?
+	AI_Output(self, other, "DIA_Addon_10008_Bandit_soup_01_01"); //Because of the pants? No, I just wear them because they're comfortable.
+	AI_Output(self, other, "DIA_Addon_10008_Bandit_soup_01_02"); //All I do here is cook meat stew. Here, you can try some - it'll make you strong.
 	B_GiveInvItems(self, other, ItFo_Addon_Meatsoup, 1);
-	AI_Output(self, other, "DIA_Addon_10008_Bandit_soup_01_03"); //Es ist immer wichtig, seine eigene Stärke zu trainieren - draußen gibt's viele Gefahren.
-	AI_Output(self, other, "DIA_Addon_10008_Bandit_soup_01_04"); //Wenn du willst, kann ich dir helfen, stärker zu werden.
+	AI_Output(self, other, "DIA_Addon_10008_Bandit_soup_01_03"); //It's always important to train your strength - there are many dangers lurking out there.
+	AI_Output(self, other, "DIA_Addon_10008_Bandit_soup_01_04"); //If you want, I can help you to get stronger.
 
 	Log_CreateTopic(Topic_Addon_BDT_Teacher, LOG_NOTE);
 	B_LogEntry(Topic_Addon_BDT_Teacher, Topic_Addon_BDT_Teacher_2);
@@ -128,7 +128,7 @@ instance DIA_Addon_10008_Bandit_Teach(C_INFO)
 	condition		= DIA_Addon_10008_Bandit_Teach_Condition;
 	information		= DIA_Addon_10008_Bandit_Teach_Info;
 	permanent		= TRUE;
-	description		= "Ich will stärker werden";
+	description		= "I want to be stronger.";
 };
 
 func int DIA_Addon_10008_Bandit_Teach_Condition()
@@ -141,7 +141,7 @@ func int DIA_Addon_10008_Bandit_Teach_Condition()
 
 func void DIA_Addon_10008_Bandit_Teach_Info()
 {
-	AI_Output(other, self, "DIA_Addon_10008_Bandit_Teach_15_00"); //Ich will stärker werden.
+	AI_Output(other, self, "DIA_Addon_10008_Bandit_Teach_15_00"); //I want to be stronger.
 
 	Info_ClearChoices(DIA_Addon_10008_Bandit_Teach);
 	Info_AddChoice(DIA_Addon_10008_Bandit_Teach, DIALOG_BACK, DIA_Addon_10008_Bandit_Teach_Back);

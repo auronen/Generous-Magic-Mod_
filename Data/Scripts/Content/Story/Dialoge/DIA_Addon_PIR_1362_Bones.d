@@ -62,8 +62,8 @@ func void DIA_Addon_Bones_PICKPOCKET_BACK()
 // ************************************************************
 func void B_Addon_Bones_KeineZeit()
 {
-	AI_Output(self, other, "DIA_Addon_Bones_Train_01_01"); //Tut mir Leid. Ich hab gerade keine Zeit.
-	AI_Output(self, other, "DIA_Addon_Bones_Train_01_02"); //Ich muss trainieren.
+	AI_Output(self, other, "DIA_Addon_Bones_Train_01_01"); //I'm sorry. I've got no time right now.
+	AI_Output(self, other, "DIA_Addon_Bones_Train_01_02"); //I've got some training to do.
 };
 
 // -------------------------------------------------------------
@@ -73,7 +73,7 @@ instance DIA_Addon_Bones_Anheuern(C_INFO)
 	nr				= 1;
 	condition		= DIA_Addon_Bones_Anheuern_Condition;
 	information		= DIA_Addon_Bones_Anheuern_Info;
-	description		= "Der Canyon wartet.";
+	description		= "The canyon awaits.";
 };
 
 func int DIA_Addon_Bones_Anheuern_Condition()
@@ -86,7 +86,7 @@ func int DIA_Addon_Bones_Anheuern_Condition()
 
 func void DIA_Addon_Bones_Anheuern_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bones_Anheuern_15_01"); //Der Canyon wartet.
+	AI_Output(other, self, "DIA_Addon_Bones_Anheuern_15_01"); //The canyon awaits.
 	B_Addon_Bones_KeineZeit();
 };
 
@@ -99,7 +99,7 @@ instance DIA_Addon_Bones_Hello(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Bones_Hello_Condition;
 	information		= DIA_Addon_Bones_Hello_Info;
-	description		= "Wie läuft's?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_Bones_Hello_Condition()
@@ -109,12 +109,12 @@ func int DIA_Addon_Bones_Hello_Condition()
 
 func void DIA_Addon_Bones_Hello_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bones_Hello_15_00"); //Wie läuft's?
-	AI_Output(self, other, "DIA_Addon_Bones_Hello_01_01"); //Naja, ich komm klar. Is'n bisschen langweilig, aber wenigstens muss ich nicht arbeiten.
-	AI_Output(self, other, "DIA_Addon_Bones_Work_01_01"); //Ich bereite mich gerade auf meinen nächsten Auftrag vor, den Greg mir gegeben hat.
-	AI_Output(other, self, "DIA_Addon_Bones_Work_15_02"); //Welchen Auftrag?
-	AI_Output(self, other, "DIA_Addon_Bones_Work_01_03"); //Das darf ich nicht sagen.
-	AI_Output(self, other, "DIA_Addon_Bones_Work_01_04"); //Nichts für ungut, Kleiner. Aber ich habe mir das Privileg hart erarbeitet und habe keine Lust, es wieder zu verlieren.
+	AI_Output(other, self, "DIA_Addon_Bones_Hello_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Addon_Bones_Hello_01_01"); //I can't complain. It's a bit boring, but at least I don't have to work.
+	AI_Output(self, other, "DIA_Addon_Bones_Work_01_01"); //I'm preparing for the next task that Greg has given me.
+	AI_Output(other, self, "DIA_Addon_Bones_Work_15_02"); //What task?
+	AI_Output(self, other, "DIA_Addon_Bones_Work_01_03"); //I mustn't say.
+	AI_Output(self, other, "DIA_Addon_Bones_Work_01_04"); //No offense, kid. But I've worked hard for the privilege and I don't want to lose it again.
 
 	Npc_ExchangeRoutine(self, "START");
 };
@@ -128,7 +128,7 @@ instance DIA_Addon_Bones_Train(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Bones_Train_Condition;
 	information		= DIA_Addon_Bones_Train_Info;
-	description		= "Kannst du mir was beibringen?";
+	description		= "Can you teach me something?";
 };
 
 func int DIA_Addon_Bones_Train_Condition()
@@ -141,7 +141,7 @@ func int DIA_Addon_Bones_Train_Condition()
 
 func void DIA_Addon_Bones_Train_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bones_Train_15_00"); //Kannst du mir was beibringen?
+	AI_Output(other, self, "DIA_Addon_Bones_Train_15_00"); //Can you teach me something?
 	B_Addon_Bones_KeineZeit();
 };
 
@@ -154,7 +154,7 @@ instance DIA_Addon_Bones_Teacher(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Bones_Teacher_Condition;
 	information		= DIA_Addon_Bones_Teacher_Info;
-	description		= "Wer kann mir hier was beibringen?";
+	description		= "Who around here can teach me something?";
 };
 
 func int DIA_Addon_Bones_Teacher_Condition()
@@ -167,14 +167,14 @@ func int DIA_Addon_Bones_Teacher_Condition()
 
 func void DIA_Addon_Bones_Teacher_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bones_Teacher_15_00"); //Wer kann mir hier was beibringen?
-	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_04"); //Henry und Morgan führen unsere Entertrupps an.
-	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_05"); //Sie können dir beibringen, wie du besser kämpfst.
-	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_07"); //Henrys Leute sind alle mit Zweihandwaffen ausgerüstet.
-	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_08"); //Morgan mag mehr die schnelleren Einhandwaffen.
-	AI_Output(other, self, "DIA_Addon_Bones_Teacher_15_09"); //Wer noch?
-	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_10"); //Keine Ahnung, für was anderes habe ich mich nie interessiert.
-	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_11"); //Aber ich bin mir sicher, dass Alligator Jack oder Samuel dir bestimmt noch den einen oder anderen Trick zeigen können.
+	AI_Output(other, self, "DIA_Addon_Bones_Teacher_15_00"); //Who around here can teach me something?
+	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_04"); //Henry and Morgan are leading our raiding troops.
+	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_05"); //They can teach you how to be a better fighter.
+	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_07"); //Henry's people all use two-handed weapons.
+	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_08"); //Morgan prefers the faster one-handed weapons.
+	AI_Output(other, self, "DIA_Addon_Bones_Teacher_15_09"); //Who else?
+	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_10"); //Beats me, I've never been interested in anything else.
+	AI_Output(self, other, "DIA_Addon_Bones_Teacher_01_11"); //But I'm sure that Alligator Jack or Samuel could still show you a trick or two.
 	Knows_HenrysEntertrupp = TRUE;
 
 	Log_CreateTopic(Topic_Addon_PIR_Teacher, LOG_NOTE);
@@ -183,7 +183,7 @@ func void DIA_Addon_Bones_Teacher_Info()
 };
 
 // ************************************************************
-// 			  			Was weißt du über Francis?
+// 			  			Was weiÃŸt du Ã¼ber Francis?
 // ************************************************************
 instance DIA_Addon_Bones_Francis(C_INFO)
 {
@@ -191,7 +191,7 @@ instance DIA_Addon_Bones_Francis(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Bones_Francis_Condition;
 	information		= DIA_Addon_Bones_Francis_Info;
-	description		= "Kannst du mir was über Francis erzählen?";
+	description		= "Can you tell me something about Francis?";
 };
 
 func int DIA_Addon_Bones_Francis_Condition()
@@ -208,10 +208,10 @@ func int DIA_Addon_Bones_Francis_Condition()
 
 func void DIA_Addon_Bones_Francis_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bones_Francis_15_00"); //Kannst du mir was über Francis erzählen?
-	AI_Output(self, other, "DIA_Addon_Bones_Francis_01_03"); //Guck dich doch mal um. Die Einzigen, die was tun, sind Henry und seine Jungs.
-	AI_Output(self, other, "DIA_Addon_Bones_Francis_01_04"); //Morgan liegt den ganzen Tag im Bett, oder lässt sich volllaufen.
-	AI_Output(self, other, "DIA_Addon_Bones_Francis_01_05"); //Bei Greg gibt's sowas nicht. Wer nicht spurt, kriegt einen Tritt in den Hintern, so ist das!
+	AI_Output(other, self, "DIA_Addon_Bones_Francis_15_00"); //Can you tell me something about Francis?
+	AI_Output(self, other, "DIA_Addon_Bones_Francis_01_03"); //Look around you. The only ones working are Henry and his boys.
+	AI_Output(self, other, "DIA_Addon_Bones_Francis_01_04"); //Morgan spends all day in bed, or guzzling booze.
+	AI_Output(self, other, "DIA_Addon_Bones_Francis_01_05"); //No such nonsense with Greg. If you don't toe the line, he'll kick you in the butt, and that's that.
 };
 
 //*********************************************************
@@ -224,7 +224,7 @@ instance DIA_Addon_Bones_WantArmor(C_INFO)
 	condition		= DIA_Addon_Bones_WantArmor_Condition;
 	information		= DIA_Addon_Bones_WantArmor_Info;
 	permanent		= TRUE;
-	description		= "Gib mir die Banditenrüstung.";
+	description		= "Give me that bandit's armor.";
 };
 
 func int DIA_Addon_Bones_WantArmor_Condition()
@@ -238,19 +238,19 @@ func int DIA_Addon_Bones_WantArmor_Condition()
 
 func void DIA_Addon_Bones_WantArmor_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bones_WantArmor_15_00"); //Gib mir die Banditenrüstung.
-	AI_Output(self, other, "DIA_Addon_Bones_WantArmor_01_01"); //Ich bin doch nicht verrückt. Greg reißt mir den Kopf ab.
-	AI_Output(self, other, "DIA_Addon_Bones_WantArmor_01_02"); //Er hat ausdrücklich gesagt, dass ohne seinen Befehl niemand die Rüstung bekommt.
+	AI_Output(other, self, "DIA_Addon_Bones_WantArmor_15_00"); //Give me that bandit's armor.
+	AI_Output(self, other, "DIA_Addon_Bones_WantArmor_01_01"); //I'm not that crazy. Greg will have my head.
+	AI_Output(self, other, "DIA_Addon_Bones_WantArmor_01_02"); //He explicitly stated that no-one will get that armor unless he orders it.
 	if (GregIsBack == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_Bones_WantArmor_01_03"); //Ich kann sie dir nicht geben. Vor allem nicht jetzt, wo er wieder da ist.
+		AI_Output(self, other, "DIA_Addon_Bones_WantArmor_01_03"); //I can't give it to you. Especially not now that he's come back.
 	};
 
 	B_LogEntry(TOPIC_Addon_BDTRuestung, TOPIC_Addon_BDTRuestung_6);
 };
 
 //*********************************************************
-//	Du sollst mir die Rüstung geben.
+//	Du sollst mir die RÃ¼stung geben.
 //*********************************************************
 instance DIA_Addon_Bones_GiveArmor(C_INFO)
 {
@@ -258,7 +258,7 @@ instance DIA_Addon_Bones_GiveArmor(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Bones_GiveArmor_Condition;
 	information		= DIA_Addon_Bones_GiveArmor_Info;
-	description		= "Du sollst mir die Banditenrüstung geben. Befehl von Greg.";
+	description		= "You're supposed to give me the bandit's armor. Orders from Greg.";
 };
 
 func int DIA_Addon_Bones_GiveArmor_Condition()
@@ -271,14 +271,14 @@ func int DIA_Addon_Bones_GiveArmor_Condition()
 
 func void DIA_Addon_Bones_GiveArmor_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bones_GiveArmor_15_00"); //Du sollst mir die Banditenrüstung geben. Befehl von Greg.
-	AI_Output(self, other, "DIA_Addon_Bones_GiveArmor_01_01"); //Von Greg? Puh, ich dachte schon, ich müsste doch noch gehen.
-	AI_Output(self, other, "DIA_Addon_Bones_GiveArmor_01_02"); //Dieser Späherjob im Banditenlager ist der reinste Selbstmord.
-	AI_Output(self, other, "DIA_Addon_Bones_GiveArmor_01_03"); //Lieber hol ich mir den Strafdienst von Greg, als mich von diesen Banditen umbringen zu lassen.
-	AI_Output(other, self, "DIA_Addon_Bones_GiveArmor_15_04"); //(genervt) Die Rüstung.
-	AI_Output(self, other, "DIA_Addon_Bones_GiveArmor_01_05"); //Ach ja, hier hast du sie.
+	AI_Output(other, self, "DIA_Addon_Bones_GiveArmor_15_00"); //You're supposed to give me the bandit's armor. Orders from Greg.
+	AI_Output(self, other, "DIA_Addon_Bones_GiveArmor_01_01"); //From Greg? Whew, I already thought I'd have to go after all.
+	AI_Output(self, other, "DIA_Addon_Bones_GiveArmor_01_02"); //This spy job in the bandits' camp is nothing short of a suicide mission.
+	AI_Output(self, other, "DIA_Addon_Bones_GiveArmor_01_03"); //I'd rather have Greg heap his chores on me than get myself killed by those bandits.
+	AI_Output(other, self, "DIA_Addon_Bones_GiveArmor_15_04"); //(irritated) The armor.
+	AI_Output(self, other, "DIA_Addon_Bones_GiveArmor_01_05"); //Oh yeah, right, here it is.
 	B_GiveInvItems(self, other, ItAr_BDT_M, 1);
-	AI_Output(self, other, "DIA_Addon_Bones_GiveArmor_01_06"); //Sei bloß vorsichtig. Mit den Kerlen ist nicht zu spaßen.
+	AI_Output(self, other, "DIA_Addon_Bones_GiveArmor_01_06"); //Just be careful. Those bandits are a bad lot.
 	self.flags = 0;
 	PIR_1320_Addon_Greg.flags = 0;
 

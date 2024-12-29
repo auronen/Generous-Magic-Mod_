@@ -5,7 +5,7 @@
 prototype Mst_Default_Harpie(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Harpie";
+	name							= "Harpy";
 	guild							= GIL_HARPY;
 	level							= 18;
 

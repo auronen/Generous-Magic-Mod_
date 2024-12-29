@@ -1,5 +1,5 @@
 /******************************************************************************************/
-//	Trank der Geistesveränderung (unwissend zusammengebraut) //
+//	Trank der GeistesverÃ¤nderung (unwissend zusammengebraut) //
 /******************************************************************************************/
 instance ItPo_Addon_Geist_01(C_Item)
 {
@@ -19,12 +19,12 @@ instance ItPo_Addon_Geist_01(C_Item)
 
 	value						= 300;
 
-	description					= "Trank der Geistesveränderung";
+	description					= "Potion of mental alteration";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Vor der Anwendung sollte man sich ABSICHERN!";count[2] = 0;
-	text[3]						= "Kann den Verstand derbe beeinflußen ";		count[3] = 0;
-	text[4]						= "oder den Anwender töten";					count[4] = 0;
+	text[2]						= "Take PRECAUTIONS before using!";count[2] = 0;
+	text[3]						= "Can strongly influence the mind";		count[3] = 0;
+	text[4]						= "or kill the user";					count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = Value_ManaEssenz;
 };
 
@@ -34,7 +34,7 @@ func void UseItPo_Geist_01()
 };
 
 /******************************************************************************************/
-//	Trank der Geistesveränderung (wissend zusammengebraut) //
+//	Trank der GeistesverÃ¤nderung (wissend zusammengebraut) //
 /******************************************************************************************/
 instance ItPo_Addon_Geist_02(C_Item)
 {
@@ -54,12 +54,12 @@ instance ItPo_Addon_Geist_02(C_Item)
 
 	value						= 300;
 
-	description					= "Trank der Geistesveränderung";
+	description					= "Potion of mental alteration";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Vor der Anwendung sollte man sich ABSICHERN!";count[2] = 0;
-	text[3]						= "Kann den Verstand derbe beeinflußen ";		count[3] = 0;
-	text[4]						= "oder den Anwender töten";					count[4] = 0;
+	text[2]						= "Take PRECAUTIONS before using!";count[2] = 0;
+	text[3]						= "Can strongly influence the mind";		count[3] = 0;
+	text[4]						= "or kill the user";					count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = Value_ManaEssenz;
 };
 
@@ -90,12 +90,12 @@ instance ItPo_Health_Addon_04(C_Item)
 
 	value						= Value_HpTrunk;
 
-	description					= "Reine Lebensenergie";
+	description					= "Pure life energy";
 	// text[1]					= NAME_Bonus_HP;
 
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Vollständige Regeneration";					count[2] = 0;
+	text[2]						= "Complete regeneration";					count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = Value_HpTrunk;
@@ -125,12 +125,12 @@ instance ItPo_Mana_Addon_04(C_Item)
 
 	value						= Value_ManaTrunk;
 
-	description					= "Reines Mana";
+	description					= "Pure mana";
 	// text[1]					= NAME_Bonus_Mana;
 
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Vollständige Mana - Regeneration";			count[2] = 0;
+	text[2]						= "Complete mana regeneration";			count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = Value_ManaTrunk;

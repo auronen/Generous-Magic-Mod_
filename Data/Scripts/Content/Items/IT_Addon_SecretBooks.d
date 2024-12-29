@@ -11,7 +11,7 @@ const int BookXP1000 = 1000;
 const int LPMultiplier = 1000;
 const int XPMultiplier = 5;
 // ---------------------------------------------------------------------------------------------------------------------------
-//		USEFUNC wird von allen LP Büchern benutzt
+//		USEFUNC wird von allen LP BÃ¼chern benutzt
 // ---------------------------------------------------------------------------------------------------------------------------
 func void UseLPBook(var int constanze)
 {
@@ -32,7 +32,7 @@ func void UseLPBook(var int constanze)
 };
 
 // ---------------------------------------------------------------------------------------------------------------------------
-//		USEFUNC wird von allen XP Büchern benutzt
+//		USEFUNC wird von allen XP BÃ¼chern benutzt
 // ---------------------------------------------------------------------------------------------------------------------------
 func void UseXPBook(var int constanze)
 {
@@ -59,11 +59,11 @@ Erfahrung + 250 / 500 / 1000
 
 */
 // ---------------------------------------------------------------------------------------------------------------------------
-//				Xpunktbücher
+//				XpunktbÃ¼cher
 // ---------------------------------------------------------------------------------------------------------------------------
 prototype ItWr_Addon_XPBook(C_ITEM)
 {
-	name = "Gesammelte Erfahrungen";
+	name = "Collected experiences";
 
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
@@ -122,11 +122,11 @@ func void UseBookXP1000()
 };
 
 // ---------------------------------------------------------------------------------------------------------------------------
-//				Lernpunktbücher
+//				LernpunktbÃ¼cher
 // ---------------------------------------------------------------------------------------------------------------------------
 prototype ItWr_Addon_LPBook(C_ITEM)
 {
-	name = "Buch des Wissens";
+	name = "Book of Knowledge";
 
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;

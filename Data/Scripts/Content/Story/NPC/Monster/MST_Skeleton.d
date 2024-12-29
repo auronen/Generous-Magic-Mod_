@@ -5,7 +5,7 @@
 prototype Mst_Default_Skeleton(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Skelett";
+	name							= "Skeleton";
 	guild							= GIL_SKELETON;
 	level							= 30;
 
@@ -117,7 +117,7 @@ instance Skeleton(Mst_Default_Skeleton)
 instance Summoned_Skeleton(Mst_Default_Skeleton)
 {
 	// -------- NPC --------
-	name							= "Beschworenes Skelett";
+	name							= "Summoned Skeleton";
 	guild							= GIL_SUMMONED_SKELETON;
 	level							= 0; // 30
 
@@ -157,7 +157,7 @@ instance Summoned_Skeleton(Mst_Default_Skeleton)
 
 	// -------- equipped weapons --------
 	EquipItem(self, ItMw_2H_Sword_M_01);
-	// EquipItem(self, ItRw_Sld_Bow); // FIXME Carsten: Bogen schieﬂt beim Skelett in Zeitlupe...
+	// EquipItem(self, ItRw_Sld_Bow); // FIXME Carsten: Bogen schie√üt beim Skelett in Zeitlupe...
 
 	// -------- daily routine --------
 	start_aistate = ZS_MM_Rtn_Summoned;
@@ -170,7 +170,7 @@ instance Summoned_Skeleton(Mst_Default_Skeleton)
 instance Lesser_Skeleton(Mst_Default_Skeleton)
 {
 	// -------- NPC --------
-	name							= "Niederes Skelett";
+	name							= "Lower Skeleton";
 	level							= 15;
 
 	// -------- attributes --------
@@ -217,7 +217,7 @@ instance Lesser_Skeleton(Mst_Default_Skeleton)
 instance Crypt_Skeleton_Room_01(Mst_Default_Skeleton)
 {
 	// -------- NPC --------
-	name							= "Krypta-W‰chter";
+	name							= "Crypt Guard";
 
 	// -------- attributes --------
 
@@ -243,7 +243,7 @@ instance Crypt_Skeleton_Room_01(Mst_Default_Skeleton)
 instance Crypt_Skeleton_Room_02(Mst_Default_Skeleton)
 {
 	// -------- NPC --------
-	name							= "Krypta-W‰chter";
+	name							= "Crypt Guard";
 
 	// -------- attributes --------
 
@@ -269,7 +269,7 @@ instance Crypt_Skeleton_Room_02(Mst_Default_Skeleton)
 instance Crypt_Skeleton_Room_03(Mst_Default_Skeleton)
 {
 	// -------- NPC --------
-	name							= "Krypta-W‰chter";
+	name							= "Crypt Guard";
 
 	// -------- attributes --------
 

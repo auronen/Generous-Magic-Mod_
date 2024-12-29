@@ -14,17 +14,17 @@ var int Animals_2_permanent;
 var int Animals_3_permanent;
 // ----------------------
 
-const string BookstandAnimals1_S1_1 = "Jagd und Beute";
-const string BookstandAnimals1_S1_2 = "Jedes Tier und Wesen besitzt eigene Trophäen, die den Ruhm und Reichtum eines erfahrenen Jäger mehren.";
-const string BookstandAnimals1_S1_3 = "Ein erfahrener Jäger weiß um die Trophäen seiner Beute und kennt die verschiedenen Methoden sie auszunehmen.";
-const string BookstandAnimals1_S1_4 = "Zähne reißen";
-const string BookstandAnimals1_S1_5 = "Die Zähne, sind die Waffe von vielen Tieren und Wesen. Wer darum weiß, wie er sie seiner Beute fachkundig entreißt, findet bei Wölfen, Snappern, Schattenläufern, Sumpfhaien und Trollen seine Beute.";
-const string BookstandAnimals1_S1_6 = "Felle abziehen";
-const string BookstandAnimals1_S1_7 = "Ein Talent das der erfahrene Jäger oft zu nutzen weiß - gibt es doch viele Tiere, deren Körper von einem Fell geschützt ist. Schafe, Wölfe und Schattenläufer um nur einige zu benennen.";
-const string BookstandAnimals1_S1_8 = "Ein Jäger, der dieses Talent beherrscht, kann auch die Häute von Sumphaien und Lurkern abziehen.  ";
-const string BookstandAnimals1_S1_9 = "Krallen brechen";
-const string BookstandAnimals1_S1_10 = "Eine Kunst, die bei Waranen aller Art, Snappern, Lurkern und Schattenläufern eingesetzt werden kann.  ";
-func void Use_BookstandAnimals1_S1() // Tierbücher
+const string BookstandAnimals1_S1_1 = "Hunt and Prey";
+const string BookstandAnimals1_S1_2 = "Every beast or creature has certain trophies that improve the wealth and glory of experienced hunters.";
+const string BookstandAnimals1_S1_3 = "An experienced hunter knows all about the trophies of the prey and how to gut them.";
+const string BookstandAnimals1_S1_4 = "Extract Teeth";
+const string BookstandAnimals1_S1_5 = "Teeth are the weapons of many beasts and creatures. If you know how to extract them from your prey, wolves, snappers, shadowbeasts, swampsharks and trolls are the best targets.";
+const string BookstandAnimals1_S1_6 = "Skinning";
+const string BookstandAnimals1_S1_7 = "A talent experienced hunters value greatly, for many animals have pelts - sheep, wolves and shadowbeats, for example.";
+const string BookstandAnimals1_S1_8 = "A hunter with this skill can also skin swampsharks and lurkers.";
+const string BookstandAnimals1_S1_9 = "Extract Claws";
+const string BookstandAnimals1_S1_10 = "An art to be used on all kinds of lizards, snappers, lurkers and shadowbeats.";
+func void Use_BookstandAnimals1_S1() // TierbÃ¼cher
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 
@@ -70,18 +70,18 @@ func void Use_BookstandAnimals1_S1() // Tierbücher
 	};
 };
 
-const string BookstandAnimals2_S1_1 = "Jagd und Beute";
-const string BookstandAnimals2_S1_2 = "Jedes Tier und Wesen besitzt eigene Trophäen, die den Ruhm und Reichtum eines erfahrenen Jäger mehren.";
-const string BookstandAnimals2_S1_3 = "Die Blutfliegen";
-const string BookstandAnimals2_S1_4 = "Um diese fliegenden Teufel auszunehmen, bedarf es zwei besonderer Künste.";
-const string BookstandAnimals2_S1_5 = "Zum einen können ihnen die Flügel abgetrennt, zum anderen kann der Stachel entrissen werden.";
-const string BookstandAnimals2_S1_6 = "Beide Künste sollte der erfahrene Jäger einsetzen, um sich die Trophäen anzueignen.";
-const string BookstandAnimals2_S1_7 = "Feldräuber und Minecrawler greifen mit Zangen an. Vor allem die Zangen der Minecrawler";
-const string BookstandAnimals2_S1_8 = "gelten als besonders wertvoll, weil sie ein Sekret enthalten, das magische Kräfte steigert.";
-const string BookstandAnimals2_S1_9 = "Allerdings sollte es mit Vorsicht genossen werden, da der menschliche Körper mit der Zeit nicht mehr darauf reagiert.";
-const string BookstandAnimals2_S1_10 = "Ebenfalls sehr begehrt sind die Platten der Minecrawler. Aus ihnen lassen sich Rüstungen herstellen. ";
+const string BookstandAnimals2_S1_1 = "Hunt and Prey";
+const string BookstandAnimals2_S1_2 = "Every beast or creature has certain trophies that improve the wealth and glory of experienced hunters.";
+const string BookstandAnimals2_S1_3 = "Bloodflies";
+const string BookstandAnimals2_S1_4 = "Two special skills are required to gut these flying devils.";
+const string BookstandAnimals2_S1_5 = "Their wings can be removed and their stingers extracted.";
+const string BookstandAnimals2_S1_6 = "Both arts should be used by experienced hunters to claim their trophies.";
+const string BookstandAnimals2_S1_7 = "Field raiders and minecrawlers use mandibles to attack. Minecrawler mandibles are";
+const string BookstandAnimals2_S1_8 = "particularly valuable, as they contain a secretion that increases magic powers.";
+const string BookstandAnimals2_S1_9 = "However, it should be used sparingly, as the human body ceases to react to it over time.";
+const string BookstandAnimals2_S1_10 = "Minecrawler plates are also popular. They can be used to make armor.";
 
-func void Use_BookstandAnimals2_S1() // Tierbücher
+func void Use_BookstandAnimals2_S1() // TierbÃ¼cher
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 
@@ -127,17 +127,17 @@ func void Use_BookstandAnimals2_S1() // Tierbücher
 	};
 };
 
-const string BookstandAnimals3_S1_1 = "Jagd und Beute";
-const string BookstandAnimals3_S1_2 = "Jedes Tier und Wesen besitzt eigene Trophäen, die den Ruhm und Reichtum eines erfahrenen Jäger mehren.";
-const string BookstandAnimals3_S1_3 = "Der Feuerwaran";
-const string BookstandAnimals3_S1_4 = "Dieses besondere Wesen zählt zur Gattung der Warane, allerdings ist es in der Lage Feuer zu speien, das jeden der sich ihm auf ein paar Schritt nähert, unweigerlich tötet.";
-const string BookstandAnimals3_S1_5 = "Nur wer sich gegen Feuer zu schützen vermag, kann sich im Kampf mit diesen Wesen messen und ihm die kostbare Zunge entreissen.";
-const string BookstandAnimals3_S1_6 = "Der Schattenläufer";
-const string BookstandAnimals3_S1_7 = "Der Schattenläufer ist ein uralter Einzelgänger der versteckt in Wäldern lebt.";
-const string BookstandAnimals3_S1_8 = "Es gibt nur noch wenige Exemplare, so das er für den Menschen keine Gefahr mehr darstellt, solange er nicht seine Jagdrevier kreuzt.";
-const string BookstandAnimals3_S1_9 = "Der Kopf des Schattenläufers wird von einem Horn gekrönt, das als wertvolle Trophäe gilt. Ein Jäger muss die Kunst lernen, das Horn richtig zu brechen,";
-const string BookstandAnimals3_S1_10 = "damit er diese Trophäe bekommt.";
-func void Use_BookstandAnimals3_S1() // Tierbücher
+const string BookstandAnimals3_S1_1 = "Hunt and Prey";
+const string BookstandAnimals3_S1_2 = "Every beast or creature has certain trophies that improve the wealth and glory of experienced hunters.";
+const string BookstandAnimals3_S1_3 = "Fire Lizard";
+const string BookstandAnimals3_S1_4 = "This beast is a lizard, but it can spit fire that will kill anyone venturing within a few paces of it.";
+const string BookstandAnimals3_S1_5 = "Only those who have protection from fire can fight these beasts and take their valued tongues.";
+const string BookstandAnimals3_S1_6 = "The Shadowbeast";
+const string BookstandAnimals3_S1_7 = "The shadowbeast is an ancient loner and lives hidden in the woods.";
+const string BookstandAnimals3_S1_8 = "There are very few of these creatures left, therefore they are no danger to humans unless they venture into their hunting grounds.";
+const string BookstandAnimals3_S1_9 = "The horn on a shadowbeast's head is regarded as a valuable hunting trophy. A hunter must learn how to remove it properly";
+const string BookstandAnimals3_S1_10 = "in order to claim this prize.";
+func void Use_BookstandAnimals3_S1() // TierbÃ¼cher
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 

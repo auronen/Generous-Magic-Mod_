@@ -95,7 +95,7 @@ func void ZS_Talk()
 			};
 		};
 
-		// ------ Heiltrank geben kˆnnen ------
+		// ------ Heiltrank geben k√∂nnen ------
 		if ((self.aivar[AIV_PARTYMEMBER] == TRUE)
 		&& (Hlp_GetInstanceID(self) != Hlp_GetInstanceID(Biff))
 		&& (Hlp_GetInstanceID(self) != Hlp_GetInstanceID(Biff_NW))
@@ -128,9 +128,9 @@ func void ZS_Talk()
 	/*
 	if ((self.aivar[AIV_TalkedToPlayer] == TRUE) && ...)
 	{
-		B_Say(self, other, "$ABS_COMMANDER"); // Ich hˆrte, du warst beim Kommandanten und hast die Sache wieder in Ordnung gebracht.
-		B_Say(self, other, "$ABS_MONASTERY"); // Ich hˆrte, du warst bei Vater Parlan und hast Buﬂe getan..
-		B_Say(self, other, "$ABS_FARM"); // Ich hˆrte, du warst bei Lee und und hast die Sache wieder in Ordnung gebracht.
+		B_Say(self, other, "$ABS_COMMANDER"); // Ich h√∂rte, du warst beim Kommandanten und hast die Sache wieder in Ordnung gebracht.
+		B_Say(self, other, "$ABS_MONASTERY"); // Ich h√∂rte, du warst bei Vater Parlan und hast Bu√üe getan..
+		B_Say(self, other, "$ABS_FARM"); // Ich h√∂rte, du warst bei Lee und und hast die Sache wieder in Ordnung gebracht.
 		ABS_GOOD // Das ist gut!
 	};
 
@@ -145,7 +145,7 @@ func void ZS_Talk()
 func int ZS_Talk_Loop()
 {
 	if ((InfoManager_HasFinished())
-	&& (zsTalkBugfix == TRUE) // verhindert, daﬂ InfoManager_HasFinished im ERSTEN FRAME der Loop abgefragt wird --> f¸hrt sonst bei MOB-SITZENDEN NSCs (kein Scheiss) zu Abbruch der Loop im ERSTEN FRAME!
+	&& (zsTalkBugfix == TRUE) // verhindert, da√ü InfoManager_HasFinished im ERSTEN FRAME der Loop abgefragt wird --> f√ºhrt sonst bei MOB-SITZENDEN NSCs (kein Scheiss) zu Abbruch der Loop im ERSTEN FRAME!
 	) // (Problem besteht wegen falscher Reihenfolge der Befehle AI_ProcessInfos und InfoManager_HasFinished)
 	{
 		self.aivar[AIV_INVINCIBLE] = FALSE;
@@ -177,7 +177,7 @@ func int ZS_Talk_Loop()
 
 func void ZS_Talk_End()
 {
-	// ------ damit nicht nach Dialog+Losgehen gegr¸ﬂt wird ------
+	// ------ damit nicht nach Dialog+Losgehen gegr√º√üt wird ------
 	Npc_SetRefuseTalk(other, 20); // BEACHTEN: other ist Spieler!
 
 	// ------ wenn Spieler in meinem Raum ------

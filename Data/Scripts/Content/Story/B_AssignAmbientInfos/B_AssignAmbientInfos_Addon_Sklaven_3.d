@@ -47,17 +47,17 @@ func void DIA_Skalven_3_STANDARD_Info()
 
 	if (randy == 0)
 	{
-		AI_Output(self, other, "DIA_Addon_Sklaven_3_STANDARD_03_00"); //(ängstlich) Was willst du von mir? Geh weg!
+		AI_Output(self, other, "DIA_Addon_Sklaven_3_STANDARD_03_00"); //(scared) What do you want from me? Go away!
 	};
 
 	if (randy == 1)
 	{
-		AI_Output(self, other, "DIA_Addon_Sklaven_3_STANDARD_03_01"); //(nervös) Ich habe nichts getan! Lass mich in Ruhe.
+		AI_Output(self, other, "DIA_Addon_Sklaven_3_STANDARD_03_01"); //(nervous) I didn't do anything! Leave me alone.
 	};
 
 	if (randy == 2)
 	{
-		AI_Output(self, other, "DIA_Addon_Sklaven_3_STANDARD_03_02"); //(ängstlich) Bitte schlag mich nicht!
+		AI_Output(self, other, "DIA_Addon_Sklaven_3_STANDARD_03_02"); //(scared) Please don't hit me!
 	};
 
 	AI_StopProcessInfos(self);

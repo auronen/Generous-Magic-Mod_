@@ -1,5 +1,5 @@
 // ******************************
-// Gildenattitüden zum Spielstart
+// GildenattitÃ¼den zum Spielstart
 // ******************************
 
 const int TAB_ANZAHL = 16 * 16;

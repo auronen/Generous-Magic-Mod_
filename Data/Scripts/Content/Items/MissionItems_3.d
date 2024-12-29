@@ -11,7 +11,7 @@ const int AM_EyeProtFire = 30;
 
 instance ItMi_InnosEye_MIS(C_ITEM)
 {
-	name						= "Auge Innos";
+	name						= "Eye of Innos";
 
 	mainflag					= ITEM_KAT_MAGIC;
 	flags						= ITEM_AMULET | ITEM_MISSION;
@@ -28,7 +28,7 @@ instance ItMi_InnosEye_MIS(C_ITEM)
 	value						= 0;
 
 	description					= name;
-	text[0]						= "Das Auge pulsiert voller Energie";			count[0] = 0;
+	text[0]						= "Energy pulses through the Eye.";			count[0] = 0;
 	INV_ZBIAS					= INVCAM_ENTF_AMULETTE_STANDARD;
 };
 
@@ -61,7 +61,7 @@ func void UnEquip_InnosEye()
 
 instance ItMi_InnosEye_Discharged_Mis(C_Item)
 {
-	name						= "Auge Innos";
+	name						= "Eye of Innos";
 
 	mainflag					= ITEM_KAT_MAGIC;
 	flags						= ITEM_AMULET | ITEM_MISSION;
@@ -74,7 +74,7 @@ instance ItMi_InnosEye_Discharged_Mis(C_Item)
 	value						= 0;
 
 	description					= name;
-	text[0]						= "Das Auge ist matt und ohne Glanz";			count[0] = 0;
+	text[0]						= "The Eye is faded and does not shine.";			count[0] = 0;
 	INV_ZBIAS					= INVCAM_ENTF_AMULETTE_STANDARD;
 };
 
@@ -86,7 +86,7 @@ func void Equip_ItMi_InnosEye_Discharged_Mis()
 
 instance ItMi_InnosEye_Broken_Mis(C_Item)
 {
-	name						= "Auge Innos";
+	name						= "Eye of Innos";
 
 	mainflag					= ITEM_KAT_MAGIC;
 	flags						= ITEM_AMULET | ITEM_MISSION;
@@ -111,12 +111,12 @@ func void Equip_ItMi_InnosEye_Broken_Mis()
 };
 
 //**********************************************************************************
-//	Ermächtigungsschreiben für SC für Pyrokar, das Auge Innos rauszurücken.
+//	ErmÃ¤chtigungsschreiben fÃ¼r SC fÃ¼r Pyrokar, das Auge Innos rauszurÃ¼cken.
 // ----------------------------------------------------------------------------------
 
 instance ItWr_PermissionToWearInnosEye_MIS(C_Item)
 {
-	name						= "Ermächtigungsschreiben";
+	name						= "Letter of Authorization";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -129,7 +129,7 @@ instance ItWr_PermissionToWearInnosEye_MIS(C_Item)
 
 	value						= 0;
 
-	description					= "Ermächtigungsschreiben für Pyrokar";
+	description					= "Letter of authorization for Pyrokar.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -138,12 +138,12 @@ instance ItWr_PermissionToWearInnosEye_MIS(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string PermissionToWearInnosEye_1 = "Dem Überbringer dieses Schreiben ist Einlass in die heiligen Hallen des Klosters zu gewähren.";
-const string PermissionToWearInnosEye_2 = "Seinen Wünschen, hinsichtlich der Inbesitznahme des Auges Innos ist unverzüglich nachzukommen";
-const string PermissionToWearInnosEye_3 = "Diese Anweisungen sind durch Kraft meines Amtes, als Generalbevollmächtigter der Insel und des Königs, sowie durch den Beschluss über die Zweiteilung der Kirche Innos, aus dem Jahre 2 des Feuers, als berechtigt zur Kenntnis zu nehmen.";
-const string PermissionToWearInnosEye_4 = "Ich werde hierzu keine weiteren Erklärungen abgeben und erwarte, dass meinen Anordnungen Folge geleistet wird.";
-const string PermissionToWearInnosEye_5 = "Innos schütze den König";
-const string PermissionToWearInnosEye_6 = "     Lord Hagen";
+const string PermissionToWearInnosEye_1 = "The bearer of this note is to be granted entry into the sacred halls of the monastery.";
+const string PermissionToWearInnosEye_2 = "His wishes regarding the possession of the Eye of Innos are to be fulfilled immediately.";
+const string PermissionToWearInnosEye_3 = "These orders are to be regarded as valid through the strength of my position as lord of the island and representative of the King, as well as through the treaty of the division of the Church of Innos in year 2 of the Fire.";
+const string PermissionToWearInnosEye_4 = "I will make no further statements to this end and expect my instructions to be abided by.";
+const string PermissionToWearInnosEye_5 = "Innos bless the King.";
+const string PermissionToWearInnosEye_6 = " Lord Hagen";
 func void Use_PermissionToWearInnosEye()
 {
 	var int nDocID;
@@ -173,7 +173,7 @@ func void Use_PermissionToWearInnosEye()
 
 instance ItWr_XardasBookForPyrokar_Mis(C_ITEM)
 {
-	name						= "Die Hallen von Irdorath";
+	name						= "The Halls of Irdorath";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -203,12 +203,12 @@ func void Use_XardasBookForPyrokar()
 };
 
 //**********************************************************************************
-//	ItKe_CHEST_SEKOB_XARDASBOOK_MIS Xardas Schlüssel für die Truhe auf Sekobs Hof
+//	ItKe_CHEST_SEKOB_XARDASBOOK_MIS Xardas SchlÃ¼ssel fÃ¼r die Truhe auf Sekobs Hof
 //**********************************************************************************
 
 instance ItKe_CHEST_SEKOB_XARDASBOOK_MIS(C_Item)
 {
-	name						= "Xardas Schlüssel";
+	name						= "Xardas' key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -219,7 +219,7 @@ instance ItKe_CHEST_SEKOB_XARDASBOOK_MIS(C_Item)
 	value						= Value_Key_02;
 
 	description					= name;
-	text[0]						= "für die Truhe auf Sekobs Bauernhof";			count[0] = 0;
+	text[0]						= "for the chest on Sekob's farm.";			count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
@@ -233,7 +233,7 @@ instance ItKe_CHEST_SEKOB_XARDASBOOK_MIS(C_Item)
 
 instance ItWr_CorneliusTagebuch_Mis(C_ITEM)
 {
-	name						= "Tagebuch";
+	name						= "Diary";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -247,7 +247,7 @@ instance ItWr_CorneliusTagebuch_Mis(C_ITEM)
 	value						= 0;
 
 	description					= name;
-	text[0]						= "Das Tagebuch von Cornelius";					count[0] = 0;
+	text[0]						= "The diary of Cornelius.";					count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
@@ -255,11 +255,11 @@ instance ItWr_CorneliusTagebuch_Mis(C_ITEM)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string CorneliusTagebuch_1 = "Wenn Larius so weitermacht, werde ich mich nach einer anderen Stelle umsehen.";
-const string CorneliusTagebuch_2 = "Heute Nacht ist mir etwas seltsames passiert. Einer dieser Männer in den schwarzen Kapuzenmänteln, von denen man immer hört, hat mich in meinem Haus aufgesucht. Ich war gar nicht aufgeregt, obwohl man sich nur Schreckliches von ihnen erzählt. Die Macht, die diese Männer ausstrahlen war fast körperlich zu spüren. Die Stimme dagegen, war sehr ruhig und vertrauenserweckend.";
-const string CorneliusTagebuch_3 = "Er hat mir 20000 Goldstücke geboten, wenn ich dafür sorge, dass einer der Söldner verurteilt wird. Ich würde schon merken, wenn es soweit ist.";
-const string CorneliusTagebuch_4 = "Ich habe natürlich sofort zugestimmt, die Söldner haben es eh verdient. Wenn sie nicht gekommen wären, würde hier alles zu meiner Zufriedenheit verlaufen. Die Goldstücke werden mir einen ruhigen Lebensabend garantieren.";
-const string CorneliusTagebuch_5 = "Es ist soweit, sie haben einer dieser Söldner geschnappt. Es sollte ein Kinderspiel sein, mein Wort zu halten.";
+const string CorneliusTagebuch_1 = "If Larius keeps on like that, I'm going to look out for another position.";
+const string CorneliusTagebuch_2 = "Something strange happened to me last night. I was visited in my home by one of those guys in black hoods we hear so much about lately. I wasn't really nervous, even though they're supposed to be so evil. You could almost feel the power those men have. But the voice was calm and kind of made you want to trust the guy.";
+const string CorneliusTagebuch_3 = "He offered me 20,000 pieces of gold to make sure one of the mercenary's gets convicted. He said I'd know what he meant when it happened.";
+const string CorneliusTagebuch_4 = "Of course I agreed right away, those mercenaries don't deserve any better anyway. If it weren't for them everything would be just fine for me here. And the gold will let me settle down to a comfortable retirement.";
+const string CorneliusTagebuch_5 = "It's happened, they've arrested one of those mercenaries. It should be easy to keep my word.";
 func void UseCorneliusTagebuch()
 {
 	Cornelius_IsLiar = TRUE;
@@ -293,12 +293,12 @@ func void UseCorneliusTagebuch()
 };
 
 //**********************************************************************************
-//	ITWR_DementorObsessionBook_MIS // Joly: DementorBuch, der Bessenheit, Ein NSC trägt dieses Buch mit sich, wenn er von einem Dementor kurzzeitig übernommen wurde.)
+//	ITWR_DementorObsessionBook_MIS // Joly: DementorBuch, der Bessenheit, Ein NSC trÃ¤gt dieses Buch mit sich, wenn er von einem Dementor kurzzeitig Ã¼bernommen wurde.)
 //**********************************************************************************
 
 instance ITWR_DementorObsessionBook_MIS(C_ITEM)
 {
-	name						= "Almanach der Bessenen";
+	name						= "Almanac of the Possessed";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -323,16 +323,16 @@ instance ITWR_DementorObsessionBook_MIS(C_ITEM)
 const string DementorObsessionBook_1 = "edef Kon dirandorix";
 const string DementorObsessionBook_2 = "in Sparady bell ";
 const string DementorObsessionBook_3 = "el utoy";
-const string DementorObsessionBook_4 = " Kho ray xaondron";
+const string DementorObsessionBook_4 = "Kho ray xaondron";
 const string DementorObsessionBook_5 = "em piratoram endro";
-const string DementorObsessionBook_6 = "          VINO";
+const string DementorObsessionBook_6 = " VINO";
 const string DementorObsessionBook_7 = "FERNANDO";
-const string DementorObsessionBook_8 = "     MALAK";
+const string DementorObsessionBook_8 = " MALAK";
 const string DementorObsessionBook_9 = "BROMOR";
-const string DementorObsessionBook_10 = "          ENGROM";
-const string DementorObsessionBook_11 = "     RANDOLPH";
-const string DementorObsessionBook_12 = "          SEKOB";
-const string DementorObsessionBook_13 = "     BRUTUS";
+const string DementorObsessionBook_10 = " ENGROM";
+const string DementorObsessionBook_11 = " RANDOLPH";
+const string DementorObsessionBook_12 = "SEKOB";
+const string DementorObsessionBook_13 = " BRUTUS";
 func void Use_DementorObsessionBook()
 {
 	Wld_PlayEffect("spellFX_Fear", hero, hero, 0, 0, 0, FALSE);
@@ -369,7 +369,7 @@ func void Use_DementorObsessionBook()
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLines	(nDocID, 0, DementorObsessionBook_5);
 		// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
@@ -416,7 +416,7 @@ func void Use_DementorObsessionBook()
 
 instance ItWr_PyrokarsObsessionList(C_Item)
 {
-	name						= "Pyrokars magischer Brief";
+	name						= "Pyrokar's Magic Letter";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -438,7 +438,7 @@ instance ItWr_PyrokarsObsessionList(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string PyrokarsObsessionList_1 = "Die Besessenen";
+const string PyrokarsObsessionList_1 = "The Possessed";
 const string PyrokarsObsessionList_2 = "FERNANDO";
 const string PyrokarsObsessionList_3 = "VINO";
 const string PyrokarsObsessionList_4 = "MALAK";
@@ -496,7 +496,7 @@ func void Use_PyrokarsObsessionList()
 };
 
 /******************************************************************************************/
-//	Heiltrank für Hilda //
+//	Heiltrank fÃ¼r Hilda //
 /******************************************************************************************/
 instance ItPo_HealHilda_MIS(C_Item)
 {
@@ -516,7 +516,7 @@ instance ItPo_HealHilda_MIS(C_Item)
 
 	value						= Value_HpEssenz;
 
-	description					= "Heilung des schwarzen Fiebers";
+	description					= "Healing of the Black Fever";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Bonus_HP;								count[1] = HP_Essenz;
 	text[2]						= "";											count[2] = 0;
@@ -535,7 +535,7 @@ func void Use_HealHilda()
 // *****************************************************
 instance ItMw_MalethsGehstock_MIS(C_Item)
 {
-	name						= "Gehstock";
+	name						= "Walking Stick";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_AXE;
@@ -553,8 +553,8 @@ instance ItMw_MalethsGehstock_MIS(C_Item)
 	value						= Value_VLKMace;
 
 	description					= name;
-	text[0]						= "An seinem Kopfende";							count[0] = 0;
-	text[1]						= "ist der Buchstabe `M` eingeschnitzt";		count[1] = 0;
+	text[0]						= "The letter 'M' has been";							count[0] = 0;
+	text[1]						= "engraved at the top.";		count[1] = 0;
 	text[2]						= NAME_Damage;									count[2] = damageTotal;
 	text[3]						= NAME_Str_needed;								count[3] = cond_value[2];
 	text[4]						= NAME_OneHanded;								count[4] = 0;
@@ -567,7 +567,7 @@ instance ItMw_MalethsGehstock_MIS(C_Item)
 
 instance ItMi_MalethsBanditGold(C_Item)
 {
-	name						= "Ein Beutel voll Gold!";
+	name						= "A bag full of gold!";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= 0;
@@ -595,12 +595,12 @@ func void Use_MalethsBanditGold()
 };
 
 // *****************************************************
-// 		MoleratFett für "die Winde klemmt"
+// 		MoleratFett fÃ¼r "die Winde klemmt"
 // *****************************************************
 
 instance ItMi_Moleratlubric_MIS(C_Item)
 {
-	name						= "Moleratfett";
+	name						= "Molerat Fat";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -624,7 +624,7 @@ instance ItMi_Moleratlubric_MIS(C_Item)
 
 instance ItWr_BabosLetter_MIS(C_Item)
 {
-	name						= "Brief an Babo";
+	name						= "Letter to Babo";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -637,7 +637,7 @@ instance ItWr_BabosLetter_MIS(C_Item)
 
 	value						= 0;
 
-	description					= "Brief an Babo.";
+	description					= "A letter to Babo.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -646,10 +646,10 @@ instance ItWr_BabosLetter_MIS(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string BabosLetter_1 = "Lieber Babo!";
-const string BabosLetter_2 = "Du wunderst dich bestimmt, wie wir dazu kommen dir diesen Brief zu schreiben. Wir haben alles Geld zusammengelegt und den Meister Marlas gebeten diese Zeilen hier zu schreiben. Also wir wünschen dir viel Glück auf deinem weiteren Weg und hoffen, dass du deine Freunde nicht vergisst. Als Abschiedsgeschenk haben wir die noch ein Bild eingepackt, damit du immer an uns denkst und dir die Nächte im Kloster nicht zu lang werden.";
-const string BabosLetter_3 = "Viel Erfolg im Kloster und viel Spass mit dem Bild.";
-const string BabosLetter_4 = "Feht und Bonka.";
+const string BabosLetter_1 = "Dear Babo,";
+const string BabosLetter_2 = "No doubt you're wondering how we came to write you this letter. We took all our savings to Master Marlas and asked him to write these lines for you. We wish you all the best for the future and are sending you a picture as a farewell gift, so that you'll always remember us during those long nights at the monastery.";
+const string BabosLetter_3 = "Good luck. Hope you like the picture.";
+const string BabosLetter_4 = "Feht and Bonka";
 func void Use_BabosLetter()
 {
 	var int nDocID;
@@ -675,7 +675,7 @@ func void Use_BabosLetter()
 
 instance ItWr_BabosPinUp_MIS(C_Item)
 {
-	name						= "Frauenzeichnung";
+	name						= "Picture of Woman";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -688,7 +688,7 @@ instance ItWr_BabosPinUp_MIS(C_Item)
 
 	value						= 0;
 
-	description					= "Ein Bild von einer nackten Frau";
+	description					= "A picture of a nude woman.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -712,7 +712,7 @@ func void Use_BabosPinUp()
 
 instance ItWr_BabosDocs_MIS(C_Item)
 {
-	name						= "Ein Bündel Papiere";
+	name						= "Bundle of Papers";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -728,8 +728,8 @@ instance ItWr_BabosDocs_MIS(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Mehrere zusammengerollte";					count[2] = 0;
-	text[3]						= "Dokumente";									count[3] = 0;
+	text[2]						= "Several documents rolled";					count[2] = 0;
+	text[3]						= "together.";									count[3] = 0;
 };
 
 func void Use_BabosDocs()
@@ -741,12 +741,12 @@ func void Use_BabosDocs()
 };
 
 //*************************************************************
-//	igaraz Schlüssel
+//	igaraz SchlÃ¼ssel
 //*************************************************************
 
 instance ItKe_IgarazChest_Mis(C_Item)
 {
-	name						= "Truhenschlüssel";
+	name						= "Chest Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -759,8 +759,8 @@ instance ItKe_IgarazChest_Mis(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel für";							count[2] = 0;
-	text[3]						= "die Truhe von Igaraz";						count[3] = 0;
+	text[2]						= "The key to a chest";							count[2] = 0;
+	text[3]						= "belonging to Igaraz.";						count[3] = 0;
 };
 
 //**********************************************************************************
@@ -769,7 +769,7 @@ instance ItKe_IgarazChest_Mis(C_Item)
 
 instance ItWr_Astronomy_Mis(C_ITEM)
 {
-	name						= "Die göttliche Kraft der Gestirne";
+	name						= "The Divine Power of the Stars";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -793,10 +793,10 @@ instance ItWr_Astronomy_Mis(C_ITEM)
 
 var int Astronomy_once;
 
-const string Astronomy_1 = "...wenn nun aber die Kraft des Ochsen sich vereinigt mit den Prinzipien des Kriegers, so seien alle gewarnt vor den Ereignissen, die da kommen mögen.";
-const string Astronomy_2 = "Die unbändige Kraft des Ochsen und die Zielstrebigkeit des Kriegers ist in der Lage das Uralte Gleichgewicht der Mächte zu erschüttern. Die kosmische Grenze zwischen den Dimension wird schwächer, so schwach, dass die Schattenkreaturen Beliars auf ein leichtes in unsere Welt überwechseln können. ";
-const string Astronomy_3 = "Was so etwas bedeutet, zeigen uns die Kriege der vorderen Zeit, als das Band zwischen den Welten noch stärker war. Die Schergen des Bösen brachten Tod und Zerstörung über die Welt und nur mit der Hilfe Innos und seines Erwählten war es den Menschen möglich das Unheil zu besiegen. ";
-const string Astronomy_4 = "Wenn es jemals wieder soweit kommen mag, dann mag Innos uns schützen, denn einen Erwählten Innos hat es schon seit über hundert Jehren nicht mehr gegeben.";
+const string Astronomy_1 = "... but when the strength of an ox is combined with the principles of a warrior, then beware of the events that may come to pass.";
+const string Astronomy_2 = "The unbound strength of the ox and the perseverance of the warrior can topple the ancient balance of the powers. The cosmic boundary between the dimensions grows weak - so weak that it becomes easy for the shadow creatures of Beliar to enter our world.";
+const string Astronomy_3 = "What would ensue from this is shown to us by the wars of ancient times, when the link between the worlds was still strong. The henchmen of Evil brought death and destruction to the world, and only the help of Innos and the Chosen One could ward off Evil from mankind.";
+const string Astronomy_4 = "If such a threat should ever exist again, then may Innos protect us, for there has not been another Chosen of Innos for over a hundred years.";
 func void Use_Astronomy()
 {
 	if (Astronomy_once == FALSE)
@@ -853,7 +853,7 @@ instance ItPo_HealObsession_MIS(C_Item)
 
 	value						= Value_HpEssenz;
 
-	description					= "Heilung der Besessenheit";
+	description					= "Healing of Possession";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Bonus_HP;								count[1] = HP_Essenz;
 	text[2]						= "";											count[2] = 0;
@@ -877,7 +877,7 @@ func void Use_HealObsession()
 
 instance ItSe_Golemchest_Mis(C_Item)
 {
-	name						= "Lederbeutel";
+	name						= "Leather Satchel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -890,10 +890,10 @@ instance ItSe_Golemchest_Mis(C_Item)
 
 	value						= 0;
 
-	description					= "Ein Lederbeutel";
+	description					= "A leather bag.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Beutel ist voller Münzen";				count[2] = 0;
+	text[2]						= "The bag is full of coins.";				count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -916,7 +916,7 @@ func void Use_GolemChest()
 
 instance ItWr_ShatteredGolem_MIS(C_Item)
 {
-	name						= "sehr alte Karte"; //
+	name						= "A very old map."; //
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -960,7 +960,7 @@ func void Use_ShatteredGolem_Mis()
 
 instance ItWr_DiegosLetter_MIS(C_Item)
 {
-	name						= "Brief von Diego";
+	name						= "Letter from Diego";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -973,7 +973,7 @@ instance ItWr_DiegosLetter_MIS(C_Item)
 
 	value						= 0;
 
-	description					= "Diegos Brief an Gerbrandt.";
+	description					= "Diego's letter to Gerbrandt.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -983,11 +983,11 @@ instance ItWr_DiegosLetter_MIS(C_Item)
 };
 
 const string DiegosLetter_Mis_1 = "Gerbrandt, ";
-const string DiegosLetter_Mis_2 = "du hättest mich lieber töten sollen. ";
-const string DiegosLetter_Mis_3 = "Ich bin wieder in der Stadt und auf dem Weg zu dir. Wenn ich dich finde, werde ich dir deinen fetten Wanst aufschneiden. Du kennst mich lange genug um zu wissen, dass ich mich nicht ungestraft reinlegen lasse.";
-const string DiegosLetter_Mis_4 = "Als du mich damals hast in die Barriere werfen lassen, hast du sicherlich geglaubt mich für immer los zu sein. Du hast dich geirrt. ";
-const string DiegosLetter_Mis_5 = "Ich bin bekommen mir das zu holen, was mir zusteht. ";
-const string DiegosLetter_Mis_6 = "Deine einzige Chance am leben zu bleiben ist, dich aus deinem Haus zu verpissen und mir deine Geschäfte zu überlassen. Dann sind wir quitt.";
+const string DiegosLetter_Mis_2 = "You know, you should have killed me.";
+const string DiegosLetter_Mis_3 = "I'm back in town and looking for you. And when I find you, I'm gonna slice you like a pudding. You've known me long enough to be sure I won't be fooled lightly.";
+const string DiegosLetter_Mis_4 = "I guess when you had me thrown in the Barrier, you never dreamed I might come back. Well, you were wrong.";
+const string DiegosLetter_Mis_5 = "I've come for what's owed to me.";
+const string DiegosLetter_Mis_6 = "Your only chance to stay alive is to beat it fast and leave your business to me. That'd make us quits.";
 const string DiegosLetter_Mis_7 = "Diego";
 func void Use_DiegosLetter_Mis()
 {
@@ -1015,7 +1015,7 @@ func void Use_DiegosLetter_Mis()
 
 instance ItSe_DiegosTreasure_Mis(C_Item)
 {
-	name						= "Prallgefüllter Lederbeutel";
+	name						= "Full Leather Satchel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -1028,7 +1028,7 @@ instance ItSe_DiegosTreasure_Mis(C_Item)
 
 	value						= 0;
 
-	description					= "Diegos alter Lederbeutel";
+	description					= "Diego's old leather bag.";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -1050,7 +1050,7 @@ func void Use_DiegosTreasure()
 
 instance ItMi_UltharsHolyWater_Mis(C_Item)
 {
-	name						= "Ulthars heiliges Wasser";
+	name						= "Ulthar's Holy Water";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -1075,7 +1075,7 @@ instance ItMi_UltharsHolyWater_Mis(C_Item)
 var int ItWr_MinenAnteil_Mis_OneTime;
 instance ItWr_MinenAnteil_Mis(C_Item)
 {
-	name						= "Erzminenanteil Khorinis";
+	name						= "Khorinis Ore Mine Share";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -1097,15 +1097,15 @@ instance ItWr_MinenAnteil_Mis(C_Item)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string MinenAnteil_Mis_1 = "Erzminenanteil";
-const string MinenAnteil_Mis_2 = "Dem Eigentümer dieses Schreibens ist es, gemäss des königlichen Erlassess zur Gewinnung von Vermögen aus Reichsgrund, erlaubt, sich als Prospektor auf königlichem Grund und Boden zu verdingen.";
-const string MinenAnteil_Mis_3 = "Seine Schürftätigkeiten haben sich auf das Gebiet einer königlichen Reichskleinparzelle zu beschränken.";
-const string MinenAnteil_Mis_4 = "Reichskleinparzellen sind durch den Erlass zur Größe von Schürfgrund auf eine Fläche von 16 Rechtschritt, in der flächigen, und nicht mehr als 3 Schritt in der steigenden Ausdehnung definiert.";
-const string MinenAnteil_Mis_5 = "Der Reichsprospektor ist von allen Pflichten bezüglich des freien Zugangs und des Schutzes der Schürfparzellen befreit.";
-const string MinenAnteil_Mis_6 = "Ist es dem Pächter nicht möglich die fälligen Abgaben fristengerecht zu entgelten, fallen alle Rechte an Grund und Boden zurück an das Reich.";
-const string MinenAnteil_Mis_7 = "     gezeichnet";
-const string MinenAnteil_Mis_8 = "     königlicher Prospektor";
-const string MinenAnteil_Mis_9 = "          Salandril";
+const string MinenAnteil_Mis_1 = "Ore Mine Share";
+const string MinenAnteil_Mis_2 = "By the King's Bill of Property gained from Royal Lands, the bearer of this document is granted prospecting rights on the King's land.";
+const string MinenAnteil_Mis_3 = "He must limit his scraping to the area of one small royal realmlot.";
+const string MinenAnteil_Mis_4 = "According to the Bill of Scrapeland Size, small royal realmlots measure 16 paces in horizontal and 3 paces in vertical extension.";
+const string MinenAnteil_Mis_5 = "The Prospector of the Realm is unbound by any duties of free access and protection of scraping cells.";
+const string MinenAnteil_Mis_6 = "If the tenant is unable to pay the rent due, all rights to the land are returned to the Realm.";
+const string MinenAnteil_Mis_7 = " Signed";
+const string MinenAnteil_Mis_8 = " Prospector of the King";
+const string MinenAnteil_Mis_9 = " Salandril";
 func void Use_MinenAnteil_Mis()
 {
 	var int nDocID;
@@ -1150,7 +1150,7 @@ func void Use_MinenAnteil_Mis()
 
 instance ItAm_Prot_BlackEye_Mis(C_Item)
 {
-	name						= "Seelenruf-Amulett";
+	name						= "Soul Summoning Amulet";
 
 	mainflag					= ITEM_KAT_MAGIC;
 	flags						= ITEM_AMULET | ITEM_MISSION;
@@ -1168,19 +1168,19 @@ instance ItAm_Prot_BlackEye_Mis(C_Item)
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Schützt vor dem Schwarzen Blick";			count[3] = 0;
+	text[3]						= "Protection from the Black Look";			count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 	INV_ZBIAS					= INVCAM_ENTF_AMULETTE_STANDARD;
 };
 
 //**********************************************************************************
-//	Gestein aus gesegneter Erde für das Schutzamulett gegen den Schwarzen Blick
+//	Gestein aus gesegneter Erde fÃ¼r das Schutzamulett gegen den Schwarzen Blick
 //**********************************************************************************
 
 instance ItMi_KarrasBlessedStone_Mis(C_Item)
 {
-	name						= "Gestein aus gesegneter Erde";
+	name						= "Stone from Blessed Soil";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -1201,12 +1201,12 @@ instance ItMi_KarrasBlessedStone_Mis(C_Item)
 };
 
 //**********************************************************************************
-//	Komprobrief für Lee
+//	Komprobrief fÃ¼r Lee
 // ----------------------------------------------------------------------------------
 
 instance ItWr_RichterKomproBrief_MIS(C_Item)
 {
-	name						= "Auftrag des Richters";
+	name						= "Judge's Assignment";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -1228,13 +1228,13 @@ instance ItWr_RichterKomproBrief_MIS(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string RichterKomproBrief_1 = "Morgahard, du Nichtsnutz! Führe meinen Befehl endlich aus, sonst werde ich andere Seiten aufziehen und ihr werdet allesamt verhaftet.";
-const string RichterKomproBrief_2 = "Die Sache steigt morgen Nacht. Larius wird schon misstrauisch. ";
-const string RichterKomproBrief_3 = "Wenn wir ihm das Geld nicht jetzt aus der Tasche ziehen, gibt es vielleicht nicht noch eine Gelegenheit dazu. Ich werde dafür sorgen, dass ihr ihn heute abend auf dem Marktplatz antreffen werdet. ";
-const string RichterKomproBrief_4 = "Macht aber kein Aufsehen, sonst wird euch die Miliz niederprügeln, bevor ihr noch wisst, was los ist.";
-const string RichterKomproBrief_5 = "Nur so nebenbei: Wenn er dabei umkommen sollte, habe ich auch nichts dagegen.";
-const string RichterKomproBrief_6 = "          Oberster Richter und ";
-const string RichterKomproBrief_7 = "          königlicher Sekretär";
+const string RichterKomproBrief_1 = "Morgahard, you good-for-nothing wretch. Carry out my orders, or I'll have to change my tune and arrest the lot of you.";
+const string RichterKomproBrief_2 = "It's gotta happen tomorrow night. Larius is getting suspicious.";
+const string RichterKomproBrief_3 = "If we don't drag the money out of his pockets now, it may be too late. I'll make sure you meet him on the marketplace this evening.";
+const string RichterKomproBrief_4 = "But don't make a show of it, or you'll have the militia down on you before you know what's happening.";
+const string RichterKomproBrief_5 = "By the way: If he happens to peg out in the process, that's fine by me.";
+const string RichterKomproBrief_6 = " Chief Judge and ";
+const string RichterKomproBrief_7 = " King's Secretary";
 func void Use_RichterKomproBrief()
 {
 	SCKnowsRichterKomproBrief = TRUE;
@@ -1266,7 +1266,7 @@ func void Use_RichterKomproBrief()
 
 instance ItWr_MorgahardTip(C_Item)
 {
-	name						= "Brief";
+	name						= "Letter";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -1288,10 +1288,10 @@ instance ItWr_MorgahardTip(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string MorgahardTip_1 = "Ich bin schon mal vorraus gegangen. Ich hoffe, wir werden uns alle in etwas ruhigeren Zeiten wieder sehen.";
-const string MorgahardTip_2 = "Keine Bange, Jungs. Wenn alle Stricke reißen, werde ich Onar bitten, die Sache für uns zu erledigen.";
-const string MorgahardTip_3 = "Es wird schon alles gut gehen.";
-const string MorgahardTip_4 = "     M.";
+const string MorgahardTip_1 = "I've gone on ahead. I hope we'll all meet again when things have calmed down a mite.";
+const string MorgahardTip_2 = "Don't worry, boys. If all else fails, I'll ask Onar to see to it for us.";
+const string MorgahardTip_3 = "It'll be all right.";
+const string MorgahardTip_4 = " M.";
 func void Use_MorgahardTip()
 {
 	var int nDocID;
@@ -1322,7 +1322,7 @@ func void Use_MorgahardTip()
 
 instance ItWr_Map_Shrine_MIS(C_Item)
 {
-	name						= "Karte der heiligen Schreine"; //
+	name						= "Map of the Holy Shrines"; //
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -1366,7 +1366,7 @@ func void Use_Map_NewWorld_Shrine_MIS()
 
 instance ItWr_VinosKellergeister_Mis(C_ITEM)
 {
-	name						= "Der Geist des Weines";
+	name						= "The Spirit of the Wine";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -1388,11 +1388,11 @@ instance ItWr_VinosKellergeister_Mis(C_ITEM)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string VinosKellergeister_Mis_1 = "Die Kraft der Traube";
-const string VinosKellergeister_Mis_2 = "...ich habe schon eine Menge ausprobiert, doch diese Frucht, die mir letzte Woche von Übersee geliefert wurde, übertrifft meine kühnsten Erwartungen...";
-const string VinosKellergeister_Mis_3 = "...der Saft dieser Traube ist so früchtig, wie keine andere, die man in diesem Teil des Landes finden kann...";
-const string VinosKellergeister_Mis_4 = "...so weit so gut. Ich kann aber immer noch nicht den Gedanken verdrängen, hier in meiner geheimen Schnapsbrennerei erwischt zu werden. Keine Ahnung, was die mit mir machen, wenn die Miliz mich hier entdeckt, ich fürchte, dann werde ich höchstwahrscheilich in die Barriere geworfen...";
-const string VinosKellergeister_Mis_5 = "...sie haben Verdacht geschöpft. Ich werde hier erst mal alles stehen und liegen lassen, bis sich die Wogen geglättet haben und werde meine Arbeit erst wieder aufnehmen, wenn ich mir sicher sein kann, dass sie mir nicht mehr folgen...";
+const string VinosKellergeister_Mis_1 = "Power of the Grape";
+const string VinosKellergeister_Mis_2 = "... I've tried a lot in my time, but this fruit that was brought to me from abroad last week has exceeded all expectations ...";
+const string VinosKellergeister_Mis_3 = "... the juice of this grape is fruitier than any you'll find in this part of the country ...";
+const string VinosKellergeister_Mis_4 = "... so far so good. But it still makes me nervous to think what might happen if I'm caught in my secret still. I've no idea what the militia will do to me if they find me here. They might even throw me through the Barrier ...";
+const string VinosKellergeister_Mis_5 = "... They've gotten suspicious. I'm going to go and leave all this until things have calmed down a bit and get back to work when I can be sure they're not onto me any more ...";
 func void Use_VinosKellergeister_Mis()
 {
 	var int nDocID;
@@ -1420,7 +1420,7 @@ func void Use_VinosKellergeister_Mis()
 				Doc_PrintLines	(nDocID, 0, "");
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");

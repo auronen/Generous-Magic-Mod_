@@ -80,10 +80,10 @@ func int DIA_Addon_Bill_Hello_Condition()
 
 func void DIA_Addon_Bill_Hello_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_Hello_15_00"); //Alles klar bei dir?
-	AI_Output(self, other, "DIA_Addon_Bill_Hello_03_01"); //Was ist los? Schickt Henry dich zu mir?
-	AI_Output(self, other, "DIA_Addon_Bill_Hello_03_02"); //Kannst ihm sagen, er bekommt seine Bretter sobald ich fertig bin.
-	AI_Output(self, other, "DIA_Addon_Bill_Hello_03_03"); //Wenn ihm das nicht passt, kann er sie auch gerne selber sägen.
+	AI_Output(other, self, "DIA_Addon_Bill_Hello_15_00"); //How are things going with you?
+	AI_Output(self, other, "DIA_Addon_Bill_Hello_03_01"); //What's up? Did Henry send you here?
+	AI_Output(self, other, "DIA_Addon_Bill_Hello_03_02"); //Tell him he'll get his planks as soon as I'm done.
+	AI_Output(self, other, "DIA_Addon_Bill_Hello_03_03"); //If he can't wait that long, he's welcome to saw them himself.
 
 	Npc_ExchangeRoutine(self, "START");
 };
@@ -97,7 +97,7 @@ instance DIA_Addon_Bill_Planks(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Bill_Planks_Condition;
 	information		= DIA_Addon_Bill_Planks_Info;
-	description		= "Was machst du mit den Brettern?";
+	description		= "What are all these planks for?";
 };
 
 func int DIA_Addon_Bill_Planks_Condition()
@@ -110,13 +110,13 @@ func int DIA_Addon_Bill_Planks_Condition()
 
 func void DIA_Addon_Bill_Planks_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_Planks_15_00"); //Was machst du mit den Brettern?
-	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_01"); //Die sind für die Palisade, du Depp!
-	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_02"); //Greg hielt es für 'ne gute Idee, unser Lager damit zu sichern.
-	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_03"); //Also, wenn du mich fragst, können wir uns die Arbeit sparen.
-	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_04"); //Falls die Banditen wirklich vorhaben uns anzugreifen, wird sie auch die lächerliche Palisade nicht aufhalten.
-	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_05"); //Wir hätten sie niemals in unserem Tal dulden dürfen.
-	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_06"); //Wenn ich das alles vorher gewusst hätte, dann wäre ich in Khorinis geblieben.
+	AI_Output(other, self, "DIA_Addon_Bill_Planks_15_00"); //What are all these planks for?
+	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_01"); //We use them for the palisade, you dimwit.
+	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_02"); //Greg thought it would be a good idea to secure our camp this way.
+	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_03"); //We can save ourselves the work, if you ask me.
+	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_04"); //If the bandits are really planning to attack us, this ridiculous palisade isn't going to stop them.
+	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_05"); //We should never have tolerated them in our valley in the first place.
+	AI_Output(self, other, "DIA_Addon_Bill_Planks_03_06"); //If I had known all this in advance, I'd have stayed in Khorinis.
 };
 
 // ************************************************************
@@ -130,7 +130,7 @@ instance DIA_Addon_Bill_Perm(C_INFO)
 	condition		= DIA_Addon_Bill_Perm_Condition;
 	information		= DIA_Addon_Bill_Perm_Info;
 	permanent		= TRUE;
-	description		= "Kann ich dir beim Sägen helfen?";
+	description		= "Can I help you saw?";
 };
 
 func int DIA_Addon_Bill_Perm_Condition()
@@ -144,11 +144,11 @@ func int DIA_Addon_Bill_Perm_Condition()
 
 func void DIA_Addon_Bill_Perm_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_Perm_15_00"); //Kann ich dir beim Sägen helfen?
-	AI_Output(self, other, "DIA_Addon_Bill_Perm_03_01"); //Lass nur, ich schaff' das schon.
+	AI_Output(other, self, "DIA_Addon_Bill_Perm_15_00"); //Can I help you saw?
+	AI_Output(self, other, "DIA_Addon_Bill_Perm_03_01"); //Nah, I can handle this by myself.
 	if (Bill_Perm_Once == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_Bill_Perm_03_02"); //Ich bin noch nicht so lange dabei, und wenn ich andere meine Arbeit machen lasse, komme ich hier nicht weit, verstehst du?
+		AI_Output(self, other, "DIA_Addon_Bill_Perm_03_02"); //I joined up here not long ago, and letting others do my work won't get me anywhere, if you get my drift.
 		Bill_Perm_Once = TRUE;
 	};
 };
@@ -163,7 +163,7 @@ instance DIA_Addon_Bill_Perm2(C_INFO)
 	condition		= DIA_Addon_Bill_Perm2_Condition;
 	information		= DIA_Addon_Bill_Perm2_Info;
 	permanent		= TRUE;
-	description		= "Was machst du jetzt?";
+	description		= "What are you doing now?";
 };
 
 func int DIA_Addon_Bill_Perm2_Condition()
@@ -176,12 +176,12 @@ func int DIA_Addon_Bill_Perm2_Condition()
 
 func void DIA_Addon_Bill_Perm2_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_Perm2_15_00"); //Was machst du jetzt?
-	AI_Output(self, other, "DIA_Addon_Bill_Perm2_03_01"); //Ich mach erst mal Pause.
+	AI_Output(other, self, "DIA_Addon_Bill_Perm2_15_00"); //What are you doing now?
+	AI_Output(self, other, "DIA_Addon_Bill_Perm2_03_01"); //I'm taking a break.
 	if (!Npc_IsDead(Francis))
 	{
-		AI_Output(self, other, "DIA_Addon_Bill_Perm2_03_02"); //(schadenfroh) Francis hat meinen alten Job gekriegt.
-		AI_Output(self, other, "DIA_Addon_Bill_Perm2_03_03"); //Von mir aus soll er Bretter sägen bis er schwarz wird.
+		AI_Output(self, other, "DIA_Addon_Bill_Perm2_03_02"); //(gloating) Francis got my old job.
+		AI_Output(self, other, "DIA_Addon_Bill_Perm2_03_03"); //Let him saw planks until his arms fall off.
 	};
 };
 
@@ -199,7 +199,7 @@ instance DIA_Addon_Bill_AngusnHank(C_INFO)
 	nr				= 11;
 	condition		= DIA_Addon_Bill_AngusnHank_Condition;
 	information		= DIA_Addon_Bill_AngusnHank_Info;
-	description		= "Ich suche Angus und Hank.";
+	description		= "I'm looking for Angus and Hank.";
 };
 
 func int DIA_Addon_Bill_AngusnHank_Condition()
@@ -213,13 +213,13 @@ func int DIA_Addon_Bill_AngusnHank_Condition()
 
 func void DIA_Addon_Bill_AngusnHank_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_AngusnHank_15_00"); //Ich suche Angus und Hank.
-	AI_Output(self, other, "DIA_Addon_Bill_AngusnHank_03_01"); //(seufzt) Ich habe keine Ahnung, wo sie sind - wahrscheinlich wurden sie von den Banditen erwischt.
-	AI_Output(other, self, "DIA_Addon_Bill_AngusnHank_15_02"); //Ihr wart doch befreundet, oder nicht?
-	AI_Output(self, other, "DIA_Addon_Bill_AngusnHank_03_03"); //Alles, was ich weiß ist, daß sie sich in einer Höhle hier in der Nähe mit den Banditen treffen wollten.
-	AI_Output(self, other, "DIA_Addon_Bill_AngusnHank_03_04"); //Sie muss irgendwo ausserhalb unseres Lagers im Osten sein.
-	AI_Output(self, other, "DIA_Addon_Bill_AngusnHank_03_05"); //Wo genau, weiß ich nicht. Ich bin selbst nie da gewesen.
-	AI_Output(self, other, "DIA_Addon_Bill_AngusnHank_03_06"); //Am besten du fragst Alligator Jack mal danach. Der treibt sich doch ständig vorm Lager herum.
+	AI_Output(other, self, "DIA_Addon_Bill_AngusnHank_15_00"); //I'm looking for Angus and Hank.
+	AI_Output(self, other, "DIA_Addon_Bill_AngusnHank_03_01"); //(sighs) I've no idea where they are - the bandits must have got them.
+	AI_Output(other, self, "DIA_Addon_Bill_AngusnHank_15_02"); //You were friends with them, weren't you?
+	AI_Output(self, other, "DIA_Addon_Bill_AngusnHank_03_03"); //All I know is that they were going to meet up with the bandits in a cave not far from here.
+	AI_Output(self, other, "DIA_Addon_Bill_AngusnHank_03_04"); //It must be somewhere outside of our camp, to the east. 
+	AI_Output(self, other, "DIA_Addon_Bill_AngusnHank_03_05"); //I don't know where exactly. I've never been there myself.
+	AI_Output(self, other, "DIA_Addon_Bill_AngusnHank_03_06"); //Maybe you should ask Alligator Jack about this. He's always roaming around outside the camp.
 
 	B_LogEntry(TOPIC_Addon_SkipsGrog, TOPIC_Addon_SkipsGrog_6);
 };
@@ -233,7 +233,7 @@ instance DIA_Addon_Bill_FoundFriends(C_INFO)
 	nr				= 12;
 	condition		= DIA_Addon_Bill_FoundFriends_Condition;
 	information		= DIA_Addon_Bill_FoundFriends_Info;
-	description		= "Ich habe deine Freunde gefunden.";
+	description		= "I found your friends.";
 };
 
 func int DIA_Addon_Bill_FoundFriends_Condition()
@@ -246,17 +246,17 @@ func int DIA_Addon_Bill_FoundFriends_Condition()
 
 func void DIA_Addon_Bill_FoundFriends_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_FoundFriends_15_00"); //Ich habe deine Freunde gefunden.
-	AI_Output(self, other, "DIA_Addon_Bill_FoundFriends_03_01"); //Und? Wo sind sie?
-	AI_Output(other, self, "DIA_Addon_Bill_FoundFriends_15_02"); //Sie sind tot.
-	AI_Output(self, other, "DIA_Addon_Bill_FoundFriends_03_03"); //(Hass) Das waren diese verfluchten Banditen!
+	AI_Output(other, self, "DIA_Addon_Bill_FoundFriends_15_00"); //I found your friends.
+	AI_Output(self, other, "DIA_Addon_Bill_FoundFriends_03_01"); //And? Where are they?
+	AI_Output(other, self, "DIA_Addon_Bill_FoundFriends_15_02"); //They're dead.
+	AI_Output(self, other, "DIA_Addon_Bill_FoundFriends_03_03"); //(hatefully) Those damned bandits did this!
 	if (SC_Knows_JuanMurderedAngus == FALSE)
 	{
-		AI_Output(other, self, "DIA_Addon_Bill_FoundFriends_15_06"); //Möglich.
+		AI_Output(other, self, "DIA_Addon_Bill_FoundFriends_15_06"); //It's possible.
 	};
 
-	AI_Output(self, other, "DIA_Addon_Bill_FoundFriends_03_04"); //Diese verdammten Mistkerle. Der Teufel soll sie holen.
-	AI_Output(self, other, "DIA_Addon_Bill_FoundFriends_03_05"); //(zu sich, Hass) Ich wüßte zu gerne den Namen des Kerls, der das getan hat...
+	AI_Output(self, other, "DIA_Addon_Bill_FoundFriends_03_04"); //Those cursed swine. May they roast in hell.
+	AI_Output(self, other, "DIA_Addon_Bill_FoundFriends_03_05"); //(to himself, hatefully) If only I knew the name of the lowlife who did this ...
 
 	MIS_Addon_Bill_SearchAngusMurder = LOG_RUNNING;
 
@@ -266,7 +266,7 @@ func void DIA_Addon_Bill_FoundFriends_Info()
 };
 
 // ------------------------------------------------------------
-// 						Ich kenne den Mörder
+// 						Ich kenne den MÃ¶rder
 // ------------------------------------------------------------
 instance DIA_Addon_Bill_JuanMurder(C_INFO)
 {
@@ -274,7 +274,7 @@ instance DIA_Addon_Bill_JuanMurder(C_INFO)
 	nr				= 13;
 	condition		= DIA_Addon_Bill_JuanMurder_Condition;
 	information		= DIA_Addon_Bill_JuanMurder_Info;
-	description		= "Ich kenne den Mörder von Angus und Hank.";
+	description		= "I know who murdered Angus and Hank.";
 };
 
 func int DIA_Addon_Bill_JuanMurder_Condition()
@@ -288,11 +288,11 @@ func int DIA_Addon_Bill_JuanMurder_Condition()
 
 func void DIA_Addon_Bill_JuanMurder_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_JuanMurder_15_00"); //Ich kenne den Mörder von Angus und Hank.
-	AI_Output(self, other, "DIA_Addon_Bill_JuanMurder_03_01"); //(aufgeregt) Wer? Wer war es?
-	AI_Output(other, self, "DIA_Addon_Bill_JuanMurder_15_02"); //Der Kerl heißt Juan und ist einer der Banditen.
-	AI_Output(self, other, "DIA_Addon_Bill_JuanMurder_03_03"); //Du musst das Schwein erledigen, hörst du?
-	AI_Output(self, other, "DIA_Addon_Bill_JuanMurder_03_04"); //Er darf nicht mit der Sache ungeschoren davonkommen!
+	AI_Output(other, self, "DIA_Addon_Bill_JuanMurder_15_00"); //I know who murdered Angus and Hank.
+	AI_Output(self, other, "DIA_Addon_Bill_JuanMurder_03_01"); //(excitedly) Who? Who did it?
+	AI_Output(other, self, "DIA_Addon_Bill_JuanMurder_15_02"); //His name is Juan, he's one of the bandits.
+	AI_Output(self, other, "DIA_Addon_Bill_JuanMurder_03_03"); //You've got to do that bastard in, do you hear me?
+	AI_Output(self, other, "DIA_Addon_Bill_JuanMurder_03_04"); //He must not get away with this.
 
 	B_LogEntry(TOPIC_Addon_KillJuan, TOPIC_Addon_KillJuan_4);
 };
@@ -306,7 +306,7 @@ instance DIA_Addon_Bill_KilledEsteban(C_INFO)
 	nr				= 14;
 	condition		= DIA_Addon_Bill_KilledEsteban_Condition;
 	information		= DIA_Addon_Bill_KilledEsteban_Info;
-	description		= "Juan ist erledigt.";
+	description		= "Juan is history.";
 };
 
 func int DIA_Addon_Bill_KilledEsteban_Condition()
@@ -320,10 +320,10 @@ func int DIA_Addon_Bill_KilledEsteban_Condition()
 
 func void DIA_Addon_Bill_KilledEsteban_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_KilledEsteban_15_00"); //Juan ist erledigt.
-	AI_Output(self, other, "DIA_Addon_Bill_KilledEsteban_03_01"); //(eifrig) Und? Hat er gelitten?
-	AI_Output(other, self, "DIA_Addon_Bill_KilledEsteban_15_02"); //Mach mal halblang.
-	AI_Output(self, other, "DIA_Addon_Bill_KilledEsteban_03_03"); //(seufzt) Schon gut. Hauptsache du hast das Schwein fertiggemacht.
+	AI_Output(other, self, "DIA_Addon_Bill_KilledEsteban_15_00"); //Juan is history.
+	AI_Output(self, other, "DIA_Addon_Bill_KilledEsteban_03_01"); //(eagerly) And? Did he suffer?
+	AI_Output(other, self, "DIA_Addon_Bill_KilledEsteban_15_02"); //Come off it, kid!
+	AI_Output(self, other, "DIA_Addon_Bill_KilledEsteban_03_03"); //(sighs) Oh well. Just as long as you killed the swine.
 
 	B_LogEntry(TOPIC_Addon_KillJuan, TOPIC_Addon_KillJuan_5);
 	MIS_Addon_Bill_SearchAngusMurder = LOG_SUCCESS;
@@ -344,7 +344,7 @@ instance DIA_Addon_Bill_Khorinis(C_INFO)
 	nr				= 21;
 	condition		= DIA_Addon_Bill_Khorinis_Condition;
 	information		= DIA_Addon_Bill_Khorinis_Info;
-	description		= "Du warst in Khorinis?";
+	description		= "You've been to Khorinis?";
 };
 
 func int DIA_Addon_Bill_Khorinis_Condition()
@@ -357,15 +357,15 @@ func int DIA_Addon_Bill_Khorinis_Condition()
 
 func void DIA_Addon_Bill_Khorinis_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_Khorinis_15_00"); //Du warst in Khorinis?
-	AI_Output(self, other, "DIA_Addon_Bill_Khorinis_03_01"); //Ja, ich hab mich da mit Taschendiebstählen und kleinen Gaunereien über Wasser gehalten.
-	AI_Output(self, other, "DIA_Addon_Bill_Khorinis_03_02"); //Aber als immer weniger Schiffe kamen, gingen die Geschäfte immer schlechter.
-	AI_Output(self, other, "DIA_Addon_Bill_Khorinis_03_03"); //Irgendwann hatte ich keine Lust mehr für eine paar Brotkrumen vor der Miliz wegzulaufen.
-	AI_Output(self, other, "DIA_Addon_Bill_Khorinis_03_04"); //Ich habe mich dann Greg angeschlossen. Jetzt sitze ich hier fest.
+	AI_Output(other, self, "DIA_Addon_Bill_Khorinis_15_00"); //You've been to Khorinis?
+	AI_Output(self, other, "DIA_Addon_Bill_Khorinis_03_01"); //Yes, I kept myself afloat there picking pockets and doing a little swindle or two.
+	AI_Output(self, other, "DIA_Addon_Bill_Khorinis_03_02"); //But when ever fewer ships came in, business got worse and worse.
+	AI_Output(self, other, "DIA_Addon_Bill_Khorinis_03_03"); //At some point, I got tired of being on the run from the militia for a few crusts of bread.
+	AI_Output(self, other, "DIA_Addon_Bill_Khorinis_03_04"); //That's when I joined Greg. Now I'm stuck here.
 
 	if (GregIsBAck == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_Bill_Khorinis_03_05"); //(seufzt) Den ganzen Tag am Sägen, um eine Palisade zu bauen, die sowieso keinem was bringt.
+		AI_Output(self, other, "DIA_Addon_Bill_Khorinis_03_05"); //(sighs) Sawing all day to build a palisade that's of no use to anyone.
 	};
 };
 
@@ -378,7 +378,7 @@ instance DIA_Addon_Bill_TeachPlayer(C_INFO)
 	nr				= 22;
 	condition		= DIA_Addon_Bill_TeachPlayer_Condition;
 	information		= DIA_Addon_Bill_TeachPlayer_Info;
-	description		= "Kannst du mir was beibringen?";
+	description		= "Can you teach me something?";
 };
 
 func int DIA_Addon_Bill_TeachPlayer_Condition()
@@ -391,9 +391,9 @@ func int DIA_Addon_Bill_TeachPlayer_Condition()
 
 func void DIA_Addon_Bill_TeachPlayer_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_TeachPlayer_15_00"); //Kannst du mir was beibringen?
-	AI_Output(self, other, "DIA_Addon_Bill_TeachPlayer_03_01"); //Nun, ich könnte dir zeigen, wie man anderer Leute Taschen plündert, ohne das sie etwas merken.
-	AI_Output(self, other, "DIA_Addon_Bill_TeachPlayer_03_02"); //Aber du solltest einigermassen geschickt sein, sonst kannst du's vergessen.
+	AI_Output(other, self, "DIA_Addon_Bill_TeachPlayer_15_00"); //Can you teach me something?
+	AI_Output(self, other, "DIA_Addon_Bill_TeachPlayer_03_01"); //Well, I could show you how to pick other people's pockets unnoticed.
+	AI_Output(self, other, "DIA_Addon_Bill_TeachPlayer_03_02"); //But you should be fairly dexterous, or you can just forget it.
 
 	Bill_Addon_TeachPickPocket = TRUE;
 };
@@ -408,7 +408,7 @@ instance DIA_Addon_Bill_LearnTalent(C_INFO)
 	condition		= DIA_Addon_Bill_LearnTalent_Condition;
 	information		= DIA_Addon_Bill_LearnTalent_Info;
 	permanent		= TRUE;
-	description		= "Zeig mir den Taschendiebstahl. (10 LP)";
+	description		= "Show me how to pick pockets. (10 LP)";
 };
 
 func int DIA_Addon_Bill_LearnTalent_Condition()
@@ -422,25 +422,25 @@ func int DIA_Addon_Bill_LearnTalent_Condition()
 
 func void DIA_Addon_Bill_LearnTalent_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bill_LearnTalent_15_00"); //Zeig mir den Taschendiebstahl.
+	AI_Output(other, self, "DIA_Addon_Bill_LearnTalent_15_00"); //Show me how to pick pockets.
 
-	if (other.attribute[ATR_DEXTERITY] >= 40) // braucht man für Francis
+	if (other.attribute[ATR_DEXTERITY] >= 40) // braucht man fÃ¼r Francis
 	{
 		if (B_TeachThiefTalent(self, other, NPC_TALENT_PICKPOCKET))
 		{
-			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_01"); //Wenn du jemanden beklauen möchtest, musst du dein Opfer in Sicherheit wiegen.
-			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_02"); //Ich habe die Leute immer angequatscht. Das funktioniert prächtig.
-			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_03"); //Wenn du zugreifst, dann sei dir sicher, dass dein Gegenüber nichts merkt.
+			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_01"); //First, you need to make your intended victim feel completely safe.
+			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_02"); //I used to walk up to people and chat to them. That worked like a charm.
+			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_03"); //Then you can take a snatch, but make sure they don't notice a thing.
 
-			AI_Output(other, self, "DIA_Addon_Bill_LearnTalent_15_05"); //Sonst noch was?
-			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_06"); //Ja, trainiere deine Geschicklichkeit. Je geschickter du bist, desto besser erkennst du eine gute Gelegenheit.
-			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_07"); //Und desto eher kannst du deinem Opfer seine Sachen abnehmen, ohne dabei ERWISCHT zu werden!
-			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_08"); //Das ist alles, zumindest in der Theorie.
+			AI_Output(other, self, "DIA_Addon_Bill_LearnTalent_15_05"); //Anything else?
+			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_06"); //Yes, keep training your dexterity. The more dexterous you are, the more chances you'll recognize.
+			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_07"); //And the sooner you can relieve your victim of his stuff without getting CAUGHT!
+			AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_08"); //That's all - in theory, at least.
 		};
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_09"); //Vergiß es! Du bist nicht geschickt genug!
-		AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_10"); //Du mußt entweder geschickter werden oder dir 'nen besseren Lehrer suchen.
+		AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_09"); //Forget it! You're not nimble enough!
+		AI_Output(self, other, "DIA_Addon_Bill_LearnTalent_03_10"); //You'll have to become more dexterous first, or find a better teacher.
 	};
 };

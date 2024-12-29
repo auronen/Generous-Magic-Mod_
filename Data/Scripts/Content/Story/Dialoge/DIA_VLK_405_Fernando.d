@@ -31,7 +31,7 @@ instance DIA_Fernando_PICKPOCKET(C_INFO)
 	condition		= DIA_Fernando_PICKPOCKET_Condition;
 	information		= DIA_Fernando_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre gewagt seinen Geldbeutel zu stehlen)";
+	description		= "(It would be risky to steal his purse.)";
 };
 
 func int DIA_Fernando_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Fernando_Hello(C_INFO)
 	nr				= 5;
 	condition		= DIA_Fernando_Hello_Condition;
 	information		= DIA_Fernando_Hello_Info;
-	description		= "Wie laufen die Geschäfte?";
+	description		= "How's business?";
 };
 
 func int DIA_Fernando_Hello_Condition()
@@ -97,11 +97,11 @@ func int DIA_Fernando_Hello_Condition()
 
 func void DIA_Fernando_Hello_Info()
 {
-	AI_Output(other, self, "DIA_Fernando_Hello_15_00"); //Wie laufen die Geschäfte?
-	AI_Output(self, other, "DIA_Fernando_Hello_14_01"); //Nicht gut. Früher, als die Barriere noch stand, da waren die Zeiten besser.
-	AI_Output(self, other, "DIA_Fernando_Hello_14_02"); //Die Gefangenen haben das Erz kistenweise aus den Minen geschürft und meine Schiffe haben es zum Festland transportiert.
-	AI_Output(self, other, "DIA_Fernando_Hello_14_03"); //Und auf dem Rückweg haben sie Nahrung und andere Waren mitgebracht
-	AI_Output(self, other, "DIA_Fernando_Hello_14_04"); //Aber jetzt, da wir vom Festland abgeschnitten sind, sind wir auf die Versorgung durch die Bauern angewiesen.
+	AI_Output(other, self, "DIA_Fernando_Hello_15_00"); //How's business?
+	AI_Output(self, other, "DIA_Fernando_Hello_14_01"); //Not so great. Back when the Barrier was still in place, times were better.
+	AI_Output(self, other, "DIA_Fernando_Hello_14_02"); //The prisoners would scrape boxes and boxes of ore from the mines, and my ships then brought it to the mainland.
+	AI_Output(self, other, "DIA_Fernando_Hello_14_03"); //And on their way back, they brought food and other wares.
+	AI_Output(self, other, "DIA_Fernando_Hello_14_04"); //But now we're cut off from the mainland and have to rely on the farmers for supplies.
 };
 
 //*********************************************************************
@@ -114,7 +114,7 @@ instance DIA_Fernando_Perm(C_INFO)
 	condition		= DIA_Fernando_Perm_Condition;
 	information		= DIA_Fernando_Perm_Info;
 	permanent		= TRUE;
-	description		= "Womit verdienst du jetzt dein Gold? ";
+	description		= "How do you make a living now?";
 };
 
 func int DIA_Fernando_Perm_Condition()
@@ -128,7 +128,7 @@ func int DIA_Fernando_Perm_Condition()
 
 func void DIA_Fernando_Perm_Info()
 {
-	AI_Output(other, self, "DIA_Fernando_Perm_15_00"); //Womit verdienst du jetzt dein Gold?
+	AI_Output(other, self, "DIA_Fernando_Perm_15_00"); //How do you make a living now?
 
 	if (Fernando_ImKnast == TRUE)
 	{
@@ -138,15 +138,15 @@ func void DIA_Fernando_Perm_Info()
 	{
 		if (Fernando_HatsZugegeben == TRUE)
 		{
-			AI_Output(self, other, "DIA_Addon_Fernando_Perm_14_00"); //Ich weiß es nicht. Auf jeden Fall lass ich mich auf keine krummen Geschäfte mehr ein. So viel ist sicher.
+			AI_Output(self, other, "DIA_Addon_Fernando_Perm_14_00"); //I don't know. But at any rate, no more shady dealings for me. That much is clear.
 		}
 		else if (Npc_KnowsInfo(other, DIA_Fernando_Success) == FALSE)
 		{
-			AI_Output(self, other, "DIA_Fernando_Perm_14_01"); //Momentan lebe ich von meinen Ersparnissen. Aber wenn es mir nicht gelingt, wieder ins Geschäft zu kommen, werden harte Zeiten auf mich zukommen.
+			AI_Output(self, other, "DIA_Fernando_Perm_14_01"); //Right now, I'm living off of my savings. But if I can't get back into business, times are going to get rough for me.
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Fernando_Perm_14_02"); //Ich bin ruiniert. Hätte ich nur auf meinen Vater gehört und wäre nie in das Erzgeschäft eingestiegen.
+			AI_Output(self, other, "DIA_Fernando_Perm_14_02"); //I am ruined. I should have listened to my father and kept out of this mining business.
 		};
 	};
 };
@@ -178,20 +178,20 @@ func int DIA_Fernando_Minental_Condition()
 
 func void DIA_Fernando_Minental_Info()
 {
-	AI_Output(self, other, "DIA_Fernando_Minental_14_00"); //Hey du - warte mal. Du willst dich doch auf den Weg ins Minental machen, richtig?
-	AI_Output(other, self, "DIA_Fernando_Minental_15_01"); //Und?
-	AI_Output(self, other, "DIA_Fernando_Minental_14_02"); //Ich schlage dir ein Geschäft vor. Du berichtest mir, wie es dort um das Erz steht und ich besorge dir dafür ...
+	AI_Output(self, other, "DIA_Fernando_Minental_14_00"); //Hey you - wait a minute. You are headed for the Valley of Mines, aren't you?
+	AI_Output(other, self, "DIA_Fernando_Minental_15_01"); //And?
+	AI_Output(self, other, "DIA_Fernando_Minental_14_02"); //Here's a bargain. You give me a report of what's going on with the ore, and for that I get you ...
 
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output(self, other, "DIA_Fernando_Minental_14_03"); //... einen Runenstein.
+		AI_Output(self, other, "DIA_Fernando_Minental_14_03"); //... a runestone.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Fernando_Minental_14_04"); //... einen Ring, der deine Lebenskraft stärkt.
+		AI_Output(self, other, "DIA_Fernando_Minental_14_04"); //... a ring that increases your life energy.
 	};
 
-	AI_Output(other, self, "DIA_Fernando_Minental_15_05"); //Ich werde sehen, was sich machen lässt.
+	AI_Output(other, self, "DIA_Fernando_Minental_15_05"); //I'll see what I can do.
 
 	B_NpcClearObsessionByDMT(self);
 	Npc_ExchangeRoutine(self, "START");
@@ -210,7 +210,7 @@ instance DIA_Addon_Fernando_BanditTrader(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Fernando_BanditTrader_Condition;
 	information		= DIA_Addon_Fernando_BanditTrader_Info;
-	description		= "Du hast Waffen an die Banditen gekauft.";
+	description		= "You've been selling weapons to the bandits.";
 };
 
 func int DIA_Addon_Fernando_BanditTrader_Condition()
@@ -229,8 +229,8 @@ func int DIA_Addon_Fernando_BanditTrader_Condition()
 
 func void DIA_Addon_Fernando_BanditTrader_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_00"); //Du hast Waffen an die Banditen verkauft.
-	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_01"); //(verdutzt) Aber. Wie kommst du denn auf SOWAS?
+	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_00"); //You've been selling weapons to the bandits.
+	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_01"); //(baffled) But - what makes you think THAT?
 
 	B_LogEntry(TOPIC_Addon_BanditTrader, TOPIC_Addon_BanditTrader_6);
 
@@ -239,90 +239,90 @@ func void DIA_Addon_Fernando_BanditTrader_Info()
 
 	if ((Npc_HasItems(other, ItWr_Addon_BanditTrader)) && (BanditTrader_Lieferung_Gelesen == TRUE))
 	{
-		AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_02"); //Diese Liste mit Waren, die ich einem Banditen abgenommen habe, trägt deine Unterschrift.
+		AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_02"); //This list of merchandise that I took from a bandit bears YOUR signature.
 	};
 
 	if (Npc_HasItems(other, ItRi_Addon_BanditTrader))
 	{
-		AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_03"); //Der Ring hier der Übersee-Händlergilde Araxos habe ich bei den Banditen gefunden und du bist ein Überseehändler.
+		AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_03"); //I found this ring of the overseas traders' guild Araxos with the bandits. You're an overseas trader.
 
 		if (Npc_HasItems(other, ItMw_Addon_BanditTrader))
 		{
-			AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_04"); //Und die Schwerter, die die Banditen bei sich hatten, tragen deine Initialen.
+			AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_04"); //And the swords which the bandits were carrying bore your initials.
 		};
 	}
 	else // nur (Npc_HasItems(other,ItMw_Addon_BanditTrader))
 	{
-		AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_05"); //Die Schwerter, die die Banditen bei sich hatten, tragen deine Initialen.
+		AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_05"); //The swords which the bandits were carrying bore your initials.
 	};
 
-	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_06"); //Du kannst es ruhig zugeben. Ich habe dich enttarnt.
+	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_06"); //You can admit it now. I've blown your cover.
 
 	if (Fernando_ImKnast == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_07"); //DU warst das also. DU hast mich verraten. Das werde ich dir heimzahlen.
-		AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_08"); //Dazu müsstest du hier erst mal raus kommen, aber ich glaube kaum, dass sie dich so bald wieder gehen lassen.
-		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_09"); //(verärgert, zu sich selbst) Meine Zeit wird noch kommen.
+		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_07"); //So YOU did this. YOU'RE the one who gave me away. I'm going to make you pay for this.
+		AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_15_08"); //You'd first have to get out of here, and I hardly think they're going to let you go any time soon.
+		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_09"); //(angrily, to himself) My time will come.
 		B_NpcClearObsessionByDMT(self);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_10"); //(flehend) Ich wollte das gar nicht, das musst du mir glauben.
-		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_11"); //(flehend) Am Anfang war es nur Proviant, was sie von mir wollten. Meine Geschäfte liefen nicht so gut, da habe ich mich darauf eingelassen.
-		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_12"); //(flehend) Später dann wurden sie immer aufdringlicher und drohten, mich umzubringen, wenn ich ihnen nicht die Schwerter liefern würde, die sie haben wollten.
-		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_13"); //(flehend) Du kannst mich nicht dafür verurteilen. Ich bin ein Opfer der Umstände.
+		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_10"); //(pleading) I didn't mean to do that, believe me.
+		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_11"); //(pleading) First, all they wanted from me was food supplies. Business was really slow, so I got involved with them.
+		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_12"); //(pleading) Then they became more aggressive and threatened to kill me if I didn't sell them the swords they wanted.
+		AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_14_13"); //(pleading) You can't blame me for this. I am a victim of circumstances.
 
 		if (Fernando_ImKnast == FALSE) // Joly:zur Sicherheit
 		{
 			Info_ClearChoices(DIA_Addon_Fernando_BanditTrader);
-			Info_AddChoice(DIA_Addon_Fernando_BanditTrader, "Was zahlst du, wenn ich dich laufen lasse.", DIA_Addon_Fernando_BanditTrader_preis);
-			Info_AddChoice(DIA_Addon_Fernando_BanditTrader, "Die Miliz wird sich mit dir befassen.", DIA_Addon_Fernando_BanditTrader_mil);
-			Info_AddChoice(DIA_Addon_Fernando_BanditTrader, "Mir kommen die Tränen.", DIA_Addon_Fernando_BanditTrader_Uptown);
+			Info_AddChoice(DIA_Addon_Fernando_BanditTrader, "What will you pay me if I let you go?", DIA_Addon_Fernando_BanditTrader_preis);
+			Info_AddChoice(DIA_Addon_Fernando_BanditTrader, "The militia is going to deal with you.", DIA_Addon_Fernando_BanditTrader_mil);
+			Info_AddChoice(DIA_Addon_Fernando_BanditTrader, "I'm shaking, I'm shaking.", DIA_Addon_Fernando_BanditTrader_Uptown);
 		};
 	};
 };
 
 func void DIA_Addon_Fernando_BanditTrader_Uptown()
 {
-	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_00"); //Mir kommen die Tränen. Aber für jemanden, der im oberen Viertel lebt, bist du ziemlich widerwärtig.
-	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_01"); //Für ein paar Goldstücke verkaufst du deine Seele.
-	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_Uptown_14_02"); //Ich habe meine Kosten zu decken. Wenn ich nicht flüssig bin, werfen sie mich dem Mob aus dem Hafenviertel zum Fraß vor.
+	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_00"); //Don't make me weep. You're pretty repulsive for someone who lives in the upper quarter.
+	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_01"); //You'd sell your soul for a fistful of gold pieces.
+	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_Uptown_14_02"); //I've got my expenses to cover. If I'm not liquid, they're going to feed me to the mob from the harbor district.
 };
 
 func void DIA_Addon_Fernando_BanditTrader_mil()
 {
-	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_00"); //Die Miliz wird sich mit dir befassen.
-	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_01"); //Das kannst du nicht machen.
-	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_02"); //Na, dann pass mal auf, wie ich das kann.
-	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_03"); //Bei Innos. Ich bin ruiniert.
+	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_00"); //The militia is going to deal with you.
+	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_01"); //You can't do this.
+	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_02"); //I should say I can. You'll be amazed.
+	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_03"); //By Innos. I'm ruined.
 	B_NpcClearObsessionByDMT(self);
 };
 
 func void DIA_Addon_Fernando_BanditTrader_preis()
 {
-	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_preis_15_00"); //Was zahlst du, wenn ich dich laufen lasse?
-	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_01"); //Du weißt doch, wie es um mich bestellt ist. Ich kann dir nicht viel geben.
-	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_02"); //Ich geb dir 200 Goldmünzen und einen wertvollen Ring.
-	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_03"); //Das muss dir reichen. Krieg ich jetzt das belastende Material von dir?
+	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_preis_15_00"); //What will you pay me if I let you go?
+	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_01"); //You know I'm not doing too well. I can't give you much.
+	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_02"); //I'll give you 200 gold coins and a valuable ring.
+	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_03"); //That will have to do. Will you give me the incriminating material now?
 
 	Info_ClearChoices(DIA_Addon_Fernando_BanditTrader);
-	Info_AddChoice(DIA_Addon_Fernando_BanditTrader, "Vergiss es. Das geb' ich nicht aus der Hand", DIA_Addon_Fernando_BanditTrader_nein);
-	Info_AddChoice(DIA_Addon_Fernando_BanditTrader, "Von mir aus. Abgemacht.", DIA_Addon_Fernando_BanditTrader_ja);
+	Info_AddChoice(DIA_Addon_Fernando_BanditTrader, "Forget it. I'm not going to give that away.", DIA_Addon_Fernando_BanditTrader_nein);
+	Info_AddChoice(DIA_Addon_Fernando_BanditTrader, "Well, all right. Agreed.", DIA_Addon_Fernando_BanditTrader_ja);
 };
 
 func void DIA_Addon_Fernando_BanditTrader_ja()
 {
-	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_ja_15_00"); //Von mir aus. Abgemacht.
+	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_ja_15_00"); //Well, all right. Agreed.
 	B_GivePlayerXP(XP_Ambient);
 	Npc_RemoveInvItems(hero, ItMw_Addon_BanditTrader, Npc_HasItems(other, ItMw_Addon_BanditTrader));
 	Npc_RemoveInvItem(hero, ItRi_Addon_BanditTrader);
 	Npc_RemoveInvItem(hero, ItWr_Addon_BanditTrader);
 
-	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_01"); //Gut, hier hast du das Gold.
+	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_01"); //Fine, here's your gold.
 
 	CreateInvItems(self, ItMi_Gold, 200);
 	B_GiveInvItems(self, other, ItMi_Gold, 200);
-	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_02"); //Und den Ring. Damit sind wir quitt.
+	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_02"); //And the ring. We're even now.
 	CreateInvItems(self, ItRi_Prot_Point_01, 1);
 	B_GiveInvItems(self, other, ItRi_Prot_Point_01, 1);
 	Info_ClearChoices(DIA_Addon_Fernando_BanditTrader);
@@ -330,8 +330,8 @@ func void DIA_Addon_Fernando_BanditTrader_ja()
 
 func void DIA_Addon_Fernando_BanditTrader_nein()
 {
-	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_nein_15_00"); //Nein. Das geb' ich nicht aus der Hand
-	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_nein_14_01"); //Na schön. Dann behalt es, aber wehe, du verrätst mich.
+	AI_Output(other, self, "DIA_Addon_Fernando_BanditTrader_nein_15_00"); //No. I think I'd rather keep it.
+	AI_Output(self, other, "DIA_Addon_Fernando_BanditTrader_nein_14_01"); //Fine. Keep it then, but woe betide you if you rat on me.
 	Info_ClearChoices(DIA_Addon_Fernando_BanditTrader);
 };
 
@@ -344,7 +344,7 @@ instance DIA_Fernando_Success(C_INFO)
 	nr				= 5;
 	condition		= DIA_Fernando_Success_Condition;
 	information		= DIA_Fernando_Success_Info;
-	description		= "Ich war im Minental.";
+	description		= "I've been to the Valley of Mines.";
 };
 
 func int DIA_Fernando_Success_Condition()
@@ -359,30 +359,30 @@ func int DIA_Fernando_Success_Condition()
 
 func void DIA_Fernando_Success_Info()
 {
-	AI_Output(other, self, "DIA_Fernando_Success_15_00"); //Ich war im Minental.
+	AI_Output(other, self, "DIA_Fernando_Success_15_00"); //I've been to the Valley of Mines.
 
 	if (Fernando_ImKnast == FALSE)
 	{
 		Fernando_Erz = TRUE;
 		B_GivePlayerXP(XP_Ambient);
 
-		AI_Output(self, other, "DIA_Fernando_Success_14_01"); //Und? Wie ist die Situation dort?
-		AI_Output(other, self, "DIA_Fernando_Success_15_02"); //Die Minen sind alle erschöpft, es gibt kaum mehr als ein paar Kisten voll Erz. Da lohnt sich der Abbau nicht mehr.
-		AI_Output(self, other, "DIA_Fernando_Success_14_03"); //Das darf nicht wahr sein. Dann bin ich ruiniert ...
+		AI_Output(self, other, "DIA_Fernando_Success_14_01"); //And? How is the situation there?
+		AI_Output(other, self, "DIA_Fernando_Success_15_02"); //The mines are all depleted, there's barely more than a few chests full of ore. It's hardly worth digging for that.
+		AI_Output(self, other, "DIA_Fernando_Success_14_03"); //That can't be true! That means I'm ruined ...
 
 		if (Fernando_HatsZugegeben == FALSE)
 		{
-			AI_Output(other, self, "DIA_Fernando_Success_15_04"); //Wie sieht's mit unserem Geschäft aus?
-			AI_Output(self, other, "DIA_Fernando_Success_14_05"); //Nun, was deine Belohnung angeht ...
+			AI_Output(other, self, "DIA_Fernando_Success_15_04"); //What about our deal?
+			AI_Output(self, other, "DIA_Fernando_Success_14_05"); //Now, about your reward ...
 
 			if (other.guild == GIL_KDF)
 			{
-				AI_Output(self, other, "DIA_Fernando_Minental_14_06"); //Hier, nimm diesen Runenstein.
+				AI_Output(self, other, "DIA_Fernando_Minental_14_06"); //Here, take this runestone.
 				B_GiveInvItems(self, other, ItmI_RuneBlank, 1);
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Fernando_Minental_14_07"); //Hier ist der Ring.
+				AI_Output(self, other, "DIA_Fernando_Minental_14_07"); //Here's your ring.
 				B_GiveInvItems(self, other, ItRi_Hp_02, 1);
 			};
 		};
@@ -404,7 +404,7 @@ instance DIA_Fernando_Obsession(C_INFO)
 	nr				= 30;
 	condition		= DIA_Fernando_Obsession_Condition;
 	information		= DIA_Fernando_Obsession_Info;
-	description		= "Geht´s dir gut?";
+	description		= "Are you all right?";
 };
 
 func int DIA_Fernando_Obsession_Condition()
@@ -432,7 +432,7 @@ instance DIA_Fernando_Heilung(C_INFO)
 	condition		= DIA_Fernando_Heilung_Condition;
 	information		= DIA_Fernando_Heilung_Info;
 	permanent		= TRUE;
-	description		= "Du bist besessen.";
+	description		= "You're possessed!";
 };
 
 func int DIA_Fernando_Heilung_Condition()
@@ -446,7 +446,7 @@ func int DIA_Fernando_Heilung_Condition()
 
 func void DIA_Fernando_Heilung_Info()
 {
-	AI_Output(other, self, "DIA_Fernando_Heilung_15_00"); //Du bist besessen.
-	AI_Output(self, other, "DIA_Fernando_Heilung_14_01"); //Geh weg. Jetzt geh doch schon.
+	AI_Output(other, self, "DIA_Fernando_Heilung_15_00"); //You're possessed!
+	AI_Output(self, other, "DIA_Fernando_Heilung_14_01"); //Go away. Go already.
 	B_NpcClearObsessionByDMT(self);
 };

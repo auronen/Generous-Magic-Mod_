@@ -81,7 +81,7 @@ func int DIA_Sarah_Greet_Condition()
 
 func void DIA_Sarah_Greet_Info()
 {
-	AI_Output(self, other, "DIA_Sarah_Add_16_07"); //Ah! Da bist du ja wieder!
+	AI_Output(self, other, "DIA_Sarah_Add_16_07"); //Ah! There you are again!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -93,7 +93,7 @@ instance DIA_Sarah_HALLO(C_INFO)
 	nr				= 0;
 	condition		= DIA_Sarah_HALLO_Condition;
 	information		= DIA_Sarah_HALLO_Info;
-	description		= "Wie läuft das Geschäft? ";
+	description		= "How's business?";
 };
 
 func int DIA_Sarah_HALLO_Condition()
@@ -103,11 +103,11 @@ func int DIA_Sarah_HALLO_Condition()
 
 func void DIA_Sarah_HALLO_Info()
 {
-	AI_Output(other, self, "DIA_Sarah_HALLO_15_00"); //Wie läuft das Geschäft?
-	AI_Output(self, other, "DIA_Sarah_HALLO_16_01"); //Als die Paladine kamen, dachte ich, das wäre eine gute Gelegenheit, Geschäfte zu machen.
-	AI_Output(self, other, "DIA_Sarah_HALLO_16_02"); //Aber sie lassen sich ihre Waffen von Harad herstellen, und weder Hakon noch ich verdienen auch nur ein Goldstück an ihnen.
-	AI_Output(self, other, "DIA_Sarah_HALLO_16_03"); //Dazu kommt noch, dass die Nahrungsversorgung durch die Bauern ausbleibt - und alles teurer geworden ist.
-	AI_Output(self, other, "DIA_Sarah_Add_16_00"); //Da ist es nur ein kleiner Trost, daß die Paladine meine Hotelrechnung bezahlen.
+	AI_Output(other, self, "DIA_Sarah_HALLO_15_00"); //How's business?
+	AI_Output(self, other, "DIA_Sarah_HALLO_16_01"); //When the paladins came, I first thought that was a good business opportunity.
+	AI_Output(self, other, "DIA_Sarah_HALLO_16_02"); //But they let Harad make their weapons, and neither Hakon nor I make even one gold piece off of them.
+	AI_Output(self, other, "DIA_Sarah_HALLO_16_03"); //Moreover, the farmers no longer supply us with food, and all the prices have gone up.
+	AI_Output(self, other, "DIA_Sarah_Add_16_00"); //It's only a small consolation that the paladins are paying my hotel bill.
 
 	Log_CreateTopic(Topic_CityTrader, LOG_NOTE);
 	B_LogEntry(Topic_CityTrader, Topic_CityTrader_2);
@@ -122,7 +122,7 @@ instance DIA_Sarah_Bauern(C_INFO)
 	nr				= 2;
 	condition		= DIA_Sarah_Bauern_Condition;
 	information		= DIA_Sarah_Bauern_Info;
-	description		= "Was ist das Problem mit den Bauern? ";
+	description		= "What's the problem with the farmers?";
 };
 
 func int DIA_Sarah_Bauern_Condition()
@@ -135,13 +135,13 @@ func int DIA_Sarah_Bauern_Condition()
 
 func void DIA_Sarah_Bauern_Info()
 {
-	AI_Output(other, self, "DIA_Sarah_Bauern_15_00"); //Was ist das Problem mit den Bauern?
-	AI_Output(self, other, "DIA_Sarah_Bauern_16_01"); //Sie weigern sich, ihre Erträge zu liefern.
-	AI_Output(self, other, "DIA_Sarah_Bauern_16_02"); //Jetzt, da keine Schiffe mehr anlegen, ist die Stadt natürlich auf die Versorgung durch die Bauern angewiesen.
-	AI_Output(self, other, "DIA_Sarah_Bauern_16_03"); //Und Onar, der größte Bauer, hat sich Söldner angeworben, die seinen Hof vor den Stadtwachen beschützen. Die würden sich die Waren sonst einfach holen.
-	AI_Output(self, other, "DIA_Sarah_Add_16_01"); //Aber die Söldner bewachen nicht nur den Hof von Onar.
-	AI_Output(self, other, "DIA_Sarah_Add_16_02"); //Sie kommen bis zu den kleinen Höfen in der Nähe der Stadt heran, um die Bauern dort einzuschüchtern.
-	AI_Output(self, other, "DIA_Sarah_Add_16_03"); //Als ich an Akils Hof vorbeigekommen bin, hab ich sie gesehen. Ich möchte jetzt nicht in seiner Haut stecken.
+	AI_Output(other, self, "DIA_Sarah_Bauern_15_00"); //What's the problem with the farmers?
+	AI_Output(self, other, "DIA_Sarah_Bauern_16_01"); //They refuse to deliver their goods.
+	AI_Output(self, other, "DIA_Sarah_Bauern_16_02"); //Now that the ships no longer come in, the city depends entirely on supplies provided by the farmers, of course.
+	AI_Output(self, other, "DIA_Sarah_Bauern_16_03"); //And Onar, the largest farmer, has hired mercenaries to protect his farm from the city guards. Otherwise, they'd simply snatch the goods for themselves.
+	AI_Output(self, other, "DIA_Sarah_Add_16_01"); //But the mercenaries don't just guard Onar's farm.
+	AI_Output(self, other, "DIA_Sarah_Add_16_02"); //They come as far as the small farms outside of town to intimidate the farmers.
+	AI_Output(self, other, "DIA_Sarah_Add_16_03"); //I saw them as I was passing Akil's farm. I wouldn't like to be in his shoes now.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -153,7 +153,7 @@ instance DIA_Sarah_AkilsHof(C_INFO)
 	nr				= 3;
 	condition		= DIA_Sarah_AkilsHof_Condition;
 	information		= DIA_Sarah_AkilsHof_Info;
-	description		= "Wo finde ich Akils Hof?";
+	description		= "Where can I find Akil's farm?";
 };
 
 func int DIA_Sarah_AkilsHof_Condition()
@@ -166,10 +166,10 @@ func int DIA_Sarah_AkilsHof_Condition()
 
 func void DIA_Sarah_AkilsHof_Info()
 {
-	AI_Output(other, self, "DIA_Sarah_AkilsHof_15_00"); //Wo finde ich Akils Hof?
-	AI_Output(self, other, "DIA_Sarah_Add_16_04"); //Wenn du aus dem östlichen Stadttor hier raugehst, und dem Weg rechts hoch folgst, kommst du zu einer Treppe.
-	AI_Output(self, other, "DIA_Sarah_Add_16_05"); //Die führt hoch zu Akils Hof.
-	AI_Output(self, other, "DIA_Sarah_Add_16_06"); //Aber da würde ich jetzt nicht hingehen - die Söldner sind bestimmt noch da.
+	AI_Output(other, self, "DIA_Sarah_AkilsHof_15_00"); //Where will I find Akil's farm?
+	AI_Output(self, other, "DIA_Sarah_Add_16_04"); //If you go out of the east gate here and follow the road to the right, you'll come to a stairway.
+	AI_Output(self, other, "DIA_Sarah_Add_16_05"); //It leads up to Akil's farm.
+	AI_Output(self, other, "DIA_Sarah_Add_16_06"); //But I wouldn't go there now - the mercenaries are certainly still there.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -183,7 +183,7 @@ instance DIA_Sarah_Trade(C_INFO)
 	information		= DIA_Sarah_Trade_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Zeig mir deine Ware.";
+	description		= "Show me your wares.";
 };
 
 func int DIA_Sarah_Trade_Condition()
@@ -198,7 +198,7 @@ func int DIA_Sarah_Trade_Condition()
 func void DIA_Sarah_Trade_Info()
 {
 	B_GiveTradeInv(self);
-	AI_Output(other, self, "DIA_Sarah_Trade_15_00"); //Zeig mir deine Ware.
+	AI_Output(other, self, "DIA_Sarah_Trade_15_00"); //Show me your wares.
 
 	Sarah_WaffenGesehen = TRUE;
 };
@@ -227,8 +227,8 @@ func int DIA_Sarah_IMKNAST_Condition()
 
 func void DIA_Sarah_IMKNAST_Info()
 {
-	AI_Output(self, other, "DIA_Sarah_IMKNAST_16_00"); //Du! Du wagst, hier aufzukreuzen? Ich kann es nicht beweisen, aber ich wette, du hast deine Finger in diesem schmutzigen Spiel.
-	AI_Output(self, other, "DIA_Sarah_IMKNAST_16_01"); //Du trägst mit Schuld daran, dass ich hier sitze. Du und dieser verdammte Canthar - möge Innos euch strafen!
+	AI_Output(self, other, "DIA_Sarah_IMKNAST_16_00"); //You! You dare show your face here! I cannot prove it, but I bet that you played a part in this dirty game.
+	AI_Output(self, other, "DIA_Sarah_IMKNAST_16_01"); //It's your fault that I'm here. Yours, and that of this damned Canthar - may Innos punish you!
 
 	AI_StopProcessInfos(self);
 };
@@ -242,7 +242,7 @@ instance DIA_Sarah_Success(C_INFO)
 	nr				= 4;
 	condition		= DIA_Sarah_Success_Condition;
 	information		= DIA_Sarah_Success_Info;
-	description		= "Canthar wollte dich reinlegen ...";
+	description		= "Canthar was trying to trick you ...";
 };
 
 func int DIA_Sarah_Success_Condition()
@@ -256,9 +256,9 @@ func int DIA_Sarah_Success_Condition()
 
 func void DIA_Sarah_Success_Info()
 {
-	AI_Output(other, self, "DIA_Sarah_Success_15_00"); //Canthar wollte dich reinlegen. Und sich deinen Stand unter den Nagel reissen. Aber ich habe ihn der Stadtwache übergeben.
-	AI_Output(self, other, "DIA_Sarah_Success_16_01"); //Da hast du dich mit einem gefährlichen Mann angelegt. Ich kenne den Mistkerl schon lange, er war schon immer auf meinen Platz scharf.
-	AI_Output(self, other, "DIA_Sarah_Success_16_02"); //Nimm diese Waffe, als Zeichen meiner Dankbarkeit.
+	AI_Output(other, self, "DIA_Sarah_Success_15_00"); //Canthar was trying to trick you, and to get your booth for himself. But I've turned him over to the city guard.
+	AI_Output(self, other, "DIA_Sarah_Success_16_01"); //Then you've made an enemy of a dangerous man. I've known the bastard for a long time, and he's always wanted my place for himself.
+	AI_Output(self, other, "DIA_Sarah_Success_16_02"); //Take this weapon as a token of my gratitude.
 
 	B_GivePlayerXP(XP_CantharImKnast);
 	B_GiveInvItems(self, other, ItMw_Piratensaebel, 1);

@@ -80,10 +80,10 @@ func int DIA_Addon_Garett_Anheuern_Condition()
 
 func void DIA_Addon_Garett_Anheuern_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Garett_Anheuern_09_00"); //Komm bloß nicht auf die Idee, mich zu fragen, ob ich beim Entertrupp mitmache.
-	AI_Output(self, other, "DIA_Addon_Garett_Anheuern_09_01"); //Was meinst du, was die anderen Jungs machen, wenn ich weg bin, hm?
-	AI_Output(self, other, "DIA_Addon_Garett_Anheuern_09_02"); //Wenn ich wiederkomme, hab ich nicht EINE volle Kiste mehr in meiner Hütte!
-	AI_Output(self, other, "DIA_Addon_Garett_Anheuern_09_03"); //Ich bleibe hier und passe auf unsere Vorräte auf!
+	AI_Output(self, other, "DIA_Addon_Garett_Anheuern_09_00"); //Don't even think about asking me to join your raiding troop.
+	AI_Output(self, other, "DIA_Addon_Garett_Anheuern_09_01"); //What do you think the other boys will do once I'm gone, huh?
+	AI_Output(self, other, "DIA_Addon_Garett_Anheuern_09_02"); //When I come back, there won't be ONE full crate left in my hut!
+	AI_Output(self, other, "DIA_Addon_Garett_Anheuern_09_03"); //I'll just stay here and guard our supplies.
 };
 
 // ************************************************************
@@ -110,10 +110,10 @@ func int DIA_Addon_Garett_Hello_Condition()
 
 func void DIA_Addon_Garett_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Garett_Hello_09_00"); //Sieh an, ein Neues Gesicht! Und keiner von den dreckigen Banditen, will ich doch hoffen!
-	AI_Output(self, other, "DIA_Addon_Garett_Hello_09_01"); //Ich bin Garett. Wenn du irgend etwas brauchen solltest, frag zuerst mich.
-	AI_Output(self, other, "DIA_Addon_Garett_Hello_09_02"); //Ich kann dir fast alles besorgen, Wein, Waffen und vieles, was man sonst so braucht.
-	AI_Output(self, other, "DIA_Addon_Garett_Hello_09_03"); //Außer Schnaps - wenn du 'nen ordentlichen Schnaps willst, geh zu Samuel.
+	AI_Output(self, other, "DIA_Addon_Garett_Hello_09_00"); //What have we here? A fresh face. And not one of those filthy bandits, I hope.
+	AI_Output(self, other, "DIA_Addon_Garett_Hello_09_01"); //I'm Garett. If there's anything you need, ask me first.
+	AI_Output(self, other, "DIA_Addon_Garett_Hello_09_02"); //I can get you almost anything. Wine, weapons, and other stuff you might need.
+	AI_Output(self, other, "DIA_Addon_Garett_Hello_09_03"); //Except for booze - if it's a decent drink you want, go see Samuel.
 
 	Log_CreateTopic(Topic_Addon_PIR_Trader, LOG_NOTE);
 	B_LogEntry(Topic_Addon_PIR_Trader, Log_Text_Addon_GarettTrade);
@@ -128,7 +128,7 @@ instance DIA_Addon_Garett_Samuel(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Garett_Samuel_Condition;
 	information		= DIA_Addon_Garett_Samuel_Info;
-	description		= "Wer ist Samuel?";
+	description		= "Who's Samuel?";
 };
 
 func int DIA_Addon_Garett_Samuel_Condition()
@@ -142,12 +142,12 @@ func int DIA_Addon_Garett_Samuel_Condition()
 
 func void DIA_Addon_Garett_Samuel_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garett_Samuel_15_00"); //Wer ist Samuel?
-	AI_Output(self, other, "DIA_Addon_Garett_Samuel_09_01"); //Unser Schnapsbrenner. Er hat seine Höhle etwas abseits des Lagers direkt am Strand.
-	AI_Output(self, other, "DIA_Addon_Garett_Samuel_09_02"); //Nicht schwer zu finden, geh einfach Richtung Norden.
-	AI_Output(self, other, "DIA_Addon_Garett_Samuel_09_03"); //Ich kann dir nur raten, dich gut mit Grog einzudecken.
-	AI_Output(self, other, "DIA_Addon_Garett_Samuel_09_04"); //Einige der Jungs hier sind Neuen gegenüber nicht gerade aufgeschlossen, verstehst du?
-	AI_Output(self, other, "DIA_Addon_Garett_Samuel_09_05"); //Da kann ein ordentlicher Schluck Grog Wunder wirken!
+	AI_Output(other, self, "DIA_Addon_Garett_Samuel_15_00"); //Who's Samuel?
+	AI_Output(self, other, "DIA_Addon_Garett_Samuel_09_01"); //He's our moonshiner. He's got his cave on the beach, a little distance from the camp.
+	AI_Output(self, other, "DIA_Addon_Garett_Samuel_09_02"); //You can't miss it, just walk north.
+	AI_Output(self, other, "DIA_Addon_Garett_Samuel_09_03"); //You'll be well advised to keep yourself supplied with grog.
+	AI_Output(self, other, "DIA_Addon_Garett_Samuel_09_04"); //Some of the boys here aren't very fond of greenhorns at all, if you get my drift.
+	AI_Output(self, other, "DIA_Addon_Garett_Samuel_09_05"); //A decent swig of grog can work wonders for you!
 
 	B_LogEntry(Topic_Addon_PIR_Trader, Log_Text_Addon_SamuelTrade);
 };
@@ -161,7 +161,7 @@ instance DIA_Addon_Garett_Warez(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Garett_Warez_Condition;
 	information		= DIA_Addon_Garett_Warez_Info;
-	description		= "Wo bekommst du deine Waren her?";
+	description		= "Where do you get your supplies?";
 };
 
 func int DIA_Addon_Garett_Warez_Condition()
@@ -171,10 +171,10 @@ func int DIA_Addon_Garett_Warez_Condition()
 
 func void DIA_Addon_Garett_Warez_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garett_Warez_15_00"); //Wo bekommst du deine Waren her?
-	AI_Output(self, other, "DIA_Addon_Garett_Warez_09_01"); //Skip bringt immer 'ne Menge aus Khorinis mit, wenn er 'rüberfährt.
-	AI_Output(self, other, "DIA_Addon_Garett_Warez_09_02"); //Bis vor kurzem hat er einiges davon direkt an die Banditen verkauft.
-	AI_Output(self, other, "DIA_Addon_Garett_Warez_09_03"); //Aber seit es mit den Banditen Krieg gibt, landet der ganze Kram bei mir.
+	AI_Output(other, self, "DIA_Addon_Garett_Warez_15_00"); //Where do you get your supplies?
+	AI_Output(self, other, "DIA_Addon_Garett_Warez_09_01"); //Skip always brings loads of stuff from Khorinis when he visits there.
+	AI_Output(self, other, "DIA_Addon_Garett_Warez_09_02"); //Until recently, he used to sell some of it directly to the bandits.
+	AI_Output(self, other, "DIA_Addon_Garett_Warez_09_03"); //But since we've been at war with the bandits, I'm the one who ends up with all the stuff now.
 };
 
 // ************************************************************
@@ -186,7 +186,7 @@ instance DIA_Addon_Garett_Bandits(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Garett_Bandits_Condition;
 	information		= DIA_Addon_Garett_Bandits_Info;
-	description		= "Was weißt du über die Banditen?";
+	description		= "What do you know about the bandits?";
 };
 
 func int DIA_Addon_Garett_Bandits_Condition()
@@ -199,10 +199,10 @@ func int DIA_Addon_Garett_Bandits_Condition()
 
 func void DIA_Addon_Garett_Bandits_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garett_Bandits_15_00"); //Was weißt du über die Banditen?
-	AI_Output(self, other, "DIA_Addon_Garett_Bandits_09_01"); //Dazu frag am besten mal Skip.
-	AI_Output(self, other, "DIA_Addon_Garett_Bandits_09_02"); //Der hat 'nen ganz schönen Tanz mitgemacht mit den Kerlen, das kann ich dir sagen.
-	AI_Output(self, other, "DIA_Addon_Garett_Bandits_09_03"); //Greg hat angeordnet, alle Banditen, die sich in der Nähe des Lagers blicken lassen, abzumurksen.
+	AI_Output(other, self, "DIA_Addon_Garett_Bandits_15_00"); //What do you know about the bandits?
+	AI_Output(self, other, "DIA_Addon_Garett_Bandits_09_01"); //You'd better ask Skip about that.
+	AI_Output(self, other, "DIA_Addon_Garett_Bandits_09_02"); //He's been through quite a lot with that bunch, let me tell you.
+	AI_Output(self, other, "DIA_Addon_Garett_Bandits_09_03"); //Greg has given orders to do away with any bandit who shows up near the camp.
 };
 
 // ************************************************************
@@ -219,7 +219,7 @@ instance DIA_Addon_Garett_Greg(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Garett_Greg_Condition;
 	information		= DIA_Addon_Garett_Greg_Info;
-	description		= "Dein Kapitän Greg. Wie ist der so?";
+	description		= "Your Captain Greg. What's he like?";
 };
 
 func int DIA_Addon_Garett_Greg_Condition()
@@ -229,14 +229,14 @@ func int DIA_Addon_Garett_Greg_Condition()
 
 func void DIA_Addon_Garett_Greg_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garett_Greg_15_00"); //Dein Kapitän Greg. Wie ist der so?
-	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_01"); //Er ist 'n harter Knochen, das kann ich dir sagen.
-	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_02"); //Und rafffgierig bis auf's Blut.
-	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_03"); //Er läßt unseren Schatzmeister Francis immer gerade soviel zahlen, daß es zu keiner Meuterei kommt!
-	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_04"); //Und wenn einer von uns mal was WIRKLICH wertvolles erbeutet, reißt er sich's selber unter'n Nagel.
-	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_05"); //Ich hatte mal den Kompass von 'ner königlichen Fregatte mitgehen lassen.
-	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_06"); //Greg, der Mistkerl, hat ihn mir natürlich abgeknöpft.
-	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_07"); //Pah! Vermutlich hat er ihn irgendwo verbuddelt, genau wie alle seine anderen Schätze.
+	AI_Output(other, self, "DIA_Addon_Garett_Greg_15_00"); //Your Captain Greg. What's he like?
+	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_01"); //He's a tough old bastard, and no doubt about it.
+	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_02"); //And greedy to the bone.
+	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_03"); //He makes Francis, our treasurer, pay out not a penny more than what it takes to prevent a mutiny.
+	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_04"); //And if one of us ever gets his hands on something REALLY valuable, he'll inevitably take it for himself.
+	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_05"); //I once took a compass from a royal frigate.
+	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_06"); //That bastard Greg made me hand it over, of course.
+	AI_Output(self, other, "DIA_Addon_Garett_Greg_09_07"); //Bah. He probably buried it somewhere, just like the rest of his treasures.
 };
 
 // ------------------------------------------------------------
@@ -248,7 +248,7 @@ instance DIA_Addon_Garett_Tips(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Garett_Tips_Condition;
 	information		= DIA_Addon_Garett_Tips_Info;
-	description		= "Wo könnte Greg den Kompass vergraben haben?";
+	description		= "Where might Greg have buried that compass?";
 };
 
 func int DIA_Addon_Garett_Tips_Condition()
@@ -261,13 +261,13 @@ func int DIA_Addon_Garett_Tips_Condition()
 
 func void DIA_Addon_Garett_Tips_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garett_Tips_15_00"); //Wo könnte Greg den Kompass vergraben haben?
-	AI_Output(self, other, "DIA_Addon_Garett_Tips_09_01"); //Greg, sagte mir mal, dass der Tod über meinem Kompass wacht und hat mich ausgelacht.
-	AI_Output(other, self, "DIA_Addon_Garett_Tips_15_02"); //Sonst noch was?
-	AI_Output(self, other, "DIA_Addon_Garett_Tips_09_03"); //An der südlichen Küste gibt es einen Strand. Er ist nur über den Seeweg zu erreichen.
-	AI_Output(self, other, "DIA_Addon_Garett_Tips_09_04"); //Greg soll öfter mal dort gewesen sein. Vielleicht findest du da was.
-	AI_Output(self, other, "DIA_Addon_Garett_Tips_09_05"); //Ich hab mich selber schonmal dort umgesehen, aber die Gegend wimmelt von Monstern.
-	AI_Output(self, other, "DIA_Addon_Garett_Tips_09_06"); //Wenn du's wirklich wagen willst, vergiß nicht ne Hacke mitzunehmen.
+	AI_Output(other, self, "DIA_Addon_Garett_Tips_15_00"); //Where might Greg have buried that compass?
+	AI_Output(self, other, "DIA_Addon_Garett_Tips_09_01"); //Greg once told me that Death himself watches over my compass. Then he laughed.
+	AI_Output(other, self, "DIA_Addon_Garett_Tips_15_02"); //Anything else?
+	AI_Output(self, other, "DIA_Addon_Garett_Tips_09_03"); //There's a beach at the southern coast. It can only be reached by sea.
+	AI_Output(self, other, "DIA_Addon_Garett_Tips_09_04"); //Greg is said to have been there often. Maybe you'll find something there.
+	AI_Output(self, other, "DIA_Addon_Garett_Tips_09_05"); //I once went there to see what I might find myself, but the area is teeming with monsters.
+	AI_Output(self, other, "DIA_Addon_Garett_Tips_09_06"); //If you really want to give it a try, don't forget to bring a pick.
 	MIS_Addon_Garett_BringKompass = LOG_RUNNING;
 
 	Log_CreateTopic(TOPIC_Addon_Kompass, LOG_MISSION);
@@ -284,7 +284,7 @@ instance DIA_Addon_Garett_GiveKompass(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Garett_GiveKompass_Condition;
 	information		= DIA_Addon_Garett_GiveKompass_Info;
-	description		= "Hier ist dein Kompass.";
+	description		= "Here's your compass.";
 };
 
 func int DIA_Addon_Garett_GiveKompass_Condition()
@@ -298,27 +298,27 @@ func int DIA_Addon_Garett_GiveKompass_Condition()
 
 func void DIA_Addon_Garett_GiveKompass_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garett_GiveKompass_15_00"); //Hier ist dein Kompass.
+	AI_Output(other, self, "DIA_Addon_Garett_GiveKompass_15_00"); //Here's your compass.
 
-	// Patch m.f. - weil Händler
+	// Patch m.f. - weil HÃ¤ndler
 	if (B_GiveInvItems(other, self, ItMI_Addon_Kompass_Mis, 1))
 	{
 		Npc_RemoveInvItems(self, ItMI_Addon_Kompass_Mis, 1);
 	};
 
-	AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_01"); //(freut sich) Ja, das ist er. Hätte nicht gedacht, dass ich ihn noch mal wiedersehe.
-	AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_02"); //Danke, Mann!
+	AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_01"); //(happily) Yes, that's it. I never thought I'd see it again.
+	AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_02"); //Thanks, man!
 
 	if (Npc_HasItems(self, ItBE_Addon_Prot_EdgPoi) > 0)
 	{
-		AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_03"); //Dieses Mal wird ihn Greg NICHT wieder in die Finger kriegen...
-		AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_04"); //Hier, nimm diesen Gürtel dafür. Er ist mein wertvollstes Stück.
+		AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_03"); //This time Greg WON'T get hold of it again ...
+		AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_04"); //Here, take this belt in return. It's my most valuable piece.
 		B_GiveInvItems(self, other, ItBE_Addon_Prot_EdgPoi, 1);
 	}
 	else if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_05"); //Du hast doch diesen Gürtel bei mir gekauft, erinnerst du dich?
-		AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_06"); //Hast 'ne Menge dafü bezahlt - (hastig) und das war er auch wert. Hier - du sollst dein Gold zurückhaben.
+		AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_05"); //You bought this belt from me, remember?
+		AI_Output(self, other, "DIA_Addon_Garett_GiveKompass_09_06"); //And you paid a lot for it - (hastily) not that it wasn't worth it. Here - take back your gold.
 		B_GiveInvItems(self, other, itmi_gold, Value_ItBE_Addon_Prot_EdgPoi);
 	};
 
@@ -336,7 +336,7 @@ instance DIA_Addon_Garett_Francis(C_INFO)
 	nr				= 7;
 	condition		= DIA_Addon_Garett_Francis_Condition;
 	information		= DIA_Addon_Garett_Francis_Info;
-	description		= "Was kannst du mir über Francis erzählen?";
+	description		= "What can you tell me about Francis?";
 };
 
 func int DIA_Addon_Garett_Francis_Condition()
@@ -349,16 +349,16 @@ func int DIA_Addon_Garett_Francis_Condition()
 
 func void DIA_Addon_Garett_Francis_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garett_Francis_15_00"); //°Was kannst du mir über Francis erzählen?
-	AI_Output(self, other, "DIA_Addon_Garett_Francis_09_01"); //Greg hat ihm das Kommando übertragen, während er weg ist.
-	AI_Output(self, other, "DIA_Addon_Garett_Francis_09_02"); //Aber als Käpt'n ist Francis ein Versager!
-	AI_Output(self, other, "DIA_Addon_Garett_Francis_09_03"); //Er kriegt Morgan ja noch nicht mal dazu seinen Hintern aus dem Bett zu bewegen.
-	AI_Output(self, other, "DIA_Addon_Garett_Francis_09_04"); //Henry und seine Jungs sind die einzigen, die hier was tun.
-	AI_Output(self, other, "DIA_Addon_Garett_Francis_09_05"); //Die anderen machen sich hier einen schönen Tag, statt zu arbeiten.
+	AI_Output(other, self, "DIA_Addon_Garett_Francis_15_00"); //What can you tell me about Francis?
+	AI_Output(self, other, "DIA_Addon_Garett_Francis_09_01"); //Greg put him in command while he's gone.
+	AI_Output(self, other, "DIA_Addon_Garett_Francis_09_02"); //But Francis is a total failure as a leader!
+	AI_Output(self, other, "DIA_Addon_Garett_Francis_09_03"); //He can't even get Morgan to stir his lazy ass out of bed.
+	AI_Output(self, other, "DIA_Addon_Garett_Francis_09_04"); //Henry and his boys are the only ones doing anything around here.
+	AI_Output(self, other, "DIA_Addon_Garett_Francis_09_05"); //The others are just enjoying themselves instead of working.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_Garett_Francis_09_06"); //Ich kann nur hoffen, dass Greg bald wieder da ist.
-		AI_Output(self, other, "DIA_Addon_Garett_Francis_09_07"); //Der wird ihnen allen ordentlich in den Arsch treten.
+		AI_Output(self, other, "DIA_Addon_Garett_Francis_09_06"); //I can only hope that Greg will come back soon.
+		AI_Output(self, other, "DIA_Addon_Garett_Francis_09_07"); //He'll give them all a good swift kick in the ass.
 	};
 };
 
@@ -372,7 +372,7 @@ instance DIA_Addon_Garett_PERM(C_INFO)
 	condition		= DIA_Addon_Garett_PERM_Condition;
 	information		= DIA_Addon_Garett_PERM_Info;
 	permanent		= TRUE;
-	description		= "Gibt's was Neues?";
+	description		= "Anything new?";
 };
 
 func int DIA_Addon_Garett_PERM_Condition()
@@ -382,16 +382,16 @@ func int DIA_Addon_Garett_PERM_Condition()
 
 func void DIA_Addon_Garett_PERM_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Garett_PERM_15_00"); //Gibt's was Neues?
+	AI_Output(other, self, "DIA_Addon_Garett_PERM_15_00"); //Anything new?
 
 	if ((GregIsBack == FALSE)
 	|| (Npc_IsDead(Greg)))
 	{
-		AI_Output(self, other, "DIA_Addon_Garett_PERM_09_02"); //Seit Greg weg ist, passiert hier gar nichts.
+		AI_Output(self, other, "DIA_Addon_Garett_PERM_09_02"); //Nothing ever happens any more since Greg left.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Garett_PERM_09_01"); //Jetzt wo Greg wieder da ist, weht hier ein anderer Wind.
+		AI_Output(self, other, "DIA_Addon_Garett_PERM_09_01"); //Now that Greg has come back, things are starting to look up around here.
 	};
 };
 

@@ -1,6 +1,6 @@
 instance ITKE_PORTALTEMPELWALKTHROUGH_ADDON(C_Item)
 {
-	name						= "Rostiger Schlüssel";
+	name						= "Rusty Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -13,8 +13,8 @@ instance ITKE_PORTALTEMPELWALKTHROUGH_ADDON(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Passt zur Tür des";							count[2] = 0;
-	text[3]						= "Teleportsteins im Portal-Tempel ";			count[3] = 0;
+	text[2]						= "Fits the door of the";							count[2] = 0;
+	text[3]						= "Teleporter stone in the portal temple";			count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -35,8 +35,8 @@ instance ITKE_Greg_ADDON_MIS(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Der Schlüssel zur";							count[2] = 0;
-	text[3]						= "Hütte von Kapitän";							count[3] = 0;
+	text[2]						= "The key to the";							count[2] = 0;
+	text[3]						= "Captain's hut";							count[3] = 0;
 	text[4]						= "Greg";										count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -54,11 +54,11 @@ instance ITKE_Addon_Tavern_01(C_Item)
 
 	value						= Value_Key_01;
 
-	description					= "Lou's Schlüssel";
+	description					= "Lou's key";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Passt zur Kneipe";							count[2] = 0;
-	text[3]						= "im Banditenlager";							count[3] = 0;
+	text[2]						= "Fits the tavern";							count[2] = 0;
+	text[3]						= "in the bandit camp";							count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -76,11 +76,11 @@ instance ITKE_Addon_Esteban_01(C_Item)
 
 	value						= Value_Key_01;
 
-	description					= "Esteban's Schlüssel";
+	description					= "Esteban's key";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Passt zu der Truhe";							count[2] = 0;
-	text[3]						= "in seinem Versteck.";						count[3] = 0;
+	text[2]						= "Fits the chest";							count[2] = 0;
+	text[3]						= "in his hideout";						count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -98,11 +98,11 @@ instance ITKE_ORLAN_TELEPORTSTATION(C_Item)
 
 	value						= Value_Key_01;
 
-	description					= "Orlan's Schlüssel";
+	description					= "Orlan's key";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Passt zur Tür der Höhle";					count[2] = 0;
-	text[3]						= "südlich seiner Taverne";						count[3] = 0;
+	text[2]						= "Fits the door of the cave";					count[2] = 0;
+	text[3]						= "south of his tavern";						count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -123,8 +123,8 @@ instance ITKE_CANYONLIBRARY_HIERARCHY_BOOKS_ADDON(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "hatte der Orkschamaneim Orklager";			count[2] = 0;
-	text[3]						= "vor der Bibliothek der Gelehrten";			count[3] = 0;
+	text[2]						= "from the orc shaman in the orc camp";			count[2] = 0;
+	text[3]						= "in front of the Library of the Scholars";			count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -142,10 +142,10 @@ instance ITKE_ADDON_BUDDLER_01(C_Item)
 
 	value						= 0;
 
-	description					= "Truhenschlüssel";
+	description					= "Chest Key";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Aus dem Banditenlager";						count[2] = 0;
+	text[2]						= "From the bandit camp";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -164,10 +164,10 @@ instance ITKE_ADDON_SKINNER(C_Item)
 
 	value						= 0;
 
-	description					= "Truhenschlüssel";
+	description					= "Chest Key";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Skinner's Schlüssel";						count[2] = 0;
+	text[2]						= "Skinner's key";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -186,10 +186,10 @@ instance ITKE_Addon_Thorus(C_Item)
 
 	value						= 0;
 
-	description					= "Thorus Schlüssel";
+	description					= "Thorus' key";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Passt zu einer Truhe";						count[2] = 0;
+	text[2]						= "Fits a chest";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;

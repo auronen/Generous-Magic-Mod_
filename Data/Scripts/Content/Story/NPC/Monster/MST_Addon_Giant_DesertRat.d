@@ -5,7 +5,7 @@
 prototype Mst_Default_Giant_DesertRat(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Wüstenratte";
+	name							= "Desert Rat";
 	guild							= GIL_Giant_Rat;
 	level							= 10;
 

@@ -21,7 +21,7 @@ func void DIA_Addon_Franco_EXIT_Info()
 	if ((Franco_Exit == FALSE)
 	&& (MIS_HlpLogan == LOG_RUNNING))
 	{
-		AI_Output(self, other, "DIA_Addon_Franco_EXIT_08_00"); //Verlauf dich nicht, sonst endest du noch als Futter für die Haie.
+		AI_Output(self, other, "DIA_Addon_Franco_EXIT_08_00"); //Don't get lost or you'll wind up as food for the sharks.
 		Franco_Exit = TRUE;
 	};
 
@@ -38,7 +38,7 @@ instance DIA_Franco_PICKPOCKET(C_INFO)
 	condition		= DIA_Franco_PICKPOCKET_Condition;
 	information		= DIA_Franco_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre gewagt sein Amulett zu stehlen)";
+	description		= "(It would be a great risk to steal his amulet)";
 };
 
 func int DIA_Franco_PICKPOCKET_Condition()
@@ -106,14 +106,14 @@ func void DIA_Addon_Franco_HI_Info()
 	Log_SetTopicStatus(Topic_Addon_Franco, LOG_RUNNING);
 	B_LogEntry(Topic_Addon_Franco, Topic_Addon_Franco_5);
 
-	AI_Output(self, other, "DIA_Addon_Franco_HI_08_00"); //Hey, was willst du hier? Willst du ins Lager?
-	AI_Output(other, self, "DIA_Addon_Franco_HI_15_01"); //Ja, ich bin ...
-	AI_Output(self, other, "DIA_Addon_Franco_HI_08_02"); //Interessiert mich nicht, wer du bist. Ich bin Franco, ich bin hier der Anführer.
-	AI_Output(self, other, "DIA_Addon_Franco_HI_08_03"); //Also, wenn du hier draußen einen guten Job machst, bringe ich dich ins Lager.
+	AI_Output(self, other, "DIA_Addon_Franco_HI_08_00"); //Hey, what are you doing here? Do you want to get into the camp.
+	AI_Output(other, self, "DIA_Addon_Franco_HI_15_01"); //Yes, I am...
+	AI_Output(self, other, "DIA_Addon_Franco_HI_08_02"); //I don't care who you are. I'm Franco, I'm the leader here.
+	AI_Output(self, other, "DIA_Addon_Franco_HI_08_03"); //So, if you do a good job out here, I'll take you into the camp.
 
 	if (Ramon_News == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_Franco_HI_08_04"); //Ramon, der Torwächter, wird dir sagen, ob sie im Lager neue Leute brauchen. Sprich mit ihm.
+		AI_Output(self, other, "DIA_Addon_Franco_HI_08_04"); //Ramon, the gatekeeper, will tell you if they need new people in the camp. Talk to him.
 		B_LogEntry(Topic_Addon_Franco, Topic_Addon_Franco_6);
 	};
 };
@@ -127,7 +127,7 @@ instance DIA_Addon_Franco_Hai(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Franco_Hai_Condition;
 	information		= DIA_Addon_Franco_Hai_Info;
-	description		= "Thorus braucht einen neuen Mann. ";
+	description		= "Thorus needs a new man.";
 };
 
 func int DIA_Addon_Franco_Hai_Condition()
@@ -140,13 +140,13 @@ func int DIA_Addon_Franco_Hai_Condition()
 
 func void DIA_Addon_Franco_Hai_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_Hai_15_00"); //Thorus braucht einen neuen Mann.
-	AI_Output(self, other, "DIA_Addon_Franco_Hai_08_01"); //Gut. Ich werde mich darum kümmern.
-	AI_Output(other, self, "DIA_Addon_Franco_Hai_15_02"); //Moment, was ist mit mir?
-	AI_Output(self, other, "DIA_Addon_Franco_Hai_08_03"); //Du hast noch nichts geleistet.
-	AI_Output(other, self, "DIA_Addon_Franco_Hai_15_04"); //Ich hab schon 'ne Menge geleistet, nur weißt DU nichts davon ...
-	AI_Output(self, other, "DIA_Addon_Franco_Hai_08_05"); //Okay, du willst eine Chance? Du kriegst deine Chance. Schwing deinen Hintern zu Logan. Die Sumpfhaie rücken ihm zu sehr auf die Pelle.
-	AI_Output(self, other, "DIA_Addon_Franco_Hai_08_06"); //Hilf ihm, mit den Viechern fertig zu werden, dann bist du schon so gut wie im Lager.
+	AI_Output(other, self, "DIA_Addon_Franco_Hai_15_00"); //Thorus needs a new man.
+	AI_Output(self, other, "DIA_Addon_Franco_Hai_08_01"); //Good. I'll take care of it.
+	AI_Output(other, self, "DIA_Addon_Franco_Hai_15_02"); //Wait a minute, what about me?
+	AI_Output(self, other, "DIA_Addon_Franco_Hai_08_03"); //You haven't done anything yet.
+	AI_Output(other, self, "DIA_Addon_Franco_Hai_15_04"); //I've done a lot, only YOU don't know about it.
+	AI_Output(self, other, "DIA_Addon_Franco_Hai_08_05"); //Okay, you want a chance? You'll get your chance. Move your butt to Logan. The swampsharks are breathing down his neck.
+	AI_Output(self, other, "DIA_Addon_Franco_Hai_08_06"); //Help him finish off the beasts and you're as good as in the camp.
 
 	B_LogEntry(Topic_Addon_Franco, Topic_Addon_Franco_7);
 };
@@ -160,7 +160,7 @@ instance DIA_Addon_Franco_Wo(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Franco_Wo_Condition;
 	information		= DIA_Addon_Franco_Wo_Info;
-	description		= "Wo finde ich Logan?";
+	description		= "Where do I find Logan?";
 };
 
 func int DIA_Addon_Franco_Wo_Condition()
@@ -175,8 +175,8 @@ func int DIA_Addon_Franco_Wo_Condition()
 
 func void DIA_Addon_Franco_Wo_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_Wo_15_00"); //Wo finde ich Logan?
-	AI_Output(self, other, "DIA_Addon_Franco_Wo_08_01"); //Wenn du vorm Lagereingang stehst, geh an der Felswand links entlang. Es ist ein Stück weit im Sumpf.
+	AI_Output(other, self, "DIA_Addon_Franco_Wo_15_00"); //Where do I find Logan?
+	AI_Output(self, other, "DIA_Addon_Franco_Wo_08_01"); //If you're standing in front of the camp entrance, follow the rock wall to the left. It's a bit farther into the swamp.
 	AI_StopProcessInfos(self);
 };
 
@@ -189,7 +189,7 @@ instance DIA_Addon_Franco_tot(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Franco_tot_Condition;
 	information		= DIA_Addon_Franco_tot_Info;
-	description		= "Logan ist tot.";
+	description		= "Logan is dead.";
 };
 
 func int DIA_Addon_Franco_tot_Condition()
@@ -204,9 +204,9 @@ func int DIA_Addon_Franco_tot_Condition()
 
 func void DIA_Addon_Franco_tot_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_tot_15_00"); //Logan ist tot.
-	AI_Output(self, other, "DIA_Addon_Franco_tot_08_01"); //Verdammt. Er war der beste Jäger, den wir draußen hatten. Verfluchter Mist.
-	AI_Output(self, other, "DIA_Addon_Franco_tot_08_02"); //Wie dem auch sei, ich habe schon jemand anders ins Lager geschickt.
+	AI_Output(other, self, "DIA_Addon_Franco_tot_15_00"); //Logan is dead.
+	AI_Output(self, other, "DIA_Addon_Franco_tot_08_01"); //Damn. He was the best hunter we had out here. Cursed nuisance.
+	AI_Output(self, other, "DIA_Addon_Franco_tot_08_02"); //Be that as it may, I already sent someone else into the camp.
 
 	if (MIS_HlpLogan == LOG_RUNNING)
 	{
@@ -224,7 +224,7 @@ instance DIA_Addon_Franco_HaiSuccess(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Franco_HaiSuccess_Condition;
 	information		= DIA_Addon_Franco_HaiSuccess_Info;
-	description		= "Ich hab' Logan geholfen...";
+	description		= "I helped Logan...";
 };
 
 func int DIA_Addon_Franco_HaiSuccess_Condition()
@@ -238,14 +238,14 @@ func int DIA_Addon_Franco_HaiSuccess_Condition()
 
 func void DIA_Addon_Franco_HaiSuccess_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_HaiSuccess_15_00"); //Ich hab' Logan geholfen ...
+	AI_Output(other, self, "DIA_Addon_Franco_HaiSuccess_15_00"); //I helped Logan...
 
 	if (Npc_IsDead(Logan))
 	{
-		AI_Output(other, self, "DIA_Addon_Franco_HaiSuccess_15_01"); //... aber er hat's nicht überlebt.
+		AI_Output(other, self, "DIA_Addon_Franco_HaiSuccess_15_01"); //... but he didn't survive.
 	};
 
-	AI_Output(self, other, "DIA_Addon_Franco_HaiSuccess_08_02"); //Okay, du hast gegen die Sumpfhaie gekämpft - du bist zu gebrauchen - zumindest mehr, als die meisten Typen hier.
+	AI_Output(self, other, "DIA_Addon_Franco_HaiSuccess_08_02"); //Okay, so you fought the swampsharks - you're useful - at least more so than most of the guys here.
 	B_GivePlayerXP(XP_Addon_HlpLogan);
 
 	B_LogEntry(Topic_Addon_Franco, Topic_Addon_Franco_8);
@@ -260,7 +260,7 @@ instance DIA_Addon_Franco_Mis2(C_INFO)
 	nr				= 7;
 	condition		= DIA_Addon_Franco_Mis2_Condition;
 	information		= DIA_Addon_Franco_Mis2_Info;
-	description		= "Also kann ich jetzt ins Lager?";
+	description		= "So can I go to the camp now?";
 };
 
 func int DIA_Addon_Franco_Mis2_Condition()
@@ -274,11 +274,11 @@ func int DIA_Addon_Franco_Mis2_Condition()
 
 func void DIA_Addon_Franco_Mis2_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_MIS2_15_00"); //Also kann ich jetzt ins Lager?
-	AI_Output(self, other, "DIA_Addon_Franco_MIS2_08_01"); //Pass auf - es gibt da noch eine Sache, für die ich dich brauche.
-	AI_Output(self, other, "DIA_Addon_Franco_MIS2_08_02"); //Vor ein paar Tagen habe ich Edgor in den Sumpf geschickt.
-	AI_Output(self, other, "DIA_Addon_Franco_MIS2_08_03"); //Er sollte mir eine alte Steintafel besorgen - aber seitdem hat er sich nicht mehr blicken lassen.
-	AI_Output(self, other, "DIA_Addon_Franco_MIS2_08_04"); //Sieh nach, was er treibt, und bring mir diese verdammte Steintafel.
+	AI_Output(other, self, "DIA_Addon_Franco_MIS2_15_00"); //So can I go to the camp now?
+	AI_Output(self, other, "DIA_Addon_Franco_MIS2_08_01"); //Listen - there's another thing I need you for.
+	AI_Output(self, other, "DIA_Addon_Franco_MIS2_08_02"); //A few days ago, I sent Edgor into the swamp.
+	AI_Output(self, other, "DIA_Addon_Franco_MIS2_08_03"); //He was supposed to get me an old stone tablet - but he hasn't been seen since.
+	AI_Output(self, other, "DIA_Addon_Franco_MIS2_08_04"); //See what he's doing and bring me that damned stone tablet.
 
 	MIS_HlpEdgor = LOG_RUNNING;
 
@@ -298,7 +298,7 @@ instance DIA_Addon_Franco_While(C_INFO)
 	nr				= 8;
 	condition		= DIA_Addon_Franco_While_Condition;
 	information		= DIA_Addon_Franco_While_Info;
-	description		= "Wie sieht's aus mit Gold?";
+	description		= "What about gold?";
 };
 
 func int DIA_Addon_Franco_While_Condition()
@@ -311,12 +311,12 @@ func int DIA_Addon_Franco_While_Condition()
 
 func void DIA_Addon_Franco_While_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_While_15_00"); //Wie sieht's aus mit Gold?
-	AI_Output(self, other, "DIA_Addon_Franco_While_08_01"); //Was?
-	AI_Output(other, self, "DIA_Addon_Franco_While_15_02"); //Kriege ich auch was für meine Arbeit hier im Sumpf?
-	AI_Output(self, other, "DIA_Addon_Franco_While_08_03"); //(superfreundlich) Du willst Gold? Klar, wie viel willst du? Fünfzig Goldbrocken? Hundert? Ich gebe dir soviel Gold, wie du tragen kannst ...
-	AI_Output(self, other, "DIA_Addon_Franco_While_08_04"); //(laut) Was glaubst du, wer du bist? Willst du mich verarschen?
-	AI_Output(self, other, "DIA_Addon_Franco_While_08_05"); //Jetzt schieb ab und tu was! Sonst gibt's nicht mal einen GOLDKRÜMEL für dich!!
+	AI_Output(other, self, "DIA_Addon_Franco_While_15_00"); //What about gold?
+	AI_Output(self, other, "DIA_Addon_Franco_While_08_01"); //What?
+	AI_Output(other, self, "DIA_Addon_Franco_While_15_02"); //Do I get anything for my work here in the swamp?
+	AI_Output(self, other, "DIA_Addon_Franco_While_08_03"); //(extremely friendly) You want gold? Sure, how much do you want? Fifty gold nuggets? A hundred? I'll give you as much gold as you can carry...
+	AI_Output(self, other, "DIA_Addon_Franco_While_08_04"); //(loudly) Who do you think you are? Are you trying to make a fool out of me?
+	AI_Output(self, other, "DIA_Addon_Franco_While_08_05"); //Now push off and do something! Otherwise, you won't get so much as one CRUMB OF GOLD!!
 	AI_StopProcessInfos(self);
 };
 
@@ -330,7 +330,7 @@ instance DIA_Addon_Franco_WOEDGOR(C_INFO)
 	condition		= DIA_Addon_Franco_WOEDGOR_Condition;
 	information		= DIA_Addon_Franco_WOEDGOR_Info;
 	permanent		= TRUE;
-	description		= "Also, WO finde ich diesen Edgor? ";
+	description		= "So WHERE can I find this Edgor?";
 };
 
 func int DIA_Addon_Franco_WOEDGOR_Condition()
@@ -344,25 +344,25 @@ func int DIA_Addon_Franco_WOEDGOR_Condition()
 
 func void DIA_Addon_Franco_WOEDGOR_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_WOEDGOR_15_00"); //(seufzt) Also, WO finde ich diesen Edgor?
-	AI_Output(self, other, "DIA_Addon_Franco_WOEDGOR_08_01"); //Willst du den einfachen Weg oder den schnellen?
+	AI_Output(other, self, "DIA_Addon_Franco_WOEDGOR_15_00"); //(sighs) So, WHERE do I find this Edgor?
+	AI_Output(self, other, "DIA_Addon_Franco_WOEDGOR_08_01"); //Do you want the easy way or the fast way?
 
 	Info_ClearChoices(DIA_Addon_Franco_WOEDGOR);
-	Info_AddChoice(DIA_Addon_Franco_WOEDGOR, "Ich nehme den schnellen.", DIA_Addon_Franco_WOEDGOR_Fast);
-	Info_AddChoice(DIA_Addon_Franco_WOEDGOR, "Erklär mir den einfachen Weg.", DIA_Addon_Franco_WOEDGOR_Easy);
+	Info_AddChoice(DIA_Addon_Franco_WOEDGOR, "I'll take the fast way.", DIA_Addon_Franco_WOEDGOR_Fast);
+	Info_AddChoice(DIA_Addon_Franco_WOEDGOR, "Tell me the easy way.", DIA_Addon_Franco_WOEDGOR_Easy);
 };
 
 func void B_Addon_Franco_There()
 {
-	AI_Output(self, other, "DIA_Addon_Franco_There_08_00"); //Da sind überall Ruinen. Irgendwo dort sitzt er rum.
-	AI_Output(self, other, "DIA_Addon_Franco_There_08_01"); //Ich denke mal, er war schlau genug, sich ein Feuer anzumachen, DAS wirst du ja wohl finden.
+	AI_Output(self, other, "DIA_Addon_Franco_There_08_00"); //There are ruins everywhere. He's sitting around somewhere there.
+	AI_Output(self, other, "DIA_Addon_Franco_There_08_01"); //I assume he was smart enough to build himself a fire. You should be able to find THAT.
 };
 
 func void DIA_Addon_Franco_WOEDGOR_Easy()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //Erklär mir den einfachen Weg.
-	AI_Output(self, other, "DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //Folge dem Steg bis zum vorderen Tor. Da müsste Sancho stehen.
-	AI_Output(self, other, "DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //Geh dort links und folge dem Steg.
+	AI_Output(other, self, "DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //Tell me the easy way.
+	AI_Output(self, other, "DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //Follow the path to the front gate. Sancho should be standing there.
+	AI_Output(self, other, "DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //Go left from there and follow the boardwalk
 
 	B_Addon_Franco_There();
 	Info_ClearChoices(DIA_Addon_Franco_WOEDGOR);
@@ -370,8 +370,8 @@ func void DIA_Addon_Franco_WOEDGOR_Easy()
 
 func void DIA_Addon_Franco_WOEDGOR_Fast()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_WOEDGOR_Fast_15_00"); //Ich nehme den schnellen.
-	AI_Output(self, other, "DIA_Addon_Franco_WOEDGOR_Fast_08_01"); //Okay. Geh von hier aus schräg links am Steg vorbei in den Sumpf.
+	AI_Output(other, self, "DIA_Addon_Franco_WOEDGOR_Fast_15_00"); //I'll take the fast way.
+	AI_Output(self, other, "DIA_Addon_Franco_WOEDGOR_Fast_08_01"); //Okay. From here go diagonally left past the boardwalk, into the swamp.
 
 	B_Addon_Franco_There();
 	Info_ClearChoices(DIA_Addon_Franco_WOEDGOR);
@@ -386,7 +386,7 @@ instance DIA_Addon_Franco_tafel(C_INFO)
 	nr				= 10;
 	condition		= DIA_Addon_Franco_tafel_Condition;
 	information		= DIA_Addon_Franco_tafel_Info;
-	description		= "Hier ist die Steintafel.";
+	description		= "Here's the stone tablet.";
 };
 
 func int DIA_Addon_Franco_tafel_Condition()
@@ -400,10 +400,10 @@ func int DIA_Addon_Franco_tafel_Condition()
 
 func void DIA_Addon_Franco_tafel_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_tafel_15_00"); //Hier ist die Steintafel.
+	AI_Output(other, self, "DIA_Addon_Franco_tafel_15_00"); //Here's the stone tablet.
 	B_GiveInvItems(other, self, ItMi_Addon_Stone_04, 1);
 
-	AI_Output(self, other, "DIA_Addon_Franco_tafel_08_01"); //Gut, sehr gut. Raven wird mit dir zufrieden sein.
+	AI_Output(self, other, "DIA_Addon_Franco_tafel_08_01"); //Good, very good. Raven will be pleased with you.
 	MIS_HlpEdgor = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Addon_HlpEdgor);
 
@@ -419,7 +419,7 @@ instance DIA_Addon_Franco_JemandAnderen(C_INFO)
 	nr				= 11;
 	condition		= DIA_Addon_Franco_JemandAnderen_Condition;
 	information		= DIA_Addon_Franco_JemandAnderen_Info;
-	description		= "Was ist jetzt mit dem Lager? Kann ich endlich rein?";
+	description		= "What about the camp now? Can I finally go in?";
 };
 
 func int DIA_Addon_Franco_JemandAnderen_Condition()
@@ -432,11 +432,11 @@ func int DIA_Addon_Franco_JemandAnderen_Condition()
 
 func void DIA_Addon_Franco_JemandAnderen_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_JemandAnderen_15_00"); //Was ist jetzt mit dem Lager? Kann ich endlich rein?
+	AI_Output(other, self, "DIA_Addon_Franco_JemandAnderen_15_00"); //What about the camp now? Can I finally go in?
 
 	if (!Npc_IsDead(Logan))
 	{
-		AI_Output(self, other, "DIA_Addon_Franco_JemandAnderen_08_01"); //Nein, ich habe Logan reingeschickt. Er stand vor dir auf der Liste.
+		AI_Output(self, other, "DIA_Addon_Franco_JemandAnderen_08_01"); //No, I already sent Logan in. He was ahead of you in the list.
 
 		Logan_Inside = TRUE;
 		AI_Teleport(Logan, "BL_INN_CORNER_02");
@@ -444,11 +444,11 @@ func void DIA_Addon_Franco_JemandAnderen_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Franco_JemandAnderen_08_02"); //Nein, ich habe bereits jemand anderen geschickt.
+		AI_Output(self, other, "DIA_Addon_Franco_JemandAnderen_08_02"); //No, I already sent someone else in.
 	};
 
-	AI_Output(self, other, "DIA_Addon_Franco_JemandAnderen_08_03"); //Und für einen weiteren Mann ist zurzeit kein Bedarf im Lager.
-	AI_Output(self, other, "DIA_Addon_Franco_JemandAnderen_08_04"); //Außerdem kann ich dich hier gut gebrauchen, (grinst) jetzt, wo Logan nicht mehr da ist.
+	AI_Output(self, other, "DIA_Addon_Franco_JemandAnderen_08_03"); //And at the moment, there's no need for another man in the camp.
+	AI_Output(self, other, "DIA_Addon_Franco_JemandAnderen_08_04"); //Besides, I can really use you here, (grins) now that Logan isn't here any more.
 
 	B_LogEntry(Topic_Addon_Franco, Topic_Addon_Franco_11);
 };
@@ -463,7 +463,7 @@ instance DIA_Addon_Franco_Fight(C_INFO)
 	condition		= DIA_Addon_Franco_Fight_Condition;
 	information		= DIA_Addon_Franco_Fight_Info;
 	permanent		= TRUE;
-	description		= "Schick mich JETZT rein!";
+	description		= "Send me in NOW!";
 };
 
 func int DIA_Addon_Franco_Fight_Condition()
@@ -473,18 +473,18 @@ func int DIA_Addon_Franco_Fight_Condition()
 
 func void DIA_Addon_Franco_Fight_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_Fight_15_00"); //Schick mich JETZT rein!
-	AI_Output(self, other, "DIA_Addon_Franco_Fight_08_01"); //(gefährlich freundlich) Und was, wenn ich nein sage?
+	AI_Output(other, self, "DIA_Addon_Franco_Fight_15_00"); //Send me in NOW!
+	AI_Output(self, other, "DIA_Addon_Franco_Fight_08_01"); //(dangerously friendly) And what if I say no?
 
 	Info_ClearChoices(DIA_Addon_Franco_Fight);
-	Info_AddChoice(DIA_Addon_Franco_Fight, "Dann warte ich eben noch ein bißchen...", DIA_Addon_Franco_Fight_Nothing);
-	Info_AddChoice(DIA_Addon_Franco_Fight, "Dann wirst du es eben bereuen.", DIA_Addon_Franco_Fight_Duel);
+	Info_AddChoice(DIA_Addon_Franco_Fight, "Then I'll just wait a bit...", DIA_Addon_Franco_Fight_Nothing);
+	Info_AddChoice(DIA_Addon_Franco_Fight, "Then you'll simply regret it.", DIA_Addon_Franco_Fight_Duel);
 };
 
 func void DIA_Addon_Franco_Fight_Duel()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_Fight_Duel_15_00"); //Dann wirst du es eben bereuen.
-	AI_Output(self, other, "DIA_Addon_Franco_Fight_Duel_08_01"); //Willst du mir drohen? DU? Willst MIR drohen? - Es ist wohl Zeit für eine Lektion ...
+	AI_Output(other, self, "DIA_Addon_Franco_Fight_Duel_15_00"); //Then you'll simply regret it.
+	AI_Output(self, other, "DIA_Addon_Franco_Fight_Duel_08_01"); //Are you threatening me? YOU? Want to threaten ME? - It's time for a lesson...
 	Info_ClearChoices(DIA_Addon_Franco_Fight);
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -492,8 +492,8 @@ func void DIA_Addon_Franco_Fight_Duel()
 
 func void DIA_Addon_Franco_Fight_Nothing()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_Fight_Nothing_15_00"); //Dann warte ich eben noch ein bisschen ...
-	AI_Output(self, other, "DIA_Addon_Franco_Fight_Nothing_08_01"); //(spöttisch) Genau.
+	AI_Output(other, self, "DIA_Addon_Franco_Fight_Nothing_15_00"); //Then I'll just wait a bit...
+	AI_Output(self, other, "DIA_Addon_Franco_Fight_Nothing_08_01"); //(mockingly) Exactly.
 
 	Info_ClearChoices(DIA_Addon_Franco_Fight);
 	AI_StopProcessInfos(self);
@@ -509,7 +509,7 @@ instance DIA_Addon_Franco_Pig(C_INFO)
 	condition		= DIA_Addon_Franco_Pig_Condition;
 	information		= DIA_Addon_Franco_Pig_Info;
 	permanent		= TRUE;
-	description		= "Du Schwein! Ich mach dich fertig!";
+	description		= "You swine! I'll get you!";
 };
 
 func int DIA_Addon_Franco_Pig_Condition()
@@ -522,8 +522,8 @@ func int DIA_Addon_Franco_Pig_Condition()
 
 func void DIA_Addon_Franco_Pig_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Franco_Pig_15_00"); //Du Schwein! Ich mach dich fertig!
-	AI_Output(self, other, "DIA_Addon_Franco_Pig_08_01"); //(gepreßt) Du mieser kleiner Wicht willst dich mit MIR anlegen? Na warte!
+	AI_Output(other, self, "DIA_Addon_Franco_Pig_15_00"); //You swine! I'll get you!
+	AI_Output(self, other, "DIA_Addon_Franco_Pig_08_01"); //(strained) You miserable little wretch, you want to mess with ME? Just you wait!
 
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);

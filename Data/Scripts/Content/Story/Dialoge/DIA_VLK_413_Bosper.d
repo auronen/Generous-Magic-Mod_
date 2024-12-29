@@ -43,9 +43,9 @@ func int DIA_Bosper_HALLO_Condition()
 
 func void DIA_Bosper_HALLO_Info()
 {
-	AI_Output(self, other, "DIA_Bosper_HALLO_11_00"); //Willkommen in meinem Laden, Fremder!
-	AI_Output(self, other, "DIA_Bosper_HALLO_11_01"); //Ich bin Bosper. Ich baue Bögen und handele mit Fellen.
-	AI_Output(self, other, "DIA_Bosper_HALLO_11_02"); //Was treibt dich nach Khorinis?
+	AI_Output(self, other, "DIA_Bosper_HALLO_11_00"); //Welcome to my shop, stranger!
+	AI_Output(self, other, "DIA_Bosper_HALLO_11_01"); //I am Bosper. I craft bows and trade in furs.
+	AI_Output(self, other, "DIA_Bosper_HALLO_11_02"); //What brings you to Khorinis?
 
 	Log_CreateTopic(TOPIC_CityTrader, LOG_NOTE);
 	B_LogEntry(TOPIC_CityTrader, TOPIC_CityTrader_10);
@@ -60,7 +60,7 @@ instance DIA_Bosper_IntoOV(C_INFO)
 	nr				= 1;
 	condition		= DIA_Bosper_IntoOV_Condition;
 	information		= DIA_Bosper_IntoOV_Info;
-	description		= "Ich muss ins obere Viertel ...";
+	description		= "I need to get into the upper quarter ...";
 };
 
 func int DIA_Bosper_IntoOV_Condition()
@@ -74,13 +74,13 @@ func int DIA_Bosper_IntoOV_Condition()
 
 func void DIA_Bosper_IntoOV_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_IntoOV_15_00"); //Ich muss ins obere Viertel ...
-	AI_Output(self, other, "DIA_Bosper_IntoOV_11_01"); //Zu den Paladinen? Das kannst du dir aus dem Kopf schlagen.
-	AI_Output(self, other, "DIA_Bosper_IntoOV_11_02"); //Du musst hier angesehener Bürger sein, oder zumindest eine ordentliche Arbeit haben.
-	AI_Output(self, other, "DIA_Bosper_IntoOV_11_03"); //Als Fremder kommst du da nicht rein.
+	AI_Output(other, self, "DIA_Bosper_IntoOV_15_00"); //I need to get into the upper quarter ...
+	AI_Output(self, other, "DIA_Bosper_IntoOV_11_01"); //Where the paladins are? Forget it.
+	AI_Output(self, other, "DIA_Bosper_IntoOV_11_02"); //You need to be a respected citizen here, or at least hold a decent job.
+	AI_Output(self, other, "DIA_Bosper_IntoOV_11_03"); //As a stranger, you stand no chance of getting in.
 	if (Torwache_305.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output(other, self, "DIA_Bosper_IntoOV_15_04"); //Hab ich auch gemerkt ...
+		AI_Output(other, self, "DIA_Bosper_IntoOV_15_04"); //So I noticed ...
 	};
 
 	Log_CreateTopic(TOPIC_OV, LOG_MISSION);
@@ -97,7 +97,7 @@ instance DIA_Bosper_SeekWork(C_INFO)
 	nr				= 2;
 	condition		= DIA_Bosper_SeekWork_Condition;
 	information		= DIA_Bosper_SeekWork_Info;
-	description		= "Ich suche Arbeit!";
+	description		= "I'm looking for work.";
 };
 
 func int DIA_Bosper_SeekWork_Condition()
@@ -107,20 +107,20 @@ func int DIA_Bosper_SeekWork_Condition()
 
 func void DIA_Bosper_SeekWork_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_SeekWork_15_00"); //Ich suche Arbeit!
-	AI_Output(self, other, "DIA_Bosper_SeekWork_11_01"); //Mmh - ich könnte einen neuen Lehrling gebrauchen.
-	AI_Output(self, other, "DIA_Bosper_SeekWork_11_02"); //Dein Vorgänger hat gerade vor zwei Tagen seinen Job an den Nagel gehängt.
-	AI_Output(self, other, "DIA_Bosper_SeekWork_11_03"); //Verstehst du denn was vom Jagen?
+	AI_Output(other, self, "DIA_Bosper_SeekWork_15_00"); //I'm looking for work!
+	AI_Output(self, other, "DIA_Bosper_SeekWork_11_01"); //Mmh - I could use a new apprentice.
+	AI_Output(self, other, "DIA_Bosper_SeekWork_11_02"); //The last one just gave up his job two days ago.
+	AI_Output(self, other, "DIA_Bosper_SeekWork_11_03"); //Do you know anything about hunting, then?
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		AI_Output(other, self, "DIA_Bosper_SeekWork_15_04"); //Na ja ...
-		AI_Output(self, other, "DIA_Bosper_SeekWork_11_05"); //Ich könnte dir beibringen, wie man Tieren das Fell abzieht.
-		AI_Output(self, other, "DIA_Bosper_SeekWork_11_06"); //Ich zahle gut für jedes Fell, das du mir bringst.
+		AI_Output(other, self, "DIA_Bosper_SeekWork_15_04"); //Weeell ...
+		AI_Output(self, other, "DIA_Bosper_SeekWork_11_05"); //I could teach you how to skin animals.
+		AI_Output(self, other, "DIA_Bosper_SeekWork_11_06"); //I'll pay you well for every skin you bring me.
 	}
 	else
 	{
-		AI_Output(other, self, "DIA_Bosper_SeekWork_15_07"); //Ich kann dir Felle besorgen, wenn du DAS meinst.
-		AI_Output(self, other, "DIA_Bosper_SeekWork_11_08"); //Ausgezeichnet! Bring mir so viele Tierfelle, wie du kriegen kannst - ich werde sie dir für einen guten Preis abkaufen!.
+		AI_Output(other, self, "DIA_Bosper_SeekWork_15_07"); //I can get you some skins if that's what you mean.
+		AI_Output(self, other, "DIA_Bosper_SeekWork_11_08"); //Excellent! Bring me as many animal skins as you can - I will buy them from you for a good price.
 	};
 
 	B_LogEntry(TOPIC_Lehrling, TOPIC_Lehrling_15);
@@ -140,7 +140,7 @@ instance DIA_Bosper_LEHRLING(C_INFO)
 	condition		= DIA_Bosper_LEHRLING_Condition;
 	information		= DIA_Bosper_LEHRLING_Info;
 	permanent		= TRUE;
-	description		= "Ich will bei dir als Lehrling anfangen!";
+	description		= "I want to start as your apprentice!";
 };
 
 func int DIA_Bosper_LEHRLING_Condition()
@@ -157,12 +157,12 @@ func void DIA_Bosper_LEHRLING_Info()
 	var int stimmen;
 	stimmen = 0;
 
-	AI_Output(other, self, "DIA_Bosper_LEHRLING_15_00"); //Ich will bei dir als Lehrling anfangen!
+	AI_Output(other, self, "DIA_Bosper_LEHRLING_15_00"); //I want to start as your apprentice!
 
 	if (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 	{
 		// ------ Bosper ------
-		AI_Output(self, other, "DIA_Bosper_LEHRLING_11_01"); //(grinst) Gut! Die Grundlagen hast du ja schon gelernt.
+		AI_Output(self, other, "DIA_Bosper_LEHRLING_11_01"); //(grins) Great! You seem to know the basics already.
 		stimmen = stimmen + 1;
 
 		// ------ Harad ------
@@ -171,17 +171,17 @@ func void DIA_Bosper_LEHRLING_Info()
 			if ((MIS_Harad_Orc == LOG_SUCCESS)
 			|| (MIS_HakonBandits == LOG_SUCCESS))
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_02"); //Harad hält dich für einen guten Mann.
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_02"); //Harad thinks you're a good man.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_03"); //Aber Harad ist nicht davon überzeugt, dass du etwas taugst.
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_03"); //But Harad isn't convinced of your abilities.
 			};
 		}
 		else // noch kein Dialog
 		{
-			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_04"); //Aber Harad sagt, er hat dich noch nie gesehen.
+			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_04"); //But Harad says he's never seen you.
 		};
 
 		// ------ Thorben ------
@@ -189,17 +189,17 @@ func void DIA_Bosper_LEHRLING_Info()
 		{
 			if (MIS_Thorben_GetBlessings == LOG_SUCCESS)
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_05"); //Thorben hat dir seinen Segen gegeben. Ich bin nicht so gläubig, aber mir soll's recht sein.
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_05"); //Thorben gave you his blessing. I'm not all that pious, but I'm fine with it.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_06"); //Thorben wird dir seine Zustimmung nur mit dem Segen der Götter geben.
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_06"); //Thorben will only give you his approval with the blessing of the gods.
 			};
 		}
 		else // noch kein Dialog
 		{
-			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_07"); //Thorben weiß nicht, wer du bist.
+			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_07"); //Thorben has no idea who you are.
 		};
 
 		// ------ Constantino ------
@@ -207,18 +207,18 @@ func void DIA_Bosper_LEHRLING_Info()
 		{
 			if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_08"); //Constantino sagt, seinetwegen sollst du anfangen, wo du willst.
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_08"); //Constantino says you can sign up wherever you want for all he cares.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_09"); //Constantino sagt, du wärest hier in der Stadt eines Verbrechens angeklagt - das kann sich doch hoffentlich nur um eine Lappalie handeln?
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_10"); //Sieh zu, dass du die Sache klärst.
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_09"); //Constantino says you're being accused of a crime here in town - I hope that this is something trivial?
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_10"); //See to it that the matter gets cleared up.
 			};
 		}
 		else // noch kein Dialog
 		{
-			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_11"); //Constantino hat noch nie von dir gehört.
+			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_11"); //Constantino has never even heard of you.
 		};
 
 		// ------ Matteo ------
@@ -226,21 +226,21 @@ func void DIA_Bosper_LEHRLING_Info()
 		{
 			if (MIS_Matteo_Gold == LOG_SUCCESS)
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_12"); //Und Matteo sagt, du bist Gold wert.
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_12"); //And Matteo says you're worth your weight in gold.
 				stimmen = stimmen + 1;
 			}
 			else if (MIS_Matteo_Gold == LOG_RUNNING)
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_13"); //Und Matteo sagte irgendwas von Schulden - was immer er meinte, du solltest mit ihm reden.
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_13"); //And Matteo mentioned some debts - whatever he meant by that, you had better talk to him.
 			}
 			else
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_14"); //Und Matteo sagt, er hat noch nicht mit dir über die Sache geredet.
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_14"); //Matteo says he has not yet talked to you about this.
 			};
 		}
 		else // noch kein Dialog
 		{
-			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_15"); //Und Matteo sagt, er hat dich noch nie in seinem Laden gesehen.
+			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_15"); //Matteo says he has never seen you before in his life.
 		};
 
 		// ------ AUSWERTUNG ------
@@ -248,32 +248,32 @@ func void DIA_Bosper_LEHRLING_Info()
 		{
 			if (stimmen == 5)
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_16"); //Damit hast du die Zustimmung aller Meister!
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_16"); //This means you have the approval of all masters!
 			}
 			else // == 4
 			{
-				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_17"); //Damit hast du die Zustimmung von vier Meistern. Das reicht aus, um als Lehrling aufgenommen zu werden.
+				AI_Output(self, other, "DIA_Bosper_LEHRLING_11_17"); //You now have the approval of four masters. That will suffice for you to be accepted as an apprentice.
 			};
 
-			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_18"); //Du kannst jederzeit bei mir anfangen, wenn du willst.
+			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_18"); //You can work for me at any time if you want.
 
 			Info_ClearChoices(DIA_Bosper_LEHRLING);
-			Info_AddChoice(DIA_Bosper_LEHRLING, "Gut - ich denke drüber nach.", DIA_Bosper_LEHRLING_Later);
-			Info_AddChoice(DIA_Bosper_LEHRLING, "Ich bin dabei!", DIA_Bosper_LEHRLING_OK);
+			Info_AddChoice(DIA_Bosper_LEHRLING, "Good - I'll think about it.", DIA_Bosper_LEHRLING_Later);
+			Info_AddChoice(DIA_Bosper_LEHRLING, "I'm in!", DIA_Bosper_LEHRLING_OK);
 		}
 		else // stimmen < 4
 		{
-			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_19"); //Du brauchst die Zustimmung von mindestens vier Meistern, um in der Unterstadt als Lehrling anfangen zu können.
-			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_20"); //Also solltest du mit allen reden, die noch nicht von dir überzeugt sind.
+			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_19"); //You need the approval of at least four masters in order to be able to start an apprenticeship in the lower part of town.
+			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_20"); //This means that you should talk to all those who do not quite approve of you yet.
 		};
 	}
 	else // keine WolfFurs
 	{
-		AI_Output(self, other, "DIA_Bosper_LEHRLING_11_21"); //Bevor ich dich nehme, muss ich natürlich wissen, ob du überhaupt zu was zu gebrauchen bist.
+		AI_Output(self, other, "DIA_Bosper_LEHRLING_11_21"); //Before I take you on I need to know, of course, whether you're any good at all.
 
 		if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		{
-			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_22"); //Du hast mir zwar meinen Bogen wiederbeschafft, aber das sagt noch nicht viel über dein Talent als Jäger aus.
+			AI_Output(self, other, "DIA_Bosper_LEHRLING_11_22"); //You brought me back my bow, but that doesn't say much about your talent as a hunter.
 		};
 
 		Bosper_HintToJob = TRUE;
@@ -282,8 +282,8 @@ func void DIA_Bosper_LEHRLING_Info()
 
 func void DIA_Bosper_LEHRLING_OK()
 {
-	AI_Output(other, self, "DIA_Bosper_LEHRLING_OK_15_00"); //Ich bin dabei!
-	AI_Output(self, other, "DIA_Bosper_LEHRLING_OK_11_01"); //Du wirst es nicht bereuen! Ich glaube, wir werden gut zusammenarbeiten.
+	AI_Output(other, self, "DIA_Bosper_LEHRLING_OK_15_00"); //I'm in!
+	AI_Output(self, other, "DIA_Bosper_LEHRLING_OK_11_01"); //You aren't going to regret this! I think we'll be able to work together well.
 
 	Player_IsApprentice = APP_BOSPER;
 	Npc_ExchangeRoutine(Lothar, "START");
@@ -301,8 +301,8 @@ func void DIA_Bosper_LEHRLING_OK()
 
 func void DIA_Bosper_LEHRLING_Later()
 {
-	AI_Output(other, self, "DIA_Bosper_LEHRLING_Later_15_00"); //Gut - ich denke drüber nach.
-	AI_Output(self, other, "DIA_Bosper_LEHRLING_Later_11_01"); //Triff nicht die falsche Entscheidung! Bei mir bist du goldrichtig.
+	AI_Output(other, self, "DIA_Bosper_LEHRLING_Later_15_00"); //Good - I'll think about it.
+	AI_Output(self, other, "DIA_Bosper_LEHRLING_Later_11_01"); //Don't make the wrong decision! You'd be perfect for me.
 
 	Info_ClearChoices(DIA_Bosper_LEHRLING);
 };
@@ -316,7 +316,7 @@ instance DIA_Bosper_OtherMasters(C_INFO)
 	nr				= 3;
 	condition		= DIA_Bosper_OtherMasters_Condition;
 	information		= DIA_Bosper_OtherMasters_Info;
-	description		= "Was ist, wenn ich bei einem der anderen Meister anfangen will?";
+	description		= "What if I want to sign on with one of the other masters?";
 };
 
 func int DIA_Bosper_OtherMasters_Condition()
@@ -330,13 +330,13 @@ func int DIA_Bosper_OtherMasters_Condition()
 
 func void DIA_Bosper_OtherMasters_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_OtherMasters_15_00"); //Was ist, wenn ich bei einem der anderen Meister anfangen will?
-	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_01"); //(brummig) Unsinn!
-	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_02"); //Harad und Matteo haben schon Lehrlinge.
-	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_03"); //Constantino, der Alchemist, ist ein Eigenbrötler - er hat schon seit Jahren keinen Lehrling mehr angenommen.
-	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_04"); //Und was Thorben betrifft - jeder weiß, dass er kein Geld hat - er könnte dich vermutlich nicht mal bezahlen.
-	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_05"); //Ich hingegen brauche dringend einen Lehrling - und ich zahle auch gut.
-	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_06"); //Aber egal bei wem du anfangen willst - du brauchst die Zustimmung aller anderen Meister aus der Unterstadt ...
+	AI_Output(other, self, "DIA_Bosper_OtherMasters_15_00"); //What if I want to sign on with one of the other masters?
+	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_01"); //(grumpy) Balderdash!
+	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_02"); //Harad and Matteo already have apprentices.
+	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_03"); //Constantino the alchemist is a loner - and he hasn't taken an apprentice in years.
+	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_04"); //And as for Thorben - everyone knows he's dead broke - he probably couldn't even pay you.
+	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_05"); //I, on the other hand, am in urgent need of an apprentice - and I pay well, too.
+	AI_Output(self, other, "DIA_Bosper_OtherMasters_11_06"); //But no matter where you want to sign on - you need the approval of all other masters from the lower part of town ...
 };
 
 // ***********************************************************
@@ -348,7 +348,7 @@ instance DIA_Bosper_Bartok(C_INFO)
 	nr				= 4;
 	condition		= DIA_Bosper_Bartok_Condition;
 	information		= DIA_Bosper_Bartok_Info;
-	description		= "Warum hat dein Lehrling seinen Job aufgegeben?";
+	description		= "Why did your apprentice give up his job?";
 };
 
 func int DIA_Bosper_Bartok_Condition()
@@ -361,11 +361,11 @@ func int DIA_Bosper_Bartok_Condition()
 
 func void DIA_Bosper_Bartok_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_Bartok_15_00"); //Warum hat dein Lehrling seinen Job aufgegeben?
-	AI_Output(self, other, "DIA_Bosper_Bartok_11_01"); //Mir hat er nur gesagt, es sei zu gefährlich geworden da draußen.
-	AI_Output(self, other, "DIA_Bosper_Bartok_11_02"); //Wenn es dich wirklich interessiert, kannst du ihn ja selber fragen.
-	AI_Output(self, other, "DIA_Bosper_Bartok_11_03"); //Er heißt Bartok und treibt sich vermutlich in der Nähe von Coragons Kneipe rum.
-	AI_Output(self, other, "DIA_Bosper_Bartok_11_04"); //Geh vom Schmied aus durch die Unterführung, dann läufst du direkt darauf zu.
+	AI_Output(other, self, "DIA_Bosper_Bartok_15_00"); //Why did your apprentice give up his job?
+	AI_Output(self, other, "DIA_Bosper_Bartok_11_01"); //All he said was that it had become too dangerous out there.
+	AI_Output(self, other, "DIA_Bosper_Bartok_11_02"); //If you're really interested, then you can ask him yourself.
+	AI_Output(self, other, "DIA_Bosper_Bartok_11_03"); //His name is Bartok. He's probably hanging out near Coragon's tavern.
+	AI_Output(self, other, "DIA_Bosper_Bartok_11_04"); //Go through the underpass from the smithy, then you're headed straight for it.
 };
 
 // ***********************************************************
@@ -378,7 +378,7 @@ instance DIA_Bosper_ZUSTIMMUNG(C_INFO)
 	condition		= DIA_Bosper_ZUSTIMMUNG_Condition;
 	information		= DIA_Bosper_ZUSTIMMUNG_Info;
 	permanent		= TRUE;
-	description		= "Bekomme ich deine Zustimmung, um bei einem der anderen Meister anzufangen?";
+	description		= "Will I get your approval to sign up with a different master?";
 };
 
 func int DIA_Bosper_ZUSTIMMUNG_Condition()
@@ -394,22 +394,22 @@ var int Bosper_Zustimmung_Once;
 
 func void DIA_Bosper_ZUSTIMMUNG_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_ZUSTIMMUNG_15_00"); //Bekomme ich deine Zustimmung, um bei einem der anderen Meister anzufangen?
+	AI_Output(other, self, "DIA_Bosper_ZUSTIMMUNG_15_00"); //Will I get your approval to sign up with a different master?
 	if ((MIS_Bosper_Bogen == LOG_SUCCESS)
 	|| (MIS_Bosper_WolfFurs == LOG_SUCCESS))
 	{
-		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_01"); //(enttäuscht) Ich hatte gehofft, du würdest dich für mich entscheiden.
-		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_02"); //Aber wenn du es unbedingt so willst ...
-		AI_Output(other, self, "DIA_Bosper_ZUSTIMMUNG_15_03"); //Heißt das, du stimmst für mich?
-		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_04"); //Wenn keiner der anderen Meister etwas dagegen hat - ja.
+		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_01"); //(disappointed) I had hoped you would choose me.
+		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_02"); //But if that's the way you want it ...
+		AI_Output(other, self, "DIA_Bosper_ZUSTIMMUNG_15_03"); //Does that mean you'll vote for me?
+		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_04"); //If none of the other masters objects - yes.
 		if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		{
-			AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_05"); //Immerhin hast du mir meinen Bogen wiedergebracht.
+			AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_05"); //You brought back my bow, after all.
 		};
 
 		if (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 		{
-			AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_06"); //Aber an dir ist ein guter Jäger verlorengegangen.
+			AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_06"); //But you would certainly have made a good hunter.
 		};
 
 		if (Bosper_Zustimmung_Once == FALSE)
@@ -422,11 +422,11 @@ func void DIA_Bosper_ZUSTIMMUNG_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_07"); //(seufzt) Nun gut! Ich werde zustimmen - aber unter einer Bedingung.
-		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_08"); //Arbeite wenigstens eine kurze Zeit lang für mich.
-		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_09"); //Dann kannst du mit Sicherheit sagen, ob dir mein Handwerk liegt oder nicht.
-		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_10"); //Und wer weiß - vielleicht gefällt es dir am Ende ja und du bleibst bei mir.
-		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_11"); //Wenn du gut genug bist, um bei MIR anzufangen, bist du auch gut genug für alle anderen hier.
+		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_07"); //(sighs) All right! You shall have my approval - but on one condition.
+		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_08"); //Work for me, at least for a short time.
+		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_09"); //That way you can find out for yourself whether you like my craft or not.
+		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_10"); //And who knows - maybe you'll end up liking it, and you'll stay with me.
+		AI_Output(self, other, "DIA_Bosper_ZUSTIMMUNG_11_11"); //If you're good enough to sign on with ME, you're also good enough for all others here.
 		Bosper_HintToJob = TRUE;
 	};
 };
@@ -440,7 +440,7 @@ instance DIA_Bosper_Job(C_INFO)
 	nr				= 2;
 	condition		= DIA_Bosper_Job_Condition;
 	information		= DIA_Bosper_Job_Info;
-	description		= "Was soll ich für dich machen?";
+	description		= "What do you want me to do for you?";
 };
 
 func int DIA_Bosper_Job_Condition()
@@ -453,25 +453,25 @@ func int DIA_Bosper_Job_Condition()
 
 func void DIA_Bosper_Job_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_Job_15_00"); //Was soll ich für dich machen?
+	AI_Output(other, self, "DIA_Bosper_Job_15_00"); //What do you want me to do for you?
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		AI_Output(self, other, "DIA_Bosper_Job_11_01"); //Ich werd dir beibringen, wie man Tieren das Fell abzieht und du besorgst mir - sagen wir - ein halbes Dutzend Wolfsfelle.
+		AI_Output(self, other, "DIA_Bosper_Job_11_01"); //I will teach you how to skin an animal, and you will bring me - let's say - half a dozen wolf skins.
 
 		Log_CreateTopic(TOPIC_CityTeacher, LOG_NOTE);
 		B_LogEntry(TOPIC_CityTeacher, Topic_CityTeacher_17);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Bosper_Job_11_02"); //Besorg mir ein halbes Dutzend Wolfsfelle.
+		AI_Output(self, other, "DIA_Bosper_Job_11_02"); //Bring me half a dozen wolf skins.
 	};
 
-	AI_Output(self, other, "DIA_Bosper_Job_11_03"); //Dann weiß ich, dass du dein Handwerk beherrschst.
-	AI_Output(self, other, "DIA_Bosper_Job_11_04"); //Wenn du dafür nicht ewig brauchst und die Felle einigermaßen in Ordnung sind, kannst du von mir aus bei mir anfangen.
+	AI_Output(self, other, "DIA_Bosper_Job_11_03"); //Then I'll know that you have learned your trade.
+	AI_Output(self, other, "DIA_Bosper_Job_11_04"); //If it doesn't take you forever and if the skins are in acceptable condition, I will take you on if you like.
 	if (Npc_KnowsInfo(other, DIA_Bosper_OtherMasters))
 	{
-		AI_Output(self, other, "DIA_Bosper_Job_11_05"); //Oder (seufzt) bei einem der anderen Meister - wenn du unbedingt willst.
+		AI_Output(self, other, "DIA_Bosper_Job_11_05"); //Or (sighs) you can start with one of the other masters - if that's what you really want.
 	};
 
 	MIS_Bosper_WolfFurs = LOG_RUNNING;
@@ -496,7 +496,7 @@ instance DIA_Bosper_BringFur(C_INFO)
 	condition		= DIA_Bosper_BringFur_Condition;
 	information		= DIA_Bosper_BringFur_Info;
 	permanent		= TRUE;
-	description		= "Wegen der Wolfsfelle ...";
+	description		= "About the wolf skins ...";
 };
 
 func int DIA_Bosper_BringFur_Condition()
@@ -509,29 +509,29 @@ func int DIA_Bosper_BringFur_Condition()
 
 func void DIA_Bosper_BringFur_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_BringFur_15_00"); //Wegen der Wolfsfelle ...
+	AI_Output(other, self, "DIA_Bosper_BringFur_15_00"); //About the wolf skins ...
 
 	if (Player_IsApprentice > APP_NONE)
 	{
-		AI_Output(self, other, "DIA_Bosper_BringFur_11_01"); //Jetzt bist du schon Lehrling bei einem anderen Meister. Ich werde dir die Felle zum normalen Preis abkaufen.
+		AI_Output(self, other, "DIA_Bosper_BringFur_11_01"); //You're already apprenticed to a different master now. I will buy the skins from you for the regular price.
 		MIS_Bosper_WolfFurs = LOG_OBSOLETE;
 		return;
 	};
 
 	if (B_GiveInvItems(other, self, ItAt_WolfFur, 6))
 	{
-		AI_Output(other, self, "DIA_Bosper_BringFur_15_02"); //Ich habe sie - hier.
-		AI_Output(self, other, "DIA_Bosper_BringFur_11_03"); //Na bitte! Ich hab mir schon gedacht, dass du für die Arbeit geeignet bist.
-		AI_Output(self, other, "DIA_Bosper_BringFur_11_04"); //Hier hast du deinen versprochenen Lohn.
+		AI_Output(other, self, "DIA_Bosper_BringFur_15_02"); //I've got them - here.
+		AI_Output(self, other, "DIA_Bosper_BringFur_11_03"); //Great! I knew you would be suitable for this job.
+		AI_Output(self, other, "DIA_Bosper_BringFur_11_04"); //Here's the pay I promised you.
 		B_GiveInvItems(self, other, itmi_gold,(Value_WolfFur * 6));
-		AI_Output(self, other, "DIA_Bosper_BringFur_11_05"); //Und? Was denkst du? Ist die Arbeit nicht besser, als den ganzen Tag auf Schwertern rumzuhämmern oder im staubigen Kämmerlein Fläschchen abzufüllen?
+		AI_Output(self, other, "DIA_Bosper_BringFur_11_05"); //And? What do you think? Isn't this better work than banging away at swords all day, or filling little bottles in a dusty chamber?
 
 		MIS_Bosper_WolfFurs = LOG_SUCCESS;
 		B_LogEntry(Topic_Lehrling, TOPIC_Lehrling_5);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Bosper_BringFur_11_06"); //Wir hatten uns auf ein halbes Dutzend geeinigt - aber du hast ja noch Zeit - geh und besorg die Felle!
+		AI_Output(self, other, "DIA_Bosper_BringFur_11_06"); //We had agreed on half a dozen - but you've still got time. Go and get those skins.
 	};
 };
 
@@ -545,7 +545,7 @@ instance DIA_Bosper_TeachFUR(C_INFO)
 	condition		= DIA_Bosper_TeachFUR_Condition;
 	information		= DIA_Bosper_TeachFUR_Info;
 	permanent		= TRUE;
-	description		= "Bring mir bei, wie man Tieren das Fell abzieht! (5 LP)";
+	description		= "Teach me how to skin animals! (5 LP)";
 };
 
 func int DIA_Bosper_TeachFUR_Condition()
@@ -559,15 +559,15 @@ func int DIA_Bosper_TeachFUR_Condition()
 
 func void DIA_Bosper_TeachFUR_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_TeachFUR_15_00"); //Bring mir bei, wie man Tieren das Fell abzieht!
+	AI_Output(other, self, "DIA_Bosper_TeachFUR_15_00"); //Teach me how to skin animals!
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy(self, other, TROPHY_Fur))
 	{
-		AI_Output(self, other, "DIA_Bosper_TeachFUR_11_01"); //Gut. Hör zu. Es ist im Grunde ganz einfach.
-		AI_Output(self, other, "DIA_Bosper_TeachFUR_11_02"); //Du nimmst eine scharfe Klinge und schneidest dem Vieh den Bauch auf. Noch ein paar kleine Schnitte an den Innenseiten der Beine und dann kannst du's abziehen.
+		AI_Output(self, other, "DIA_Bosper_TeachFUR_11_01"); //Right. Listen. It's quite easy, really.
+		AI_Output(self, other, "DIA_Bosper_TeachFUR_11_02"); //You take a sharp blade and cut open the animal's belly. Then make a few small incisions on the inside of the legs, and you can peel off the skin.
 		if (MIS_Bosper_WolfFurs == LOG_RUNNING)
 		{
-			AI_Output(self, other, "DIA_Bosper_TeachFUR_11_03"); //Bring mir die Wolfsfelle und wir sehen weiter ...
+			AI_Output(self, other, "DIA_Bosper_TeachFUR_11_03"); //Bring me the wolf skins and we shall see ...
 			B_LogEntry(TOPIC_BosperWolf, TOPIC_BosperWolf_3);
 		};
 	};
@@ -583,7 +583,7 @@ instance DIA_Bosper_Trade(C_INFO)
 	condition		= DIA_Bosper_Trade_Condition;
 	information		= DIA_Bosper_Trade_Info;
 	permanent		= TRUE;
-	description		= "Zeig mir deine Ware.";
+	description		= "Show me your wares.";
 };
 
 func int DIA_Bosper_Trade_Condition()
@@ -598,7 +598,7 @@ func int DIA_Bosper_Trade_Condition()
 
 func void DIA_Bosper_Trade_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_Trade_15_00"); //Zeig mir deine Ware.
+	AI_Output(other, self, "DIA_Bosper_Trade_15_00"); //Show me your wares.
 
 	if (DIA_Bosper_Trade.trade == TRUE)
 	{
@@ -618,13 +618,13 @@ func void DIA_Bosper_Trade_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Bosper_Trade_11_01"); //Du sollst dir hier nicht meine Ware ansehen, du sollst mir die Felle besorgen!
-		AI_Output(self, other, "DIA_Bosper_Trade_11_02"); //Also sieh zu!
+		AI_Output(self, other, "DIA_Bosper_Trade_11_01"); //You're not here to browse through my wares, you're supposed to get me those skins!
+		AI_Output(self, other, "DIA_Bosper_Trade_11_02"); //So get going!
 	};
 };
 
 // **************************************************************
-// 						Von Bogen gehört
+// 						Von Bogen gehÃ¶rt
 // **************************************************************
 instance DIA_Bosper_BogenRunning(C_INFO)
 {
@@ -632,7 +632,7 @@ instance DIA_Bosper_BogenRunning(C_INFO)
 	nr				= 5;
 	condition		= DIA_Bosper_BogenRunning_Condition;
 	information		= DIA_Bosper_BogenRunning_Info;
-	description		= "Ich hab gehört, du bist bestohlen worden.";
+	description		= "I've heard that someone stole from you.";
 };
 
 func int DIA_Bosper_BogenRunning_Condition()
@@ -645,15 +645,15 @@ func int DIA_Bosper_BogenRunning_Condition()
 
 func void DIA_Bosper_BogenRunning_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_BogenRunning_15_00"); //Ich hab gehört, du bist bestohlen worden.
-	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_01"); //Von wem hast du das gehört? Vermutlich Bartok, hm? Hatte wohl wieder mal nichts Besseres zu erzählen? Egal.
-	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_02"); //Ich kann dir sagen, wenn ich den Mistkerl in die Finger bekomme, ist er dran!
-	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_03"); //War nur kurz mal nicht im Laden. Als ich wiederkomme, sehe ich ihn gerade noch rausgehen - mit meinem Bogen über der Schulter.
-	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_04"); //Hab direkt die Wachen gerufen, aber der Mistkerl ist Richtung Hafen gerannt. Und dort ist er ihnen dann entwischt.
-	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_05"); //Daraufhin hab ich ihnen mächtig Feuer unterm Arsch gemacht, und sie haben das gesamte Hafenviertel durchsucht. Aber gefunden haben sie nichts.
-	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_06"); //Diese unfähigen Büttel!
-	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_07"); //Ich wette, mein Bogen ist noch irgendwo in der Stadt. Ich hab den Wachen an beiden Stadttoren Bescheid gesagt und die haben niemanden mit meinem Bogen rausgehen sehen.
-	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_08"); //Wenn ich den Mistkerl erwische ...
+	AI_Output(other, self, "DIA_Bosper_BogenRunning_15_00"); //I've heard that someone stole from you.
+	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_01"); //Who told you that? Probably Bartok, huh? Didn't he have anything better to tell you? Oh well.
+	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_02"); //Let me tell you, if I get hold of this bastard he can say his prayers!
+	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_03"); //I left the shop only for a moment. When I came back, I could only just see him leave - with my bow on his shoulder.
+	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_04"); //I called the guards right away, but the lowlife ran towards the harbor. And they lost him there.
+	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_05"); //I lit a bonfire under their asses then, and they searched the entire harbor district. But they didn't find a thing.
+	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_06"); //Those bumbling lackeys!
+	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_07"); //I bet my bow is still in town somewhere. I informed the guards on both city gates, and they haven't seen anyone leave with my bow.
+	AI_Output(self, other, "DIA_Bosper_BogenRunning_11_08"); //When I get my hands on that bastard ...
 
 	Log_CreateTopic(TOPIC_BosperBogen, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BosperBogen, LOG_RUNNING);
@@ -669,7 +669,7 @@ instance DIA_Bosper_BogenSuccess(C_INFO)
 	nr				= 6;
 	condition		= DIA_Bosper_BogenSuccess_Condition;
 	information		= DIA_Bosper_BogenSuccess_Info;
-	description		= "Ich glaube, dieser Bogen gehört dir ...";
+	description		= "I think this bow belongs to you ...";
 };
 
 func int DIA_Bosper_BogenSuccess_Condition()
@@ -682,15 +682,15 @@ func int DIA_Bosper_BogenSuccess_Condition()
 
 func void DIA_Bosper_BogenSuccess_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_BogenSuccess_15_00"); //Ich glaube, dieser Bogen gehört dir ...
+	AI_Output(other, self, "DIA_Bosper_BogenSuccess_15_00"); //I think this bow belongs to you ...
 
 	B_GiveInvItems(other, self, ItRw_Bow_L_03_MIS, 1);
 
-	AI_Output(self, other, "DIA_Bosper_BogenSuccess_11_01"); //Mein Bogen! Wo hast du ihn gefunden?
-	AI_Output(other, self, "DIA_Bosper_BogenSuccess_15_02"); //In einem dunklen Loch voller Ratten.
-	AI_Output(self, other, "DIA_Bosper_BogenSuccess_11_03"); //Ich hoffe, du bist nicht in Schwierigkeiten gekommen ...
-	AI_Output(other, self, "DIA_Bosper_BogenSuccess_15_04"); //Nein - ich habe so was schon öfter gemacht.
-	AI_Output(self, other, "DIA_Bosper_BogenSuccess_11_05"); //Hm - jedenfalls danke! Ich schulde dir was!
+	AI_Output(self, other, "DIA_Bosper_BogenSuccess_11_01"); //My bow! Where did you find it?
+	AI_Output(other, self, "DIA_Bosper_BogenSuccess_15_02"); //In a dark hole full of rats.
+	AI_Output(self, other, "DIA_Bosper_BogenSuccess_11_03"); //I hope you didn't get into trouble ...
+	AI_Output(other, self, "DIA_Bosper_BogenSuccess_15_04"); //No - I've done this kind of thing before.
+	AI_Output(self, other, "DIA_Bosper_BogenSuccess_11_05"); //Hm - thank you anyway. I owe you for this!
 
 	MIS_Bosper_Bogen = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Bosper_Bogen);
@@ -710,7 +710,7 @@ instance DIA_Bosper_PERM(C_INFO)
 	condition		= DIA_Bosper_PERM_Condition;
 	information		= DIA_Bosper_PERM_Info;
 	permanent		= TRUE;
-	description		= "Wie sieht's in der Stadt aus?";
+	description		= "How are things in town?";
 };
 
 func int DIA_Bosper_PERM_Condition()
@@ -723,20 +723,20 @@ func int DIA_Bosper_PERM_Condition()
 
 func void DIA_Bosper_PERM_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_PERM_15_00"); //Wie sieht's in der Stadt aus?
+	AI_Output(other, self, "DIA_Bosper_PERM_15_00"); //How are things in town?
 
 	if (Bosper_Island == FALSE)
 	{
-		AI_Output(self, other, "DIA_Bosper_PERM_11_01"); //Wenn die Orks uns tatsächlich belagern sollten, wird es hier ziemlich ungemütlich.
-		AI_Output(self, other, "DIA_Bosper_PERM_11_02"); //Es gibt nur ein Schiff - und das bewachen die Paladine. Damit werden sie bestimmt nicht die Bürger retten.
-		AI_Output(other, self, "DIA_Bosper_PERM_15_03"); //Gibt es keine andere Möglichkeit, von hier wegzukommen?
-		AI_Output(self, other, "DIA_Bosper_PERM_11_04"); //Nein, ohne Schiff kann keiner von uns diese Insel verlassen.
+		AI_Output(self, other, "DIA_Bosper_PERM_11_01"); //If the orcs really show up to besiege us, it's going to get unpleasant around here.
+		AI_Output(self, other, "DIA_Bosper_PERM_11_02"); //There's only one ship - and the paladins are guarding it. And I don't think they'll use it to rescue the citizens.
+		AI_Output(other, self, "DIA_Bosper_PERM_15_03"); //Is there no other way of getting out of here?
+		AI_Output(self, other, "DIA_Bosper_PERM_11_04"); //No, none of us can leave this island without a ship.
 
 		Bosper_Island = TRUE;
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Bosper_PERM_11_05"); //Bisher gibt es nichts Neues. Schau später mal wieder vorbei.
+		AI_Output(self, other, "DIA_Bosper_PERM_11_05"); //There's nothing new so far. Drop in again later.
 	};
 };
 
@@ -773,8 +773,8 @@ func void DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_MIL)
 	&& (Bosper_MILKommentar == FALSE))
 	{
-		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_00"); //Du bist zur Miliz gegangen, hm?
-		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_01"); //Mir soll's egal sein. Hauptsache, du erlegst neben Orks und Banditen noch ein paar Wölfe (grinst)
+		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_00"); //You up and joined the militia, eh?
+		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_01"); //Not that I care. Just as long as, besides orcs and bandits, you hunt a few wolves as well. (grins)
 		Bosper_MILKommentar = TRUE;
 	}
 
@@ -782,8 +782,8 @@ func void DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_PAL)
 	&& (Bosper_PALKommentar == FALSE))
 	{
-		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_02"); //Du hast ja 'ne steile Karriere hinter dir. Paladin des Königs!
-		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_03"); //Wo immer du auch hingehst, denk an deinen alten Meister ...
+		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_02"); //Looks like your career really took off. Paladin of the King!
+		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_03"); //Wherever you go from here, don't forget your old master ...
 		Bosper_PALKommentar = TRUE;
 	}
 
@@ -792,7 +792,7 @@ func void DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_KDF)
 	&& (Bosper_INNOSKommentar == FALSE))
 	{
-		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_04"); //Du bist ins Kloster gegangen, hm? Ich hoffe, sie lassen dich oft genug raus, damit du mir regelmäßig Felle bringen kannst ...
+		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_04"); //You went and entered the monastery, huh? I hope they let you out often enough so you can keep me supplied with skins ...
 		Bosper_INNOSKommentar = TRUE;
 	}
 
@@ -800,14 +800,14 @@ func void DIA_Bosper_AlsLehrling_Info()
 	&& (other.guild != GIL_PAL)
 	&& (other.guild != GIL_KDF))
 	{
-		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_05"); //Wo hast du dich schon wieder so lange rumgetrieben?
-		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_06"); //Ich brauche neue Felle, hast du welche dabei?
+		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_05"); //Where have you been gadding about for so long?
+		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_06"); //I need more skins, did you bring any?
 		Bosper_Lehrling_Day = Wld_GetDay();
 	}
 
 	else
 	{
-		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_07"); //Da bist du ja wieder ...
+		AI_Output(self, other, "DIA_Bosper_AlsLehrling_11_07"); //There you are again ...
 		Bosper_Lehrling_Day = Wld_GetDay();
 	};
 };
@@ -821,7 +821,7 @@ instance DIA_Bosper_Aufgaben(C_INFO)
 	nr				= 1;
 	condition		= DIA_Bosper_Aufgaben_Condition;
 	information		= DIA_Bosper_Aufgaben_Info;
-	description		= "Was sind meine Aufgaben als Lehrling?";
+	description		= "What are my tasks as an apprentice?";
 };
 
 func int DIA_Bosper_Aufgaben_Condition()
@@ -834,14 +834,14 @@ func int DIA_Bosper_Aufgaben_Condition()
 
 func void DIA_Bosper_Aufgaben_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_Aufgaben_15_00"); //Was sind meine Aufgaben als Lehrling?
-	AI_Output(self, other, "DIA_Bosper_Aufgaben_11_01"); //Ganz einfach. Bring mir so viele Felle, wie du kriegen kannst.
-	AI_Output(self, other, "DIA_Bosper_Aufgaben_11_02"); //Ich zahle dir dafür einen besseren Preis, als du bei jedem anderen Händler bekommst.
-	AI_Output(self, other, "DIA_Bosper_Aufgaben_11_03"); //Ansonsten brauchst du dich hier im Laden nicht blicken zu lassen. Ich komm hier schon alleine klar.
+	AI_Output(other, self, "DIA_Bosper_Aufgaben_15_00"); //What are my tasks as an apprentice?
+	AI_Output(self, other, "DIA_Bosper_Aufgaben_11_01"); //That's easy. Bring me as many pelts as you can get.
+	AI_Output(self, other, "DIA_Bosper_Aufgaben_11_02"); //I'll pay you a better price for them than any of the other traders would give you.
+	AI_Output(self, other, "DIA_Bosper_Aufgaben_11_03"); //Apart from that, you needn't show up here in the shop. I can get along just fine by myself.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output(other, self, "DIA_Bosper_Aufgaben_15_04"); //Und wo soll ich schlafen?
-		AI_Output(self, other, "DIA_Bosper_Aufgaben_11_05"); //Ich hab hier keinen Platz für dich. Im Hotel am Marktplatz findest du bestimmt noch ein Bett.
+		AI_Output(other, self, "DIA_Bosper_Aufgaben_15_04"); //And where am I supposed to sleep?
+		AI_Output(self, other, "DIA_Bosper_Aufgaben_11_05"); //I don't have any room for you here. They're bound to have a bed for you in the hotel at the marketplace.
 	};
 
 	Log_CreateTopic(Topic_Bonus, LOG_NOTE);
@@ -861,7 +861,7 @@ instance DIA_Bosper_SellFur(C_INFO)
 	condition		= DIA_Bosper_SellFur_Condition;
 	information		= DIA_Bosper_SellFur_Info;
 	permanent		= TRUE;
-	description		= "Ich hab hier ein paar Felle für dich ...";
+	description		= "I've got a few skins for you ...";
 };
 
 func int DIA_Bosper_SellFur_Condition()
@@ -874,7 +874,7 @@ func int DIA_Bosper_SellFur_Condition()
 
 func void DIA_Bosper_SellFur_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_SellFur_15_00"); //Ich hab hier ein paar Felle für dich ...
+	AI_Output(other, self, "DIA_Bosper_SellFur_15_00"); //I've got a few skins for you ...
 
 	if ((Npc_HasItems(other, ItAt_SheepFur) > 0)
 	|| (Npc_HasItems(other, ItAt_WolfFur) > 0)
@@ -893,29 +893,29 @@ func void DIA_Bosper_SellFur_Info()
 
 		if (Npc_HasItems(other, ItAt_SheepFur) > 0)
 		{
-			AI_Output(self, other, "DIA_Bosper_SellFur_11_01"); //Schafsfell? Du hast doch nicht etwa bei irgendeinem Bauern die Schafe auf der Weide abgeschlachtet?
-			AI_Output(other, self, "DIA_Bosper_SellFur_15_02"); //Würde mir nie im Traum einfallen ...
+			AI_Output(self, other, "DIA_Bosper_SellFur_11_01"); //A sheep skin? You didn't go slaughter some farmer's sheep in the pasture, did you?
+			AI_Output(other, self, "DIA_Bosper_SellFur_15_02"); //I wouldn't dream of doing that ...
 			B_GiveInvItems(self, other, itmi_gold,(Npc_HasItems(other, ItAt_SheepFur) * Value_SheepFur));
 			B_GiveInvItems(other, self, ItAt_SheepFur, Npc_HasItems(other, ItAt_SheepFur));
 		};
 
 		if (Npc_HasItems(other, ItAt_WolfFur) > 0)
 		{
-			AI_Output(self, other, "DIA_Bosper_SellFur_11_03"); //Wolfsfell, das ist gut...
+			AI_Output(self, other, "DIA_Bosper_SellFur_11_03"); //Wolf skin, that's good ...
 			B_GiveInvItems(self, other, itmi_gold,(Npc_HasItems(other, ItAt_WolfFur) * Value_WolfFur));
 			B_GiveInvItems(other, self, ItAt_WolfFur, Npc_HasItems(other, ItAt_WolfFur));
 		};
 
 		if (Npc_HasItems(other, ItAt_WargFur) > 0)
 		{
-			AI_Output(self, other, "DIA_Bosper_SellFur_11_04"); //Fell von Wargen? Zähe Biester sind das ...
+			AI_Output(self, other, "DIA_Bosper_SellFur_11_04"); //A warg skin? Those beasts are tough ...
 			B_GiveInvItems(self, other, itmi_gold,(Npc_HasItems(other, ItAt_WargFur) * Value_WargFur));
 			B_GiveInvItems(other, self, ItAt_WargFur, Npc_HasItems(other, ItAt_WargFur));
 		};
 
 		if (Npc_HasItems(other, ItAt_ShadowFur) > 0)
 		{
-			AI_Output(self, other, "DIA_Bosper_SellFur_11_05"); //Ah, sogar das Fell eines Schattenläufers - ist 'ne Menge wert.
+			AI_Output(self, other, "DIA_Bosper_SellFur_11_05"); //Ah, even a shadowbeast skin - those are worth a lot.
 			B_GiveInvItems(self, other, itmi_gold,(Npc_HasItems(other, ItAt_ShadowFur) * Value_ShadowFur));
 			B_GiveInvItems(other, self, ItAt_ShadowFur, Npc_HasItems(other, ItAt_ShadowFur));
 		};
@@ -925,15 +925,15 @@ func void DIA_Bosper_SellFur_Info()
 		{
 			if (Bosper_TrollFurSold == FALSE)
 			{
-				AI_Output(self, other, "DIA_Bosper_SellFur_11_06"); //Was zur Hölle ist DAS für ein Fell?
-				AI_Output(other, self, "DIA_Bosper_SellFur_15_07"); //Das hab ich einem Troll über die Ohren gezogen.
-				AI_Output(self, other, "DIA_Bosper_SellFur_11_08"); //Das ... das ist ein halbes Vermögen wert ...
+				AI_Output(self, other, "DIA_Bosper_SellFur_11_06"); //What the hell is THIS skin?
+				AI_Output(other, self, "DIA_Bosper_SellFur_15_07"); //I ripped a troll off for that one.
+				AI_Output(self, other, "DIA_Bosper_SellFur_11_08"); //That ... that is worth a small fortune.
 				Bosper_TrollFurSold = TRUE;
 			}
 			else // TRUE
 			{
-				AI_Output(self, other, "DIA_Bosper_SellFur_11_09"); //Schon wieder so ein riesiges Trollfell ... machst du Jagd auf die Viecher?
-				AI_Output(other, self, "DIA_Bosper_SellFur_15_10"); //Wenn mir mal einer begegnet, nutze ich die Gelegenheit ...
+				AI_Output(self, other, "DIA_Bosper_SellFur_11_09"); //Another huge troll hide ... are you hunting those things down?
+				AI_Output(other, self, "DIA_Bosper_SellFur_15_10"); //Whenever I stumble upon one, I seize the opportunity ...
 			};
 
 			if (Npc_HasItems(other, ItAt_TrollFur) > 0)
@@ -944,17 +944,17 @@ func void DIA_Bosper_SellFur_Info()
 
 			if (Npc_HasItems(other, ItAt_TrollBlackFur) > 0)
 			{
-				AI_Output(self, other, "DIA_Bosper_SellFur_11_11"); //Sogar das Fell eines schwarzen Trolls!
+				AI_Output(self, other, "DIA_Bosper_SellFur_11_11"); //And the hide of a black troll, at that!
 				B_GiveInvItems(self, other, itmi_gold,(Npc_HasItems(other, ItAt_TrollBlackFur) * Value_TrollBlackFur));
 				B_GiveInvItems(other, self, ItAt_TrollBlackFur, Npc_HasItems(other, ItAt_TrollBlackFur));
 			};
 		};
 
-		AI_Output(self, other, "DIA_Bosper_SellFur_11_12"); //Gute Arbeit. Wenn du mehr hast, komm zu mir zurück ...
+		AI_Output(self, other, "DIA_Bosper_SellFur_11_12"); //Good work. Come see me again when you have more ...
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Bosper_SellFur_11_13"); //Du weißt doch - ich bin nur an Fellen von Wölfen, und Schattenläufern und dergleichen interessiert ...
+		AI_Output(self, other, "DIA_Bosper_SellFur_11_13"); //But you know - I'm only interested in the skins of wolves, shadowbeasts and the like ...
 	};
 };
 
@@ -967,7 +967,7 @@ instance DIA_Bosper_Minenanteil(C_INFO)
 	nr				= 3;
 	condition		= DIA_Bosper_Minenanteil_Condition;
 	information		= DIA_Bosper_Minenanteil_Info;
-	description		= "Ich sehe, du hast Minenanteile zu verkaufen.";
+	description		= "I see that you have mining shares for sale.";
 };
 
 func int DIA_Bosper_Minenanteil_Condition()
@@ -981,8 +981,8 @@ func int DIA_Bosper_Minenanteil_Condition()
 
 func void DIA_Bosper_Minenanteil_Info()
 {
-	AI_Output(other, self, "DIA_Bosper_Minenanteil_15_00"); //Ich sehe, du hast Minenanteile zu verkaufen.
-	AI_Output(self, other, "DIA_Bosper_Minenanteil_11_01"); //Ähm. Davon weiß ich nichts. Von mir aus kannst du sie haben.
+	AI_Output(other, self, "DIA_Bosper_Minenanteil_15_00"); //I see that you have mining shares for sale.
+	AI_Output(self, other, "DIA_Bosper_Minenanteil_11_01"); //Ahem. I know nothing about that. You can have them if you want.
 	B_GivePlayerXP(XP_Ambient);
 };
 

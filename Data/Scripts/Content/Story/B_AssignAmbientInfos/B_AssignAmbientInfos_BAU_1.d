@@ -29,7 +29,7 @@ instance DIA_BAU_1_JOIN(C_INFO)
 	condition		= DIA_BAU_1_JOIN_Condition;
 	information		= DIA_BAU_1_JOIN_Info;
 	permanent		= TRUE;
-	description		= "Ich will mehr über die Söldner wissen.";
+	description		= "Tell me more about those mercenaries.";
 };
 
 func int DIA_BAU_1_JOIN_Condition()
@@ -42,10 +42,10 @@ func int DIA_BAU_1_JOIN_Condition()
 
 func void DIA_BAU_1_JOIN_Info()
 {
-	AI_Output(other, self, "DIA_BAU_1_JOIN_15_00"); //Ich will mehr über die Söldner wissen.
-	AI_Output(self, other, "DIA_BAU_1_JOIN_01_01"); //Ich kann dir nur raten, einen Bogen um die zu machen.
-	AI_Output(self, other, "DIA_BAU_1_JOIN_01_02"); //Wenn einem von ihnen dein Gesicht nicht gefällt, kann es sein, dass er dir mal eben eins auf die Nase gibt.
-	AI_Output(self, other, "DIA_BAU_1_JOIN_01_03"); //Du kannst dich zwar hinterher bei Lee beschweren, aber davon wird deine Nase auch nicht wieder gerade.
+	AI_Output(other, self, "DIA_BAU_1_JOIN_15_00"); //Tell me more about those mercenaries.
+	AI_Output(self, other, "DIA_BAU_1_JOIN_01_01"); //I can only advise you to give them a wide berth.
+	AI_Output(self, other, "DIA_BAU_1_JOIN_01_02"); //If one of them doesn't like your face, he just might punch you in the nose.
+	AI_Output(self, other, "DIA_BAU_1_JOIN_01_03"); //You can complain to Lee afterwards, but your nose will still be broken.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ instance DIA_BAU_1_PEOPLE(C_INFO)
 	condition		= DIA_BAU_1_PEOPLE_Condition;
 	information		= DIA_BAU_1_PEOPLE_Info;
 	permanent		= TRUE;
-	description		= "Wer hat hier das Sagen?";
+	description		= "Who's in charge here?";
 };
 
 func int DIA_BAU_1_PEOPLE_Condition()
@@ -67,10 +67,10 @@ func int DIA_BAU_1_PEOPLE_Condition()
 
 func void DIA_BAU_1_PEOPLE_Info()
 {
-	AI_Output(other, self, "DIA_BAU_1_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self, other, "DIA_BAU_1_PEOPLE_01_01"); //Das hier ist Onars Hof. Er bestimmt über alles, was hier passiert.
-	AI_Output(self, other, "DIA_BAU_1_PEOPLE_01_02"); //Wenn ich dir einen Tipp geben darf: leg dich nicht mit seinen Söldnern an. Mit den Jungs ist nicht zu spaßen.
-	AI_Output(self, other, "DIA_BAU_1_PEOPLE_01_03"); //Vor allem Sylvio ist ein hinterhältiger Lump. Aber ihr Anführer Lee ist in Ordnung.
+	AI_Output(other, self, "DIA_BAU_1_PEOPLE_15_00"); //Who's in charge here?
+	AI_Output(self, other, "DIA_BAU_1_PEOPLE_01_01"); //This is Onar's farm. He makes all the decisions around here.
+	AI_Output(self, other, "DIA_BAU_1_PEOPLE_01_02"); //Let me give you a tip: don't pick a fight with his mercenaries. The boys aren't to be trifled with.
+	AI_Output(self, other, "DIA_BAU_1_PEOPLE_01_03"); //Sylvio in particular is an underhanded rogue. But their leader, Lee, is all right.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ instance DIA_BAU_1_LOCATION(C_INFO)
 	condition		= DIA_BAU_1_LOCATION_Condition;
 	information		= DIA_BAU_1_LOCATION_Info;
 	permanent		= TRUE;
-	description		= "Was gibt es so alles es hier in der Gegend?";
+	description		= "So what is there here in this area?";
 };
 
 func int DIA_BAU_1_LOCATION_Condition()
@@ -92,10 +92,10 @@ func int DIA_BAU_1_LOCATION_Condition()
 
 func void DIA_BAU_1_LOCATION_Info()
 {
-	AI_Output(other, self, "DIA_BAU_1_LOCATION_15_00"); //Was gibt es so alles es hier in der Gegend?
-	AI_Output(self, other, "DIA_BAU_1_LOCATION_01_01"); //Nur Felder und Höfe. Und jede Menge Söldner. Aber die sind fast alle im Osten auf Onars Hof eben.
-	AI_Output(self, other, "DIA_BAU_1_LOCATION_01_02"); //Im Norden ist Sekobs Hof, aber da gehen sie nur hin, um Pacht einzutreiben.
-	AI_Output(self, other, "DIA_BAU_1_LOCATION_01_03"); //Und im Südwesten ist der Aufgang zu Bengars Hof.
+	AI_Output(other, self, "DIA_BAU_1_LOCATION_15_00"); //So what is there here in this area?
+	AI_Output(self, other, "DIA_BAU_1_LOCATION_01_01"); //Just fields and farms. And a bunch of mercenaries. But almost all of them are in the east on Onar's farm.
+	AI_Output(self, other, "DIA_BAU_1_LOCATION_01_02"); //To the north is Sekob's farm, but they only go there to collect the rent.
+	AI_Output(self, other, "DIA_BAU_1_LOCATION_01_03"); //To the southwest is the path to Bengar's farm.
 };
 
 // *************************************************************************
@@ -107,7 +107,7 @@ instance DIA_BAU_1_STANDARD(C_INFO)
 	condition		= DIA_BAU_1_STANDARD_Condition;
 	information		= DIA_BAU_1_STANDARD_Info;
 	permanent		= TRUE;
-	description		= "Was gibt's Neues?";
+	description		= "What's new?";
 };
 
 func int DIA_BAU_1_STANDARD_Condition()
@@ -117,31 +117,31 @@ func int DIA_BAU_1_STANDARD_Condition()
 
 func void DIA_BAU_1_STANDARD_Info()
 {
-	AI_Output(other, self, "DIA_BAU_1_STANDARD_15_00"); //Was gibt's Neues?
+	AI_Output(other, self, "DIA_BAU_1_STANDARD_15_00"); //What's new?
 
 	if (Kapitel == 1)
 	{
-		AI_Output(self, other, "DIA_BAU_1_STANDARD_01_01"); //Onar hat Söldner angeheuert, damit sie ihm die Milizen aus der Stadt vom Hals halten. Die würden uns sonst auch noch das letzte Schaf wegholen!
+		AI_Output(self, other, "DIA_BAU_1_STANDARD_01_01"); //Onar has hired mercenaries to keep the militia from the city off his back. Otherwise, they would even take our last sheep!
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output(self, other, "DIA_BAU_1_STANDARD_01_02"); //Nicht viel. Immer noch dieselben Probleme. Milizen, Orks und Feldräuber.
+		AI_Output(self, other, "DIA_BAU_1_STANDARD_01_02"); //Not much. It's always the same problems. Militia, orcs, and field raiders.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output(self, other, "DIA_BAU_1_STANDARD_01_03"); //Es geschehen seltsame Dinge hier. Vor einigen Nächten habe ich eine schwarze Gestalt beobachtet. Das war kein Mensch.
+		AI_Output(self, other, "DIA_BAU_1_STANDARD_01_03"); //Strange things are going on here. A few nights ago I saw a black figure. It wasn't human.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output(self, other, "DIA_BAU_1_STANDARD_01_04"); //Man sieht die Orks immer häufiger. Manchmal glaube ich, dass für jeden toten Ork zwei neue auftauchen.
+		AI_Output(self, other, "DIA_BAU_1_STANDARD_01_04"); //You see orcs more and more often. Sometimes I think two new orcs show up for every dead one.
 	};
 
 	if (Kapitel >= 5)
 	{
-		AI_Output(self, other, "DIA_BAU_1_STANDARD_01_05"); //Die Paladine gehen ins Minental. Was soll das eigentlich? Dann wird sich die Miliz gar nicht mehr zurückhalten.
+		AI_Output(self, other, "DIA_BAU_1_STANDARD_01_05"); //The paladins are going into the Valley of Mines. What's it all about? There won't be anyone left to hold back the militia.
 	};
 };
 

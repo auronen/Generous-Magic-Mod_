@@ -43,7 +43,7 @@ func int DIA_Cedric_Hallo_Condition()
 
 func void DIA_Cedric_Hallo_Info()
 {
-	AI_Output(self, other, "DIA_Cedric_Hallo_12_00"); //Ich bin Schwertmeister Cedric, Paladin des Königs.
+	AI_Output(self, other, "DIA_Cedric_Hallo_12_00"); //I am Cedric the swordmaster, paladin of the king.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -56,7 +56,7 @@ instance DIA_Cedric_CanTeach(C_INFO)
 	condition		= DIA_Cedric_CanTeach_Condition;
 	information		= DIA_Cedric_CanTeach_Info;
 	permanent		= TRUE;
-	description		= "Kannst du mich trainieren?";
+	description		= "Could you train me?";
 };
 
 func int DIA_Cedric_CanTeach_Condition()
@@ -69,17 +69,17 @@ func int DIA_Cedric_CanTeach_Condition()
 
 func void DIA_Cedric_CanTeach_Info()
 {
-	AI_Output(other, self, "DIA_Cedric_CanTeach_15_00"); //Kannst du mich trainieren?
+	AI_Output(other, self, "DIA_Cedric_CanTeach_15_00"); //Can you train me?
 
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output(self, other, "DIA_Cedric_CanTeach_12_01"); //Ich kann dich im Kampf mit einhändigen Waffen trainieren.
+		AI_Output(self, other, "DIA_Cedric_CanTeach_12_01"); //I can train you in combat with one-handed weapons.
 		Cedric_Teach1H = TRUE;
 		B_LogEntry(TOPIC_CityTeacher, TOPIC_CityTeacher_22);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Cedric_CanTeach_12_02"); //Ich trainiere nur Paladine.
+		AI_Output(self, other, "DIA_Cedric_CanTeach_12_02"); //I only train paladins.
 	};
 };
 
@@ -93,7 +93,7 @@ instance DIA_Cedric_Teach(C_INFO)
 	condition		= DIA_Cedric_Teach_Condition;
 	information		= DIA_Cedric_Teach_Info;
 	permanent		= TRUE;
-	description		= "Ich will trainieren.";
+	description		= "I want to train.";
 };
 
 // ----------------------------------
@@ -110,11 +110,11 @@ func int DIA_Cedric_Teach_Condition()
 
 func void DIA_Cedric_Teach_Info()
 {
-	AI_Output(other, self, "DIA_Cedric_Teach_15_00"); //Ich will trainieren.
+	AI_Output(other, self, "DIA_Cedric_Teach_15_00"); //I want to train.
 
 	if (other.HitChance[NPC_TALENT_1H] >= 90)
 	{
-		AI_Output(self, other, "DIA_DIA_Cedric_Teach_12_01"); //Du hast alles über den Schwertkampf gelernt. Mehr kann ich dir nicht zeigen.
+		AI_Output(self, other, "DIA_DIA_Cedric_Teach_12_01"); //You have learned everything about sword fighting. I cannot show more.
 	}
 	else
 	{

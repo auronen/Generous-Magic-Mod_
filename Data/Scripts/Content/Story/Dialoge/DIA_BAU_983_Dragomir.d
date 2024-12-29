@@ -43,8 +43,8 @@ func int DIA_Dragomir_Hello_Condition()
 
 func void DIA_Dragomir_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Dragomir_Hello_12_00"); //Soweit von zu Hause noch unterwegs?
-	AI_Output(self, other, "DIA_Dragomir_Hello_12_01"); //Hier drauﬂen musst du vorsichtig sein, besonders, wenn du alleine unterwegs bist.
+	AI_Output(self, other, "DIA_Dragomir_Hello_12_00"); //Traveling so far from home?
+	AI_Output(self, other, "DIA_Dragomir_Hello_12_01"); //Out here you have to be careful, especially when you're all by yourself.
 };
 
 // ***********************************************************
@@ -56,7 +56,7 @@ instance DIA_Dragomir_OutHere(C_INFO)
 	nr				= 2;
 	condition		= DIA_Dragomir_OutHere_Condition;
 	information		= DIA_Dragomir_OutHere_Info;
-	description		= "Was machst du denn hier drauﬂen?";
+	description		= "What are you doing out here?";
 };
 
 func int DIA_Dragomir_OutHere_Condition()
@@ -66,9 +66,9 @@ func int DIA_Dragomir_OutHere_Condition()
 
 func void DIA_Dragomir_OutHere_Info()
 {
-	AI_Output(other, self, "DIA_Dragomir_OutHere_15_00"); //Was machst du denn hier drauﬂen?
-	AI_Output(self, other, "DIA_Dragomir_OutHere_12_01"); //Na ja, die Taverne ist mir zu teuer, deshalb habe ich mich hier niedergelassen.
-	AI_Output(self, other, "DIA_Dragomir_OutHere_12_02"); //Die vorherigen Bewohner brauchen es anscheinend nicht mehr.
+	AI_Output(other, self, "DIA_Dragomir_OutHere_15_00"); //What are you doing out here?
+	AI_Output(self, other, "DIA_Dragomir_OutHere_12_01"); //Well, the tavern is too expensive for me, that's why I settled here.
+	AI_Output(self, other, "DIA_Dragomir_OutHere_12_02"); //The previous inhabitants don't seem to need it any more.
 };
 
 // ***********************************************************
@@ -80,7 +80,7 @@ instance DIA_Dragomir_Settlers(C_INFO)
 	nr				= 2;
 	condition		= DIA_Dragomir_Settlers_Condition;
 	information		= DIA_Dragomir_Settlers_Info;
-	description		= "Wer waren die Bewohner dieses Lagers?";
+	description		= "Who used to live in this camp?";
 };
 
 func int DIA_Dragomir_Settlers_Condition()
@@ -93,8 +93,8 @@ func int DIA_Dragomir_Settlers_Condition()
 
 func void DIA_Dragomir_Settlers_Info()
 {
-	AI_Output(other, self, "DIA_Dragomir_Settlers_15_00"); //Wer waren die Bewohner dieses Lagers?
-	AI_Output(self, other, "DIA_Dragomir_Settlers_12_01"); //Keine Ahnung, wahrscheinlich irgendwelche J‰ger. Vermutlich ist es ihnen hier drauﬂen zu gef‰hrlich geworden.
+	AI_Output(other, self, "DIA_Dragomir_Settlers_15_00"); //Who used to live in this camp?
+	AI_Output(self, other, "DIA_Dragomir_Settlers_12_01"); //No idea, probably some hunters. I suppose it got too dangerous for them out here.
 };
 
 // ***********************************************************
@@ -106,7 +106,7 @@ instance DIA_Dragomir_Dangerous(C_INFO)
 	nr				= 2;
 	condition		= DIA_Dragomir_Dangerous_Condition;
 	information		= DIA_Dragomir_Dangerous_Info;
-	description		= "Ist es hier drauﬂen nicht zu gef‰hrlich?";
+	description		= "Isn't it too dangerous out here?";
 };
 
 func int DIA_Dragomir_Dangerous_Condition()
@@ -119,14 +119,14 @@ func int DIA_Dragomir_Dangerous_Condition()
 
 func void DIA_Dragomir_Dangerous_Info()
 {
-	AI_Output(other, self, "DIA_Dragomir_Dangerous_15_00"); //Ist es hier drauﬂen nicht zu gef‰hrlich?
-	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_01"); //Na ja, nicht wenn man sich verteidigen kann. Meine Armbrust hat mir schon so manchen guten Dienst erwiesen.
-	AI_Output(other, self, "DIA_Dragomir_Dangerous_15_02"); //Besonders groﬂ ist sie ja nicht.
-	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_03"); //Aber tˆdlich, wenn man weiﬂ, wie man mit ihr umgehen muss. Ich hatte schon mal eine Grˆﬂere. Die ist mir leider abhanden gekommen.
-	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_04"); //Ich hatte mich zu weit nach Norden in die Berge vorgewagt. Es gibt dort einen groﬂen Steinkreis mit einem Opferaltar.
-	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_05"); //Als ich dort oben Scavenger jagte, kamen diese ekelhaften untoten Wesen aus dem Wald und griffen mich an.
-	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_06"); //Alles, was ich noch tun konnte, war, um mein Leben zu rennen.
-	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_07"); //Dabei ist mir meine Armbrust aus der Hand geglitten. Ich wette, sie liegt noch heute da oben bei dem seltsamen Steinkreis im Norden.
+	AI_Output(other, self, "DIA_Dragomir_Dangerous_15_00"); //Isn't it too dangerous out here?
+	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_01"); //Well, not if you can defend yourself. My crossbow has already proven to be of service many times.
+	AI_Output(other, self, "DIA_Dragomir_Dangerous_15_02"); //It's not all that big.
+	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_03"); //But deadly, if you know how to handle it. I used to have a bigger one. Unfortunately, I lost it.
+	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_04"); //I ventured too far north into the mountains. There's a big stone circle there with a sacrificial altar.
+	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_05"); //While I was hunting scavengers up there, these vile undead beings came out of the woods and attacked me.
+	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_06"); //All I could do was run for my life.
+	AI_Output(self, other, "DIA_Dragomir_Dangerous_12_07"); //While I was running, the crossbow slipped from my hand. I bet it's still lying up there by that strange stone circle in the north.
 
 	Log_CreateTopic(TOPIC_DragomirsArmbrust, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_DragomirsArmbrust, LOG_RUNNING);
@@ -144,7 +144,7 @@ instance DIA_Dragomir_Armbrust(C_INFO)
 	nr				= 2;
 	condition		= DIA_Dragomir_Armbrust_Condition;
 	information		= DIA_Dragomir_Armbrust_Info;
-	description		= "Hier. Ich habe deine Armbrust gefunden.";
+	description		= "Here. I found your crossbow.";
 };
 
 func int DIA_Dragomir_Armbrust_Condition()
@@ -158,12 +158,12 @@ func int DIA_Dragomir_Armbrust_Condition()
 
 func void DIA_Dragomir_Armbrust_Info()
 {
-	AI_Output(other, self, "DIA_Dragomir_Armbrust_15_00"); //Hier. Ich habe deine Armbrust gefunden.
+	AI_Output(other, self, "DIA_Dragomir_Armbrust_15_00"); //Here. I found your crossbow.
 	B_GiveInvItems(other, self, ItRw_DragomirsArmbrust_MIS, 1);
-	AI_Output(self, other, "DIA_Dragomir_Armbrust_12_01"); //Das ist tats‰chlich meine. Sag nicht, du bist oben bei dem Steinkreis gewesen.
-	AI_Output(other, self, "DIA_Dragomir_Armbrust_15_02"); //Und ob!
-	AI_Output(self, other, "DIA_Dragomir_Armbrust_12_03"); //Ganz schˆn leichtsinnig. Wie auch immer, ich danke dir.
-	AI_Output(self, other, "DIA_Dragomir_Armbrust_12_04"); //Ich werde dir diese Tat nat¸rlich belohnen. Ich hoffe, das ist genug.
+	AI_Output(self, other, "DIA_Dragomir_Armbrust_12_01"); //Indeed, this is mine. Don't tell me you were up by the stone circle?!
+	AI_Output(other, self, "DIA_Dragomir_Armbrust_15_02"); //Most certainly!
+	AI_Output(self, other, "DIA_Dragomir_Armbrust_12_03"); //That was pretty reckless of you. But thanks anyway.
+	AI_Output(self, other, "DIA_Dragomir_Armbrust_12_04"); //Naturally, I'll repay this deed. I hope this is enough.
 
 	CreateInvItems(self, ItMi_Gold, 150);
 	B_GiveInvItems(self, other, ItMi_Gold, 150);
@@ -186,7 +186,7 @@ instance DIA_Dragomir_Learn(C_INFO)
 	condition		= DIA_Dragomir_Learn_Condition;
 	information		= DIA_Dragomir_Learn_Info;
 	permanent		= TRUE;
-	description		= "Kannst du mir was beibringen?";
+	description		= "Can you teach me something?";
 };
 
 func int DIA_Dragomir_Learn_Condition()
@@ -200,38 +200,38 @@ func int DIA_Dragomir_Learn_Condition()
 
 func void DIA_Dragomir_Learn_Info()
 {
-	AI_Output(other, self, "DIA_Dragomir_Learn_15_00"); //Kannst du mir was beibringen?
+	AI_Output(other, self, "DIA_Dragomir_Learn_15_00"); //Can you teach me something?
 
 	if (other.attribute[ATR_DEXTERITY] < 30)
 	{
-		AI_Output(self, other, "DIA_Dragomir_Learn_12_01"); //Bevor ich dir was beibringe, musst du erstmal geschickter werden.
+		AI_Output(self, other, "DIA_Dragomir_Learn_12_01"); //Before I teach you anything, you'll have to improve your dexterity.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Dragomir_Learn_12_02"); //Wenn du zahlen kannst. Wie gesagt, ich bin zurzeit etwas mittellos.
-		AI_Output(other, self, "DIA_Dragomir_Learn_15_03"); //Wie viel verlangst du?
+		AI_Output(self, other, "DIA_Dragomir_Learn_12_02"); //If you can pay. Like I said, at the moment I'm a bit strapped for cash.
+		AI_Output(other, self, "DIA_Dragomir_Learn_15_03"); //How much do you ask?
 		B_Say_Gold(self, other, Dragomir_TeachingCost);
 
 		Info_ClearChoices(DIA_Dragomir_Learn);
-		Info_AddChoice(DIA_Dragomir_Learn, "Sp‰ter vielleicht.", DIA_Dragomir_Learn_Later);
+		Info_AddChoice(DIA_Dragomir_Learn, "Maybe later.", DIA_Dragomir_Learn_Later);
 		if (Npc_HasItems(other, ItMi_Gold) >= Dragomir_TeachingCost)
 		{
-			Info_AddChoice(DIA_Dragomir_Learn, "Hier hast du dein Gold.", DIA_Dragomir_Learn_Here);
+			Info_AddChoice(DIA_Dragomir_Learn, "Here's your gold.", DIA_Dragomir_Learn_Here);
 		};
 	};
 };
 
 func void DIA_Dragomir_Learn_Later()
 {
-	AI_Output(other, self, "DIA_Dragomir_Learn_Later_15_00"); //Vielleicht sp‰ter.
+	AI_Output(other, self, "DIA_Dragomir_Learn_Later_15_00"); //Maybe later.
 	Info_ClearChoices(DIA_Dragomir_Learn);
 };
 
 func void DIA_Dragomir_Learn_Here()
 {
-	AI_Output(other, self, "DIA_Dragomir_Learn_Here_15_00"); //Hier hast du dein Gold.
+	AI_Output(other, self, "DIA_Dragomir_Learn_Here_15_00"); //Here's your gold.
 	B_GiveInvItems(other, self, ItMi_Gold, Dragomir_TeachingCost);
-	AI_Output(self, other, "DIA_Dragomir_Learn_Here_12_01"); //Gut, von mir aus kˆnnen wir sofort anfangen.
+	AI_Output(self, other, "DIA_Dragomir_Learn_Here_12_01"); //Good, as far as I'm concerned we can begin immediately.
 
 	Dragomir_TeachPlayer = TRUE;
 	Info_ClearChoices(DIA_Dragomir_Learn);
@@ -251,7 +251,7 @@ instance DIA_Dragomir_Teach(C_INFO)
 	condition		= DIA_Dragomir_Teach_Condition;
 	information		= DIA_Dragomir_Teach_Info;
 	permanent		= TRUE;
-	description		= "Bring mir was bei.";
+	description		= "Teach me something.";
 };
 
 func int DIA_Dragomir_Teach_Condition()
@@ -265,7 +265,7 @@ func int DIA_Dragomir_Teach_Condition()
 
 func void DIA_Dragomir_Teach_Info()
 {
-	AI_Output(other, self, "DIA_Dragomir_Teach_15_00"); //Bring mir was bei.
+	AI_Output(other, self, "DIA_Dragomir_Teach_15_00"); //Teach me something.
 
 	Info_ClearChoices(DIA_Dragomir_Teach);
 	Info_AddChoice(DIA_Dragomir_Teach, DIALOG_BACK, DIA_Dragomir_Teach_Back);
@@ -277,7 +277,7 @@ func void DIA_Dragomir_Teach_Back()
 {
 	if (other.HitChance[NPC_TALENT_CROSSBOW] >= 75)
 	{
-		AI_Output(self, other, "DIA_Dragomir_Teach_12_00"); //Ich kann dir nichts mehr beibringen. Es ist an der Zeit, dass du einen anderen Lehrer aufsuchst.
+		AI_Output(self, other, "DIA_Dragomir_Teach_12_00"); //I can't teach you anything more. It's time you looked for another teacher.
 		DIA_Dragomir_Teach_permanent = TRUE;
 	};
 

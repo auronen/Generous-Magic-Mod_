@@ -5,7 +5,7 @@
 prototype Mst_Default_UndeadOrcWarrior(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Untoter Ork";
+	name							= "Undead Orc";
 	guild							= GIL_UNDEADORC;
 	level							= 40;
 

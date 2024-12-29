@@ -32,7 +32,7 @@ instance DIA_Addon_Merdarion_ADW_PICKPOCKET(C_INFO)
 	condition		= DIA_Addon_Merdarion_ADW_PICKPOCKET_Condition;
 	information		= DIA_Addon_Merdarion_ADW_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description		= "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };
 
 func int DIA_Addon_Merdarion_ADW_PICKPOCKET_Condition()
@@ -85,7 +85,7 @@ instance DIA_Addon_Merdarion_ADWHello(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Merdarion_ADWHello_Condition;
 	information		= DIA_Addon_Merdarion_ADWHello_Info;
-	description		= "Wie läuft's?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_Merdarion_ADWHello_Condition()
@@ -95,75 +95,75 @@ func int DIA_Addon_Merdarion_ADWHello_Condition()
 
 func void DIA_Addon_Merdarion_ADWHello_Back()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_Back_15_00"); //Ich habe genug gehört.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_Back_15_00"); //I've heard enough.
 	Info_ClearChoices(DIA_Addon_Merdarion_ADWHello);
 };
 
 func void DIA_Addon_Merdarion_ADWHello_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_15_00"); //Wie läuft's?
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_06_01"); //(lauscht) Hör mal ... Seltsam. Findest du nicht?
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_15_02"); //Mmh ...
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_06_03"); //Diese Teleportersteine scheinen nicht zu funktionieren und trotzdem hört man sie surren.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_06_04"); //Obwohl sie nicht aktiv sind, ruht trotzdem eine gewisse Energie in ihnen.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_06_01"); //(listening) Listen... Curious. Don't you think?
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_15_02"); //Mmh...
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_06_03"); //These teleporter stones don't appear to function and yet you can hear them hum.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_06_04"); //Although they aren't active, a certain energy rests in them nevertheless.
 
 	Info_ClearChoices(DIA_Addon_Merdarion_ADWHello);
-	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "Was treibt diese Teleportsteine an?", DIA_Addon_Merdarion_ADWHello_reaktor);
-	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "Was, glaubst du, müsste man tun, um sie zu aktivieren?", DIA_Addon_Merdarion_ADWHello_was);
+	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "How do these teleporter stones get their power?", DIA_Addon_Merdarion_ADWHello_reaktor);
+	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "What do you think needs to be done to activate them?", DIA_Addon_Merdarion_ADWHello_was);
 };
 
 func void DIA_Addon_Merdarion_ADWHello_was()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_was_15_00"); //Was, glaubst du, müsste man tun, um sie zu aktivieren?
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_01"); //Ich habe da so eine Ahnung. Ich brauche nur noch einen Beweis für meine Vermutung.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_02"); //Ich hatte schon vor Tagen so ein Gefühl, als hätte ich die Bauweise dieser Objekte schon früher einmal gesehen.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_03"); //Ich schätze, wir müssten ihnen eine verdammt große Menge an magischer Energie zuführen, damit sie wieder ihren Dienst verrichten.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_was_15_00"); //What do you think needs to be done to activate them?
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_01"); //I have an idea about that. I just need proof for my suspicion.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_02"); //I had a feeling days ago that I had seen this sort of construction somewhere before.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_03"); //I suspect that we have to supply them with a damn large amount of magical energy to get them back in service.
 
-	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "Wo hast du diese Teleportsteine schon mal gesehen?", DIA_Addon_Merdarion_ADWHello_wo);
-	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "Was könnte genügend magische Energie dafür aufbringen...", DIA_Addon_Merdarion_ADWHello_focus);
+	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "Where have you seen these teleporter stones before?", DIA_Addon_Merdarion_ADWHello_wo);
+	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "What could provide enough magical energy...", DIA_Addon_Merdarion_ADWHello_focus);
 };
 
 func void DIA_Addon_Merdarion_ADWHello_focus()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_focus_15_00"); //Was könnte genügend magische Energie dafür aufbringen ...
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_01"); //Da fällt mir nur eins ein. Ein magischer Fokus.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_02"); //Ich meine einen der fünf Fokussteine, mit deren Hilfe damals die magische Barriere im Minental erschaffen wurde.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_03"); //Soviel ich weiß, hast du sie für uns vor einiger Zeit wieder beschaffen müssen.
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_focus_15_04"); //Ja. Ich kann mich erinnern.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_focus_15_00"); //What could provide enough magical energy...
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_01"); //I can only think of one thing. A magical focus.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_02"); //I mean one of the five focus stones that were used to create the magical barrier in the Valley of Mines.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_03"); //As far as I know, you had to get them back for us a while ago.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_focus_15_04"); //Yes. I can remember.
 
-	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "Du sagtest du brauchst einen Beweis für deine Vermutung.", DIA_Addon_Merdarion_ADWHello_focusProof);
-	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "Wo sind die Fokussteine heute?", DIA_Addon_Merdarion_ADWHello_focusWo);
+	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "You said you need proof for your suspicion.", DIA_Addon_Merdarion_ADWHello_focusProof);
+	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "Where are the focus stones now?", DIA_Addon_Merdarion_ADWHello_focusWo);
 };
 
 func void DIA_Addon_Merdarion_ADWHello_focusWo()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_focusWo_15_00"); //Wo sind die Fokussteine heute?
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_01"); //Sie sind mir anvertraut worden. Ich soll sie verwahren, bis wir wieder Verwendung für sie finden.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_02"); //So wie's aussieht, ist es jetzt soweit.
-	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "Ich habe genug gehört.", DIA_Addon_Merdarion_ADWHello_Back);
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_focusWo_15_00"); //Where are the focus stones now?
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_01"); //They were entrusted to me. I am supposed to keep them safe until we find another use for them.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_02"); //The way it looks, the time is ripe now.
+	Info_AddChoice(DIA_Addon_Merdarion_ADWHello, "I've heard enough.", DIA_Addon_Merdarion_ADWHello_Back);
 };
 
 func void DIA_Addon_Merdarion_ADWHello_focusProof()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_focusProof_15_00"); //Du sagtest, du brauchst einen Beweis für deine Vermutung.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focusProof_06_01"); //Man müsste einen magischen Fokus an diese Teleportersteine anschließen.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focusProof_06_02"); //Aber ich wüsste nicht, wo.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_focusProof_15_00"); //You said you need proof for your suspicion.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focusProof_06_01"); //A magical focus should be connected to these stones.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_focusProof_06_02"); //But I don't know where.
 };
 
 func void DIA_Addon_Merdarion_ADWHello_wo()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_wo_15_00"); //Wo hast du diese Teleportersteine schon mal gesehen?
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_01"); //Du bist doch damals auch in der Strafkolonie gewesen. Sind dir diese Steine niemals aufgefallen?
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_02"); //Ich bin ziemlich sicher, dass man sie heute noch dort finden kann.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_wo_15_00"); //Where have you seen these teleporter stones before?
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_01"); //You were in the penal colony, too. Didn't you ever notice those stones?
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_02"); //I am quite sure that they can still be found there today.
 };
 
 func void DIA_Addon_Merdarion_ADWHello_reaktor()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_reaktor_15_00"); //Was treibt diese Teleportersteine an?
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_01"); //Die Erbauer waren ein sehr weit fortgeschrittenes Volk.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_02"); //Sie haben sich Eigenschaften der Magie zu nutze gemacht, wie wir es noch nie gesehen haben.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_03"); //Ein Netz von Teleportersteinen wurde aufgebaut, das die Erbauer schnell von einem Ort der Stadt in den anderen bringen konnte.
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_04"); //Die Steine HIER bilden offenbar eine Art Zentrum.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADWHello_reaktor_15_00"); //How do these teleporter stones get their power?
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_01"); //The builders were a very highly developed people.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_02"); //They used properties of magic that we have never seen.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_03"); //A network of teleporter stones was built so that the builders could move quickly from one place in the city to another.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_04"); //The stone HERE obviously forms a kind of center.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -175,7 +175,7 @@ instance DIA_Addon_Merdarion_FokusGeben(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Merdarion_FokusGeben_Condition;
 	information		= DIA_Addon_Merdarion_FokusGeben_Info;
-	description		= "Gib mir einen Fokusstein.";
+	description		= "Give me a focus stone.";
 };
 
 func int DIA_Addon_Merdarion_FokusGeben_Condition()
@@ -188,9 +188,9 @@ func int DIA_Addon_Merdarion_FokusGeben_Condition()
 
 func void DIA_Addon_Merdarion_FokusGeben_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_FokusGeben_15_00"); //Gib mir einen Fokusstein. Ich will versuchen, ob ich die Teleporter zum Laufen bringe.
-	AI_Output(self, other, "DIA_Addon_Merdarion_FokusGeben_06_01"); //Na gut. Aber pass gut darauf auf, hörst du?
-	AI_Output(self, other, "DIA_Addon_Merdarion_FokusGeben_06_02"); //Saturas würde mich köpfen, wenn wir sie verlieren.
+	AI_Output(other, self, "DIA_Addon_Merdarion_FokusGeben_15_00"); //Give me a focus stone. I will try to get the teleporters to work.
+	AI_Output(self, other, "DIA_Addon_Merdarion_FokusGeben_06_01"); //All right. But be careful with it, you hear?
+	AI_Output(self, other, "DIA_Addon_Merdarion_FokusGeben_06_02"); //Saturas will have my head if we lose them.
 	CreateInvItems(self, ItMi_Focus, 1);
 	B_GiveInvItems(self, other, ItMi_Focus, 1);
 
@@ -208,7 +208,7 @@ instance DIA_Addon_Merdarion_FirstFocus(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Merdarion_FirstFocus_Condition;
 	information		= DIA_Addon_Merdarion_FirstFocus_Info;
-	description		= "Ich habe einen der Teleportsteine aktiviert.";
+	description		= "I have activated one of the teleporter stones.";
 };
 
 func int DIA_Addon_Merdarion_FirstFocus_Condition()
@@ -222,17 +222,17 @@ func int DIA_Addon_Merdarion_FirstFocus_Condition()
 var int Merdarion_GotFocusCount;
 func void DIA_Addon_Merdarion_FirstFocus_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_FirstFocus_15_00"); //Ich habe einen der Teleportersteine aktiviert.
-	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_01"); //Das sehe ich. Habe ich also doch recht gehabt.
-	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_02"); //Ich habe mit den anderen schon darüber gesprochen.
-	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_03"); //Wir wollen, dass du versuchst, alle Teleportersteine zu aktivieren.
-	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_04"); //Es wäre bei unseren Nachforschungen eine große Hilfe, wenn wir schnell von einem Teil der Stadt in den anderen gelangen könnten.
-	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_05"); //Hier hast du einen weiteren Fokusstein.
+	AI_Output(other, self, "DIA_Addon_Merdarion_FirstFocus_15_00"); //I have activated one of the teleporter stones.
+	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_01"); //I can see that. So I was right.
+	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_02"); //I have talked to the others about it.
+	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_03"); //We want you to try to activate all of the teleporter stones.
+	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_04"); //It would be a great help in our investigations if we could move quickly from one part of the city to another.
+	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_05"); //Here is another focus stone.
 	CreateInvItems(self, ItMi_Focus, 1);
 	B_GiveInvItems(self, other, ItMi_Focus, 1);
 	Merdarion_GotFocusCount = 1;
-	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_06"); //Aktiviere sie alle, wenn du kannst.
-	AI_Output(other, self, "DIA_Addon_Merdarion_FirstFocus_15_07"); //Ich werd's versuchen.
+	AI_Output(self, other, "DIA_Addon_Merdarion_FirstFocus_06_06"); //Activate them all if you can.
+	AI_Output(other, self, "DIA_Addon_Merdarion_FirstFocus_15_07"); //I'll try.
 	B_GivePlayerXP(XP_Addon_ActivatedTeleportStone);
 	B_LogEntry(TOPIC_Addon_TeleportsADW, TOPIC_Addon_TeleportsADW_7);
 };
@@ -247,7 +247,7 @@ instance DIA_Addon_Merdarion_ActivateTeleports(C_INFO)
 	condition		= DIA_Addon_Merdarion_ActivateTeleports_Condition;
 	information		= DIA_Addon_Merdarion_ActivateTeleports_Info;
 	permanent		= TRUE;
-	description		= "Ich habe einen weiteren Telportstein aktiviert.";
+	description		= "I have activated another one of the teleporter stones.";
 };
 
 func int DIA_Addon_Merdarion_ActivateTeleports_Condition()
@@ -264,33 +264,33 @@ var int DIA_Addon_Merdarion_ActivateTeleports_OneTime;
 
 func void DIA_Addon_Merdarion_ActivateTeleports_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_00"); //Ich habe einen weiteren Telporterstein aktiviert.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_00"); //I have activated another one of the teleporter stones.
 
 	if (SC_ADW_ActivatedAllTelePortStones == FALSE)
 	{
-		AI_Output(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_01"); //Gib mir den nächsten Fokus.
-		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_02"); //Natürlich. Hier hast du ihn.
+		AI_Output(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_01"); //Give me the next focus.
+		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_02"); //Of course. Here it is.
 		CreateInvItems(self, ItMi_Focus, 1);
 		B_GiveInvItems(self, other, ItMi_Focus, 1);
 	};
 
 	if (DIA_Addon_Merdarion_ActivateTeleports_OneTime == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_03"); //War's schwierig?
-		AI_Output(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_04"); //Wie man's nimmt. Ich könnte ein wenig Unterstützung brauchen.
-		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_05"); //Ich kann dir etwas Gold geben, würde das helfen?
-		AI_Output(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_06"); //Schaden tut's nicht.
-		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_07"); //Mal sehen ...
+		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_03"); //Was it difficult.
+		AI_Output(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_04"); //Depends on how you look at it. I could use a bit of support.
+		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_05"); //I can give you some gold, would that help?
+		AI_Output(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_06"); //It couldn't hurt.
+		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_07"); //Let's see...
 		DIA_Addon_Merdarion_ActivateTeleports_OneTime = TRUE;
 	};
 
 	if (SC_ADW_ActivatedAllTelePortStones == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_08"); //Das hast du wirklich gut gemacht. Ich kann dir nur zu deinem Werk gratulieren.
-		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_09"); //Jetzt laufen sie wieder alle. Beeindruckendes Bild. Findest du nicht?
+		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_08"); //You have done really well. I can only congraulate you on your work.
+		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_09"); //They are all working again now. An impressive sight, don't you think?
 	};
 
-	AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_10"); //Hier hast du ein paar Goldmünzen.
+	AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_10"); //Here are a few gold coins.
 	B_GivePlayerXP(XP_Addon_ActivatedTeleportStone);
 	CreateInvItems(self, ItMi_Gold, 150);
 	B_GiveInvItems(self, other, ItMi_Gold, 150);
@@ -301,8 +301,8 @@ func void DIA_Addon_Merdarion_ActivateTeleports_Info()
 	&& (Ghost_SCKnowsHow2GetInAdanosTempel == FALSE)
 	&& (MIS_Saturas_LookingForHousesOfRulers == 0))
 	{
-		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_11"); //Ach übrigens. Bevor ich es vergesse: Saturas möchte dich sprechen.
-		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_12"); //Du solltest so bald als möglich zu ihm gehen.
+		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_11"); //Oh, by the way. Before I forget, Saturas would like to talk to you.
+		AI_Output(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_12"); //You should see him as soon as possible.
 	};
 };
 
@@ -315,7 +315,7 @@ instance DIA_Addon_Merdarion_ADW_PreTeachMana(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Merdarion_ADW_PreTeachMana_Condition;
 	information		= DIA_Addon_Merdarion_ADW_PreTeachMana_Info;
-	description		= "Kannst du mir deine magischen Fähigkeiten beibringen?";
+	description		= "Can you teach me your magic skills?";
 };
 
 func int DIA_Addon_Merdarion_ADW_PreTeachMana_Condition()
@@ -328,8 +328,8 @@ func int DIA_Addon_Merdarion_ADW_PreTeachMana_Condition()
 
 func void DIA_Addon_Merdarion_ADW_PreTeachMana_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADW_PreTeachMana_15_00"); //Kannst du mir deine magischen Fähigkeiten beibringen?
-	AI_Output(self, other, "DIA_Addon_Merdarion_ADW_PreTeachMana_06_01"); //Ich kann dir zeigen, wie du deine magische Kraft erhöhst.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADW_PreTeachMana_15_00"); //Can you teach me your magic skills?
+	AI_Output(self, other, "DIA_Addon_Merdarion_ADW_PreTeachMana_06_01"); //I can show you how to increase your magic power.
 	Merdarion_Addon_TeachMana = TRUE;
 
 	Log_CreateTopic(TOPIC_Addon_KDWTeacher, LOG_NOTE);
@@ -346,7 +346,7 @@ instance DIA_Addon_Merdarion_ADW_TEACH_MANA(C_INFO)
 	condition		= DIA_Addon_Merdarion_ADW_TEACH_MANA_Condition;
 	information		= DIA_Addon_Merdarion_ADW_TEACH_MANA_Info;
 	permanent		= TRUE;
-	description		= "Ich will meine magische Kraft steigern.";
+	description		= "I want to increase my magic power.";
 };
 
 var int Merdarion_ADW_Empty;
@@ -361,7 +361,7 @@ func int DIA_Addon_Merdarion_ADW_TEACH_MANA_Condition()
 
 func void DIA_Addon_Merdarion_ADW_TEACH_MANA_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Merdarion_ADW_TEACH_MANA_15_00"); //Ich will meine magische Kraft steigern.
+	AI_Output(other, self, "DIA_Addon_Merdarion_ADW_TEACH_MANA_15_00"); //I want to increase my magic power.
 
 	Info_ClearChoices(DIA_Addon_Merdarion_ADW_TEACH_MANA);
 	Info_AddChoice(DIA_Addon_Merdarion_ADW_TEACH_MANA, DIALOG_BACK, DIA_Addon_Merdarion_ADW_TEACH_MANA_BACK);
@@ -373,8 +373,8 @@ func void DIA_Addon_Merdarion_ADW_TEACH_MANA_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_HIGH)
 	{
-		AI_Output(self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_00"); //Deine Bitte übersteigt meine Fähigkeiten.
-		AI_Output(self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_01"); //Ich kann dir nicht mehr beibringen.
+		AI_Output(self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_00"); //Your request goes beyond my capabilities.
+		AI_Output(self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_01"); //I cannot teach you anything more.
 		Merdarion_ADW_Empty = TRUE;
 	};
 

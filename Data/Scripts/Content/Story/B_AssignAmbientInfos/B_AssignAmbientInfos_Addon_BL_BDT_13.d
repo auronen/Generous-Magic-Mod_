@@ -31,7 +31,7 @@ instance DIA_Addon_BL_BDT_13_Chef(C_INFO)
 	condition		= DIA_Addon_BL_BDT_13_Chef_Condition;
 	information		= DIA_Addon_BL_BDT_13_Chef_Info;
 	permanent		= TRUE;
-	description		= "Wer hat hier das Sagen?";
+	description		= "Who's in charge here?";
 };
 
 func int DIA_Addon_BL_BDT_13_Chef_Condition()
@@ -41,22 +41,22 @@ func int DIA_Addon_BL_BDT_13_Chef_Condition()
 
 func void DIA_Addon_BL_BDT_13_Chef_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BL_BDT_13_Chef_15_00"); //Wer hat hier das Sagen?
+	AI_Output(other, self, "DIA_Addon_BL_BDT_13_Chef_15_00"); //Who's in charge here?
 
 	if (RavenIsDead == TRUE)
 	{
 		if (Npc_IsDead(Thorus))
 		{
-			AI_Output(self, other, "DIA_Addon_BL_BDT_13_Chef_13_01"); //(jubelt) Unser glorreicher Anführer Thorus. Er wird uns alle reich machen!
+			AI_Output(self, other, "DIA_Addon_BL_BDT_13_Chef_13_01"); //(jubilant) Our glorious leader Thorus. He'll make us all rich!
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Addon_BL_BDT_13_Chef_13_02"); //Unser glorreicher Anführer ... Äh ... keine Ahnung ...
+			AI_Output(self, other, "DIA_Addon_BL_BDT_13_Chef_13_02"); //Our glorious leader... uh... no idea...
 		};
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_BL_BDT_13_Chef_13_03"); //(jubelt) Unser glorreicher Anführer Raven. Er wird uns alle reich machen!
+		AI_Output(self, other, "DIA_Addon_BL_BDT_13_Chef_13_03"); //(jubilant) Our glorious leader Raven. He'll make us all rich!
 	};
 };
 
@@ -69,7 +69,7 @@ instance DIA_Addon_BL_BDT_13_Lager(C_INFO)
 	condition		= DIA_Addon_BL_BDT_13_Lager_Condition;
 	information		= DIA_Addon_BL_BDT_13_Lager_Info;
 	permanent		= TRUE;
-	description		= "Was weißt du über das Lager?";
+	description		= "What do you know about the camp?";
 };
 
 func int DIA_Addon_BL_BDT_13_Lager_Condition()
@@ -79,9 +79,9 @@ func int DIA_Addon_BL_BDT_13_Lager_Condition()
 
 func void DIA_Addon_BL_BDT_13_Lager_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BL_BDT_13_Lager_15_00"); //Was weißt du über das Lager?
-	AI_Output(self, other, "DIA_Addon_BL_BDT_13_Lager_13_01"); //Sprich mit Snaf, wenn du was wissen willst. Der dicke Koch weiß echt 'ne Menge.
-	AI_Output(self, other, "DIA_Addon_BL_BDT_13_Lager_13_02"); //Wenn du was kaufen willst, geh zu Fisk. Er treibt alles Mögliche auf ...
+	AI_Output(other, self, "DIA_Addon_BL_BDT_13_Lager_15_00"); //What do you know about the camp?
+	AI_Output(self, other, "DIA_Addon_BL_BDT_13_Lager_13_01"); //Talk to Snaf if it's information you're after. That fat cook knows a bunch.
+	AI_Output(self, other, "DIA_Addon_BL_BDT_13_Lager_13_02"); //If you want to buy something, go to Fisk. He gets hold of all kinds of things...
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ instance DIA_Addon_BL_BDT_13_News(C_INFO)
 	condition		= DIA_Addon_BL_BDT_13_News_Condition;
 	information		= DIA_Addon_BL_BDT_13_News_Info;
 	permanent		= TRUE;
-	description		= "Was gibt's Neues?";
+	description		= "Anything new?";
 };
 
 func int DIA_Addon_BL_BDT_13_News_Condition()
@@ -103,17 +103,17 @@ func int DIA_Addon_BL_BDT_13_News_Condition()
 
 func void DIA_Addon_BL_BDT_13_News_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BL_BDT_13_News_15_00"); //Was gibt's Neues?
+	AI_Output(other, self, "DIA_Addon_BL_BDT_13_News_15_00"); //Anything new?
 
 	if (RavenIsDead == TRUE)
 	{
-		AI_Output(self, other, "DIA_Addon_BL_BDT_13_News_13_01"); //Raven ist tot. Jetzt werden wir NIEMALS von dieser Insel runterkommen.
+		AI_Output(self, other, "DIA_Addon_BL_BDT_13_News_13_01"); //Raven is dead. Now we'll NEVER get off this island.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_BL_BDT_13_News_13_02"); //Die Piraten haben Segel gesetzt und sind auf und davon.
-		AI_Output(self, other, "DIA_Addon_BL_BDT_13_News_13_03"); //Jetzt hocken da nur noch ein paar Idioten am Strand und die haben kein anständiges Schiff.
-		AI_Output(self, other, "DIA_Addon_BL_BDT_13_News_13_04"); //Nicht mal Beliar weiß, wie wir von dieser Insel runterkommen sollen.
+		AI_Output(self, other, "DIA_Addon_BL_BDT_13_News_13_02"); //The pirates have set sail and taken off.
+		AI_Output(self, other, "DIA_Addon_BL_BDT_13_News_13_03"); //Now there's only a couple of idiots sitting on the beach, and they don't have a decent ship.
+		AI_Output(self, other, "DIA_Addon_BL_BDT_13_News_13_04"); //Not even Beliar knows how we'll get off this island.
 	};
 };
 
@@ -126,7 +126,7 @@ instance DIA_Addon_BL_BDT_13_Gold(C_INFO)
 	condition		= DIA_Addon_BL_BDT_13_Gold_Condition;
 	information		= DIA_Addon_BL_BDT_13_Gold_Info;
 	permanent		= TRUE;
-	description		= "Wie komme ich schnell an viel Gold?";
+	description		= "How can I get a lot of gold quickly?";
 };
 
 func int DIA_Addon_BL_BDT_13_Gold_Condition()
@@ -142,24 +142,24 @@ func void DIA_Addon_BL_BDT_13_Gold_Info()
 {
 	BDT_13_Nerver = (BDT_13_Nerver + 1);
 
-	AI_Output(other, self, "DIA_Addon_BL_BDT_13_Gold_15_00"); //Wie komme ich schnell an viel Gold?
+	AI_Output(other, self, "DIA_Addon_BL_BDT_13_Gold_15_00"); //How can I get a lot of gold quickly?
 
 	if (BDT_13_Nerver <= 2)
 	{
-		AI_Output(self, other, "DIA_Addon_BL_BDT_13_Gold_13_01"); //Gute Frage. Sind wir nicht alle deshalb hier?
-		AI_Output(self, other, "DIA_Addon_BL_BDT_13_Gold_13_02"); //Sieh einfach zu, dass du einen roten Stein von Thorus bekommst, dann kannst du in die Mine.
+		AI_Output(self, other, "DIA_Addon_BL_BDT_13_Gold_13_01"); //Good question. Isn't that why we're all here?
+		AI_Output(self, other, "DIA_Addon_BL_BDT_13_Gold_13_02"); //Just see to it that you get a red stone from Thorus, then you can go into the mine.
 	}
 	else if (BDT_13_Kill == FALSE)
 	{
 		BDT_13_Nerver = 0;
 		BDT_13_Kill = TRUE;
-		AI_Output(self, other, "DIA_Addon_BL_BDT_13_Gold_13_03"); //Sag mal, willst du mich veraschen? Verpiss dich!
+		AI_Output(self, other, "DIA_Addon_BL_BDT_13_Gold_13_03"); //Say, are you jerking me around? Piss off!
 		AI_StopProcessInfos(self);
 	}
 	else
 	{
 		BDT_13_Nerver = 0;
-		AI_Output(self, other, "DIA_Addon_BL_BDT_13_Gold_13_04"); //So, jetzt ist Schluss mit lustig!
+		AI_Output(self, other, "DIA_Addon_BL_BDT_13_Gold_13_04"); //No more fun and games!
 		AI_StopProcessInfos(self);
 		B_Attack(self, other, AR_NONE, 1);
 	};

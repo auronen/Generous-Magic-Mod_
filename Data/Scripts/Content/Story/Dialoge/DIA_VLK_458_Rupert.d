@@ -79,8 +79,8 @@ func int DIA_Rupert_Hello_Condition()
 
 func void DIA_Rupert_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Rupert_Hello_03_00"); //Hallo Fremder!
-	AI_Output(self, other, "DIA_Rupert_Hello_03_01"); //Du musst hungrig und durstig sein - kann ich dich vielleicht für meine Ware interessieren?
+	AI_Output(self, other, "DIA_Rupert_Hello_03_00"); //Hello, stranger!
+	AI_Output(self, other, "DIA_Rupert_Hello_03_01"); //You must be hungry and thirsty - can I perhaps interest you in my wares?
 };
 
 // ************************************************************
@@ -92,7 +92,7 @@ instance DIA_Rupert_ZuPal(C_INFO)
 	nr				= 1;
 	condition		= DIA_Rupert_ZuPal_Condition;
 	information		= DIA_Rupert_ZuPal_Info;
-	description		= "Eigentlich bin ich auf dem Weg zu den Paladinen ...";
+	description		= "I was actually on my way to see the paladins ...";
 };
 
 func int DIA_Rupert_ZuPal_Condition()
@@ -105,8 +105,8 @@ func int DIA_Rupert_ZuPal_Condition()
 
 func void DIA_Rupert_ZuPal_Info()
 {
-	AI_Output(other, self, "DIA_Rupert_ZuPal_15_00"); //Eigentlich bin ich auf dem Weg zu den Paladinen ...
-	AI_Output(self, other, "DIA_Rupert_ZuPal_03_01"); //Da hast du schlechte Karten. Seit die Paladine sich im oberen Viertel breitgemacht haben, lassen sie kaum noch jemanden hinein.
+	AI_Output(other, self, "DIA_Rupert_ZuPal_15_00"); //I was actually on my way to see the paladins ...
+	AI_Output(self, other, "DIA_Rupert_ZuPal_03_01"); //There's little chance of that. Since the paladins made themselves at home in the upper end of town, hardly anyone gets in there any more.
 };
 
 // ************************************************************
@@ -118,7 +118,7 @@ instance DIA_Rupert_HelpMeIntoOV(C_INFO)
 	nr				= 1;
 	condition		= DIA_Rupert_HelpMeIntoOV_Condition;
 	information		= DIA_Rupert_HelpMeIntoOV_Info;
-	description		= "Kannst du mir helfen, ins obere Viertel zu kommen?";
+	description		= "Can you help me get into the upper quarter?";
 };
 
 func int DIA_Rupert_HelpMeIntoOV_Condition()
@@ -132,10 +132,10 @@ func int DIA_Rupert_HelpMeIntoOV_Condition()
 
 func void DIA_Rupert_HelpMeIntoOV_Info()
 {
-	AI_Output(other, self, "DIA_Rupert_HelpMeIntoOV_15_00"); //Kannst du mir helfen, ins obere Viertel zu kommen?
-	AI_Output(self, other, "DIA_Rupert_HelpMeIntoOV_03_01"); //Ich? Nein, ich habe hier auch nicht viel zu melden!
-	AI_Output(self, other, "DIA_Rupert_HelpMeIntoOV_03_02"); //Es gibt nur wenige Leute hier in der Unterstadt, die genug Einfluss haben, um dich an den Wachen vorbeizubringen.
-	AI_Output(self, other, "DIA_Rupert_HelpMeIntoOV_03_03"); //Matteo, mein Boss, ist einer von ihnen. Vielleicht solltest du mal mit ihm reden.
+	AI_Output(other, self, "DIA_Rupert_HelpMeIntoOV_15_00"); //Can you help me get into the upper quarter?
+	AI_Output(self, other, "DIA_Rupert_HelpMeIntoOV_03_01"); //Me? No, I don't have much say here myself!
+	AI_Output(self, other, "DIA_Rupert_HelpMeIntoOV_03_02"); //There are only a few people here in the lower city who have enough influence to get you past the guards.
+	AI_Output(self, other, "DIA_Rupert_HelpMeIntoOV_03_03"); //Matteo, my boss, is one of them. Maybe you should talk to him.
 
 	Log_CreateTopic(TOPIC_OV, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_OV, LOG_RUNNING);
@@ -152,7 +152,7 @@ instance DIA_Rupert_WoMatteo(C_INFO)
 	nr				= 1;
 	condition		= DIA_Rupert_WoMatteo_Condition;
 	information		= DIA_Rupert_WoMatteo_Info;
-	description		= "Wo finde ich Matteo?";
+	description		= "Where can I find Matteo?";
 };
 
 func int DIA_Rupert_WoMatteo_Condition()
@@ -166,8 +166,8 @@ func int DIA_Rupert_WoMatteo_Condition()
 
 func void DIA_Rupert_WoMatteo_Info()
 {
-	AI_Output(other, self, "DIA_Rupert_WoMatteo_15_00"); //Wo finde ich Matteo?
-	AI_Output(self, other, "DIA_Rupert_WoMatteo_03_01"); //Du stehst direkt vor seinem Laden. Geh einfach rein. Er ist eigentlich immer da.
+	AI_Output(other, self, "DIA_Rupert_WoMatteo_15_00"); //Where can I find Matteo?
+	AI_Output(self, other, "DIA_Rupert_WoMatteo_03_01"); //You're standing right outside his shop. Just go on in. He's practically always there.
 
 	if (Knows_Matteo == FALSE)
 	{
@@ -178,7 +178,7 @@ func void DIA_Rupert_WoMatteo_Info()
 };
 
 // ***************************************************************
-//							Wer hat Einfluß
+//							Wer hat EinfluÃŸ
 // ***************************************************************
 instance DIA_Rupert_WerEinfluss(C_INFO)
 {
@@ -186,7 +186,7 @@ instance DIA_Rupert_WerEinfluss(C_INFO)
 	nr				= 2;
 	condition		= DIA_Rupert_WerEinfluss_Condition;
 	information		= DIA_Rupert_WerEinfluss_Info;
-	description		= "Was ist mit den anderen einflussreichen Bürgern?";
+	description		= "What about the other influential citizens?";
 };
 
 func int DIA_Rupert_WerEinfluss_Condition()
@@ -200,10 +200,10 @@ func int DIA_Rupert_WerEinfluss_Condition()
 
 func void DIA_Rupert_WerEinfluss_Info()
 {
-	AI_Output(other, self, "DIA_Rupert_WerEinfluss_15_00"); //Was ist mit den anderen einflussreichen Bürgern?
-	AI_Output(self, other, "DIA_Rupert_WerEinfluss_03_01"); //Die Händler und Handwerksmeister hier an der Hauptstraße sind die wichtigsten Persönlichkeiten der Stadt.
-	AI_Output(self, other, "DIA_Rupert_WerEinfluss_03_02"); //Du solltest versuchen, bei einem von ihnen als Lehrling angenommen zu werden - so wie ich.
-	AI_Output(self, other, "DIA_Rupert_WerEinfluss_03_03"); //Seit ich bei Matteo arbeite, behandeln mich die Leute in der Stadt mit Respekt!
+	AI_Output(other, self, "DIA_Rupert_WerEinfluss_15_00"); //What about the other influential citizens?
+	AI_Output(self, other, "DIA_Rupert_WerEinfluss_03_01"); //The merchants and master craftsmen here on the main street are the most important figures in the city.
+	AI_Output(self, other, "DIA_Rupert_WerEinfluss_03_02"); //You should try to get accepted by one of them as an apprentice - like me.
+	AI_Output(self, other, "DIA_Rupert_WerEinfluss_03_03"); //Since I started working for Matteo, the people in the city treat me with respect!
 
 	B_LogEntry(TOPIC_OV, TOPIC_OV_3);
 };
@@ -217,7 +217,7 @@ instance DIA_Rupert_Work(C_INFO)
 	nr				= 3;
 	condition		= DIA_Rupert_Work_Condition;
 	information		= DIA_Rupert_Work_Info;
-	description		= "Ich brauche Geld und ich bin auf der Suche nach Arbeit.";
+	description		= "I need some money, and I'm looking for work.";
 };
 
 func int DIA_Rupert_Work_Condition()
@@ -230,9 +230,9 @@ func int DIA_Rupert_Work_Condition()
 
 func void DIA_Rupert_Work_Info()
 {
-	AI_Output(other, self, "DIA_Rupert_Work_15_00"); //Ich brauche Geld und ich bin auf der Suche nach Arbeit.
-	AI_Output(self, other, "DIA_Rupert_Work_03_01"); //Ich hab gehört, Bosper hat Ärger mit seinem Lieferanten. Sein Laden ist direkt gegenüber.
-	AI_Output(self, other, "DIA_Rupert_Work_03_02"); //Es heißt, er zahlt ganz gut.
+	AI_Output(other, self, "DIA_Rupert_Work_15_00"); //I need some money, and I'm looking for work.
+	AI_Output(self, other, "DIA_Rupert_Work_03_01"); //I've heard that Bosper has trouble with his suppliers. His shop is right over there.
+	AI_Output(self, other, "DIA_Rupert_Work_03_02"); //They say he pays pretty well.
 };
 
 // ***************************************************************
@@ -244,7 +244,7 @@ instance DIA_Rupert_YourOffer(C_INFO)
 	nr				= 4;
 	condition		= DIA_Rupert_YourOffer_Condition;
 	information		= DIA_Rupert_YourOffer_Info;
-	description		= "Was hast du anzubieten?";
+	description		= "What can you offer me?";
 };
 
 func int DIA_Rupert_YourOffer_Condition()
@@ -254,12 +254,12 @@ func int DIA_Rupert_YourOffer_Condition()
 
 func void DIA_Rupert_YourOffer_Info()
 {
-	AI_Output(other, self, "DIA_Rupert_YourOffer_15_00"); //Was hast du anzubieten?
-	AI_Output(self, other, "DIA_Rupert_YourOffer_03_01"); //Zurzeit hab ich nicht allzu viel Auswahl.
+	AI_Output(other, self, "DIA_Rupert_YourOffer_15_00"); //What do you have to offer?
+	AI_Output(self, other, "DIA_Rupert_YourOffer_03_01"); //At the moment, I don't have much choice.
 	if ((hero.guild != GIL_SLD)
 	&& (hero.guild != GIL_DJG))
 	{
-		AI_Output(self, other, "DIA_Rupert_YourOffer_03_02"); //Der verdammte Großbauer liefert nicht mehr und was von den kleinen Höfen kommt, reicht nicht aus, um den Bedarf der Stadt zu decken.
+		AI_Output(self, other, "DIA_Rupert_YourOffer_03_02"); //The damned landowner doesn't deliver any more, and what we get from the small farms isn't enough to meet the demands of the city.
 	};
 };
 
@@ -274,7 +274,7 @@ instance DIA_Rupert_Trade(C_INFO)
 	information		= DIA_Rupert_Trade_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Zeig mir deine Ware";
+	description		= "Show me your wares.";
 };
 
 func int DIA_Rupert_Trade_Condition()
@@ -292,11 +292,11 @@ func void DIA_Rupert_Trade_Info()
 		CreateInvItems(self, ItFo_cheese, 5);
 	};
 
-	AI_Output(other, self, "DIA_Rupert_Trade_15_00"); //Zeig mir deine Ware.
+	AI_Output(other, self, "DIA_Rupert_Trade_15_00"); //Show me your wares.
 	if ((hero.guild == GIL_KDF)
 	|| (hero.guild == GIL_PAL))
 	{
-		AI_Output(self, other, "DIA_Rupert_Trade_03_01"); //Ich muss mich für meine bescheidene Auswahl entschuldigen. Ein Mann eurer Position ist sicher Besseres gewohnt.
+		AI_Output(self, other, "DIA_Rupert_Trade_03_01"); //I must beg your pardon for my poor selection. A man in your position is certainly used to better.
 	};
 };
 
@@ -309,7 +309,7 @@ instance DIA_Rupert_Bauernaufstand(C_INFO)
 	nr				= 4;
 	condition		= DIA_Rupert_Bauernaufstand_Condition;
 	information		= DIA_Rupert_Bauernaufstand_Info;
-	description		= "Erzähl mir mehr über den Bauernaufstand.";
+	description		= "Tell me more about the peasants' revolt.";
 };
 
 func int DIA_Rupert_Bauernaufstand_Condition()
@@ -323,16 +323,16 @@ func int DIA_Rupert_Bauernaufstand_Condition()
 
 func void DIA_Rupert_Bauernaufstand_Info()
 {
-	AI_Output(other, self, "DIA_Rupert_Bauernaufstand_15_00"); //Erzähl mir mehr über den Bauernaufstand.
-	AI_Output(self, other, "DIA_Rupert_Bauernaufstand_03_01"); //Die Sache ist ganz einfach: Onar, der fette Großbauer, will keinen Tribut mehr an die Stadt zahlen.
-	AI_Output(self, other, "DIA_Rupert_Bauernaufstand_03_02"); //Das muss man sich mal vorstellen! Wir sind im Krieg mit den Orks, und der Fettwanst will alles für sich haben!
-	AI_Output(self, other, "DIA_Rupert_Bauernaufstand_03_03"); //Normalerweise greift die Stadtwache in solchen Fällen hart durch.
-	AI_Output(self, other, "DIA_Rupert_Bauernaufstand_03_04"); //Aber jetzt kommt das Beste: Es heißt, Onar hat sich Söldner angeheuert, um sich die Truppen der Stadt vom Hals zu halten!
-	AI_Output(self, other, "DIA_Rupert_Bauernaufstand_03_05"); //SÖLDNER! Das Ganze wird noch in einem verdammten Krieg enden! Als ob EIN Krieg nicht reichen würde ...
+	AI_Output(other, self, "DIA_Rupert_Bauernaufstand_15_00"); //Tell me more about the peasants' revolt.
+	AI_Output(self, other, "DIA_Rupert_Bauernaufstand_03_01"); //It's quite simple: Onar, the fat landowner, won't pay any more taxes to the city.
+	AI_Output(self, other, "DIA_Rupert_Bauernaufstand_03_02"); //Imagine! We're at war with the orcs and the fat slob wants everything for himself!
+	AI_Output(self, other, "DIA_Rupert_Bauernaufstand_03_03"); //Normally, the city guard would take firm measures in such cases.
+	AI_Output(self, other, "DIA_Rupert_Bauernaufstand_03_04"); //But now comes the best part: they say Onar has hired mercenaries to keep the troops from the city off his back!
+	AI_Output(self, other, "DIA_Rupert_Bauernaufstand_03_05"); //MERCENARIES! The whole thing will end in a damn war! As if ONE war weren't enough!
 };
 
 // ***************************************************************
-//							Söldner
+//							SÃ¶ldner
 // ***************************************************************
 instance DIA_Rupert_Mercs(C_INFO)
 {
@@ -340,7 +340,7 @@ instance DIA_Rupert_Mercs(C_INFO)
 	nr				= 4;
 	condition		= DIA_Rupert_Mercs_Condition;
 	information		= DIA_Rupert_Mercs_Info;
-	description		= "Was weißt du über Onars Söldner?";
+	description		= "What do you know about Onar's mercenaries?";
 };
 
 func int DIA_Rupert_Mercs_Condition()
@@ -355,8 +355,8 @@ func int DIA_Rupert_Mercs_Condition()
 
 func void DIA_Rupert_Mercs_Info()
 {
-	AI_Output(other, self, "DIA_Rupert_Mercs_15_00"); //Was weißt du über Onars Söldner?
-	AI_Output(self, other, "DIA_Rupert_Mercs_03_01"); //Ich hab gehört, die meisten von ihnen sind ehemalige Sträflinge aus der Minenkolonie.
-	AI_Output(self, other, "DIA_Rupert_Mercs_03_02"); //Und ihr Anführer soll 'ne große Nummer beim König gewesen sein - ein General oder so was - den sie als Verräter eingelocht haben!
-	AI_Output(self, other, "DIA_Rupert_Mercs_03_03"); //Schlimme Zeiten sind das!
+	AI_Output(other, self, "DIA_Rupert_Mercs_15_00"); //What do you know about Onar's mercenaries?
+	AI_Output(self, other, "DIA_Rupert_Mercs_03_01"); //I heard that most of them are former convicts from the mining colony.
+	AI_Output(self, other, "DIA_Rupert_Mercs_03_02"); //And their leader is supposed to have been a big shot with the King - a general or something - whom they put away as a traitor!
+	AI_Output(self, other, "DIA_Rupert_Mercs_03_03"); //These are terrible times.
 };

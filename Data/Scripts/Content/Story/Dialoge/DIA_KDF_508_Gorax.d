@@ -34,7 +34,7 @@ instance DIA_Gorax_PICKPOCKET(C_INFO)
 	condition		= DIA_Gorax_PICKPOCKET_Condition;
 	information		= DIA_Gorax_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre schwierig seinen Schlüssel zu stehlen)";
+	description		= "(It would be difficult to steal his key)";
 };
 
 func int DIA_Gorax_PICKPOCKET_Condition()
@@ -99,7 +99,7 @@ func int DIA_Gorax_HELP_Condition()
 
 func void DIA_Gorax_HELP_Info()
 {
-	AI_Output(self, other, "DIA_Gorax_HELP_14_00"); //Kann ich dir behilflich sein?
+	AI_Output(self, other, "DIA_Gorax_HELP_14_00"); //Can I be of assistance to you?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -112,7 +112,7 @@ instance DIA_Gorax_GOLD(C_INFO)
 	condition		= DIA_Gorax_GOLD_Condition;
 	information		= DIA_Gorax_GOLD_Info;
 	permanent		= TRUE;
-	description		= "Ich hab einen Haufen Gold mitgebracht";
+	description		= "I've brought a heap of gold.";
 };
 
 // -----------------------------------
@@ -130,19 +130,19 @@ func int DIA_Gorax_GOLD_Condition()
 
 func void DIA_Gorax_GOLD_Info()
 {
-	AI_Output(other, self, "DIA_Gorax_GOLD_15_00"); //Ich hab einen Haufen Gold mitgebracht.
+	AI_Output(other, self, "DIA_Gorax_GOLD_15_00"); //I've brought a heap of gold.
 
 	if (Npc_HasItems(other, ItMi_Gold) >= Summe_Kloster)
 	{
-		AI_Output(self, other, "DIA_Gorax_GOLD_14_01"); //(freudige Erwartung) Ah - du bringst mir deine Gabe für Innos. So ist es recht, mein Sohn.
-		AI_Output(self, other, "DIA_Gorax_GOLD_14_02"); //Ich werde deine Gabe für das Wohl des Klosters einsetzen, so wie es Innos gefällt.
+		AI_Output(self, other, "DIA_Gorax_GOLD_14_01"); //(with anticipation) Ah - you're bringing your offering for Innos. That's good of you, my son.
+		AI_Output(self, other, "DIA_Gorax_GOLD_14_02"); //I shall use your offering for the best of the monastery as it pleases Innos.
 
 		DIA_Gorax_GOLD_perm = TRUE; // WICHTIG
 		B_GiveInvItems(other, self, ItMi_Gold, Summe_Kloster);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Gorax_Orlan_14_02"); //Was hast du mit dem Gold gemacht? Hast du es ausgegeben? Hol es und komm wieder!
+		AI_Output(self, other, "DIA_Gorax_Orlan_14_02"); //What have you done with that gold? Did you spend it? Go get it and then come back!
 	};
 };
 
@@ -156,7 +156,7 @@ instance DIA_Addon_Gorax_DaronsStatue(C_INFO)
 	condition		= DIA_Addon_Gorax_DaronsStatue_Condition;
 	information		= DIA_Addon_Gorax_DaronsStatue_Info;
 	permanent		= TRUE;
-	description		= "Ich habe hier die Statuette, die Daron ins Kloster bringen sollte.";
+	description		= "Here, I've got the statuette that Daron was supposed to take to the monastery.";
 };
 
 func int DIA_Addon_Gorax_DaronsStatue_Condition()
@@ -171,12 +171,12 @@ func int DIA_Addon_Gorax_DaronsStatue_Condition()
 
 func void DIA_Addon_Gorax_DaronsStatue_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Gorax_DaronsStatue_15_00"); //Ich habe hier die Statuette, die Daron zum Kloster bringen sollte.
+	AI_Output(other, self, "DIA_Addon_Gorax_DaronsStatue_15_00"); //Here, I've got the statuette that Daron was supposed to bring to the monastery.
 
 	if (Npc_HasItems(other, ItMi_LostInnosStatue_Daron))
 	{
-		AI_Output(self, other, "DIA_Addon_Gorax_DaronsStatue_14_01"); //(seufz) Es ist schon sehr beschämend, dass ein solch wertvolles Stück von einem Novizenanwärter seinen Weg zu uns findet.
-		AI_Output(self, other, "DIA_Addon_Gorax_DaronsStatue_14_02"); //Nichtsdestotrotz zeugt das von deiner Entschlossenheit, Innos zu dienen.
+		AI_Output(self, other, "DIA_Addon_Gorax_DaronsStatue_14_01"); //(sighs) It is truly embarrassing that such a valuable piece is brought to us by an aspiring novice.
+		AI_Output(self, other, "DIA_Addon_Gorax_DaronsStatue_14_02"); //Nevertheless, this confirms your commitment to serve Innos.
 
 		// -----------PATCH M.F.----------------------
 		if (B_GiveInvItems(other, self, ItMi_LostInnosStatue_Daron, 1))
@@ -184,14 +184,14 @@ func void DIA_Addon_Gorax_DaronsStatue_Info()
 			Npc_RemoveInvItems(self, ItMi_LostInnosStatue_Daron, 1);
 		};
 
-		AI_Output(self, other, "DIA_Addon_Gorax_DaronsStatue_14_03"); //Sei dir meines Dankes gewiss, junger Novize.
+		AI_Output(self, other, "DIA_Addon_Gorax_DaronsStatue_14_03"); //I am very obliged to you, young novice.
 		MIS_Addon_Daron_GetStatue = LOG_SUCCESS;
 		B_GivePlayerXP(XP_Addon_ReturnedLostInnosStatue_Daron);
 		DIA_Gorax_GOLD_perm = TRUE; // WICHTIG
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Gorax_DaronsStatue_14_04"); //Statuette? Ich sehe keine Statuette. Bring sie mir, dann glaube ich dir deine kleine Geschichte.
+		AI_Output(self, other, "DIA_Addon_Gorax_DaronsStatue_14_04"); //Statuette? I see no statuette. Bring it to me, and I might believe your little story.
 	};
 };
 
@@ -204,7 +204,7 @@ instance DIA_Gorax_SLEEP(C_INFO)
 	nr				= 4;
 	condition		= DIA_Gorax_SLEEP_Condition;
 	information		= DIA_Gorax_SLEEP_Info;
-	description		= "Ich suche einen Platz zum Schlafen.";
+	description		= "I'm looking for a place to sleep.";
 };
 
 func int DIA_Gorax_SLEEP_Condition()
@@ -218,10 +218,10 @@ func int DIA_Gorax_SLEEP_Condition()
 
 func void DIA_Gorax_SLEEP_Info()
 {
-	AI_Output(other, self, "DIA_Gorax_SLEEP_15_00"); //Ich suche einen Platz zum Schlafen.
-	AI_Output(self, other, "DIA_Gorax_SLEEP_14_01"); //Direkt nebenan ist noch ein Bett frei. Das erste auf der rechten Seite, neben dem Eingang. Dort kannst du schlafen.
-	AI_Output(self, other, "DIA_Gorax_SLEEP_14_02"); //Deine Habseligkeiten kannst du in einer der unbenutzten Truhen verstauen.
-	AI_Output(self, other, "DIA_Gorax_SLEEP_14_03"); //Und denk daran - in den Schlafräumen der Magier hast du nichts zu suchen. Ebenso ist es dir nicht gestattet, die Bibliothek zu betreten, solange du keine Erlaubnis dafür besitzt.
+	AI_Output(other, self, "DIA_Gorax_SLEEP_15_00"); //I'm looking for a place to sleep.
+	AI_Output(self, other, "DIA_Gorax_SLEEP_14_01"); //There's an empty bed right next door. The first on the right, next to the entrance. You can sleep there.
+	AI_Output(self, other, "DIA_Gorax_SLEEP_14_02"); //You can store your belongings in one of the unused chests.
+	AI_Output(self, other, "DIA_Gorax_SLEEP_14_03"); //And remember - you have no business entering the sleeping chambers of the magicians. You are also not allowed to enter the library unless you have been given permission.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -233,7 +233,7 @@ instance DIA_Gorax_Aufgabe(C_INFO)
 	nr				= 3;
 	condition		= DIA_Gorax_Aufgabe_Condition;
 	information		= DIA_Gorax_Aufgabe_Info;
-	description		= "Hast du eine Aufgabe für mich?";
+	description		= "Do you have an assignment for me?";
 };
 
 func int DIA_Gorax_Aufgabe_Condition()
@@ -246,10 +246,10 @@ func int DIA_Gorax_Aufgabe_Condition()
 
 func void DIA_Gorax_Aufgabe_Info()
 {
-	AI_Output(other, self, "DIA_Gorax_Aufgabe_15_00"); //Hast du eine Aufgabe für mich?
-	AI_Output(self, other, "DIA_Gorax_Aufgabe_14_01"); //Ihr Novizen habt in den letzten Tagen viel gearbeitet. Und wer viel arbeitet, soll auch essen.
-	AI_Output(self, other, "DIA_Gorax_Aufgabe_14_02"); //Ich gebe dir den Schlüssel zur Vorratskammer. Dort findest du Schafswürste. Verteile diese an die Novizen - aber verteile sie gerecht!
-	AI_Output(self, other, "DIA_Gorax_Aufgabe_14_03"); //Wenn du das getan hast, darfst du dich wieder bei mir melden.
+	AI_Output(other, self, "DIA_Gorax_Aufgabe_15_00"); //Do you have an assignment for me?
+	AI_Output(self, other, "DIA_Gorax_Aufgabe_14_01"); //You novices have worked hard lately. And those who work a lot shall eat a lot, too.
+	AI_Output(self, other, "DIA_Gorax_Aufgabe_14_02"); //I'm giving you the key to the larder. You'll find some mutton sausages there. Distribute them among the novices - but fairly!
+	AI_Output(self, other, "DIA_Gorax_Aufgabe_14_03"); //Once you have done that, you can come see me again.
 
 	CreateInvItems(self, ItKe_KlosterStore, 1);
 	B_GiveInvItems(self, other, ItKe_KlosterStore, 1);
@@ -261,7 +261,7 @@ func void DIA_Gorax_Aufgabe_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Würste verteilt
+//	Info WÃ¼rste verteilt
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Gorax_Wurst(C_INFO)
 {
@@ -270,7 +270,7 @@ instance DIA_Gorax_Wurst(C_INFO)
 	condition		= DIA_Gorax_Wurst_Condition;
 	information		= DIA_Gorax_Wurst_Info;
 	permanent		= TRUE;
-	description		= "Ich habe die Würste verteilt. (Aufgabe beenden)";
+	description		= "I have distributed the sausages (complete task).";
 };
 
 func int DIA_Gorax_Wurst_Condition()
@@ -284,11 +284,11 @@ func int DIA_Gorax_Wurst_Condition()
 
 func void DIA_Gorax_Wurst_Info()
 {
-	AI_Output(other, self, "DIA_Gorax_Wurst_15_00"); //Ich habe die Würste verteilt.
+	AI_Output(other, self, "DIA_Gorax_Wurst_15_00"); //I have distributed the sausages.
 
 	if (Wurst_Gegeben >= 13)
 	{
-		AI_Output(self, other, "DIA_Gorax_Wurst_14_01"); //Und du hast es gerecht getan. Nimm diese Spruchrollen der Heilung - und verrichte weiterhin deine Arbeiten.
+		AI_Output(self, other, "DIA_Gorax_Wurst_14_01"); //And you have done so fairly. Take these spell scrolls of healing - and go back to your work.
 
 		MIS_GoraxEssen = LOG_SUCCESS;
 		B_GivePlayerXP(XP_GoraxEssen);
@@ -296,9 +296,9 @@ func void DIA_Gorax_Wurst_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Gorax_Wurst_14_02"); //Ach ja? Dann bist du bei deiner Aufgabe aber nicht sehr gründlich gewesen.
-		AI_Output(self, other, "DIA_Gorax_Wurst_14_03"); //Also entweder hast du die Würste selber gegessen oder hast irgendjemandem mehr gegeben.
-		AI_Output(self, other, "DIA_Gorax_Wurst_14_04"); //Hör zu, weil du neu bist - und nur, weil du neu bist, lass ich dir das durchgehen. Merk dir das, Novize!
+		AI_Output(self, other, "DIA_Gorax_Wurst_14_02"); //Really? Then you cannot have put much effort into fulfilling your task.
+		AI_Output(self, other, "DIA_Gorax_Wurst_14_03"); //So, either you ate those sausages yourself, or you gave someone more than his share.
+		AI_Output(self, other, "DIA_Gorax_Wurst_14_04"); //Listen, since you're new - and for that reason only - I shall let you get away with it. Keep that in mind, novice!
 
 		MIS_GoraxEssen = LOG_FAILED;
 	};
@@ -313,7 +313,7 @@ instance DIA_Gorax_Aufgabe2(C_INFO)
 	nr				= 3;
 	condition		= DIA_Gorax_Aufgabe2_Condition;
 	information		= DIA_Gorax_Aufgabe2_Info;
-	description		= "Hast du noch eine Aufgabe für mich?";
+	description		= "Do you have another assignment for me?";
 };
 
 func int DIA_Gorax_Aufgabe2_Condition()
@@ -328,10 +328,10 @@ func int DIA_Gorax_Aufgabe2_Condition()
 
 func void DIA_Gorax_Aufgabe2_Info()
 {
-	AI_Output(other, self, "DIA_Gorax_Aufgabe2_15_00"); //Hast du noch eine Aufgabe für mich?
-	AI_Output(self, other, "DIA_Gorax_Aufgabe2_14_01"); //Ja. Wie du weißt, keltern wir hier einen hervorragenden Wein, den wir auch verkaufen.
-	AI_Output(self, other, "DIA_Gorax_Aufgabe2_14_02"); //Orlan, der Wirt der Herberge 'Zur Toten Harpie', hat eine Lieferung bestellt. Ausgemacht sind 240 Goldstücke für die Flaschen.
-	AI_Output(self, other, "DIA_Gorax_Aufgabe2_14_03"); //Bring ihm diese Flaschen - aber lass dich nicht von ihm über's Ohr hauen.
+	AI_Output(other, self, "DIA_Gorax_Aufgabe2_15_00"); //Do you have another assignment for me?
+	AI_Output(self, other, "DIA_Gorax_Aufgabe2_14_01"); //Yes. As you know, we make an excellent wine here and we sell it, too.
+	AI_Output(self, other, "DIA_Gorax_Aufgabe2_14_02"); //Orlan, the landlord of the inn 'The Dead Harpy' has ordered a shipment. We've agreed on 240 gold pieces for the bottles.
+	AI_Output(self, other, "DIA_Gorax_Aufgabe2_14_03"); //Bring him these bottles - but don't let him shortchange you.
 
 	B_GiveInvItems(self, other, ItFo_Wine, 12);
 	MIS_GoraxWein = LOG_RUNNING;
@@ -351,7 +351,7 @@ instance DIA_Gorax_Orlan(C_INFO)
 	condition		= DIA_Gorax_Orlan_Condition;
 	information		= DIA_Gorax_Orlan_Info;
 	permanent		= TRUE;
-	description		= "Ich war bei Orlan.";
+	description		= "I went to see Orlan.";
 };
 
 // ----------------------------------
@@ -371,26 +371,26 @@ func void DIA_Gorax_Orlan_Info()
 {
 	if (Npc_HasItems(other, ItmI_Gold) >= 100)
 	{
-		AI_Output(other, self, "DIA_Gorax_Orlan_15_00"); //Ich war bei Orlan.
-		AI_Output(self, other, "DIA_Gorax_Orlan_14_01"); //Und, hast du die 240 Goldstück bekommen?
+		AI_Output(other, self, "DIA_Gorax_Orlan_15_00"); //I went to see Orlan.
+		AI_Output(self, other, "DIA_Gorax_Orlan_14_01"); //And, did you get the 240 gold coins?
 
 		DIA_Gorax_Orlan_permanent = TRUE;
 		Info_ClearChoices(DIA_Gorax_Orlan);
 
-		Info_AddChoice(DIA_Gorax_Orlan, "Er hat mich über's Ohr gehauen! (100 Gold geben)", DIA_Gorax_Orlan_100);
-		Info_AddChoice(DIA_Gorax_Orlan, "Ich habe das Gold bekommen. (240 Gold geben)", DIA_Gorax_Orlan_240);
+		Info_AddChoice(DIA_Gorax_Orlan, "He put one over on me! (Give 100 gold)", DIA_Gorax_Orlan_100);
+		Info_AddChoice(DIA_Gorax_Orlan, "I've got the gold. (Give 240 gold)", DIA_Gorax_Orlan_240);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Gorax_Orlan_14_02"); //Was hast du mit dem Gold gemacht? Hast du es ausgegeben? Hol es und komm wieder!
+		AI_Output(self, other, "DIA_Gorax_Orlan_14_02"); //What have you done with that gold? Did you spend it? Go get it and then come back!
 	};
 };
 
 func void DIA_Gorax_Orlan_100()
 {
-	AI_Output(other, self, "DIA_Gorax_Orlan_100_15_00"); //Er hat mich über's Ohr gehauen!
-	AI_Output(self, other, "DIA_Gorax_Orlan_100_14_01"); //Du hast es ihm billiger verkauft? Oh nein, warum habe ich auch ausgerechnet DICH damit beauftragt?
-	AI_Output(self, other, "DIA_Gorax_Orlan_100_14_02"); //Du bist wirklich zu gar nichts zu gebrauchen. Jetzt geh mir aus den Augen!
+	AI_Output(other, self, "DIA_Gorax_Orlan_100_15_00"); //He put one over on me!
+	AI_Output(self, other, "DIA_Gorax_Orlan_100_14_01"); //You sold it to him cheaper? Oh no, why did I have to send YOU of all people?
+	AI_Output(self, other, "DIA_Gorax_Orlan_100_14_02"); //You really are utterly and completely useless. Now get out of my sight.
 
 	B_GiveInvItems(other, self, ItMI_Gold, 100);
 
@@ -402,17 +402,17 @@ func void DIA_Gorax_Orlan_100()
 
 func void DIA_Gorax_Orlan_240()
 {
-	AI_Output(other, self, "DIA_Gorax_Orlan_240_15_00"); //Ich habe das Gold bekommen.
+	AI_Output(other, self, "DIA_Gorax_Orlan_240_15_00"); //I've got the gold.
 
 	if (B_GiveInvItems(other, self, ItMI_Gold, 240))
 	{
-		AI_Output(self, other, "DIA_Gorax_Orlan_240_14_01"); //Ausgezeichnet. Du bist zu gebrauchen. Nimm diese Spruchrolle der Heilung als Belohnung. Und nun geh und widme dich anderen Arbeiten.
+		AI_Output(self, other, "DIA_Gorax_Orlan_240_14_01"); //Excellent. You're really useful. Take this spell scroll of healing as a reward. And now go and find yourself something else to do.
 		MIS_GoraxWein = LOG_SUCCESS;
 		B_GivePlayerXP(XP_Goraxwein);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Gorax_Orlan_240_14_02"); //Aber einen Teil des Goldes hast du wohl schon ausgegeben, wie? Du bist zu nichts zu gebrauchen - jetzt verschwinde!
+		AI_Output(self, other, "DIA_Gorax_Orlan_240_14_02"); //But you've already spent part of the money, haven't you? You're good for nothing - begone!
 		MIS_GoraxWein = LOG_FAILED;
 		B_GiveInvItems(other, self, ItMI_Gold, Npc_HasItems(other, ItmI_Gold));
 	};
@@ -429,7 +429,7 @@ instance DIA_Gorax_JOB(C_INFO)
 	nr				= 35;
 	condition		= DIA_Gorax_JOB_Condition;
 	information		= DIA_Gorax_JOB_Info;
-	description		= "Was ist deine Aufgabe hier?";
+	description		= "What's your job here?";
 };
 
 func int DIA_Gorax_JOB_Condition()
@@ -439,10 +439,10 @@ func int DIA_Gorax_JOB_Condition()
 
 func void DIA_Gorax_JOB_Info()
 {
-	AI_Output(other, self, "DIA_Gorax_JOB_15_00"); //Was ist deine Aufgabe hier?
-	AI_Output(self, other, "DIA_Gorax_JOB_14_01"); //Meine Aufgaben sind sehr vielseitig. Ich führe nicht nur das Amt des Verwalters, sondern auch das des Schatzmeisters.
-	AI_Output(self, other, "DIA_Gorax_JOB_14_02"); //Zudem organisiere ich die Weinkellerei und überwache die Vorräte des Klosters.
-	AI_Output(self, other, "DIA_Gorax_JOB_14_03"); //Also, wenn du etwas benötigst, bei mir kannst du dich mit allem versorgen - natürlich nur gegen eine angemessene Spende.
+	AI_Output(other, self, "DIA_Gorax_JOB_15_00"); //What's your task here?
+	AI_Output(self, other, "DIA_Gorax_JOB_14_01"); //My tasks are many and varied. Not only am I the steward, but I am also the treasurer.
+	AI_Output(self, other, "DIA_Gorax_JOB_14_02"); //Moreover, I supervise the wine cellar, and I'm in control of the monastery's food supplies.
+	AI_Output(self, other, "DIA_Gorax_JOB_14_03"); //So, if there's anything you need, you can always come to me and get it - for a modest contribution, that is.
 
 	Log_CreateTopic(Topic_KlosterTrader, LOG_NOTE);
 	B_LogEntry(Topic_KlosterTrader, Topic_KlosterTrader_2);
@@ -459,7 +459,7 @@ instance DIA_Gorax_TRADE(C_INFO)
 	information		= DIA_Gorax_TRADE_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Ich brauche ein paar Dinge...";
+	description		= "I need a few things ...";
 };
 
 func int DIA_Gorax_TRADE_Condition()
@@ -473,11 +473,11 @@ func int DIA_Gorax_TRADE_Condition()
 func void DIA_Gorax_TRADE_Info()
 {
 	B_GiveTradeInv(self);
-	AI_Output(other, self, "DIA_Gorax_TRADE_15_00"); //Ich brauche ein paar Dinge...
+	AI_Output(other, self, "DIA_Gorax_TRADE_15_00"); //I need a few things ...
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info SLEEP für KDF
+//	Info SLEEP fÃ¼r KDF
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Gorax_KDF(C_INFO)
 {
@@ -485,7 +485,7 @@ instance DIA_Gorax_KDF(C_INFO)
 	nr				= 5;
 	condition		= DIA_Gorax_KDF_Condition;
 	information		= DIA_Gorax_KDF_Info;
-	description		= "Ich brauche einen neuen Schlafplatz.";
+	description		= "I need a new place to sleep.";
 };
 
 func int DIA_Gorax_KDF_Condition()
@@ -498,8 +498,8 @@ func int DIA_Gorax_KDF_Condition()
 
 func void DIA_Gorax_KDF_Info()
 {
-	AI_Output(other, self, "DIA_Gorax_KDF_15_00"); //Ich brauche einen neuen Schlafplatz.
-	AI_Output(self, other, "DIA_Gorax_KDF_14_01"); //Hier auf der rechten Seite ist noch ein Gemach frei. Nimm den Schlüssel, du wirst dort alles finden, was du benötigst.
+	AI_Output(other, self, "DIA_Gorax_KDF_15_00"); //I need a new place to sleep.
+	AI_Output(self, other, "DIA_Gorax_KDF_14_01"); //There's a free chamber on the right here. Take the key. You'll find everything you need there.
 
 	B_GiveInvItems(self, other, ItKe_KDFPlayer, 1);
 	Wld_InsertItem(ItPo_Perm_Mana, "FP_ITEM_KDFPLAYER");
@@ -592,32 +592,32 @@ func int DIA_Gorax_KILLPEDRO_Condition()
 
 func void DIA_Gorax_KILLPEDRO_Info()
 {
-	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_14_00"); //Halte ein, Söldner. Ich hab mit dir zu reden.
-	AI_Output(other, self, "DIA_Gorax_KILLPEDRO_15_01"); //Was willst du?
-	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_14_02"); //Es ist eine höchst delikate Situation hier im Kloster.
-	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_14_03"); //Jeder scheint hier momentan jedem zu misstrauen. Und dann noch dieser Vorfall mit Pedro, das ist äußerst ... (schluckt)
-	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_14_04"); //Ich habe einen Auftrag von höchster Stelle für dich. Du bist kein Mitglied der Gemeinschaft des Feuers und bist deshalb der einzige hier, der diese Angelegenheit für uns regeln kann.
-	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_14_05"); //Aber ich muss dich warnen. Wenn ich dir diesen Auftrag erteile, hast du ihn auch auszuführen. Du wirst keine Wahl haben, wenn du weißt, worum es geht, verstanden?
+	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_14_00"); //Wait, mercenary. I need to talk to you.
+	AI_Output(other, self, "DIA_Gorax_KILLPEDRO_15_01"); //What do you want?
+	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_14_02"); //The monastery is facing a very delicate situation.
+	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_14_03"); //At the moment, everyone seems to mistrust everybody else. And then, this thing with Pedro, that's extremely ... (gulps)
+	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_14_04"); //I have an assignment for you from the highest authorities. You are not a member of the Brotherhood of the Fire, and therefore the only one here who can settle this matter for us.
+	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_14_05"); //But I must warn you. If I give you this assignment, you'll be bound to fulfill it, too. Once you know what it's about, you'll have no choice. Do you understand?
 
 	Info_ClearChoices(DIA_Gorax_KILLPEDRO);
-	Info_AddChoice(DIA_Gorax_KILLPEDRO, "Vergiss es. Das ist mir zu riskant.", DIA_Gorax_KILLPEDRO_nein);
-	Info_AddChoice(DIA_Gorax_KILLPEDRO, "Sag´ mir, was du willst.", DIA_Gorax_KILLPEDRO_ja);
+	Info_AddChoice(DIA_Gorax_KILLPEDRO, "Forget it. That's too risky for me.", DIA_Gorax_KILLPEDRO_nein);
+	Info_AddChoice(DIA_Gorax_KILLPEDRO, "Tell me what you want.", DIA_Gorax_KILLPEDRO_ja);
 };
 
 func void DIA_Gorax_KILLPEDRO_nein()
 {
-	AI_Output(other, self, "DIA_Gorax_KILLPEDRO_nein_15_00"); //Vergiss es. Das ist mir zu riskant.
-	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_nein_14_01"); //Gut. Dann habe ich nichts gesagt.
+	AI_Output(other, self, "DIA_Gorax_KILLPEDRO_nein_15_00"); //Forget it. That's too risky for me.
+	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_nein_14_01"); //All right. In that case, forget I said anything.
 	AI_StopProcessInfos(self);
 };
 
 func void DIA_Gorax_KILLPEDRO_ja()
 {
-	AI_Output(other, self, "DIA_Gorax_KILLPEDRO_ja_15_00"); //Sag, was du willst.
-	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_ja_14_01"); //Gut. Dann höre genau zu, denn ich sage es nur ein einziges Mal.
-	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_ja_14_02"); //Serpentes will, dass du Pedro für seinen Verrat tötest, wenn er dir in die Hände fällt.
-	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_ja_14_03"); //Bezahlung erhältst du, sobald der Auftrag erledigt ist.
-	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_ja_14_04"); //Das habe ich nicht gesagt. Und du hast auch nichts gehört, verstanden?
+	AI_Output(other, self, "DIA_Gorax_KILLPEDRO_ja_15_00"); //Tell me what you want.
+	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_ja_14_01"); //All right. Then listen well, for I'm only going to say this once.
+	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_ja_14_02"); //Serpentes wants you to kill Pedro for his treason as soon as you lay your hands on him.
+	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_ja_14_03"); //You will be paid as soon as this task is fulfilled.
+	AI_Output(self, other, "DIA_Gorax_KILLPEDRO_ja_14_04"); //I never said that. And you haven't heard anything either, understand?
 
 	B_LogEntry(TOPIC_TraitorPedro, TOPIC_TraitorPedro_3);
 

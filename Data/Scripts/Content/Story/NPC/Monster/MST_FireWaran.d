@@ -5,7 +5,7 @@
 prototype Mst_Default_FireWaran(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Feuerwaran";
+	name							= "Fire Lizard";
 	guild							= GIL_WARAN;
 	level							= 30;
 
@@ -26,7 +26,7 @@ prototype Mst_Default_FireWaran(C_Npc)
 	protection[PROT_MAGIC]			= 0;
 
 	// -------- damage --------
-	damageType						= DAM_FIRE; // Opfer f‰ngt an zu brennen
+	damageType						= DAM_FIRE; // Opfer f√§ngt an zu brennen
 	//	damage[DAM_INDEX_BLUNT]		= 0;
 	//	damage[DAM_INDEX_EDGE]		= 0;
 	//	damage[DAM_INDEX_POINT]		= 0;

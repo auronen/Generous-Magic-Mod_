@@ -27,7 +27,7 @@ instance VLK_415_Meldor(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 35); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 35); // Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

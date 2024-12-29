@@ -18,7 +18,7 @@ const int Value_Water = 10; const int HP_Water = 8;
 const int Value_Beer = 20; const int HP_Beer = 3; const int Mana_Beer = 1;
 const int Value_Booze = 15; const int HP_Booze = 4; const int Mana_Booze = 1;
 const int Value_Wine = 20; const int HP_Wine = 2; const int Mana_Wine = 1;
-const int Value_Milk = 15; const int HP_Milk = 5; const int Mana_Milk = 1; // Joly: Wenn diese Werte ge‰ndert werden passt Lobarts Auftrag holMilch nicht mehr!!!!!!
+const int Value_Milk = 15; const int HP_Milk = 5; const int Mana_Milk = 1; // Joly: Wenn diese Werte ge√§ndert werden passt Lobarts Auftrag holMilch nicht mehr!!!!!!
 
 // ************************************************************************************************
 //	Essbares
@@ -26,7 +26,7 @@ const int Value_Milk = 15; const int HP_Milk = 5; const int Mana_Milk = 1; // Jo
 
 instance ItFo_Apple(C_Item)
 {
-	name						= "Apfel";
+	name						= "Apple";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -43,8 +43,8 @@ instance ItFo_Apple(C_Item)
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Bonus_HP;								count[1] = HP_Apple;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Ein frischer Apfel";							count[3] = 0;
-	text[4]						= "knackig und saftig";							count[4] = 0;
+	text[3]						= "A fresh apple,";							count[3] = 0;
+	text[4]						= "firm and juicy.";							count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = Value_Apple;
 };
 
@@ -78,7 +78,7 @@ func void Use_Apple()
 
 instance ItFo_Cheese(C_Item)
 {
-	name						= "K‰se";
+	name						= "Cheese";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -107,7 +107,7 @@ func void Use_Cheese()
 
 instance ItFo_Bacon(C_Item)
 {
-	name						= "Schinken";
+	name						= "Ham";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -136,7 +136,7 @@ func void Use_Bacon()
 
 instance ItFo_Bread(C_Item)
 {
-	name						= "Brot";
+	name						= "Bread";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -165,7 +165,7 @@ func void Use_Bread()
 
 instance ItFo_Fish(C_Item)
 {
-	name						= "Fisch";
+	name						= "Fish";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -194,7 +194,7 @@ func void Use_Fish()
 
 instance ItFoMuttonRaw(C_Item)
 {
-	name						= "Rohes Fleisch";
+	name						= "Raw Meat";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -223,7 +223,7 @@ func void Use_RawMeat()
 
 instance ItFoMutton(C_Item) // kommt aus Bratpfannen-Mobsi !!!
 {
-	name						= "Gebratenes Fleisch";
+	name						= "Fried Meat";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -252,7 +252,7 @@ func void Use_Meat()
 
 instance ItFo_Stew(C_Item)
 {
-	name						= "Eintopf";
+	name						= "Stew";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -281,7 +281,7 @@ func void Use_Stew()
 
 instance ItFo_XPStew(C_Item)
 {
-	name						= "Thekla's Eintopf";
+	name						= "Thekla's Stew";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -312,7 +312,7 @@ func void Use_XPStew()
 
 instance ItFo_CoragonsBeer(C_Item)
 {
-	name						= "Bier";
+	name						= "Beer";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -330,7 +330,7 @@ instance ItFo_CoragonsBeer(C_Item)
 	text[1]						= NAME_Bonus_HP;								count[1] = HP_Beer;
 	text[2]						= NAME_Bonus_Mana;								count[2] = Mana_Beer;
 	text[3]						= "";											count[3] = 0;
-	text[4]						= "Coragons Spezial Bier";						count[4] = 0;
+	text[4]						= "Coragon's Special Beer";						count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = Value_Beer;
 };
 
@@ -348,7 +348,7 @@ func void Use_CoragonsBeerBeer()
 
 instance ItFo_FishSoup(C_Item)
 {
-	name						= "Fischsuppe";
+	name						= "Fish Soup";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -377,7 +377,7 @@ func void Use_FishSoup()
 
 instance ItFo_Sausage(C_Item)
 {
-	name						= "Wurst";
+	name						= "Sausage";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -406,7 +406,7 @@ func void Use_Sausage()
 
 instance ItFo_Honey(C_Item)
 {
-	name						= "Honig";
+	name						= "Honey";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -439,7 +439,7 @@ func void Use_Honey()
 
 instance ItFo_Water(C_Item)
 {
-	name						= "Wasser";
+	name						= "Water";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -468,7 +468,7 @@ func void Use_Water()
 
 instance ItFo_Beer(C_Item)
 {
-	name						= "Bier";
+	name						= "Beer";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -486,7 +486,7 @@ instance ItFo_Beer(C_Item)
 	text[1]						= NAME_Bonus_HP;								count[1] = HP_Beer;
 	text[2]						= NAME_Bonus_Mana;								count[2] = Mana_Beer;
 	text[3]						= "";											count[3] = 0;
-	text[4]						= "Dunkles Paladiner";							count[4] = 0;
+	text[4]						= "Dark Paladin";							count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = Value_Beer;
 };
 
@@ -498,7 +498,7 @@ func void Use_Beer()
 
 instance ItFo_Booze(C_Item)
 {
-	name						= "Wacholder";
+	name						= "Gin";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -528,7 +528,7 @@ func void Use_Booze()
 
 instance ItFo_Wine(C_Item)
 {
-	name						= "Wein";
+	name						= "Wine";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;
@@ -558,7 +558,7 @@ func void Use_Wine()
 
 instance ItFo_Milk(C_Item)
 {
-	name						= "Milch";
+	name						= "Milk";
 
 	mainflag					= ITEM_KAT_FOOD;
 	flags						= ITEM_MULTI;

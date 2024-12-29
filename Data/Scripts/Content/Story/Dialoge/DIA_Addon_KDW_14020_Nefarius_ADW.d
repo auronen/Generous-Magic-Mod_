@@ -32,7 +32,7 @@ instance DIA_Addon_Nefarius_ADW_PICKPOCKET(C_INFO)
 	condition		= DIA_Addon_Nefarius_ADW_PICKPOCKET_Condition;
 	information		= DIA_Addon_Nefarius_ADW_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description		= "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };
 
 func int DIA_Addon_Nefarius_ADW_PICKPOCKET_Condition()
@@ -98,12 +98,12 @@ func int DIA_Addon_Nefarius_ADWHello_Condition()
 
 func void DIA_Addon_Nefarius_ADWHello_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Nefarius_ADWHello_05_00"); //Es beruhigt mich ungemein, zu sehen, dass du doch noch unversehrt hier angekommen bist.
-	AI_Output(other, self, "DIA_Addon_Nefarius_ADWHello_15_01"); //Wie kann es sein, dass ihr vor mir hier angekommen seid?
-	AI_Output(self, other, "DIA_Addon_Nefarius_ADWHello_05_02"); //Wir sind durch eine seltsame Dimension gereist. Wer weiß, welche Irrwege du genommen hast.
-	AI_Output(other, self, "DIA_Addon_Nefarius_ADWHello_15_03"); //Und jetzt? Kann ich das Portal nochmal benutzen?
-	AI_Output(self, other, "DIA_Addon_Nefarius_ADWHello_05_04"); //Wir sind ja direkt hier angekommen. Es funktioniert offensichtlich ganz gut.
-	AI_Output(self, other, "DIA_Addon_Nefarius_ADWHello_05_05"); //Ich werde dich natürlich darüber unterrichten, wenn ich den Verdacht habe, dass es anders sein könnte.
+	AI_Output(self, other, "DIA_Addon_Nefarius_ADWHello_05_00"); //I'm tremendously relieved to see that you have arrived here unscathed.
+	AI_Output(other, self, "DIA_Addon_Nefarius_ADWHello_15_01"); //How is it that you arrived here before me?
+	AI_Output(self, other, "DIA_Addon_Nefarius_ADWHello_05_02"); //We traveled through a curious dimension. Who knows what detours you took.
+	AI_Output(other, self, "DIA_Addon_Nefarius_ADWHello_15_03"); //And now? Can I use the portal again?
+	AI_Output(self, other, "DIA_Addon_Nefarius_ADWHello_05_04"); //We came here directly. It obviously works quite well.
+	AI_Output(self, other, "DIA_Addon_Nefarius_ADWHello_05_05"); //Of course, I'll let you know if I have the suspicion that it could be otherwise.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -115,7 +115,7 @@ instance DIA_Addon_Nefarius_Neues(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Nefarius_Neues_Condition;
 	information		= DIA_Addon_Nefarius_Neues_Info;
-	description		= "Was hast du bisher hier gemacht?";
+	description		= "What have you done here up to now?";
 };
 
 func int DIA_Addon_Nefarius_Neues_Condition()
@@ -128,26 +128,26 @@ func int DIA_Addon_Nefarius_Neues_Condition()
 
 func void DIA_Addon_Nefarius_Neues_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_Neues_15_00"); //Was hast du bisher hier gemacht?
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_01"); //Ich studiere die Geschichte der Erbauer und versuche zu verstehen, warum sie das Portal verschlossen haben.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_02"); //Es sieht ganz so aus, als wollten sie damit die untergegangene Stadt vor dem Rest der Welt verstecken.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_03"); //Schreckliche Dinge sind hier vor vielen Jahren geschehen. Etwas Grauenvolles hat sich ihrer bemächtigt.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_04"); //Wenn man ihren Aufzeichnungen Glauben schenken darf, dann gab es kurz vor dem Untergang der Stadt einen fürchterlichen Bürgerkrieg.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_05"); //Die Straßen standen in Flammen und eine alles verschlingende Flut besiegelte schließlich das Schicksal der Erbauer.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_06"); //Die wenigen, die dieses Inferno überlebten, verschlossen diesen Teil der Insel in der Hoffnung, das Chaos hier einzusperren.
+	AI_Output(other, self, "DIA_Addon_Nefarius_Neues_15_00"); //What have you done here up to now?
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_01"); //I am studying the history of the builders and am trying to understand why they closed the portal.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_02"); //It looks very much as though they wanted to hide the sunken city from the rest of the world.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_03"); //Terrible things happened here many years ago. They were seized by something awful.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_04"); //There was a dreadful civil war shortly before the downfall of the city, if their records can be believed.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_05"); //The streets were in flames, and a flood which devoured everything ultimately sealed the fate of the builders.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_05_06"); //The few who survived the inferno closed this part of the island in the hope of locking up the chaos.
 
 	Info_ClearChoices(DIA_Addon_Nefarius_Neues);
-	Info_AddChoice(DIA_Addon_Nefarius_Neues, "Was glaubst du werden wir hier finden?", DIA_Addon_Nefarius_Neues_find);
-	Info_AddChoice(DIA_Addon_Nefarius_Neues, "Und wir Narren haben das Portal wieder geöffnet.", DIA_Addon_Nefarius_Neues_auf);
-	Info_AddChoice(DIA_Addon_Nefarius_Neues, "Was hat die Erbauer, denn so aufgebracht?", DIA_Addon_Nefarius_Neues_was);
-	Info_AddChoice(DIA_Addon_Nefarius_Neues, "Sagtest du gerade, es kam eine Flut?", DIA_Addon_Nefarius_Neues_flut);
+	Info_AddChoice(DIA_Addon_Nefarius_Neues, "What do you think we will find here?", DIA_Addon_Nefarius_Neues_find);
+	Info_AddChoice(DIA_Addon_Nefarius_Neues, "And we fools have reopened the portal.", DIA_Addon_Nefarius_Neues_auf);
+	Info_AddChoice(DIA_Addon_Nefarius_Neues, "What made the builders so agitated?", DIA_Addon_Nefarius_Neues_was);
+	Info_AddChoice(DIA_Addon_Nefarius_Neues, "Did you say that there was a flood?", DIA_Addon_Nefarius_Neues_flut);
 };
 
 func void DIA_Addon_Nefarius_Neues_find()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_Neues_find_15_00"); //Was glaubst du, werden wir hier finden?
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_find_05_01"); //Darüber kann ich nur Vermutungen anstellen. Du solltest mal mit Saturas sprechen.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_find_05_02"); //Er hat da so eine Ahnung.
+	AI_Output(other, self, "DIA_Addon_Nefarius_Neues_find_15_00"); //What do you think we will find here?
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_find_05_01"); //I can only speculate about that. You should talk to Saturas.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_find_05_02"); //He has a certain idea.
 
 	Log_CreateTopic(TOPIC_Addon_Flut, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Flut, LOG_RUNNING);
@@ -158,26 +158,26 @@ func void DIA_Addon_Nefarius_Neues_find()
 
 func void DIA_Addon_Nefarius_Neues_flut()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_Neues_flut_15_00"); //Sagtest du gerade, es kam eine Flut?
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_flut_05_01"); //Adanos selbst ist ihnen erschienen, um den Wahnsinn zu beenden.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_flut_05_02"); //Er machte diese Stadt dem Erdboden gleich.
+	AI_Output(other, self, "DIA_Addon_Nefarius_Neues_flut_15_00"); //Did you say that there was a flood?
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_flut_05_01"); //Adanos himself appeared to them to end the madness.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_flut_05_02"); //He razed the city to the ground.
 };
 
 func void DIA_Addon_Nefarius_Neues_was()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_Neues_was_15_00"); //Was hat die Erbauer denn so aufgebracht?
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_was_05_01"); //Jemand aus ihren eigenen Reihen hat sich dem Bösen verschrieben. Es war ein großer Feldherr namens Quahodron.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_was_05_02"); //Heimgekehrt aus einer erfolgreichen Schlacht außerhalb der schützenden Mauern dieser Stadt, brachte er das Übel mit sich.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_was_05_03"); //All seine Anhänger verfielen kurze Zeit später dem Wahnsinn und begannen, das gemeine Volk zu bekämpfen.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_was_05_04"); //Der darauf folgende Bürgerkrieg legte alles in Schutt und Asche.
+	AI_Output(other, self, "DIA_Addon_Nefarius_Neues_was_15_00"); //What made the builders so agitated?
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_was_05_01"); //One of their own devoted himself to Evil. He was a great commander named Quahodron.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_was_05_02"); //Returning from a successful battle outside the protecting walls of the city, he brought the Evil with him.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_was_05_03"); //All of his followers fell to the madness a short time later and began to battle with the common folk.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_was_05_04"); //The civil war that followed reduced everything to rubble.
 };
 
 func void DIA_Addon_Nefarius_Neues_auf()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_Neues_auf_15_00"); //Und wir Narren haben das Portal wieder geöffnet.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_auf_05_01"); //Wohl ist mir dabei auch nicht, das kannst du mir glauben.
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_auf_05_02"); //Aber, was hatten wir schon für eine Wahl?
-	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_auf_05_03"); //Wenn wir nicht aufhalten können, was hier am Werke ist, dann wird es Khorinis vielleicht genau so ergehen, wie einst den Erbauern dieser alten Stadt.
+	AI_Output(other, self, "DIA_Addon_Nefarius_Neues_auf_15_00"); //And we fools have reopened the portal.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_auf_05_01"); //I'm not happy about that either, believe you me.
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_auf_05_02"); //But what choice did we have?
+	AI_Output(self, other, "DIA_Addon_Nefarius_Neues_auf_05_03"); //If we cannot stop what is happening here, then Khorinis will suffer exactly the same fate that once befell the builders of this ancient city.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -190,7 +190,7 @@ instance DIA_Addon_Nefarius_PermADW(C_INFO)
 	condition		= DIA_Addon_Nefarius_PermADW_Condition;
 	information		= DIA_Addon_Nefarius_PermADW_Info;
 	permanent		= TRUE;
-	description		= "Die Reise durch das Portal ist sicher?";
+	description		= "The trip through the portal is safe?";
 };
 
 func int DIA_Addon_Nefarius_PermADW_Condition()
@@ -200,8 +200,8 @@ func int DIA_Addon_Nefarius_PermADW_Condition()
 
 func void DIA_Addon_Nefarius_PermADW_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_PermADW_15_00"); //Die Reise durch das Portal ist sicher?
-	AI_Output(self, other, "DIA_Addon_Nefarius_PermADW_05_01"); //Bisher habe ich keine Bedenken.
+	AI_Output(other, self, "DIA_Addon_Nefarius_PermADW_15_00"); //The trip through the portal is safe?
+	AI_Output(self, other, "DIA_Addon_Nefarius_PermADW_05_01"); //I haven't had any reservations so far.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -213,7 +213,7 @@ instance DIA_Addon_Nefarius_PreTeach(C_INFO)
 	nr				= 99;
 	condition		= DIA_Addon_Nefarius_PreTeach_Condition;
 	information		= DIA_Addon_Nefarius_PreTeach_Info;
-	description		= "Könnt ihr mir euer Wissen über die Magie vermitteln?";
+	description		= "Could you impart your knowledge of magic to me?";
 };
 
 func int DIA_Addon_Nefarius_PreTeach_Condition()
@@ -227,9 +227,9 @@ func int DIA_Addon_Nefarius_PreTeach_Condition()
 
 func void DIA_Addon_Nefarius_PreTeach_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Nefarius_PreTeach_15_00"); //Könnt ihr mir euer Wissen über die Magie vermitteln?
-	AI_Output(self, other, "DIA_Addon_Nefarius_PreTeach_05_01"); //Ich kann dich im Erschaffen von Runen unterweisen und Cronos kann dir die Rezepte dafür verkaufen.
-	AI_Output(self, other, "DIA_Addon_Nefarius_PreTeach_05_02"); //Er hat die Runenbücher immer dabei.
+	AI_Output(other, self, "DIA_Addon_Nefarius_PreTeach_15_00"); //Could you impart your knowledge of magic to me?
+	AI_Output(self, other, "DIA_Addon_Nefarius_PreTeach_05_01"); //I can instruct you in the creation of runes, and Cronos can sell you the formulas for them.
+	AI_Output(self, other, "DIA_Addon_Nefarius_PreTeach_05_02"); //He always has his rune books with him.
 
 	Nefarius_Addon_TeachRunes = TRUE;
 	Log_CreateTopic(TOPIC_Addon_KDWTeacher, LOG_NOTE);
@@ -246,7 +246,7 @@ instance DIA_Addon_Nefarius_ADW_Runen(C_INFO)
 	condition		= DIA_Addon_Nefarius_ADW_Runen_Condition;
 	information		= DIA_Addon_Nefarius_ADW_Runen_Info;
 	permanent		= TRUE;
-	description		= "Unterweise mich (Runen erschaffen)";
+	description		= "Instruct me (create runes)";
 };
 
 func int DIA_Addon_Nefarius_ADW_Runen_Condition()
@@ -484,7 +484,7 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_4()
 	};
 };
 //**********************************************************
-// Fünfter Kreis 
+// FÃ¼nfter Kreis 
 //--------------------------
 //**********************************************************
 FUNC VOID DIA_Addon_Nefarius_ADW_Runen_5()

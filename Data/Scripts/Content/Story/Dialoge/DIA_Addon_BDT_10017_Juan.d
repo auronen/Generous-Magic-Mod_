@@ -66,7 +66,7 @@ instance DIA_Addon_Juan_HI(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Juan_HI_Condition;
 	information		= DIA_Addon_Juan_HI_Info;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_Juan_HI_Condition()
@@ -76,12 +76,12 @@ func int DIA_Addon_Juan_HI_Condition()
 
 func void DIA_Addon_Juan_HI_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Juan_HI_15_00"); //Wie sieht's aus?
-	AI_Output(self, other, "DIA_Addon_Juan_HI_13_01"); //Was willst du? Hast du mir was zu sagen? Wenn nicht, kannst du direkt wieder gehen.
+	AI_Output(other, self, "DIA_Addon_Juan_HI_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Addon_Juan_HI_13_01"); //What do you want? Have you got anything to say to me? If not, you can just go away.
 
 	if (!Npc_IsDead(Freund))
 	{
-		AI_Output(self, other, "DIA_Addon_Juan_HI_13_02"); //Sonst macht mein Freund hier Kleinholz aus dir. Also was ist?
+		AI_Output(self, other, "DIA_Addon_Juan_HI_13_02"); //Otherwise my friend will make mincemeat of you. So what is it?
 		B_StartOtherRoutine(Freund, "STAND");
 	};
 };
@@ -95,7 +95,7 @@ instance DIA_Addon_Juan_Losung(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Juan_Losung_Condition;
 	information		= DIA_Addon_Juan_Losung_Info;
-	description		= "Es heißt, du hast einige interessante Waren im Angebot...";
+	description		= "They say you have some interesting wares to offer...";
 };
 
 func int DIA_Addon_Juan_Losung_Condition()
@@ -109,12 +109,12 @@ func int DIA_Addon_Juan_Losung_Condition()
 
 func void DIA_Addon_Juan_Losung_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Juan_Losung_15_00"); //Es heißt, du hast einige interessante Waren im Angebot ...
-	AI_Output(self, other, "DIA_Addon_Juan_Losung_13_01"); //Ach was? Esteban will mich wohl verarschen, was? Ich habe die ganze Arbeit und verstecke mich tagelang in diesem miesen Loch ...
-	AI_Output(self, other, "DIA_Addon_Juan_Losung_13_02"); //... und er schickt einfach jemanden, der das Zeug abholt? Ich bin doch kein Lagerhaus!
-	AI_Output(other, self, "DIA_Addon_Juan_Losung_15_03"); //Ja und? Das ist nicht mein Problem.
-	AI_Output(self, other, "DIA_Addon_Juan_Losung_13_04"); //Ich MACHE es aber zu deinem Problem. Du willst die Lieferung - schön, du kannst sie kaufen.
-	AI_Output(self, other, "DIA_Addon_Juan_Losung_13_05"); //Hol dir das Gold doch von Esteban oder von Raven oder was weiß ich woher. Mir egal. Wer die Waren will, der zahlt dafür!
+	AI_Output(other, self, "DIA_Addon_Juan_Losung_15_00"); //They say you have some interesting wares to offer...
+	AI_Output(self, other, "DIA_Addon_Juan_Losung_13_01"); //So what. Esteban wants to jerk me around, eh? I do all the work and hide away here for days in this miserable hole...
+	AI_Output(self, other, "DIA_Addon_Juan_Losung_13_02"); //...and he just sends someone to fetch the stuff? I'm not a warehouse!
+	AI_Output(other, self, "DIA_Addon_Juan_Losung_15_03"); //Yeah, and? That isn't my problem.
+	AI_Output(self, other, "DIA_Addon_Juan_Losung_13_04"); //But I'm MAKING it your problem. You want the delivery - fine, you can pay for it!
+	AI_Output(self, other, "DIA_Addon_Juan_Losung_13_05"); //Get the gold from Esteban or Raven or I don't know where. I don't care. Whoever wants these goods will pay for them!
 };
 
 // ---------------------------------------------------------------------
@@ -126,7 +126,7 @@ instance DIA_Addon_Juan_AufsMaul(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Juan_AufsMaul_Condition;
 	information		= DIA_Addon_Juan_AufsMaul_Info;
-	description		= "Ich komme nicht von Esteban.";
+	description		= "I don't come from Esteban!";
 };
 
 func int DIA_Addon_Juan_AufsMaul_Condition()
@@ -139,8 +139,8 @@ func int DIA_Addon_Juan_AufsMaul_Condition()
 
 func void DIA_Addon_Juan_AufsMaul_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Juan_AufsMaul_15_00"); //Ich komme nicht von Esteban!
-	AI_Output(self, other, "DIA_Addon_Juan_AufsMaul_13_01"); //Oh? Ja dann ... eh ... Moment! Halt mal kurz still, du hast da 'n Viech auf der Schulter ...
+	AI_Output(other, self, "DIA_Addon_Juan_AufsMaul_15_00"); //I don't come from Esteban!
+	AI_Output(self, other, "DIA_Addon_Juan_AufsMaul_13_01"); //Oh? Well then... eh ... Just a moment! Hold still for a bit, you have a critter on your shoulder.
 
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);

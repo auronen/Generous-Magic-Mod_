@@ -79,8 +79,8 @@ func int DIA_Addon_Fisk_Hi_Condition()
 
 func void DIA_Addon_Fisk_Hi_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Fisk_Hi_12_00"); //Hey, wenn du hier im Lager einen anständigen Händler suchst, dann hast du ihn gerade gefunden.
-	AI_Output(self, other, "DIA_Addon_Fisk_Hi_12_01"); //Meine Hütte steht direkt hinter Esteban. Also, wenn du was brauchst, komm vorbei.
+	AI_Output(self, other, "DIA_Addon_Fisk_Hi_12_00"); //Hey, if you're looking for a decent trader here in the camp, then you just found him.
+	AI_Output(self, other, "DIA_Addon_Fisk_Hi_12_01"); //My hut is right behind Esteban. So if you need anything, come on by.
 
 	Log_CreateTopic(Topic_Addon_BDT_Trader, LOG_NOTE);
 	B_LogEntry(Topic_Addon_BDT_Trader, Topic_Addon_BDT_Trader_2);
@@ -116,13 +116,13 @@ func void DIA_Addon_Fisk_Trade_Info()
 	B_Say(other, self, "$TRADE_2");
 	B_GiveTradeInv(self);
 
-	// Bolzen nachfüllen
+	// Bolzen nachfÃ¼llen
 	if (Npc_HasItems(self, ItRw_Bolt) < 50)
 	{
 		CreateInvItems(self, ItRw_Bolt,(50 - Npc_HasItems(self, ItRw_Bolt)));
 	};
 
-	// Pfeile nachfüllen
+	// Pfeile nachfÃ¼llen
 	if (Npc_HasItems(self, ItRw_Arrow) < 50)
 	{
 		CreateInvItems(self, ItRw_Arrow,(50 - Npc_HasItems(self, ItRw_Arrow)));
@@ -152,12 +152,12 @@ func int DIA_Addon_Fisk_Attentat_Condition()
 func void DIA_Addon_Fisk_Attentat_Info()
 {
 	B_Say(other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output(self, other, "DIA_Addon_Fisk_Attentat_12_00"); //Hör zu, ich will mit der Sache nichts zu tun haben, klar!
-	AI_Output(self, other, "DIA_Addon_Fisk_Attentat_12_01"); //(unschuldig) Ich habe meine eigenen Sorgen, ich bin selbst ein Opfer.
-	AI_Output(other, self, "DIA_Addon_Fisk_Attentat_15_02"); //Inwiefern?
-	AI_Output(self, other, "DIA_Addon_Fisk_Attentat_12_03"); //Hab' ne Menge Gold bezahlt für meine letzte Lieferung.
-	AI_Output(self, other, "DIA_Addon_Fisk_Attentat_12_04"); //Aber die kam nie an! Irgendein Schwein hat sie sich unter den Nagel gerissen.
-	AI_Output(self, other, "DIA_Addon_Fisk_Attentat_12_05"); //(empört) Ich bin bestohlen worden - wahrscheinlich von einem unserer eigenen Leute!
+	AI_Output(self, other, "DIA_Addon_Fisk_Attentat_12_00"); //Listen, I don't want anything to do with that business, got it!
+	AI_Output(self, other, "DIA_Addon_Fisk_Attentat_12_01"); //(innocently) I have my own worries, I'm a victim myself.
+	AI_Output(other, self, "DIA_Addon_Fisk_Attentat_15_02"); //In what way?
+	AI_Output(self, other, "DIA_Addon_Fisk_Attentat_12_03"); //I paid a lot of gold for my last delivery.
+	AI_Output(self, other, "DIA_Addon_Fisk_Attentat_12_04"); //But it never came! Some swine made off with it.
+	AI_Output(self, other, "DIA_Addon_Fisk_Attentat_12_05"); //(outraged) I've been robbed - probably by some of our own people!
 };
 
 // ---------------------------------------------------------------------
@@ -169,7 +169,7 @@ instance DIA_Addon_Fisk_Lieferung(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Fisk_Lieferung_Condition;
 	information		= DIA_Addon_Fisk_Lieferung_Info;
-	description		= "Was war das für 'ne Lieferung?";
+	description		= "What sort of delivery?";
 };
 
 func int DIA_Addon_Fisk_Lieferung_Condition()
@@ -182,10 +182,10 @@ func int DIA_Addon_Fisk_Lieferung_Condition()
 
 func void DIA_Addon_Fisk_Lieferung_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_Lieferung_15_00"); //Was war das für 'ne Lieferung?
-	AI_Output(self, other, "DIA_Addon_Fisk_Lieferung_12_01"); //Ein Paket Dietriche. Jemand sollte sie für mich von den Piraten abholen.
-	AI_Output(self, other, "DIA_Addon_Fisk_Lieferung_12_02"); //Aber ein Kerl namens Juan hat es mir weggeschnappt. (sauer) Mitsamt dem Gold, das ich dafür bezahlt habe!
-	AI_Output(self, other, "DIA_Addon_Fisk_Lieferung_12_03"); //Der Mistkerl versteckt sich irgendwo im Sumpf ...
+	AI_Output(other, self, "DIA_Addon_Fisk_Lieferung_15_00"); //What sort of delivery?
+	AI_Output(self, other, "DIA_Addon_Fisk_Lieferung_12_01"); //A packet of lock picks. Someone was supposed to get them from the pirates for me.
+	AI_Output(self, other, "DIA_Addon_Fisk_Lieferung_12_02"); //But a guy named Juan snatched it away from me. (angry) Including the gold that I paid for it!
+	AI_Output(self, other, "DIA_Addon_Fisk_Lieferung_12_03"); //The bastard is hiding somewhere in the swamp.
 
 	MIS_Lennar_Lockpick = LOG_RUNNING;
 
@@ -202,47 +202,47 @@ func void B_Addon_Fisk_AboutJuan()
 {
 	if (Npc_IsDead(Juan))
 	{
-		AI_Output(other, self, "DIA_Addon_Fisk_AboutJuan_15_00"); //Er ist tot.
-		AI_Output(self, other, "DIA_Addon_Fisk_AboutJuan_12_01"); //Gut, dann kann er mir keinen Ärger mehr machen!
+		AI_Output(other, self, "DIA_Addon_Fisk_AboutJuan_15_00"); //He's dead.
+		AI_Output(self, other, "DIA_Addon_Fisk_AboutJuan_12_01"); //Good, then he can't cause me any more trouble!
 	}
 	else
 	{
-		AI_Output(other, self, "DIA_Addon_Fisk_AboutJuan_15_02"); //Er lebt noch ...
-		AI_Output(self, other, "DIA_Addon_Fisk_AboutJuan_12_03"); //Du hast das Schwein leben lassen?
-		AI_Output(other, self, "DIA_Addon_Fisk_AboutJuan_15_04"); //Er war nicht allein ...
-		AI_Output(self, other, "DIA_Addon_Fisk_AboutJuan_12_05"); //Egal - ich werde auch so mit den Drecksäcken fertig ...
+		AI_Output(other, self, "DIA_Addon_Fisk_AboutJuan_15_02"); //He's still alive...
+		AI_Output(self, other, "DIA_Addon_Fisk_AboutJuan_12_03"); //You let the swine live?
+		AI_Output(other, self, "DIA_Addon_Fisk_AboutJuan_15_04"); //He wasn't alone...
+		AI_Output(self, other, "DIA_Addon_Fisk_AboutJuan_12_05"); //Never mind - I can deal with those scumbags anyway...
 	};
 };
 
 // ---------------------------------------------------------------------
 func void B_Addon_Fisk_Belohnung()
 {
-	AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_00"); //Was dich betrifft ...
-	AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_01"); //Ich habe ziemlich gute Beziehungen zu Huno.
-	AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_02"); //Ich werde dafür sorgen, dass du ab jetzt billig an deine Rüstungen rankommst.
+	AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_00"); //As far as you are concerned...
+	AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_01"); //I have a pretty good relationship with Huno.
+	AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_02"); //I'll see to it that you get your armor cheap from now on.
 	Huno_ArmorCheap = TRUE;
 
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_03"); //Und hier, diesen Stein habe ich einst von Corristo bekommen.
-		AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_04"); //Es ist das einzige, was meine Flucht aus der Barriere überlebt hat. Ich denke, du kannst mehr damit anfangen als ich.
+		AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_03"); //And here, I once got this stone from Corristo.
+		AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_04"); //It's the only thing that survived my flight from the Barrier. I think you'll have more use for it than I do.
 		B_GiveInvItems(self, other, ItMi_RuneBlank, 1);
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_05"); //Außerdem geb ich dir eine von meinen Waffen.
+		AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_05"); //Also, I'll give you one of my weapons.
 
 		if (other.HitChance[NPC_TALENT_2H] > other.HitChance[NPC_TALENT_1H])
 		{
 			B_GiveInvItems(self, other, ItMw_Streitaxt1, 1);
 		}
-		else // 1h größer oder beide gleich
+		else // 1h grÃ¶ÃŸer oder beide gleich
 		{
 			B_GiveInvItems(self, other, ItMw_Bartaxt, 1);
 		};
 	};
 
-	AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_06"); //(verschmitzt) Eine Hand wäscht die andere - das hat sich seit damals nicht geändert.
+	AI_Output(self, other, "DIA_Addon_Fisk_Belohnung_12_06"); //(mischieviously) One hand washes the other - that hasn't changed since back then.
 };
 
 // ---------------------------------------------------------------------
@@ -252,7 +252,7 @@ instance DIA_Addon_Fisk_GivePaket(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Fisk_GivePaket_Condition;
 	information		= DIA_Addon_Fisk_GivePaket_Info;
-	description		= "Ich habe dein Paket.";
+	description		= "I have your package.";
 };
 
 func int DIA_Addon_Fisk_GivePaket_Condition()
@@ -266,13 +266,13 @@ func int DIA_Addon_Fisk_GivePaket_Condition()
 
 func void DIA_Addon_Fisk_GivePaket_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_GivePaket_15_00"); //Ich habe dein Paket.
+	AI_Output(other, self, "DIA_Addon_Fisk_GivePaket_15_00"); //I have your package.
 	B_GiveInvItems(other, self, ItMi_Addon_Lennar_Paket, 1);
 
 	MIS_Lennar_Lockpick = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Addon_LennarPaket);
 
-	AI_Output(self, other, "DIA_Addon_Fisk_GivePaket_12_01"); //(erfreut) Tatsache! (argwöhnisch) Was ist mit Juan?
+	AI_Output(self, other, "DIA_Addon_Fisk_GivePaket_12_01"); //(pleased) Indeed! (suspiciously) What about Juan?
 
 	B_Addon_Fisk_AboutJuan();
 
@@ -288,7 +288,7 @@ instance DIA_Addon_Fisk_PaketOpen(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Fisk_PaketOpen_Condition;
 	information		= DIA_Addon_Fisk_PaketOpen_Info;
-	description		= "Ich habe dein Paket geöffnet!";
+	description		= "I opened your package!";
 };
 
 func int DIA_Addon_Fisk_PaketOpen_Condition()
@@ -302,10 +302,10 @@ func int DIA_Addon_Fisk_PaketOpen_Condition()
 
 func void DIA_Addon_Fisk_PaketOpen_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_PaketOpen_15_00"); //Ich habe dein Paket geöffnet!
-	AI_Output(self, other, "DIA_Addon_Fisk_PaketOpen_12_01"); //(lacht) War ja klar! Konntest es nicht abwarten, was?
-	AI_Output(self, other, "DIA_Addon_Fisk_PaketOpen_12_02"); //Hast du wenigstens die Dietriche noch?
-	AI_Output(self, other, "DIA_Addon_Fisk_PaketOpen_12_03"); //Und was viel wichtiger ist: Was ist mit Juan?
+	AI_Output(other, self, "DIA_Addon_Fisk_PaketOpen_15_00"); //I opened your package!
+	AI_Output(self, other, "DIA_Addon_Fisk_PaketOpen_12_01"); //(laughs) Of course! You just couldn't wait, could you?
+	AI_Output(self, other, "DIA_Addon_Fisk_PaketOpen_12_02"); //Do you at least still have the lock picks?
+	AI_Output(self, other, "DIA_Addon_Fisk_PaketOpen_12_03"); //And even more importantly, what about Juan?
 
 	B_Addon_Fisk_AboutJuan();
 };
@@ -320,7 +320,7 @@ instance DIA_Addon_Fisk_GivePicks(C_INFO)
 	condition		= DIA_Addon_Fisk_GivePicks_Condition;
 	information		= DIA_Addon_Fisk_GivePicks_Info;
 	permanent		= TRUE;
-	description		= "Hier hat du ein Dutzend Dietriche...";
+	description		= "Here's a dozen lock picks...";
 };
 
 func int DIA_Addon_Fisk_GivePicks_Condition()
@@ -334,11 +334,11 @@ func int DIA_Addon_Fisk_GivePicks_Condition()
 
 func void DIA_Addon_Fisk_GivePicks_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_GivePicks_15_00"); //Hier hat du ein Dutzend Dietriche ...
+	AI_Output(other, self, "DIA_Addon_Fisk_GivePicks_15_00"); //Here's a dozen lock picks...
 
 	if (B_GiveInvItems(other, self, itke_lockpick, 12))
 	{
-		AI_Output(self, other, "DIA_Addon_Fisk_GivePicks_12_01"); //Sehr gut. Einige Leute warten schon auf neue Ware.
+		AI_Output(self, other, "DIA_Addon_Fisk_GivePicks_12_01"); //Very good. Some people are already waiting for new merchandise.
 		B_Addon_Fisk_Belohnung();
 
 		MIS_Lennar_Lockpick = LOG_SUCCESS;
@@ -346,7 +346,7 @@ func void DIA_Addon_Fisk_GivePicks_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Fisk_GivePicks_12_02"); //Das ist kein Dutzend! (schlau) Du willst mir doch wohl nicht die Reste andrehen, hm?
+		AI_Output(self, other, "DIA_Addon_Fisk_GivePicks_12_02"); //That isn't a dozen! (slyly) You're not trying to cheat me, are you?
 	};
 };
 
@@ -359,7 +359,7 @@ instance DIA_Addon_Fisk_Inspektor(C_INFO)
 	nr				= 7;
 	condition		= DIA_Addon_Fisk_Inspektor_Condition;
 	information		= DIA_Addon_Fisk_Inspektor_Info;
-	description		= "Juan hat für Esteban gearbeitet!";
+	description		= "Juan worked for Esteban!";
 };
 
 func int DIA_Addon_Fisk_Inspektor_Condition()
@@ -373,42 +373,42 @@ func int DIA_Addon_Fisk_Inspektor_Condition()
 
 func void DIA_Addon_Fisk_Inspektor_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_Inspektor_15_00"); //Juan hat für Esteban gearbeitet!
-	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_12_01"); //(verblüfft) Was?
-	AI_Output(other, self, "DIA_Addon_Fisk_Inspektor_15_02"); //Spiel keine Spielchen mit mir! Du wusstest davon!
-	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_12_03"); //(gefaßt) Gut. Du hast Recht. Aber dir ist auch hoffentlich klar, warum ich's dir nicht erzählt hab.
-	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_12_04"); //Jeder hier im Lager weiß, dass du für Esteban arbeitest.
-	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_12_05"); //Ich habe keine Lust, in die Sache mit reingezogen zu werden, nur weil du scharf auf 'nen roten Stein bist!
+	AI_Output(other, self, "DIA_Addon_Fisk_Inspektor_15_00"); //Juan worked for Esteban!
+	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_12_01"); //(amazed) What?
+	AI_Output(other, self, "DIA_Addon_Fisk_Inspektor_15_02"); //Don't play games with me! You knew about it!
+	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_12_03"); //(calmly) Fine. You're right. But I hope you also realize why I didn't tell you about it.
+	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_12_04"); //Everyone in the camp knows you work for Esteban.
+	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_12_05"); //I don't have any desire to get dragged into this business just because you're hot for a red stone.
 
 	Info_ClearChoices(DIA_Addon_Fisk_Inspektor);
-	Info_AddChoice(DIA_Addon_Fisk_Inspektor, "Ich arbeite nicht wirklich für Esteban... ", DIA_Addon_Fisk_Inspektor_AntiEsteban);
-	Info_AddChoice(DIA_Addon_Fisk_Inspektor, "Ich glaube dir nicht!", DIA_Addon_Fisk_Inspektor_DontBelieve);
-	Info_AddChoice(DIA_Addon_Fisk_Inspektor, "Verstehe!", DIA_Addon_Fisk_Inspektor_ISee);
+	Info_AddChoice(DIA_Addon_Fisk_Inspektor, "I'm not really working for Esteban...", DIA_Addon_Fisk_Inspektor_AntiEsteban);
+	Info_AddChoice(DIA_Addon_Fisk_Inspektor, "I don't believe you!", DIA_Addon_Fisk_Inspektor_DontBelieve);
+	Info_AddChoice(DIA_Addon_Fisk_Inspektor, "I see!", DIA_Addon_Fisk_Inspektor_ISee);
 };
 
 func void DIA_Addon_Fisk_Inspektor_ISee()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_Inspektor_ISee_15_00"); //Verstehe!
-	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_ISee_12_01"); //Gut! Dann hör auch auf damit. Sonst hört uns noch einer!
+	AI_Output(other, self, "DIA_Addon_Fisk_Inspektor_ISee_15_00"); //I see!
+	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_ISee_12_01"); //Good! Then leave it be. We don't want to be overheard!
 
 	Info_ClearChoices(DIA_Addon_Fisk_Inspektor);
 };
 
 func void DIA_Addon_Fisk_Inspektor_DontBelieve()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_Inspektor_DontBelieve_15_00"); //Ich glaube dir nicht!
-	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_DontBelieve_12_01"); //Glaub, was du willst! Aber ich warne dich: Wenn du vorhast, Esteban irgendwelche Märchen über mich zu erzählen, bist du dran!
+	AI_Output(other, self, "DIA_Addon_Fisk_Inspektor_DontBelieve_15_00"); //I don't believe you!
+	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_DontBelieve_12_01"); //Believe what you want! But I'm warning you, if you're planning on telling Esteban some fairy tale about me, you're next!
 
 	Info_ClearChoices(DIA_Addon_Fisk_Inspektor);
 };
 
 func void DIA_Addon_Fisk_Inspektor_AntiEsteban()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_Inspektor_AntiEsteban_15_00"); //Ich arbeite nicht wirklich für Esteban ...
-	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_01"); //So? Du willst den alten Sack übers Ohr hauen?
-	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_02"); //Dann geb ich dir 'nen guten Rat: Behalt es für dich.
-	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_03"); //Wenn es um Esteban geht, solltest du NIEMANDEM trauen - nicht mal mir, klar?
-	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_04"); //Und jetzt genug davon - sonst hört uns noch einer!
+	AI_Output(other, self, "DIA_Addon_Fisk_Inspektor_AntiEsteban_15_00"); //I'm not really working for Esteban...
+	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_01"); //So? You want to pull the wool over the old swine's eyes?
+	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_02"); //Then I'll give you some good advice, keep it to yourself.
+	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_03"); //When it comes to Esteban, trust NO ONE - not even me, got it?
+	AI_Output(self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_04"); //Now enough about that - we don't want to be overheard!
 
 	Info_ClearChoices(DIA_Addon_Fisk_Inspektor);
 };
@@ -422,7 +422,7 @@ instance DIA_Addon_Fisk_Meeting(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Fisk_Meeting_Condition;
 	information		= DIA_Addon_Fisk_Meeting_Info;
-	description		= "DU steckst also hinter dem Attentat.";
+	description		= "So YOU were behind the attack.";
 };
 
 func int DIA_Addon_Fisk_Meeting_Condition()
@@ -437,52 +437,52 @@ func int DIA_Addon_Fisk_Meeting_Condition()
 
 func void DIA_Addon_Fisk_Meeting_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_Meeting_15_00"); //DU steckst also hinter dem Attentat.
-	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_12_01"); //Ja. Esteban steht meinen Geschäften im Weg.
-	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_12_02"); //Alle Banditen, die für mich arbeiten, lässt er nicht mehr in die Mine. Er sorgt dafür, dass ALLE für ihn arbeiten - und nur für ihn.
-	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_12_03"); //So kann er von jedem Geschäft seinen Teil abkassieren und kontrolliert das gesamte Lager.
+	AI_Output(other, self, "DIA_Addon_Fisk_Meeting_15_00"); //So YOU were behind the attack.
+	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_12_01"); //Yes. Esteban is in the way of my business.
+	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_12_02"); //He won't let any of the bandits who work for me into the mine. He's making sure that EVERYONE works for him - and only for him.
+	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_12_03"); //That way, he can pocket a percentage of every deal and control the whole camp.
 
 	Info_ClearChoices(DIA_Addon_Fisk_Meeting);
 
-	Info_AddChoice(DIA_Addon_Fisk_Meeting, "Was hast du jetzt vor?", DIA_Addon_Fisk_Meeting_now);
-	Info_AddChoice(DIA_Addon_Fisk_Meeting, "Willst du an seine Stelle treten?", DIA_Addon_Fisk_Meeting_You);
+	Info_AddChoice(DIA_Addon_Fisk_Meeting, "What are you planning?", DIA_Addon_Fisk_Meeting_now);
+	Info_AddChoice(DIA_Addon_Fisk_Meeting, "Do you want to take his place?", DIA_Addon_Fisk_Meeting_You);
 	if (!Npc_IsDead(Esteban))
 	{
-		Info_AddChoice(DIA_Addon_Fisk_Meeting, "Ich könnte dich an Esteban verkaufen ...", DIA_Addon_Fisk_Meeting_sell);
+		Info_AddChoice(DIA_Addon_Fisk_Meeting, "I could sell you to Esteban...", DIA_Addon_Fisk_Meeting_sell);
 	};
 };
 
 func void DIA_Addon_Fisk_Meeting_You()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_Meeting_You_15_00"); //Willst du an seine Stelle treten?
-	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_You_12_01"); //Nein, ich bin Händler - ich will nur in Ruhe meinen Geschäften nachgehen.
+	AI_Output(other, self, "DIA_Addon_Fisk_Meeting_You_15_00"); //Do you want to take his place?
+	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_You_12_01"); //No, I'm a trader - I just want to go about my business in peace.
 };
 
 func void DIA_Addon_Fisk_Meeting_sell()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_Meeting_sell_15_00"); //Ich könnte dich an Esteban verkaufen ...
-	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_sell_12_01"); //Und dann? Was glaubst du wird dann passieren? Glaubst du, er gibt dir das, was du willst?
-	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_sell_12_02"); //Vergiss es - ich habe einen besseren Plan.
+	AI_Output(other, self, "DIA_Addon_Fisk_Meeting_sell_15_00"); //I could sell you to Esteban...
+	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_sell_12_01"); //And then? What do you think will happen then? Do you think he'll give you what you want?
+	AI_Output(self, other, "DIA_Addon_Fisk_Meeting_sell_12_02"); //Forget it - I have a better plan.
 };
 
 func void DIA_Addon_Fisk_Meeting_now()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_Meeting_now_15_00"); //Was hast du jetzt vor?
+	AI_Output(other, self, "DIA_Addon_Fisk_Meeting_now_15_00"); //What are you planning?
 
 	if (!Npc_IsDead(Esteban))
 	{
-		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_01"); //Wir werden Esteban aus dem Weg räumen. Das heißt, DU wirst ihn umlegen und seine Position übernehmen.
-		AI_Output(other, self, "DIA_Addon_Fisk_Meeting_now_15_02"); //Solange seine Leibwächter bei ihm sind, hab ich keine Chance.
-		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_03"); //Dann müssen wir sie dazu kriegen, dass sie abhauen. Und zwar mit der Wahrheit.
-		AI_Output(other, self, "DIA_Addon_Fisk_Meeting_now_15_04"); //Welche Wahrheit?
-		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_05"); //Du hast deinen Job erledigt. Du weißt, dass ich hinter dem Attentat stecke.
-		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_06"); //Erzähle das Esteban und er wird seine Jungs schicken, um mich zu töten. Ich werde sie hier erwarten.
-		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_07"); //Wenn sie weg sind, kannst du dir den Mistkerl vornehmen und ich kümmere mich um die Wachen.
+		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_01"); //We'll get Esteban out of the way. That means YOU will kill him and take his place.
+		AI_Output(other, self, "DIA_Addon_Fisk_Meeting_now_15_02"); //As long as his bodyguards are with him, I don't have a chance.
+		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_03"); //Then we'll have to get them to leave - by telling the truth.
+		AI_Output(other, self, "DIA_Addon_Fisk_Meeting_now_15_04"); //What truth?
+		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_05"); //You have done your job. You know that I was behind the attack.
+		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_06"); //Tell Esteban and he'll send his boys to kill me. I'll expect them here.
+		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_07"); //When they're gone, you can deal with the bastard and I'll take care of the guards.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_08"); //Esteban ist tot. Ich werde mich wieder dem Handel widmen ...
-		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_09"); //Hier, das ist für dich ...
+		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_08"); //Esteban is dead. I can devote myself to my business again...
+		AI_Output(self, other, "DIA_Addon_Fisk_Meeting_now_12_09"); //Here, this is for you...
 		B_GiveInvItems(self, other, itmi_gold, 500);
 	};
 
@@ -502,7 +502,7 @@ instance DIA_Addon_Fisk_Sieg(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Fisk_Sieg_Condition;
 	information		= DIA_Addon_Fisk_Sieg_Info;
-	description		= "Esteban ist erledigt.";
+	description		= "Esteban is finished.";
 };
 
 func int DIA_Addon_Fisk_Sieg_Condition()
@@ -516,10 +516,10 @@ func int DIA_Addon_Fisk_Sieg_Condition()
 
 func void DIA_Addon_Fisk_Sieg_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Fisk_Sieg_15_00"); //Esteban ist erledigt.
-	AI_Output(self, other, "DIA_Addon_Fisk_Sieg_12_01"); //Darauf habe ich lange gewartet.
-	AI_Output(self, other, "DIA_Addon_Fisk_Sieg_12_02"); //Ich denke, du hast jetzt einiges zu tun und ich muss mich auch wieder um meine Geschäfte kümmern.
-	AI_Output(self, other, "DIA_Addon_Fisk_Sieg_12_03"); //Also, wenn du noch was brauchst, du weißt, wo du mich findest.
+	AI_Output(other, self, "DIA_Addon_Fisk_Sieg_15_00"); //Esteban is finished.
+	AI_Output(self, other, "DIA_Addon_Fisk_Sieg_12_01"); //I've waited for this for a long time.
+	AI_Output(self, other, "DIA_Addon_Fisk_Sieg_12_02"); //I think you've got things to do now, and I need to go back to my business.
+	AI_Output(self, other, "DIA_Addon_Fisk_Sieg_12_03"); //So, if you need anything else, you know where to find me.
 
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "START");

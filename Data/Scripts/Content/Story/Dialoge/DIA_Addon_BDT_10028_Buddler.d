@@ -31,7 +31,7 @@ instance DIA_Addon_BDT_10028_Buddler_Hi(C_INFO)
 	condition		= DIA_Addon_10028_Buddler_Hi_Condition;
 	information		= DIA_Addon_10028_Buddler_Hi_Info;
 	permanent		= TRUE;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_10028_Buddler_Hi_Condition()
@@ -41,16 +41,16 @@ func int DIA_Addon_10028_Buddler_Hi_Condition()
 
 func void DIA_Addon_10028_Buddler_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10028_Buddler_Hi_15_00"); //Wie sieht's aus?
+	AI_Output(other, self, "DIA_Addon_BDT_10028_Buddler_Hi_15_00"); //How's it going?
 
 	if (Sklaven_Flucht == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01"); //Ich mache mir nicht die Mühe und hacke selber. Wir haben genug Sklaven, die das für uns erledigen.
-		AI_Output(self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02"); //(lacht) So leicht sind wir noch nie an unser Gold gekommen.
+		AI_Output(self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01"); //I'm not going to the trouble of mining myself. We have enough slaves to do that for us.
+		AI_Output(self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02"); //(laughs) We never came by our gold so easily.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_03"); //Grmpf. Welcher Idiot hat die Sklaven befreit?
+		AI_Output(self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_03"); //Grmpf. What idiot freed the slaves?
 		AI_StopProcessInfos(self);
 	};
 };
@@ -75,8 +75,8 @@ func int DIA_Addon_10028_Buddler_Hacken_Condition()
 func void DIA_Addon_10028_Buddler_Hacken_Info()
 {
 	B_Say(other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output(self, other, "DIA_Addon_10028_Buddler_Hacken_12_00"); //Immer von unten nach oben hacken.
-	AI_Output(self, other, "DIA_Addon_10028_Buddler_Hacken_12_01"); //Das ist zwar schwierig, aber auf diese Weise kriegst du mehr Gold aus dem Gestein.
+	AI_Output(self, other, "DIA_Addon_10028_Buddler_Hacken_12_00"); //Always dig from bottom to top.
+	AI_Output(self, other, "DIA_Addon_10028_Buddler_Hacken_12_01"); //That may be difficult, but that way you get more gold out of the rock.
 
 	B_Upgrade_Hero_HackChance(5);
 };

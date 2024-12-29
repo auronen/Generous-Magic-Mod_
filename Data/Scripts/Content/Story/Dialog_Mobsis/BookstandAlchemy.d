@@ -16,16 +16,16 @@ var int ALchemy_3_permanent;
 
 
 
-const string BookstandALCHEMY1_S1_1 = "Tränke magischer Kraft";
-const string BookstandALCHEMY1_S1_2 = "und ihre Zutaten";
-const string BookstandALCHEMY1_S1_3 = "2 Feuernesseln";
-const string BookstandALCHEMY1_S1_4 = "2 Feuerkräuter";
-const string BookstandALCHEMY1_S1_5 = "2 Feuerwurzeln";
-const string BookstandALCHEMY1_S1_6 = "Jegliche Arbeit am Alchemietisch  erfordert eine Laborwasserflasche, die während des Prozesses verbraucht wird.";
-const string BookstandALCHEMY1_S1_7 = "Für das Brauen von Tränken der Heilung oder der Stärkung der magischen Kraft, benötigt der Anwender neben der speziellen Zutat immer eine Pflanze:";
-const string BookstandALCHEMY1_S1_8 = "Feldknöterich";
-const string BookstandALCHEMY1_S1_9 = "Für das Brauen von Tränken die permanente Veränderungen des Körpers oder Geistes bewirken, benötigt der Anwender immer eine Pflanze: ";
-const string BookstandALCHEMY1_S1_10 = "Kronstöckl";
+const string BookstandALCHEMY1_S1_1 = "Potions of Magic Power";
+const string BookstandALCHEMY1_S1_2 = "and Ingredients";
+const string BookstandALCHEMY1_S1_3 = "2 fire nettles";
+const string BookstandALCHEMY1_S1_4 = "2 fireweeds";
+const string BookstandALCHEMY1_S1_5 = "2 fire roots";
+const string BookstandALCHEMY1_S1_6 = "All work at the alchemist's bench requires a laboratory flask which is used up in the process.";
+const string BookstandALCHEMY1_S1_7 = "To brew any healing potions or potions to strengthen magic power, you need a special ingredient and a plant:";
+const string BookstandALCHEMY1_S1_8 = "Meadow Knotweed";
+const string BookstandALCHEMY1_S1_9 = "To brew any potions that effect permanent changes to the body or spirit, you need a certain plant:";
+const string BookstandALCHEMY1_S1_10 = "King's Sorrel";
 
 //GMM
 const string GMM_Bookstand_Alchemy_Berry = "1 Forest Berry";
@@ -36,7 +36,7 @@ const string GMM_Bookstand_Alchemy_Info_3 = "Stronger potions call for Meadow Kn
 const string GMM_Bookstand_Alchemy_Info_4 = "To brew any potions that effect permanent changes to the body or spirit, you need two plants:";
 const string GMM_Bookstand_Alchemy_Info_5 = "King's Sorrel and Meadow Knotweed.";
 
-FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY1_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -95,19 +95,19 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 };
 
 
-const string BookstandALCHEMY2_S1_1 = "Tränke heilender Kraft";
-const string BookstandALCHEMY2_S1_2 = "und ihre Zutaten";
-const string BookstandALCHEMY2_S1_3 = "2 Heilpflanzen";
-const string BookstandALCHEMY2_S1_4 = "2 Heilkräuter";
-const string BookstandALCHEMY2_S1_5 = "2 Heilwurzeln";
-const string BookstandALCHEMY2_S1_6 = "Jegliche Arbeit am Alchemietisch  erfordert eine Laborwasserflasche, die während des Prozesses verbraucht wird.";
-const string BookstandALCHEMY2_S1_7 = "Für das Brauen von Tränken der Heilung oder der Stärkung der magischen Kraft, benötigt der Anwender neben der speziellen Zutat immer eine Pflanze:";
-const string BookstandALCHEMY2_S1_8 = "Feldknöterich";
-const string BookstandALCHEMY2_S1_9 = "Für das Brauen von Tränken die permanente Veränderungen des Körpers oder Geistes bewirken, benötigt der Anwender immer eine Pflanze: ";
-const string BookstandALCHEMY2_S1_10 = "Kronstöckl";
+const string BookstandALCHEMY2_S1_1 = "Healing Potions";
+const string BookstandALCHEMY2_S1_2 = "and Ingredients";
+const string BookstandALCHEMY2_S1_3 = "2 healing plants";
+const string BookstandALCHEMY2_S1_4 = "2 healing herbs";
+const string BookstandALCHEMY2_S1_5 = "2 healing roots";
+const string BookstandALCHEMY2_S1_6 = "All work at the alchemist's bench requires a laboratory flask which is used up in the process.";
+const string BookstandALCHEMY2_S1_7 = "To brew any healing potions or potions to strengthen magic power, you need a special ingredient and a plant:";
+const string BookstandALCHEMY2_S1_8 = "Meadow Knotweed";
+const string BookstandALCHEMY2_S1_9 = "To brew any potions that effect permanent changes to the body or spirit, you need a certain plant:";
+const string BookstandALCHEMY2_S1_10 = "King's Sorrel";
 
 
-FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY2_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -165,15 +165,15 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 	};
 };
 
-const string BookstandALCHEMY3_S1_1 = "Tränke permanenter Veränderungen";
-const string BookstandALCHEMY3_S1_2 = "und ihre Zutaten";
-const string BookstandALCHEMY3_S1_3 = "1 Goblin Beere";
-const string BookstandALCHEMY3_S1_4 = "1 Snapperkraut - dieser Trank benötigt keinen Kronstöckl, sondern Feldknöterich";
-const string BookstandALCHEMY3_S1_5 = "1 Drachenwurzel";
-const string BookstandALCHEMY3_S1_6 = "1 Heilwurzel";
-const string BookstandALCHEMY3_S1_7 = "1 Feuerwurzel";
-const string BookstandALCHEMY3_S1_8 = "Das Brauen dieser Rezepturen ist die hohe Kunst der Alchemie. Ihnen allen ist zu eigen, dass sie einen Kronstöckl als Zutat verlangen.";
-const string BookstandALCHEMY3_S1_9 = "Der Trank der Geschwindigkeit ist viel einfacher herzustellen, was auch daran liegt, das man keinen Kronstöckl benötigt. ";
+const string BookstandALCHEMY3_S1_1 = "Potions for Permanent Changes";
+const string BookstandALCHEMY3_S1_2 = "and Ingredients";
+const string BookstandALCHEMY3_S1_3 = "1 goblin berry";
+const string BookstandALCHEMY3_S1_4 = "1 snapperweed - This potion requires not king's sorrel, but meadow knotweed.";
+const string BookstandALCHEMY3_S1_5 = "1 dragonroot";
+const string BookstandALCHEMY3_S1_6 = "1 healing root";
+const string BookstandALCHEMY3_S1_7 = "1 fire root";
+const string BookstandALCHEMY3_S1_8 = "Brewing these recipes is the highest art of alchemy. They all have the use of king's sorrel as an ingredient in common.";
+const string BookstandALCHEMY3_S1_9 = "The potion of speed is much simpler to create which is also due to the fact that you do not need king's sorrel.";
 
 //GMM
 const string GMM_Bookstand_Alchemy_PermDex_Ingredients = "1 Goblin Berry, 1 Meadow Knotweed";
@@ -182,7 +182,7 @@ const string GMM_Bookstand_Alchemy_PermHP_Ingredients = "1 Healing Root, 1 Meado
 const string GMM_Bookstand_Alchemy_PermMana_Ingredients = "1 Fire Root, 1 Meadow Knotweed";
 const string GMM_Bookstand_Alchemy_PermPotion_Info = "Brewing these recipes is the highest art of alchemy. They all have the use of king's sorrel and meadow knotweed as an ingredients in common.";
 
-FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY3_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	

@@ -48,17 +48,17 @@ func int DIA_Addon_Telbor_Hi_Condition()
 
 func void DIA_Addon_Telbor_Hi_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Telbor_Hi_12_00"); //Hey, ich bin in Ordnung.
+	AI_Output(self, other, "DIA_Addon_Telbor_Hi_12_00"); //Hey, I'm all right.
 
 	if (Sklaven_Flucht == FALSE)
 	{
 		if (Pardos_Geheilt == FALSE)
 		{
-			AI_Output(self, other, "DIA_Addon_Telbor_Hi_12_01"); //Aber Pardos ist ziemlich am Ende.
+			AI_Output(self, other, "DIA_Addon_Telbor_Hi_12_01"); //But Pardos is pretty much down and out.
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Addon_Telbor_Hi_12_02"); //Danke, dass du Pardos geholfen hast.
+			AI_Output(self, other, "DIA_Addon_Telbor_Hi_12_02"); //Thanks for helping Pardos.
 
 			if (Telbor_once == FALSE)
 			{
@@ -68,7 +68,7 @@ func void DIA_Addon_Telbor_Hi_Info()
 		};
 	};
 
-	AI_Output(self, other, "DIA_Addon_Telbor_Hi_12_03"); //Wenn du was willst, rede mit Patrick. Er ist unser Vorsprecher.
+	AI_Output(self, other, "DIA_Addon_Telbor_Hi_12_03"); //If there's anything you want, talk to Patrick. He's our spokesman.
 
 	AI_StopProcessInfos(self);
 };

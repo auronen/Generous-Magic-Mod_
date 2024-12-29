@@ -2,7 +2,7 @@
 // MAKERUNE_S1
 // --------------
 // Funktion wird durch Runentisch-Mobsi-Benutzung aufgerufen!
-// benötigtes Item dafür: ItMi_RuneBlank
+// benÃ¶tigtes Item dafÃ¼r: ItMi_RuneBlank
 // *****************************************************
 func void MAKERUNE_S1()
 {
@@ -54,7 +54,7 @@ instance PC_Circle_01(C_Info)
 	condition		= PC_Circle_01_Condition;
 	information		= PC_Circle_01_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 1 erschaffen";
+	description		= "Create 1st Circle runes";
 };
 
 func int PC_Circle_01_Condition()
@@ -114,7 +114,7 @@ instance PC_Circle_02(C_Info)
 	condition		= PC_Circle_02_Condition;
 	information		= PC_Circle_02_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 2 erschaffen";
+	description		= "Create 2nd Circle runes";
 };
 
 func int PC_Circle_02_Condition()
@@ -186,7 +186,7 @@ instance PC_Circle_03(C_Info)
 	condition		= PC_Circle_03_Condition;
 	information		= PC_Circle_03_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 3 erschaffen";
+	description		= "Create 3rd Circle runes";
 };
 
 func int PC_Circle_03_Condition()
@@ -270,7 +270,7 @@ instance PC_Circle_04(C_Info)
 	condition		= PC_Circle_04_Condition;
 	information		= PC_Circle_04_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 4 erschaffen";
+	description		= "Create 4th Circle runes";
 };
 
 func int PC_Circle_04_Condition()
@@ -341,7 +341,7 @@ instance PC_Circle_05(C_Info)
 	condition		= PC_Circle_05_Condition;
 	information		= PC_Circle_05_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 5 erschaffen";
+	description		= "Create 5th Circle runes";
 };
 
 func int PC_Circle_05_Condition()
@@ -394,7 +394,7 @@ instance PC_Circle_06(C_Info)
 	condition		= PC_Circle_06_Condition;
 	information		= PC_Circle_06_Info;
 	permanent		= TRUE;
-	description		= "Runen Kreis 6 erschaffen";
+	description		= "Create 6th Circle runes";
 };
 
 func int PC_Circle_06_Condition()
@@ -450,7 +450,7 @@ instance PC_SPL_MasterOfDisaster(C_Info)
 	condition		= PC_SPL_MasterOfDisaster_Condition;
 	information		= PC_SPL_MasterOfDisaster_Info;
 	permanent		= TRUE;
-	description		= "Das Geheimnis der Bibliothek!";
+	description		= "The secret of the library!";
 };
 
 func int PC_SPL_MasterOfDisaster_Condition()
@@ -469,7 +469,7 @@ func void PC_SPL_MasterOfDisaster_Info()
 	Info_AddChoice(PC_SPL_MasterOfDisaster, DIALOG_BACK, PC_SPL_MasterOfDisaster_BACK);
 	if (PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] == TRUE)
 	{
-		Info_AddChoice(PC_SPL_MasterOfDisaster, "Das Geheimnis der Bibliothek!", PC_SPL_MasterOfDisaster_Create);
+		Info_AddChoice(PC_SPL_MasterOfDisaster, "The secret of the library!", PC_SPL_MasterOfDisaster_Create);
 	};
 };
 
@@ -503,7 +503,7 @@ instance PC_SPL_PalTeleportSecret(C_Info)
 	condition		= PC_SPL_PalTeleportSecret_Condition;
 	information		= PC_SPL_PalTeleportSecret_Info;
 	permanent		= TRUE;
-	description		= "Teleportrune erschaffen";
+	description		= "Create teleport rune";
 };
 
 func int PC_SPL_PalTeleportSecret_Condition()
@@ -522,7 +522,7 @@ func void PC_SPL_PalTeleportSecret_Info()
 	Info_AddChoice(PC_SPL_PalTeleportSecret, DIALOG_BACK, PC_SPL_PalTeleportSecret_BACK);
 	if (PLAYER_TALENT_RUNES[SPL_PalTeleportSecret] == TRUE)
 	{
-		Info_AddChoice(PC_SPL_PalTeleportSecret, "Das Geheimnis der Bibliothek!", PC_SPL_PalTeleportSecret_Create);
+		Info_AddChoice(PC_SPL_PalTeleportSecret, "The secret of the library!", PC_SPL_PalTeleportSecret_Create);
 	};
 };
 

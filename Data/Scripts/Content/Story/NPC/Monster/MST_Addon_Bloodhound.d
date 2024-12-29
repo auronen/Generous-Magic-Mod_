@@ -5,7 +5,7 @@
 prototype Mst_Default_Bloodhound(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Bluthund";
+	name							= "Bloodhound";
 	guild							= GIL_SHADOWBEAST;
 	level							= 22;
 

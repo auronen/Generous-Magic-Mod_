@@ -8,7 +8,7 @@ instance DIA_Addon_Lennar_EXIT(C_INFO)
 	condition		= DIA_Addon_Lennar_EXIT_Condition;
 	information		= DIA_Addon_Lennar_EXIT_Info;
 	permanent		= TRUE;
-	description		= "Ich muss weiter ...";
+	description		= "I've got to go... (END)";
 };
 
 func int DIA_Addon_Lennar_EXIT_Condition()
@@ -77,9 +77,9 @@ func int DIA_Addon_Lennar_Hi_Condition()
 func void DIA_Addon_Lennar_Hi_Info()
 {
 	AI_Output(other, self, "DIA_Addon_Lennar_Hi_15_00"); //Hi.
-	AI_Output(self, other, "DIA_Addon_Lennar_Hi_01_01"); //Hi, ich bin Lennar. Willkommen im Lager der Buddler.
-	AI_Output(other, self, "DIA_Addon_Lennar_Hi_15_02"); //Buddler? Ich dachte, das wär das Lager der Banditen ...
-	AI_Output(self, other, "DIA_Addon_Lennar_Hi_01_03"); //Richtig, aber die Banditen sind auch nur hier um zu buddeln. (Schulterzucken) Also ...
+	AI_Output(self, other, "DIA_Addon_Lennar_Hi_01_01"); //Hi, I'm Lennar. Welcome to the digger's camp.
+	AI_Output(other, self, "DIA_Addon_Lennar_Hi_15_02"); //Diggers? I thought this was the bandit's camp...
+	AI_Output(self, other, "DIA_Addon_Lennar_Hi_01_03"); //Right, but the bandits are also only here to dig. (shrugging) So...
 };
 
 // ---------------------------------------------------------------------
@@ -91,7 +91,7 @@ instance DIA_Addon_Lennar_Attentat(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Lennar_Attentat_Condition;
 	information		= DIA_Addon_Lennar_Attentat_Info;
-	description		= "Wegen des Attentats auf Esteban...";
+	description		= "About the attempted murder of Esteban...";
 };
 
 func int DIA_Addon_Lennar_Attentat_Condition()
@@ -105,14 +105,14 @@ func int DIA_Addon_Lennar_Attentat_Condition()
 func void DIA_Addon_Lennar_Attentat_Info()
 {
 	B_Say(other, self, "$ATTENTAT_ADDON_DESCRIPTION2"); // Wegen des Attentast auf Esteban
-	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_00"); //(naiv) Ja?
-	AI_Output(other, self, "DIA_Addon_Lennar_ATTENTAT_15_01"); //Hast du 'ne Ahnung, wer dahinter steckt?
-	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_02"); //(begeistert) Klar!
-	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_03"); //(hektisch) Ich werd's dir sagen: Bestimmt steckt dieser Emilio dahinter!
-	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_04"); //(hektisch) Er ist immer wie ein Bescheuerter in die Mine gerannt. Er hat geschürft, was das Zeug hält.
-	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_05"); //(schlau) Aber seit das Attentat passiert ist, sitzt er auf seiner Bank und rührt sich nicht mehr weg.
-	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_06"); //(erkennt) Ist ja klar! Um in die Mine zu kommen, muss er sich von Esteban 'nen roten Stein abholen.
-	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_07"); //(verschwörerisch) Ich wette, er traut sich nicht mehr, ihm in die Augen zu sehen.
+	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_00"); //(naively) Yes?
+	AI_Output(other, self, "DIA_Addon_Lennar_ATTENTAT_15_01"); //Do you have any idea who was behind it?
+	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_02"); //(enthusiastically) Sure!
+	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_03"); //(hectically) Let me tell you: I bet that Emilio is behind this!
+	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_04"); //(hectically) He always ran to the mine like a crazy man. He dug as much as he could.
+	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_05"); //(slyly) But since the attack, he's been sitting on his bench, not budging an inch.
+	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_06"); //(realizing) It's obvious! To get into the mine, he has to have a red stone from Esteban.
+	AI_Output(self, other, "DIA_Addon_Lennar_ATTENTAT_01_07"); //(conspiratorially) I bet he doesn't dare look him in the eye.
 
 	B_LogEntry(Topic_Addon_Esteban, Topic_Addon_Esteban_3);
 };
@@ -126,7 +126,7 @@ instance DIA_Addon_Lennar_Inspektor(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Lennar_Inspektor_Condition;
 	information		= DIA_Addon_Lennar_Inspektor_Info;
-	description		= "Was könnte Emilio von Estebans Tod haben?";
+	description		= "What would Emilio get out of Esteban's death?";
 };
 
 func int DIA_Addon_Lennar_Inspektor_Condition()
@@ -139,9 +139,9 @@ func int DIA_Addon_Lennar_Inspektor_Condition()
 
 func void DIA_Addon_Lennar_Inspektor_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Lennar_Inspektor_15_00"); //Was könnte Emilio von Estebans Tod haben?
-	AI_Output(self, other, "DIA_Addon_Lennar_Inspektor_01_01"); //Was weiß ich? Vielleicht hat er 'nen Kumpel in der Mine, der dann Estebans Platz einnehmen würde.
-	AI_Output(self, other, "DIA_Addon_Lennar_Inspektor_01_02"); //(zu sich) Ja, das würde Sinn machen ...
+	AI_Output(other, self, "DIA_Addon_Lennar_Inspektor_15_00"); //What would Emilio get out of Esteban's death?
+	AI_Output(self, other, "DIA_Addon_Lennar_Inspektor_01_01"); //What do I know? Maybe he has a pal in the mine who would take over Esteban's place then.
+	AI_Output(self, other, "DIA_Addon_Lennar_Inspektor_01_02"); //(to himself) Yeah, that would make sense...
 };
 
 // ----------------------------------------------------------------------
@@ -170,9 +170,9 @@ func void DIA_Addon_Lennar_Mine_Info()
 {
 	B_Say(other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems(other, self, ItmI_Addon_Stone_01, 1);
-	AI_Output(self, other, "DIA_Addon_Lennar_Mine_01_00"); //Du hast ja tatsächlich einen roten Stein für mich.
-	AI_Output(self, other, "DIA_Addon_Lennar_Mine_01_01"); //Ausgezeichnet. Jetzt werde ich diesen verdammten Fels zu Krümeln verarbeiten - ich weiß auch schon genau, wo ich hingehe!
-	AI_Output(self, other, "DIA_Addon_Lennar_Mine_01_02"); //Noch eine Sache - wenn du schürfen gehst, pass auf, dass du nicht zu FESTE draufhaust. Sonst verkeilt sich deine Spitzhacke im Gold!
+	AI_Output(self, other, "DIA_Addon_Lennar_Mine_01_00"); //You really do have a red stone for me.
+	AI_Output(self, other, "DIA_Addon_Lennar_Mine_01_01"); //Excellent. Now I'll work that damned rock to crumbs - I already know exactly where I'll go!
+	AI_Output(self, other, "DIA_Addon_Lennar_Mine_01_02"); //One more thing - if you go mining, watch out that you don't strike too HARD. Otherwise your pickaxe will get wedged in the gold!
 
 	B_Upgrade_Hero_HackChance(10);
 
@@ -191,7 +191,7 @@ instance DIA_Addon_Lennar_Gold(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Lennar_Gold_Condition;
 	information		= DIA_Addon_Lennar_Gold_Info;
-	description		= "Kannst du mir was über's Goldschürfen beibringen?";
+	description		= "Can you teach me anything about gold mining?";
 };
 
 func int DIA_Addon_Lennar_Gold_Condition()
@@ -204,13 +204,13 @@ func int DIA_Addon_Lennar_Gold_Condition()
 
 func void DIA_Addon_Lennar_Gold_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Lennar_Gold_15_00"); //Kannst du mir was über das Goldschürfen beibringen?
-	AI_Output(self, other, "DIA_Addon_Lennar_Gold_01_01"); //Klar, aber wenn ich dir was beibringe, wirst du mehr Gold schürfen können.
-	AI_Output(other, self, "DIA_Addon_Lennar_Gold_15_02"); //Darum frag ich ja.
-	AI_Output(self, other, "DIA_Addon_Lennar_Gold_01_03"); //Sicher. Aber wenn du mehr schürfen kannst, ist es doch nur fair, wenn ich einen Teil davon abbekomme.
-	AI_Output(other, self, "DIA_Addon_Lennar_Gold_15_04"); //Nun ...
-	AI_Output(self, other, "DIA_Addon_Lennar_Gold_01_05"); //Am Besten, du gibst mir meinen Anteil im Voraus. Sagen wir ...
-	AI_Output(self, other, "DIA_Addon_Lennar_Gold_01_06"); //Fünfzig Goldstücke.
+	AI_Output(other, self, "DIA_Addon_Lennar_Gold_15_00"); //Can you teach me anything about gold mining?
+	AI_Output(self, other, "DIA_Addon_Lennar_Gold_01_01"); //Certainly, but if I teach you something, you'll be able to mine more gold.
+	AI_Output(other, self, "DIA_Addon_Lennar_Gold_15_02"); //That's why I'm asking.
+	AI_Output(self, other, "DIA_Addon_Lennar_Gold_01_03"); //Sure. But if you can mine more, it's only fair if I get a share of it.
+	AI_Output(other, self, "DIA_Addon_Lennar_Gold_15_04"); //Well...
+	AI_Output(self, other, "DIA_Addon_Lennar_Gold_01_05"); //You might as well give me my share in advance. Let's say...
+	AI_Output(self, other, "DIA_Addon_Lennar_Gold_01_06"); //Fifty gold pieces.
 };
 
 // ---------------------------------------------------------------------
@@ -225,7 +225,7 @@ instance DIA_Addon_Lennar_Train(C_INFO)
 	condition		= DIA_Addon_Lennar_Train_Condition;
 	information		= DIA_Addon_Lennar_Train_Info;
 	permanent		= TRUE;
-	description		= "Bring mir was über's Goldhacken bei! (50 Gold)";
+	description		= "Teach me something about gold mining! (50 gold)";
 };
 
 func int DIA_Addon_Lennar_Train_Condition()
@@ -239,20 +239,20 @@ func int DIA_Addon_Lennar_Train_Condition()
 
 func void DIA_Addon_Lennar_Train_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Lennar_Train_15_00"); //Bring mir was über's Goldhacken bei!
+	AI_Output(other, self, "DIA_Addon_Lennar_Train_15_00"); //Teach me something about gold mining!
 
 	if (B_GiveInvItems(other, self, itmi_gold, 50))
 	{
-		AI_Output(self, other, "DIA_Addon_Lennar_Train_01_01"); //Gut. Gleichmäßiges Hacken bringt dich vorwärts. Nichts überstürzen - aber auch nicht beim Hacken einschlafen.
-		AI_Output(self, other, "DIA_Addon_Lennar_Train_01_02"); //Und schlag nicht immer auf die gleiche Stelle - versuch, um ein schönes Nuggetstück herumzuarbeiten.
-		AI_Output(self, other, "DIA_Addon_Lennar_Train_01_03"); //Befolge das und du bist auf dem Weg, ein wahrer Meister- Buddler zu werden.
+		AI_Output(self, other, "DIA_Addon_Lennar_Train_01_01"); //Good. Regular swings will take you forward. Don't overdo it - but also don't fall asleep swinging.
+		AI_Output(self, other, "DIA_Addon_Lennar_Train_01_02"); //And don't always strike at the same spot - try to work around a good-sized nugget.
+		AI_Output(self, other, "DIA_Addon_Lennar_Train_01_03"); //Do that and you're on the way to becoming a master digger.
 
 		B_Upgrade_Hero_HackChance(10);
 		Lennar_TeachGold = TRUE;
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Lennar_Train_01_04"); //Erst will ich meinen Anteil sehen!
+		AI_Output(self, other, "DIA_Addon_Lennar_Train_01_04"); //First I want to see my share!
 	};
 };
 
@@ -266,7 +266,7 @@ instance DIA_Addon_Lennar_Hacker(C_INFO)
 	condition		= DIA_Addon_Lennar_Hacker_Condition;
 	information		= DIA_Addon_Lennar_Hacker_Info;
 	permanent		= TRUE;
-	description		= "Alles klar?";
+	description		= "Everything all right?";
 };
 
 func int DIA_Addon_Lennar_Hacker_Condition()
@@ -279,6 +279,6 @@ func int DIA_Addon_Lennar_Hacker_Condition()
 
 func void DIA_Addon_Lennar_Hacker_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10004_Lennar_Hacker_15_00"); //Alles klar?
-	AI_Output(self, other, "DIA_Addon_BDT_10004_Lennar_Hacker_01_01"); //Immer schön gleichmäßig - so kommst du an die dicken Nuggets!
+	AI_Output(other, self, "DIA_Addon_BDT_10004_Lennar_Hacker_15_00"); //Everything all right?
+	AI_Output(self, other, "DIA_Addon_BDT_10004_Lennar_Hacker_01_01"); //Nice and regular - that's the way to get the fat nuggets!
 };

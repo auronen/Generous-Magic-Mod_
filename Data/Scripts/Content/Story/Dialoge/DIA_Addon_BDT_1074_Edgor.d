@@ -19,7 +19,7 @@ func void DIA_Addon_Edgor_EXIT_Info()
 	if (Npc_KnowsInfo(other, DIA_Addon_Edgor_MIS2)
 	&& (Edgor_Exiteinmal == FALSE))
 	{
-		AI_Output(self, other, "DIA_Addon_Edgor_EXIT_06_00"); //War schön, dich gekannt zu haben ...
+		AI_Output(self, other, "DIA_Addon_Edgor_EXIT_06_00"); //It was nice knowing you...
 		Edgor_Exiteinmal = TRUE;
 	};
 
@@ -72,7 +72,7 @@ instance DIA_Addon_Edgor_Hi(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Edgor_Hi_Condition;
 	information		= DIA_Addon_Edgor_Hi_Info;
-	description		= "Wie läuft's?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_Edgor_Hi_Condition()
@@ -82,12 +82,12 @@ func int DIA_Addon_Edgor_Hi_Condition()
 
 func void DIA_Addon_Edgor_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Edgor_Hi_15_00"); //Wie läuft's?
-	AI_Output(self, other, "DIA_Addon_Edgor_Hi_06_01"); //Du willst wissen, wie es läuft? Ich sage dir, wie es läuft.
-	AI_Output(self, other, "DIA_Addon_Edgor_Hi_06_02"); //Zuerst haben mich irgendwelche Piraten in stürmischer Nacht hergebracht. Mann, ich hab die ganze Nussschale vollgekotzt.
-	AI_Output(self, other, "DIA_Addon_Edgor_Hi_06_03"); //Dann lässt Raven die Mine absperren, weil irgendwelche Idioten zu gierig auf das Gold sind.
-	AI_Output(self, other, "DIA_Addon_Edgor_Hi_06_04"); //Und dann wird Franco Anführer der Jäger und bringt jeden um, der dagegen ist.
-	AI_Output(self, other, "DIA_Addon_Edgor_Hi_06_05"); //Ich würde sagen, es läuft ziemlich mies.
+	AI_Output(other, self, "DIA_Addon_Edgor_Hi_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Addon_Edgor_Hi_06_01"); //You want to know how it's going? I'll tell you how it's going.
+	AI_Output(self, other, "DIA_Addon_Edgor_Hi_06_02"); //First some pirates brought me here on a stormy night. Man, I barfed all over that nutshell.
+	AI_Output(self, other, "DIA_Addon_Edgor_Hi_06_03"); //Then Raven locked up the mine because some idiots are too greedy for gold.
+	AI_Output(self, other, "DIA_Addon_Edgor_Hi_06_04"); //And then Franco became the leader of the hunters, killing anybody who's against him.
+	AI_Output(self, other, "DIA_Addon_Edgor_Hi_06_05"); //I'd say it's going pretty badly.
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -108,7 +108,7 @@ instance DIA_Addon_Edgor_Franco(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Edgor_Franco_Condition;
 	information		= DIA_Addon_Edgor_Franco_Info;
-	description		= "Wie ist Franco zum Anführer geworden?";
+	description		= "How did Franco get to be leader?";
 };
 
 func int DIA_Addon_Edgor_Franco_Condition()
@@ -121,9 +121,9 @@ func int DIA_Addon_Edgor_Franco_Condition()
 
 func void DIA_Addon_Edgor_Franco_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Edgor_Franco_15_00"); //Wie ist Franco zum Anführer geworden?
-	AI_Output(self, other, "DIA_Addon_Edgor_Franco_06_01"); //Ganz einfach. Er hat Fletcher umgelegt. Der war vorher Anführer der Jäger.
-	AI_Output(self, other, "DIA_Addon_Edgor_Franco_06_02"); //Fletcher war okay. Franco verarscht uns doch alle nur.
+	AI_Output(other, self, "DIA_Addon_Edgor_Franco_15_00"); //How did Franco get to be leader?
+	AI_Output(self, other, "DIA_Addon_Edgor_Franco_06_01"); //Quite simply. He killed Fletcher. He was the leader of the hunters before.
+	AI_Output(self, other, "DIA_Addon_Edgor_Franco_06_02"); //Fletcher was okay. Franco's just jerking us all around.
 };
 
 // ---------------------------------------------------------------------
@@ -135,7 +135,7 @@ instance DIA_Addon_Edgor_MIS2(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Edgor_MIS2_Condition;
 	information		= DIA_Addon_Edgor_MIS2_Info;
-	description		= "Franco schickt mich wegen dieser Steintafel..";
+	description		= "Franco sent me about this stone tablet...";
 };
 
 func int DIA_Addon_Edgor_MIS2_Condition()
@@ -149,10 +149,10 @@ func int DIA_Addon_Edgor_MIS2_Condition()
 
 func void DIA_Addon_Edgor_MIS2_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franco schickt mich wegen dieser Steintafel. Hast du sie gefunden?
-	AI_Output(self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Mann, ich hab sie nicht mal gesucht. Alles was ich weiß ist, sie soll in diesem alten Gebäude tief im Sumpf liegen.
-	AI_Output(self, other, "DIA_Addon_Edgor_MIS2_06_02"); //Und meine innere Stimme sagt mir - Edgor, halte dich fern von alten Gebäuden, die tief im Sumpf liegen.
-	AI_Output(self, other, "DIA_Addon_Edgor_MIS2_06_03"); //Ich werde meinen Arsch bestimmt nicht für diesen Penner Franco riskieren!
+	AI_Output(other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franco sent me here about that stone tablet. Have you found it?
+	AI_Output(self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Man, I haven't even looked for it. All I know is it's supposed to be in this old building deep in the swamp.
+	AI_Output(self, other, "DIA_Addon_Edgor_MIS2_06_02"); //And my inner voice tells me, 'Edgor, stay far away from old buildings deep in the swamp.'
+	AI_Output(self, other, "DIA_Addon_Edgor_MIS2_06_03"); //I certainly won't risk my ass for that bum Franco!
 
 	B_LogEntry(Topic_Addon_Stoneplate, Topic_Addon_Stoneplate_2);
 };
@@ -166,7 +166,7 @@ instance DIA_Addon_Edgor_Weg(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Edgor_Weg_Condition;
 	information		= DIA_Addon_Edgor_Weg_Info;
-	description		= "Wo ist dieses alte Gebäude noch gleich?";
+	description		= "Where exactly is this old building?";
 };
 
 func int DIA_Addon_Edgor_Weg_Condition()
@@ -179,11 +179,11 @@ func int DIA_Addon_Edgor_Weg_Condition()
 
 func void DIA_Addon_Edgor_Weg_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Edgor_Weg_15_00"); //Wo ist dieses alte Gebäude noch gleich?
-	AI_Output(self, other, "DIA_Addon_Edgor_Weg_06_01"); //Geh einfach links an dem großen Felsen hier vorbei. Nach einer Weile kommst du zu 'nem weiteren großen Felsen.
-	AI_Output(self, other, "DIA_Addon_Edgor_Weg_06_02"); //Da musst du dann links oder rechts dran vorbei - ich weiß es nicht mehr, das ist schon zu lange her.
-	AI_Output(self, other, "DIA_Addon_Edgor_Weg_06_03"); //Aber die Ruine soll auf einer Art Anhöhe liegen. Ziemlich versteckt zwischen Pflanzen.
-	AI_Output(self, other, "DIA_Addon_Edgor_Weg_06_04"); //Vielleicht hast du Glück, und du findest sie nicht ...
+	AI_Output(other, self, "DIA_Addon_Edgor_Weg_15_00"); //Where exactly is this old building?
+	AI_Output(self, other, "DIA_Addon_Edgor_Weg_06_01"); //Just go left past the big rock here. After a while you'll come to another big rock.
+	AI_Output(self, other, "DIA_Addon_Edgor_Weg_06_02"); //You have to go left or right past that one - I don't know any more, it was too long ago.
+	AI_Output(self, other, "DIA_Addon_Edgor_Weg_06_03"); //But the ruins are supposed to be on some sort of rise. All but hidden among plants.
+	AI_Output(self, other, "DIA_Addon_Edgor_Weg_06_04"); //Maybe you'll get lucky and you won't find it...
 };
 
 // ---------------------------------------------------------------------
@@ -195,7 +195,7 @@ instance DIA_Addon_Edgor_Found(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Edgor_Found_Condition;
 	information		= DIA_Addon_Edgor_Found_Info;
-	description		= "Ich habe die Steintafel gefunden!";
+	description		= "I found the stone tablet!";
 };
 
 func int DIA_Addon_Edgor_Found_Condition()
@@ -210,9 +210,9 @@ func int DIA_Addon_Edgor_Found_Condition()
 
 func void DIA_Addon_Edgor_Found_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Edgor_Found_15_00"); //(erfreut) Ich habe die Steintafel gefunden!
-	AI_Output(self, other, "DIA_Addon_Edgor_Found_06_01"); //(gelangweilt) Wirklich? Du bist ja ein mutiger Kerl.
-	AI_Output(self, other, "DIA_Addon_Edgor_Found_06_02"); //(gelangweilt) Damit hast du dir bestimmt deinen Eintritt in's Lager verdient. (gähnt)
+	AI_Output(other, self, "DIA_Addon_Edgor_Found_15_00"); //I found the stone tablet!
+	AI_Output(self, other, "DIA_Addon_Edgor_Found_06_01"); //(bored) Really? You must be a brave guy.
+	AI_Output(self, other, "DIA_Addon_Edgor_Found_06_02"); //(bored) Then you've certainly earned your way into the camp. (yawns)
 };
 
 // ---------------------------------------------------------------------
@@ -224,7 +224,7 @@ instance DIA_Addon_Edgor_Teach(C_INFO)
 	nr				= 9;
 	condition		= DIA_Addon_Edgor_Teach_Condition;
 	information		= DIA_Addon_Edgor_Teach_Info;
-	description		= "Kannst du mir was beibringen?";
+	description		= "Can you teach me something?";
 };
 
 func int DIA_Addon_Edgor_Teach_Condition()
@@ -237,12 +237,12 @@ func int DIA_Addon_Edgor_Teach_Condition()
 
 func void DIA_Addon_Edgor_Teach_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Edgor_Teach_15_00"); //Kannst du mir was beibringen?
-	AI_Output(self, other, "DIA_Addon_Edgor_Teach_06_01"); //Ich kenne mich mit Blutfliegen aus. Ich hasse diesen miesen Biester noch mehr als Franco!
-	AI_Output(self, other, "DIA_Addon_Edgor_Teach_06_02"); //Aber ich weiß, wie ich ihren toten Körpern die Stacheln und Flügel entreißen kann. (irre) Ja, entreißen ...
-	AI_Output(self, other, "DIA_Addon_Edgor_Teach_06_03"); //Außerdem weiß ich, wie man das Sekret aus dem Stachel entfernt.
-	AI_Output(self, other, "DIA_Addon_Edgor_Teach_06_04"); //Wenn du willst, kann ich dir den ganzen Kram beibringen.
-	AI_Output(self, other, "DIA_Addon_Edgor_Teach_06_05"); //Umsonst ist hier draußen allerdings nichts ...
+	AI_Output(other, self, "DIA_Addon_Edgor_Teach_15_00"); //Can you teach me something?
+	AI_Output(self, other, "DIA_Addon_Edgor_Teach_06_01"); //I know a lot about bloodflies. I hate those miserable beasts even more than I hate Franco!
+	AI_Output(self, other, "DIA_Addon_Edgor_Teach_06_02"); //But I know how to tear the stingers and wings from their dead bodies. (crazily) Yeah, tear them out...
+	AI_Output(self, other, "DIA_Addon_Edgor_Teach_06_03"); //Besides that, I know how to remove the secretion from the stinger.
+	AI_Output(self, other, "DIA_Addon_Edgor_Teach_06_04"); //If you want, I can teach you all that junk.
+	AI_Output(self, other, "DIA_Addon_Edgor_Teach_06_05"); //Of course, nothing is for free out here...
 
 	Log_CreateTopic(Topic_Addon_BDT_Teacher, LOG_NOTE);
 	B_LogEntry(Topic_Addon_BDT_Teacher, Topic_Addon_BDT_Teacher_4);
@@ -251,7 +251,7 @@ func void DIA_Addon_Edgor_Teach_Info()
 
 func void B_Edgor_NotEnoughGold()
 {
-	AI_Output(self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00"); //Besorg mir das Gold. Ich will nur Münzen, keine Brocken.
+	AI_Output(self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00"); //Get me the gold. I only want coins, not nuggets.
 };
 
 // ---------------------------------------------------------------------
@@ -264,7 +264,7 @@ instance DIA_Addon_Edgor_TrainStart(C_INFO)
 	condition		= DIA_Addon_Edgor_Start_Condition;
 	information		= DIA_Addon_Edgor_Start_Info;
 	permanent		= TRUE;
-	description		= "Wegen den Blutfliegen ...";
+	description		= "About the bloodflies...";
 };
 
 func int DIA_Addon_Edgor_Start_Condition()
@@ -277,25 +277,25 @@ func int DIA_Addon_Edgor_Start_Condition()
 
 func void DIA_Addon_Edgor_Start_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Edgor_TrainStart_SEKRET_15_00"); //Wegen der Blutfliegen ...
-	AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_SEKRET_06_01"); //Was willst du wissen?
+	AI_Output(other, self, "DIA_Addon_Edgor_TrainStart_SEKRET_15_00"); //About the bloodflies...
+	AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_SEKRET_06_01"); //What do you want to know?
 
 	Info_ClearChoices(DIA_Addon_Edgor_TrainStart);
 	Info_AddChoice(DIA_Addon_Edgor_TrainStart, DIALOG_BACK, DIA_Addon_Edgor_TrainStart_BACK);
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 	{
-		Info_AddChoice(DIA_Addon_Edgor_TrainStart, "Blutfliegen Stachel ziehen. (Kosten: 1 LP, 100 Gold)", DIA_Addon_Edgor_TrainStart_Sting);
+		Info_AddChoice(DIA_Addon_Edgor_TrainStart, "Extract bloodfly stingers (Cost: 5 LP, 100 gold)", DIA_Addon_Edgor_TrainStart_Sting);
 	};
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 	{
-		Info_AddChoice(DIA_Addon_Edgor_TrainStart, "Blutfliegen Flügel reißen. (Kosten: 1 LP, 100 Gold)", DIA_Addon_Edgor_TrainStart_Wing);
+		Info_AddChoice(DIA_Addon_Edgor_TrainStart, "Pull bloodfly wings (Cost: 5 LP, 100 gold)", DIA_Addon_Edgor_TrainStart_Wing);
 	};
 
 	if (Knows_Bloodfly == FALSE)
 	{
-		Info_AddChoice(DIA_Addon_Edgor_TrainStart, "Sekret aus dem Stachel entnehmen (Kosten: 1 LP, 100 Gold)", DIA_Addon_Edgor_TrainStart_GIFT);
+		Info_AddChoice(DIA_Addon_Edgor_TrainStart, "Remove secretion from stinger (Cost: 1 LP, 100 gold)", DIA_Addon_Edgor_TrainStart_GIFT);
 	};
 };
 
@@ -310,9 +310,9 @@ func void DIA_Addon_Edgor_TrainStart_Sting()
 	{
 		if (B_TeachPlayerTalentTakeAnimalTrophy(self, other, TROPHY_BFSting))
 		{
-			AI_Output(other, self, "DIA_Addon_Edgor_TrainStart_Sting_15_00"); //Wie komme ich an den Stachel der Blutfliegen?
-			AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_01"); //Dreh die toten Viecher auf den Bauch und schneide sie quer auf. Greif in die Innereien und durchtrenne das komplette Gewebe am Hinterteil.
-			AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_02"); //Dann kannst du den Stachel mit einem Ruck entfernen.
+			AI_Output(other, self, "DIA_Addon_Edgor_TrainStart_Sting_15_00"); //How do I get the stingers from the bloodflies?
+			AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_01"); //Turn the dead beasts onto their belly and cut them open crosswise. Grasp the innards and cut through all the tissue at the back.
+			AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_02"); //Then you can remove the stinger with a jerk.
 		};
 	}
 	else
@@ -329,8 +329,8 @@ func void DIA_Addon_Edgor_TrainStart_Wing()
 	{
 		if (B_TeachPlayerTalentTakeAnimalTrophy(self, other, TROPHY_BFWing))
 		{
-			AI_Output(other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00"); //Wie kann ich mir die Flügel nehmen?
-			AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01"); //Greif dir die Flügel mit einer Hand. Mit der anderen schneidest du sie mit der obersten Hautschicht einfach raus.
+			AI_Output(other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00"); //How do I get the wings?
+			AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01"); //Grab the wings with one hand. With the other you just cut them out along with the upper layer of skin.
 		};
 	}
 	else
@@ -347,9 +347,9 @@ func void DIA_Addon_Edgor_TrainStart_GIFT()
 	{
 		if (other.lp >= 1)
 		{
-			AI_Output(other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00"); //Wie kann ich das Sekret der Blutfliegen entnehmen?
-			AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01"); //Schneide die oberste Schicht des Stachels längs auf - dann läuft das heilende Sekret schon raus.
-			AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02"); //So ist es völlig ungefährlich, einen Stachel auszulutschen - oder ihn für irgendwelche Tränke zu verwenden.
+			AI_Output(other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00"); //How do I remove the secretion from the bloodflies.
+			AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01"); //Cut open the upper layer of the stinger lengthwise - then the healing secretion will flow right out.
+			AI_Output(self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02"); //That way it's completely safe to suck out a stinger - or use it for some potions.
 
 			other.lp = (other.lp - 1);
 			Knows_Bloodfly = TRUE;

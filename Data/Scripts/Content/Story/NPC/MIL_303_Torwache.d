@@ -1,7 +1,7 @@
 instance Mil_303_Torwache(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Tuerwache";
+	name							= "Door Guard";
 	npctype							= NpcType_Main;
 	guild							= GIL_MIL;
 	flags							= 0;

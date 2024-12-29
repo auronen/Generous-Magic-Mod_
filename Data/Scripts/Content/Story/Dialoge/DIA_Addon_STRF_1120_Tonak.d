@@ -45,6 +45,6 @@ func int DIA_Addon_Tonak_Hi_Condition()
 
 func void DIA_Addon_Tonak_Hi_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Tonak_Hi_03_00"); //Was willst du? Ich bin nur ein gefangener Arbeiter. Ich habe nichts getan.
+	AI_Output(self, other, "DIA_Addon_Tonak_Hi_03_00"); //What do you want? I'm just an imprisoned worker. I haven't done a thing.
 	AI_StopProcessInfos(self);
 };

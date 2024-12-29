@@ -1,7 +1,7 @@
 instance VLK_494_Attila(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Attila";
+	name							= "Attile";
 	npctype							= NpcType_Main;
 	guild							= GIL_VLK;
 	flags							= 0; // NPC_FLAG_IMMORTAL oder 0
@@ -27,10 +27,10 @@ instance VLK_494_Attila(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 30); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 30); // Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
-	CreateInvItem(self, ItKe_ThiefGuildKey_MIS); // Schlüssel zur geheimen Diebesgilde
+	CreateInvItem(self, ItKe_ThiefGuildKey_MIS); // SchlÃ¼ssel zur geheimen Diebesgilde
 
 	// -------- equipped weapons --------
 	EquipItem(self, ItMw_1h_Sld_Axe);

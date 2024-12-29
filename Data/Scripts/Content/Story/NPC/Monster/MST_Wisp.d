@@ -5,7 +5,7 @@
 prototype Mst_Default_Wisp(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Irrlicht";
+	name							= "Ghost Light";
 	guild							= GIL_BLOODFLY;
 	level							= 4;
 

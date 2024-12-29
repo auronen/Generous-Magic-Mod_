@@ -5,7 +5,7 @@
 prototype Mst_Addon_Stoneguardian(C_NPC)
 {
 	// -------- NPC --------
-	name							= "Steinw‰chter";
+	name							= "Stone Sentinel";
 	guild							= GIL_STONEGUARDIAN;
 	level							= 18;
 
@@ -72,7 +72,7 @@ func void B_SetVisuals_Stoneguardian()
 };
 
 //**************************************************************
-//	Beschworener Steinw‰chter
+//	Beschworener Steinw√§chter
 //**************************************************************
 
 instance Summoned_Guardian(Mst_Addon_Stoneguardian)
@@ -115,7 +115,7 @@ instance Summoned_Guardian(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	Steinw‰chter
+//	Steinw√§chter
 //**************************************************************
 
 instance Stoneguardian(Mst_Addon_Stoneguardian)
@@ -212,7 +212,7 @@ instance Stoneguardian_MineDead4(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	Steinw‰chter
+//	Steinw√§chter
 //**************************************************************
 
 instance Stoneguardian_Dead1(Mst_Addon_Stoneguardian)
@@ -290,7 +290,7 @@ instance Stoneguardian_MerdarionsSchluessel(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	OrnamentSteinw‰chter
+//	OrnamentSteinw√§chter
 //**************************************************************
 
 instance Stoneguardian_Ornament(Mst_Addon_Stoneguardian)
@@ -313,7 +313,7 @@ instance Stoneguardian_Ornament(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	im Geb‰ude der Heiler
+//	im Geb√§ude der Heiler
 //**************************************************************
 
 instance Stoneguardian_Heiler(Mst_Addon_Stoneguardian)
@@ -462,7 +462,7 @@ instance Stoneguardian_Sani06(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	im Geb‰ude der Heiler
+//	im Geb√§ude der Heiler
 //**************************************************************
 
 instance Stoneguardian_NailedPortalADW1(Mst_Addon_Stoneguardian)

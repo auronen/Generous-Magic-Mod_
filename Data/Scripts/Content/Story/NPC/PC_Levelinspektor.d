@@ -1,7 +1,7 @@
 instance PC_Levelinspektor(NPC_DEFAULT)
 {
 	// -------- NPC --------
-	name							= "Levelinspektor";
+	name							= "Level Inspector";
 	npctype							= NpcType_Main;
 	guild							= GIL_NONE;
 	level							= 30;
@@ -25,12 +25,12 @@ instance PC_Levelinspektor(NPC_DEFAULT)
 	// -------- talents --------
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 100); // Grenzen f¸r Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 100); // Grenzen f√ºr Talent-Level liegen bei 30 und 60
 	Npc_SetTalentSkill(self, NPC_TALENT_MAGE, 6);
-	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // h‰ngt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // h√§ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill(self, NPC_TALENT_SNEAK, 1);
 	Npc_SetTalentSkill(self, NPC_TALENT_ACROBAT, 0);
-	Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // h‰ngt ab von DEX (auf Scriptebene)
+	Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // h√§ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill(self, NPC_TALENT_SMITH, 1);
 	Npc_SetTalentSkill(self, NPC_TALENT_RUNES, 1);
 	Npc_SetTalentSkill(self, NPC_TALENT_ALCHEMY, 1);

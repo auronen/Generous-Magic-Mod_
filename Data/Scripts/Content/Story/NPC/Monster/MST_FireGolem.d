@@ -5,7 +5,7 @@
 prototype Mst_Default_FireGolem(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Feuergolem";
+	name							= "Fire Golem";
 	guild							= GIL_FIREGOLEM;
 	level							= 40;
 

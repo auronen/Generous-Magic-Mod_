@@ -11,7 +11,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 	items[1]		= "MENUITEM_GAME_SUB_TITLES";
 	items[2]		= "MENUITEM_GAME_SUB_TITLES_CHOICE";
 	
-//	items[3]		= "MENUITEM_GAME_ANIMATE_WINDOWS";					// in gothic 2 nur noch über die ini tunebar
+//	items[3]		= "MENUITEM_GAME_ANIMATE_WINDOWS";					// in gothic 2 nur noch Ã¼ber die ini tunebar
 //	items[4]		= "MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE";
 
 	items[3]		= "MENUITEM_GAME_FIGHTFOCUS";
@@ -29,7 +29,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 	items[11]		= "MENUITEM_MSENSITIVITY";
 	items[12]		= "MENUITEM_MSENSITIVITY_SLIDER";
 	
-	//items[11]		= "MENUITEM_GAME_BLOOD";				// in gothic 2 nur noch über die ini tunebar
+	//items[11]		= "MENUITEM_GAME_BLOOD";				// in gothic 2 nur noch Ã¼ber die ini tunebar
 	//items[12]		= "MENUITEM_GAME_BLOOD_CHOICE";
 	
 	items[13]		= "MENUITEM_GAME_OLDCONTROLS";
@@ -43,7 +43,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 
 INSTANCE MENUITEM_GAME_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"SPIEL EINSTELLUNGEN";
+	text[0]		=	"GAME SETTINGS";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -61,8 +61,8 @@ INSTANCE MENUITEM_GAME_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_SUB_TITLES(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Untertitel";
-	text[1]		= 	"Visuelle Einblendung von Dialogen."; // Kommentar
+	text[0]		=	"Subtitles";
+	text[1]		= 	"Toggle text display during dialogs on/off"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*0;
 	dimx		=	4000;	dimy		=	750;
@@ -129,8 +129,8 @@ instance MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_FIGHTFOCUS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Kampf Fokus";
-	text[1]		= 	"Grad der Darstellung des Kampffokus"; // Kommentar
+	text[0]		=	"Combat focus";
+	text[1]		= 	"Configure highlighting of the current combat target"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*1;
 	dimx		=	4000;	dimy		=	750;
@@ -144,7 +144,7 @@ instance MENUITEM_GAME_FIGHTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"kein|Quadrat|aufhellen|beides";
+	text[0]		= 	"none|box|lighten|both";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_SOUND_DY*1 + MENU_CHOICE_YPLUS;
@@ -161,8 +161,8 @@ instance MENUITEM_GAME_FIGHTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_INTERACTFOCUS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Interakt. Fokus";
-	text[1]		= 	"Grad der Darstellung des Interaktions-Fokus"; // Kommentar
+	text[0]		=	"Object focus";
+	text[1]		= 	"Toggle highlighting of the focussed object"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*2;
 	dimx		=	4000;	dimy		=	750;
@@ -200,8 +200,8 @@ instance MENUITEM_GAME_INTERACTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_LOOKAROUND_INVERSE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Umschau umkehren";
-	text[1]		= 	"Inverse Kamerasteuerung."; // Kommentar
+	text[0]		=	"Invert camera";
+	text[1]		= 	"Toggle inverted camera movement on/off"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*3;
 	dimx		=	4000;	dimy		=	750;
@@ -236,8 +236,8 @@ instance MENUITEM_GAME_LOOKAROUND_INVERSE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_M(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Maus";
-	text[1]		= 	"Aktiviert eine Maussteuerung"; // Kommentar
+	text[0]		=	"Mouse on/off";
+	text[1]		= 	"Toggle mouse controls"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*4;
 	dimx		=	4000;	dimy		=	750;
@@ -272,8 +272,8 @@ instance MENUITEM_M_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MSENSITIVITY(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Maus Empfindlichk.";
-	text[1]		= 	""; // Kommentar
+	text[0]		=	"Mouse sensitivity";
+	text[1]		= 	"Mouse sensitivity level"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*5;
 	dimx		=	4000;	dimy		=	750;
@@ -305,7 +305,7 @@ instance MENUITEM_MSENSITIVITY_SLIDER(C_MENU_ITEM_DEF)
 
 
 //
-// Bluteffekte deaktivert in Gothic 2 (nur noch über die INI tunebar)
+// Bluteffekte deaktivert in Gothic 2 (nur noch Ã¼ber die INI tunebar)
 //
 /*
 INSTANCE MENUITEM_GAME_BLOOD(C_MENU_ITEM_DEF)
@@ -346,8 +346,8 @@ instance MENUITEM_GAME_BLOOD_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_OLDCONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Gothic 1 controls";
-	text[1]		= 	"Alte Steuerung im Kampf aktivieren"; // Kommentar
+	text[0]		=	"Gothic I controls";
+	text[1]		= 	"Use Gothic I combat controls"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*6;
 	dimx		=	4000;	dimy		=	750;

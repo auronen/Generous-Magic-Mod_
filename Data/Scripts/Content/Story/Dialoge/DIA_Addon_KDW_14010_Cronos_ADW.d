@@ -32,7 +32,7 @@ instance DIA_Addon_Cronos_ADW_PICKPOCKET(C_INFO)
 	condition		= DIA_Addon_Cronos_ADW_PICKPOCKET_Condition;
 	information		= DIA_Addon_Cronos_ADW_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre einfach seine Karte zu stehlen)";
+	description		= "(Es wÃ¤re einfach seine Karte zu stehlen)";
 };
 
 func int DIA_Addon_Cronos_ADW_PICKPOCKET_Condition()
@@ -97,13 +97,13 @@ func int DIA_Addon_Cronos_ADWHello_Condition()
 
 func void DIA_Addon_Cronos_ADWHello_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_00"); //Schön, dich zu sehen. Wir befürchteten schon das Schlimmste.
-	AI_Output(other, self, "DIA_Addon_Cronos_ADWHello_15_01"); //Alles halb so wild. Wie sieht's denn aus?
-	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_02"); //Es ist eine sehr gefährliche Gegend hier.
-	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_03"); //Einige von den Tieren hier in der Gegend hat niemand von uns jemals zuvor zu Gesicht bekommen.
-	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_04"); //Ganz in der Nähe gibt es einen großen Sumpf, der sich einige hundert Jahre unbemerkt entfalten konnte.
-	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_05"); //Es vergeht kein Tag, an dem wir nicht von den Biestern aus diesem Sumpf angegriffen werden.
-	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_06"); //Ich rate dir vorsichtig zu sein, wenn du hier herumspazierst.
+	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_00"); //Nice to see you. We feared the worst.
+	AI_Output(other, self, "DIA_Addon_Cronos_ADWHello_15_01"); //It wasn't all that bad. How's it going?
+	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_02"); //This is a very dangerous region here.
+	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_03"); //Some of the animals in the area have never been seen by anyone before us.
+	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_04"); //Close by there is a large swamp that managed to grow for several hundred years without anyone noticing.
+	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_05"); //Not a day goes by that we aren't attacked by the beasts from the swamp.
+	AI_Output(self, other, "DIA_Addon_Cronos_ADWHello_04_06"); //I advise you to be careful if you go for a stroll here.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -115,7 +115,7 @@ instance DIA_Addon_Cronos_WaechterADW(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Cronos_WaechterADW_Condition;
 	information		= DIA_Addon_Cronos_WaechterADW_Info;
-	description		= "Gibt's was neues über die Steinwächter?";
+	description		= "Is there anything new about the stone sentinels?";
 };
 
 func int DIA_Addon_Cronos_WaechterADW_Condition()
@@ -125,11 +125,11 @@ func int DIA_Addon_Cronos_WaechterADW_Condition()
 
 func void DIA_Addon_Cronos_WaechterADW_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Cronos_WaechterADW_15_00"); //Gibt's was Neues über die Steinwächter?
-	AI_Output(self, other, "DIA_Addon_Cronos_WaechterADW_04_01"); //Wir haben schon einigen von ihnen den Garaus gemacht.
-	AI_Output(self, other, "DIA_Addon_Cronos_WaechterADW_04_02"); //Sie stehen wie zur Salzsäule erstarrt da und regen sich nicht.
-	AI_Output(self, other, "DIA_Addon_Cronos_WaechterADW_04_03"); //Doch der Schein trügt. Wenn du zu nah an sie heran gehst, werden sie dich angreifen!
-	AI_Output(self, other, "DIA_Addon_Cronos_WaechterADW_04_04"); //Es besteht kein Zweifel, dass die Quelle ihrer Macht hier irgendwo zu finden ist.
+	AI_Output(other, self, "DIA_Addon_Cronos_WaechterADW_15_00"); //Is there anything new about the stone sentinels?
+	AI_Output(self, other, "DIA_Addon_Cronos_WaechterADW_04_01"); //We have already managed to eliminate some of them.
+	AI_Output(self, other, "DIA_Addon_Cronos_WaechterADW_04_02"); //They stand there, paralyzed like pillars of salt, and don't budge.
+	AI_Output(self, other, "DIA_Addon_Cronos_WaechterADW_04_03"); //But appearances deceive. If you get too close, they'll attack you!
+	AI_Output(self, other, "DIA_Addon_Cronos_WaechterADW_04_04"); //There's no doubt that the source of their power can be found here somewhere.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -143,7 +143,7 @@ instance DIA_Addon_Cronos_ADW_Trade(C_INFO)
 	information		= DIA_Addon_Cronos_ADW_Trade_Info;
 	permanent		= TRUE;
 	trade			= TRUE;
-	description		= "Lass uns handeln.";
+	description		= "Let us trade.";
 };
 
 func int DIA_Addon_Cronos_ADW_Trade_Condition()

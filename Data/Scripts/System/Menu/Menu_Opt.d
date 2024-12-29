@@ -31,7 +31,7 @@ const int MENU_OPT_START_Y	= 2000;
 
 INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"EINSTELLUNGEN";
+	text[0]		=	"OPTIONS";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -44,8 +44,8 @@ INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Spiel";
-	text[1]		= "Diverse Spieleinstellungen vornehmen.";  // Kommentar
+	text[0]		= "Game Settings";
+	text[1]		= "Configure the gameplay";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*0;
@@ -61,8 +61,8 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Grafik";
-	text[1]		= "Sichtweite, Details und Effekte.";  // Kommentar
+	text[0]		= "Visual Settings";
+	text[1]		= "Range of sight, details and effects.";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*1;
@@ -78,8 +78,8 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"Video";
-	text[1]		=	"Grafikkarte, Auflösung und Helligkeit.";  // Kommentar
+	text[0]		=	"Video Settings";
+	text[1]		=	"Graphic adapter, resolution, brightness and contrast";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -95,8 +95,8 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Audio";
-	text[1]		= "Musik, Sprache und Soundeffekte.";  // Kommentar
+	text[0]		= "Audio Settings";
+	text[1]		= "Music, speech and sound effects";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -113,8 +113,8 @@ INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Steuerung";
-	text[1]		= "Konfiguration der Tastenbelegung.";  // Kommentar
+	text[0]		= "Controls";
+	text[1]		= "Configure keyboard and mouse";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*4;
@@ -130,8 +130,8 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Erweitert";
-	text[1]		= "Weitere Optionen";  // Kommentar
+	text[0]		= "Extended configuration";
+	text[1]		= "Some further settings";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*5;
@@ -150,8 +150,8 @@ INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Performance/Qualität";
-	text[1]		= "Optimierung von Performance und Qualität.";  // Kommentar
+	text[0]		= "Performance/Quality";
+	text[1]		= "Optimize your performance and quality";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*6;
@@ -167,7 +167,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "benutzerdefiniert#hohe Performance|mittlere Qualität|hohe Qualität";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "Custom#High performance|Medium quality|High quality";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension

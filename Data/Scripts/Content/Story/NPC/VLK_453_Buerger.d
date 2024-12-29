@@ -1,7 +1,7 @@
 instance VLK_453_Buerger(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Arbeiter";
+	name							= "Worker";
 	npctype							= NPCTYPE_AMBIENT;
 	guild							= GIL_VLK;
 	flags							= 0;

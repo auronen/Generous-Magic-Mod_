@@ -44,16 +44,16 @@ func int DIA_Biff_DI_HALLO_Condition()
 
 func void DIA_Biff_DI_HALLO_Info()
 {
-	AI_Output(self, other, "DIA_Biff_DI_HALLO_07_00"); //Und? Wo sind nun die Reichtümer, die du mir versprochen hast?
+	AI_Output(self, other, "DIA_Biff_DI_HALLO_07_00"); //And? Where are the riches you promised me?
 
 	if (Npc_KnowsInfo(other, DIA_Biff_DI_ORKS) == FALSE)
 	{
-		AI_Output(other, self, "DIA_Biff_DI_HALLO_15_01"); //Was hab ich dir denn vorhin auf See gesagt?
+		AI_Output(other, self, "DIA_Biff_DI_HALLO_15_01"); //So what did I tell you earlier, at sea?
 	};
 
-	AI_Output(other, self, "DIA_Biff_DI_HALLO_15_02"); //Deine Aufgabe ist erstmal, dieses Schiff zu bewachen.
-	AI_Output(other, self, "DIA_Biff_DI_HALLO_15_03"); //Ich habe keine Lust zurückzuschwimmen.
-	AI_Output(self, other, "DIA_Biff_DI_HALLO_07_04"); //So ein Dreck. Wenn ich das gewusst hätte, wäre ich in Khorinis geblieben.
+	AI_Output(other, self, "DIA_Biff_DI_HALLO_15_02"); //For now, your task is to guard this ship.
+	AI_Output(other, self, "DIA_Biff_DI_HALLO_15_03"); //I don't fancy swimming all the way back.
+	AI_Output(self, other, "DIA_Biff_DI_HALLO_07_04"); //Crap. If I had known that, I'd have stayed in Khorinis.
 	AI_StopProcessInfos(self);
 };
 
@@ -67,7 +67,7 @@ instance DIA_Biff_DI_perm(C_INFO)
 	condition		= DIA_Biff_DI_perm_Condition;
 	information		= DIA_Biff_DI_perm_Info;
 	permanent		= TRUE;
-	description		= "Auf dem Schiff alles klar?";
+	description		= "All ship-shape aboard?";
 };
 
 func int DIA_Biff_DI_perm_Condition()
@@ -81,8 +81,8 @@ func int DIA_Biff_DI_perm_Condition()
 
 func void DIA_Biff_DI_perm_Info()
 {
-	AI_Output(other, self, "DIA_Biff_DI_perm_15_00"); //Auf dem Schiff alles klar?
-	AI_Output(self, other, "DIA_Biff_DI_perm_07_01"); //(genervt) Ja, ja. Alles ruhig.
+	AI_Output(other, self, "DIA_Biff_DI_perm_15_00"); //All ship-shape aboard?
+	AI_Output(self, other, "DIA_Biff_DI_perm_07_01"); //(irritated) Yeah, yeah. All is quiet.
 	AI_StopProcessInfos(self);
 };
 
@@ -110,9 +110,9 @@ func int DIA_Biff_DI_ORKS_Condition()
 
 func void DIA_Biff_DI_ORKS_Info()
 {
-	AI_Output(self, other, "DIA_Biff_DI_ORKS_07_00"); //Diese Drecksviecher!
-	AI_Output(other, self, "DIA_Biff_DI_ORKS_15_01"); //Was machst du hier oben, verdammt! Du sollst auf das Schiff aufpassen.
-	AI_Output(self, other, "DIA_Biff_DI_ORKS_07_02"); //Das geht schon nicht unter, Mann.
+	AI_Output(self, other, "DIA_Biff_DI_ORKS_07_00"); //Those dirty beasts!
+	AI_Output(other, self, "DIA_Biff_DI_ORKS_15_01"); //Damnit, what are you doing up here? You're supposed to guard the ship.
+	AI_Output(self, other, "DIA_Biff_DI_ORKS_07_02"); //It's not going to sink any time soon, man.
 	B_GivePlayerXP(XP_Ambient);
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "Start");
@@ -140,11 +140,11 @@ func int DIA_Biff_DI_UNDEADDRGDEAD_Condition()
 
 func void DIA_Biff_DI_UNDEADDRGDEAD_Info()
 {
-	AI_Output(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_00"); //War's das jetzt?
-	AI_Output(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_01"); //Das war's jetzt.
-	AI_Output(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //Kann ich mir jetzt ...
-	AI_Output(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //Von mir aus kannst du die ganze Insel plündern.
-	AI_Output(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_04"); //Klasse.
+	AI_Output(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_00"); //Was that it, then?
+	AI_Output(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_01"); //That was it for now.
+	AI_Output(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //Now, can I ...
+	AI_Output(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //You can raid the entire island for all I care.
+	AI_Output(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_04"); //Great.
 
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "PlunderTempel");
@@ -174,7 +174,7 @@ func int DIA_Biff_DI_plunder_Condition()
 
 func void DIA_Biff_DI_plunder_Info()
 {
-	AI_Output(self, other, "DIA_Biff_DI_plunder_07_00"); //Verdammt. Nicht jetzt.
+	AI_Output(self, other, "DIA_Biff_DI_plunder_07_00"); //Damn. Not now.
 	AI_StopProcessInfos(self);
 };
 

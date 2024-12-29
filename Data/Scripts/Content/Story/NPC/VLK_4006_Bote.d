@@ -1,7 +1,7 @@
 instance VLK_4006_Bote(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Bote";
+	name							= "Errand-Boy";
 	npctype							= NPCTYPE_AMBIENT;
 	guild							= GIL_VLK;
 	flags							= 0;

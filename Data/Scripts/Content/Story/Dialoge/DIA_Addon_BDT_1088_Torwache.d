@@ -63,8 +63,8 @@ func void DIA_BDT_1088_Addon_Torwache_FirstWarn_Info()
 	{
 		// kairo: aioutput-string des spielers gab es doppelt. umbenannt!
 
-		AI_Output(other, self, "DIA_Addon_BDT_1088_Torwache_FirstWarn_15_01"); //Geh mir aus dem Weg, Wache.
-		AI_Output(self, other, "DIA_Addon_BDT_10018_Torwache_FirstWarn_06_02"); //Ahh, in Ordnung, du kannst passieren.
+		AI_Output(other, self, "DIA_Addon_BDT_1088_Torwache_FirstWarn_15_01"); //Get out of my way, guard.
+		AI_Output(self, other, "DIA_Addon_BDT_10018_Torwache_FirstWarn_06_02"); //Ahh, all right, you can pass.
 
 		self.aivar[AIV_PASSGATE] = TRUE;
 	}
@@ -73,22 +73,22 @@ func void DIA_BDT_1088_Addon_Torwache_FirstWarn_Info()
 	{
 		if (Torwache_Greetings == 0)
 		{
-			AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_03"); //Solange du Thorus keinen roten Stein gegeben hast, bist du hier unerwünscht.
+			AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_03"); //As long as Thorus hasn't given you a red stone, you're not welcome here.
 			Torwache_Greetings = 1;
 		}
 		else if (Torwache_Greetings == 1)
 		{
-			AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_04"); //Hast du mich nicht verstanden? (eindringlich) GEH WEG!
+			AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_04"); //Didn't you understand me? (forcefully) GO AWAY!
 			Torwache_Greetings = 2;
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_05"); //(eindringlich) GEH WEG!
+			AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_05"); //(forcefully) GO AWAY!
 		};
 	}
 	else if (MIS_Send_Buddler == LOG_RUNNING)
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_06"); //Hey, solange Thorus sein Okay nicht gegeben hat, kommst du nicht durch.
+		AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_06"); //Hey, as long as Thorus hasn't given his go-ahead, you aren't getting through.
 	};
 
 	AI_StopProcessInfos(self);
@@ -123,7 +123,7 @@ func int DIA_BDT_1088_Addon_Torwache_SecondWarn_Condition()
 
 func void DIA_BDT_1088_Addon_Torwache_SecondWarn_Info()
 {
-	AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_SecondWarn_06_00"); //Okay, bleib ganz ruhig. Du hast jetzt noch eine letzte Chance. Du gehst SOFORT zurück, oder du stirbst ...
+	AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_SecondWarn_06_00"); //Okay, stay calm. You have one last chance. Go back RIGHT NOW or you'll die...
 
 	other.aivar[AIV_LastDistToWP] = Npc_GetDistToWP(other, BDT_1088_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status] = GP_SecondWarnGiven;
@@ -160,7 +160,7 @@ func void DIA_BDT_1088_Addon_Torwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE; // wird auch in ZS_Attack resettet
 
-	AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_Attack_06_00"); //(seufzt) Du glaubst wohl, ich mache Spaß? Dir werd ich's zeigen ...
+	AI_Output(self, other, "DIA_Addon_BDT_1088_Addon_Torwache_Attack_06_00"); //(sighs) You think I'm joking? I'll show you...
 
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_GuardStopsIntruder, 0);

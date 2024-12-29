@@ -23,7 +23,7 @@ func void ZS_Potion_Alchemy()
 
 func int ZS_Potion_Alchemy_Loop()
 {
-	// ------ SK: Sollte schon für das neue Mobsi funzen ------
+	// ------ SK: Sollte schon fÃ¼r das neue Mobsi funzen ------
 	// ------ Alchemie-Tisch benutzen ------
 
 	if ((!C_BodyStateContains(self, BS_MOBINTERACT_INTERRUPT))

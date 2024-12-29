@@ -4,23 +4,23 @@
 // -------------------------------------------------------------------------------------
 //				Runen des ersten Kreises und ihre Ingredenzien
 // -------------------------------------------------------------------------------------
-const string Runemaking_KDW_CIRC1_S1_1 = "Die Kreise des Wassers";
-const string Runemaking_KDW_CIRC1_S1_2 = "Die Runen des Wassers und die zu deren Herstellung benötigten Ingredenzien ";
-const string Runemaking_KDW_CIRC1_S1_3 = "Wirbelwind";
-const string Runemaking_KDW_CIRC1_S1_4 = "Flügel einer Blutfliege";
-const string Runemaking_KDW_CIRC1_S1_5 = "Eislanze";
-const string Runemaking_KDW_CIRC1_S1_6 = "Gletscherquartz";
-const string Runemaking_KDW_CIRC1_S1_7 = "Geysir";
-const string Runemaking_KDW_CIRC1_S1_8 = "Aquamarin";
-const string Runemaking_KDW_CIRC1_S1_9 = "Unwetter";
-const string Runemaking_KDW_CIRC1_S1_10 = "Gletscherquartz";
-const string Runemaking_KDW_CIRC1_S1_11 = "Flügel einer Blufliege";
-const string Runemaking_KDW_CIRC1_S1_12 = "Wasserfaust";
-const string Runemaking_KDW_CIRC1_S1_13 = "Aquamarin";
-const string Runemaking_KDW_CIRC1_S1_14 = "Bergkristall";
-const string Runemaking_KDW_CIRC1_S1_15 = "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich.";
-const string Runemaking_KDW_CIRC1_S1_16 = "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen.";
-const string Runemaking_KDW_CIRC1_S1_17 = "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen.";
+const string Runemaking_KDW_CIRC1_S1_1 = "The Circles of Water";
+const string Runemaking_KDW_CIRC1_S1_2 = "The runes of Water and the ingredients necessary for their creation.";
+const string Runemaking_KDW_CIRC1_S1_3 = "Whirlwind";
+const string Runemaking_KDW_CIRC1_S1_4 = "Wings of a bloodfly";
+const string Runemaking_KDW_CIRC1_S1_5 = "Ice lance";
+const string Runemaking_KDW_CIRC1_S1_6 = "Glacier quartz";
+const string Runemaking_KDW_CIRC1_S1_7 = "Geyser";
+const string Runemaking_KDW_CIRC1_S1_8 = "Aquamarine";
+const string Runemaking_KDW_CIRC1_S1_9 = "Storm";
+const string Runemaking_KDW_CIRC1_S1_10 = "Glacier quartz";
+const string Runemaking_KDW_CIRC1_S1_11 = "Wings of a bloodfly";
+const string Runemaking_KDW_CIRC1_S1_12 = "Waterfist";
+const string Runemaking_KDW_CIRC1_S1_13 = "Aquamarine";
+const string Runemaking_KDW_CIRC1_S1_14 = "Rock Crystal";
+const string Runemaking_KDW_CIRC1_S1_15 = "To create a rune you always require ONE of the ingredients listed.";
+const string Runemaking_KDW_CIRC1_S1_16 = "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell.";
+const string Runemaking_KDW_CIRC1_S1_17 = "Only when these prerequisites are fulfilled can he set to work on the rune table.";
 func void Use_Runemaking_KDW_CIRC1_S1()
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);

@@ -1,11 +1,11 @@
 // *****************************************************************
 // // Joly: Auge Innos nicht dabei? Kein Problem. Xardas hilft auch dir Idiot!!!!!!!!!!!!
-// Vorsicht: Nur für D.A.U.s
+// Vorsicht: Nur fÃ¼r D.A.U.s
 // *****************************************************************
 
 instance ItSe_XardasNotfallBeutel_MIS(C_Item)
 {
-	name						= "Äußerst seltsamer Lederbeutel";
+	name						= "Very Strange Leather Satchel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -20,9 +20,9 @@ instance ItSe_XardasNotfallBeutel_MIS(C_Item)
 
 	description					= name;
 	text[0]						= "";											count[0] = 0;
-	text[1]						= "In dem Beutel scheinen";						count[1] = 0;
-	text[2]						= "ein harter Gegenstand ";						count[2] = 0;
-	text[3]						= "und ein Schriftstück zu sein.";				count[3] = 0;
+	text[1]						= "The bag seems to";						count[1] = 0;
+	text[2]						= "contain a hard object";						count[2] = 0;
+	text[3]						= "and a document.";				count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -44,7 +44,7 @@ func void Use_XardasNotfallBeutel()
 
 instance ItWr_XardasErmahnungFuerIdioten_MIS(C_Item)
 {
-	name						= "Xardas´ Ermahnungsbrief";
+	name						= "Xardas' Warning Letter";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -66,9 +66,9 @@ instance ItWr_XardasErmahnungFuerIdioten_MIS(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string XardasErmahnungFuerIdioten_1 = "Mein junger Schützling, du hast mich bitter enttäuscht. Wie konntest nur mit dem Schiff aufbrechen, ohne das Auge Innos in deinem Gepäck?";
-const string XardasErmahnungFuerIdioten_2 = "Ich kann nur hoffen, dass deine Nachlässigkeit Grenzen hat. Sonst wirst du niemals die Welt von dem Übel dieser Welt befreien und ich werde dich persönlich töten müssen für deine Dummheit.";
-const string XardasErmahnungFuerIdioten_3 = "                      Xardas";
+const string XardasErmahnungFuerIdioten_1 = "My young protégé, you disappoint me greatly. How could you leave on the ship and not take the Eye of Innos?";
+const string XardasErmahnungFuerIdioten_2 = "I can only hope that there are limits to your negligence. Otherwise you will never rid the world of Evil and I will be forced to personally execute you for your stupidity.";
+const string XardasErmahnungFuerIdioten_3 = " Xardas";
 func void Use_XardasErmahnungFuerIdioten()
 {
 	var int nDocID;
@@ -100,7 +100,7 @@ func void Use_XardasErmahnungFuerIdioten()
 
 instance ItWr_Krypta_Garon(C_Item)
 {
-	name						= "alter Brief";
+	name						= "Old letter";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -117,17 +117,17 @@ instance ItWr_Krypta_Garon(C_Item)
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "mit zittriger Schrift geschrieben";			count[3] = 0;
+	text[3]						= "in shaky handwriting.";			count[3] = 0;
 };
 
-const string Krypta_Garon_1 = "Ich habe versagt. Meine Bemühungen Inubis auf den Pfad der Rechtschaffenen zurück zu bringen waren vergebens ";
-const string Krypta_Garon_2 = "Erst dachte ich, ich sei tot. Doch es steckt noch Kraft in den alten Knochen Ivans. ";
-const string Krypta_Garon_3 = "Inubis ist wiederauferstanden von den Toten. Verbannt vom alten Orden der Paladine sinnt er nur noch nach Rache für seinen Fluch.";
-const string Krypta_Garon_4 = "Viele seiner Anhänger sind ihm gefolgt. Ich weiß nicht, wie es passieren konnte, dass ein Feldherr wie Inubis so dem Bösen verfällt. ";
-const string Krypta_Garon_5 = "In dieser Krypta habe ich sein Grab gefunden. Doch ob ich jemals einem Menschen davon berichten kann, ist nicht gewiss. Darum schreibe ich diese Zeilen in der Hoffnung, dass sie gefunden werden.";
-const string Krypta_Garon_6 = "Seid gewarnt. Ein mächtiger Feind streckt seine Klauen nach den Seelen der Rechtschaffenen. Inubis wird nicht der letzte sein.";
-const string Krypta_Garon_7 = "Möge Innos eure Seelen beschützen.";
-const string Krypta_Garon_8 = "                                 Ivan";
+const string Krypta_Garon_1 = "I have failed. In vain I have tried to keep Inubis on the path of Good.";
+const string Krypta_Garon_2 = "At first I believed I was dead. But there is strength left yet in Ivan's old bones.";
+const string Krypta_Garon_3 = "Inubis has arisen from the dead. Banished by the ancient order of the paladins, he now seeks revenge for his curse.";
+const string Krypta_Garon_4 = "Many of his followers are with him. I have no idea how a warlord like Inubis could become so evil.";
+const string Krypta_Garon_5 = "I found his tomb in this crypt. But I am uncertain whether I will ever be able to report my find. Therefore I write these lines and hope that they may be found.";
+const string Krypta_Garon_6 = "Be warned. A mighty enemy is reaching out for the souls of the just. Inubis will not be the last.";
+const string Krypta_Garon_7 = "May Innos save your souls.";
+const string Krypta_Garon_8 = " Ivan";
 func void Use_Krypta_Garon()
 {
 	var int nDocID;
@@ -151,23 +151,23 @@ func void Use_Krypta_Garon()
 				Doc_PrintLine	(nDocID, 0, Krypta_Garon_8);
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, "");
-				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 
 	Doc_Show(nDocID);
 };
 
 //****************************************************************************
-//				DragonIsle_Undead_Schlüssel
+//				DragonIsle_Undead_SchlÃ¼ssel
 //			---------------------------------------------
 //****************************************************************************
 
 //**********************************************************************************
-//	Knasttürschlüssel für Pedros Zelle auf DI
+//	KnasttÃ¼rschlÃ¼ssel fÃ¼r Pedros Zelle auf DI
 //**********************************************************************************
 
 instance ItKe_OrkKnastDI_MIS(C_Item)
 {
-	name						= "Schlüssel des Orkischen Obersts";
+	name						= "Key of the Orcish Colonel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -186,9 +186,9 @@ instance ItKe_OrkKnastDI_MIS(C_Item)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-instance ItKe_EVT_UNDEAD_01(C_Item) // Schlüssel für erste Tür
+instance ItKe_EVT_UNDEAD_01(C_Item) // SchlÃ¼ssel fÃ¼r erste TÃ¼r
 {
-	name						= "Schlüssel des Archol";
+	name						= "Key of Archol";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -205,12 +205,12 @@ instance ItKe_EVT_UNDEAD_01(C_Item) // Schlüssel für erste Tür
 };
 
 //**********************************************************************************
-//	Schlüssel zum Labyrinth der Untoten auf DI
+//	SchlÃ¼ssel zum Labyrinth der Untoten auf DI
 //**********************************************************************************
 
 instance ItKe_EVT_UNDEAD_02(C_Item)
 {
-	name						= "Schlüssel des Schlüsselmeisters";
+	name						= "Key of the Key Master";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -230,12 +230,12 @@ instance ItKe_EVT_UNDEAD_02(C_Item)
 };
 
 //**********************************************************************************
-//	Kammerschlüssel für´s Tor zum Saal des Untoten Drachen.
+//	KammerschlÃ¼ssel fÃ¼rÂ´s Tor zum Saal des Untoten Drachen.
 //**********************************************************************************
 
 instance ItKe_LastDoorToUndeadDrgDI_MIS(C_Item)
 {
-	name						= "Kammerschlüssel des Schwarzmagiers";
+	name						= "Black Magician's Room Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -255,12 +255,12 @@ instance ItKe_LastDoorToUndeadDrgDI_MIS(C_Item)
 };
 
 //**********************************************************************************
-//	Schriftrolle für´s Tor zum Saal des Untoten Drachen.
+//	Schriftrolle fÃ¼rÂ´s Tor zum Saal des Untoten Drachen.
 //**********************************************************************************
 
 instance ItWr_LastDoorToUndeadDrgDI_MIS(C_Item)
 {
-	name						= "Schriftrolle des Schwarzmagiers";
+	name						= "Black Magician's Scroll";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -284,7 +284,7 @@ instance ItWr_LastDoorToUndeadDrgDI_MIS(C_Item)
 
 const string ItWr_LastDoorToUndeadDrgDI_MIS_1 = "KHADOSH ";
 const string ItWr_LastDoorToUndeadDrgDI_MIS_2 = "EMEM KADAR";
-const string ItWr_LastDoorToUndeadDrgDI_MIS_3 = "Das Auge der Macht erleuchte deinen Weg";
+const string ItWr_LastDoorToUndeadDrgDI_MIS_3 = "The Eye of Power illuminate your path.";
 func void Use_ItWr_LastDoorToUndeadDrgDI_MIS()
 {
 	var int nDocID;
@@ -305,7 +305,7 @@ func void Use_ItWr_LastDoorToUndeadDrgDI_MIS()
 				Doc_PrintLine	(nDocID, 0, ItWr_LastDoorToUndeadDrgDI_MIS_3);
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, "");
-				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 
 	Doc_Show(nDocID);
 
@@ -313,11 +313,11 @@ func void Use_ItWr_LastDoorToUndeadDrgDI_MIS()
 };
 
 //**********************************************************************************
-//	Schlüssel zur Truhe in der Kammer des OberDementors.
+//	SchlÃ¼ssel zur Truhe in der Kammer des OberDementors.
 //**********************************************************************************
 instance ItKe_ChestMasterDementor_MIS(C_Item)
 {
-	name						= "Truhenschlüssel des Schwarzmagiers";
+	name						= "Black Magician's Chest Key";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -346,7 +346,7 @@ instance ItKe_ChestMasterDementor_MIS(C_Item)
 
 instance ItWr_Rezept_MegaDrink_MIS(C_Item)
 {
-	name						= "Rezept";
+	name						= "Recipe";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -368,12 +368,12 @@ instance ItWr_Rezept_MegaDrink_MIS(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string RezeptFuerMegaTrank_1 = "Ich habe eine sehr alte Kunst ins Leben zurück rufen können. Ich fürchte, dass Feodaron von meinen Ergebnissen nicht sehr erbaut wäre.";
-const string RezeptFuerMegaTrank_2 = "Es hieße schlicht und ergreifend, dass ich seine gesammte Brut in meinem Labor zu einem Trank verarbeiten müsste. Wenn er nicht ständig auf seinen Eiern sitzen würde, wie ein Huhn, hätte ich es schon längst ausprobiert. Aber vor seinem Odem habe ich doch noch ein wenig Respekt.";
+const string RezeptFuerMegaTrank_1 = "I have revived an ancient art. I fear Feodaron would not be impressed with my achievement.";
+const string RezeptFuerMegaTrank_2 = "It means, quite simply, that I would have to mix his entire brood in my laboratory into a potion. If only he didn't sit on his eggs like some chicken all the time, I'd have tried it out. But he still inspires me with some respect.";
 const string RezeptFuerMegaTrank_3 = "Embarla Firgasto:";
-const string RezeptFuerMegaTrank_4 = "10 Dracheneier, Eine zerriebene schwarze Perle und eine Prise Schwefel.";
-const string RezeptFuerMegaTrank_5 = "Die Emulsion wird zum kochen gebracht und anschließend unter ständigem Rühren durch den Destillator getrieben.";
-const string RezeptFuerMegaTrank_6 = "Das Elixier ist mit vorsicht zu verwenden. Es hat schwere Nebenwikungen. Der gesamte Manahaushalt wird durcheinander geraten.";
+const string RezeptFuerMegaTrank_4 = "11 dragon eggs, one powderized black pearl and a pinch of sulfur.";
+const string RezeptFuerMegaTrank_5 = "The emulsion is brought to the boil and must be stirred constantly as it passes through the distiller.";
+const string RezeptFuerMegaTrank_6 = "The elixir must be used with care. It has strong side effects and can upset the entire mana system.";
 func void Use_RezeptFuerMegaTrank()
 {
 	var int nDocID;
@@ -405,7 +405,7 @@ func void Use_RezeptFuerMegaTrank()
 
 instance ItWr_Diary_BlackNovice_MIS(C_ITEM)
 {
-	name						= "Tagebuch";
+	name						= "Diary";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= 0;
@@ -427,11 +427,11 @@ instance ItWr_Diary_BlackNovice_MIS(C_ITEM)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string Diary_BlackNovice_1 = "Ich warte jetzt schon geschlagene 36 Tage auf meine Einberufung. Ich glaube schon nicht mehr daran, dass sie mich aufnehmen werden. Ich habe doch schon alles getan, was sie mir aufgetragen haben. Alles habe ich ihnen hinterher getragen.";
-const string Diary_BlackNovice_2 = "Der Schlüsselmeister hat mich angewiesen, die Gitter zu versiegeln. Ich bin bis heute noch nicht dazu gekommen. Wenn das so weiter geht, wird es noch jemand schaffen, einfach so durch das Tor zu marschieren.";
-const string Diary_BlackNovice_3 = "Nur zu blöde, dass ich mir die Kombinationen nicht merken kann. ";
-const string Diary_BlackNovice_4 = "Ich wäre schon längst einmal heimlich in der großen Halle gewesen. Ich kann es kaum erwarten, den Meister zu sehen. Ob sie mich zu ihm lassen, wenn ich erst einmal zu ihnen gehöre?";
-const string Diary_BlackNovice_5 = "Habe gestern mein Glück versucht. Bin aber schon an den zwei Hebelkammern gescheitert, bevor ich die drei Schalter des Westflügels in der richtigen Reihenfolge drücken konnte. Der Hund hat die Kammern abgeschlossen. Morgen werde ich versuchen, ihm den Schlüssel abzunehmen...";
+const string Diary_BlackNovice_1 = "I've been waiting to be called up for 36 days now. I'm beginning to doubt they'll take me on. But I've done all they asked me to. I've fetched and carried for them like some old housemaid.";
+const string Diary_BlackNovice_2 = "The key master instructed me to seal the bars. I still haven't gotten around to it. If things go on this way, anyone might just stroll in through the gate.";
+const string Diary_BlackNovice_3 = "It's a shame I can't remember the combinations.";
+const string Diary_BlackNovice_4 = "I'd have sneaked into the great Hall ages ago. I can hardly wait to see the Master. I wonder if they'll let me see him once I'm one of them.";
+const string Diary_BlackNovice_5 = "I tried my luck yesterday. But I failed the two lever chambers before I could even press the three switches in the west wing in the right order. That dog locked the chambers! Tomorrow I'm going to try and get the key off him ...";
 func void Use_Diary_BlackNovice()
 {
 	var int nDocID;
@@ -453,7 +453,7 @@ func void Use_Diary_BlackNovice()
 				Doc_PrintLines	(nDocID, 0, Diary_BlackNovice_3);
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_PrintLines	(nDocID, 1, Diary_BlackNovice_4);
@@ -471,7 +471,7 @@ func void Use_Diary_BlackNovice()
 
 instance ItWr_ZugBruecke_MIS(C_Item)
 {
-	name						= "alter Brief";
+	name						= "Old letter";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -493,10 +493,10 @@ instance ItWr_ZugBruecke_MIS(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string ZugBruecke_1 = "   Letzte Warnung!";
-const string ZugBruecke_2 = "Es ist mir völlig egal, ob ihr die Brücke von der anderen Seite überqueren könnt, oder nicht. Wenn es nach mir ginge, würdet ihr sowieso alle in der Hölle schmoren.";
-const string ZugBruecke_3 = "Ich werde die Brücke eingezogen lassen, solange ich mich in meiner Residenz befinde. Wenn ich nochmal jemanden dabei erwische, dass er mit Pfeil und Bogen auf die Schalter schießt um herüber zu kommen, dann werde ich den Schützen eigenhändig am nächten Baum aufhängen.";
-const string ZugBruecke_4 = "                      Archol";
+const string ZugBruecke_1 = "Last warning!";
+const string ZugBruecke_2 = "I don't care if you can cross the bridge from the other side or not. If I had any say, you'd all rot in hell.";
+const string ZugBruecke_3 = "I'm gonna leave the bridge drawn in as long as I'm in my domain. And if I catch one more person trying to hit the switches with a bow and arrow to get over, I will personally hang the idiot from the nearest tree!";
+const string ZugBruecke_4 = " Archol";
 func void Use_ZugBruecke()
 {
 	var int nDocID;
@@ -523,12 +523,12 @@ func void Use_ZugBruecke()
 };
 
 //**********************************************************************************
-//	ItMi_PowerEye zum öffnen der letzten Tür
+//	ItMi_PowerEye zum Ã¶ffnen der letzten TÃ¼r
 //**********************************************************************************
 
 instance ItMi_PowerEye(C_Item)
 {
-	name						= "Auge der Macht";
+	name						= "Eye of Power";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;

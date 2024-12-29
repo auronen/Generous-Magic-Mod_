@@ -66,7 +66,7 @@ instance DIA_Addon_Wache_02_Hi(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Wache_02_Hi_Condition;
 	information		= DIA_Addon_Wache_02_Hi_Info;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_Wache_02_Hi_Condition()
@@ -76,10 +76,10 @@ func int DIA_Addon_Wache_02_Hi_Condition()
 
 func void DIA_Addon_Wache_02_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Wache_02_Hi_15_00"); //Wie sieht's aus?
-	AI_Output(self, other, "DIA_Addon_Wache_02_Hi_13_01"); //Warte mal, kenne ich dich nicht irgendwo her?
+	AI_Output(other, self, "DIA_Addon_Wache_02_Hi_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Addon_Wache_02_Hi_13_01"); //Wait a minute, don't I know you from somewhere?
 	B_UseFakeScroll();
-	AI_Output(self, other, "DIA_Addon_Wache_02_Hi_13_02"); //Hmm ... nein. Das bist du nicht. Los, verpiss dich.
+	AI_Output(self, other, "DIA_Addon_Wache_02_Hi_13_02"); //Hmm... no. You're not him. Go on, piss off.
 };
 
 // --------------------------------------------------------------------
@@ -91,7 +91,7 @@ instance DIA_Addon_Wache_02_Attentat(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Wache_02_Attentat_Condition;
 	information		= DIA_Addon_Wache_02_Attentat_Info;
-	description		= "Was weißt du über das Attentat?";
+	description		= "What do you know about the attack?";
 };
 
 func int DIA_Addon_Wache_02_Attentat_Condition()
@@ -105,9 +105,9 @@ func int DIA_Addon_Wache_02_Attentat_Condition()
 
 func void DIA_Addon_Wache_02_Attentat_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Wache_02_Attentat_15_00"); //Was weißt du über das Attentat?
-	AI_Output(self, other, "DIA_Addon_Wache_02_Attentat_13_01"); //Was ich darüber weiß? (lacht) Ich hab dem Kerl die Beine gebrochen.
-	AI_Output(self, other, "DIA_Addon_Wache_02_Attentat_13_02"); //(droht) Und das werde ich auch mit jedem anderen machen, der sich mit Esteban anlegen will ...
+	AI_Output(other, self, "DIA_Addon_Wache_02_Attentat_15_00"); //What do you know about the attack?
+	AI_Output(self, other, "DIA_Addon_Wache_02_Attentat_13_01"); //What do I know about it? (laughs) I broke the guy's legs.
+	AI_Output(self, other, "DIA_Addon_Wache_02_Attentat_13_02"); //(threatening) And I'll do the same to anybody else who wants to attack Esteban...
 };
 
 // --------------------------------------------------------------------
@@ -120,7 +120,7 @@ instance DIA_Addon_Wache_02_perm(C_INFO)
 	condition		= DIA_Addon_Wache_02_perm_Condition;
 	information		= DIA_Addon_Wache_02_perm_Info;
 	permanent		= TRUE;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_Wache_02_perm_Condition()
@@ -133,11 +133,11 @@ func int DIA_Addon_Wache_02_perm_Condition()
 
 func void DIA_Addon_Wache_02_perm_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Wache_02_perm_15_00"); //Wie sieht's aus?
-	AI_Output(self, other, "DIA_Addon_Wache_02_perm_13_01"); //Bisher ist alles ruhig.
+	AI_Output(other, self, "DIA_Addon_Wache_02_perm_15_00"); //How's it going?
+	AI_Output(self, other, "DIA_Addon_Wache_02_perm_13_01"); //Quiet up to now.
 
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output(self, other, "DIA_Addon_Wache_02_perm_13_02"); //Such du mal den Verräter - wir werden uns dann um ihn kümmern ...
+		AI_Output(self, other, "DIA_Addon_Wache_02_perm_13_02"); //You look for the traitor - then we'll take care of him...
 	};
 };

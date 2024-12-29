@@ -2,8 +2,8 @@
 // Wert von Kram
 // ************************************************************************************************
 
-// Items für Objektbenutzung und Item-Interaktion...
-// z.B. Krautstampfer, Hammer, Kochlöffel, Laborflasche, Roheisen (Schmiede)
+// Items fÃ¼r Objektbenutzung und Item-Interaktion...
+// z.B. Krautstampfer, Hammer, KochlÃ¶ffel, Laborflasche, Roheisen (Schmiede)
 
 const int Value_SwordBlade = 10;
 const int Value_SwordBladeHot = 10;
@@ -65,7 +65,7 @@ const int Value_JeweleryChest = 1000;
 const int Value_InnosStatue = 100;
 const int Value_Sextant = 1500;
 
-/*ursprüngliche Werte:
+/*ursprÃ¼ngliche Werte:
 const int Value_SilverRing = 200;
 const int Value_SilverNecklace = 100;
 const int Value_SilverCandleHolder = 30;
@@ -86,13 +86,13 @@ const int Value_Sextant = 30;
 */
 
 /*******************************************************************************************
-** Items für Mobsi - Benutzung **
+** Items fÃ¼r Mobsi - Benutzung **
 *******************************************************************************************/
 // Krautstampfen
 
 instance ItMi_Stomper(C_Item)
 {
-	name						= "Krautstampfer";
+	name						= "Weed Masher";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -115,7 +115,7 @@ instance ItMi_Stomper(C_Item)
 // Runen Bauen
 instance ItMi_RuneBlank(C_Item)
 {
-	name						= "Runenstein";
+	name						= "Rune";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -136,7 +136,7 @@ instance ItMi_RuneBlank(C_Item)
 
 instance ItMi_Pliers(C_Item)
 {
-	name						= "Zange";
+	name						= "Mandible";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -159,7 +159,7 @@ instance ItMi_Pliers(C_Item)
 // Labor Wasserflasche
 instance ItMi_Flask(C_Item)
 {
-	name						= "Laborwasserflasche";
+	name						= "Lab Water Bottle";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -202,10 +202,10 @@ instance ItMi_Hammer(C_Item)
 };
 
 /******************************************************************************************/
-// im Topf rühren
+// im Topf rÃ¼hren
 instance ItMi_Scoop(C_Item)
 {
-	name						= "Kochlöffel";
+	name						= "Spoon";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -225,11 +225,11 @@ instance ItMi_Scoop(C_Item)
 };
 
 /******************************************************************************************/
-//	Pfanne zum Braten (für Lagerfeuer)
+//	Pfanne zum Braten (fÃ¼r Lagerfeuer)
 
 instance ItMi_Pan(C_Item)
 {
-	name						= "Pfanne";
+	name						= "Pan";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -248,11 +248,11 @@ instance ItMi_Pan(C_Item)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-// Pfann für Herd
+// Pfann fÃ¼r Herd
 
 instance ItMi_PanFull(C_Item)
 {
-	name						= "Pfanne";
+	name						= "Pan";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -272,11 +272,11 @@ instance ItMi_PanFull(C_Item)
 };
 
 /******************************************************************************************/
-//	Säge für Baumstamm
+//	SÃ¤ge fÃ¼r Baumstamm
 
 instance ItMi_Saw(C_Item)
 {
-	name						= "Säge";
+	name						= "Saw";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -296,11 +296,11 @@ instance ItMi_Saw(C_Item)
 };
 
 /******************************************************************************************/
-//	Items für Schmiede **
+//	Items fÃ¼r Schmiede **
 
 instance ItMiSwordraw(C_Item)
 {
-	name						= "Rohstahl";
+	name						= "Raw Steel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -322,7 +322,7 @@ instance ItMiSwordraw(C_Item)
 /******************************************************************************************/
 instance ItMiSwordrawhot(C_Item)
 {
-	name						= "Glühender Stahl";
+	name						= "Red Hot Steel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -344,7 +344,7 @@ instance ItMiSwordrawhot(C_Item)
 /******************************************************************************************/
 instance ItMiSwordbladehot(C_Item)
 {
-	name						= "Glühende Klinge";
+	name						= "Red Hot Blade";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -366,7 +366,7 @@ instance ItMiSwordbladehot(C_Item)
 /******************************************************************************************/
 instance ItMiSwordblade(C_Item)
 {
-	name						= "Klinge";
+	name						= "Blade";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -388,14 +388,14 @@ instance ItMiSwordblade(C_Item)
 /******************************************************************************************/
 
 /*******************************************************************************************
-** Items für Item - Interaktionen(ohne Mobsi benutzbar) **
+** Items fÃ¼r Item - Interaktionen(ohne Mobsi benutzbar) **
 *******************************************************************************************/
 
 /******************************************************************************************/
 // Besen zum Fegen
 instance ItMi_Broom(C_Item)
 {
-	name						= "Besen";
+	name						= "Broom";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -432,7 +432,7 @@ func void Use_Broom()
 // zum Rumklimpern
 instance ItMi_Lute(C_Item)
 {
-	name						= "Laute";
+	name						= "Lute";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -459,10 +459,10 @@ func void Use_Lute()
 };
 
 /******************************************************************************************/
-// Für Babe-Putzen
+// FÃ¼r Babe-Putzen
 instance ItMi_Brush(C_Item)
 {
-	name						= "Bürste";
+	name						= "Brush";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -491,7 +491,7 @@ func void Use_Brush()
 /******************************************************************************************/
 instance ItMi_Joint(C_Item)
 {
-	name						= "Ein Stengel Sumpfkraut";
+	name						= "A stalk of swampweed";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -554,11 +554,11 @@ func void Use_Alarmhorn()
 
 */
 //*******************************
-// Päckchen
+// PÃ¤ckchen
 //*******************************
 instance ItMi_Packet(C_Item)
 {
-	name						= "Päckchen";
+	name						= "Packet";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= 0;
@@ -587,7 +587,7 @@ func void UsePacket()
 
 instance ItMi_Pocket(C_Item) // steht drin, weil auch in Welt verteilt!!
 {
-	name						= "Lederbeutel";
+	name						= "Leather Satchel";
 
 	mainflag					= ITEM_KAT_NONE | ITEM_MULTI;
 	flags						= 0;
@@ -603,8 +603,8 @@ instance ItMi_Pocket(C_Item) // steht drin, weil auch in Welt verteilt!!
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein schmaler Beutel,";						count[2] = 0;
-	text[3]						= "wiegt nicht viel";							count[3] = 0;
+	text[2]						= "A narrow bag,";						count[2] = 0;
+	text[3]						= "not very heavy.";							count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -618,11 +618,11 @@ func void UsePocket()
 };
 
 //******************************************************************************************
-//	Wertvolle Gegenstände
+//	Wertvolle GegenstÃ¤nde
 //******************************************************************************************
 instance ItMi_Nugget(C_Item)
 {
-	name						= "Erzbrocken";
+	name						= "Lump of Ore";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -671,7 +671,7 @@ instance ItMi_Gold(C_Item)
 /******************************************************************************************/
 instance ItMi_OldCoin(C_Item)
 {
-	name						= "Alte Münze";
+	name						= "Old Coin";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -694,7 +694,7 @@ instance ItMi_OldCoin(C_Item)
 /******************************************************************************************/
 instance ItMi_GoldCandleHolder(C_Item)
 {
-	name						= "Goldener Kerzenständer";
+	name						= "Gold Candlestick";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -716,7 +716,7 @@ instance ItMi_GoldCandleHolder(C_Item)
 /******************************************************************************************/
 instance ItMi_GoldNecklace(C_Item)
 {
-	name						= "Goldene Halskette";
+	name						= "Gold Necklace";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_AMULET;
@@ -740,7 +740,7 @@ instance ItMi_GoldNecklace(C_Item)
 
 instance ItMi_SilverRing(C_Item)
 {
-	name						= "Silberner Ring";
+	name						= "Silver Ring";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_RING;
@@ -765,7 +765,7 @@ instance ItMi_SilverRing(C_Item)
 /******************************************************************************************/
 instance ItMi_SilverCup(C_Item)
 {
-	name						= "Silberkelch";
+	name						= "Silver Chalice";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -787,7 +787,7 @@ instance ItMi_SilverCup(C_Item)
 /******************************************************************************************/
 instance ItMi_SilverPlate(C_Item)
 {
-	name						= "Silberteller";
+	name						= "Silver Plate";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -809,7 +809,7 @@ instance ItMi_SilverPlate(C_Item)
 /******************************************************************************************/
 instance ItMi_GoldPlate(C_Item)
 {
-	name						= "Goldener Teller";
+	name						= "Gold Plate";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -831,7 +831,7 @@ instance ItMi_GoldPlate(C_Item)
 /******************************************************************************************/
 instance ItMi_GoldCup(C_Item)
 {
-	name						= "Goldener Kelch";
+	name						= "Gold Chalice";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -853,7 +853,7 @@ instance ItMi_GoldCup(C_Item)
 /******************************************************************************************/
 instance ItMi_BloodCup_MIS(C_Item)
 {
-	name						= "Blutkelch";
+	name						= "Blood Chalice";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -863,7 +863,7 @@ instance ItMi_BloodCup_MIS(C_Item)
 
 	value						= Value_BloodCup;
 
-	description					= "Ein Blutkelch";
+	description					= "A Blood Chalice";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -875,7 +875,7 @@ instance ItMi_BloodCup_MIS(C_Item)
 /******************************************************************************************/
 instance ItMi_GoldRing(C_Item)
 {
-	name						= "Goldener Ring";
+	name						= "Gold Ring";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_RING;
@@ -900,7 +900,7 @@ instance ItMi_GoldRing(C_Item)
 /******************************************************************************************/
 instance ItMi_SilverChalice(C_Item)
 {
-	name						= "Silberne Schale";
+	name						= "Silver Dish";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -922,7 +922,7 @@ instance ItMi_SilverChalice(C_Item)
 /******************************************************************************************/
 instance ItMi_JeweleryChest(C_Item)
 {
-	name						= "Juwelen Schatulle";
+	name						= "Jewel Casket";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -944,7 +944,7 @@ instance ItMi_JeweleryChest(C_Item)
 /******************************************************************************************/
 instance ItMi_GoldChalice(C_Item)
 {
-	name						= "Goldene Schale";
+	name						= "Gold Dish";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -966,7 +966,7 @@ instance ItMi_GoldChalice(C_Item)
 /******************************************************************************************/
 instance ItMi_GoldChest(C_Item)
 {
-	name						= "Schatulle";
+	name						= "Casket";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -988,7 +988,7 @@ instance ItMi_GoldChest(C_Item)
 /******************************************************************************************/
 instance ItMi_InnosStatue(C_Item)
 {
-	name						= "Innos Statue";
+	name						= "Statue of Innos";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1032,7 +1032,7 @@ instance ItMi_Sextant(C_Item)
 /******************************************************************************************/
 instance ItMi_SilverCandleHolder(C_Item)
 {
-	name						= "Silberner Kerzenständer";
+	name						= "Silver Candlestick";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1054,7 +1054,7 @@ instance ItMi_SilverCandleHolder(C_Item)
 /******************************************************************************************/
 instance ItMi_SilverNecklace(C_Item)
 {
-	name						= "Silberkette";
+	name						= "Silver Necklace";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_AMULET;
@@ -1078,7 +1078,7 @@ instance ItMi_SilverNecklace(C_Item)
 //*****************************************************************************************
 instance ItMi_Sulfur(C_Item)
 {
-	name						= "Schwefel";
+	name						= "Sulfur";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1100,7 +1100,7 @@ instance ItMi_Sulfur(C_Item)
 
 instance ItMi_Quartz(C_Item)
 {
-	name						= "Gletscher Quartz";
+	name						= "Glacier Quartz";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1122,7 +1122,7 @@ instance ItMi_Quartz(C_Item)
 
 instance ItMi_Pitch(C_Item)
 {
-	name						= "Pech";
+	name						= "Pitch";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1143,7 +1143,7 @@ instance ItMi_Pitch(C_Item)
 
 instance ItMi_Rockcrystal(C_Item)
 {
-	name						= "Bergkristall";
+	name						= "Rock Crystal";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1164,7 +1164,7 @@ instance ItMi_Rockcrystal(C_Item)
 
 instance ItMi_Aquamarine(C_Item)
 {
-	name						= "Aquamarin";
+	name						= "Aquamarine";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1186,7 +1186,7 @@ instance ItMi_Aquamarine(C_Item)
 
 instance ItMi_HolyWater(C_Item)
 {
-	name						= "Geweihtes Wasser";
+	name						= "Holy Water";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1207,7 +1207,7 @@ instance ItMi_HolyWater(C_Item)
 
 instance ItMi_Coal(C_Item)
 {
-	name						= "Kohle";
+	name						= "Coal";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1229,7 +1229,7 @@ instance ItMi_Coal(C_Item)
 
 instance ItMi_DarkPearl(C_Item)
 {
-	name						= "Schwarze Perle";
+	name						= "Black Pearl";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1251,11 +1251,11 @@ instance ItMi_DarkPearl(C_Item)
 
 // -------------------------------------------------------------
 //					Tabak Sorten
-//		 Apfeltabak (Basis für alle anderen)
+//		 Apfeltabak (Basis fÃ¼r alle anderen)
 // -------------------------------------------------------------
 instance ItMi_ApfelTabak(C_Item)
 {
-	name						= "Apfel Tabak";
+	name						= "Apple tobacco";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1268,7 +1268,7 @@ instance ItMi_ApfelTabak(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein Beutel voll Apfeltabak";					count[2] = 0;
+	text[2]						= "A bag of apple tobacco.";					count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -1279,7 +1279,7 @@ instance ItMi_ApfelTabak(C_Item)
 // -------------------------------------------------------------
 instance ItMi_PilzTabak(C_Item)
 {
-	name						= "Pilz Tabak";
+	name						= "Mushroom tobacco";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1292,7 +1292,7 @@ instance ItMi_PilzTabak(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Dunkler Apfel - Pilz Tabak";					count[2] = 0;
+	text[2]						= "Dark apple-mushroom tobacco";					count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -1303,7 +1303,7 @@ instance ItMi_PilzTabak(C_Item)
 // -------------------------------------------------------------
 instance ItMi_DoppelTabak(C_Item)
 {
-	name						= "Doppelter Apfel";
+	name						= "Double Apple";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1316,7 +1316,7 @@ instance ItMi_DoppelTabak(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Schmeckt stark nach Apfel...";				count[2] = 0;
+	text[2]						= "Tastes a lot like apple ...";				count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -1327,7 +1327,7 @@ instance ItMi_DoppelTabak(C_Item)
 // -------------------------------------------------------------
 instance ItMi_Honigtabak(C_Item)
 {
-	name						= "Honig Tabak";
+	name						= "Honey Tobacco";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1340,7 +1340,7 @@ instance ItMi_Honigtabak(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Süßer Apfel Tabak";							count[2] = 0;
+	text[2]						= "Sweet apple tobacco";							count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
@@ -1351,7 +1351,7 @@ instance ItMi_Honigtabak(C_Item)
 // -------------------------------------------------------------
 instance ItMi_SumpfTabak(C_Item)
 {
-	name						= "Krautabak";
+	name						= "Herb tobacco";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI;
@@ -1364,7 +1364,7 @@ instance ItMi_SumpfTabak(C_Item)
 	description					= name;
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Sumpfkraut Mischung";						count[2] = 0;
+	text[2]						= "Swampweed blend";						count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;

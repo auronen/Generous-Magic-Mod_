@@ -66,7 +66,7 @@ instance DIA_Addon_Tom_HI(C_INFO)
 	nr				= 1;
 	condition		= DIA_Addon_Tom_HI_Condition;
 	information		= DIA_Addon_Tom_HI_Info;
-	description		= "Warum sitzt du hier rum?";
+	description		= "Why are you sitting around here?";
 };
 
 func int DIA_Addon_Tom_HI_Condition()
@@ -76,13 +76,13 @@ func int DIA_Addon_Tom_HI_Condition()
 
 func void DIA_Addon_Tom_HI_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Tom_HI_15_00"); //Warum sitzt du hier rum?
-	AI_Output(self, other, "DIA_Addon_Tom_HI_11_01"); //Ich habe Ärger am Hals. Momentan ist es gesünder, wenn ich mich nicht mehr im Lager blicken lasse.
-	AI_Output(other, self, "DIA_Addon_Tom_HI_15_02"); //Was ist los?
-	AI_Output(self, other, "DIA_Addon_Tom_HI_11_03"); //Ich hatte ziemlich gute Beziehungen zu einigen der Piraten, verstehst du?
-	AI_Output(self, other, "DIA_Addon_Tom_HI_11_04"); //Hab' mich mit den Jungs immer vor ihrem Lager getroffen und gehandelt.
-	AI_Output(self, other, "DIA_Addon_Tom_HI_11_05"); //Mann! Ich hab' für das halbe Lager eingekauft. 'Tom bring mir dies - Tom, bring mir das'.
-	AI_Output(self, other, "DIA_Addon_Tom_HI_11_06"); //Und dann haut dieser Mistkerl Esteban dazwischen!
+	AI_Output(other, self, "DIA_Addon_Tom_HI_15_00"); //Why are you sitting around here?
+	AI_Output(self, other, "DIA_Addon_Tom_HI_11_01"); //I've got problems. At the moment, it's better for my health if I'm not seen in the camp.
+	AI_Output(other, self, "DIA_Addon_Tom_HI_15_02"); //What's wrong?
+	AI_Output(self, other, "DIA_Addon_Tom_HI_11_03"); //I had really good relations with some of the pirates, you see?
+	AI_Output(self, other, "DIA_Addon_Tom_HI_11_04"); //I was always meeting the boys outside their camp and trading.
+	AI_Output(self, other, "DIA_Addon_Tom_HI_11_05"); //Man! I bought stuff for half the camp. 'Tom bring me this - Tom bring me that.'
+	AI_Output(self, other, "DIA_Addon_Tom_HI_11_06"); //And then that bastard Esteban got in between.
 };
 
 // ---------------------------------------------------------------------
@@ -94,7 +94,7 @@ instance DIA_Addon_Tom_Juan(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Tom_Juan_Condition;
 	information		= DIA_Addon_Tom_Juan_Info;
-	description		= "Was ist passiert?";
+	description		= "What happened?";
 };
 
 func int DIA_Addon_Tom_Juan_Condition()
@@ -107,10 +107,10 @@ func int DIA_Addon_Tom_Juan_Condition()
 
 func void DIA_Addon_Tom_Juan_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Tom_Juan_15_00"); //Was ist passiert?
-	AI_Output(self, other, "DIA_Addon_Tom_Juan_11_01"); //Esteban hat Juan geschickt - einen von seinen Jungs. Der Mistkerl hat uns aufgelauert.
-	AI_Output(self, other, "DIA_Addon_Tom_Juan_11_02"); //Ich war gerade dabei, mit den Piraten den Deal zu machen, da kam er aus dem Dunkeln und hat sie mit zwei Schlägen niedergemacht!
-	AI_Output(self, other, "DIA_Addon_Tom_Juan_11_03"); //Mann, der Typ ist schnell! Aber nicht schnell genug. Ich konnte ihm entwischen.
+	AI_Output(other, self, "DIA_Addon_Tom_Juan_15_00"); //What happened?
+	AI_Output(self, other, "DIA_Addon_Tom_Juan_11_01"); //Esteban sent Juan - one of his boys. The bastard waylaid us.
+	AI_Output(self, other, "DIA_Addon_Tom_Juan_11_02"); //I was just about to make a deal with the pirates when he came out of the dark and knocked me down with two blows!
+	AI_Output(self, other, "DIA_Addon_Tom_Juan_11_03"); //Man, that guy is fast! But not fast enough. I was able to get away from him.
 	SC_Knows_JuanMurderedAngus = TRUE;
 
 	B_LogEntry(TOPIC_Addon_KillJuan, TOPIC_Addon_KillJuan_2);
@@ -125,7 +125,7 @@ instance DIA_Addon_Tom_Esteban(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Tom_Esteban_Condition;
 	information		= DIA_Addon_Tom_Esteban_Info;
-	description		= "Und seit dem Überfall versteckst du dich hier?";
+	description		= "And since the ambush you've been hiding here?";
 };
 
 func int DIA_Addon_Tom_Esteban_Condition()
@@ -138,11 +138,11 @@ func int DIA_Addon_Tom_Esteban_Condition()
 
 func void DIA_Addon_Tom_Esteban_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Tom_Esteban_15_00"); //Und seit dem Überfall versteckst du dich hier?
-	AI_Output(self, other, "DIA_Addon_Tom_Esteban_11_01"); //Ich bin zuerst zurück ins Lager und hab' Fisk, Huno und den anderen Bescheid gesagt, dass sie ihre Lieferung vergessen können.
-	AI_Output(self, other, "DIA_Addon_Tom_Esteban_11_02"); //Und dass Esteban hinter der Sache steckt.
-	AI_Output(self, other, "DIA_Addon_Tom_Esteban_11_03"); //Wenn Esteban rausfindet, dass ich den anderen gesagt habe, dass ER für die Sache verantwortlich ist, bin ich tot.
-	AI_Output(self, other, "DIA_Addon_Tom_Esteban_11_04"); //Deswegen geh ich nicht zurück in's Lager.
+	AI_Output(other, self, "DIA_Addon_Tom_Esteban_15_00"); //And since the ambush you've been hiding here?
+	AI_Output(self, other, "DIA_Addon_Tom_Esteban_11_01"); //First I went back to the camp and let Fisk, Huno and the others know that they could forget their delivery.
+	AI_Output(self, other, "DIA_Addon_Tom_Esteban_11_02"); //And that Esteban was behind it.
+	AI_Output(self, other, "DIA_Addon_Tom_Esteban_11_03"); //If Esteban finds out that I told the others that HE was responsible, I'm dead.
+	AI_Output(self, other, "DIA_Addon_Tom_Esteban_11_04"); //That's why I can't go back to the camp.
 
 	Tom_tells = TRUE;
 };
@@ -156,7 +156,7 @@ instance DIA_Addon_Tom_Dead(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Tom_Dead_Condition;
 	information		= DIA_Addon_Tom_Dead_Info;
-	description		= "Esteban ist tot.";
+	description		= "Esteban is dead.";
 };
 
 func int DIA_Addon_Tom_Dead_Condition()
@@ -170,11 +170,11 @@ func int DIA_Addon_Tom_Dead_Condition()
 
 func void DIA_Addon_Tom_Dead_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Tom_Dead_15_00"); //Esteban ist tot.
-	AI_Output(self, other, "DIA_Addon_Tom_Dead_11_01"); //Echt? Mann, DAS nenn ich Glück!
-	AI_Output(self, other, "DIA_Addon_Tom_Dead_11_02"); //Wer hat das getan?
-	AI_Output(other, self, "DIA_Addon_Tom_Dead_15_03"); //(verschmitzt) Sagen wir einfach, jemand, den du kennst ...
-	AI_Output(self, other, "DIA_Addon_Tom_Dead_11_04"); //Danke, dass du zu mir gekommen bist. Jetzt kann ich wieder in's Lager ...
+	AI_Output(other, self, "DIA_Addon_Tom_Dead_15_00"); //Esteban is dead.
+	AI_Output(self, other, "DIA_Addon_Tom_Dead_11_01"); //Really? Man, THAT'S lucky!
+	AI_Output(self, other, "DIA_Addon_Tom_Dead_11_02"); //Who did it?
+	AI_Output(other, self, "DIA_Addon_Tom_Dead_15_03"); //(mischieviously) Let's just say, someone you know...
+	AI_Output(self, other, "DIA_Addon_Tom_Dead_11_04"); //Thanks for coming to me. Now I can go back to the camp...
 
 	B_GivePlayerXP(XP_Ambient);
 	AI_StopProcessInfos(self);
@@ -191,7 +191,7 @@ instance DIA_Addon_Tom_PERM(C_INFO)
 	condition		= DIA_Addon_Tom_PERM_Condition;
 	information		= DIA_Addon_Tom_PERM_Info;
 	permanent		= TRUE;
-	description		= "Und sonst?";
+	description		= "What else?";
 };
 
 func int DIA_Addon_Tom_PERM_Condition()
@@ -204,21 +204,21 @@ func int DIA_Addon_Tom_PERM_Condition()
 
 func void DIA_Addon_Tom_PERM_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Tom_PERM_15_00"); //Und sonst?
+	AI_Output(other, self, "DIA_Addon_Tom_PERM_15_00"); //What else?
 
 	if (Npc_GetDistToWP(self, "BL_INN_05_B") <= 500)
 	{
-		AI_Output(self, other, "DIA_Addon_Tom_PERM_11_01"); //Jetzt kann ich wieder ganz in Ruhe Lucias Schnaps trinken.
+		AI_Output(self, other, "DIA_Addon_Tom_PERM_11_01"); //Now I can down Lucia's booze in peace again.
 	}
 	else
 	{
 		if (Npc_KnowsInfo(other, DIA_Addon_Tom_Dead))
 		{
-			AI_Output(self, other, "DIA_Addon_Tom_PERM_11_02"); //Jetzt kann ich mich endlich wieder im Lager blicken lassen!
+			AI_Output(self, other, "DIA_Addon_Tom_PERM_11_02"); //Now I can finally show my face in the camp again!
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Addon_Tom_PERM_11_03"); //Sonst? Sonst sitz ich hier rum und zähle Steine ...
+			AI_Output(self, other, "DIA_Addon_Tom_PERM_11_03"); //Else? Else I'll sit here counting rocks...
 		};
 	};
 };

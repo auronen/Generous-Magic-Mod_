@@ -1,7 +1,7 @@
 instance VLK_402_Richter(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Richter";
+	name							= "Judge";
 	npctype							= NpcType_Main;
 	guild							= GIL_VLK;
 	flags							= NPC_FLAG_IMMORTAL;

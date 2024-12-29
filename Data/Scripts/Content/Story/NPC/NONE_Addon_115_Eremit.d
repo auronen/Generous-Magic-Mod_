@@ -1,7 +1,7 @@
 instance NONE_ADDON_115_Eremit(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Eremit";
+	name							= "Hermit";
 	npctype							= NpcType_Main;
 	guild							= GIL_NONE;
 	flags							= 0;

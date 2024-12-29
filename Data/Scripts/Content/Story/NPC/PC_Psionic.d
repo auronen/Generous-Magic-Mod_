@@ -56,11 +56,11 @@ func void Rtn_Xardas_4()
 
 func void Rtn_XardasWeg_4()
 {
-	TA_Stand_Guarding(08, 00, 23, 00, "NW_XARDAS_TOWER_02"); // Joly:nicht mehr verrücken
+	TA_Stand_Guarding(08, 00, 23, 00, "NW_XARDAS_TOWER_02"); // Joly:nicht mehr verrÃ¼cken
 	TA_Stand_Guarding(23, 00, 08, 00, "NW_XARDAS_TOWER_02");
 };
 
-func void Rtn_WaitForPlayer_4() // Übergang KAPITEL 2-3 schickt den Spieler zu Xardas
+func void Rtn_WaitForPlayer_4() // Ãœbergang KAPITEL 2-3 schickt den Spieler zu Xardas
 {
 	TA_Stand_ArmsCrossed(08, 00, 23, 00, "LEVELCHANGE");
 	TA_Stand_ArmsCrossed(23, 00, 08, 00, "LEVELCHANGE");
@@ -74,7 +74,7 @@ func void Rtn_WaitForShip_4()
 
 func void Rtn_ShipOff_4()
 {
-	TA_Stand_Guarding(08, 00, 23, 00, "NW_XARDAS_TOWER_02"); // Joly:nicht mehr verrücken
+	TA_Stand_Guarding(08, 00, 23, 00, "NW_XARDAS_TOWER_02"); // Joly:nicht mehr verrÃ¼cken
 	TA_Stand_Guarding(23, 00, 08, 00, "NW_XARDAS_TOWER_02");
 };
 

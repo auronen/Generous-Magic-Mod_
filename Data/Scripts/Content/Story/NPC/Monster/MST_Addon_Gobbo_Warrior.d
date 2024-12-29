@@ -5,7 +5,7 @@
 prototype Mst_Default_Gobbo_Warrior(C_NPC)
 {
 	// -------- NPC --------
-	name							= "Goblin - Krieger";
+	name							= "Goblin - warrior";
 	guild							= GIL_GOBBO;
 	level							= 15;
 
@@ -95,7 +95,7 @@ instance Gobbo_Warrior(Mst_Default_Gobbo_Warrior)
 	B_SetVisuals_Gobbo_Warrior();
 	Mdl_SetModelScale(self, 1.15, 1.15, 1.15);
 
-	Npc_SetToFightMode(self, ItMw_1h_Misc_Sword); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1h_Misc_Sword); // Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 
@@ -120,7 +120,7 @@ instance Gobbo_Warrior_Visir(Mst_Default_Gobbo_Warrior)
 	B_SetVisuals_Gobbo_Warrior_Visir();
 	Mdl_SetModelScale(self, 1.15, 1.15, 1.15);
 
-	Npc_SetToFightMode(self, ItMw_1h_Misc_Axe); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1h_Misc_Axe); // Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 

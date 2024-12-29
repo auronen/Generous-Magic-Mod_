@@ -5,7 +5,7 @@
 prototype Mst_Default_OrcElite(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Ork Elite";
+	name							= "Orc Elite";
 	guild							= GIL_ORC;
 	level							= 45;
 
@@ -134,12 +134,12 @@ instance OrcElite_Rest(Mst_Default_OrcElite)
 //		Story Orks
 //*********************************************************************************************************************************************************************************************************************************
 //*************************
-//	OrkElite_AntiPaladinOrkOberst (Wenn SC GIL_PAL ist, dann hat er es mit diesen übelriechenden Schergen zu tun!)
+//	OrkElite_AntiPaladinOrkOberst (Wenn SC GIL_PAL ist, dann hat er es mit diesen Ã¼belriechenden Schergen zu tun!)
 //*************************
 instance OrkElite_AntiPaladinOrkOberst(Mst_Default_OrcElite)
 {
 	// -------- NPC --------
-	name							= "Orkischer Oberst";
+	name							= "Orc Colonel";
 
 	// -------- attributes --------
 	attribute[ATR_STRENGTH]			= 140;
@@ -170,7 +170,7 @@ instance OrkElite_AntiPaladinOrkOberst(Mst_Default_OrcElite)
 };
 
 //*************************
-//	Orc Elite AntiPaladin (Wenn SC GIL_PAL ist, dann hat er es mit diesen übelriechenden Schergen zu tun!)
+//	Orc Elite AntiPaladin (Wenn SC GIL_PAL ist, dann hat er es mit diesen Ã¼belriechenden Schergen zu tun!)
 //*************************
 instance OrcElite_AntiPaladin(Mst_Default_OrcElite)
 {
@@ -200,7 +200,7 @@ instance OrcElite_AntiPaladin(Mst_Default_OrcElite)
 };
 
 //*************************
-//	Orc Elite AntiPaladin1 (Wenn SC GIL_PAL ist, dann hat er es mit diesen übelriechenden Schergen zu tun!)
+//	Orc Elite AntiPaladin1 (Wenn SC GIL_PAL ist, dann hat er es mit diesen Ã¼belriechenden Schergen zu tun!)
 //*************************
 instance OrcElite_AntiPaladin1(Mst_Default_OrcElite)
 {
@@ -310,7 +310,7 @@ instance OrcElite_AntiPaladin3(Mst_Default_OrcElite)
 instance OrkElite_AntiPaladinOrkOberst_DI(Mst_Default_OrcElite)
 {
 	// -------- NPC --------
-	name							= "Orkischer Oberst";
+	name							= "Orc Colonel";
 
 	// -------- attributes --------
 	attribute[ATR_STRENGTH]			= 150;

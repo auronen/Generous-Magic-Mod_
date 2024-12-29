@@ -4,7 +4,7 @@ instance NOV_600_Pedro(Npc_Default)
 	name							= "Pedro";
 	npctype							= NpcType_Main;
 	guild							= GIL_NOV;
-	flags							= NPC_FLAG_IMMORTAL; // Joly: HAUPTSTORY: NOV_600_Pedro ist erst noch immortel -> Pedro klaut das Auge Innos im Kapitel 3, ist sp‰ter Knacki auf der Dracheninsel
+	flags							= NPC_FLAG_IMMORTAL; // Joly: HAUPTSTORY: NOV_600_Pedro ist erst noch immortel -> Pedro klaut das Auge Innos im Kapitel 3, ist sp√§ter Knacki auf der Dracheninsel
 
 	voice							= 9;
 	id								= 600;

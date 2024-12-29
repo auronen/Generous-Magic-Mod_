@@ -43,7 +43,7 @@ instance ItAm_Prot_Fire_01(C_Item)
 
 	value						= Value_Am_ProtFire;
 
-	description					= "Amulett der Flammen";
+	description					= "Amulet of Fire";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Fire;								count[2] = Am_ProtFire;
@@ -83,7 +83,7 @@ instance ItAm_Prot_Edge_01(C_Item) // Waffen Schutz Amulett
 
 	value						= Value_Am_ProtEdge;
 
-	description					= "Harnischamulett";
+	description					= "Harness Amulet";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Edge;								count[2] = Am_ProtEdge;
@@ -125,7 +125,7 @@ instance ItAm_Prot_Point_01(C_ITEM) // Geschoss Schutz Amulett
 
 	value						= Value_Am_ProtPoint;
 
-	description					= "Amulett der Eichenhaut";
+	description					= "Amulet of Oak Skin";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Point;								count[2] = Am_ProtPoint;
@@ -146,7 +146,7 @@ func void UnEquip_ItAm_Prot_Point_01()
 };
 
 /******************************************************************************************/
-instance ItAm_Prot_Mage_01(C_ITEM) // Magie Schutz Amulett von Serpentes an KDF für alle Minenanteile (Mission -> MIS_Serpentes_MinenAnteil_KDF == LOG_SUCCESS)
+instance ItAm_Prot_Mage_01(C_ITEM) // Magie Schutz Amulett von Serpentes an KDF fÃ¼r alle Minenanteile (Mission -> MIS_Serpentes_MinenAnteil_KDF == LOG_SUCCESS)
 {
 	name						= NAME_Amulett;
 
@@ -165,7 +165,7 @@ instance ItAm_Prot_Mage_01(C_ITEM) // Magie Schutz Amulett von Serpentes an KDF 
 
 	value						= Value_Am_ProtMage;
 
-	description					= "Amulett der Geisteskraft";
+	description					= "Amulet of Spiritual Power";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Prot_Magic;								count[2] = Am_ProtMage;
@@ -187,7 +187,7 @@ func void UnEquip_ItAm_Prot_Mage_01()
 
 /******************************************************************************************/
 
-instance ItAm_Prot_Total_01(C_ITEM) // ItAm_AmulettOfDeath_Mis (alle + 30) MAGIER_EXKLUSIV_AMULETT für den Endkampf des KDFs (Kapitel 5)
+instance ItAm_Prot_Total_01(C_ITEM) // ItAm_AmulettOfDeath_Mis (alle + 30) MAGIER_EXKLUSIV_AMULETT fÃ¼r den Endkampf des KDFs (Kapitel 5)
 {
 	name						= NAME_Amulett;
 
@@ -206,7 +206,7 @@ instance ItAm_Prot_Total_01(C_ITEM) // ItAm_AmulettOfDeath_Mis (alle + 30) MAGIE
 
 	value						= Value_Am_ProtTotal;
 
-	description					= "Amulett der Erzhaut";
+	description					= "Amulet of Ore Skin";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= NAME_Prot_Fire;								count[1] = AM_TProtFire;
 	text[2]						= NAME_Prot_Magic;								count[2] = AM_TProtMage;
@@ -235,7 +235,7 @@ func void UnEquip_Value_Am_ProtTotal()
 };
 
 /******************************************************************************************/
-instance ItAm_Dex_01(C_Item) // Joly: von Dar an KDF und DJG vergeben ab Kapitel 4 \ Xardas_Secret-area für PAL (Kapitel 3)
+instance ItAm_Dex_01(C_Item) // Joly: von Dar an KDF und DJG vergeben ab Kapitel 4 \ Xardas_Secret-area fÃ¼r PAL (Kapitel 3)
 {
 	name						= NAME_Amulett;
 
@@ -254,7 +254,7 @@ instance ItAm_Dex_01(C_Item) // Joly: von Dar an KDF und DJG vergeben ab Kapitel
 
 	value						= Value_Am_Dex;
 
-	description					= "Amulett der Wendigkeit";
+	description					= "Amulet of Agility";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Dex;								count[2] = Am_Dex;
@@ -295,7 +295,7 @@ instance ItAm_Strg_01(C_Item) // in LOCkpick Truhe Fingers
 
 	value						= Value_Am_Strg;
 
-	description					= "Amulett der Kraft";
+	description					= "Amulet of Strength";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Str;								count[2] = Am_Strg;
@@ -317,7 +317,7 @@ func void UnEquip_ItAm_Strg_01()
 
 /******************************************************************************************/
 
-instance ItAm_Hp_01(C_Item) // von Bennet dem Schmied an den PAL und dem KDF (Kapitel 3)\Xardas_Secret-area für DJG (Kapitel 3)
+instance ItAm_Hp_01(C_Item) // von Bennet dem Schmied an den PAL und dem KDF (Kapitel 3)\Xardas_Secret-area fÃ¼r DJG (Kapitel 3)
 {
 	name						= NAME_Amulett;
 
@@ -336,7 +336,7 @@ instance ItAm_Hp_01(C_Item) // von Bennet dem Schmied an den PAL und dem KDF (Ka
 
 	value						= Value_Am_Hp;
 
-	description					= "Amulett der Lebenskraft";
+	description					= "Amulet of Life";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_HP;								count[2] = Am_Hp;
@@ -385,7 +385,7 @@ instance ItAm_Mana_01(C_Item) // in der OW von Angar an alle SC Gilden! (Kapitel
 
 	value						= Value_Am_Mana;
 
-	description					= "Amulett der Magie";
+	description					= "Amulet of Magic";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Mana;								count[2] = Am_Mana;
@@ -415,9 +415,9 @@ func void UnEquip_ItAm_Mana_01()
 };
 
 /******************************************************************************************/
-instance ItAm_Dex_Strg_01(C_Item) // wird dem PAL von Ulthar überreicht für die Reinigung der Schreine Kapitel 3\
+instance ItAm_Dex_Strg_01(C_Item) // wird dem PAL von Ulthar Ã¼berreicht fÃ¼r die Reinigung der Schreine Kapitel 3\
 {
-	name						= "Amulett der Macht";
+	name						= "Amulet of Power";
 
 	mainflag					= ITEM_KAT_MAGIC;
 	flags						= ITEM_AMULET;
@@ -457,9 +457,9 @@ func void UnEquip_ItAm_Dex_Strg_01()
 };
 
 /******************************************************************************************/
-instance ItAm_Hp_Mana_01(C_Item) // Xardas_Secret-area für KDF (Kapitel 3)
+instance ItAm_Hp_Mana_01(C_Item) // Xardas_Secret-area fÃ¼r KDF (Kapitel 3)
 {
-	name						= "Amulett der Erleuchtung";
+	name						= "Amulet of Enlightenment";
 
 	mainflag					= ITEM_KAT_MAGIC;
 	flags						= ITEM_AMULET;

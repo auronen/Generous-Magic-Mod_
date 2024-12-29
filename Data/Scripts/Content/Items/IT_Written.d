@@ -4,7 +4,7 @@
 
 instance StandardBrief(C_Item)
 {
-	name						= "Brief";
+	name						= "Letter";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -17,7 +17,7 @@ instance StandardBrief(C_Item)
 
 	value						= 0;
 
-	description					= "StandardBrief";
+	description					= "StandardLetter";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -26,7 +26,7 @@ instance StandardBrief(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string StandardBrief_1 = "StandardBrief";
+const string StandardBrief_1 = "StandardLetter";
 const string StandardBrief_2 = "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla";
 func void UseStandardBrief()
 {
@@ -51,7 +51,7 @@ func void UseStandardBrief()
 
 instance StandardBuch(C_ITEM)
 {
-	name						= "StandardBuch";
+	name						= "StandardBook";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= 0;
@@ -73,10 +73,10 @@ instance StandardBuch(C_ITEM)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string StandardBuch_1 = "StandardBuch Seite 1";
+const string StandardBuch_1 = "StandardBook Page 1";
 const string StandardBuch_2 = "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla";
 const string StandardBuch_3 = "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bBla blaBla blaBla blaBlaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla";
-const string StandardBuch_4 = "StandardBuch Seite 2";
+const string StandardBuch_4 = "StandardBook Page 2";
 func void UseStandardBuch()
 {
 	var int nDocID;
@@ -101,7 +101,7 @@ func void UseStandardBuch()
 				Doc_PrintLines	(nDocID, 0, StandardBuch_3);
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_PrintLines	(nDocID, 1, StandardBuch_4);
@@ -122,7 +122,7 @@ func void UseStandardBuch()
 
 instance ItWr_Map_NewWorld(C_Item)
 {
-	name						= "Landkarte Khorinis"; //
+	name						= "Land Map of Khorinis"; //
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -162,7 +162,7 @@ func void Use_Map_NewWorld()
 
 instance ItWr_Map_NewWorld_City(C_Item)
 {
-	name						= "Stadtkarte Khorinis"; //
+	name						= "City Map of Khorinis"; //
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -202,7 +202,7 @@ func void Use_Map_NewWorld_City()
 
 instance ItWr_Map_OldWorld(C_Item)
 {
-	name						= "Landkarte Minental";
+	name						= "Map of the Valley of Mines";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -247,7 +247,7 @@ var int Lerne_Zweihand;
 // ---------------------------------------------------------------------------------------------------------------------------
 instance ItWr_EinhandBuch(C_ITEM)
 {
-	name						= "Kampfkunst";
+	name						= "Art of Fighting";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= 0;
@@ -260,18 +260,18 @@ instance ItWr_EinhandBuch(C_ITEM)
 
 	value						= 5000;
 
-	description					= "Die südländische Verteidigung";
+	description					= "Southern Defense Art";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein Lehrbuch zum Kampf";						count[2] = 0;
-	text[3]						= "mit Einhandwaffen";							count[3] = 0;
+	text[2]						= "A book on the art of";						count[2] = 0;
+	text[3]						= "one-handed fighting.";							count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string EinhandBuch_1 = "Die südländische Verteidigung";
-const string EinhandBuch_2 = "Der Südländer kämpft nun mehr weniger mit der Kraft des Nordmannes, als mit seiner Behendigkeit. Denn im heißen Klima seiner Heimat, bevorzugt er leichte Rüstungen welche ihm mehr Beweglichkeit erlauben. Durch diesen Umstand hat der Südländer einen ihm angepassten Kampstil entwickelt, der sich auf fundamentale Weise von den uns bekannten unterscheidet. ";
-const string EinhandBuch_3 = "Das wohl bekannnteste Manöver des Südländers ist wohl der einarmige Block mit rückwärtigen Ausfallschritt. Durch den Ausfallschritt gelingt es ihm, die Kraft des gegnerischen Angriffes zu mildern und so eine hervorragende Ausgangsposition zu erlangen, die zum direkten Gegenangriff genutzt werden kann.";
+const string EinhandBuch_1 = "Southern Defense Art";
+const string EinhandBuch_2 = "A southerner uses less physical strength than a northerner, instead relying on agility. In the hot climate of his home he prefers light armor which permits him to move more freely. The southerner has therefore developed a style of fighting that is fundamentally different from what we are used to. ";
+const string EinhandBuch_3 = "Probably the most famous maneuver a southerner uses is the one-armed block and backstep. The backstep enables the fighter to weaken the blow from his assailant's attack, at the same time taking up a superb stance from which to counterattack.";
 func void UseEinhandBuch()
 {
 	if (Lerne_Einhand == FALSE)
@@ -298,7 +298,7 @@ func void UseEinhandBuch()
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLines	(nDocID, 0, EinhandBuch_2);
 
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
@@ -314,7 +314,7 @@ func void UseEinhandBuch()
 // ---------------------------------------------------------------------------------------------------------------------------
 instance ItWr_ZweihandBuch(C_ITEM)
 {
-	name						= "Kampftaktik ";
+	name						= "Fighting Tactics";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= 0;
@@ -327,18 +327,18 @@ instance ItWr_ZweihandBuch(C_ITEM)
 
 	value						= 5000;
 
-	description					= "Der Doppelblock";
+	description					= "Double Blocks";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Ein Lehrbuch zum Kampf";						count[2] = 0;
-	text[3]						= "mit Zweihandwaffen";							count[3] = 0;
+	text[2]						= "A book on the art of";						count[2] = 0;
+	text[3]						= "two-handed fighting.";							count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string ZweihandBuch_1 = "Der Doppelblock";
-const string ZweihandBuch_2 = "Das Abblocken der gegnerischen Klinge, mit einer beidhändig geführten Waffe, kann bei ausreichender Kraft dazu genutzt werden, sämtlichen Schwung des Angriffes aufzuhalten und den Gegner zu zwingen seien begonnene Kombination abrupt zu beenden. ";
-const string ZweihandBuch_3 = "Die daraufhin meist folgende Stagnation des Gegners sollte entschlossen genutzt werden, um selbst die Initiative zu ergreifen und den Gegner mit gekonnten Schlägen in die Niederlage zu treiben.    ";
+const string ZweihandBuch_1 = "Double Blocks";
+const string ZweihandBuch_2 = "Blocking the enemy's blade with a two-handed weapon is a method used by strong fighters to stop the impetus of attacks and force their assailants to abruptly end their assault combinations. ";
+const string ZweihandBuch_3 = "The usually resulting halt of the opponent's movement is an opportunity to take the initiative and defeat the enemy with skilled strokes. ";
 func void UseZweihandBuch()
 {
 	if (Lerne_Zweihand == FALSE)
@@ -366,7 +366,7 @@ func void UseZweihandBuch()
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLines	(nDocID, 0, ZweihandBuch_2);
 
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_PrintLines	(nDocID, 1, "");

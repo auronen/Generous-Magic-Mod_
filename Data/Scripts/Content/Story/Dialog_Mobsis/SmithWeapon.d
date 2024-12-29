@@ -33,9 +33,9 @@ func void PC_SmithWeapon_End_Info()
 //*******************************************************
 
 // *****************
-// Amboﬂ-Dialoge
+// Ambo√ü-Dialoge
 // -------------
-// h‰ngen am Spieler
+// h√§ngen am Spieler
 // *****************
 
 //*******************************************************
@@ -46,7 +46,7 @@ instance PC_Common(C_INFO)
 	condition		= PC_Common_Condition;
 	information		= PC_Common_Info;
 	permanent		= TRUE;
-	description		= "Gewˆhnliche Waffen schmieden";
+	description		= "Forge regular weapons";
 };
 
 func int PC_Common_Condition()
@@ -72,7 +72,7 @@ instance PC_Ore(C_INFO)
 	condition		= PC_Ore_Condition;
 	information		= PC_Ore_Info;
 	permanent		= TRUE;
-	description		= "Erzwaffen schmieden";
+	description		= "Forge ore weapons";
 };
 
 func int PC_Ore_Condition()
@@ -608,8 +608,8 @@ func void PC_ItMw_2H_Special_04_Info()
 // ****************************************************
 // SMITHWEAPON_S1
 // --------------
-// Funktion wird durch Amboﬂ-Mobsi-Benutzung aufgerufen!
-// benˆtigtes Item daf¸r: ItMiSwordrawhot
+// Funktion wird durch Ambo√ü-Mobsi-Benutzung aufgerufen!
+// ben√∂tigtes Item daf√ºr: ItMiSwordrawhot
 // *****************************************************
 
 func void SMITHWEAPON_S1()

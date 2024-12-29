@@ -73,35 +73,35 @@ func void DIA_AmbientDementor_Info()
 	|| (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino3))
 	|| (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino4)))
 	{
-		AI_Output(self, other, "DIA_VinoDementor_19_00"); //Bist du gekommen unser Ritual zu stören? Seine Seele gehört uns. Du kannst ihn nicht mehr retten, Magier.
+		AI_Output(self, other, "DIA_VinoDementor_19_00"); //Have you come to disrupt our ritual? His soul belongs to us. You cannot save him now, magician.
 	}
 	else if (CurrentLevel == DRAGONISLAND_ZEN)
 	{
 		if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DragonIsle_Keymaster))
 		{
-			AI_Output(self, other, "DIA_AmbientDementor_19_01"); //(lacht) Du bist gekommen, um mich und mein Werk herauszufordern? Du wirst versagen.
-			AI_Output(self, other, "DIA_AmbientDementor_19_02"); //Es ist noch niemandem gelungen, meine Krypta zu überwinden. Kehr um, denn auch du wirst die heiligen Hallen von Irdorath niemals erreichen.
+			AI_Output(self, other, "DIA_AmbientDementor_19_01"); //(laughs) You came in order to challenge me and my work? You are doomed to fail.
+			AI_Output(self, other, "DIA_AmbientDementor_19_02"); //No one has ever succeeded in getting past my crypt. Turn back, for you too shall never reach the sacred Halls of Irdorath.
 		}
 		else
 		{
 			if (randy == 0)
 			{
-				AI_Output(self, other, "DIA_AmbientDementor_19_03"); //Du bist schon viel zu weit gekommen, du Wurm. In unser innerstes Heiligtum wird du nicht gelangen.
+				AI_Output(self, other, "DIA_AmbientDementor_19_03"); //You have already come much too far, lowly worm. You shall never reach our inner sanctuary.
 			};
 
 			if (randy == 1)
 			{
-				AI_Output(self, other, "DIA_AmbientDementor_19_04"); //Bleib stehen. Keinen Schritt weiter.
+				AI_Output(self, other, "DIA_AmbientDementor_19_04"); //Stay where you are. Not another step!
 			};
 
 			if (randy == 2)
 			{
-				AI_Output(self, other, "DIA_AmbientDementor_19_05"); //Bis hierher hast du es geschafft, doch an mir kommst du nicht vorbei.
+				AI_Output(self, other, "DIA_AmbientDementor_19_05"); //You have come this far, but you cannot get past me.
 			};
 
 			if (randy == 3)
 			{
-				AI_Output(self, other, "DIA_AmbientDementor_19_06"); //Du bist gekommen, den Meister herauszufordern, aber dazu musst du erst an mir vorbei.
+				AI_Output(self, other, "DIA_AmbientDementor_19_06"); //You came to challenge the Master, but you must get past me first.
 			};
 		};
 	}
@@ -109,44 +109,44 @@ func void DIA_AmbientDementor_Info()
 	{
 		if (randy == 0)
 		{
-			AI_Output(self, other, "DIA_AmbientDementor_19_07"); //Du kleiner schwacher Magier wirst es nicht mit der Macht des Meisters aufnehmen können.
+			AI_Output(self, other, "DIA_AmbientDementor_19_07"); //Weak little mageling, you will never be able to match the power of the Master.
 		};
 
 		if (randy == 1)
 		{
-			AI_Output(self, other, "DIA_AmbientDementor_19_08"); //Du hast den Weg der Magie gewählt, um uns zu bezwingen. Ein cleverer Schachzug. Aber auch das wird dir nichts nützen.
+			AI_Output(self, other, "DIA_AmbientDementor_19_08"); //You chose the path of magic to conquer us. A clever move. But even that will do you no good.
 		};
 
 		if (randy == 2)
 		{
-			AI_Output(self, other, "DIA_AmbientDementor_19_09"); //Auch als Magier wirst du uns nicht aufhalten können.
+			AI_Output(self, other, "DIA_AmbientDementor_19_09"); //Even as a magician you cannot stop us.
 		};
 
 		if (randy == 3)
 		{
-			AI_Output(self, other, "DIA_AmbientDementor_19_10"); //Mein Meister wird dich vernichten. Deine lächerlichen magischen Kunststückchen werden dich nicht retten.
+			AI_Output(self, other, "DIA_AmbientDementor_19_10"); //My Master shall destroy you. Your pathetic parlor magic cannot save you.
 		};
 	}
 	else
 	{
 		if (randy == 0)
 		{
-			AI_Output(self, other, "DIA_AmbientDementor_19_11"); //Gib auf, solange du noch kannst. Es gibt kein Entkommen für dich.
+			AI_Output(self, other, "DIA_AmbientDementor_19_11"); //Surrender while you still can. There is no escape for you.
 		};
 
 		if (randy == 1)
 		{
-			AI_Output(self, other, "DIA_AmbientDementor_19_12"); //Nun wirst du die Macht unseres Meisters spüren. Du kannst ihr nicht entrinnen.
+			AI_Output(self, other, "DIA_AmbientDementor_19_12"); //Now you shall feel the power of the Master. You cannot elude it.
 		};
 
 		if (randy == 2)
 		{
-			AI_Output(self, other, "DIA_AmbientDementor_19_13"); //Der Meister will deinen Kopf. Niemand wird dich jetzt noch retten können.
+			AI_Output(self, other, "DIA_AmbientDementor_19_13"); //The Master wants your head. No one can save you now.
 		};
 
 		if (randy == 3)
 		{
-			AI_Output(self, other, "DIA_AmbientDementor_19_14"); //Du bist uns in die Falle gegangen und jetzt werden wir dich vernichten.
+			AI_Output(self, other, "DIA_AmbientDementor_19_14"); //We have caught you in our trap, and now we shall destroy you.
 		};
 	};
 };

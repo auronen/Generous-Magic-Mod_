@@ -1,7 +1,7 @@
 instance VLK_4201_Wirt(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Wirt";
+	name							= "Landlord";
 	npctype							= NpcType_Main;
 	guild							= GIL_VLK;
 	flags							= 0;

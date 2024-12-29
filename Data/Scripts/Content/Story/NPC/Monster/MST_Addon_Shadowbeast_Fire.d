@@ -6,7 +6,7 @@
 prototype Mst_Default_Shadowbeast_Addon_Fire(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Feuerteufel";
+	name							= "Fire Devil";
 	guild							= GIL_Gargoyle;
 	level							= 30;
 

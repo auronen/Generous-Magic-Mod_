@@ -1,7 +1,7 @@
 instance VLK_411_Gaertner(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Gärtner";
+	name							= "Gardener";
 	npctype							= NpcType_Main;
 	guild							= GIL_VLK;
 	flags							= 0;

@@ -33,7 +33,7 @@ instance DIA_Bengar_HALLO(C_INFO)
 	nr				= 3;
 	condition		= DIA_Bengar_HALLO_Condition;
 	information		= DIA_Bengar_HALLO_Info;
-	description		= "Du bist der Bauer hier?";
+	description		= "You're the farmer here?";
 };
 
 func int DIA_Bengar_HALLO_Condition()
@@ -46,9 +46,9 @@ func int DIA_Bengar_HALLO_Condition()
 
 func void DIA_Bengar_HALLO_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_HALLO_15_00"); //Du bist der Bauer hier?
-	AI_Output(self, other, "DIA_Bengar_HALLO_10_01"); //Könnte man so sagen, doch eigentlich bin ich nur der Pächter.
-	AI_Output(self, other, "DIA_Bengar_HALLO_10_02"); //Dem Großbauern gehört das ganze Land hier.
+	AI_Output(other, self, "DIA_Bengar_HALLO_15_00"); //You're the farmer here?
+	AI_Output(self, other, "DIA_Bengar_HALLO_10_01"); //You could say so, but I'm really just a tenant.
+	AI_Output(self, other, "DIA_Bengar_HALLO_10_02"); //All the land here is owned by one big farmer.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -60,7 +60,7 @@ instance DIA_Bengar_WOVONLEBTIHR(C_INFO)
 	nr				= 5;
 	condition		= DIA_Bengar_WOVONLEBTIHR_Condition;
 	information		= DIA_Bengar_WOVONLEBTIHR_Info;
-	description		= "Wovon lebt ihr?";
+	description		= "How do you make a living?";
 };
 
 func int DIA_Bengar_WOVONLEBTIHR_Condition()
@@ -74,9 +74,9 @@ func int DIA_Bengar_WOVONLEBTIHR_Condition()
 
 func void DIA_Bengar_WOVONLEBTIHR_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_WOVONLEBTIHR_15_00"); //Wovon lebt ihr?
-	AI_Output(self, other, "DIA_Bengar_WOVONLEBTIHR_10_01"); //Hauptsächlich von der Jagd und vom Holz, das wir fällen. Natürlich züchten wir auch Schafe und betreiben Ackerbau.
-	AI_Output(self, other, "DIA_Bengar_WOVONLEBTIHR_10_02"); //Ich muss ja auch die ganzen Tagelöhner, die Onar mir aufhalst, beschäftigen. Die wenigsten sind gute Jäger, verstehst du?
+	AI_Output(other, self, "DIA_Bengar_WOVONLEBTIHR_15_00"); //How do you make a living?
+	AI_Output(self, other, "DIA_Bengar_WOVONLEBTIHR_10_01"); //Mostly hunting and the wood we cut. Of course, we also raise sheep and work the land.
+	AI_Output(self, other, "DIA_Bengar_WOVONLEBTIHR_10_02"); //Onar saddles me with all these laborers, and I have to keep them busy somehow. Only a few of them are good hunters, you see?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -88,7 +88,7 @@ instance DIA_Bengar_TAGELOEHNER(C_INFO)
 	nr				= 6;
 	condition		= DIA_Bengar_TAGELOEHNER_Condition;
 	information		= DIA_Bengar_TAGELOEHNER_Info;
-	description		= "Du unterhältst Tagelöhner?";
+	description		= "You're employing day laborers?";
 };
 
 func int DIA_Bengar_TAGELOEHNER_Condition()
@@ -102,9 +102,9 @@ func int DIA_Bengar_TAGELOEHNER_Condition()
 
 func void DIA_Bengar_TAGELOEHNER_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_TAGELOEHNER_15_00"); //Du unterhältst Tagelöhner?
-	AI_Output(self, other, "DIA_Bengar_TAGELOEHNER_10_01"); //Die Arbeiter, die Onar nicht gebrauchen kann, wirft er von seinem Hof.
-	AI_Output(self, other, "DIA_Bengar_TAGELOEHNER_10_02"); //Er schickt sie dann zu mir. Ich ernähre sie und sie arbeiten hier für mich.
+	AI_Output(other, self, "DIA_Bengar_TAGELOEHNER_15_00"); //You're employing day laborers?
+	AI_Output(self, other, "DIA_Bengar_TAGELOEHNER_10_01"); //Onar sends away the workers he can't use on his farm.
+	AI_Output(self, other, "DIA_Bengar_TAGELOEHNER_10_02"); //Then he sends them to me. I feed them and they work here for me.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -116,7 +116,7 @@ instance DIA_Addon_Bengar_MissingPeople(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Bengar_MissingPeople_Condition;
 	information		= DIA_Addon_Bengar_MissingPeople_Info;
-	description		= "Ist dir in letzter Zeit, was merkwürdiges wiederfahren?";
+	description		= "Has anything strange happened around here lately?";
 };
 
 func int DIA_Addon_Bengar_MissingPeople_Condition()
@@ -130,10 +130,10 @@ func int DIA_Addon_Bengar_MissingPeople_Condition()
 
 func void DIA_Addon_Bengar_MissingPeople_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_15_00"); //Ist hier in letzter Zeit etwas Merkwürdiges passiert?
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_10_01"); //Hier passieren eine Menge merkwürdiger Dinge.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_10_02"); //Aber das Seltsamste ist wohl Pardos' rätselhaftes Verschwinden.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_10_03"); //Er ist einer meiner Feldarbeiter und nicht der Typ, der einfach über Nacht alles hinwirft und sich aus dem Staub macht, verstehst du?
+	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_15_00"); //Has anything strange happened around here lately?
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_10_01"); //Many strange things are happening these days.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_10_02"); //But none as strange as the mysterious disappearance of Pardos.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_10_03"); //He's one of my field workers, and certainly not the kind who would drop everything overnight and slink off just like that, you see.
 
 	Log_CreateTopic(TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
@@ -144,44 +144,44 @@ func void DIA_Addon_Bengar_MissingPeople_Info()
 
 	Info_ClearChoices(DIA_Addon_Bengar_MissingPeople);
 	Info_AddChoice(DIA_Addon_Bengar_MissingPeople, DIALOG_BACK, DIA_Addon_Bengar_MissingPeople_back);
-	Info_AddChoice(DIA_Addon_Bengar_MissingPeople, "Irgendeinen Anhaltspunkt?", DIA_Addon_Bengar_MissingPeople_Hint);
-	Info_AddChoice(DIA_Addon_Bengar_MissingPeople, "Vielleicht hatte er einfach die Schnauze voll.", DIA_Addon_Bengar_MissingPeople_voll);
-	Info_AddChoice(DIA_Addon_Bengar_MissingPeople, "Was genau ist an seinem Verschwinden so merkwürdig?", DIA_Addon_Bengar_MissingPeople_was);
+	Info_AddChoice(DIA_Addon_Bengar_MissingPeople, "Any clues at all?", DIA_Addon_Bengar_MissingPeople_Hint);
+	Info_AddChoice(DIA_Addon_Bengar_MissingPeople, "Maybe he was simply fed up.", DIA_Addon_Bengar_MissingPeople_voll);
+	Info_AddChoice(DIA_Addon_Bengar_MissingPeople, "What exactly is so strange about his disappearance?", DIA_Addon_Bengar_MissingPeople_was);
 };
 
 func void DIA_Addon_Bengar_MissingPeople_was()
 {
-	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_00"); //Was genau ist an seinem Verschwinden so merkwürdig?
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_01"); //Pardos ist ein sehr ängstlicher Kerl und hat sich niemals weiter als bis zu den Grenzen meiner Felder vom Hof entfernt.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_02"); //Er hat schon die Beine in die Hand genommen, wenn ihm eine Fleischwanze über den Weg gekrabbelt kam.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_03"); //Die Biester sind zwar nicht besonders schön, aber gefährlich sind sie nun wirklich nicht.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_04"); //(ekelt sich) Es soll ja Leute geben, die sie essen. Widerlich.
-	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_05"); //Man gewöhnt sich daran.
+	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_00"); //What exactly is so strange about his disappearance?
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_01"); //Pardos is such a timid sort - the furthest he's ever been from the farm is to the end of my fields.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_02"); //He would run away at the mere sight of a meatbug.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_03"); //Those things may not be pretty to look at, but you really couldn't call them dangerous.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_04"); //(disgusted) They say there's people who eat them. Gross.
+	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_05"); //You get used to it.
 };
 
 func void DIA_Addon_Bengar_MissingPeople_voll()
 {
-	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_voll_15_00"); //Vielleicht hatte er einfach die Schnauze voll.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_01"); //Die Feldarbeit war sein Ein und Alles. Schwer vorzustellen, dass jetzt er bei einem anderen Bauern arbeitet.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_02"); //Bei mir konnte er machen, was er wollte.
+	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_voll_15_00"); //Maybe he was simply fed up.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_01"); //Working in the fields was his life. I cannot imagine him having gone to work for another farmer.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_02"); //With me, he could do whatever he wanted.
 };
 
 func void DIA_Addon_Bengar_MissingPeople_Hint()
 {
-	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_Hint_15_00"); //Irgendeinen Anhaltspunkt?
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_01"); //Ich glaube ja, dass ihn die Banditen verschleppt haben. Die streunen schon seit Tagen hier in der Gegend herum.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_02"); //Einmal habe ich gesehen, wie sie einen Bürger der Stadt in ihr Lager gezerrt haben.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_03"); //Sah so aus, als ob sie ihn versklaven wollten.
-	Info_AddChoice(DIA_Addon_Bengar_MissingPeople, "Wo ist dieses Lager der Banditen?", DIA_Addon_Bengar_MissingPeople_Lager);
+	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_Hint_15_00"); //Any clues at all?
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_01"); //I think those bandits must have dragged him off. They've been roaming around this area for days now.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_02"); //I once saw them drag a citizen of the town off to their camp.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_03"); //It looked like they were going to make him a slave.
+	Info_AddChoice(DIA_Addon_Bengar_MissingPeople, "Where is this bandit camp?", DIA_Addon_Bengar_MissingPeople_Lager);
 };
 
 var int Bengar_ToldAboutRangerBandits;
 func void DIA_Addon_Bengar_MissingPeople_Lager()
 {
-	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_Lager_15_00"); //Wo ist dieses Lager der Banditen?
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_01"); //Am Ende meiner Felder führt eine Treppe hinunter in einen kleinen Talkessel. Dort haben sie sich niedergelassen.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_02"); //Ich würde dort ja gerne nach Pardos suchen, aber ich werde mich ganz sicher nicht mit den Kerlen anlegen.
-	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_03"); //An deiner Stelle würde ich auch einen großen Bogen darum machen. Die kennen keinen Spaß.
+	AI_Output(other, self, "DIA_Addon_Bengar_MissingPeople_Lager_15_00"); //Where is this bandit camp?
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_01"); //At the far end of my fields, some stairs lead down to a small hollow. That's where they have made themselves at home.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_02"); //I'd like to go look for Pardos there, but there's no way I'm going up against those guys.
+	AI_Output(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_03"); //And you had better give them a wide berth, too. They're not known for their sense of humor.
 	Bengar_ToldAboutRangerBandits = TRUE;
 };
 
@@ -199,7 +199,7 @@ instance DIA_Addon_Bengar_ReturnPardos(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Bengar_ReturnPardos_Condition;
 	information		= DIA_Addon_Bengar_ReturnPardos_Info;
-	description		= "Ist Pardos wieder zurück?";
+	description		= "Has Pardos come back?";
 };
 
 func int DIA_Addon_Bengar_ReturnPardos_Condition()
@@ -214,11 +214,11 @@ func int DIA_Addon_Bengar_ReturnPardos_Condition()
 
 func void DIA_Addon_Bengar_ReturnPardos_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bengar_ReturnPardos_15_00"); //Ist Pardos wieder zurück?
-	AI_Output(self, other, "DIA_Addon_Bengar_ReturnPardos_10_01"); //Ja, er ist drin und ruht sich aus. Danke für alles was ...
-	AI_Output(other, self, "DIA_Addon_Bengar_ReturnPardos_15_02"); //Schon gut.
-	AI_Output(self, other, "DIA_Addon_Bengar_ReturnPardos_10_03"); //Warte, ich würde dich ja entlohnen aber ich habe selber nicht ...
-	AI_Output(other, self, "DIA_Addon_Bengar_ReturnPardos_15_04"); //Vergiss es.
+	AI_Output(other, self, "DIA_Addon_Bengar_ReturnPardos_15_00"); //Has Pardos come back?
+	AI_Output(self, other, "DIA_Addon_Bengar_ReturnPardos_10_01"); //Yes, he's inside, resting. Thanks for everything you ...
+	AI_Output(other, self, "DIA_Addon_Bengar_ReturnPardos_15_02"); //Never mind.
+	AI_Output(self, other, "DIA_Addon_Bengar_ReturnPardos_10_03"); //Wait, I'd love to give you a reward, but I haven't got ...
+	AI_Output(other, self, "DIA_Addon_Bengar_ReturnPardos_15_04"); //Forget it.
 
 	B_GivePlayerXP(XP_Ambient);
 };
@@ -232,7 +232,7 @@ instance DIA_Addon_Bengar_FernandosWeapons(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Bengar_FernandosWeapons_Condition;
 	information		= DIA_Addon_Bengar_FernandosWeapons_Info;
-	description		= "Hatten die Banditen, die hier vorbei kamen, Waffen bei sich?";
+	description		= "Were the bandits carrying weapons when they passed by here?";
 };
 
 func int DIA_Addon_Bengar_FernandosWeapons_Condition()
@@ -246,11 +246,11 @@ func int DIA_Addon_Bengar_FernandosWeapons_Condition()
 
 func void DIA_Addon_Bengar_FernandosWeapons_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_00"); //Hatten die Banditen Waffen bei sich, die hier vorbei kamen?
-	AI_Output(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_01"); //Was ist denn das für eine blöde Frage? Was wären das für Banditen, wenn sie keine Waffen hätten?
-	AI_Output(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_02"); //Ich meine richtig VIELE Waffen. Eine Waffenlieferung.
-	AI_Output(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_03"); //Stimmt. Jetzt, wo du es sagst, sie hatten Massen davon bei sich.
-	AI_Output(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_04"); //Einige in Fässern, einige in Taschen oder auf dem Karren, den sie dabei hatten.
+	AI_Output(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_00"); //Were the bandits carrying weapons when they passed by here?
+	AI_Output(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_01"); //What kind of a stupid question is that? How would they be bandits if they weren't armed?
+	AI_Output(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_02"); //I mean a whole LOAD of weapons. A big delivery.
+	AI_Output(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_03"); //I see. Yes, now that you mention it, they were carrying lots and lots.
+	AI_Output(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_04"); //Some in barrels, some in bags, and some on the cart they brought.
 	B_GivePlayerXP(XP_Ambient);
 };
 
@@ -263,7 +263,7 @@ instance DIA_Bengar_REBELLIEREN(C_INFO)
 	nr				= 8;
 	condition		= DIA_Bengar_REBELLIEREN_Condition;
 	information		= DIA_Bengar_REBELLIEREN_Info;
-	description		= "Was hältst du von Onar?";
+	description		= "What do you think of Onar?";
 };
 
 func int DIA_Bengar_REBELLIEREN_Condition()
@@ -276,12 +276,12 @@ func int DIA_Bengar_REBELLIEREN_Condition()
 
 func void DIA_Bengar_REBELLIEREN_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_REBELLIEREN_15_00"); //Was hältst du von Onar?
-	AI_Output(self, other, "DIA_Bengar_REBELLIEREN_10_01"); //Er ist ein gieriger Sack, der uns noch alle an den Galgen bringen wird.
-	AI_Output(self, other, "DIA_Bengar_REBELLIEREN_10_02"); //Irgendwann kommen die Paladine aus der Stadt und lassen uns kleine Bauern für das, was er hier abzieht, bluten.
-	AI_Output(self, other, "DIA_Bengar_REBELLIEREN_10_03"); //Aber ich habe keine Wahl, die Milizen kommen nur hierher, um zu kassieren, und nicht, um den Hof zu verteidigen.
-	AI_Output(self, other, "DIA_Bengar_REBELLIEREN_10_04"); //Wenn ich mich loyal zur Stadt verhalten würde, könnte ich selber zusehen, wie ich klarkomme.
-	AI_Output(self, other, "DIA_Bengar_REBELLIEREN_10_05"); //Onar schickt zumindest ab und zu mal Söldner, um nach dem Rechten zu sehen.
+	AI_Output(other, self, "DIA_Bengar_REBELLIEREN_15_00"); //What do you think of Onar?
+	AI_Output(self, other, "DIA_Bengar_REBELLIEREN_10_01"); //He's a greedy bastard who will get us all hanged in the end.
+	AI_Output(self, other, "DIA_Bengar_REBELLIEREN_10_02"); //One of these days, the paladins will come out of the city and make us small farmers bleed for what he's doing here.
+	AI_Output(self, other, "DIA_Bengar_REBELLIEREN_10_03"); //But I haven't got a choice. The militiamen only come here to collect and not to defend the farm.
+	AI_Output(self, other, "DIA_Bengar_REBELLIEREN_10_04"); //If I held myself loyal to the city, I'd be very much on my own.
+	AI_Output(self, other, "DIA_Bengar_REBELLIEREN_10_05"); //At least Onar sends some mercenaries now and then to see how we're doing.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -293,7 +293,7 @@ instance DIA_Bengar_PALADINE(C_INFO)
 	nr				= 9;
 	condition		= DIA_Bengar_PALADINE_Condition;
 	information		= DIA_Bengar_PALADINE_Info;
-	description		= "Was hast du gegen die Königstruppen?";
+	description		= "What have you got against the royal troops?";
 };
 
 func int DIA_Bengar_PALADINE_Condition()
@@ -307,11 +307,11 @@ func int DIA_Bengar_PALADINE_Condition()
 
 func void DIA_Bengar_PALADINE_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_PALADINE_15_00"); //Was hast du gegen die Königstruppen?
-	AI_Output(self, other, "DIA_Bengar_PALADINE_10_01"); //Liegt doch auf der Hand. Es hat überhaupt keine Verbesserung gebracht, dass die Paladine jetzt in der Stadt sind. Ganz im Gegenteil.
-	AI_Output(self, other, "DIA_Bengar_PALADINE_10_02"); //Jetzt kommen diese verfluchten Milizen nur noch häufiger auf unser Land und rauben, was das Zeug hält, und die Paladine machen nichts dagegen.
-	AI_Output(self, other, "DIA_Bengar_PALADINE_10_03"); //Die einzigen Paladine, die ich je gesehen habe, sind die beiden Wachen vor dem Pass.
-	AI_Output(self, other, "DIA_Bengar_PALADINE_10_04"); //Die würden sich keinen Meter da weg bewegen, auch wenn die Miliz uns alle abschlachten würde.
+	AI_Output(other, self, "DIA_Bengar_PALADINE_15_00"); //What have you got against the royal troops?
+	AI_Output(self, other, "DIA_Bengar_PALADINE_10_01"); //It's obvious. There hasn't been any improvement now that the paladins are in the city. Just the opposite.
+	AI_Output(self, other, "DIA_Bengar_PALADINE_10_02"); //Now these cursed militiamen come onto our land even more often and steal everything they can, and the paladins don't do anything about it.
+	AI_Output(self, other, "DIA_Bengar_PALADINE_10_03"); //The only paladins that I've ever seen are the two guards at the pass.
+	AI_Output(self, other, "DIA_Bengar_PALADINE_10_04"); //They wouldn't budge an inch, even if the militia slaughtered us all.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -323,7 +323,7 @@ instance DIA_Bengar_PASS(C_INFO)
 	nr				= 10;
 	condition		= DIA_Bengar_PASS_Condition;
 	information		= DIA_Bengar_PASS_Info;
-	description		= "Der Pass?";
+	description		= "The pass?";
 };
 
 func int DIA_Bengar_PASS_Condition()
@@ -336,9 +336,9 @@ func int DIA_Bengar_PASS_Condition()
 
 func void DIA_Bengar_PASS_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_PASS_15_00"); //Der Pass?
-	AI_Output(self, other, "DIA_Bengar_PASS_10_01"); //Ja. Der Pass ins alte Minental bei den Wasserfällen am anderen Ende des Weidenplateaus.
-	AI_Output(self, other, "DIA_Bengar_PASS_10_02"); //Frag mal Malak danach. Er ist die letzte Woche ein paar mal da gewesen.
+	AI_Output(other, self, "DIA_Bengar_PASS_15_00"); //The pass?
+	AI_Output(self, other, "DIA_Bengar_PASS_10_01"); //Yeah. The pass to the old Valley of Mines by the waterfalls at the other end of the high pastures.
+	AI_Output(self, other, "DIA_Bengar_PASS_10_02"); //Ask Malak about it. He was there a couple of times last week.
 };
 
 // ************************************************************
@@ -350,7 +350,7 @@ instance DIA_Bengar_MILIZ(C_INFO)
 	nr				= 11;
 	condition		= DIA_Bengar_MILIZ_Condition;
 	information		= DIA_Bengar_MILIZ_Info;
-	description		= "Ich soll mich um euer Milizproblem kümmern.";
+	description		= "I'm supposed to deal with your militia problem.";
 };
 
 func int DIA_Bengar_MILIZ_Condition()
@@ -364,27 +364,27 @@ func int DIA_Bengar_MILIZ_Condition()
 
 func void DIA_Bengar_MILIZ_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_MILIZ_15_00"); //Ich soll mich um euer Milizproblem kümmern.
+	AI_Output(other, self, "DIA_Bengar_MILIZ_15_00"); //I'm supposed to deal with your militia problem.
 
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output(self, other, "DIA_Bengar_MILIZ_10_01"); //Was? Ich hab Onar gesagt, er soll ein paar von seinen SÖLDNERN schicken.
-		AI_Output(other, self, "DIA_Bengar_MILIZ_15_02"); //Das hier ist meine Bewährungsprobe.
-		AI_Output(self, other, "DIA_Bengar_MILIZ_10_03"); //Na großartig. Weißt du, was die Milizen mit mir machen, wenn du es vermasselst?
+		AI_Output(self, other, "DIA_Bengar_MILIZ_10_01"); //What? I told Onar he should send a couple of his MERCENARIES.
+		AI_Output(other, self, "DIA_Bengar_MILIZ_15_02"); //This is my chance to prove myself.
+		AI_Output(self, other, "DIA_Bengar_MILIZ_10_03"); //Terrific. Do you know what the militia will do to me if you screw it up?
 	}
 	else // SLD oder DJG
 	{
-		AI_Output(self, other, "DIA_Bengar_MILIZ_10_04"); //Ich dachte schon, es würde niemand mehr kommen.
-		AI_Output(self, other, "DIA_Bengar_MILIZ_10_05"); //Hab Onar schon vor Tagen Bescheid gesagt. Wofür bezahle ich eigentlich meine Pacht?
+		AI_Output(self, other, "DIA_Bengar_MILIZ_10_04"); //Here I was thinking no one would come now.
+		AI_Output(self, other, "DIA_Bengar_MILIZ_10_05"); //I already told Onar days ago. What am I paying my rent for?
 	};
 
-	AI_Output(self, other, "DIA_Bengar_MILIZ_10_06"); //Die Mistkerle kommen bei uns jede Woche einmal vorbei und kassieren die Abgaben für die Stadt.
-	AI_Output(self, other, "DIA_Bengar_MILIZ_10_07"); //Es trifft sich gut, dass du gerade jetzt kommst. Das ist normalerweise immer ihre Zeit.
-	AI_Output(self, other, "DIA_Bengar_MILIZ_10_08"); //Sie müssten eigentlich jeden Moment hier sein.
+	AI_Output(self, other, "DIA_Bengar_MILIZ_10_06"); //These bastards come by here once a week and collect the taxes for the city.
+	AI_Output(self, other, "DIA_Bengar_MILIZ_10_07"); //It's a good thing you came just now. This is their usual time.
+	AI_Output(self, other, "DIA_Bengar_MILIZ_10_08"); //They should be here any moment.
 };
 
 // ************************************************************
-// 			  				Selber vorknöpfen
+// 			  				Selber vorknÃ¶pfen
 // ************************************************************
 instance DIA_Bengar_Selber(C_INFO)
 {
@@ -392,7 +392,7 @@ instance DIA_Bengar_Selber(C_INFO)
 	nr				= 11;
 	condition		= DIA_Bengar_Selber_Condition;
 	information		= DIA_Bengar_Selber_Info;
-	description		= "Warum knöpft ihr euch die Milizen nicht selber vor?";
+	description		= "Why don't you just go up against the militia yourself?";
 };
 
 func int DIA_Bengar_Selber_Condition()
@@ -407,8 +407,8 @@ func int DIA_Bengar_Selber_Condition()
 
 func void DIA_Bengar_Selber_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_Selber_15_00"); //Ihr seid so viele Männer. Warum knöpft ihr euch die Milizen nicht selber vor?
-	AI_Output(self, other, "DIA_Bengar_Selber_10_01"); //Wir sind viele, das ist richtig. Aber wir sind keine ausgebildeten Kämpfer, so wie die Miliz.
+	AI_Output(other, self, "DIA_Bengar_Selber_15_00"); //There's so many of you. Why don't you just go up against the militia yourself?
+	AI_Output(self, other, "DIA_Bengar_Selber_10_01"); //It's true that there's a lot of us. But we're not trained fighters like the militia.
 };
 
 // ************************************************************
@@ -420,7 +420,7 @@ instance DIA_Bengar_MILIZKLATSCHEN(C_INFO)
 	nr				= 12;
 	condition		= DIA_Bengar_MILIZKLATSCHEN_Condition;
 	information		= DIA_Bengar_MILIZKLATSCHEN_Info;
-	description		= "Die Miliz soll ruhig kommen, mit denen werde ich schon fertig!";
+	description		= "Let the militia come, then, I'll deal with them!";
 };
 
 func int DIA_Bengar_MILIZKLATSCHEN_Condition()
@@ -436,15 +436,15 @@ func int DIA_Bengar_MILIZKLATSCHEN_Condition()
 
 func void DIA_Bengar_MILIZKLATSCHEN_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_MILIZKLATSCHEN_15_00"); //Die Miliz soll ruhig kommen, mit denen werde ich schon fertig!
-	AI_Output(self, other, "DIA_Bengar_MILIZKLATSCHEN_10_01"); //Da bin ja mal gespannt. Da vorne kommen sie nämlich schon. Hab ich's dir doch gesagt.
+	AI_Output(other, self, "DIA_Bengar_MILIZKLATSCHEN_15_00"); //Let the militia come, then, I'll deal with them!
+	AI_Output(self, other, "DIA_Bengar_MILIZKLATSCHEN_10_01"); //I can't wait. Here they come now. See, I told you so.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output(self, other, "DIA_Bengar_MILIZKLATSCHEN_10_02"); //Vermassel es bloß nicht!
+		AI_Output(self, other, "DIA_Bengar_MILIZKLATSCHEN_10_02"); //Just don't screw it up!
 	}
 	else // SLD oder DJG
 	{
-		AI_Output(self, other, "DIA_Bengar_MILIZKLATSCHEN_10_03"); //Na dann, viel Glück! Zeig's ihnen!
+		AI_Output(self, other, "DIA_Bengar_MILIZKLATSCHEN_10_03"); //Well then, good luck! You show 'em.
 	};
 
 	AI_StopProcessInfos(self);
@@ -477,7 +477,7 @@ instance DIA_Bengar_MILIZWEG(C_INFO)
 	condition		= DIA_Bengar_MILIZWEG_Condition;
 	information		= DIA_Bengar_MILIZWEG_Info;
 	permanent		= TRUE;
-	description		= "Euer Milizproblem ist Vergangenheit.";
+	description		= "Your militia problem is a thing of the past.";
 };
 
 func int DIA_Bengar_MILIZWEG_Condition()
@@ -495,20 +495,20 @@ func int DIA_Bengar_MILIZWEG_Condition()
 
 func void DIA_Bengar_MILIZWEG_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_MILIZWEG_15_00"); //Euer Milizproblem ist Vergangenheit.
+	AI_Output(other, self, "DIA_Bengar_MILIZWEG_15_00"); //Your militia problem is a thing of the past.
 	if ((Rumbold_Bezahlt == TRUE)
 	&& (Npc_IsDead(Rumbold) == FALSE))
 	{
-		AI_Output(self, other, "DIA_Bengar_MILIZWEG_10_01"); //Bist du verrückt? Weißt du, was die Kerle mit mir machen, wenn du weg bist?
-		AI_Output(self, other, "DIA_Bengar_MILIZWEG_10_02"); //Die stehen doch noch da vorne rum. Sag ihnen, sie sollen GANZ verschwinden!
+		AI_Output(self, other, "DIA_Bengar_MILIZWEG_10_01"); //Are you crazy? Do you know what those guys will do to me when you're gone?
+		AI_Output(self, other, "DIA_Bengar_MILIZWEG_10_02"); //They're still standing around over there. Tell them they should disappear COMPLETELY!
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Bengar_MILIZWEG_10_03"); //Nicht übel. Vielleicht bleibt am Ende des Monats jetzt ja auch mal was übrig. Danke.
+		AI_Output(self, other, "DIA_Bengar_MILIZWEG_10_03"); //Not bad. Maybe there'll be something left over at the end of the month now for a change. Thanks.
 
 		if (Rumbold_Bezahlt == TRUE)
 		{
-			AI_Output(self, other, "DIA_Bengar_MILIZWEG_10_04"); //Du wolltest sogar für mich bezahlen. Sehr anständig von dir.
+			AI_Output(self, other, "DIA_Bengar_MILIZWEG_10_04"); //You even wanted to pay for me. That's very decent of you.
 			B_GivePlayerXP(XP_Bengar_MILIZKLATSCHEN + 50);
 		}
 		else
@@ -529,7 +529,7 @@ instance DIA_Bengar_BALTHASAR(C_INFO)
 	nr				= 13;
 	condition		= DIA_Bengar_BALTHASAR_Condition;
 	information		= DIA_Bengar_BALTHASAR_Info;
-	description		= "Balthasar der Schafhirte darf nicht auf deine Weide?";
+	description		= "Balthasar the shepherd isn't allowed on your pasture?";
 };
 
 func int DIA_Bengar_BALTHASAR_Condition()
@@ -545,9 +545,9 @@ func int DIA_Bengar_BALTHASAR_Condition()
 
 func void DIA_Bengar_BALTHASAR_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_BALTHASAR_15_00"); //Balthasar der Schafhirte darf nicht auf deine Weide?
-	AI_Output(self, other, "DIA_Bengar_BALTHASAR_10_01"); //Ach so. Die Geschichte. Ich habe ihm erzählt, Sekob soll mir Geld bezahlen, wenn er die Schafe auf meine Weide führt.
-	AI_Output(self, other, "DIA_Bengar_BALTHASAR_10_02"); //Wenn ich ehrlich bin, ist das nur Schikane. Ich kann Balthasar einfach nicht leiden.
+	AI_Output(other, self, "DIA_Bengar_BALTHASAR_15_00"); //Balthasar the shepherd isn't allowed on your pasture?
+	AI_Output(self, other, "DIA_Bengar_BALTHASAR_10_01"); //Oh, yes. The story. I told him Sekob should pay me money if he wanted to lead the sheep to my pasture.
+	AI_Output(self, other, "DIA_Bengar_BALTHASAR_10_02"); //To tell the truth, that's only harassment. I just can't stand Balthasar.
 	B_LogEntry(TOPIC_BalthasarsSchafe, TOPIC_BalthasarsSchafe_1);
 	B_GivePlayerXP(XP_Ambient);
 };
@@ -561,7 +561,7 @@ instance DIA_Bengar_BALTHASARDARFAUFWEIDE(C_INFO)
 	nr				= 14;
 	condition		= DIA_Bengar_BALTHASARDARFAUFWEIDE_Condition;
 	information		= DIA_Bengar_BALTHASARDARFAUFWEIDE_Info;
-	description		= "Die Miliz ist weg und Balthasar kann wieder auf dein Land.";
+	description		= "The militia are gone, and Balthasar can use your land again.";
 };
 
 func int DIA_Bengar_BALTHASARDARFAUFWEIDE_Condition()
@@ -578,11 +578,11 @@ func int DIA_Bengar_BALTHASARDARFAUFWEIDE_Condition()
 
 func void DIA_Bengar_BALTHASARDARFAUFWEIDE_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00"); //Die Miliz ist weg und Balthasar kann wieder auf dein Land.
-	AI_Output(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_01"); //Wieso?
-	AI_Output(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_02"); //(droht) Weil ich es gesagt habe.
-	AI_Output(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_03"); //Mmh. Na gut, wie du meinst.
-	AI_Output(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_04"); //Soll er sich hinter dem Feld eine Stelle mit seinen Viechern suchen.
+	AI_Output(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00"); //The militia are gone, and Balthasar can use your land again.
+	AI_Output(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_01"); //Why?
+	AI_Output(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_02"); //(threatening) Because I said so.
+	AI_Output(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_03"); //Mmh. All right, whatever you say.
+	AI_Output(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_04"); //Let him find a place for his beasts somewhere behind the field.
 
 	MIS_Balthasar_BengarsWeide = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Ambient);
@@ -598,7 +598,7 @@ instance DIA_Bengar_PERMKAP1(C_INFO)
 	condition		= DIA_Bengar_PERMKAP1_Condition;
 	information		= DIA_Bengar_PERMKAP1_Info;
 	permanent		= TRUE;
-	description		= "Bleib senkrecht.";
+	description		= "Take care.";
 };
 
 func int DIA_Bengar_PERMKAP1_Condition()
@@ -612,8 +612,8 @@ func int DIA_Bengar_PERMKAP1_Condition()
 
 func void DIA_Bengar_PERMKAP1_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_PERMKAP1_15_00"); //Bleib senkrecht.
-	AI_Output(self, other, "DIA_Bengar_PERMKAP1_10_01"); //Du auch.
+	AI_Output(other, self, "DIA_Bengar_PERMKAP1_15_00"); //Take care.
+	AI_Output(self, other, "DIA_Bengar_PERMKAP1_10_01"); //You too.
 
 	AI_StopProcessInfos(self);
 };
@@ -661,7 +661,7 @@ instance DIA_Bengar_ALLEIN(C_INFO)
 	nr				= 30;
 	condition		= DIA_Bengar_ALLEIN_Condition;
 	information		= DIA_Bengar_ALLEIN_Info;
-	description		= "Wie ist die Lage?";
+	description		= "How are things?";
 };
 
 func int DIA_Bengar_ALLEIN_Condition()
@@ -674,22 +674,22 @@ func int DIA_Bengar_ALLEIN_Condition()
 
 func void DIA_Bengar_ALLEIN_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_ALLEIN_15_00"); //Wie ist die Lage?
+	AI_Output(other, self, "DIA_Bengar_ALLEIN_15_00"); //How are things?
 
 	if ((Malak_isAlive_Kap3 == TRUE) && ((Npc_GetDistToWP(Malak, "FARM3") < 3000) == FALSE))
 	{
-		AI_Output(self, other, "DIA_Bengar_ALLEIN_10_01"); //Malak ist verschwunden und hat alles und jeden mitgenommen, der für mich arbeiten wollte. Er sagte, er wollte in die Berge.
-		AI_Output(self, other, "DIA_Bengar_ALLEIN_10_02"); //Er hat es hier nicht mehr ausgehalten.
+		AI_Output(self, other, "DIA_Bengar_ALLEIN_10_01"); //Malak has disappeared and taken everything and everybody who would work for me with him. He said he was headed for the mountains.
+		AI_Output(self, other, "DIA_Bengar_ALLEIN_10_02"); //He couldn't stand it here anymore.
 		MIS_GetMalakBack = LOG_RUNNING;
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Bengar_ALLEIN_10_03"); //Schwere Zeiten sind das. Ich weiß nicht, ob ich noch länger durchhalte.
+		AI_Output(self, other, "DIA_Bengar_ALLEIN_10_03"); //Times are tough. I don't know how much longer I can hang on.
 	};
 
-	AI_Output(self, other, "DIA_Bengar_ALLEIN_10_04"); //Die Horden von Monstern, die täglich aus dem Pass aufs Weidenplateau kommen, machen mich ganz fertig.
-	AI_Output(self, other, "DIA_Bengar_ALLEIN_10_05"); //Wenn ich wenigstens ein paar Helfer oder Söldner hätte.
-	AI_Output(self, other, "DIA_Bengar_ALLEIN_10_06"); //Es gab sogar schon mal einen, der für mich arbeiten wollte. Hat es aber dann doch nicht getan. Ich glaube, 'Wolf' war sein Name.
+	AI_Output(self, other, "DIA_Bengar_ALLEIN_10_04"); //The hordes of monsters pouring out of the pass every day to haunt the high pastures are really getting to me.
+	AI_Output(self, other, "DIA_Bengar_ALLEIN_10_05"); //If at least I had a few helpers or mercenaries.
+	AI_Output(self, other, "DIA_Bengar_ALLEIN_10_06"); //There was even one who was willing to work for me. Changed his mind, though. I think his name was 'Wolf'.
 	MIS_BengarsHelpingSLD = LOG_RUNNING;
 
 	Log_CreateTopic(TOPIC_BengarALLEIN, LOG_MISSION);
@@ -707,7 +707,7 @@ instance DIA_Bengar_MALAKTOT(C_INFO)
 	nr				= 32;
 	condition		= DIA_Bengar_MALAKTOT_Condition;
 	information		= DIA_Bengar_MALAKTOT_Info;
-	description		= "Malak ist tot.";
+	description		= "Malak is dead.";
 };
 
 func int DIA_Bengar_MALAKTOT_Condition()
@@ -721,8 +721,8 @@ func int DIA_Bengar_MALAKTOT_Condition()
 
 func void DIA_Bengar_MALAKTOT_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_MALAKTOT_15_00"); //Malak ist tot.
-	AI_Output(self, other, "DIA_Bengar_MALAKTOT_10_01"); //Dann wird alles nur noch schlimmer werden.
+	AI_Output(other, self, "DIA_Bengar_MALAKTOT_15_00"); //Malak is dead.
+	AI_Output(self, other, "DIA_Bengar_MALAKTOT_10_01"); //Then everything will just get even worse.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -734,7 +734,7 @@ instance DIA_Bengar_SLDDA(C_INFO)
 	nr				= 32;
 	condition		= DIA_Bengar_SLDDA_Condition;
 	information		= DIA_Bengar_SLDDA_Info;
-	description		= "Ich habe dir den Söldner besorgt, den du wolltest.";
+	description		= "I found you the mercenary you wanted.";
 };
 
 func int DIA_Bengar_SLDDA_Condition()
@@ -749,9 +749,9 @@ func int DIA_Bengar_SLDDA_Condition()
 
 func void DIA_Bengar_SLDDA_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_SLDDA_15_00"); //Ich habe dir den Söldner besorgt, den du wolltest.
-	AI_Output(self, other, "DIA_Bengar_SLDDA_10_01"); //Ich hatte noch nie so jemanden auf meinem Hof. Hoffentlich geht das gut.
-	AI_Output(self, other, "DIA_Bengar_SLDDA_10_02"); //Hier, nimm dies. Ich denke, das kannst du gebrauchen.
+	AI_Output(other, self, "DIA_Bengar_SLDDA_15_00"); //I found you the mercenary you wanted.
+	AI_Output(self, other, "DIA_Bengar_SLDDA_10_01"); //I've never seen anyone like that on my farm. I can only hope it will work out.
+	AI_Output(self, other, "DIA_Bengar_SLDDA_10_02"); //Here, take this. I think you'll find it useful.
 	CreateInvItems(self, ItMi_Gold, 400);
 	B_GiveInvItems(self, other, ItMi_Gold, 400);
 	B_GivePlayerXP(XP_BengarsHelpingSLDArrived);
@@ -766,7 +766,7 @@ instance DIA_Bengar_MALAKWIEDERDA(C_INFO)
 	nr				= 35;
 	condition		= DIA_Bengar_MALAKWIEDERDA_Condition;
 	information		= DIA_Bengar_MALAKWIEDERDA_Info;
-	description		= "Malak ist wieder da.";
+	description		= "Malak is back.";
 };
 
 func int DIA_Bengar_MALAKWIEDERDA_Condition()
@@ -781,8 +781,8 @@ func int DIA_Bengar_MALAKWIEDERDA_Condition()
 
 func void DIA_Bengar_MALAKWIEDERDA_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_MALAKWIEDERDA_15_00"); //Malak ist wieder da.
-	AI_Output(self, other, "DIA_Bengar_MALAKWIEDERDA_10_01"); //Das wurde auch Zeit. Ich dachte schon, ich würde ihn nie wiedersehen.
+	AI_Output(other, self, "DIA_Bengar_MALAKWIEDERDA_15_00"); //Malak is back.
+	AI_Output(self, other, "DIA_Bengar_MALAKWIEDERDA_10_01"); //It's about time. I thought I'd never see him again.
 	B_GivePlayerXP(XP_GetMalakBack);
 };
 
@@ -796,7 +796,7 @@ instance DIA_Bengar_PERM(C_INFO)
 	condition		= DIA_Bengar_PERM_Condition;
 	information		= DIA_Bengar_PERM_Info;
 	permanent		= TRUE;
-	description		= "Das wird schon wieder.";
+	description		= "It'll be all right.";
 };
 
 func int DIA_Bengar_PERM_Condition()
@@ -810,28 +810,28 @@ func int DIA_Bengar_PERM_Condition()
 
 func void DIA_Bengar_PERM_Info()
 {
-	AI_Output(other, self, "DIA_Bengar_PERM_15_00"); //Das wird schon wieder.
+	AI_Output(other, self, "DIA_Bengar_PERM_15_00"); //It'll be all right.
 
 	if ((Npc_GetDistToWP(Malak, "FARM3") < 3000)
 	&& ((Npc_IsDead(Malak)) == FALSE))
 	{
-		AI_Output(self, other, "DIA_Bengar_PERM_10_01"); //Malak ist zwar wieder da, aber die Situation hat sich kaum verändert.
-		AI_Output(self, other, "DIA_Bengar_PERM_10_02"); //Wenn kein Wunder geschieht, werden wir hier alle noch zu Grunde gehen.
+		AI_Output(self, other, "DIA_Bengar_PERM_10_01"); //Malak is here again, but the situation has hardly changed.
+		AI_Output(self, other, "DIA_Bengar_PERM_10_02"); //Unless a miracle happens, all of us here will be wiped out.
 	}
 	else if ((Npc_KnowsInfo(other, DIA_Bengar_SLDDA))
 	&& ((Npc_IsDead(SLD_Wolf)) == FALSE)
 	&& (Npc_GetDistToWP(SLD_Wolf, "FARM3") < 3000))
 	{
-		AI_Output(self, other, "DIA_Bengar_PERM_10_03"); //Wolf ist schon ein merkwürdiger Kerl, aber ich denke, das wird schon irgendwie gehen.
+		AI_Output(self, other, "DIA_Bengar_PERM_10_03"); //Wolf is a strange fellow, but I think it will work somehow.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Bengar_PERM_10_04"); //Ohne Malak läuft hier gar nichts mehr. Wenn nicht bald etwas passiert, muss ich meinen Hof aufgeben.
+		AI_Output(self, other, "DIA_Bengar_PERM_10_04"); //Without Malak, nothing gets done around here anymore. If something doesn't happen soon, I'll have to give up my farm.
 
 		if ((Malak_isAlive_Kap3 == TRUE)
 		&& ((Npc_IsDead(Malak)) == FALSE))
 		{
-			AI_Output(self, other, "DIA_Bengar_PERM_10_05"); //Hoffentlich kommt er bald zurück.
+			AI_Output(self, other, "DIA_Bengar_PERM_10_05"); //Hopefully, he'll come back soon.
 		};
 	};
 

@@ -43,46 +43,46 @@ func int DIA_Hokurn_Hello_Condition()
 
 func void DIA_Hokurn_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Hokurn_Hello_01_00"); //Hast du was zu trinken?
-	AI_Output(other, self, "DIA_Hokurn_Hello_15_01"); //Ich vermute, du willst kein Wasser.
-	AI_Output(self, other, "DIA_Hokurn_Hello_01_02"); //Nein, verdammt!! Ich brauche irgendwas mit Alkohol, damit endlich diese verdammten Kopfschmerzen weg gehen.
-	AI_Output(self, other, "DIA_Hokurn_Hello_01_03"); //Wenn ich längere Zeit nichts zu trinken hatte, fühlt sich mein Schädel an, als würde er jeden Moment explodieren.
+	AI_Output(self, other, "DIA_Hokurn_Hello_01_00"); //Do you have anything to drink?
+	AI_Output(other, self, "DIA_Hokurn_Hello_15_01"); //I assume that it's not water you want.
+	AI_Output(self, other, "DIA_Hokurn_Hello_01_02"); //No, damnit!! I need something alcoholic so I can finally get rid of these damned headaches.
+	AI_Output(self, other, "DIA_Hokurn_Hello_01_03"); //When I haven't had anything to drink for a while, my skull feels like it's going to explode at any moment.
 
 	Info_ClearChoices(DIA_Hokurn_Hello);
-	Info_AddChoice(DIA_Hokurn_Hello, "Ich versuch was zu besorgen.", DIA_Hokurn_Hello_No);
+	Info_AddChoice(DIA_Hokurn_Hello, "There's nothing I can give you.", DIA_Hokurn_Hello_No);
 
 	if ((Npc_HasItems(other, ItFo_Beer) >= 1)
 	|| (Npc_HasItems(other, ItFo_Booze) >= 1)
 	|| (Npc_HasItems(other, ItFo_Wine) >= 1))
 	{
-		Info_AddChoice(DIA_Hokurn_Hello, "Hier hast du was.", DIA_Hokurn_Hello_Yes);
+		Info_AddChoice(DIA_Hokurn_Hello, "Here, take this.", DIA_Hokurn_Hello_Yes);
 	};
 };
 
 func void DIA_Hokurn_Hello_No()
 {
-	AI_Output(other, self, "DIA_Hokurn_Hello_No_15_00"); //Ich kann dir nichts geben.
-	AI_Output(self, other, "DIA_Hokurn_Hello_No_01_01"); //Dann verzieh dich!
+	AI_Output(other, self, "DIA_Hokurn_Hello_No_15_00"); //There's nothing I can give you.
+	AI_Output(self, other, "DIA_Hokurn_Hello_No_01_01"); //Then scram!
 
 	Info_ClearChoices(DIA_Hokurn_Hello);
 	Info_AddChoice(DIA_Hokurn_Hello, DIALOG_ENDE, DIA_Hokurn_Hello_END);
-	Info_AddChoice(DIA_Hokurn_Hello, "Eine Sache noch...", DIA_Hokurn_Hello_ASK1);
+	Info_AddChoice(DIA_Hokurn_Hello, "One more thing ...", DIA_Hokurn_Hello_ASK1);
 };
 
 func void DIA_Hokurn_Hello_ASK1()
 {
-	AI_Output(other, self, "DIA_Hokurn_Hello_ASK1_15_00"); //Eine Sache noch ...
-	AI_Output(self, other, "DIA_Hokurn_Hello_ASK1_01_01"); //(brüllt) Hast du mich nicht verstanden? VERPISS DICH!!!!
+	AI_Output(other, self, "DIA_Hokurn_Hello_ASK1_15_00"); //One more thing ...
+	AI_Output(self, other, "DIA_Hokurn_Hello_ASK1_01_01"); //(bellows) Didn't you understand me? PISS OFF!!!
 
 	Info_ClearChoices(DIA_Hokurn_Hello);
 	Info_AddChoice(DIA_Hokurn_Hello, DIALOG_ENDE, DIA_Hokurn_Hello_END);
-	Info_AddChoice(DIA_Hokurn_Hello, "Es ist wichtig.", DIA_Hokurn_Hello_ASK2);
+	Info_AddChoice(DIA_Hokurn_Hello, "It's important.", DIA_Hokurn_Hello_ASK2);
 };
 
 func void DIA_Hokurn_Hello_ASK2()
 {
-	AI_Output(other, self, "DIA_Hokurn_Hello_ASK2_15_00"); //Es ist wichtig.
-	AI_Output(self, other, "DIA_Hokurn_Hello_ASK2_01_01"); //(brüllt) Du hast es so gewollt.
+	AI_Output(other, self, "DIA_Hokurn_Hello_ASK2_15_00"); //It's important.
+	AI_Output(self, other, "DIA_Hokurn_Hello_ASK2_01_01"); //(bellows) You asked for it.
 
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -95,13 +95,13 @@ func void DIA_Hokurn_Hello_END()
 
 func void B_Hokurn_Sauf()
 {
-	AI_Output(self, other, "B_Hokurn_Sauf_01_00"); //(rülpst) Ha, da lacht das Herz.
-	AI_Output(self, other, "B_Hokurn_Sauf_01_01"); //So, jetzt kann ich auch wieder klar denken. Was kann ich für dich tun?
+	AI_Output(self, other, "B_Hokurn_Sauf_01_00"); //(burps) Ha, that hit the spot.
+	AI_Output(self, other, "B_Hokurn_Sauf_01_01"); //So, now I can think clearly again. What can I do for you?
 };
 
 func void DIA_Hokurn_Hello_Yes()
 {
-	AI_Output(other, self, "DIA_Hokurn_Hello_Yes_15_00"); //Hier hast du was.
+	AI_Output(other, self, "DIA_Hokurn_Hello_Yes_15_00"); //Here, take this.
 
 	if (Npc_HasItems(other, ItFo_Booze) >= 1)
 	{
@@ -137,7 +137,7 @@ instance DIA_Hokurn_Drink(C_INFO)
 	condition		= DIA_Hokurn_Drink_Condition;
 	information		= DIA_Hokurn_Drink_Info;
 	permanent		= TRUE;
-	description		= "Ich habe dir was zu Trinken mitgebracht.";
+	description		= "I brought you something to drink.";
 };
 
 func int DIA_Hokurn_Drink_Condition()
@@ -153,8 +153,8 @@ func int DIA_Hokurn_Drink_Condition()
 
 func void DIA_Hokurn_Drink_Info()
 {
-	AI_Output(other, self, "DIA_Hokurn_Drink_15_00"); //Ich habe dir was zu Trinken mitgebracht.
-	AI_Output(self, other, "DIA_Hokurn_Drink_01_01"); //(gierig) Gib her!!
+	AI_Output(other, self, "DIA_Hokurn_Drink_15_00"); //I brought you something to drink.
+	AI_Output(self, other, "DIA_Hokurn_Drink_01_01"); //(greedy) Gimme!!
 
 	if (Npc_HasItems(other, ItFo_Booze) >= 1)
 	{
@@ -188,7 +188,7 @@ instance DIA_Hokurn_Question(C_INFO)
 	condition		= DIA_Hokurn_Question_Condition;
 	information		= DIA_Hokurn_Question_Info;
 	permanent		= TRUE;
-	description		= "Ich brauche Informationen.";
+	description		= "I need some information.";
 };
 
 func int DIA_Hokurn_Question_Condition()
@@ -201,9 +201,9 @@ func int DIA_Hokurn_Question_Condition()
 
 func void DIA_Hokurn_Question_Info()
 {
-	AI_Output(other, self, "DIA_Hokurn_Question_15_00"); //Ich brauche Informationen.
-	AI_Output(self, other, "DIA_Hokurn_Question_01_01"); //(genervt) Ich dachte, du hättest mich verstanden. Ich rede nur mit Freunden.
-	AI_Output(self, other, "DIA_Hokurn_Question_01_02"); //Und Freunde lädt man zum Trinken ein. Alles klar? Jetzt verzieh dich!
+	AI_Output(other, self, "DIA_Hokurn_Question_15_00"); //I need some information.
+	AI_Output(self, other, "DIA_Hokurn_Question_01_01"); //(annoyed) I thought you understood me. I only talk to friends.
+	AI_Output(self, other, "DIA_Hokurn_Question_01_02"); //And friends offer you something to drink. Got it? Now scram!
 };
 
 //*********************************************************************
@@ -215,7 +215,7 @@ instance DIA_Hokurn_Learn(C_INFO)
 	nr				= 6;
 	condition		= DIA_Hokurn_Learn_Condition;
 	information		= DIA_Hokurn_Learn_Info;
-	description		= "Ich suche jemanden, der mir was beibringen kann.";
+	description		= "I'm looking for someone who can teach me something.";
 };
 
 func int DIA_Hokurn_Learn_Condition()
@@ -228,30 +228,30 @@ func int DIA_Hokurn_Learn_Condition()
 
 func void DIA_Hokurn_Learn_Info()
 {
-	AI_Output(other, self, "DIA_Hokurn_Learn_15_00"); //Ich suche jemanden, der mir was beibringen kann.
-	AI_Output(self, other, "DIA_Hokurn_Learn_01_01"); //Ich könnte dir schon ein paar Sachen beibringen. Ich bin der beste Kämpfer weit und breit.
-	AI_Output(self, other, "DIA_Hokurn_Learn_01_02"); //Für dich mach ich sogar 'nen Freundschaftspreis. 300 Goldstücke.
+	AI_Output(other, self, "DIA_Hokurn_Learn_15_00"); //I'm looking for someone who can teach me something.
+	AI_Output(self, other, "DIA_Hokurn_Learn_01_01"); //I could teach you a few things. I'm the best fighter for miles around.
+	AI_Output(self, other, "DIA_Hokurn_Learn_01_02"); //Since we're friends, I'll give you a special price. 300 gold pieces.
 
 	Info_ClearChoices(DIA_Hokurn_Learn);
-	Info_AddChoice(DIA_Hokurn_Learn, "Das ist mir zu teuer.", DIA_Hokurn_Learn_TooExpensive);
+	Info_AddChoice(DIA_Hokurn_Learn, "That's too expensive for me.", DIA_Hokurn_Learn_TooExpensive);
 	if (Npc_HasItems(other, ItMi_Gold) >= 300)
 	{
-		Info_AddChoice(DIA_Hokurn_Learn, "In Ordnung, hier ist das Geld.", DIA_Hokurn_Learn_OK);
+		Info_AddChoice(DIA_Hokurn_Learn, "All right, here's the money.", DIA_Hokurn_Learn_OK);
 	};
 };
 
 func void DIA_Hokurn_Learn_TooExpensive()
 {
-	AI_Output(other, self, "DIA_Hokurn_Learn_TooExpensive_15_00"); //Das ist mir zu teuer.
-	AI_Output(self, other, "DIA_Hokurn_Learn_TooExpensive_01_01"); //Zu teuer? Das ist weniger als jeder andere in meiner Situation nehmen würde.
-	AI_Output(self, other, "DIA_Hokurn_Learn_TooExpensive_01_02"); //Überleg es dir.
+	AI_Output(other, self, "DIA_Hokurn_Learn_TooExpensive_15_00"); //That's too expensive for me.
+	AI_Output(self, other, "DIA_Hokurn_Learn_TooExpensive_01_01"); //Too expensive? That's less than anyone else in my place would charge.
+	AI_Output(self, other, "DIA_Hokurn_Learn_TooExpensive_01_02"); //Think about it.
 
 	Info_ClearChoices(DIA_Hokurn_Learn);
 };
 
 func void DIA_Hokurn_Learn_OK()
 {
-	AI_Output(other, self, "DIA_Hokurn_Learn_OK_15_00"); //In Ordnung, hier ist das Geld.
+	AI_Output(other, self, "DIA_Hokurn_Learn_OK_15_00"); //All right, here's the money.
 	B_GiveInvItems(other, self, ItMi_Gold, 300);
 	Hokurn_TeachPlayer = TRUE;
 	Info_ClearChoices(DIA_Hokurn_Learn);
@@ -267,7 +267,7 @@ instance DIA_Hokurn_PayTeacher(C_INFO)
 	condition		= DIA_Hokurn_PayTeacher_Condition;
 	information		= DIA_Hokurn_PayTeacher_Info;
 	permanent		= TRUE;
-	description		= "Hier ist dein Geld. Ich will trainieren.";
+	description		= "Here's your money. I want to be trained.";
 };
 
 func int DIA_Hokurn_PayTeacher_Condition()
@@ -282,8 +282,8 @@ func int DIA_Hokurn_PayTeacher_Condition()
 
 func void DIA_Hokurn_PayTeacher_Info()
 {
-	AI_Output(other, self, "DIA_Hokurn_PayTeacher_15_00"); //Hier ist dein Geld. Ich will trainieren.
-	AI_Output(self, other, "DIA_Hokurn_PayTeacher_01_01"); //Du wirst es nicht bereuen!
+	AI_Output(other, self, "DIA_Hokurn_PayTeacher_15_00"); //Here's your money. I want to be trained.
+	AI_Output(self, other, "DIA_Hokurn_PayTeacher_01_01"); //You won't be sorry!
 
 	B_GiveInvItems(other, self, ItMi_Gold, 300);
 	Hokurn_TeachPlayer = TRUE;
@@ -299,7 +299,7 @@ instance DIA_Hokurn_DrinkAndLearn(C_INFO)
 	condition		= DIA_Hokurn_DrinkAndLearn_Condition;
 	information		= DIA_Hokurn_DrinkAndLearn_Info;
 	permanent		= TRUE;
-	description		= "Hier hast du was zu trinken.";
+	description		= "Here's something to drink for you.";
 };
 
 func int DIA_Hokurn_DrinkAndLearn_Condition()
@@ -315,7 +315,7 @@ func int DIA_Hokurn_DrinkAndLearn_Condition()
 
 func void DIA_Hokurn_DrinkAndLearn_Info()
 {
-	AI_Output(other, self, "DIA_Hokurn_DrinkAndLearn_15_00"); //Hier hast du was zu trinken.
+	AI_Output(other, self, "DIA_Hokurn_DrinkAndLearn_15_00"); //Here's something to drink for you.
 
 	if (Npc_HasItems(other, ItFo_Booze) >= 1)
 	{
@@ -335,7 +335,7 @@ func void DIA_Hokurn_DrinkAndLearn_Info()
 
 	HokurnLastDrink = Wld_GetDay();
 
-	AI_Output(self, other, "DIA_Hokurn_DrinkAndLearn_01_01"); //Mir geht's schon viel besser. Ich könnte Bäume ausreißen.
+	AI_Output(self, other, "DIA_Hokurn_DrinkAndLearn_01_01"); //I'm feeling a lot better. I'm ready for anything.
 };
 
 //*********************************************************************
@@ -348,7 +348,7 @@ instance DIA_Hokurn_Teach(C_INFO)
 	condition		= DIA_Hokurn_Teach_Condition;
 	information		= DIA_Hokurn_Teach_Info;
 	permanent		= TRUE;
-	description		= "Lass uns mit dem Training beginnen.";
+	description		= "Let's start with the training.";
 };
 
 func int DIA_Hokurn_Teach_Condition()
@@ -361,21 +361,21 @@ func int DIA_Hokurn_Teach_Condition()
 
 func void DIA_Hokurn_Teach_Info()
 {
-	AI_Output(other, self, "DIA_Hokurn_Teach_15_00"); //Lass uns mit dem Training beginnen.
+	AI_Output(other, self, "DIA_Hokurn_Teach_15_00"); //Let's start with the training.
 
 	if (HokurnLastDrink < Wld_GetDay())
 	{
-		AI_Output(self, other, "DIA_Hokurn_Teach_01_01"); //Bring mir erst mal was zu trinken!
+		AI_Output(self, other, "DIA_Hokurn_Teach_01_01"); //First bring me something to drink!
 	}
 	else
 	{
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output(self, other, "DIA_Hokurn_Teach_01_02"); //Dann wollen wir doch mal sehen, was wir aus deinen verstaubten Paladinknochen rausholen, was?
+			AI_Output(self, other, "DIA_Hokurn_Teach_01_02"); //Then we'll see what we can get out of your rusty paladin bones, hey?
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output(self, other, "DIA_Hokurn_Teach_01_03"); //Sieh an. Selbst ein Magier bedient sich der Nahkampfwaffe.
+			AI_Output(self, other, "DIA_Hokurn_Teach_01_03"); //What do you know. Even magicians use close combat weapons.
 		};
 
 		Info_ClearChoices(DIA_Hokurn_Teach);
@@ -394,7 +394,7 @@ func void DIA_Hokurn_Teach_Back()
 
 func void B_Hokurn_TeachedEnough()
 {
-	AI_Output(self, other, "B_Hokurn_TeachedEnough_01_00"); //In dieser Disziplin brauchst du keinen Lehrer mehr.
+	AI_Output(self, other, "B_Hokurn_TeachedEnough_01_00"); //You don't need a teacher for this discipline any more.
 };
 
 func void DIA_Hokurn_Teach_2H_1()
@@ -446,7 +446,7 @@ func void DIA_Hokurn_Teach_1H_5()
 };
 
 //*********************************************************************
-//	Wieso hängt ihr hier überhaupt rum?
+//	Wieso hÃ¤ngt ihr hier Ã¼berhaupt rum?
 //*********************************************************************
 instance DIA_Hokurn_StayHere(C_INFO)
 {
@@ -454,7 +454,7 @@ instance DIA_Hokurn_StayHere(C_INFO)
 	nr				= 5;
 	condition		= DIA_Hokurn_StayHere_Condition;
 	information		= DIA_Hokurn_StayHere_Info;
-	description		= "Was wollt ihr hier überhaupt?";
+	description		= "What are you doing here anyway?";
 };
 
 func int DIA_Hokurn_StayHere_Condition()
@@ -467,12 +467,12 @@ func int DIA_Hokurn_StayHere_Condition()
 
 func void DIA_Hokurn_StayHere_Info()
 {
-	AI_Output(other, self, "DIA_Hokurn_StayHere_15_00"); //Was wollt ihr hier überhaupt?
-	AI_Output(self, other, "DIA_Hokurn_StayHere_01_01"); //Keine Ahnung, was wir hier machen oder wann es los geht.
-	AI_Output(self, other, "DIA_Hokurn_StayHere_01_02"); //Ist mir auch egal, solange ich genug zu trinken habe.
+	AI_Output(other, self, "DIA_Hokurn_StayHere_15_00"); //What are you doing here anyway?
+	AI_Output(self, other, "DIA_Hokurn_StayHere_01_01"); //I don't have any idea what we're doing here or when it'll start.
+	AI_Output(self, other, "DIA_Hokurn_StayHere_01_02"); //And I don't care as long as I have enough to drink.
 
 	/*
-	AI_Output(other, self, "DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier überhaupt?
+	AI_Output(other, self, "DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier Ã¼berhaupt?
 	AI_Output(self, other, "DIA_Addon_Hokurn_StayHere_01_01"); //Keine Ahnung, was wir hier machen oder wann es los geht.
 	AI_Output(self, other, "DIA_Addon_Hokurn_StayHere_01_02"); //Ist mir auch egal, solange ich genug zu trinken habe.
 	*/
@@ -488,7 +488,7 @@ instance DIA_Hokurn_WhereDragon(C_INFO)
 	condition		= DIA_Hokurn_WhereDragon_Condition;
 	information		= DIA_Hokurn_WhereDragon_Info;
 	permanent		= TRUE;
-	description		= "Wisst ihr denn, wo die Drachen sind?";
+	description		= "Do you know where the dragons are then?";
 };
 
 func int DIA_Hokurn_WhereDragon_Condition()
@@ -503,48 +503,48 @@ func int DIA_Hokurn_WhereDragon_Condition()
 
 func void DIA_Hokurn_WhereDragon_Info()
 {
-	AI_Output(other, self, "DIA_Hokurn_WhereDragon_15_00"); //Wisst ihr denn, wo die Drachen sind?
-	AI_Output(self, other, "DIA_Hokurn_WhereDragon_01_01"); //Was krieg ich denn, wenn ich es dir sage?
+	AI_Output(other, self, "DIA_Hokurn_WhereDragon_15_00"); //Do you know where the dragons are then?
+	AI_Output(self, other, "DIA_Hokurn_WhereDragon_01_01"); //What's in it for me, if I tell you?
 
 	Info_ClearChoices(DIA_Hokurn_WhereDragon);
-	Info_AddChoice(DIA_Hokurn_WhereDragon, "Gar nichts, ich werde sie selber suchen.", DIA_Hokurn_WhereDragon_FindMyself);
-	Info_AddChoice(DIA_Hokurn_WhereDragon, "Ich könnte dir die Auskunft abkaufen.", DIA_Hokurn_WhereDragon_Gold);
+	Info_AddChoice(DIA_Hokurn_WhereDragon, "Nothing, I'm looking for them myself.", DIA_Hokurn_WhereDragon_FindMyself);
+	Info_AddChoice(DIA_Hokurn_WhereDragon, "I'd be willing to pay you for that information.", DIA_Hokurn_WhereDragon_Gold);
 	if (Npc_HasItems(other, ITFO_BOOZE) >= 1)
 	{
-		Info_AddChoice(DIA_Hokurn_WhereDragon, "Ich hab noch ne Flasche Wacholder.", DIA_Hokurn_WhereDragon_Booze);
+		Info_AddChoice(DIA_Hokurn_WhereDragon, "I've still got a bottle of gin!", DIA_Hokurn_WhereDragon_Booze);
 	};
 };
 
 func void DIA_Hokurn_WhereDragon_FindMyself()
 {
-	AI_Output(other, self, "DIA_Hokurn_WhereDragon_FindMyself_15_00"); //Gar nichts, ich such sie selbst.
-	AI_Output(self, other, "DIA_Hokurn_WhereDragon_FindMyself_01_01"); //Dann zieh dich mal warm an. Du hast ein heißes Tänzchen vor dir.
+	AI_Output(other, self, "DIA_Hokurn_WhereDragon_FindMyself_15_00"); //Nothing, I'm looking for them myself.
+	AI_Output(self, other, "DIA_Hokurn_WhereDragon_FindMyself_01_01"); //You'd better watch out. You've got a hell of a fight in front of you.
 	Info_ClearChoices(DIA_Hokurn_WhereDragon);
 };
 
 func void DIA_Hokurn_WhereDragon_Gold()
 {
-	AI_Output(other, self, "DIA_Hokurn_WhereDragon_Gold_15_00"); //Ich könnte dir die Auskunft abkaufen.
-	AI_Output(self, other, "DIA_Hokurn_WhereDragon_Gold_01_01"); //Abkaufen? Hmm. Für 200 Goldstücke würde dir die Information geben.
+	AI_Output(other, self, "DIA_Hokurn_WhereDragon_Gold_15_00"); //I'd be willing to pay you for that information.
+	AI_Output(self, other, "DIA_Hokurn_WhereDragon_Gold_01_01"); //Pay me? Hmm. I'll give you the information for 200 gold pieces.
 
 	Info_ClearChoices(DIA_Hokurn_WhereDragon);
-	Info_AddChoice(DIA_Hokurn_WhereDragon, "Zu viel", DIA_Hokurn_WhereDragon_TooMuch);
+	Info_AddChoice(DIA_Hokurn_WhereDragon, "Too much!", DIA_Hokurn_WhereDragon_TooMuch);
 	if (Npc_HasItems(other, ItMi_Gold) >= 200)
 	{
-		Info_AddChoice(DIA_Hokurn_WhereDragon, "Einverstanden, hier ist da Geld.", DIA_Hokurn_WhereDragon_OK);
+		Info_AddChoice(DIA_Hokurn_WhereDragon, "Deal. Here's the money!", DIA_Hokurn_WhereDragon_OK);
 	};
 };
 
 func void DIA_Hokurn_WhereDragon_TooMuch()
 {
-	AI_Output(other, self, "DIA_Hokurn_WhereDragon_TooMuch_15_00"); //Zu viel!
-	AI_Output(self, other, "DIA_Hokurn_WhereDragon_TooMuch_01_01"); //Dann vergiss es.
+	AI_Output(other, self, "DIA_Hokurn_WhereDragon_TooMuch_15_00"); //Too much!
+	AI_Output(self, other, "DIA_Hokurn_WhereDragon_TooMuch_01_01"); //Then forget it.
 	Info_ClearChoices(DIA_Hokurn_WhereDragon);
 };
 
 func void DIA_Hokurn_WhereDragon_OK()
 {
-	AI_Output(other, self, "DIA_Hokurn_WhereDragon_OK_15_00"); //Einverstanden, hier ist das Geld.
+	AI_Output(other, self, "DIA_Hokurn_WhereDragon_OK_15_00"); //Deal. Here's the money!
 	B_GiveInvItems(other, self, ItMi_gold, 200);
 
 	HokurnTellsDragon = TRUE;
@@ -553,11 +553,11 @@ func void DIA_Hokurn_WhereDragon_OK()
 
 func void DIA_Hokurn_WhereDragon_Booze()
 {
-	AI_Output(other, self, "DIA_Hokurn_WhereDragon_Booze_15_00"); //Ich hab noch eine Flasche Wacholder!
-	AI_Output(self, other, "DIA_Hokurn_WhereDragon_Booze_01_01"); //Für ein gutes Tröpfchen würde ich alle Drachen der Welt töten.
-	AI_Output(self, other, "DIA_Hokurn_WhereDragon_Booze_01_02"); //Abgemacht. Gib mir die Flasche!
+	AI_Output(other, self, "DIA_Hokurn_WhereDragon_Booze_15_00"); //I've still got a bottle of gin!
+	AI_Output(self, other, "DIA_Hokurn_WhereDragon_Booze_01_01"); //I'd fight every dragon in the world for a fine vintage.
+	AI_Output(self, other, "DIA_Hokurn_WhereDragon_Booze_01_02"); //Agreed. Give me the bottle!
 	B_GiveInvItems(other, self, ItFo_booze, 1);
-	AI_Output(self, other, "DIA_Hokurn_WhereDragon_Booze_01_03"); //Den heb ich mir für schlechte Zeiten auf.
+	AI_Output(self, other, "DIA_Hokurn_WhereDragon_Booze_01_03"); //I'll keep that for a rainy day.
 
 	HokurnTellsDragon = TRUE;
 	Info_ClearChoices(DIA_Hokurn_WhereDragon);
@@ -573,7 +573,7 @@ instance DIA_Hokurn_Dragon(C_INFO)
 	condition		= DIA_Hokurn_Dragon_Condition;
 	information		= DIA_Hokurn_Dragon_Info;
 	permanent		= TRUE;
-	description		= "Also, wo sind jetzt die Drachen?";
+	description		= "All right, now, where are those dragons?";
 };
 
 func int DIA_Hokurn_Dragon_Condition()
@@ -586,10 +586,10 @@ func int DIA_Hokurn_Dragon_Condition()
 
 func void DIA_Hokurn_Dragon_Info()
 {
-	AI_Output(other, self, "DIA_Hokurn_Dragon_15_00"); //Also, wo sind jetzt die Drachen?
-	AI_Output(self, other, "DIA_Hokurn_Dragon_01_01"); //Was Genaues kann ich dir natürlich nicht sagen, aber ich habe gehört, dass es vier Drachen sein sollen.
-	AI_Output(self, other, "DIA_Hokurn_Dragon_01_02"); //Wir haben nachts ein rotes Leuchten über dem höchsten Berg gesehen.
-	AI_Output(self, other, "DIA_Hokurn_Dragon_01_03"); //Ich schwöre bei meiner Mutter, wenn du einen Drachen suchst, dann wirst du ihn ganz bestimmt dort finden.
+	AI_Output(other, self, "DIA_Hokurn_Dragon_15_00"); //All right, now, where are those dragons?
+	AI_Output(self, other, "DIA_Hokurn_Dragon_01_01"); //Naturally, I can't tell you anything precise, but I've heard that there are supposed to be four dragons.
+	AI_Output(self, other, "DIA_Hokurn_Dragon_01_02"); //We've seen a red glow over the highest mountain at night.
+	AI_Output(self, other, "DIA_Hokurn_Dragon_01_03"); //I swear by my mother, if you're looking for a dragon, then you'll definitely find one there.
 };
 
 //*********************************************************************
@@ -602,7 +602,7 @@ instance DIA_Hokurn_AllDragonsDead(C_INFO)
 	condition		= DIA_Hokurn_AllDragonsDead_Condition;
 	information		= DIA_Hokurn_AllDragonsDead_Info;
 	permanent		= TRUE;
-	description		= "Ich hab alle Drachen getötet.";
+	description		= "I've killed all the dragons.";
 };
 
 func int DIA_Hokurn_AllDragonsDead_Condition()
@@ -615,8 +615,8 @@ func int DIA_Hokurn_AllDragonsDead_Condition()
 
 func void DIA_Hokurn_AllDragonsDead_Info()
 {
-	AI_Output(other, self, "DIA_Hokurn_AllDragonsDead_15_00"); //Ich hab alle Drachen getötet.
-	AI_Output(self, other, "DIA_Hokurn_AllDragonsDead_01_01"); //Verzieh dich und erzähl deine Märchen jemand anderem.
+	AI_Output(other, self, "DIA_Hokurn_AllDragonsDead_15_00"); //I've killed all the dragons.
+	AI_Output(self, other, "DIA_Hokurn_AllDragonsDead_01_01"); //Take a hike and tell your fairy tales to someone else.
 };
 
 // ************************************************************

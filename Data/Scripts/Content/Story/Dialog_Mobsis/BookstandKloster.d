@@ -1,5 +1,5 @@
 // -------------------------------------------------------------------------------------
-//				Weitere Buchständer in der Magierbibliothek
+//				Weitere BuchstÃ¤nder in der Magierbibliothek
 // -------------------------------------------------------------------------------------
 //				Runensteine
 // -------------------------------------------------------------------------------------
@@ -11,123 +11,123 @@
 // Circles 
 
 // Circle 1
-const string Bookstand_Kreise_01_S1_1 = "DER ERSTE KREIS";
-const string Bookstand_Kreise_01_S1_2 = "Die Runen des ersten Kreises und die zu deren Herstellung benötigten Ingredenzien ";
-const string Bookstand_Kreise_01_S1_3 = "Goldmünze";
-const string Bookstand_Kreise_01_S1_4 = "Feuerpfeil";
-const string Bookstand_Kreise_01_S1_5 = "Schwefel";
-const string Bookstand_Kreise_01_S1_6 = "Kleiner Blitz";
-const string Bookstand_Kreise_01_S1_7 = "Bergkristall";
-const string Bookstand_Kreise_01_S1_8 = "Goblin Skelett";
-const string Bookstand_Kreise_01_S1_9 = "Knochen eines Goblins";
-const string Bookstand_Kreise_01_S1_10 = "Heilpflanze";
-const string Bookstand_Kreise_01_S1_11 = "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich.";
-const string Bookstand_Kreise_01_S1_12 = "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen.";
-const string Bookstand_Kreise_01_S1_13 = "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen.";
+const string Bookstand_Kreise_01_S1_1 = "THE FIRST CIRCLE";
+const string Bookstand_Kreise_01_S1_2 = "The runes of the 1st Circle and the ingredients required to create them.";
+const string Bookstand_Kreise_01_S1_3 = "Gold Coin";
+const string Bookstand_Kreise_01_S1_4 = "Fire Arrow";
+const string Bookstand_Kreise_01_S1_5 = "Sulfur";
+const string Bookstand_Kreise_01_S1_6 = "Small Lightning";
+const string Bookstand_Kreise_01_S1_7 = "Rock Crystal";
+const string Bookstand_Kreise_01_S1_8 = "Goblin Skeleton";
+const string Bookstand_Kreise_01_S1_9 = "Goblin's Bone";
+const string Bookstand_Kreise_01_S1_10 = "Healing Plant";
+const string Bookstand_Kreise_01_S1_11 = "To create a rune you always require ONE of the ingredients listed.";
+const string Bookstand_Kreise_01_S1_12 = "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell.";
+const string Bookstand_Kreise_01_S1_13 = "Only when these prerequisites are fulfilled can he set to work on the rune table.";
 
 // Circle 2
-const string Bookstand_Kreise_02_S1_1 = "DER ZWEITE KREIS";
-const string Bookstand_Kreise_02_S1_2 = "Die Runen des zweiten Kreises und die zu deren Herstellung benötigten Ingredenzien ";
-const string Bookstand_Kreise_02_S1_3 = "Feuerball";
-const string Bookstand_Kreise_02_S1_4 = "Pech";
-const string Bookstand_Kreise_02_S1_5 = "Eispfeil";
-const string Bookstand_Kreise_02_S1_6 = "Gletscher Quartz";
-const string Bookstand_Kreise_02_S1_7 = "Wolf rufen";
-const string Bookstand_Kreise_02_S1_8 = "Wolfsfell";
-const string Bookstand_Kreise_02_S1_9 = "Windfaust";
-const string Bookstand_Kreise_02_S1_10 = "Kohle";
-const string Bookstand_Kreise_02_S1_11 = "Schlaf";
-const string Bookstand_Kreise_02_S1_12 = "Sumpfkraut";
-const string Bookstand_Kreise_02_S1_13 = "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich.";
-const string Bookstand_Kreise_02_S1_14 = "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen.";
-const string Bookstand_Kreise_02_S1_15 = "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen.";
+const string Bookstand_Kreise_02_S1_1 = "THE SECOND CIRCLE";
+const string Bookstand_Kreise_02_S1_2 = "The runes of the 2nd Circle and the ingredients required to create them.";
+const string Bookstand_Kreise_02_S1_3 = "Fireball";
+const string Bookstand_Kreise_02_S1_4 = "Pitch";
+const string Bookstand_Kreise_02_S1_5 = "Ice Arrow";
+const string Bookstand_Kreise_02_S1_6 = "Glacier Quartz";
+const string Bookstand_Kreise_02_S1_7 = "Summon Wolf";
+const string Bookstand_Kreise_02_S1_8 = "Wolf Skin";
+const string Bookstand_Kreise_02_S1_9 = "Wind Fist";
+const string Bookstand_Kreise_02_S1_10 = "Coal";
+const string Bookstand_Kreise_02_S1_11 = "Sleep";
+const string Bookstand_Kreise_02_S1_12 = "Swampweed";
+const string Bookstand_Kreise_02_S1_13 = "To create a rune you always require ONE of the ingredients listed.";
+const string Bookstand_Kreise_02_S1_14 = "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell.";
+const string Bookstand_Kreise_02_S1_15 = "Only when these prerequisites are fulfilled can he set to work on the rune table.";
 
 // Circle 3
-const string Bookstand_Kreise_03_S1_1 = "DER DRITTE KREIS";
-const string Bookstand_Kreise_03_S1_2 = "Die Runen des dritten Kreises und die zu deren Herstellung benötigten Ingredenzien ";
-const string Bookstand_Kreise_03_S1_3 = "Heilkraut";
-const string Bookstand_Kreise_03_S1_4 = "Kleiner Feuersturm";
-const string Bookstand_Kreise_03_S1_5 = "Pech, Schwefel";
-const string Bookstand_Kreise_03_S1_6 = "Skelett erschaffen";
-const string Bookstand_Kreise_03_S1_7 = "Knochen eines Skeletts";
-const string Bookstand_Kreise_03_S1_8 = "Furcht";
-const string Bookstand_Kreise_03_S1_9 = "Schwarze Perle";
-const string Bookstand_Kreise_03_S1_10 = "Eisblock";
-const string Bookstand_Kreise_03_S1_11 = "Gletscher Quartz";
-const string Bookstand_Kreise_03_S1_12 = "Aquamarin";
-const string Bookstand_Kreise_03_S1_13 = "Kugelblitz";
-const string Bookstand_Kreise_03_S1_14 = "Bergkristall";
-const string Bookstand_Kreise_03_S1_15 = "Schwefel";
-const string Bookstand_Kreise_03_S1_16 = "Feuerball";
-const string Bookstand_Kreise_03_S1_17 = "Pech, Schwefel";
-const string Bookstand_Kreise_03_S1_18 = "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich.";
-const string Bookstand_Kreise_03_S1_19 = "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen.";
-const string Bookstand_Kreise_03_S1_20 = "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen.";
+const string Bookstand_Kreise_03_S1_1 = "THE THIRD CIRCLE";
+const string Bookstand_Kreise_03_S1_2 = "The runes of the 3rd Circle and the ingredients required to create them.";
+const string Bookstand_Kreise_03_S1_3 = "Healing Herb";
+const string Bookstand_Kreise_03_S1_4 = "Small Fire Storm";
+const string Bookstand_Kreise_03_S1_5 = "Pitch, Sulfur";
+const string Bookstand_Kreise_03_S1_6 = "Create Skeleton";
+const string Bookstand_Kreise_03_S1_7 = "Skeleton's Bone";
+const string Bookstand_Kreise_03_S1_8 = "Fear";
+const string Bookstand_Kreise_03_S1_9 = "Black Pearl";
+const string Bookstand_Kreise_03_S1_10 = "Ice Block";
+const string Bookstand_Kreise_03_S1_11 = "Glacier Quartz";
+const string Bookstand_Kreise_03_S1_12 = "Aquamarine";
+const string Bookstand_Kreise_03_S1_13 = "Ball Lightning";
+const string Bookstand_Kreise_03_S1_14 = "Rock Crystal";
+const string Bookstand_Kreise_03_S1_15 = "Sulfur";
+const string Bookstand_Kreise_03_S1_16 = "Fireball";
+const string Bookstand_Kreise_03_S1_17 = "Pitch, Sulfur";
+const string Bookstand_Kreise_03_S1_18 = "To create a rune you always require ONE of the ingredients listed.";
+const string Bookstand_Kreise_03_S1_19 = "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell.";
+const string Bookstand_Kreise_03_S1_20 = "Only when these prerequisites are fulfilled can he set to work on the rune table.";
 
 // Circle 4
 
-const string Bookstand_Kreise_04_S1_1 = "DER VIERTE KREIS";
-const string Bookstand_Kreise_04_S1_2 = "Die Runen des vierten Kreises und die zu deren Herstellung benötigten Ingredenzien ";
-const string Bookstand_Kreise_04_S1_3 = "Grosser Feuerball";
-const string Bookstand_Kreise_04_S1_4 = "Schwefel";
-const string Bookstand_Kreise_04_S1_5 = "Pech";
-const string Bookstand_Kreise_04_S1_6 = "Blitzschlag";
-const string Bookstand_Kreise_04_S1_7 = "Bergkristall";
-const string Bookstand_Kreise_04_S1_8 = "Gletscher Quartz";
-const string Bookstand_Kreise_04_S1_9 = "Golem erwecken";
-const string Bookstand_Kreise_04_S1_10 = "Herz eines Steingolems";
-const string Bookstand_Kreise_04_S1_11 = "Untote vernichten";
-const string Bookstand_Kreise_04_S1_12 = "Geweihtes Wasser";
-const string Bookstand_Kreise_04_S1_13 = "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich.";
-const string Bookstand_Kreise_04_S1_14 = "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen.";
-const string Bookstand_Kreise_04_S1_15 = "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen.";
+const string Bookstand_Kreise_04_S1_1 = "THE FOURTH CIRCLE";
+const string Bookstand_Kreise_04_S1_2 = "The runes of the 4th Circle and the ingredients required to create them.";
+const string Bookstand_Kreise_04_S1_3 = "Large Fireball";
+const string Bookstand_Kreise_04_S1_4 = "Sulfur";
+const string Bookstand_Kreise_04_S1_5 = "Pitch";
+const string Bookstand_Kreise_04_S1_6 = "Lightning";
+const string Bookstand_Kreise_04_S1_7 = "Rock Crystal";
+const string Bookstand_Kreise_04_S1_8 = "Glacier Quartz";
+const string Bookstand_Kreise_04_S1_9 = "Awaken Golem";
+const string Bookstand_Kreise_04_S1_10 = "Heart of a Stone Golem";
+const string Bookstand_Kreise_04_S1_11 = "Destroy Undead";
+const string Bookstand_Kreise_04_S1_12 = "Holy Water";
+const string Bookstand_Kreise_04_S1_13 = "To create a rune you always require ONE of the ingredients listed.";
+const string Bookstand_Kreise_04_S1_14 = "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell.";
+const string Bookstand_Kreise_04_S1_15 = "Only when these prerequisites are fulfilled can he set to work on the rune table.";
 
 // Circle 5
 
-const string Bookstand_Kreise_05_S1_1 = "DER FÜNFTE KREIS";
-const string Bookstand_Kreise_05_S1_2 = "Die Runen des fünften Kreises und die zu deren Herstellung benötigten Ingredenzien ";
-const string Bookstand_Kreise_05_S1_3 = "Eiswelle";
-const string Bookstand_Kreise_05_S1_4 = "Gletscher Quartz";
-const string Bookstand_Kreise_05_S1_5 = "Aquamarin";
-const string Bookstand_Kreise_05_S1_6 = "Grosser Feuersturm";
-const string Bookstand_Kreise_05_S1_7 = "Schwefel";
-const string Bookstand_Kreise_05_S1_8 = "Flammenzunge";
-const string Bookstand_Kreise_05_S1_9 = "Dämon beschwören";
-const string Bookstand_Kreise_05_S1_10 = "Herz eines Dämonen";
-const string Bookstand_Kreise_05_S1_11 = "Schwere Wunden heilen";
-const string Bookstand_Kreise_05_S1_12 = "Heilwurzel";
-const string Bookstand_Kreise_05_S1_13 = "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich.";
-const string Bookstand_Kreise_05_S1_14 = "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen.";
-const string Bookstand_Kreise_05_S1_15 = "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen.";
+const string Bookstand_Kreise_05_S1_1 = "THE FIFTH CIRCLE";
+const string Bookstand_Kreise_05_S1_2 = "The runes of the 5th Circle and the ingredients required to create them.";
+const string Bookstand_Kreise_05_S1_3 = "Ice Wave";
+const string Bookstand_Kreise_05_S1_4 = "Glacier Quartz";
+const string Bookstand_Kreise_05_S1_5 = "Aquamarine";
+const string Bookstand_Kreise_05_S1_6 = "Large Fire Storm";
+const string Bookstand_Kreise_05_S1_7 = "Sulfur";
+const string Bookstand_Kreise_05_S1_8 = "Tongue of Fire";
+const string Bookstand_Kreise_05_S1_9 = "Summon Demon";
+const string Bookstand_Kreise_05_S1_10 = "Heart of a Demon";
+const string Bookstand_Kreise_05_S1_11 = "Heal Heavy Wounds";
+const string Bookstand_Kreise_05_S1_12 = "Healing Root";
+const string Bookstand_Kreise_05_S1_13 = "To create a rune you always require ONE of the ingredients listed.";
+const string Bookstand_Kreise_05_S1_14 = "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell.";
+const string Bookstand_Kreise_05_S1_15 = "Only when these prerequisites are fulfilled can he set to work on the rune table.";
 
 // Circle 6
-const string Bookstand_Kreise_06_S1_1 = "DER SECHSTE KREIS";
-const string Bookstand_Kreise_06_S1_2 = "Die Runen des sechsten Kreises und die zu deren Herstellung benötigten Ingredenzien ";
-const string Bookstand_Kreise_06_S1_3 = "Feuerregen";
-const string Bookstand_Kreise_06_S1_4 = "Pech";
-const string Bookstand_Kreise_06_S1_5 = "Schwefel";
-const string Bookstand_Kreise_06_S1_6 = "Flammenzunge";
-const string Bookstand_Kreise_06_S1_7 = "Todeshauch";
-const string Bookstand_Kreise_06_S1_8 = "Kohle";
-const string Bookstand_Kreise_06_S1_9 = "Schwarze Perle";
-const string Bookstand_Kreise_06_S1_10 = "Todeswelle";
-const string Bookstand_Kreise_06_S1_11 = "Knochen eines Skeletts";
-const string Bookstand_Kreise_06_S1_12 = "Schwarze Perle";
-const string Bookstand_Kreise_06_S1_13 = "Armee der Finsternis";
-const string Bookstand_Kreise_06_S1_14 = "Knochen eines Skeletts";
-const string Bookstand_Kreise_06_S1_15 = "Schwarze Perle";
-const string Bookstand_Kreise_06_S1_16 = "Herz eines Steingolems";
-const string Bookstand_Kreise_06_S1_17 = "Herz eines Dämonen";
-const string Bookstand_Kreise_06_S1_18 = "Monster schrumpfen";
-const string Bookstand_Kreise_06_S1_19 = "Knochen eines Goblins";
-const string Bookstand_Kreise_06_S1_20 = "Trollhauer";
-const string Bookstand_Kreise_06_S1_21 = "Für die Herstellung einer Rune ist jeweils EINE der aufgeführten Ingredenzien erforderlich.";
-const string Bookstand_Kreise_06_S1_22 = "Dem Anwender muss die Formel für den Zauber bekannt sein und er muss einen blanken Runenstein, sowie eine Spruchrolle des jeweiligen Zaubers besitzen.";
-const string Bookstand_Kreise_06_S1_23 = "Erst wenn diese Vorraussetzungen erfüllt sind, kann er am Runentisch zu Werke gehen.";
+const string Bookstand_Kreise_06_S1_1 = "THE SIXTH CIRCLE";
+const string Bookstand_Kreise_06_S1_2 = "The runes of the 6th Circle and the ingredients required to create them.";
+const string Bookstand_Kreise_06_S1_3 = "Fire Rain";
+const string Bookstand_Kreise_06_S1_4 = "Pitch";
+const string Bookstand_Kreise_06_S1_5 = "Sulfur";
+const string Bookstand_Kreise_06_S1_6 = "Tongue of Fire";
+const string Bookstand_Kreise_06_S1_7 = "Breath of Death";
+const string Bookstand_Kreise_06_S1_8 = "Coal";
+const string Bookstand_Kreise_06_S1_9 = "Black Pearl";
+const string Bookstand_Kreise_06_S1_10 = "Wave of Death";
+const string Bookstand_Kreise_06_S1_11 = "Skeleton's Bone";
+const string Bookstand_Kreise_06_S1_12 = "Black Pearl";
+const string Bookstand_Kreise_06_S1_13 = "Army of Darkness";
+const string Bookstand_Kreise_06_S1_14 = "Skeleton's Bone";
+const string Bookstand_Kreise_06_S1_15 = "Black Pearl";
+const string Bookstand_Kreise_06_S1_16 = "Heart of a Stone Golem";
+const string Bookstand_Kreise_06_S1_17 = "Heart of a Demon";
+const string Bookstand_Kreise_06_S1_18 = "Shrink Monster";
+const string Bookstand_Kreise_06_S1_19 = "Goblin's Bone";
+const string Bookstand_Kreise_06_S1_20 = "Troll Tusk";
+const string Bookstand_Kreise_06_S1_21 = "To create a rune you always require ONE of the ingredients listed.";
+const string Bookstand_Kreise_06_S1_22 = "The user must know the formula for the spell and he must have a blank runestone and a spell scroll for the desired spell.";
+const string Bookstand_Kreise_06_S1_23 = "Only when these prerequisites are fulfilled can he set to work on the rune table.";
 
-const string Bookstand_Rune_01_S1_1 = "Seite 1";
-const string Bookstand_Rune_01_S1_2 = "Die Runensteine";
-const string Bookstand_Rune_01_S1_3 = "Seite 2";
+const string Bookstand_Rune_01_S1_1 = "Page 1";
+const string Bookstand_Rune_01_S1_2 = "The Runestones";
+const string Bookstand_Rune_01_S1_3 = "Page 2";
 
 func void Use_Bookstand_Rune_01_S1()
 {
@@ -163,9 +163,9 @@ func void Use_Bookstand_Rune_01_S1()
 // -------------------------------------------------------------------------------------
 //				Runen und Ingredenzien
 // -------------------------------------------------------------------------------------
-const string Bookstand_Rune_02_S1_1 = "Seite 1";
-const string Bookstand_Rune_02_S1_2 = "Die Runen und ihre Ingredenzien";
-const string Bookstand_Rune_02_S1_3 = "Seite 2";
+const string Bookstand_Rune_02_S1_1 = "Page 1";
+const string Bookstand_Rune_02_S1_2 = "The Runes and their Ingredients";
+const string Bookstand_Rune_02_S1_3 = "Page 2";
 
 func void Use_Bookstand_Rune_02_S1()
 {
@@ -201,9 +201,9 @@ func void Use_Bookstand_Rune_02_S1()
 // -------------------------------------------------------------------------------------
 //				Die Lehren Innos
 // -------------------------------------------------------------------------------------
-const string Bookstand_Innos_01_S1_1 = "Seite 1";
-const string Bookstand_Innos_01_S1_2 = "Die Lehren Innos";
-const string Bookstand_Innos_01_S1_3 = "Seite 2";
+const string Bookstand_Innos_01_S1_1 = "Page 1";
+const string Bookstand_Innos_01_S1_2 = "Teachings of Innos";
+const string Bookstand_Innos_01_S1_3 = "Page 2";
 
 func void Use_Bookstand_Innos_01_S1()
 {
@@ -239,9 +239,9 @@ func void Use_Bookstand_Innos_01_S1()
 // -------------------------------------------------------------------------------------
 //				Die Gebote Innos
 // -------------------------------------------------------------------------------------
-const string Bookstand_Innos_02_S1_1 = "Seite 1";
-const string Bookstand_Innos_02_S1_2 = "Die Gebote Innos";
-const string Bookstand_Innos_02_S1_3 = "Seite 2";
+const string Bookstand_Innos_02_S1_1 = "Page 1";
+const string Bookstand_Innos_02_S1_2 = "Commandments of Innos";
+const string Bookstand_Innos_02_S1_3 = "Page 2";
 
 func void Use_Bookstand_Innos_02_S1()
 {
@@ -534,7 +534,7 @@ func void Use_Bookstand_Kreise_04_S1()
 };
 
 // -------------------------------------------------------------------------------------
-//				Runen des fünften Kreises und ihre Ingredenzien
+//				Runen des fÃ¼nften Kreises und ihre Ingredenzien
 // -------------------------------------------------------------------------------------
 
 func void Use_Bookstand_Kreise_05_S1()
@@ -663,9 +663,9 @@ func void Use_Bookstand_Kreise_06_S1()
 // -------------------------------------------------------------------------------------
 //				Die Regeln im Kloster
 // -------------------------------------------------------------------------------------
-const string Bookstand_Rules_01_S1_1 = "Seite 1";
-const string Bookstand_Rules_01_S1_2 = "Regeln";
-const string Bookstand_Rules_01_S1_3 = "Seite 2";
+const string Bookstand_Rules_01_S1_1 = "Page 1";
+const string Bookstand_Rules_01_S1_2 = "Rules";
+const string Bookstand_Rules_01_S1_3 = "Page 2";
 func void Use_Bookstand_Rules_01_S1()
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);

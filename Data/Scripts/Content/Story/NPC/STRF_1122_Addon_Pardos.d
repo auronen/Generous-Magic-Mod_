@@ -16,7 +16,7 @@ instance STRF_1122_Addon_Pardos(Npc_Default)
 	attribute[ATR_MANA_MAX]			= 100;
 	attribute[ATR_MANA]				= 100;
 	attribute[ATR_HITPOINTS_MAX]	= 120;
-	attribute[ATR_HITPOINTS]		= 70; // für MISSION
+	attribute[ATR_HITPOINTS]		= 70; // fÃ¼r MISSION
 
 	// -------- visuals --------
 	B_SetNpcVisual(self, MALE, "Hum_Head_Bald", Face_N_Weak_Asghan, BodyTex_N, ITAR_Prisoner);

@@ -83,10 +83,10 @@ func int DIA_Addon_Esteban_Hi_Condition()
 
 func void DIA_Addon_Esteban_Hi_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Esteban_Hi_07_00"); //Du bist also der Kerl, der sich ins Lager gekämpft hat.
-	AI_Output(other, self, "DIA_Addon_Esteban_Hi_15_01"); //Das hat sich ja schnell rumgesprochen ...
-	AI_Output(self, other, "DIA_Addon_Esteban_Hi_07_02"); //Franco war 'ne harte Nuss. Niemand hat sich mit ihm angelegt. Niemand - außer dir.
-	AI_Output(self, other, "DIA_Addon_Esteban_Hi_07_03"); //Nur damit das klar ist, wenn du versuchst, den gleichen Scheiß bei mir abzuziehen, dann mache ich dich fertig.
+	AI_Output(self, other, "DIA_Addon_Esteban_Hi_07_00"); //So you're the fellow who fought his way into camp.
+	AI_Output(other, self, "DIA_Addon_Esteban_Hi_15_01"); //That got around fast...
+	AI_Output(self, other, "DIA_Addon_Esteban_Hi_07_02"); //Franco was a tough nut. No one messed with him. No one - except you.
+	AI_Output(self, other, "DIA_Addon_Esteban_Hi_07_03"); //Just to make it clear, if you try the same shit with me, I'll kill you.
 };
 
 // --------------------------------------------------------------------
@@ -98,7 +98,7 @@ instance DIA_Addon_Esteban_Mine(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Esteban_Mine_Condition;
 	information		= DIA_Addon_Esteban_Mine_Info;
-	description		= "Ich will in die Mine!";
+	description		= "I want into the mine!";
 };
 
 func int DIA_Addon_Esteban_Mine_Condition()
@@ -111,10 +111,10 @@ func int DIA_Addon_Esteban_Mine_Condition()
 
 func void DIA_Addon_Esteban_Mine_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_Mine_15_00"); //Ich will in die Mine!
-	AI_Output(self, other, "DIA_Addon_Esteban_Mine_07_01"); //(grinst) Natürlich willst du das. Da bist du bei mir genau richtig.
-	AI_Output(self, other, "DIA_Addon_Esteban_Mine_07_02"); //Denn jeder, der in der Mine schürft, darf einen fetten Anteil vom Gold behalten.
-	AI_Output(self, other, "DIA_Addon_Esteban_Mine_07_03"); //Und ich verteile die roten Steine, die du brauchst, damit Thorus dich durchlässt.
+	AI_Output(other, self, "DIA_Addon_Esteban_Mine_15_00"); //I want into the mine!
+	AI_Output(self, other, "DIA_Addon_Esteban_Mine_07_01"); //(grins) Of course you do. Then you're in the right place with me.
+	AI_Output(self, other, "DIA_Addon_Esteban_Mine_07_02"); //Because everyone who digs in the mine gets to keep a hefty share of the gold.
+	AI_Output(self, other, "DIA_Addon_Esteban_Mine_07_03"); //And I hand out the red stones you need, so that Thorus will let you in.
 };
 
 // --------------------------------------------------------------------
@@ -126,7 +126,7 @@ instance DIA_Addon_Esteban_Rot(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Esteban_Rot_Condition;
 	information		= DIA_Addon_Esteban_Rot_Info;
-	description		= "Gib mir so einen roten Stein.";
+	description		= "Give me one of those red stones.";
 };
 
 func int DIA_Addon_Esteban_Rot_Condition()
@@ -139,21 +139,21 @@ func int DIA_Addon_Esteban_Rot_Condition()
 
 func void DIA_Addon_Esteban_Rot_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_Rot_15_00"); //Gib mir so einen roten Stein.
-	AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_01"); //Okay, aber den gibt's nicht umsonst.
-	AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_02"); //Für gewöhnlich verlange ich einen Teil des Goldes, den die Jungs für's Schürfen bekommen.
-	AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_03"); //(abschätzend) Wie sieht's denn mit deinen Kenntnissen über's Goldhacken aus, hm?
+	AI_Output(other, self, "DIA_Addon_Esteban_Rot_15_00"); //Give me one of those red stones.
+	AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_01"); //Okay, but they aren't free.
+	AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_02"); //Normally, I demand a share of the gold the boys get for digging.
+	AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_03"); //(appraisingly) How much do you know about mining gold, hm?
 	if (Hero_HackChance > 25)
 	{
-		AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_04"); //Du hast dir schon ein paar Tricks erzählen lassen, was?
+		AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_04"); //You've probably learned a few tricks, right?
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_05"); //Du verstehst ja nicht gerade viel davon ...
+		AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_05"); //You don't appear to know a whole lot about it...
 	};
 
-	AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_06"); //(abfällig) Wenn ich dir einen roten Stein gebe, dann nicht, weil du so ein toller Buddler bist.
-	AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_07"); //Nein, für dich habe eine andere Aufgabe ...
+	AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_06"); //(snidely) If I give you a red stone, it won't be because you're such a great digger.
+	AI_Output(self, other, "DIA_Addon_Esteban_Rot_07_07"); //No, I have another job for you...
 };
 
 // --------------------------------------------------------------------
@@ -165,7 +165,7 @@ instance DIA_Addon_Esteban_MIS(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Esteban_MIS_Condition;
 	information		= DIA_Addon_Esteban_MIS_Info;
-	description		= "Was für eine Aufgabe ist das?";
+	description		= "What sort of job?";
 };
 
 func int DIA_Addon_Esteban_MIS_Condition()
@@ -178,19 +178,19 @@ func int DIA_Addon_Esteban_MIS_Condition()
 
 func void DIA_Addon_Esteban_MIS_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_MIS_15_00"); //Was für eine Aufgabe ist das?
-	AI_Output(self, other, "DIA_Addon_Esteban_MIS_07_01"); //Einer der Banditen hatte vor, mich zu töten. Aber stattdessen haben meine Wachen IHN getötet.
-	AI_Output(other, self, "DIA_Addon_Esteban_MIS_15_02"); //Er war wohl scharf auf deinen Posten, was?
-	AI_Output(self, other, "DIA_Addon_Esteban_MIS_07_03"); //Er war ein Idiot! Ein Schläger ohne Verstand. Von alleine wäre er nie auf die Idee gekommen, sich mit mir anzulegen.
-	AI_Output(self, other, "DIA_Addon_Esteban_MIS_07_04"); //Nein, er hat den Auftrag nur ausgeführt - geschickt wurde er von jemand anders ...
-	AI_Output(other, self, "DIA_Addon_Esteban_MIS_15_05"); //Ich soll also rausfinden, wer dahinter steckt.
-	AI_Output(self, other, "DIA_Addon_Esteban_MIS_07_06"); //Wer auch immer mir diesen Attentäter geschickt hat, er muss dafür bezahlen. Finde ihn - und ich lasse dich in die Mine.
+	AI_Output(other, self, "DIA_Addon_Esteban_MIS_15_00"); //What sort of job?
+	AI_Output(self, other, "DIA_Addon_Esteban_MIS_07_01"); //One of the bandits planned to kill me. But instead, my guards killed HIM.
+	AI_Output(other, self, "DIA_Addon_Esteban_MIS_15_02"); //He was hot for your job, huh?
+	AI_Output(self, other, "DIA_Addon_Esteban_MIS_07_03"); //He was an idiot! A thug without a brain. He never would have got the idea to attack me on his own.
+	AI_Output(self, other, "DIA_Addon_Esteban_MIS_07_04"); //No, he was only fulfilling a contract - someone else sent him...
+	AI_Output(other, self, "DIA_Addon_Esteban_MIS_15_05"); //So I'm supposed to find out who was behind it.
+	AI_Output(self, other, "DIA_Addon_Esteban_MIS_07_06"); //Whoever sent me this assassin will pay for it. Find him - and I'll let you into the mine.
 
 	if (!Npc_IsDead(Senyan)
 	&& Npc_KnowsInfo(other, DIA_Addon_BDT_1084_Senyan_Hi))
 	{
-		AI_Output(other, self, "DIA_Addon_Esteban_MIS_15_07"); //Wegen dieser Sache hat Senyan mich zu dir geschickt.
-		AI_Output(self, other, "DIA_Addon_Esteban_MIS_07_08"); //Senyan? Er arbeitet auch für mich. Ich habe ihm gesagt, er soll die Augen aufhalten.
+		AI_Output(other, self, "DIA_Addon_Esteban_MIS_15_07"); //Senyan sent me to you about this business.
+		AI_Output(self, other, "DIA_Addon_Esteban_MIS_07_08"); //Senyan? He also works for me. I told him he should keep his eyes open.
 	};
 
 	MIS_Judas = LOG_RUNNING;
@@ -200,7 +200,7 @@ func void DIA_Addon_Esteban_MIS_Info()
 };
 
 // --------------------------------------------------------------------
-//	Info Attentäter (Kerl)
+//	Info AttentÃ¤ter (Kerl)
 // --------------------------------------------------------------------
 instance DIA_Addon_Esteban_Kerl(C_INFO)
 {
@@ -208,7 +208,7 @@ instance DIA_Addon_Esteban_Kerl(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Esteban_Kerl_Condition;
 	information		= DIA_Addon_Esteban_Kerl_Info;
-	description		= "Wie soll ich vorgehen?";
+	description		= "How should I go about it?";
 };
 
 func int DIA_Addon_Esteban_Kerl_Condition()
@@ -221,10 +221,10 @@ func int DIA_Addon_Esteban_Kerl_Condition()
 
 func void DIA_Addon_Esteban_Kerl_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_Kerl_15_00"); //Wie soll ich vorgehen?
-	AI_Output(self, other, "DIA_Addon_Esteban_Kerl_07_01"); //Jeder hier im Lager weiß davon. Du spielst also mit offenen Karten.
-	AI_Output(self, other, "DIA_Addon_Esteban_Kerl_07_02"); //Versuche rauszufinden, wer auf meiner Seite steht und wer nicht und lass dich nicht von den Kerlen verarschen!
-	AI_Output(self, other, "DIA_Addon_Esteban_Kerl_07_03"); //Sprich mit Snaf. Der dicke Koch kriegt 'ne Menge mit.
+	AI_Output(other, self, "DIA_Addon_Esteban_Kerl_15_00"); //How should I go about it?
+	AI_Output(self, other, "DIA_Addon_Esteban_Kerl_07_01"); //Everyone here in the camp knows about it. So you're playing with all your cards on the table.
+	AI_Output(self, other, "DIA_Addon_Esteban_Kerl_07_02"); //Try to find out who is on my side and who isn't and don't let the boys make a fool of you!
+	AI_Output(self, other, "DIA_Addon_Esteban_Kerl_07_03"); //Talk to Snaf. That fat cook picks up a lot.
 
 	B_LogEntry(Topic_Addon_Esteban, Topic_Addon_Esteban_5);
 };
@@ -238,7 +238,7 @@ instance DIA_Addon_Esteban_Armor(C_INFO)
 	nr				= 9;
 	condition		= DIA_Addon_Esteban_Armor_Condition;
 	information		= DIA_Addon_Esteban_Armor_Info;
-	description		= "Ich brauche 'ne bessere Rüstung. ";
+	description		= "I need better armor.";
 };
 
 func int DIA_Addon_Esteban_Armor_Condition()
@@ -251,11 +251,11 @@ func int DIA_Addon_Esteban_Armor_Condition()
 
 func void DIA_Addon_Esteban_Armor_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_Armor_15_00"); //Ich brauch 'ne bessere Rüstung.
-	AI_Output(self, other, "DIA_Addon_Esteban_Armor_07_01"); //Wieso? Du hast doch schon eine. Die ist für's erste gut genug für dich!
+	AI_Output(other, self, "DIA_Addon_Esteban_Armor_15_00"); //I need better armor.
+	AI_Output(self, other, "DIA_Addon_Esteban_Armor_07_01"); //Why? You already have some. That's good enough for you for now!
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output(self, other, "DIA_Addon_Esteban_Armor_07_02"); //Wenn du deinen Auftrag erledigt hast, reden wir noch mal darüber ...
+		AI_Output(self, other, "DIA_Addon_Esteban_Armor_07_02"); //If you complete your assignement, we'll talk about it again...
 	};
 };
 
@@ -269,7 +269,7 @@ instance DIA_Addon_Esteban_Auftrag(C_INFO)
 	condition		= DIA_Addon_Esteban_Auftrag_Condition;
 	information		= DIA_Addon_Esteban_Auftrag_Info;
 	permanent		= TRUE;
-	description		= "Wegen dem Auftrag ...";
+	description		= "About the assignment...";
 };
 
 func int DIA_Addon_Esteban_Auftrag_Condition()
@@ -284,25 +284,25 @@ func int DIA_Addon_Esteban_Auftrag_Condition()
 
 func void DIA_Addon_Esteban_Auftrag_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_Auftrag_15_00"); //Wegen des Auftrags ...
-	AI_Output(self, other, "DIA_Addon_Esteban_Auftrag_07_01"); //Pass auf, ich hab noch andere Sachen, um die ich mich kümmern muss.
+	AI_Output(other, self, "DIA_Addon_Esteban_Auftrag_15_00"); //About the assignment...
+	AI_Output(self, other, "DIA_Addon_Esteban_Auftrag_07_01"); //Listen, I have other things I have to take care of.
 
 	if (MIS_Judas == LOG_SUCCESS)
 	{
-		AI_Output(other, self, "DIA_Addon_Esteban_Auftrag_15_02"); //Ich dachte, es interessiert dich vielleicht, wer hinter dem Attentat steckt ...
-		AI_Output(self, other, "DIA_Addon_Esteban_Auftrag_07_03"); //Wer ist es? Sag mir seinen Namen, damit meine Wachen ihm den Hals umdrehen können ...
-		AI_Output(other, self, "DIA_Addon_Esteban_Auftrag_15_04"); //Der Händler Fisk steckt dahinter. Zur Zeit steht er allerdings ahnungslos in der Kneipe und säuft ...
-		AI_Output(self, other, "DIA_Addon_Esteban_Auftrag_07_05"); //HA! Gut gemacht, Kleiner. Meine Wachen werden sich um ihn kümmern ...
+		AI_Output(other, self, "DIA_Addon_Esteban_Auftrag_15_02"); //I thought you might be interested in knowing who was behind the attack...
+		AI_Output(self, other, "DIA_Addon_Esteban_Auftrag_07_03"); //Who is it? Tell me his name so my guards can wring his neck...
+		AI_Output(other, self, "DIA_Addon_Esteban_Auftrag_15_04"); //The trader Fisk is behind it. At the moment, he's sitting in the bar unsuspecting and drinking...
+		AI_Output(self, other, "DIA_Addon_Esteban_Auftrag_07_05"); //HA! Well done, kid. My guards will take care of him.
 
 		AI_TurnToNpc(self, Wache_01);
-		AI_Output(self, other, "DIA_Addon_Esteban_Auftrag_07_06"); //Ihr habt's gehört Jungs. Schnappt euch diesen Fisk.
+		AI_Output(self, other, "DIA_Addon_Esteban_Auftrag_07_06"); //You heard him, boys. Go get Fisk.
 		AI_TurnToNpc(self, other);
 
 		Bodyguard_Killer = TRUE;
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Esteban_Auftrag_07_07"); //Komm wieder, wenn du rausgefunden hast, wer der Kerl ist.
+		AI_Output(self, other, "DIA_Addon_Esteban_Auftrag_07_07"); //Come back when you've found out who the guy is.
 		AI_StopProcessInfos(self);
 	};
 };
@@ -316,7 +316,7 @@ instance DIA_Addon_Esteban_Away(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Esteban_Away_Condition;
 	information		= DIA_Addon_Esteban_Away_Info;
-	description		= "Und wie geht's jetzt weiter?";
+	description		= "And what happens next?";
 };
 
 func int DIA_Addon_Esteban_Away_Condition()
@@ -329,10 +329,10 @@ func int DIA_Addon_Esteban_Away_Condition()
 
 func void DIA_Addon_Esteban_Away_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_Away_15_00"); //Und wie geht's jetzt weiter?
-	AI_Output(self, other, "DIA_Addon_Esteban_Away_07_01"); //Wie es jetzt weitergeht? Ich sage dir, wie es weitergeht.
-	AI_Output(self, other, "DIA_Addon_Esteban_Away_07_02"); //Fisk ist wird einen schmerzvollen Tod erleiden. Und jeder im Lager wird davon erfahren.
-	AI_Output(self, other, "DIA_Addon_Esteban_Away_07_03"); //Das wird ihnen allen eine Warnung sein.
+	AI_Output(other, self, "DIA_Addon_Esteban_Away_15_00"); //And what happens next?
+	AI_Output(self, other, "DIA_Addon_Esteban_Away_07_01"); //What happens next? I'll tell you what happens.
+	AI_Output(self, other, "DIA_Addon_Esteban_Away_07_02"); //Fisk will die a painful death. And everyone in the camp will find out about it.
+	AI_Output(self, other, "DIA_Addon_Esteban_Away_07_03"); //That will be a warning to all of them.
 
 	B_StartotherRoutine(Wache_01, "AMBUSH");
 	B_StartotherRoutine(Wache_02, "AMBUSH");
@@ -347,7 +347,7 @@ instance DIA_Addon_Esteban_Stone(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Esteban_Stone_Condition;
 	information		= DIA_Addon_Esteban_Stone_Info;
-	description		= "Kriege ich jetzt einen roten Stein?";
+	description		= "Do I get a red stone now?";
 };
 
 func int DIA_Addon_Esteban_Stone_Condition()
@@ -361,9 +361,9 @@ func int DIA_Addon_Esteban_Stone_Condition()
 
 func void DIA_Addon_Esteban_Stone_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_Stone_15_00"); //Kriege ich jetzt einen roten Stein?
-	AI_Output(self, other, "DIA_Addon_Esteban_Stone_07_01"); //Du hast deine Sache gut gemacht. Jemand wie du hat in der Mine nichts verloren.
-	AI_Output(self, other, "DIA_Addon_Esteban_Stone_07_02"); //Ich kann dich hier viel besser gebrauchen. Du wirst im Lager bleiben und weiterhin für mich arbeiten.
+	AI_Output(other, self, "DIA_Addon_Esteban_Stone_15_00"); //Do I get a red stone now?
+	AI_Output(self, other, "DIA_Addon_Esteban_Stone_07_01"); //You did your job well. Someone like you has no business in the mine.
+	AI_Output(self, other, "DIA_Addon_Esteban_Stone_07_02"); //I can use you much better out here. You will stay in the camp and continue working for me.
 };
 
 // --------------------------------------------------------------------
@@ -375,7 +375,7 @@ instance DIA_Addon_Esteban_not(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Esteban_not_Condition;
 	information		= DIA_Addon_Esteban_not_Info;
-	description		= "Ich denk' darüber nach.";
+	description		= "I'll think about it.";
 };
 
 func int DIA_Addon_Esteban_not_Condition()
@@ -388,9 +388,9 @@ func int DIA_Addon_Esteban_not_Condition()
 
 func void DIA_Addon_Esteban_not_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_not_15_00"); //Ich denk' darüber nach.
-	AI_Output(self, other, "DIA_Addon_Esteban_not_07_01"); //Du vergisst, vor wem du stehst. Ich habe hier das Sagen und du wirst genau das tun, was ich dir sage.
-	AI_Output(self, other, "DIA_Addon_Esteban_not_07_02"); //Und ich sage, du arbeitest für mich und niemanden sonst. Ist das jetzt klar?
+	AI_Output(other, self, "DIA_Addon_Esteban_not_15_00"); //I'll think about it.
+	AI_Output(self, other, "DIA_Addon_Esteban_not_07_01"); //You're forgetting who you're talking to. I'm in charge here and you will do exactly what I say.
+	AI_Output(self, other, "DIA_Addon_Esteban_not_07_02"); //And I say, you will work for me and no one else. Is that clear?
 };
 
 // --------------------------------------------------------------------
@@ -402,7 +402,7 @@ instance DIA_Addon_Esteban_fight(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Esteban_fight_Condition;
 	information		= DIA_Addon_Esteban_fight_Info;
-	description		= "Willst du mich verarschen?";
+	description		= "Are you trying to pull my leg?";
 };
 
 func int DIA_Addon_Esteban_fight_Condition()
@@ -415,12 +415,12 @@ func int DIA_Addon_Esteban_fight_Condition()
 
 func void DIA_Addon_Esteban_fight_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_fight_15_00"); //Willst du mich verarschen? Es war nie die Rede davon, dass ich für dich arbeite.
-	AI_Output(self, other, "DIA_Addon_Esteban_fight_07_01"); //So ein Angebot bekommt nicht jeder. Aber wenn du nicht willst, steht es dir auch frei, das Lager zu verlassen ...
-	AI_Output(other, self, "DIA_Addon_Esteban_fight_15_02"); //Wie wäre es, wenn du dein Wort hältst und mir einen roten Stein gibst?
-	AI_Output(self, other, "DIA_Addon_Esteban_fight_07_03"); //Hey - noch ein Wort und meine Wachen müssen dir auch noch weh tun.
-	AI_Output(other, self, "DIA_Addon_Esteban_fight_15_04"); //(grinst) Welche Wachen ... ?
-	AI_Output(self, other, "DIA_Addon_Esteban_fight_07_05"); //Was ... ? Ah, ich verstehe ... du versuchst mich reinzulegen, na warte ...
+	AI_Output(other, self, "DIA_Addon_Esteban_fight_15_00"); //Are you trying to play me for a fool? There was never a question of me working for you.
+	AI_Output(self, other, "DIA_Addon_Esteban_fight_07_01"); //It isn't everyone who gets an offer like this. But if you don't want it, you're free to leave the camp...
+	AI_Output(other, self, "DIA_Addon_Esteban_fight_15_02"); //How about if you keep your word and give me a red stone?
+	AI_Output(self, other, "DIA_Addon_Esteban_fight_07_03"); //Hey - one more word and my guards will have to hurt you, too.
+	AI_Output(other, self, "DIA_Addon_Esteban_fight_15_04"); //(grins) What guards...?
+	AI_Output(self, other, "DIA_Addon_Esteban_fight_07_05"); //What...? Ah, I see... you're trying to pull a fast one, just wait...
 
 	Bodyguard_Killer = FALSE;
 
@@ -440,7 +440,7 @@ instance DIA_Addon_Esteban_Duell(C_INFO)
 	nr				= 99;
 	condition		= DIA_Addon_Esteban_Duell_Condition;
 	information		= DIA_Addon_Esteban_Duell_Info;
-	description		= "Gib mir JETZT den Stein oder ich werde ihn mir holen!";
+	description		= "Give me the stone NOW or I'll get it myself!";
 };
 
 func int DIA_Addon_Esteban_Duell_Condition()
@@ -454,8 +454,8 @@ func int DIA_Addon_Esteban_Duell_Condition()
 
 func void DIA_Addon_Esteban_Duell_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Esteban_Duell_15_00"); //Gib mir JETZT den Stein oder ich werde ihn mir holen!
-	AI_Output(self, other, "DIA_Addon_Esteban_Duell_07_01"); //Oh, du bist lebensmüde. Na schön, ich tu dir den Gefallen und erlöse dich von deiner Dummheit!
+	AI_Output(other, self, "DIA_Addon_Esteban_Duell_15_00"); //Give me the stone NOW or I'll get it myself!
+	AI_Output(self, other, "DIA_Addon_Esteban_Duell_07_01"); //Oh, you've got a death wish. All right, I'll do you a favor and put you out of your stupidity!
 
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);

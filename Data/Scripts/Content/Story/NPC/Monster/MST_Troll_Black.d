@@ -5,7 +5,7 @@
 prototype Mst_Default_Troll_Black(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Schwarzer Troll";
+	name							= "Black Troll";
 	guild							= GIL_TROLL;
 	level							= 100; // 40
 

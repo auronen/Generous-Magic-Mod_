@@ -5,7 +5,7 @@
 prototype Mst_Default_Shadowbeast(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Schattenläufer";
+	name							= "Shadowbeast";
 	guild							= GIL_SHADOWBEAST;
 	level							= 30;
 

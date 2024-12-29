@@ -8,7 +8,7 @@ instance DIA_Boltan_EXIT(C_INFO)
 	condition		= DIA_Boltan_EXIT_Condition;
 	information		= DIA_Boltan_EXIT_Info;
 	permanent		= TRUE;
-	description		= "Ich wollte gerade wieder gehen.";
+	description		= "I was just going. (END)";
 };
 
 func int DIA_Boltan_EXIT_Condition()
@@ -41,7 +41,7 @@ func int DIA_Boltan_HALLO_Condition()
 
 func void DIA_Boltan_HALLO_Info()
 {
-	AI_Output(self, other, "DIA_Boltan_Add_05_00"); //Was willst du hier?
+	AI_Output(self, other, "DIA_Boltan_Add_05_00"); //What do you want here?
 };
 
 // ************************************************
@@ -54,7 +54,7 @@ instance DIA_Boltan_ToConvicts(C_INFO)
 	condition		= DIA_Boltan_ToConvicts_Condition;
 	information		= DIA_Boltan_ToConvicts_Info;
 	permanent		= TRUE;
-	description		= "Ich will zu den Gefangenen...";
+	description		= "I want to see the prisoners.";
 };
 
 func int DIA_Boltan_ToConvicts_Condition()
@@ -64,18 +64,18 @@ func int DIA_Boltan_ToConvicts_Condition()
 
 func void DIA_Boltan_ToConvicts_Info()
 {
-	AI_Output(other, self, "DIA_Boltan_Add_15_01"); //Ich will zu den Gefangenen...
+	AI_Output(other, self, "DIA_Boltan_Add_15_01"); //I want to see the prisoners.
 
 	if ((Kapitel == 3)
 	&& (MIS_RescueBennet != LOG_SUCCESS))
 	{
 		if (other.guild == GIL_SLD)
 		{
-			AI_Output(self, other, "DIA_Boltan_Add_05_07"); //Ja, geh nur, und verabschiede dich von deinem Kumpel.
+			AI_Output(self, other, "DIA_Boltan_Add_05_07"); //Yeah, go ahead and say good-bye to your pal.
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Boltan_Add_05_06"); //Wir haben das Schwein eingelocht, das den Mord am Paladin Lothar begangen hat.
+			AI_Output(self, other, "DIA_Boltan_Add_05_06"); //We've put away the swine who murdered Lothar the paladin.
 		};
 	}
 	else if ((Canthar_Ausgeliefert == FALSE)
@@ -83,21 +83,21 @@ func void DIA_Boltan_ToConvicts_Info()
 	&& (Rengaru_Ausgeliefert == FALSE)
 	&& (Nagur_Ausgeliefert == FALSE))
 	{
-		AI_Output(self, other, "DIA_Boltan_Add_05_02"); //Zur Zeit sind alle Zellen leer.
+		AI_Output(self, other, "DIA_Boltan_Add_05_02"); //All the cells are empty at the moment.
 	}
 	else
 	{
 		if (other.guild == GIL_MIL)
 		{
-			AI_Output(self, other, "DIA_Boltan_Add_05_04"); //Alles klar, Kollege.
+			AI_Output(self, other, "DIA_Boltan_Add_05_04"); //All right, mate.
 		}
 		else if ((other.guild == GIL_PAL) || (other.guild == GIL_KDF))
 		{
-			AI_Output(self, other, "DIA_Boltan_Add_05_05"); //Selbstverständlich.
+			AI_Output(self, other, "DIA_Boltan_Add_05_05"); //Of course.
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Boltan_Add_05_03"); //Geh nur, aber bleib nicht zu lange, klar?
+			AI_Output(self, other, "DIA_Boltan_Add_05_03"); //Go ahead, but don't stay away too long, understood?
 		};
 	};
 };
@@ -126,9 +126,9 @@ func int DIA_Boltan_HalloBennet_Condition()
 
 func void DIA_Boltan_HalloBennet_Info()
 {
-	AI_Output(self, other, "DIA_Boltan_Add_05_08"); //Du bist doch nicht etwas gekommen, um deinen Kumpel hier rauszuholen, oder?
-	AI_Output(self, other, "DIA_Boltan_Add_05_09"); //Das kannst du vergessen! Sobald ich Alarm schlage, sind die Jungs hier!
-	AI_Output(self, other, "DIA_Boltan_Add_05_10"); //Und dann gibt's Söldner-Hack! (lacht dreckig)
+	AI_Output(self, other, "DIA_Boltan_Add_05_08"); //You haven't come to get your buddy out of here, have you?
+	AI_Output(self, other, "DIA_Boltan_Add_05_09"); //Forget it! As soon as I raise the alarm, the boys will be here in an instant!
+	AI_Output(self, other, "DIA_Boltan_Add_05_10"); //And then we'll have us some minced mercenary! (dirty laugh)
 };
 
 // ************************************************
@@ -155,8 +155,8 @@ func int DIA_Boltan_HalloCanthar_Condition()
 
 func void DIA_Boltan_HalloCanthar_Info()
 {
-	AI_Output(self, other, "DIA_Boltan_Add_05_11"); //Du bist doch der Kerl, der Canthar den Händler angezeigt hat.
-	AI_Output(self, other, "DIA_Boltan_Add_05_12"); //Es waren jede Menge Leute hier, die sich für ihn verbürgt haben. Angesehene Leute.
-	AI_Output(self, other, "DIA_Boltan_Add_05_13"); //Die Sache war wohl ein Mißverständnis. Sowas kommt vor.
-	AI_Output(self, other, "DIA_Boltan_Add_05_14"); //Pass in Zukunft besser auf, wen du in den Knast bringst.
+	AI_Output(self, other, "DIA_Boltan_Add_05_11"); //Hey, you're the guy who filed a complaint against Canthar, the merchant.
+	AI_Output(self, other, "DIA_Boltan_Add_05_12"); //Lots of people came here to vouch for him. Well-respected people.
+	AI_Output(self, other, "DIA_Boltan_Add_05_13"); //The matter must have been a misunderstanding. These things happen.
+	AI_Output(self, other, "DIA_Boltan_Add_05_14"); //In future, you should be more careful about who you send to jail.
 };

@@ -1,7 +1,7 @@
 instance BDT_10025_Addon_Wache(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Koch";
+	name							= "Chef";
 	npctype							= NPCTYPE_BL_MAIN;
 	guild							= GIL_BDT;
 	flags							= 0;

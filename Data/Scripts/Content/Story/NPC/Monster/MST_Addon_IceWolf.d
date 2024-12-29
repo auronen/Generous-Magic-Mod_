@@ -5,7 +5,7 @@
 prototype Mst_Default_Icewolf(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Eiswolf";
+	name							= "Ice Wolf";
 	guild							= GIL_WOLF;
 	level							= 15;
 

@@ -67,7 +67,7 @@ instance DIA_Addon_Wache_01_Hi(C_INFO)
 	condition		= DIA_Addon_Wache_01_Hi_Condition;
 	information		= DIA_Addon_Wache_01_Hi_Info;
 	permanent		= TRUE;
-	description		= "Alles klar?";
+	description		= "Everything all right?";
 };
 
 func int DIA_Addon_Wache_01_Hi_Condition()
@@ -77,8 +77,8 @@ func int DIA_Addon_Wache_01_Hi_Condition()
 
 func void DIA_Addon_Wache_01_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Wache_01_Hi_15_00"); //Alles klar?
-	AI_Output(self, other, "DIA_Addon_Wache_01_Hi_04_01"); //Pack Esteban an und ich hau dich in Stücke.
+	AI_Output(other, self, "DIA_Addon_Wache_01_Hi_15_00"); //Everything all right?
+	AI_Output(self, other, "DIA_Addon_Wache_01_Hi_04_01"); //Touch Esteban and I'll chop you to pieces.
 
 	AI_StopProcessInfos(self);
 };

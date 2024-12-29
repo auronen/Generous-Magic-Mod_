@@ -22,12 +22,12 @@ func void DIA_Addon_AlligatorJack_Exit_Info()
 	if ((MIS_KrokoJagd == LOG_SUCCESS)
 	&& (DIA_Addon_AlligatorJack_Exit_Info_OneTime == FALSE))
 	{
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_Exit_12_00"); //Wenn du mich suchst, ich bin meistens irgendwo in der Nähe meines Lagerplatzes vor den Palisaden.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_Exit_12_00"); //If you're looking for me, you'll usually find me near my camp in front of the palisade.
 
 		if (PIR_1354_Addon_Henry.aivar [AIV_TalkedToPlayer] == FALSE)
 		{
-			AI_Output(other, self, "DIA_Addon_AlligatorJack_Exit_15_01"); //Palisaden?
-			AI_Output(self, other, "DIA_Addon_AlligatorJack_Exit_12_02"); //Geh einfach weiter Richtung Westen, dann siehst du, was ich meine.
+			AI_Output(other, self, "DIA_Addon_AlligatorJack_Exit_15_01"); //Palisade?
+			AI_Output(self, other, "DIA_Addon_AlligatorJack_Exit_12_02"); //Just continue west from here and you'll see what I mean.
 		};
 
 		AI_StopProcessInfos(self);
@@ -98,11 +98,11 @@ func int DIA_Addon_AlligatorJack_Hello_Condition()
 
 func void DIA_Addon_AlligatorJack_Hello_Info()
 {
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Hello_12_00"); //Was bist DU denn für einer. Du siehst nicht aus wie die anderen.
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Hello_15_01"); //Welche anderen?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Hello_12_02"); //Na, die Magier, die sich da drüben bei den Ruinen herum treiben.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Hello_12_03"); //Gehörst du etwa auch zu dem Verein?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Hello_12_04"); //Ziemlich mutig von dir hier alleine rumzulaufen.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Hello_12_00"); //Who on earth are YOU? You don't look like the others.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Hello_15_01"); //What others?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Hello_12_02"); //Well, the mages who are hanging around those ruins over there.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Hello_12_03"); //Are you one of that bunch, then?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Hello_12_04"); //Brave thing to run around here by yourself.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -114,7 +114,7 @@ instance DIA_Addon_AlligatorJack_WerBistDu(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_AlligatorJack_WerBistDu_Condition;
 	information		= DIA_Addon_AlligatorJack_WerBistDu_Info;
-	description		= "Wer bist du?";
+	description		= "Who are you?";
 };
 
 func int DIA_Addon_AlligatorJack_WerBistDu_Condition()
@@ -124,12 +124,12 @@ func int DIA_Addon_AlligatorJack_WerBistDu_Condition()
 
 func void DIA_Addon_AlligatorJack_WerBistDu_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_WerBistDu_15_00"); //Wer bist du?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_01"); //Du hast sicher schon von mir gehört.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_02"); //(stolz) Ich bin Alligator Jack.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_03"); //Gefürchtet im ganzen Land. Ich gehöre zu den wohl gefährlichsten Piraten in dieser Gegend.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_04"); //Mit unserem Kapitän Greg haben wir mehr Handelsschiffe geentert, als ich zählen kann.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_05"); //Du stehst hier sozusagen vor einer lebenden Legende.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_WerBistDu_15_00"); //Who are you?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_01"); //I'm sure you've heard of me before.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_02"); //(proudly) I'm Alligator Jack.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_03"); //Feared all over the country. I'm one of the most dangerous pirates around here.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_04"); //Together with Cap'n Greg I've boarded more merchant vessels than I count.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_WerBistDu_12_05"); //You're looking at a living legend here.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -141,7 +141,7 @@ instance DIA_Addon_AlligatorJack_Vorschlag(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_AlligatorJack_Vorschlag_Condition;
 	information		= DIA_Addon_AlligatorJack_Vorschlag_Info;
-	description		= "Kennst du einen Kerl namens Raven?";
+	description		= "Do you know a fellow named Raven?";
 };
 
 func int DIA_Addon_AlligatorJack_Vorschlag_Condition()
@@ -155,43 +155,43 @@ func int DIA_Addon_AlligatorJack_Vorschlag_Condition()
 
 func void DIA_Addon_AlligatorJack_Vorschlag_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Vorschlag_15_00"); //Kennst du einen Kerl namens Raven?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_12_01"); //Na klar. Er ist der Anführer der Banditen im Osten.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_12_02"); //Was willst du denn von DEM?
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Vorschlag_15_00"); //Do you know a fellow named Raven?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_12_01"); //Of course. He's the leader of the bandits to the east.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_12_02"); //What's your business with HIM?
 
 	B_LogEntry(TOPIC_Addon_RavenKDW, TOPIC_Addon_RavenKDW_2);
 
 	Info_ClearChoices(DIA_Addon_AlligatorJack_Vorschlag);
-	Info_AddChoice(DIA_Addon_AlligatorJack_Vorschlag, "Ich will mich ihm anschließen.", DIA_Addon_AlligatorJack_Vorschlag_join);
-	Info_AddChoice(DIA_Addon_AlligatorJack_Vorschlag, "Ich muss ihn töten.", DIA_Addon_AlligatorJack_Vorschlag_tot);
+	Info_AddChoice(DIA_Addon_AlligatorJack_Vorschlag, "I want to join him.", DIA_Addon_AlligatorJack_Vorschlag_join);
+	Info_AddChoice(DIA_Addon_AlligatorJack_Vorschlag, "I've got to kill him.", DIA_Addon_AlligatorJack_Vorschlag_tot);
 };
 
 func void B_AlligatorJack_Besser()
 {
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Besser_12_00"); //Ich hab 'ne bessere Idee.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Besser_12_01"); //Du kommst mit zu uns.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Besser_12_02"); //Und da denkst du erst mal gründlich darüber nach.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Besser_12_03"); //Nachdem du erstmal unseren guten selbstgebrannten Rum probiert hast, sieht die Welt schon ganz anders aus.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Besser_12_00"); //I've got a better idea.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Besser_12_01"); //Come and join us.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Besser_12_02"); //That'll give you time to think about it.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Besser_12_03"); //Once you've tried our good home-brewed rum, things will look very different.
 	Info_ClearChoices(DIA_Addon_AlligatorJack_Vorschlag);
 };
 
 func void DIA_Addon_AlligatorJack_Vorschlag_tot()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Vorschlag_tot_15_00"); //Ich muss ihn töten.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_01"); //(lacht) Was denn? DU? Wie willst du DAS denn anstellen?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_02"); //Ist der Kerl nicht eine Nummer zu groß für dich?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_03"); //Du kommst ja nicht mal an ihn heran. Die Banditen, die er um sich geschart hat, werden dir vorher das Fell abziehen.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_04"); //Du kommst doch noch nicht mal an ihrem ersten Vorposten vorbei.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_05"); //So wie du aussiehst, kriegen die Banditen doch schon das Jucken in den Fingern, wenn sie dich von weitem sehen.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Vorschlag_tot_15_00"); //I've got to kill him.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_01"); //(laughs) What? YOU? How are you going to do THAT?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_02"); //Isn't that guy way out of your league?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_03"); //You won't even get close to him. The bandits he's surrounded himself with will skin you alive first.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_04"); //You won't even get past their first outpost.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_tot_12_05"); //The way you look, those bandits will get itchy fingers when they spot you a mile away.
 
 	B_AlligatorJack_Besser();
 };
 
 func void DIA_Addon_AlligatorJack_Vorschlag_join()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Vorschlag_join_15_00"); //Ich will mich ihm anschließen.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_join_12_01"); //(lauernd) Tatsächlich?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_join_12_02"); //Du siehst aber gar nicht aus wie einer, der bei diesen Spinnern anheuern will.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Vorschlag_join_15_00"); //I want to join him.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_join_12_01"); //(slyly) Is that so?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Vorschlag_join_12_02"); //But you don't look at all like someone who would want to join those crackpots.
 
 	B_AlligatorJack_Besser();
 };
@@ -205,7 +205,7 @@ instance DIA_Addon_AlligatorJack_BDTRuestung(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_AlligatorJack_BDTRuestung_Condition;
 	information		= DIA_Addon_AlligatorJack_BDTRuestung_Info;
-	description		= "Ich brauche eine Banditenrüstung.";
+	description		= "I need a bandit's armor.";
 };
 
 func int DIA_Addon_AlligatorJack_BDTRuestung_Condition()
@@ -219,30 +219,30 @@ func int DIA_Addon_AlligatorJack_BDTRuestung_Condition()
 
 func void DIA_Addon_AlligatorJack_BDTRuestung_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_15_00"); //Ich brauche eine Banditenrüstung.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_01"); //Was willst du denn DAMIT?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_02"); //Die bringt dir nur Ärger ein, wenn du dich damit irgendwo sehen lässt.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_03"); //Jeder wird dich für einen Banditen halten und versuchen, dich zu töten.
-	// AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_04"); // Außer den Banditen SELBST vielleicht.
-	// AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_05"); // Die werden dich höchstens noch für einen von ihnen halten.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_15_00"); //I need a bandit's armor.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_01"); //What would you do with THAT?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_02"); //It'll only get you into trouble if you're seen with it.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_03"); //Everyone's going to take you for a bandit and will try to kill you.
+	// AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_04"); // AuÃŸer den Banditen SELBST vielleicht.
+	// AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_12_05"); // Die werden dich hÃ¶chstens noch fÃ¼r einen von ihnen halten.
 
 	Info_ClearChoices(DIA_Addon_AlligatorJack_BDTRuestung);
-	Info_AddChoice(DIA_Addon_AlligatorJack_BDTRuestung, "Hast du eine Ahnung, wo ich eine solche Rüstung finden kann?", DIA_Addon_AlligatorJack_BDTRuestung_wo);
-	Info_AddChoice(DIA_Addon_AlligatorJack_BDTRuestung, "Hört sich gut an.", DIA_Addon_AlligatorJack_BDTRuestung_gut);
+	Info_AddChoice(DIA_Addon_AlligatorJack_BDTRuestung, "Do you have any idea where I could find armor like that?", DIA_Addon_AlligatorJack_BDTRuestung_wo);
+	Info_AddChoice(DIA_Addon_AlligatorJack_BDTRuestung, "Sounds good ...", DIA_Addon_AlligatorJack_BDTRuestung_gut);
 };
 
 func void DIA_Addon_AlligatorJack_BDTRuestung_gut()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_gut_15_00"); //Hört sich gut an.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_gut_12_01"); //Ja, aber nur für jemand, der lebensmüde ist.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_gut_15_00"); //Sounds good ...
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_gut_12_01"); //Yes, but only to someone who's suicidal.
 };
 
 func void DIA_Addon_AlligatorJack_BDTRuestung_wo()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_wo_15_00"); //Hast du eine Ahnung, wo ich eine solche Rüstung finden kann?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_01"); //Wir hatten mal eine bei uns im Piratenlager.
-	// AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_02"); // Mmh ... Ich denke, die hatte genau deine Größe.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_03"); //Aber, ob sie noch da ist, weiß ich nicht.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_BDTRuestung_wo_15_00"); //Do you have any idea where I could find armor like that?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_01"); //We used to have one in our pirate camp.
+	// AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_02"); // Mmh ... Ich denke, die hatte genau deine GrÃ¶ÃŸe.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_BDTRuestung_wo_12_03"); //But I don't know whether it's still there.
 
 	B_LogEntry(TOPIC_Addon_BDTRuestung, TOPIC_Addon_BDTRuestung_5);
 
@@ -258,7 +258,7 @@ instance DIA_Addon_AlligatorJack_Greg(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_AlligatorJack_Greg_Condition;
 	information		= DIA_Addon_AlligatorJack_Greg_Info;
-	description		= "Euer Kapitän heißt Greg?";
+	description		= "Your captain's name is Greg?";
 };
 
 func int DIA_Addon_AlligatorJack_Greg_Condition()
@@ -272,15 +272,15 @@ func int DIA_Addon_AlligatorJack_Greg_Condition()
 
 func void DIA_Addon_AlligatorJack_Greg_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Greg_15_00"); //Euer Kapitän heißt Greg?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_01"); //Richtig. Er ist der größte Pirat, den die See jemals hervor gebracht hat.
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Greg_15_02"); //Ich glaube, ich kenne euren Kapitän. Er ist mir in Khorinis begegnet.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_03"); //(lacht) Greg? In Khorinis? Unsinn!
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_04"); //Greg ist mit einigen Jungs auf großer Kaperfahrt.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_05"); //Das einzige, was Greg nach Khorinis bringen würde, wäre eine Sträflingsgaleere des Königs.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_06"); //Er ist einer der meistgesuchten Männer im Land.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_07"); //Freiwillig geht er bestimmt nicht in die Stadt und lässt sich von der königlichen Garde in den Kerker werfen.
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Greg_15_08"); //Wenn du meinst.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Greg_15_00"); //Your captain's name is Greg?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_01"); //Right. He's the greatest pirate the sea ever spawned.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Greg_15_02"); //I think I know your captain. I met him in Khorinis.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_03"); //(laughs) Greg? In Khorinis? Nonsense!
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_04"); //Greg is out at sea after booty with some of the lads.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_05"); //The only thing that could bring Greg to Khorinis would be one of the King's prison galleys.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_06"); //He's one of the most wanted men in the land.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Greg_12_07"); //He'd never march into town voluntarily and have the royal guard throw him into prison.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Greg_15_08"); //If you say so.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -292,7 +292,7 @@ instance DIA_Addon_AlligatorJack_PIRLager(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_AlligatorJack_PIRLager_Condition;
 	information		= DIA_Addon_AlligatorJack_PIRLager_Info;
-	description		= "Wo ist euer Piratenlager?";
+	description		= "Where's your pirate camp?";
 };
 
 func int DIA_Addon_AlligatorJack_PIRLager_Condition()
@@ -306,14 +306,14 @@ func int DIA_Addon_AlligatorJack_PIRLager_Condition()
 
 func void DIA_Addon_AlligatorJack_PIRLager_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_PIRLager_15_00"); //Wo ist euer Piratenlager?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_01"); //Siehst du den Höhlendurchgang da drüben. Wenn du da durch gehst und weiter nach Westen gehst, kommst du früher oder später zu unserem Strand.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_02"); //Da haben wir unsere Blockhütten.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_03"); //Wenn du willst, kann ich dich hin bringen, wenn du mir einen Gefallen tust.
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_PIRLager_15_04"); //Und das wäre?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_05"); //Bevor ich zum Lager zurück kann, muss ich erst noch Fleisch für die Jungs besorgen.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_06"); //Du bist ein kräftiger Kerl.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_07"); //Ich könnte deine Hilfe bei der Jagd gebrauchen. Interessiert?
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_PIRLager_15_00"); //Where's your pirate camp?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_01"); //See the cave passage over there? Go through it and continue west, and you'll come to our beach sooner or later.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_02"); //That's where our log huts are.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_03"); //I can take you there if you want, if you do me a favor first.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_PIRLager_15_04"); //What would that be?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_05"); //I'll have to get the boys some meat before I can go back to camp.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_06"); //You're a strong fellow.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_PIRLager_12_07"); //I could use your help hunting. Interested?
 
 	Log_CreateTopic(TOPIC_Addon_RatHunt, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RatHunt, LOG_RUNNING);
@@ -329,7 +329,7 @@ instance DIA_Addon_AlligatorJack_WasJagen(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_AlligatorJack_WasJagen_Condition;
 	information		= DIA_Addon_AlligatorJack_WasJagen_Info;
-	description		= "Was jagst du denn?";
+	description		= "What is it you hunt?";
 };
 
 func int DIA_Addon_AlligatorJack_WasJagen_Condition()
@@ -342,13 +342,13 @@ func int DIA_Addon_AlligatorJack_WasJagen_Condition()
 
 func void DIA_Addon_AlligatorJack_WasJagen_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_WasJagen_15_00"); //Was jagst du denn?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_01"); //Normalerweise nur Alligatoren. Aber die kann man nicht essen.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_02"); //Außerdem gibt es hier in der Gegend auch gar keine mehr.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_03"); //Also nehme ich das, was da ist. Sumpfratten.
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_WasJagen_15_04"); //Was?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_05"); //Die meisten Viecher, die es hier gibt, schmecken wie eingeschlafene Füße oder sind zäh wie Alligatorfleisch.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_06"); //Die fetten Sumpfratten sind das einzige, was einigermaßen geniesbar ist.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_WasJagen_15_00"); //What is it you hunt?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_01"); //Only alligators, usually. But they're no good for eating.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_02"); //And there aren't any left around here anyway.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_03"); //So I take what I can find: swamp rats.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_WasJagen_15_04"); //What?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_05"); //Most beasts around here taste like old socks, or they're as tough as alligator meat.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_WasJagen_12_06"); //Those fat swamp rats are the only thing that is remotely edible.
 
 	B_LogEntry(TOPIC_Addon_RatHunt, TOPIC_Addon_RatHunt_2);
 };
@@ -362,7 +362,7 @@ instance DIA_Addon_AlligatorJack_Pirates(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_AlligatorJack_Pirates_Condition;
 	information		= DIA_Addon_AlligatorJack_Pirates_Info;
-	description		= "Erzähl mir mehr über euch Piraten.";
+	description		= "Tell me more about you pirates.";
 };
 
 func int DIA_Addon_AlligatorJack_Pirates_Condition()
@@ -375,13 +375,13 @@ func int DIA_Addon_AlligatorJack_Pirates_Condition()
 
 func void DIA_Addon_AlligatorJack_Pirates_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Pirates_15_00"); //Erzähl mir mehr über euch Piraten.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_01"); //Wir leben hier schon seit Jahren. Damals vor dem Krieg kannte uns jeder von hier bis zum Festland.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_02"); //Allein unsere Flagge verbreitete Angst und Schrecken unter den Kauffahrern.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_03"); //Aber die Zeiten sind nun vorbei. Schon seit Wochen haben wir kein Handelsschiff mehr vor den Bug gekriegt.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_04"); //Unser Kapitän Greg ist los und versucht, noch mal eins zu erwischen.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_05"); //Wir anderen sitzen in unserem Lager und drehen Däumchen, bis er wieder da ist.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_06"); //Hoffentlich bringt er fette Beute mit.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Pirates_15_00"); //Tell me more about you pirates.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_01"); //We've been living here for years. Back before the war, everyone knew us from here to the mainland.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_02"); //Our flag alone would spread terror among the crews of merchant vessels.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_03"); //But those times are past now. It's been weeks since we've run into a merchant vessel.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_04"); //Our Cap'n Greg left to try and catch another.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_05"); //The rest of us are sitting here in camp, twiddling our thumbs until he comes back.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Pirates_12_06"); //I hope he'll bring back lots of booty.
 };
 
 // ************************************************************
@@ -394,7 +394,7 @@ instance DIA_Addon_AlligatorJack_LetsGoHunting(C_INFO)
 	condition		= DIA_Addon_AlligatorJack_LetsGoHunting_Condition;
 	information		= DIA_Addon_AlligatorJack_LetsGoHunting_Info;
 	permanent		= TRUE;
-	description		= "Lass uns jagen gehen.";
+	description		= "Let's go hunting.";
 };
 
 func int DIA_Addon_AlligatorJack_LetsGoHunting_Condition()
@@ -409,13 +409,13 @@ func int DIA_Addon_AlligatorJack_LetsGoHunting_Condition()
 
 func void DIA_Addon_AlligatorJack_LetsGoHunting_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_LetsGoHunting_15_00"); //Lass uns jagen gehen.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_LetsGoHunting_12_01"); //Gut. Zu zweit ist es ein Kinderspiel.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_LetsGoHunting_12_02"); //Bist du bereit?
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_LetsGoHunting_15_00"); //Let's go hunting.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_LetsGoHunting_12_01"); //All right. With two people, that's child's play.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_LetsGoHunting_12_02"); //Are you ready?
 
 	Info_ClearChoices(DIA_Addon_AlligatorJack_LetsGoHunting);
-	Info_AddChoice(DIA_Addon_AlligatorJack_LetsGoHunting, "Nein, noch nicht.", DIA_Addon_AlligatorJack_LetsGoHunting_No);
-	Info_AddChoice(DIA_Addon_AlligatorJack_LetsGoHunting, "Ja.", DIA_Addon_AlligatorJack_LetsGoHunting_Yes);
+	Info_AddChoice(DIA_Addon_AlligatorJack_LetsGoHunting, "No, not yet.", DIA_Addon_AlligatorJack_LetsGoHunting_No);
+	Info_AddChoice(DIA_Addon_AlligatorJack_LetsGoHunting, "Yes.", DIA_Addon_AlligatorJack_LetsGoHunting_Yes);
 };
 
 const int AlligatorJack_Inter1 = 1;
@@ -424,8 +424,8 @@ const int AlligatorJack_Inter2 = 3;
 const int AlligatorJack_Canyon = 4;
 func void DIA_Addon_AlligatorJack_LetsGoHunting_Yes()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_LetsGoHunting_Yes_15_00"); //Ja.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_LetsGoHunting_Yes_12_01"); //Gut. Bleib mir einfach auf den Fersen.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_LetsGoHunting_Yes_15_00"); //Yes.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_LetsGoHunting_Yes_12_01"); //Great. Just stay right behind me.
 
 	AI_StopProcessInfos(self);
 
@@ -447,8 +447,8 @@ func void DIA_Addon_AlligatorJack_LetsGoHunting_Yes()
 
 func void DIA_Addon_AlligatorJack_LetsGoHunting_No()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_LetsGoHunting_No_15_00"); //Nein, noch nicht.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_LetsGoHunting_No_12_01"); //Dann beeil dich.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_LetsGoHunting_No_15_00"); //No, not yet.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_LetsGoHunting_No_12_01"); //Hurry up, then.
 
 	Info_ClearChoices(DIA_Addon_AlligatorJack_LetsGoHunting);
 };
@@ -476,9 +476,9 @@ func int DIA_Addon_AlligatorJack_AlligatorJackInter1_Condition()
 
 func void DIA_Addon_AlligatorJack_AlligatorJackInter1_Info()
 {
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_00"); //Der Talkessel.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_01"); //Hier müssten einige von den Biestern sein.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_02"); //Folge mir.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_00"); //The hollow.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_01"); //There should be some of those beasts around here.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter1_12_02"); //Follow me.
 
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "HUNT2");
@@ -486,7 +486,7 @@ func void DIA_Addon_AlligatorJack_AlligatorJackInter1_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Das habe ich befürchtet
+//	Info Das habe ich befÃ¼rchtet
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Addon_AlligatorJack_TheHunt(C_INFO)
 {
@@ -509,32 +509,32 @@ func int DIA_Addon_AlligatorJack_TheHunt_Condition()
 
 func void DIA_Addon_AlligatorJack_TheHunt_Info()
 {
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_12_00"); //Das habe ich befürchtet.
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_TheHunt_15_01"); //Was?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_12_02"); //Die paar Viecher hier sind grade mal die Hälfte von dem, was ich brauche.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_12_03"); //Jetzt müssen wir in den Canyon.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_12_04"); //Pass auf, tiefer im Canyon wird's brandgefährlich.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_12_05"); //Wenn dir dein Leben lieb ist, bleib schön dicht bei mir.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_12_00"); //I was afraid of that.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_TheHunt_15_01"); //What?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_12_02"); //This handful of beasts here is only about half of what I need.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_12_03"); //Now we'll have to enter the canyon.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_12_04"); //Watch out, it's very dangerous deeper down in the canyon.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_12_05"); //If you hold your life dear, stay very close to me.
 
 	Wld_InsertNpc(Waran, "ADW_ENTRANCE_2_VALLEY_10");
 	Wld_InsertNpc(Waran, "ADW_ENTRANCE_2_VALLEY_10");
 
 	Info_ClearChoices(DIA_Addon_AlligatorJack_TheHunt);
-	Info_AddChoice(DIA_Addon_AlligatorJack_TheHunt, "Was IST in dem Canyon?", DIA_Addon_AlligatorJack_TheHunt_Enough);
-	Info_AddChoice(DIA_Addon_AlligatorJack_TheHunt, "Gut, lass uns gehen.", DIA_Addon_AlligatorJack_TheHunt_Running);
+	Info_AddChoice(DIA_Addon_AlligatorJack_TheHunt, "What IS there in the canyon?", DIA_Addon_AlligatorJack_TheHunt_Enough);
+	Info_AddChoice(DIA_Addon_AlligatorJack_TheHunt, "Fine, let's go.", DIA_Addon_AlligatorJack_TheHunt_Running);
 };
 
 func void DIA_Addon_AlligatorJack_TheHunt_Enough()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_TheHunt_Enough_15_00"); //Was IST im Canyon?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_Enough_12_01"); //Wenn es irgendwie geht, meiden wir das Gebiet.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_Enough_12_02"); //Dort gibt es Razor. Ziemlich zähe Biester. Halt dich von denen fern, wenn du an deinem Leben hängst.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_TheHunt_Enough_15_00"); //What IS there in the canyon?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_Enough_12_01"); //We avoid that area if it's at all possible.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_Enough_12_02"); //That's where you find razors. Tough beasts, those. Stay away from them if you want to live another day.
 };
 
 func void DIA_Addon_AlligatorJack_TheHunt_Running()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_TheHunt_Running_15_00"); //Gut, lass uns gehen.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_Running_12_01"); //Alles klar.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_TheHunt_Running_15_00"); //Fine, let's go.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_TheHunt_Running_12_01"); //All right.
 
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "HUNT3");
@@ -565,7 +565,7 @@ func int DIA_Addon_AlligatorJack_AlligatorJackInter2_Condition()
 
 func void DIA_Addon_AlligatorJack_AlligatorJackInter2_Info()
 {
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter2_12_00"); //Komm schon.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_AlligatorJackInter2_12_00"); //Come on.
 
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "HUNT4");
@@ -598,31 +598,31 @@ func void DIA_Addon_AlligatorJack_HuntEnd_Info()
 {
 	if (AlligatorJack_KrokosKilled == 0)
 	{
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_00"); //Sag mal, kannst du mir sagen, wofür ich dich mitnehme?
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_01"); //Keine einzige Sumpfratte hast du getötet.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_02"); //Naja. Vielleicht kannst du dich ja trotzdem noch nützlich machen.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_00"); //Say, can you tell me what I took you along for?
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_01"); //You didn't kill a single swamp rat.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_02"); //Oh well. Maybe you can be useful some other way.
 	}
 	else if (AlligatorJack_KrokosKilled == 1)
 	{
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_03"); //Gut gemacht, so jemanden wie dich können wir brauchen.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_04"); //Bei deiner ersten Jagd gleich eins von diesen Biestern erlegt. Nicht schlecht.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_03"); //Well done, we can use someone like you.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_04"); //You brought down one of those beasts on your first hunt. Not bad.
 	}
 	else // mehr als 1!!
 	{
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_05"); //Du bist ein Jagdtalent.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_06"); //Meine Fresse, wenn du so weiter machst, kann ich demnächst im Lager bleiben.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_05"); //You're a talented hunter.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_HuntEnd_12_06"); //My goodness! If you continue like that, I'll be able to stay in camp next time.
 	};
 
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_07"); //Hier, nimm das Sumpfrattenfleisch und bringe es zu Morgan, dem Faulpelz.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_08"); //Du findest ihn bei uns im Lager.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_09"); //Er liegt sicher wieder irgendwo am Strand. Ich denke, er wartet schon darauf.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_07"); //Here, take this swamp rat meat to lazy old Morgan.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_08"); //You'll find him in our camp.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_09"); //He's probably lounging on the beach somewhere. He'll be waiting for this.
 
 	if (PIR_1354_Addon_Henry.aivar[AIV_PASSGATE] == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_10"); //Am Eingang unseres Lagers steht meistens Henry und passt auf, dass uns die Banditen nicht angreifen.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_11"); //Wenn er dich nicht rein lassen will, sag ihm einfach, dass ich dich geschickt habe.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_12"); //Vielleicht ist er dann ein bisschen umgänglicher.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_13"); //Henry ist etwas übereifrig und markiert immer gerne den Boss.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_10"); //Henry usually guards the entrance to the camp and keeps a lookout for bandits.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_11"); //If he refuses to let you in, just tell him that I sent you.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_12"); //Maybe that'll make him a bit more sociable.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_PassHenry_12_13"); //Henry is a little too eager and a bit bossy, too.
 	};
 
 	MIS_AlligatorJack_BringMeat = LOG_RUNNING;
@@ -647,7 +647,7 @@ instance DIA_Addon_AlligatorJack_Angus(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_AlligatorJack_Angus_Condition;
 	information		= DIA_Addon_AlligatorJack_Angus_Info;
-	description		= "Kennst du Angus und seinen Freund Hank?";
+	description		= "Do you know Angus and his friend Hank?";
 };
 
 func int DIA_Addon_AlligatorJack_Angus_Condition()
@@ -660,11 +660,11 @@ func int DIA_Addon_AlligatorJack_Angus_Condition()
 
 func void DIA_Addon_AlligatorJack_Angus_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Angus_15_00"); //Kennst du Angus und seinen Freund Hank?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Angus_12_03"); //Ich hab sie schon länger nicht mehr gesehen.
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Angus_12_04"); //Außerdem hätte ich nichts dagegen, wenn die beiden auch nicht wieder auftauchen.
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Angus_15_05"); //Warum?
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Angus_12_06"); //Ach, die Penner haben ständig am See rumgehangen und das Wild vertrieben.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Angus_15_00"); //Do you know Angus and his friend Hank?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Angus_12_03"); //I haven't seen them in a while.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Angus_12_04"); //And I wouldn't mind if the pair of them never came back.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Angus_15_05"); //Why?
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Angus_12_06"); //Oh, those bums always hung around the lake, scaring off the game.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -676,7 +676,7 @@ instance DIA_Addon_AlligatorJack_Lake(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_AlligatorJack_Lake_Condition;
 	information		= DIA_Addon_AlligatorJack_Lake_Info;
-	description		= "An welchem See hängen sie ständig rum?";
+	description		= "WHAT lake would that be?";
 };
 
 func int DIA_Addon_AlligatorJack_Lake_Condition()
@@ -690,20 +690,20 @@ func int DIA_Addon_AlligatorJack_Lake_Condition()
 
 func void DIA_Addon_AlligatorJack_Lake_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Lake_15_00"); //An WELCHEM See hängen sie ständig rum?
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Lake_15_00"); //WHAT lake would that be?
 
 	if (MIS_KrokoJagd == LOG_SUCCESS)
 	{
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_01"); //Erinnerst du dich an unsere Jagd?
-		AI_Output(other, self, "DIA_Addon_AlligatorJack_Lake_15_02"); //Ja.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_03"); //Der See in dem Talkessel. Dort habe ich sie meistens gesehen.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_01"); //Remember our hunt?
+		AI_Output(other, self, "DIA_Addon_AlligatorJack_Lake_15_02"); //Yep.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_03"); //The lake in the hollow. That's where I usually saw them.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_04"); //Am See im großen Talkessel.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_05"); //Du gehst von unserem Lager aus einfach nach Osten. Den Talkessel kannst du gar nicht übersehen.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_06"); //Es gibt dort viel kleine Wasserfälle.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_07"); //Aber pass auf, wenn du nur noch trockenen Sand unter den Füßen hast, bist du falsch abgebogen und in den Canyon gelaufen.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_04"); //The lake in the big hollow.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_05"); //Just walk east from our camp. You can't miss the hollow.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_06"); //There's lots of little waterfalls there.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_Lake_12_07"); //But watch out - if there's nothing but dry sand underfoot, you've missed a turn and entered the canyon.
 	};
 
 	B_LogEntry(TOPIC_Addon_SkipsGrog, TOPIC_Addon_SkipsGrog_5);
@@ -719,7 +719,7 @@ instance DIA_Addon_AlligatorJack_CanLearn(C_INFO)
 	condition		= DIA_Addon_AlligatorJack_CanLearn_Condition;
 	information		= DIA_Addon_AlligatorJack_CanLearn_Info;
 	permanent		= TRUE;
-	description		= "Kannst du mir was beibringen?";
+	description		= "Can you teach me something?";
 };
 
 func int DIA_Addon_AlligatorJack_CanLearn_Condition()
@@ -736,12 +736,12 @@ func int DIA_Addon_AlligatorJack_CanLearn_Condition()
 
 func void DIA_Addon_AlligatorJack_CanLearn_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_CanLearn_15_00"); //Kannst du mir was beibringen?
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_CanLearn_15_00"); //Can you teach me something?
 
 	if (MIS_KrokoJagd > LOG_RUNNING)
 	{
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_CanLearn_12_01"); //Klar, ich bin ein guter Jäger, ich kann dir zeigen wie man Tiere enthäutet und ihnen die Zähne zieht.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_CanLearn_12_02"); //Wenn du willst, bring ich es dir bei.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_CanLearn_12_01"); //Sure, I'm a good hunter and I can show you how to skin animals and pull their teeth.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_CanLearn_12_02"); //I'll teach you if you like.
 
 		Log_CreateTopic(Topic_Addon_PIR_Teacher, LOG_NOTE);
 		B_LogEntry(Topic_Addon_PIR_Teacher, Topic_Addon_PIR_Teacher_1);
@@ -750,8 +750,8 @@ func void DIA_Addon_AlligatorJack_CanLearn_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_CanLearn_12_03"); //Zeig mir erst mal, dass du bereit bist für die Jagd.
-		AI_Output(self, other, "DIA_Addon_AlligatorJack_CanLearn_12_04"); //Wenn wir zusammen auf der Jagd waren, werde ich es vielleicht tun.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_CanLearn_12_03"); //But first show me that you're ready for the hunt.
+		AI_Output(self, other, "DIA_Addon_AlligatorJack_CanLearn_12_04"); //Once we've been out hunting together, I might do it.
 	};
 };
 
@@ -777,7 +777,7 @@ instance DIA_Addon_AlligatorJack_Teach(C_INFO)
 	condition		= DIA_Addon_AlligatorJack_Teach_Condition;
 	information		= DIA_Addon_AlligatorJack_Teach_Info;
 	permanent		= TRUE;
-	description		= "Unterrichte mich!";
+	description		= "Teach me!";
 };
 
 func int DIA_Addon_AlligatorJack_Teach_Condition()
@@ -790,8 +790,8 @@ func int DIA_Addon_AlligatorJack_Teach_Condition()
 
 func void DIA_Addon_AlligatorJack_Teach_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Teach_15_00"); //Unterrichte mich!
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Teach_12_01"); //Was soll ich dir beibringen?
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Teach_15_00"); //Teach me!
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Teach_12_01"); //What is it you want to learn?
 
 	B_AJ_Teach();
 
@@ -822,7 +822,7 @@ func void DIA_Addon_AlligatorJack_Teach_FUR()
 	{
 		if (B_TeachPlayerTalentTakeAnimalTrophy(self, other, TROPHY_ReptileSkin))
 		{
-			AI_Output(self, other, "DIA_Addon_AlligatorJack_Teach_Fur_12_00"); //Und immer nur am Bauch aufschneiden, sonst verminderst du die Qualität.
+			AI_Output(self, other, "DIA_Addon_AlligatorJack_Teach_Fur_12_00"); //Always make the cut at the belly, or the quality will suffer.
 		};
 	}
 	else
@@ -857,7 +857,7 @@ func void DIA_Addon_AlligatorJack_Teach_Teeth()
 // ------------------------------------------------------------
 func void B_AlliJack_AlliKlar()
 {
-	AI_Output(self, other, "DIA_Addon_AlligatorJack_Anheuern_12_01"); //Alles klar.
+	AI_Output(self, other, "DIA_Addon_AlligatorJack_Anheuern_12_01"); //All right then.
 };
 
 // ------------------------------------------------------------
@@ -867,7 +867,7 @@ instance DIA_Addon_AlligatorJack_Anheuern(C_INFO)
 	nr				= 11;
 	condition		= DIA_Addon_AlligatorJack_Anheuern_Condition;
 	information		= DIA_Addon_AlligatorJack_Anheuern_Info;
-	description		= "Lass uns jagen gehen.";
+	description		= "Let's go hunting.";
 };
 
 func int DIA_Addon_AlligatorJack_Anheuern_Condition()
@@ -880,7 +880,7 @@ func int DIA_Addon_AlligatorJack_Anheuern_Condition()
 
 func void DIA_Addon_AlligatorJack_Anheuern_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_Anheuern_15_00"); //Lass uns jagen gehen.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_Anheuern_15_00"); //Let's go hunting.
 	B_AlliJack_AlliKlar();
 	AI_StopProcessInfos(self);
 	B_Addon_PiratesFollowAgain();
@@ -898,7 +898,7 @@ instance DIA_Addon_AlligatorJack_ComeOn(C_INFO)
 	condition		= DIA_Addon_AlligatorJack_ComeOn_Condition;
 	information		= DIA_Addon_AlligatorJack_ComeOn_Info;
 	permanent		= TRUE;
-	description		= "Komm mit.";
+	description		= "Come along.";
 };
 
 func int DIA_Addon_AlligatorJack_ComeOn_Condition()
@@ -913,7 +913,7 @@ func int DIA_Addon_AlligatorJack_ComeOn_Condition()
 
 func void DIA_Addon_AlligatorJack_ComeOn_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_KommMit_15_00"); //Komm mit.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_KommMit_15_00"); //Come along.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
 		B_Say(self, other, "$NOTNOW");
@@ -938,7 +938,7 @@ instance DIA_Addon_AlligatorJack_GoHome(C_INFO)
 	condition		= DIA_Addon_AlligatorJack_GoHome_Condition;
 	information		= DIA_Addon_AlligatorJack_GoHome_Info;
 	permanent		= TRUE;
-	description		= "Ich brauch dich nicht mehr.";
+	description		= "I no longer need you.";
 };
 
 func int DIA_Addon_AlligatorJack_GoHome_Condition()
@@ -952,7 +952,7 @@ func int DIA_Addon_AlligatorJack_GoHome_Condition()
 
 func void DIA_Addon_AlligatorJack_GoHome_Info()
 {
-	AI_Output(other, self, "DIA_Addon_AlligatorJack_DontNeedYou_15_00"); //Ich brauch dich nicht mehr.
+	AI_Output(other, self, "DIA_Addon_AlligatorJack_DontNeedYou_15_00"); //I no longer need you.
 	B_AlliJack_AlliKlar();
 
 	AI_StopProcessInfos(self);

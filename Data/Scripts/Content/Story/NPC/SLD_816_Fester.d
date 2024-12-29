@@ -2,7 +2,7 @@ instance SLD_816_Fester(Npc_Default)
 {
 	// -------- NPC --------
 	name							= "Fester";
-	npctype							= NpcType_Friend; // weil sonst FK-Waffe zu "Steck die Waffe weg" führt, wenn Fester mit dir losgeht (kein Partymember!)
+	npctype							= NpcType_Friend; // weil sonst FK-Waffe zu "Steck die Waffe weg" fÃ¼hrt, wenn Fester mit dir losgeht (kein Partymember!)
 	guild							= GIL_SLD;
 	flags							= 0; // NPC_FLAG_IMMORTAL oder 0
 
@@ -24,8 +24,8 @@ instance SLD_816_Fester(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 30); // Grenzen für Talent-Level liegen bei 30 und 60
-	// guter Bogenkämpfer
+	B_SetFightSkills(self, 30); // Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
+	// guter BogenkÃ¤mpfer
 	B_AddFightSkill(self, NPC_TALENT_BOW, 30); // ADD!!!
 
 	// -------- inventory --------

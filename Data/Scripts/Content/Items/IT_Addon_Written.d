@@ -3,7 +3,7 @@
 //**********************************************************************************
 instance ITWr_Addon_Hinweis_02(C_Item)
 {
-	name						= "Wichtiger Hinweis";
+	name						= "Important message";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -17,13 +17,13 @@ instance ITWr_Addon_Hinweis_02(C_Item)
 	value						= 250;
 
 	description					= name;
-	text[0]						= "Aus der Kneipe im Banditenlager";			count[0] = 0;
+	text[0]						= "From the tavern in the bandit camp";			count[0] = 0;
 };
 
-const string Hinweis_02_1 = "Hey Leute,";
-const string Hinweis_02_2 = "Lou ist im Sumpf verschwunden, wahrscheinlich wurde er von den Haien gefressen.";
-const string Hinweis_02_3 = "Viel schlimmer ist - mit ihm ist auch der Tür Schlüssel verschwunden.";
-const string Hinweis_02_4 = "Also wer ihn findet, kann Lou's Kram behalten.";
+const string Hinweis_02_1 = "Hey people,";
+const string Hinweis_02_2 = "Lou has disappeared in the swamp. He's probably been eaten by swampsharks.";
+const string Hinweis_02_3 = "Even worse - the key to the door disappeared with him.";
+const string Hinweis_02_4 = "Find it and you can keep Lou's stuff.";
 const string Hinweis_02_5 = "Snaf";
 func void Use_Hinweis_02()
 {
@@ -54,7 +54,7 @@ func void Use_Hinweis_02()
 //**********************************************************************************
 instance ITWr_Addon_Health_04(C_Item)
 {
-	name						= "Heiltrunk- Rezept";
+	name						= "Healing potion recipe";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -67,19 +67,19 @@ instance ITWr_Addon_Health_04(C_Item)
 
 	value						= 1000;
 
-	description					= "Reine Lebensenergie";
+	description					= "Pure life energy";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Zur Herstellung eines mächtigen Trunks.";	count[2] = 0;
-	text[3]						= "Zur Anwendung ist das Wissen über Elixiere der Heilung erforderlich.";count[3] = 0;
+	text[2]						= "To make a powerful potion.";	count[2] = 0;
+	text[3]						= "Knowledge of elixirs of healing is required for use.";count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string Heilrezept_04_1 = "Herstellung eines Heiltrunkes:";
-const string Heilrezept_04_2 = "Benötigt wird ein Feldknöterich, sowie drei Essenzen der Heilung.";
-const string Heilrezept_04_3 = "Zusammenkippen und aufbrühen nach dem Rezept der Heilungs - Elixiere. ";
-const string Heilrezept_04_4 = "Dieser Trank kann nur von einem Alchemisten erstellt werden, der das Rezept der Heilungs - Elixiere kennt.";
+const string Heilrezept_04_1 = "Creating a healing potion:";
+const string Heilrezept_04_2 = "One meadow knotweed and three essences of healing are required.";
+const string Heilrezept_04_3 = "Pour together and brew according to the recipe for healing elixirs.";
+const string Heilrezept_04_4 = "This potion can only be created by alchemists who know the recipe for healing elixirs.";
 func void Use_Heilrezept_04()
 {
 	var int nDocID;
@@ -120,7 +120,7 @@ func void Use_Heilrezept_04()
 //**********************************************************************************
 instance ITWr_Addon_Mana_04(C_Item)
 {
-	name						= "Mana - Rezept";
+	name						= "Mana recipe";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -133,19 +133,19 @@ instance ITWr_Addon_Mana_04(C_Item)
 
 	value						= 1500;
 
-	description					= "Reines Mana";
+	description					= "Pure mana";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
-	text[2]						= "Zur Herstellung eines mächtigen Trunks.";	count[2] = 0;
-	text[3]						= "Zur Anwendung ist das Wissen über Mana - Elixiere erforderlich.";count[3] = 0;
+	text[2]						= "To make a powerful potion.";	count[2] = 0;
+	text[3]						= "Knowledge of mana elixirs is required for use.";count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-const string Manarezept_04_1 = "Herstellung eines Manatrunkes:";
-const string Manarezept_04_2 = "Benötigt wird ein Feldknöterich, sowie drei Essenzen magischer Kraft.";
-const string Manarezept_04_3 = "Zusammenkippen und aufbrühen nach dem Rezept der Mana - Elixiere. ";
-const string Manarezept_04_4 = "Dieser Trank kann nur von einem Alchemisten erstellt werden, der das Rezept der Mana -Elixiere kennt.";
+const string Manarezept_04_1 = "Creating a mana potion:";
+const string Manarezept_04_2 = "One meadow knotweed and three essences of magical power are required.";
+const string Manarezept_04_3 = "Pour together and brew according to the recipe for mana elixirs.";
+const string Manarezept_04_4 = "This potion can only be created by alchemists who know the recipe for mana elixirs.";
 func void Use_Manarezept_04()
 {
 	var int nDocID;
@@ -186,7 +186,7 @@ func void Use_Manarezept_04()
 //**********************************************************************************
 instance ITWr_Addon_Hinweis_01(C_Item)
 {
-	name						= "Wichtiger Hinweis";
+	name						= "Important hint";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -200,14 +200,14 @@ instance ITWr_Addon_Hinweis_01(C_Item)
 	value						= 250;
 
 	description					= name;
-	text[0]						= "Hing an einer Hütte im Sumpf";				count[0] = 0;
+	text[0]						= "Hanging on a hut in the swamp";				count[0] = 0;
 };
 
-const string Hinweis_01_1 = "Hey Leute,";
-const string Hinweis_01_2 = "Das Zeug in den Truhen ist für Notfälle gedacht. ";
-const string Hinweis_01_3 = "Und es ist für ALLE da. Also nehmt euch nur was, falls ihr was davon braucht.";
-const string Hinweis_01_4 = "Und nehmt nur soviel ihr braucht.";
-const string Hinweis_01_5 = "Wenn sich alle daran halten, dann klappt es auch.";
+const string Hinweis_01_1 = "Hey people,";
+const string Hinweis_01_2 = "The stuff in the chests is for emergencies.";
+const string Hinweis_01_3 = "And it's for EVERYONE. So only take something if you need it.";
+const string Hinweis_01_4 = "And only take as much as you need.";
+const string Hinweis_01_5 = "If everybody sticks to this, it will work.";
 const string Hinweis_01_6 = "Fletcher";
 func void Use_Hinweis_01()
 {
@@ -238,7 +238,7 @@ func void Use_Hinweis_01()
 //**********************************************************************************
 instance ITWr_Addon_William_01(C_Item)
 {
-	name						= "Notiz";
+	name						= "Note";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -252,16 +252,16 @@ instance ITWr_Addon_William_01(C_Item)
 	value						= 250;
 
 	description					= name;
-	text[0]						= "Diese Notiz hatte der Fischer William bei sich.";count[0] = 0;
+	text[0]						= "The fisherman William had this on him.";count[0] = 0;
 };
 
-const string William_01_1 = "William,";
-const string William_01_2 = "Wenn der Mond im vollen Licht steht, wird die Wache abgelenkt sein.";
-const string William_01_3 = "Schleich dich raus - aber sei vorsichtig!";
-const string William_01_4 = "Wenn du dem Knüppeldamm folgst, kannst du den Sumpf verlassen.";
-const string William_01_5 = "Das Piratenlager liegt auf der anderen Seite des Tals weit im Westen. ";
-const string William_01_6 = "Von dort sollte es dir ein leichtes sein mit dem Boot zu entkommen. ";
-const string William_01_7 = "Jemand der es gut mit dir meint";
+const string William_01_1 = "William, ";
+const string William_01_2 = "When the moon is full, the watch will be distracted.";
+const string William_01_3 = "Sneak out - but be careful!";
+const string William_01_4 = "If you follow the log road, you can leave the swamp.";
+const string William_01_5 = "The pirate camp is on the other side of the valley far to the west.";
+const string William_01_6 = "From there it should be easy to get away with the boat.";
+const string William_01_7 = "A well-wisher";
 func void Use_William_01()
 {
 	var int nDocID;
@@ -291,7 +291,7 @@ func void Use_William_01()
 //**********************************************************************************
 instance ITWr_Addon_MCELIXIER_01(C_Item)
 {
-	name						= "Rezept";
+	name						= "Recipe";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -305,15 +305,15 @@ instance ITWr_Addon_MCELIXIER_01(C_Item)
 	value						= 250;
 
 	description					= name;
-	text[0]						= "Rezept für den Elixier der Geistveränderung.";count[0] = 0;
-	text[1]						= "Dieser Trank hilft verlorenen Erinnerung zurück zu bringen.";count[1] = 0;
+	text[0]						= "Recipe for the elixir of mental alteration.";count[0] = 0;
+	text[1]						= "This potion helps restore lost memories.";count[1] = 0;
 };
 
-const string MCELIXIER_01_1 = "Elixier der Geistveränderung";
-const string MCELIXIER_01_2 = "Zur Herstellung des Trankes erforderlich, ist das Sekret aus zwei Blutfliegenstacheln.";
-const string MCELIXIER_01_3 = "Dazu gibt man ein Mana Extrakt, sowie eine Essenz der Heilung.";
-const string MCELIXIER_01_4 = "Abschließend wird in den köchelnden Sud ein Beutel roter Tränen - Pfeffer gerührt.";
-const string MCELIXIER_01_5 = "Nur ein kundigen Alchemist, der weiß wie das Sekret aus den Stacheln zu entnehmen ist, sollte sich an dem Trank versuchen. ";
+const string MCELIXIER_01_1 = "Elixir of mental alteration";
+const string MCELIXIER_01_2 = "The secretion from two bloodfly stingers is required to create this potion.";
+const string MCELIXIER_01_3 = "Add to that one mana extract and one essence of healing.";
+const string MCELIXIER_01_4 = "Finally, stir a bag of red tear-pepper into the boiling decoction.";
+const string MCELIXIER_01_5 = "Only an expert alchemist who knows how to extract the secretion from the stingers should try this potion.";
 func void Use_MCELIXIER_01()
 {
 	Knows_MCELIXIER = TRUE;
@@ -343,7 +343,7 @@ func void Use_MCELIXIER_01()
 //**********************************************************************************
 instance ITWr_Addon_Pirates_01(C_Item)
 {
-	name						= "Schmieriger Zettel";
+	name						= "Greasy note";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -357,14 +357,14 @@ instance ITWr_Addon_Pirates_01(C_Item)
 	value						= 250;
 
 	description					= name;
-	text[0]						= "Diesen Zettel hatte Angus in der Tasche.";	count[0] = 0;
+	text[0]						= "Angus had this note in his pocket.";	count[0] = 0;
 };
 
-const string Pirates_01_1 = "Ihr Piraten,";
-const string Pirates_01_2 = "Besorgt die letzte Lieferung, die für uns bestimmt ist.";
-const string Pirates_01_3 = "Bringt sie dann zu eurer Höhle. Dort treffen wir uns.";
-const string Pirates_01_4 = "Ich bezahle euch den doppelten Wert in Gold.";
-const string Pirates_01_5 = "So wird's gemacht";
+const string Pirates_01_1 = "Pirates, ";
+const string Pirates_01_2 = "Get the last delivery meant for us.";
+const string Pirates_01_3 = "Then bring it to your cave. We'll meet there.";
+const string Pirates_01_4 = "I will pay double the value in gold.";
+const string Pirates_01_5 = "That's the way to do it";
 const string Pirates_01_6 = "Tom";
 func void Use_Pirates_01()
 {
@@ -392,11 +392,11 @@ func void Use_Pirates_01()
 };
 
 //**********************************************************************************
-//	Rezept für grünene Novizen
+//	Rezept fÃ¼r grÃ¼nene Novizen
 //**********************************************************************************
 instance ITWr_Addon_Joint_01(C_Item)
 {
-	name						= "Der grüne Novize";
+	name						= "The green novice";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -410,13 +410,13 @@ instance ITWr_Addon_Joint_01(C_Item)
 	value						= 250;
 
 	description					= name;
-	text[0]						= "Lag in der Truhe von Fortuno";				count[0] = 0;
+	text[0]						= "In Fortuno's chest";				count[0] = 0;
 };
 
-const string Joint_Rezept_01_1 = "Der grüne Novize";
-const string Joint_Rezept_01_2 = "(...) Die Stengel lassen sich zwar prima drehen, aber was wir im Sumpflager hatten, war von anderem Kaliber.";
-const string Joint_Rezept_01_3 = "Wenn ich die Essenz aus zwei Sumpfkrautpflanzen verwende, und dazu einen Feldknöterich, dann habe ich einen Stengel mit der Wirkung des grünen Novizen.";
-const string Joint_Rezept_01_4 = "Der grüne Novize hilft gegen Schmerzen jeder Art und macht einen klaren Kopf.";
+const string Joint_Rezept_01_1 = "The green novice";
+const string Joint_Rezept_01_2 = "(...) The reefers roll really well, but what we had in the Swamp Camp was of a whole different caliber.";
+const string Joint_Rezept_01_3 = "If I use the essence of two swampweed plants and add a meadow knotweed, then I have a reefer with the effect of the green novice.";
+const string Joint_Rezept_01_4 = "The green novice helps against all sorts of pain and clears the head.";
 func void Use_Joint_Rezept_01()
 {
 	var int nDocID;
@@ -446,7 +446,7 @@ func void Use_Joint_Rezept_01()
 //**********************************************************************************
 instance ITWr_Addon_Lou_Rezept(C_Item)
 {
-	name						= "Rezept für Lou's Hammer";
+	name						= "Recipe for Lou's Hammer";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -460,16 +460,16 @@ instance ITWr_Addon_Lou_Rezept(C_Item)
 	value						= 70;
 
 	description					= name;
-	text[0]						= "Rezept zur Herstellung von Lou's Hammer.";	count[0] = 0;
+	text[0]						= "Recipe for making Lou's Hammer";	count[0] = 0;
 };
 
-const string LouRezept_1 = "Lou's Hammer Rezept";
-const string LouRezept_2 = "Zutaten für ein Hammergebräu:";
-const string LouRezept_3 = "Man nehme eine Wasserflasche, sowie 2 Rüben und 'ne ordentliche Portion Sumpfkraut.";
-const string LouRezept_4 = "Dazu gemahlene Zähne von einem Sumpfhai.";
-const string LouRezept_5 = "Alles zusammen in die Flasche kippen und mit einem Schuß Rum abkochen.";
-const string LouRezept_6 = "Prost.";
-const string LouRezept_7 = "Laut dem blinden alten Mann ist es gesünder, die Dämpfe nicht einzuatmen!";
+const string LouRezept_1 = "Lou's Hammer recipe";
+const string LouRezept_2 = "Ingredients for brewing a Hammer:";
+const string LouRezept_3 = "Take a water bottle, two turnips and a decent portion of swampweed.";
+const string LouRezept_4 = "Add the ground teeth of a swampshark.";
+const string LouRezept_5 = "Put it all in the bottle and boil with a shot of rum.";
+const string LouRezept_6 = "Cheers.";
+const string LouRezept_7 = "According to the old blind man, it is healthier not to breathe the steam!";
 func void UseLouRezept()
 {
 	Knows_LousHammer = TRUE;
@@ -502,7 +502,7 @@ func void UseLouRezept()
 //**********************************************************************************
 instance ITWr_Addon_Lou_Rezept2(C_Item)
 {
-	name						= "Rezept für Lou's Doppelhammer";
+	name						= "Recipe for Lou's Double Hammer";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -516,13 +516,13 @@ instance ITWr_Addon_Lou_Rezept2(C_Item)
 	value						= 140;
 
 	description					= name;
-	text[0]						= "Rezept zur Herstellung von Lou's Doppelhammer.";count[0] = 0;
+	text[0]						= "Recipe for making Lou's Double Hammer.";count[0] = 0;
 };
 
-const string LouRezept2_1 = "Lou's Doppelhammer";
-const string LouRezept2_2 = "Man nimmt den guten alten Lou's Hammer und destilliert ihn nochmal.";
-const string LouRezept2_3 = "Dieses Mischung sollte nur von erfahrenen Schnapsbrennern hergestellt werden.";
-const string LouRezept2_4 = "Wenn sich ein Laie daran versucht, wird er nicht nur blind, sondern auch tot sein.";
+const string LouRezept2_1 = "Lou's Double Hammer";
+const string LouRezept2_2 = "Take a good old Lou's Hammer and distill it again.";
+const string LouRezept2_3 = "This mixture should only be made by experienced boozemakers.";
+const string LouRezept2_4 = "If a layman tries it, he won't only be blind, but also dead.";
 func void UseLouRezept2()
 {
 	Knows_SchlafHammer = TRUE;
@@ -551,7 +551,7 @@ func void UseLouRezept2()
 //**********************************************************************************
 instance ITWr_Addon_Piratentod(C_Item)
 {
-	name						= "Schneller Hering";
+	name						= "Hasty Herring";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -565,15 +565,15 @@ instance ITWr_Addon_Piratentod(C_Item)
 	value						= 250;
 
 	description					= name;
-	text[0]						= "Rezept zur Herstellung des Schnellen Herings.";count[0] = 0;
+	text[0]						= "Recipe for making a Hasty Herring.";count[0] = 0;
 };
 
-const string RezeptPiratentod_1 = "Schneller Hering (von mir)";
-const string RezeptPiratentod_2 = "Kleiner Muntermacher für echte Kerle";
-const string RezeptPiratentod_3 = "Man braucht wie üblich eine Wasserflasche. Diese füllst du mit einer Einheit Rum, dazu gibst du einen frischen Fisch.";
-const string RezeptPiratentod_4 = "Sobald die Flüssigkeit beginnt sich gelb zu färben, nimmst du den Fisch heraus und rundest das ganze mit einem Bund";
-const string RezeptPiratentod_5 = "frisch gepflückten Snapperkraut ab.";
-const string RezeptPiratentod_6 = "Vorsicht. Das Zeug hat 'nen starken Abgang.";
+const string RezeptPiratentod_1 = "Hasty Herring (by me)";
+const string RezeptPiratentod_2 = "Small pick-me-up for real men";
+const string RezeptPiratentod_3 = "As usual, you need a water bottle. Fill this with a measure of rum and add a fresh fish.";
+const string RezeptPiratentod_4 = "As soon as the liquid begins to turn yellow, take out the fish and add a bundle of";
+const string RezeptPiratentod_5 = "freshly picked snapperweed for flavor.";
+const string RezeptPiratentod_6 = "Careful. The stuff has a powerful kick.";
 func void UseRezeptPiratentod()
 {
 	Knows_SchnellerHering = TRUE;
@@ -602,7 +602,7 @@ func void UseRezeptPiratentod()
 // ------------------------------------------------------------------------------------------
 instance Fakescroll_Addon(C_Item)
 {
-	name						= "Ein Blatt Papier";
+	name						= "A piece of paper";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -630,7 +630,7 @@ instance Fakescroll_Addon(C_Item)
 // ------------------------------------------------------------------------------------------
 instance ItWr_Addon_AxtAnleitung(C_ITEM)
 {
-	name						= "Anleitung Banditenaxt";
+	name						= "Instructions for a bandit axe";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -644,16 +644,16 @@ instance ItWr_Addon_AxtAnleitung(C_ITEM)
 	value						= 250;
 
 	description					= name;
-	text[0]						= "Anleitung zum Bau einer leichten, scharfen Axt";count[0] = 0;
+	text[0]						= "Instructions for making a light, sharp axe.";count[0] = 0;
 };
 
-const string AxtAnleitung_1 = "Die Banditenaxt";
-const string AxtAnleitung_2 = "Eine einhändige Axt";
-const string AxtAnleitung_3 = "Ein Mann der die Grundsätze des Schmiedens beherrscht, kann eine besondere Axt herstellen. ";
-const string AxtAnleitung_4 = "Dazu braucht man zwei Stücke heißes Roheisen.";
-const string AxtAnleitung_5 = "Einen Brocken Erz und dreimal Zähne von Wölfen, Snappern oder ähnlichem Getier.";
-const string AxtAnleitung_6 = "Erz und Zähne zusammen mit dem Eisen am Amboß zusammenhauen.";
-const string AxtAnleitung_7 = "Eine solche Axt läßt sich sehr leicht führen und macht ordentlich Schaden.";
+const string AxtAnleitung_1 = "The bandit axe";
+const string AxtAnleitung_2 = "A one-handed axe";
+const string AxtAnleitung_3 = "Anyone who knows the basics of forging can make a special axe.";
+const string AxtAnleitung_4 = "You need two pieces of hot raw iron.";
+const string AxtAnleitung_5 = "One lump of ore and three teeth from wolves, snappers or similar beasts.";
+const string AxtAnleitung_6 = "Hammer the ore and teeth together with the iron on an anvil.";
+const string AxtAnleitung_7 = "An axe like this is very easy to use and does significant damage.";
 func void UseAxtAnleitung()
 {
 	if (Npc_GetTalentSkill(hero, NPC_TALENT_SMITH) >= 1)
@@ -687,7 +687,7 @@ func void UseAxtAnleitung()
 // ------------------------------------------------------------------------------------------
 instance ItWr_Addon_SUMMONANCIENTGHOST(C_ITEM)
 {
-	name						= "'Quarhodron' Beschwören";
+	name						= "Summoning 'Quarhodron'";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -701,7 +701,7 @@ instance ItWr_Addon_SUMMONANCIENTGHOST(C_ITEM)
 	value						= 250;
 
 	description					= name;
-	text[0]						= "Mit dieser Schriftrolle kann man Quarhodron beschwören.";count[0] = 0;
+	text[0]						= "This spell scroll can be used to summon Quarhodron.";count[0] = 0;
 };
 
 func void UseSummonAncientGhost()
@@ -735,7 +735,7 @@ func void UseSummonAncientGhost()
 
 instance ItWr_Map_AddonWorld(C_Item)
 {
-	name						= "Das vergessene Tal der Erbauer.";
+	name						= "The forgotten valley of the builders.";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;

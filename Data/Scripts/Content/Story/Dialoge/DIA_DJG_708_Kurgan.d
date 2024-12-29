@@ -40,10 +40,10 @@ func int DIA_Kurgan_HELLO_Condition()
 
 func void DIA_Kurgan_HELLO_Info()
 {
-	AI_Output(self, other, "DIA_Kurgan_HELLO_01_00"); //Hey du! Typen wie du sollten aufpassen, wo sie hingehen.
-	AI_Output(other, self, "DIA_Kurgan_HELLO_15_01"); //Was willst du mir damit sagen?
-	AI_Output(self, other, "DIA_Kurgan_HELLO_01_02"); //Ich will sagen, dass die Luft hier draußen verdammt dünn ist. Hier wimmelt es nur so von Orks und Monstern.
-	AI_Output(self, other, "DIA_Kurgan_HELLO_01_03"); //Von den Drachen ganz zu schweigen. Ist nur 'ne gut gemeinte Warnung.
+	AI_Output(self, other, "DIA_Kurgan_HELLO_01_00"); //Hey, you! Fellows like you should watch where they're going.
+	AI_Output(other, self, "DIA_Kurgan_HELLO_15_01"); //What are you trying to tell me?
+	AI_Output(self, other, "DIA_Kurgan_HELLO_01_02"); //I mean that the air out here isn't good for your health. The place is just swarming with orcs and monsters.
+	AI_Output(self, other, "DIA_Kurgan_HELLO_01_03"); //Not to mention the dragons. It's just a well-intentioned warning.
 	B_LogEntry(TOPIC_Dragonhunter, TOPIC_Dragonhunter_7);
 };
 
@@ -56,7 +56,7 @@ instance DIA_Kurgan_ELSE(C_INFO)
 	nr				= 0;
 	condition		= DIA_Kurgan_ELSE_Condition;
 	information		= DIA_Kurgan_ELSE_Info;
-	description		= "Kannst du mir auch was erzählen, was ich noch nicht weiß?";
+	description		= "Can you tell me anything I don't know already?";
 };
 
 func int DIA_Kurgan_ELSE_Condition()
@@ -66,14 +66,14 @@ func int DIA_Kurgan_ELSE_Condition()
 
 func void DIA_Kurgan_ELSE_Info()
 {
-	AI_Output(other, self, "DIA_Kurgan_ELSE_15_00"); //Kannst du mir auch was erzählen, was ich noch nicht weiß?
-	AI_Output(self, other, "DIA_Kurgan_ELSE_01_01"); //Ich kann dir einen guten Rat geben und der ist sogar ganz umsonst.
-	AI_Output(self, other, "DIA_Kurgan_ELSE_01_02"); //Wir können hier niemanden gebrauchen, der schon beim kleinsten Drachenfurz gleich in Ohnmacht fällt.
-	AI_Output(self, other, "DIA_Kurgan_ELSE_01_03"); //Geh nach Hause, das ist 'ne Sache für ganze Kerle.
+	AI_Output(other, self, "DIA_Kurgan_ELSE_15_00"); //Can you tell me anything I don't know already?
+	AI_Output(self, other, "DIA_Kurgan_ELSE_01_01"); //I can give you a good piece of advice, and it's even free.
+	AI_Output(self, other, "DIA_Kurgan_ELSE_01_02"); //We can't use anyone here who faints dead away at the slightest dragon fart.
+	AI_Output(self, other, "DIA_Kurgan_ELSE_01_03"); //Go home, this is a job for real men.
 };
 
 //**************************************************************************
-//	Bist du hier der Anführer?
+//	Bist du hier der AnfÃ¼hrer?
 //**************************************************************************
 instance DIA_Kurgan_Leader(C_INFO)
 {
@@ -81,7 +81,7 @@ instance DIA_Kurgan_Leader(C_INFO)
 	nr				= 0;
 	condition		= DIA_Kurgan_Leader_Condition;
 	information		= DIA_Kurgan_Leader_Info;
-	description		= "Bist du hier der Anführer?";
+	description		= "Are you the boss here?";
 };
 
 func int DIA_Kurgan_Leader_Condition()
@@ -91,15 +91,15 @@ func int DIA_Kurgan_Leader_Condition()
 
 func void DIA_Kurgan_Leader_Info()
 {
-	AI_Output(other, self, "DIA_Kurgan_Leader_15_00"); //Bist du hier der Anführer?
-	AI_Output(self, other, "DIA_Kurgan_Leader_01_01"); //Seh ich so aus? Bestimmt nicht. Wir brauchen keine Wichtigtuer, die uns rumkommandieren.
-	AI_Output(self, other, "DIA_Kurgan_Leader_01_02"); //Als Sylvio versucht hat, hier den Boss raushängen zu lassen, haben wir ihm mitsamt seinen Freunden mal gezeigt, was wir davon halten.
-	AI_Output(self, other, "DIA_Kurgan_Leader_01_03"); //Es gab 'ne Keilerei. Anschließend sind sie auf eigene Faust losgezogen.
-	AI_Output(self, other, "DIA_Kurgan_Leader_01_04"); //Hoffentlich ist Sylvio in einem orkischen Kochtopf gelandet.
+	AI_Output(other, self, "DIA_Kurgan_Leader_15_00"); //Are you the boss here?
+	AI_Output(self, other, "DIA_Kurgan_Leader_01_01"); //Do I look like it? Certainly not. We don't need any self-important jerk ordering us around.
+	AI_Output(self, other, "DIA_Kurgan_Leader_01_02"); //When Sylvio tried to act like he was the boss, we showed him and his buddies what we thought of that.
+	AI_Output(self, other, "DIA_Kurgan_Leader_01_03"); //There was a brawl. In the end, they left on their own.
+	AI_Output(self, other, "DIA_Kurgan_Leader_01_04"); //I hope Sylvio wound up in the soup kettle of some orc.
 };
 
 //**************************************************************************
-//	Wolltet ihr nicht ein paar Drachen töten?
+//	Wolltet ihr nicht ein paar Drachen tÃ¶ten?
 //**************************************************************************
 instance DIA_Kurgan_KillDragon(C_INFO)
 {
@@ -107,7 +107,7 @@ instance DIA_Kurgan_KillDragon(C_INFO)
 	nr				= 0;
 	condition		= DIA_Kurgan_KillDragon_Condition;
 	information		= DIA_Kurgan_KillDragon_Info;
-	description		= "Ihr wollt also Drachen töten?";
+	description		= "So you want to kill dragons?";
 };
 
 func int DIA_Kurgan_KillDragon_Condition()
@@ -121,25 +121,25 @@ func int DIA_Kurgan_KillDragon_Condition()
 var int Kurgan_KillDragon_Day;
 func void DIA_Kurgan_KillDragon_Info()
 {
-	AI_Output(other, self, "DIA_Kurgan_KillDragon_15_00"); //(spöttisch) Ihr wollt also Drachen töten?
-	AI_Output(self, other, "DIA_Kurgan_KillDragon_01_01"); //Klugscheißer. Weißt du denn, wie man einen Drachen zur Strecke bringt?
-	AI_Output(self, other, "DIA_Kurgan_KillDragon_01_02"); //Meinst du, das Vieh wartet, bis du ihm in aller Ruhe den Kopf vom Hals schlägst?
-	AI_Output(self, other, "DIA_Kurgan_KillDragon_01_03"); //So etwas braucht gute Planung und entschlossenes Vorgehen.
-	AI_Output(other, self, "DIA_Kurgan_KillDragon_15_04"); //Verstehe, und wie wollt ihr vorgehen?
-	AI_Output(self, other, "DIA_Kurgan_KillDragon_01_05"); //Wir werden erst mal auskundschaften, wo wir die Viecher finden.
-	AI_Output(self, other, "DIA_Kurgan_KillDragon_01_06"); //Erst dann machen wir uns Gedanken, wie wir am besten zuschlagen.
+	AI_Output(other, self, "DIA_Kurgan_KillDragon_15_00"); //(mocking) So you want to kill dragons?
+	AI_Output(self, other, "DIA_Kurgan_KillDragon_01_01"); //Smart ass. So do you know how to bring down a dragon?
+	AI_Output(self, other, "DIA_Kurgan_KillDragon_01_02"); //Do you think the beast will just sit there quietly while you chop off its head?
+	AI_Output(self, other, "DIA_Kurgan_KillDragon_01_03"); //Something like that takes good planning and decisive action.
+	AI_Output(other, self, "DIA_Kurgan_KillDragon_15_04"); //I see. And how are you going to go about that?
+	AI_Output(self, other, "DIA_Kurgan_KillDragon_01_05"); //First we'll scout out where we can find the beasts.
+	AI_Output(self, other, "DIA_Kurgan_KillDragon_01_06"); //Only then will we think about the best way to attack.
 
 	Kurgan_KillDragon_Day = Wld_GetDay();
 
-	Info_AddChoice(DIA_Kurgan_KillDragon, "Wäre interessant dabei zuzusehen, aber ich muß weiter.", DIA_Kurgan_KillDragon_weg);
-	Info_AddChoice(DIA_Kurgan_KillDragon, "Wie wollt ihr an den Orks vorbei?", DIA_Kurgan_KillDragon_orks);
-	Info_AddChoice(DIA_Kurgan_KillDragon, "Ich glaube, ihr findet nicht mal ein blindes Schaf.", DIA_Kurgan_KillDragon_spott);
+	Info_AddChoice(DIA_Kurgan_KillDragon, "I'd love to watch you do that, but I've got to be on my way.", DIA_Kurgan_KillDragon_weg);
+	Info_AddChoice(DIA_Kurgan_KillDragon, "How are you going to get past the orcs?", DIA_Kurgan_KillDragon_orks);
+	Info_AddChoice(DIA_Kurgan_KillDragon, "I think you won't even find a blind sheep.", DIA_Kurgan_KillDragon_spott);
 };
 
 func void DIA_Kurgan_KillDragon_spott()
 {
-	AI_Output(other, self, "DIA_Kurgan_KillDragon_spott_15_00"); //Ich glaube, ihr findet nicht mal ein blindes Schaf.
-	AI_Output(self, other, "DIA_Kurgan_KillDragon_spott_01_01"); //Was? Ich soll dir wohl deine dämliche Fresse einschlagen?
+	AI_Output(other, self, "DIA_Kurgan_KillDragon_spott_15_00"); //I think you won't even find a blind sheep.
+	AI_Output(self, other, "DIA_Kurgan_KillDragon_spott_01_01"); //What? Do you want me to push in your stupid face?
 	AI_StopProcessInfos(self);
 
 	B_Attack(self, other, AR_NONE, 1);
@@ -147,14 +147,14 @@ func void DIA_Kurgan_KillDragon_spott()
 
 func void DIA_Kurgan_KillDragon_orks()
 {
-	AI_Output(other, self, "DIA_Kurgan_KillDragon_orks_15_00"); //Wie wollt ihr an den Orks vorbei?
-	AI_Output(self, other, "DIA_Kurgan_KillDragon_orks_01_01"); //Über solche Kleinigkeiten machen wir uns später Sorgen.
+	AI_Output(other, self, "DIA_Kurgan_KillDragon_orks_15_00"); //How are you going to get past the orcs?
+	AI_Output(self, other, "DIA_Kurgan_KillDragon_orks_01_01"); //We'll worry about those details later.
 };
 
 func void DIA_Kurgan_KillDragon_weg()
 {
-	AI_Output(other, self, "DIA_Kurgan_KillDragon_weg_15_00"); //Wäre interessant, dabei zuzusehen, aber ich muss weiter.
-	AI_Output(self, other, "DIA_Kurgan_KillDragon_weg_01_01"); //Sieh zu, dass du wieder über den Pass kommst. Sonst fehlt dir nachher noch eins deiner Gliedmaßen.
+	AI_Output(other, self, "DIA_Kurgan_KillDragon_weg_15_00"); //I'd love to watch you do that, but I've got to be on my way.
+	AI_Output(self, other, "DIA_Kurgan_KillDragon_weg_01_01"); //Get yourself back over the pass. Otherwise you may end up missing a limb or two.
 
 	AI_StopProcessInfos(self);
 };
@@ -169,7 +169,7 @@ instance DIA_Kurgan_SEENDRAGON(C_INFO)
 	condition		= DIA_Kurgan_SEENDRAGON_Condition;
 	information		= DIA_Kurgan_SEENDRAGON_Info;
 	permanent		= TRUE;
-	description		= "Hast du schon einen Drachen gesehen?";
+	description		= "Have you seen a dragon yet?";
 };
 
 func int DIA_Kurgan_SEENDRAGON_Condition()
@@ -182,8 +182,8 @@ func int DIA_Kurgan_SEENDRAGON_Condition()
 
 func void DIA_Kurgan_SEENDRAGON_Info()
 {
-	AI_Output(other, self, "DIA_Kurgan_SEENDRAGON_15_00"); //Hast du schon einen Drachen gesehen?
-	AI_Output(self, other, "DIA_Kurgan_SEENDRAGON_01_01"); //Bisher noch nicht. Aber die Biester können sich ja nicht ewig verstecken.
+	AI_Output(other, self, "DIA_Kurgan_SEENDRAGON_15_00"); //Have you seen a dragon yet?
+	AI_Output(self, other, "DIA_Kurgan_SEENDRAGON_01_01"); //Not so far. But the beasts can't hide forever.
 };
 
 //*********************************************************************
@@ -195,7 +195,7 @@ instance DIA_Kurgan_AllDragonsDead(C_INFO)
 	nr				= 5;
 	condition		= DIA_Kurgan_AllDragonsDead_Condition;
 	information		= DIA_Kurgan_AllDragonsDead_Info;
-	description		= "Die Drachen sind tot.";
+	description		= "The dragons are dead.";
 };
 
 func int DIA_Kurgan_AllDragonsDead_Condition()
@@ -208,10 +208,10 @@ func int DIA_Kurgan_AllDragonsDead_Condition()
 
 func void DIA_Kurgan_AllDragonsDead_Info()
 {
-	AI_Output(other, self, "DIA_Kurgan_AllDragonsDead_15_00"); //Die Drachen sind tot.
-	AI_Output(self, other, "DIA_Kurgan_AllDragonsDead_01_01"); //Ha, wer soll sie denn getötet haben? Die Paladine?
-	AI_Output(other, self, "DIA_Kurgan_AllDragonsDead_15_02"); //Ich.
-	AI_Output(self, other, "DIA_Kurgan_AllDragonsDead_01_03"); //(lacht) Hah. Das glaubst du doch selbst nicht. Hör auf, mich zu verarschen.
+	AI_Output(other, self, "DIA_Kurgan_AllDragonsDead_15_00"); //The dragons are dead.
+	AI_Output(self, other, "DIA_Kurgan_AllDragonsDead_01_01"); //Ha, who's supposed to have killed them then? The paladins?
+	AI_Output(other, self, "DIA_Kurgan_AllDragonsDead_15_02"); //I did.
+	AI_Output(self, other, "DIA_Kurgan_AllDragonsDead_01_03"); //(laughs) Hah. You don't believe that yourself. Quit yanking my chain.
 };
 
 // ************************************************************

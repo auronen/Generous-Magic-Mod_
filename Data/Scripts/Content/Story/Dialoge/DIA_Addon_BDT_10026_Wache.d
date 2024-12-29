@@ -31,7 +31,7 @@ instance DIA_Addon_BDT_10026_Wache_Hi(C_INFO)
 	condition		= DIA_Addon_10026_Wache_Hi_Condition;
 	information		= DIA_Addon_10026_Wache_Hi_Info;
 	permanent		= TRUE;
-	description		= "Wie sieht's aus?";
+	description		= "How's it going?";
 };
 
 func int DIA_Addon_10026_Wache_Hi_Condition()
@@ -41,20 +41,20 @@ func int DIA_Addon_10026_Wache_Hi_Condition()
 
 func void DIA_Addon_10026_Wache_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10026_Wache_Hi_15_00"); //Wie sieht's aus?
+	AI_Output(other, self, "DIA_Addon_BDT_10026_Wache_Hi_15_00"); //How's it going?
 
 	if (Sklaven_Flucht == FALSE)
 	{
 		CreateInvItems(self, ItFo_Bacon, 1);
-		AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01"); //Schade, dass wir nur noch so wenig Sklaven haben. Wir müssen bald mal neue holen.
-		AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02"); //Die Typen sind schon völlig kaputt. Liegt wohl daran, dass sie so wenig zu fressen kriegen. (lacht)
+		AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01"); //It's too bad that we still have so few slaves. We'll have to get some new ones soon.
+		AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02"); //These guys are totally done in. Probably because they get so little to eat. (laughs)
 		B_UseItem(self, ItFo_Bacon);
 
-		AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03"); //Aber eher schicke ich die Buddler wieder an die Arbeit, als dass ich den Hunden ein Stück Fleisch abgebe.
+		AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03"); //But I'd rather send the diggers back to work than give these dogs a piece of meat.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_04"); //Die Sklaven sind weg - schade. Naja, dann müssen wir halt wieder die Buddler schlagen.
+		AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_04"); //The slaves are gone - too bad. Well, then we'll just have to pound on the diggers again.
 	};
 
 	AI_StopProcessInfos(self);
@@ -70,7 +70,7 @@ instance DIA_Addon_BDT_10026_Wache_Gruft(C_INFO)
 	condition		= DIA_Addon_10026_Wache_Gruft_Condition;
 	information		= DIA_Addon_10026_Wache_Gruft_Info;
 	permanent		= TRUE;
-	description		= "Weißt du was über die Gruft?";
+	description		= "Do you know anything about the tomb?";
 };
 
 func int DIA_Addon_10026_Wache_Gruft_Condition()
@@ -80,7 +80,7 @@ func int DIA_Addon_10026_Wache_Gruft_Condition()
 
 func void DIA_Addon_10026_Wache_Gruft_Info()
 {
-	AI_Output(other, self, "DIA_Addon_BDT_10026_Wache_Gruft_15_00"); //Weißt du was über die Gruft?
-	AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01"); //Ja. Die Gruft liegt hinten in diesem Gang.
-	AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02"); //(unberührt) Immer den Leichen nach, dann wirst du sie schon finden.
+	AI_Output(other, self, "DIA_Addon_BDT_10026_Wache_Gruft_15_00"); //Do you know anything about the tomb?
+	AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01"); //Yes. The tomb is behind this passage.
+	AI_Output(self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02"); //(unmoved) Just follow the bodies and you'll find it.
 };

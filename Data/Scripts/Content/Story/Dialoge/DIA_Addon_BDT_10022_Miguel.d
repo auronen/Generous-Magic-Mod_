@@ -66,7 +66,7 @@ instance DIA_Addon_Miguel_Hi(C_INFO)
 	nr				= 1;
 	condition		= DIA_Addon_Miguel_Hi_Condition;
 	information		= DIA_Addon_Miguel_Hi_Info;
-	description		= "Was machst du hier?";
+	description		= "What are you doing here?";
 };
 
 func int DIA_Addon_Miguel_Hi_Condition()
@@ -76,21 +76,21 @@ func int DIA_Addon_Miguel_Hi_Condition()
 
 func void DIA_Addon_Miguel_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Miguel_Hi_15_00"); //Was machst du hier?
+	AI_Output(other, self, "DIA_Addon_Miguel_Hi_15_00"); //What are you doing here?
 
 	if (Wld_IsTime(06, 00, 22, 00))
 	{
-		AI_Output(other, self, "DIA_Addon_Miguel_Hi_15_01"); //Suchst du irgendwas?
-		AI_Output(self, other, "DIA_Addon_Miguel_Hi_11_02"); //Pflanzen - ich suche Pflanzen.
+		AI_Output(other, self, "DIA_Addon_Miguel_Hi_15_01"); //Are you looking for something?
+		AI_Output(self, other, "DIA_Addon_Miguel_Hi_11_02"); //Plants - I'm looking for plants.
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Miguel_Hi_11_03"); //Für gewöhnlich suche ich Pflanzen.
+		AI_Output(self, other, "DIA_Addon_Miguel_Hi_11_03"); //Usually, I look for plants.
 	};
 
-	AI_Output(self, other, "DIA_Addon_Miguel_Hi_11_04"); //Das meiste Zeug, was hier wächst, lässt sich für irgendwas gebrauchen.
-	AI_Output(self, other, "DIA_Addon_Miguel_Hi_11_05"); //Viele Pflanzen haben Heilwirkung und Sumpfkrautstängel kannst du rauchen.
-	AI_Output(self, other, "DIA_Addon_Miguel_Hi_11_06"); //Vor meiner Zeit in der Barriere habe ich bei einem Alchemisten gearbeitet.
+	AI_Output(self, other, "DIA_Addon_Miguel_Hi_11_04"); //Most of the stuff that grows here can be used for something.
+	AI_Output(self, other, "DIA_Addon_Miguel_Hi_11_05"); //Many plants have healing properties and you can smoke swampweed reefers.
+	AI_Output(self, other, "DIA_Addon_Miguel_Hi_11_06"); //Before my time behind the Barrier I worked as an alchemist.
 };
 
 // ---------------------------------------------------------------------
@@ -102,7 +102,7 @@ instance DIA_Addon_Miguel_Story(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Miguel_Story_Condition;
 	information		= DIA_Addon_Miguel_Story_Info;
-	description		= "Warum haben sie dich in die Barriere gebracht? ";
+	description		= "Why did they put you behind the Barrier?";
 };
 
 func int DIA_Addon_Miguel_Story_Condition()
@@ -115,11 +115,11 @@ func int DIA_Addon_Miguel_Story_Condition()
 
 func void DIA_Addon_Miguel_Story_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Miguel_Story_15_00"); //Warum haben sie dich in die Barriere gebracht?
-	AI_Output(self, other, "DIA_Addon_Miguel_Story_11_01"); //Ich habe viel mit Tränken gearbeitet, die den Verstand beeinflussen.
-	AI_Output(self, other, "DIA_Addon_Miguel_Story_11_02"); //Mein Lehrmeister Ignaz hat eines Abends anstatt seinem Wein mein 'Experiment' getrunken.
-	AI_Output(self, other, "DIA_Addon_Miguel_Story_11_03"); //Das hat ihn zweitweise ... äh ... unberechenbar gemacht und seitdem ist er etwas verwirrt.
-	AI_Output(self, other, "DIA_Addon_Miguel_Story_11_04"); //(abfällig) Die Magier haben mich daraufhin in die Barriere werfen lassen. 'Forschung an verbotenem Wissen' haben sie es genannt.
+	AI_Output(other, self, "DIA_Addon_Miguel_Story_15_00"); //Why did they put you behind the Barrier?
+	AI_Output(self, other, "DIA_Addon_Miguel_Story_11_01"); //I worked with mind-altering potions a lot.
+	AI_Output(self, other, "DIA_Addon_Miguel_Story_11_02"); //One evening, my master Ignaz drank my 'experiment' instead of his wine.
+	AI_Output(self, other, "DIA_Addon_Miguel_Story_11_03"); //That rendered him temporarily... eh... unpredictable, and since then he's been somewhat confused.
+	AI_Output(self, other, "DIA_Addon_Miguel_Story_11_04"); //(snidely) The mages had me thrown behind the Barrier for that. 'Research into forbidden knowledge' they called it.
 };
 
 // ---------------------------------------------------------------------
@@ -131,7 +131,7 @@ instance DIA_Addon_Miguel_Lager(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Miguel_Lager_Condition;
 	information		= DIA_Addon_Miguel_Lager_Info;
-	description		= "Was kannst du mir über das Lager erzählen?";
+	description		= "What can you tell me about the camp?";
 };
 
 func int DIA_Addon_Miguel_Lager_Condition()
@@ -141,9 +141,9 @@ func int DIA_Addon_Miguel_Lager_Condition()
 
 func void DIA_Addon_Miguel_Lager_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Miguel_Lager_15_00"); //Was kannst du mir über das Lager erzählen?
-	AI_Output(self, other, "DIA_Addon_Miguel_Lager_11_01"); //Nicht viel. Ich war selber noch nicht drin.
-	AI_Output(self, other, "DIA_Addon_Miguel_Lager_11_02"); //Nur Ravens Leute waren von Anfang an dabei. Alle anderen, die später kamen, so wie ich, müssen warten, bis neue Leute angefordert werden.
+	AI_Output(other, self, "DIA_Addon_Miguel_Lager_15_00"); //What can you tell me about the camp?
+	AI_Output(self, other, "DIA_Addon_Miguel_Lager_11_01"); //Not much. I have never been in there myself.
+	AI_Output(self, other, "DIA_Addon_Miguel_Lager_11_02"); //Only Raven's people were there from the beginning. All the others who came later, like me, have to wait until they need new people.
 };
 
 // -----------------------------------------
@@ -155,7 +155,7 @@ instance DIA_Addon_Miguel_WhereFrom(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Miguel_WhereFrom_Condition;
 	information		= DIA_Addon_Miguel_WhereFrom_Info;
-	description		= "Woher bist du gekommen?";
+	description		= "Where did you come from?";
 };
 
 func int DIA_Addon_Miguel_WhereFrom_Condition()
@@ -169,10 +169,10 @@ func int DIA_Addon_Miguel_WhereFrom_Condition()
 
 func void DIA_Addon_Miguel_WhereFrom_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //Woher bist du gekommen?
-	AI_Output(self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //Na, den selben Weg wie du, nehme ich an. Mit den Piraten. Übers Meer.
-	AI_Output(self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //Das Tal hier ist komplett abgeschieden. Über Land gibt es keine Verbindung.
-	AI_Output(other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //(bedächtig) Genau.
+	AI_Output(other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //Where did you come from?
+	AI_Output(self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //Well, the same way as you I suppose. With the pirates. Over the sea.
+	AI_Output(self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //The valley here is completely cut off. There's no connection over land.
+	AI_Output(other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //(thoughtfully) Right.
 };
 
 // -----------------------------------------
@@ -184,7 +184,7 @@ instance DIA_Addon_Miguel_Angefordert(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Miguel_Angefordert_Condition;
 	information		= DIA_Addon_Miguel_Angefordert_Info;
-	description		= "Wann werden neue Leute angefordert?";
+	description		= "When do they need new people?";
 };
 
 func int DIA_Addon_Miguel_Angefordert_Condition()
@@ -197,12 +197,12 @@ func int DIA_Addon_Miguel_Angefordert_Condition()
 
 func void DIA_Addon_Miguel_Angefordert_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //Wann werden neue Leute angefordert?
-	AI_Output(self, other, "DIA_Addon_Miguel_Angefordert_11_01"); //Na, wenn drinnen welche fehlen.
-	AI_Output(self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //Wenn sich ein Buddler von 'nem Minecrawler fressen lässt, wird einer von uns reingelassen.
-	AI_Output(self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //Manchmal bringen sie sich auch gegenseitig um. Aber das ist in letzter Zeit besser geworden.
-	AI_Output(self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Raven hat den Zugang zur Mine irgendwie geregelt, so dass nicht alle gleichzeitig reinkommen.
-	AI_Output(self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //Aber wie das genau funktioniert, weiß ich nicht. War ja noch nie drinnen.
+	AI_Output(other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //When do they need new people?
+	AI_Output(self, other, "DIA_Addon_Miguel_Angefordert_11_01"); //Well, when they're missing some in there.
+	AI_Output(self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //If a digger gets himself eaten by a minecrawler, they let one of us replace him.
+	AI_Output(self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //Sometimes they also kill each other. But they've been better about that lately.
+	AI_Output(self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Raven has controlled the access to the mine somehow, so that not everyone can get in at the same time.
+	AI_Output(self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //But I don't know exactly how that works. I've never been inside.
 };
 
 // ---------------------------------------------------------------------
@@ -214,7 +214,7 @@ instance DIA_Addon_Miguel_Fortuno(C_INFO)
 	nr				= 6;
 	condition		= DIA_Addon_Miguel_Fortuno_Condition;
 	information		= DIA_Addon_Miguel_Fortuno_Info;
-	description		= "Wegen Fortuno ...";
+	description		= "About Fortuno...";
 };
 
 func int DIA_Addon_Miguel_Fortuno_Condition()
@@ -227,15 +227,15 @@ func int DIA_Addon_Miguel_Fortuno_Condition()
 
 func void DIA_Addon_Miguel_Fortuno_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Miguel_Fortuno_15_00"); //Fortuno ist ziemlich verwirrt und könnte einen Trank vertragen, der ihm seine Erinnerung zurückgibt.
-	AI_Output(self, other, "DIA_Addon_Miguel_Fortuno_11_01"); //Fortuno? Das ist doch der Diener von Raven.
-	AI_Output(other, self, "DIA_Addon_Miguel_Fortuno_15_02"); //Er war es. Jetzt ist er nur noch ein Wrack. Und das ist Ravens Schuld.
-	AI_Output(self, other, "DIA_Addon_Miguel_Fortuno_11_03"); //Raven? Ich habe bisher große Stücke auf ihn gehalten. Hm, gut. Aber hier im Sumpf kann ich keinen Trank brauen.
-	AI_Output(other, self, "DIA_Addon_Miguel_Fortuno_15_04"); //ICH könnte den Trank brauen. Im Lager steht ein Labor- Tisch. Ich brauche nur das Rezept.
-	AI_Output(self, other, "DIA_Addon_Miguel_Fortuno_11_05"); //Sei vorsichtig mit diesem Rezept. Es ist gefährlich, diesen Trank zu brauen.
+	AI_Output(other, self, "DIA_Addon_Miguel_Fortuno_15_00"); //Fortuno is pretty confused and could use a potion to restore his memory.
+	AI_Output(self, other, "DIA_Addon_Miguel_Fortuno_11_01"); //Fortuno? That's Raven's servant, no?
+	AI_Output(other, self, "DIA_Addon_Miguel_Fortuno_15_02"); //He was. Now he's just a wreck. And it's Raven's fault.
+	AI_Output(self, other, "DIA_Addon_Miguel_Fortuno_11_03"); //Raven? Until now, I thought a lot of him. Hm, all right. But here in the swamp, I can't brew any potions.
+	AI_Output(other, self, "DIA_Addon_Miguel_Fortuno_15_04"); //I could brew the potion. There's an alchemist's bench in the camp. I just need the recipe.
+	AI_Output(self, other, "DIA_Addon_Miguel_Fortuno_11_05"); //Be careful with this recipe. Brewing this potion is dangerous.
 	B_GiveInvItems(self, other, ITWr_Addon_MCELIXIER_01, 1);
-	AI_Output(self, other, "DIA_Addon_Miguel_Fortuno_11_06"); //Wenn irgendwas beim Brauen schiefgeht, oder eine Zutat nicht stimmt, wirkt der Trank tödlich.
-	AI_Output(other, self, "DIA_Addon_Miguel_Fortuno_15_07"); //Ich werde vorsichtig sein.
+	AI_Output(self, other, "DIA_Addon_Miguel_Fortuno_11_06"); //If something goes wrong in the brewing or one of the ingredients isn't right, the potion will be deadly.
+	AI_Output(other, self, "DIA_Addon_Miguel_Fortuno_15_07"); //I'll be careful.
 
 	B_LogEntry(Topic_Addon_Fortuno, Topic_Addon_Fortuno_4);
 };
@@ -249,7 +249,7 @@ instance DIA_Addon_Miguel_BRAU(C_INFO)
 	nr				= 7;
 	condition		= DIA_Addon_Miguel_BRAU_Condition;
 	information		= DIA_Addon_Miguel_BRAU_Info;
-	description		= "Kannst du mir was beibringen?  ";
+	description		= "Can you teach me something?";
 };
 
 func int DIA_Addon_Miguel_BRAU_Condition()
@@ -262,9 +262,9 @@ func int DIA_Addon_Miguel_BRAU_Condition()
 
 func void DIA_Addon_Miguel_BRAU_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Miguel_BRAU_15_00"); //Kannst du mir was beibringen?
-	AI_Output(self, other, "DIA_Addon_Miguel_BRAU_11_01"); //Keine Zeit. Ich bin hier, um an Gold zu kommen. Und solange ich nicht ins Lager komme, verdien' ich mir eben was mit meinen Kräutern.
-	AI_Output(self, other, "DIA_Addon_Miguel_BRAU_11_02"); //Aber wenn du ein paar Tränke brauchst, ich hab noch welche dabei.
+	AI_Output(other, self, "DIA_Addon_Miguel_BRAU_15_00"); //Can you teach me something?
+	AI_Output(self, other, "DIA_Addon_Miguel_BRAU_11_01"); //No time. I am here to get gold. And as long as I can't get into the camp, I make a living by selling my herbs.
+	AI_Output(self, other, "DIA_Addon_Miguel_BRAU_11_02"); //But if you need a few potions, I still have some.
 
 	Log_CreateTopic(Topic_Addon_BDT_Trader, LOG_NOTE);
 	B_LogEntry(Topic_Addon_BDT_Trader, Topic_Addon_BDT_Trader_3);

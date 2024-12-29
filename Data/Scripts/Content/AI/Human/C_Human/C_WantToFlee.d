@@ -29,7 +29,7 @@ func int C_WantToFlee(var C_Npc slf, var C_Npc oth)
 
 	// FUNC
 
-	// ------ Flucht, wenn other VIEL st‰rker ist ------
+	// ------ Flucht, wenn other VIEL st√§rker ist ------
 	if ((2 * slf.level) < oth.level)
 	{
 		return TRUE;

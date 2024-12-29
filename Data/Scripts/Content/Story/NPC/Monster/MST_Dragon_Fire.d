@@ -5,7 +5,7 @@
 prototype Mst_Default_Dragon_Fire(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Feuerdrache";
+	name							= "Fire Dragon";
 	guild							= GIL_DRAGON;
 	level							= 500;
 
@@ -31,7 +31,7 @@ prototype Mst_Default_Dragon_Fire(C_Npc)
 	//	damage[DAM_INDEX_EDGE]		= 0;
 	//	damage[DAM_INDEX_POINT]		= 0;
 	damage[DAM_INDEX_FIRE]			= 149;
-	damage[DAM_INDEX_FLY]			= 1; // Opfer fliegt für Fire+Fly
+	damage[DAM_INDEX_FLY]			= 1; // Opfer fliegt fÃ¼r Fire+Fly
 	//	damage[DAM_INDEX_MAGIC]		= 0;
 
 	// -------- visuals --------

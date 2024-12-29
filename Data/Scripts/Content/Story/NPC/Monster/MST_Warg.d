@@ -109,7 +109,7 @@ instance Warg(Mst_Default_Warg)
 instance BlackWolf(Mst_Default_Warg)
 {
 	// -------- NPC --------
-	name							= "Schwarzer Wolf";
+	name							= "Black Wolf";
 	level							= 6;
 
 	// -------- attributes --------

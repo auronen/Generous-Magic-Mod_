@@ -102,7 +102,7 @@ instance Wolf(Mst_Default_Wolf)
 instance Summoned_Wolf(Mst_Default_Wolf)
 {
 	// -------- NPC --------
-	name							= "Beschworener Wolf";
+	name							= "Summoned Wolf";
 	guild							= GIL_SUMMONED_WOLF;
 	level							= 0; // 10
 
@@ -147,7 +147,7 @@ instance Summoned_Wolf(Mst_Default_Wolf)
 instance YWolf(Mst_Default_Wolf)
 {
 	// -------- NPC --------
-	name							= "Junger Wolf";
+	name							= "Young Wolf";
 	level							= 3;
 
 	// -------- attributes --------
@@ -181,13 +181,13 @@ instance YWolf(Mst_Default_Wolf)
 };
 
 //************
-//	Missions Wölfe für Pepe: YWolf
+//	Missions WÃ¶lfe fÃ¼r Pepe: YWolf
 //************
 
 instance PEPES_YWolf1(Mst_Default_Wolf)
 {
 	// -------- NPC --------
-	name							= "Junger Wolf";
+	name							= "Young Wolf";
 	level							= 3;
 
 	// -------- attributes --------
@@ -221,7 +221,7 @@ instance PEPES_YWolf1(Mst_Default_Wolf)
 instance PEPES_YWolf2(Mst_Default_Wolf)
 {
 	// -------- NPC --------
-	name							= "Junger Wolf";
+	name							= "Young Wolf";
 	level							= 3;
 
 	// -------- attributes --------
@@ -255,7 +255,7 @@ instance PEPES_YWolf2(Mst_Default_Wolf)
 instance PEPES_YWolf3(Mst_Default_Wolf)
 {
 	// -------- NPC --------
-	name							= "Junger Wolf";
+	name							= "Young Wolf";
 	level							= 3;
 
 	// -------- attributes --------
@@ -289,7 +289,7 @@ instance PEPES_YWolf3(Mst_Default_Wolf)
 instance PEPES_YWolf4(Mst_Default_Wolf)
 {
 	// -------- NPC --------
-	name							= "Junger Wolf";
+	name							= "Young Wolf";
 	level							= 3;
 
 	// -------- attributes --------

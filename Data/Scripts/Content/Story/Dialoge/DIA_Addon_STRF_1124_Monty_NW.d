@@ -30,7 +30,7 @@ instance DIA_Addon_Monty_NW_Hi(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Monty_NW_Hi_Condition;
 	information		= DIA_Addon_Monty_NW_Hi_Info;
-	description		= "Und? Musst du wieder arbeiten?";
+	description		= "And? Back to work, are you?";
 };
 
 func int DIA_Addon_Monty_NW_Hi_Condition()
@@ -40,10 +40,10 @@ func int DIA_Addon_Monty_NW_Hi_Condition()
 
 func void DIA_Addon_Monty_NW_Hi_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Monty_NW_Hi_15_00"); //Und? Musst du wieder arbeiten?
-	AI_Output(self, other, "DIA_Addon_Monty_NW_Hi_08_01"); //Alter, die haben in meiner Abwesenheit nichts auf die Reihe gekriegt. Ich muss mir erst mal die Baupläne wieder reinziehen.
-	AI_Output(other, self, "DIA_Addon_Monty_NW_Hi_15_02"); //Na gut. Lass dich nicht stören.
-	AI_Output(self, other, "DIA_Addon_Monty_NW_Hi_08_03"); //(lacht) Alles klar. Gute Reise noch.
+	AI_Output(other, self, "DIA_Addon_Monty_NW_Hi_15_00"); //And? Back to work, are you?
+	AI_Output(self, other, "DIA_Addon_Monty_NW_Hi_08_01"); //Oh man - they didn't get anything done while I was gone. Now I have to delve into those construction plans again.
+	AI_Output(other, self, "DIA_Addon_Monty_NW_Hi_15_02"); //Oh well. Don't let me keep you, then.
+	AI_Output(self, other, "DIA_Addon_Monty_NW_Hi_08_03"); //(laughs) All right. Have a good trip.
 };
 
 // ************************************************************

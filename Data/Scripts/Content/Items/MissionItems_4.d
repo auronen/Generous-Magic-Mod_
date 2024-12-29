@@ -1,5 +1,5 @@
-const int Value_Dragonegg = 200; // Joly: nicht ändern
-const int Value_OrcEliteRing = 130; // Joly: nicht ändern
+const int Value_Dragonegg = 200; // Joly: nicht Ã¤ndern
+const int Value_OrcEliteRing = 130; // Joly: nicht Ã¤ndern
 /******************************************************************************************/
 // Angars Amulett
 /******************************************************************************************/
@@ -22,7 +22,7 @@ instance ItAm_Mana_Angar_MIS(C_Item)
 
 	value						= Value_Am_Mana;
 
-	description					= "Angars magisches Amulett";
+	description					= "Angar's Magic Amulet";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= NAME_Bonus_Mana;								count[2] = 10;
@@ -57,7 +57,7 @@ func void UnEquip_ItAm_Mana_Angar()
 
 instance ItMW_1H_FerrosSword_Mis(C_Item)
 {
-	name						= "Feros Schwert";
+	name						= "Fero's Sword";
 
 	mainflag					= ITEM_KAT_NF;
 	flags						= ITEM_SWD | ITEM_MISSION;
@@ -85,7 +85,7 @@ instance ItMW_1H_FerrosSword_Mis(C_Item)
 
 instance ItMi_KerolothsGeldbeutel_MIS(C_Item)
 {
-	name						= "Keroloth´s Lederbeutel";
+	name						= "Keroloth's Leather Satchel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -117,7 +117,7 @@ func void UseKerolothsGeldbeutel()
 
 instance ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 {
-	name						= "Keroloth´s Lederbeutel";
+	name						= "Keroloth's Leather Satchel";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION;
@@ -141,7 +141,7 @@ instance ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 
 instance ItRw_SengrathsArmbrust_MIS(C_Item)
 {
-	name						= "Sengraths Armbrust";
+	name						= "Sengrath's Crossbow";
 
 	mainflag					= ITEM_KAT_FF;
 	flags						= ITEM_CROSSBOW;
@@ -168,11 +168,11 @@ instance ItRw_SengrathsArmbrust_MIS(C_Item)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-// Tabins Lurkerhäute von Engrom
+// Tabins LurkerhÃ¤ute von Engrom
 
 instance ItAt_TalbinsLurkerSkin(C_Item)
 {
-	name						= "Lurkerhaut";
+	name						= "Lurker Skin";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MULTI | ITEM_MISSION;
@@ -183,7 +183,7 @@ instance ItAt_TalbinsLurkerSkin(C_Item)
 	value						= Value_ReptileSkin;
 
 	description					= name;
-	text[0]						= "Im Innern ist der Name ´Talbin´ eingebrand";	count[0] = 0;
+	text[0]						= "The name Talbin's been branded on the inside.";	count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
@@ -192,11 +192,11 @@ instance ItAt_TalbinsLurkerSkin(C_Item)
 };
 
 // ---------------------------------------------------------------------
-//	Drachen-Ei (für DJG only Ambient auftrag)
+//	Drachen-Ei (fÃ¼r DJG only Ambient auftrag)
 // ---------------------------------------------------------------------
 instance ItAt_DragonEgg_MIS(C_ITEM)
 {
-	name						= "Drachen-Ei";
+	name						= "Dragon Egg";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -207,8 +207,8 @@ instance ItAt_DragonEgg_MIS(C_ITEM)
 	value						= Value_Dragonegg;
 
 	description					= name;
-	text[0]						= "Das Ei ist warm und von innen";				count[0] = 0;
-	text[1]						= "hört man leises Kratzen";					count[1] = 0;
+	text[0]						= "The egg is warm, and there's";				count[0] = 0;
+	text[1]						= "a scratching noise on the inside.";					count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
@@ -216,15 +216,15 @@ instance ItAt_DragonEgg_MIS(C_ITEM)
 };
 
 // ---------------------------------------------------------------------
-//	OrcEliteRing (für PAL only Ambient auftrag)
+//	OrcEliteRing (fÃ¼r PAL only Ambient auftrag)
 // ---------------------------------------------------------------------
 
 instance ItRi_OrcEliteRing(C_Item)
 {
-	name						= "Ring der orkischen Kriegsherren";
+	name						= "Ring of the Orcish Warlords";
 
 	mainflag					= ITEM_KAT_MAGIC;
-	flags						= ITEM_MISSION | ITEM_RING | ITEM_MULTI; // Joly: Muß so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
+	flags						= ITEM_MISSION | ITEM_RING | ITEM_MULTI; // Joly: MuÃŸ so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
 
 	wear						= WEAR_EFFECT;
 	effect						= "SPELLFX_WEAKGLIMMER";
@@ -239,8 +239,8 @@ instance ItRi_OrcEliteRing(C_Item)
 	value						= Value_OrcEliteRing;
 
 	description					= name;
-	text[0]						= "Der Ring ist rauh und strahlt eine";			count[0] = 0;
-	text[1]						= "seltsame Kälte aus";							count[1] = 0;
+	text[0]						= "The ring is rough and seems";			count[0] = 0;
+	text[1]						= "strangely cold.";							count[1] = 0;
 	text[2]						= "";											count[2] = 0;
 	text[3]						= "";											count[3] = 0;
 	text[4]						= "";											count[4] = 0;
@@ -282,11 +282,11 @@ instance ItPo_DragonEggDrinkNeoras_MIS(C_Item)
 
 	value						= Value_HpElixier;
 
-	description					= "Trank aus Dracheneisekret";
+	description					= "Potion of Dragon Egg Secretion";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
-	text[3]						= "Wirkung unbekannt";							count[3] = 0;
+	text[3]						= "Effects unknown.";							count[3] = 0;
 	text[4]						= "";											count[4] = 0;
 	text[5]						= NAME_Value;									count[5] = value;
 };
@@ -307,7 +307,7 @@ func void Use_DragonEggDrinkNeoras()
 
 instance ItWr_Map_Orcelite_MIS(C_Item)
 {
-	name						= "Kriegskarte der Orks"; //
+	name						= "Orcish War Map"; //
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;
@@ -361,7 +361,7 @@ func void Use_Map_NewWorld_Orcelite_MIS()
 
 instance ItWr_Map_Caves_MIS(C_Item)
 {
-	name						= "Die Höhlen von Khorinis"; //
+	name						= "The Caves of Khorinis"; //
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION | ITEM_MULTI;

@@ -30,7 +30,7 @@ instance DIA_GornDJG_STARTCAMP(C_INFO)
 	nr				= 0;
 	condition		= DIA_GornDJG_STARTCAMP_Condition;
 	information		= DIA_GornDJG_STARTCAMP_Info;
-	description		= "Wie ich sehe, hast du dich den Drachenjägern angeschlossen.";
+	description		= "I see you have joined the dragon hunters.";
 };
 
 func int DIA_GornDJG_STARTCAMP_Condition()
@@ -43,26 +43,26 @@ func int DIA_GornDJG_STARTCAMP_Condition()
 
 func void DIA_GornDJG_STARTCAMP_Info()
 {
-	AI_Output(other, self, "DIA_GornDJG_STARTCAMP_15_00"); //Wie ich sehe, hast du dich den Drachenjägern angeschlossen.
-	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_12_01"); //Ich bin Sylvio ins Minental gefolgt, weil ich mich hier einfach am besten auskenne und mir die Situation hier nochmal genauer ansehen wollte.
-	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_12_02"); //Ich sag dir was. Hier braut sich ganz schön was zusammen. Ich habe in meinem ganzen Leben noch nicht so viele Orks auf einem Haufen gesehen.
-	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_12_03"); //Würde mich nicht wundern, wenn Garond und die Paladine in der Burg schon längst alle geflohen sind oder getötet wurden.
+	AI_Output(other, self, "DIA_GornDJG_STARTCAMP_15_00"); //I see you have joined the dragon hunters.
+	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_12_01"); //I followed Sylvio into the Valley of Mines, because I know my way around here best and wanted to get a clear picture of the situation.
+	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_12_02"); //I'll tell you what. Something's definitely brewing here. I've never seen so many orcs in one place in all my life.
+	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_12_03"); //It wouldn't amaze me if Garond and the paladins in the castle had all fled or been slain by now.
 
-	Info_AddChoice(DIA_GornDJG_STARTCAMP, "Ich sehe dich dann.", DIA_GornDJG_STARTCAMP_By);
-	Info_AddChoice(DIA_GornDJG_STARTCAMP, "Was hast du jetzt vor?", DIA_GornDJG_STARTCAMP_Wohin);
+	Info_AddChoice(DIA_GornDJG_STARTCAMP, "I'll see you around.", DIA_GornDJG_STARTCAMP_By);
+	Info_AddChoice(DIA_GornDJG_STARTCAMP, "What are you planning to do now?", DIA_GornDJG_STARTCAMP_Wohin);
 };
 
 func void DIA_GornDJG_STARTCAMP_Wohin()
 {
-	AI_Output(other, self, "DIA_GornDJG_STARTCAMP_Wohin_15_00"); //Was hast du jetzt vor?
-	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_01"); //Ich werde erstmal den Jungs hier ins Minental folgen und mich dann später absetzen.
-	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_02"); //Ich muss unbedingt herauskriegen, was die Orks vorhaben.
+	AI_Output(other, self, "DIA_GornDJG_STARTCAMP_Wohin_15_00"); //What are your plans now?
+	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_01"); //I'll follow the boys here to the Valley of Mines first, and then take off later.
+	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_02"); //I really have to find out what the orcs are planning.
 };
 
 func void DIA_GornDJG_STARTCAMP_By()
 {
-	AI_Output(other, self, "DIA_GornDJG_STARTCAMP_By_15_00"); //Ich sehe dich dann.
-	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_By_12_01"); //Pass auf dich auf.
+	AI_Output(other, self, "DIA_GornDJG_STARTCAMP_By_15_00"); //I'll see you around.
+	AI_Output(self, other, "DIA_GornDJG_STARTCAMP_By_12_01"); //Look out for yourself.
 	AI_StopProcessInfos(self);
 };
 
@@ -75,7 +75,7 @@ instance DIA_GornDJG_HALLO(C_INFO)
 	nr				= 0;
 	condition		= DIA_GornDJG_HALLO_Condition;
 	information		= DIA_GornDJG_HALLO_Info;
-	description		= "Hier hast du dich also verkrochen!";
+	description		= "So this is where you're holed up!";
 };
 
 func int DIA_GornDJG_HALLO_Condition()
@@ -88,8 +88,8 @@ func int DIA_GornDJG_HALLO_Condition()
 
 func void DIA_GornDJG_HALLO_Info()
 {
-	AI_Output(other, self, "DIA_GornDJG_HALLO_15_00"); //Hier hast du dich also verkrochen!
-	AI_Output(self, other, "DIA_GornDJG_HALLO_12_01"); //Du bist auch nicht klein zu kriegen, was?
+	AI_Output(other, self, "DIA_GornDJG_HALLO_15_00"); //So this is where you holed up!
+	AI_Output(self, other, "DIA_GornDJG_HALLO_12_01"); //You aren't so easy to kill yourself, eh?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -101,7 +101,7 @@ instance DIA_GornDJG_WHATSUP(C_INFO)
 	nr				= 0;
 	condition		= DIA_GornDJG_WHATSUP_Condition;
 	information		= DIA_GornDJG_WHATSUP_Info;
-	description		= "Hast du schon Beute gemacht?";
+	description		= "Have you caught anything yet?";
 };
 
 func int DIA_GornDJG_WHATSUP_Condition()
@@ -114,27 +114,27 @@ func int DIA_GornDJG_WHATSUP_Condition()
 
 func void DIA_GornDJG_WHATSUP_Info()
 {
-	AI_Output(other, self, "DIA_GornDJG_WHATSUP_15_00"); //Hast du schon Beute gemacht?
-	AI_Output(self, other, "DIA_GornDJG_WHATSUP_12_01"); //Ich warte noch. Ich habe den Eindruck, dass da oben in der alten Felsenruine was zu holen ist. Nachts brennen dort Lichter und ich kann Schreie hören.
+	AI_Output(other, self, "DIA_GornDJG_WHATSUP_15_00"); //Have you caught anything yet?
+	AI_Output(self, other, "DIA_GornDJG_WHATSUP_12_01"); //I'm still waiting. I think there may be something to be had up there in the old rock ruins. There are lights up there at night, and I can hear screams.
 
 	Info_ClearChoices(DIA_GornDJG_WHATSUP);
-	Info_AddChoice(DIA_GornDJG_WHATSUP, "Vielleicht Lester?", DIA_GornDJG_WHATSUP_Lester);
-	Info_AddChoice(DIA_GornDJG_WHATSUP, "Ein Drache?", DIA_GornDJG_WHATSUP_A_Dragon);
+	Info_AddChoice(DIA_GornDJG_WHATSUP, "Maybe Lester?", DIA_GornDJG_WHATSUP_Lester);
+	Info_AddChoice(DIA_GornDJG_WHATSUP, "A dragon?", DIA_GornDJG_WHATSUP_A_Dragon);
 
 	B_LogEntry(TOPIC_Dragonhunter, TOPIC_Dragonhunter_8);
 };
 
 func void DIA_GornDJG_WHATSUP_Lester()
 {
-	AI_Output(other, self, "DIA_GornDJG_WHATSUP_Lester_15_00"); //Vielleicht ist es Lester, der in seine alte Felsruine zurückgekehrt ist?
-	AI_Output(self, other, "DIA_GornDJG_WHATSUP_Lester_12_01"); //Kann nicht sein. Soviel ich weiß, wohnt Lester dort oben nicht mehr!
+	AI_Output(other, self, "DIA_GornDJG_WHATSUP_Lester_15_00"); //Maybe it's Lester who has returned to his old ruin on the rock?
+	AI_Output(self, other, "DIA_GornDJG_WHATSUP_Lester_12_01"); //Can't be. As far as I know, Lester doesn't live up there any more.
 };
 
 func void DIA_GornDJG_WHATSUP_A_Dragon()
 {
-	AI_Output(other, self, "DIA_GornDJG_WHATSUP_A_Dragon_15_00"); //Ein Drache?
-	AI_Output(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_01"); //Höchstwahrscheinlich. Die Hochebene da oben wird bewacht wie die verdammte Schatzkammer des Königs. Leider ist das der einzige Weg zur Festung.
-	AI_Output(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_02"); //Als ob die Drachen noch nicht schlimm genug wären. Sie haben anscheinend noch einige weitere Unholde im Schlepptau.
+	AI_Output(other, self, "DIA_GornDJG_WHATSUP_A_Dragon_15_00"); //A dragon?
+	AI_Output(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_01"); //Very likely. The high plain up there is guarded like the King's damn treasury. Alas, it's the only way to the fortress.
+	AI_Output(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_02"); //As if the dragons weren't bad enough already. They seem to have a few more monsters in tow.
 
 	GornDJG_WhatMonsters = TRUE;
 
@@ -152,7 +152,7 @@ instance DIA_GornDJG_WHATMONSTERS(C_INFO)
 	nr				= 0;
 	condition		= DIA_GornDJG_WHATMONSTERS_Condition;
 	information		= DIA_GornDJG_WHATMONSTERS_Info;
-	description		= "Was für Unholde sollen das sein?";
+	description		= "What kind of monsters would those be?";
 };
 
 func int DIA_GornDJG_WHATMONSTERS_Condition()
@@ -165,9 +165,9 @@ func int DIA_GornDJG_WHATMONSTERS_Condition()
 
 func void DIA_GornDJG_WHATMONSTERS_Info()
 {
-	AI_Output(other, self, "DIA_GornDJG_WHATMONSTERS_15_00"); //Was für Unholde sollen das sein?
-	AI_Output(self, other, "DIA_GornDJG_WHATMONSTERS_12_01"); //Ich hab sie noch nicht richtig erkennen können, aber sie sind aufrecht gehende Wesen mit schuppiger Haut. Sie streifen über die Felsen, wie Snapper, die eine Beute gewittert haben.
-	AI_Output(self, other, "DIA_GornDJG_WHATMONSTERS_12_02"); //Ich kann sie hier unten schnüffeln und schnauben hören. Ich glaube, sie haben die ganze Ebene da oben in Beschlag genommen.
+	AI_Output(other, self, "DIA_GornDJG_WHATMONSTERS_15_00"); //What kind of monsters would those be?
+	AI_Output(self, other, "DIA_GornDJG_WHATMONSTERS_12_01"); //I couldn't quite make them out properly, but they walk upright and have scaly skin. They move over the rocks like snappers that have gotten a whiff of prey.
+	AI_Output(self, other, "DIA_GornDJG_WHATMONSTERS_12_02"); //I can hear them snuffling and snorting clear down here. I think they've taken over the whole plain up there.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -179,7 +179,7 @@ instance DIA_GornDJG_WAHTABOUTORCS(C_INFO)
 	nr				= 0;
 	condition		= DIA_GornDJG_WAHTABOUTORCS_Condition;
 	information		= DIA_GornDJG_WAHTABOUTORCS_Info;
-	description		= "Was ist mit den Orks?";
+	description		= "What about the orcs?";
 };
 
 func int DIA_GornDJG_WAHTABOUTORCS_Condition()
@@ -192,11 +192,11 @@ func int DIA_GornDJG_WAHTABOUTORCS_Condition()
 
 func void DIA_GornDJG_WAHTABOUTORCS_Info()
 {
-	AI_Output(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_00"); //Was ist mit den Orks?
-	AI_Output(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_01"); //Ich beobachte sie schon eine ganze Weile. Die Barrikade, die sie da unten errichtet haben, soll irgendwas verbergen. Ich vermute, es haben sich schon Massen von Ihnen dahinter versammelt.
-	AI_Output(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_02"); //Du meinst, NOCH mehr als ohnehin schon hier sind?
-	AI_Output(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_03"); //Würde mich nicht wundern, wenn sie eines Abends ihre Palisaden abreißen, in Scharen über den Pass marschieren und das ganze Land überschwemmen. Ich hab kein gutes Gefühl bei dem Ding.
-	AI_Output(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_04"); //Wenn das passiert, muss ich zurück und Lee warnen. Er will ohnehin von der Insel verschwinden. Spätestens dann wird's Zeit, Mann!
+	AI_Output(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_00"); //What about the orcs?
+	AI_Output(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_01"); //I've been watching them for quite a while. The barricade they set up down there must be hiding something. I suspect that crowds of them have already gathered back there.
+	AI_Output(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_02"); //You mean, even MORE than are here already?
+	AI_Output(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_03"); //It wouldn't amaze me if they tore down their palisade one evening and flooded across the land. I've got a bad feeling about this.
+	AI_Output(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_04"); //If that happens, I'll have to go back and warn Lee. He wants to get off the island anyway. By then, it'll be high time.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -208,7 +208,7 @@ instance DIA_GornDJG_HELPKILLDRACONIANS(C_INFO)
 	nr				= 0;
 	condition		= DIA_GornDJG_HELPKILLDRACONIANS_Condition;
 	information		= DIA_GornDJG_HELPKILLDRACONIANS_Info;
-	description		= "Kannst du mir helfen, in die Festung zu kommen?";
+	description		= "Can you help me get into the fortress?";
 };
 
 func int DIA_GornDJG_HELPKILLDRACONIANS_Condition()
@@ -225,19 +225,19 @@ func int DIA_GornDJG_HELPKILLDRACONIANS_Condition()
 
 func void DIA_GornDJG_HELPKILLDRACONIANS_Info()
 {
-	AI_Output(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_00"); //Kannst du mir helfen, in die Festung zu kommen?
-	AI_Output(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_01"); //Ich weiß nicht so recht. Ich habe Angst, dass die Orks genau in dem Moment los schlagen, wenn ich gerade nicht hinsehe.
-	AI_Output(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_02"); //Das ist Paranoia!
-	AI_Output(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_03"); //Kann's nicht ändern. Ich würde es mir nie verzeihen, wenn ich zu spät käme, verstehst du? Andererseits ...
-	AI_Output(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_04"); //Was soll's! Wozu bin ich hierher gekommen? Lass uns die Ebene stürmen und den Weg zur Festung frei kämpfen.
-	AI_Output(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_05"); //Ein bisschen Bewegung kann nicht schaden. Außerdem will ich mir die Biester da oben mal aus der Nähe ansehen.
-	AI_Output(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_06"); //Sag Bescheid, wenn's los geht!
+	AI_Output(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_00"); //Can you help me get into the fortress?
+	AI_Output(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_01"); //I don't really know. I'm afraid the orcs will attack just at the very moment I look away.
+	AI_Output(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_02"); //That's paranoid!
+	AI_Output(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_03"); //Can't be helped. I'd never forgive myself if I came too late, you see? On the other hand ...
+	AI_Output(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_04"); //Whatever! Why else am I here? Let's charge the plain and fight our way clear to the fortress.
+	AI_Output(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_05"); //A little exercise can't hurt. Besides, I want to get a closer look at those beasts up there.
+	AI_Output(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_06"); //Let me know when you're ready!
 
 	B_LogEntry(TOPIC_Dragonhunter, TOPIC_Dragonhunter_10);
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info LosGeht´s
+//	Info LosGehtÂ´s
 ///////////////////////////////////////////////////////////////////////
 instance DIA_GornDJG_LOSGEHTS(C_INFO)
 {
@@ -245,7 +245,7 @@ instance DIA_GornDJG_LOSGEHTS(C_INFO)
 	nr				= 0;
 	condition		= DIA_GornDJG_LOSGEHTS_Condition;
 	information		= DIA_GornDJG_LOSGEHTS_Info;
-	description		= "Lass uns angreifen!";
+	description		= "Let's attack!";
 };
 
 func int DIA_GornDJG_LOSGEHTS_Condition()
@@ -258,8 +258,8 @@ func int DIA_GornDJG_LOSGEHTS_Condition()
 
 func void DIA_GornDJG_LOSGEHTS_Info()
 {
-	AI_Output(other, self, "DIA_GornDJG_LOSGEHTS_15_00"); //Lass uns angreifen!
-	AI_Output(self, other, "DIA_GornDJG_LOSGEHTS_12_01"); //Wie in alten Zeiten, was? Aber ich sag dir was: Das wird meine Schlacht. Diesmal werde ich voran gehen!
+	AI_Output(other, self, "DIA_GornDJG_LOSGEHTS_15_00"); //Let's attack!
+	AI_Output(self, other, "DIA_GornDJG_LOSGEHTS_12_01"); //Just like old times, eh? But I'll tell you something: This is my battle. This time I'm going in front!
 
 	AI_StopProcessInfos(self);
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -287,9 +287,9 @@ func int DIA_GornDJG_BISHIERHIN_Condition()
 
 func void DIA_GornDJG_BISHIERHIN_Info()
 {
-	AI_Output(self, other, "DIA_GornDJG_BISHIERHIN_12_00"); //War ja ein Kinderspiel. So, mein Freund, den Rest musst du allein erledigen. Heiz ihnen ordentlich ein! Ich werde zurückgehen, die Orks im Auge behalten.
-	AI_Output(other, self, "DIA_GornDJG_BISHIERHIN_15_01"); //Kein Problem. Ich seh dich!
-	AI_Output(self, other, "DIA_GornDJG_BISHIERHIN_12_02"); //Hoffentlich!
+	AI_Output(self, other, "DIA_GornDJG_BISHIERHIN_12_00"); //It was child's play. So, my friend, you'll have to take care of the rest. Make it hot for them! I'll go back and keep an eye on the orcs.
+	AI_Output(other, self, "DIA_GornDJG_BISHIERHIN_15_01"); //No Problem. See you around!
+	AI_Output(self, other, "DIA_GornDJG_BISHIERHIN_12_02"); //I should hope so!
 
 	B_LogEntry(TOPIC_Dragonhunter, TOPIC_Dragonhunter_11);
 
@@ -310,7 +310,7 @@ instance DIA_GornDJG_DRAGONDEAD(C_INFO)
 	nr				= 0;
 	condition		= DIA_GornDJG_DRAGONDEAD_Condition;
 	information		= DIA_GornDJG_DRAGONDEAD_Info;
-	description		= "Der Felsdrache ist tot!";
+	description		= "The rock dragon is dead!";
 };
 
 func int DIA_GornDJG_DRAGONDEAD_Condition()
@@ -327,14 +327,14 @@ func int DIA_GornDJG_DRAGONDEAD_Condition()
 
 func void DIA_GornDJG_DRAGONDEAD_Info()
 {
-	AI_Output(other, self, "DIA_GornDJG_DRAGONDEAD_15_00"); //Der Felsdrache ist tot!
-	AI_Output(self, other, "DIA_GornDJG_DRAGONDEAD_12_01"); //Ich hör die Schreie nicht mehr! Warst du oben in der Felsenfestung?
-	AI_Output(other, self, "DIA_GornDJG_DRAGONDEAD_15_02"); //Ja!
-	AI_Output(self, other, "DIA_GornDJG_DRAGONDEAD_12_03"); //Haha! Hab ich es mir doch gedacht. Wo du auftauchst bleibt kein Stein auf dem anderen.
-	AI_Output(other, self, "DIA_GornDJG_DRAGONDEAD_15_04"); //Was willst du jetzt machen?
-	AI_Output(self, other, "DIA_GornDJG_DRAGONDEAD_12_05"); //Ich bleib noch eine Weile und mach mich dann auf den Weg zurück zu Lee. Vielleicht treffen wir uns da ja wieder!
-	AI_Output(self, other, "DIA_GornDJG_DRAGONDEAD_12_06"); //Ich kann diese verdammte Gegend bald nicht mehr sehen. Es wird Zeit, dass wir aus diesem Land endlich verschwinden.
-	AI_Output(other, self, "DIA_GornDJG_DRAGONDEAD_15_07"); //Bis dann!
+	AI_Output(other, self, "DIA_GornDJG_DRAGONDEAD_15_00"); //The rock dragon is dead!
+	AI_Output(self, other, "DIA_GornDJG_DRAGONDEAD_12_01"); //I don't hear any more screams! Were you up in the rock fortress?
+	AI_Output(other, self, "DIA_GornDJG_DRAGONDEAD_15_02"); //Yes!
+	AI_Output(self, other, "DIA_GornDJG_DRAGONDEAD_12_03"); //Ha ha! I thought as much. Wherever you show up, there won't be one stone left standing.
+	AI_Output(other, self, "DIA_GornDJG_DRAGONDEAD_15_04"); //What are you going to do now?
+	AI_Output(self, other, "DIA_GornDJG_DRAGONDEAD_12_05"); //I'll stick around for a while and then make my way back to Lee. Maybe we'll meet again there!
+	AI_Output(self, other, "DIA_GornDJG_DRAGONDEAD_12_06"); //I'm getting sick of this damned area. It's time we finally got out of this country.
+	AI_Output(other, self, "DIA_GornDJG_DRAGONDEAD_15_07"); //See you later!
 	B_GivePlayerXP(XP_Ambient);
 };
 

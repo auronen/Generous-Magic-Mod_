@@ -87,7 +87,7 @@ func void DIA_Addon_Elvrich_BanditsThere_Info()
 	&& (Npc_IsDead(BDT_10309_Addon_RangerBandit_L))
 	&& (Npc_IsDead(BDT_10310_Addon_RangerBandit_M)))
 	{
-		AI_Output(self, other, "DIA_Addon_Elvrich_BanditsThere_04_00"); //Dem Himmel sei Dank. Die Banditen sind erledigt. Du hast mein Leben gerettet.
+		AI_Output(self, other, "DIA_Addon_Elvrich_BanditsThere_04_00"); //Thank goodness. The bandits are done for. You have saved my life.
 		DIA_Addon_Elvrich_BanditsThere_NoPerm = TRUE;
 		self.aivar[AIV_NoFightParker] = FALSE;
 	}
@@ -107,7 +107,7 @@ instance DIA_Addon_Elvrich_Wer(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Elvrich_Wer_Condition;
 	information		= DIA_Addon_Elvrich_Wer_Info;
-	description		= "Wer bist du?";
+	description		= "Who are you?";
 };
 
 func int DIA_Addon_Elvrich_Wer_Condition()
@@ -117,14 +117,14 @@ func int DIA_Addon_Elvrich_Wer_Condition()
 
 func void DIA_Addon_Elvrich_Wer_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_Wer_15_00"); //Wer bist du?
-	AI_Output(self, other, "DIA_Addon_Elvrich_Wer_04_01"); //Mein Name ist Elvrich. Ich komme aus der Stadt.
+	AI_Output(other, self, "DIA_Addon_Elvrich_Wer_15_00"); //Who are you?
+	AI_Output(self, other, "DIA_Addon_Elvrich_Wer_04_01"); //My name is Elvrich. I come from town.
 	if (MIS_Thorben_BringElvrichBack == LOG_RUNNING)
 	{
-		AI_Output(other, self, "DIA_Addon_Elvrich_Wer_15_02"); //Meister Thorben hat mir erzählt, dass du verschwunden bist.
+		AI_Output(other, self, "DIA_Addon_Elvrich_Wer_15_02"); //Master Thorben told me that you had disappeared.
 	};
 
-	AI_Output(self, other, "DIA_Addon_Elvrich_Wer_04_03"); //Diese miesen Kerle haben mich hierher verschleppt und mich hier gefangen gehalten.
+	AI_Output(self, other, "DIA_Addon_Elvrich_Wer_04_03"); //Those lowly scum dragged me off here and were keeping me prisoner.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -136,7 +136,7 @@ instance DIA_Addon_Elvrich_MissingPeople(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Elvrich_MissingPeople_Condition;
 	information		= DIA_Addon_Elvrich_MissingPeople_Info;
-	description		= "In der Stadt werden eine Menge Leute vermisst.";
+	description		= "Lots of people are missing in town.";
 };
 
 func int DIA_Addon_Elvrich_MissingPeople_Condition()
@@ -151,8 +151,8 @@ func int DIA_Addon_Elvrich_MissingPeople_Condition()
 
 func void DIA_Addon_Elvrich_MissingPeople_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_MissingPeople_15_00"); //In der Stadt werden eine Menge Leute vermisst.
-	AI_Output(self, other, "DIA_Addon_Elvrich_MissingPeople_04_01"); //Von Vermissten weiß ich nichts. Ich kann dir nur das sagen, was MIR widerfahren ist.
+	AI_Output(other, self, "DIA_Addon_Elvrich_MissingPeople_15_00"); //Lots of people are missing in town.
+	AI_Output(self, other, "DIA_Addon_Elvrich_MissingPeople_04_01"); //I don't know anything about missing people. I can only tell you what happened to ME.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -164,7 +164,7 @@ instance DIA_Addon_Elvrich_WhatExactly(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Elvrich_WhatExactly_Condition;
 	information		= DIA_Addon_Elvrich_WhatExactly_Info;
-	description		= "Was genau ist dir passiert?";
+	description		= "What exactly happened to you?";
 };
 
 func int DIA_Addon_Elvrich_WhatExactly_Condition()
@@ -177,34 +177,34 @@ func int DIA_Addon_Elvrich_WhatExactly_Condition()
 
 func void DIA_Addon_Elvrich_WhatExactly_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_15_00"); //Was genau ist dir passiert?
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_04_01"); //Ich war auf dem Weg zum Treffpunkt, den ich mit meinem Mädchen ausgemacht hatte.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_04_02"); //Ihr Name ist Lucia. Wir hatten den Plan, in die Berge zu verschwinden. Weg von der Stadt und allen, die dort leben.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_04_03"); //Ich war gerade am Treffpunkt angekommen, als plötzlich einige dieser Banditen aus dem Dickicht kamen und uns beide gefangen nahmen.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_04_04"); //Ich hab mich natürlich gewehrt, aber es half nichts. Es waren einfach zu viele. Du hast sie nicht zufälligerweise gesehen?
+	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_15_00"); //What exactly happened to you?
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_04_01"); //I was on my way to the rendezvous I had set up with my girl.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_04_02"); //Her name is Lucia. We had been planning to get away to the mountains. Away from the town and all those who live there.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_04_03"); //I had just arrived at the meeting point when suddenly some of these bandits sprang out from the underbrush and captured us both.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_04_04"); //I put up a fight, of course, but to no avail. There were just too many of them. You didn't happen to see them?
 
 	Info_ClearChoices(DIA_Addon_Elvrich_WhatExactly);
-	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly, "Was wollten die Banditen von euch?", DIA_Addon_Elvrich_WhatExactly_Want);
-	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly, "Erzähl mir von Lucia.", DIA_Addon_Elvrich_WhatExactly_lucia);
+	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly, "What did the bandits want with you?", DIA_Addon_Elvrich_WhatExactly_Want);
+	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly, "Tell me about Lucia.", DIA_Addon_Elvrich_WhatExactly_lucia);
 };
 
 func void DIA_Addon_Elvrich_WhatExactly_Want()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_Want_15_00"); //Was wollten die Banditen von euch?
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Want_04_01"); //Manchmal konnte ich sie nachts belauschen. Ich habe nicht alles verstanden, aber ich glaube, sie wollten uns versklaven.
+	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_Want_15_00"); //What did the bandits want with you?
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Want_04_01"); //Sometimes I could overhear them at night. I didn't get everything, but I think they wanted to make us slaves.
 
-	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly, "Wohin wollten sie euch bringen?", DIA_Addon_Elvrich_WhatExactly_Pirates);
+	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly, "Where were they going to take you?", DIA_Addon_Elvrich_WhatExactly_Pirates);
 };
 
 func void DIA_Addon_Elvrich_WhatExactly_Pirates()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_Pirates_15_00"); //Wohin wollten sie euch bringen?
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_01"); //An einen Ort hier irgendwo auf der Insel Khorinis. Aber ich denke, man kommt nicht ohne Schiff dorthin.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_02"); //Sie haben mich zu einer Anlegestelle an die Küste gebracht. Dort lagerten einige Piraten.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_03"); //Einer der Banditen ging voraus, um mit den Piraten zu verhandeln. Es gab ein heftiges Streitgespräch zwischen ihnen.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_04"); //Ich glaube, dass der Bandit mit mir zusammen von den Piraten übergesetzt werden wollte.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_05"); //Die Piraten sind aber nicht darauf eingegangen. Kurzerhand haben sich die Banditen hierher zurück gezogen und seitdem saßen wir hier herum.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_06"); //Sie schienen ziemlich ratlos zu sein. Und dann bist du gekommen.
+	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_Pirates_15_00"); //Where were they going to take you?
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_01"); //To a place somewhere here, on the island of Khorinis. But I think one can't get there without a ship.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_02"); //They brought me to a mooring place on the coast. Some pirates were camped out there.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_03"); //One of the bandits approached the pirates to negotiate. They were having a fierce argument.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_04"); //I think that the bandit wanted the pirates to ferry him somewhere, along with me.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_05"); //But the pirates wouldn't have it. So the bandits withdrew, and we've been sitting around here ever since.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_06"); //They seemed to be rather at a loss. And then you came.
 
 	Elvrich_SCKnowsPirats = TRUE;
 
@@ -212,30 +212,30 @@ func void DIA_Addon_Elvrich_WhatExactly_Pirates()
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
 	B_LogEntry(TOPIC_Addon_WhoStolePeople, TOPIC_Addon_WhoStolePeople_10);
 
-	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly, "Piraten in Khorinis?", DIA_Addon_Elvrich_WhatExactly_Here);
-	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly, "Wo ist diese Anlegestelle der Piraten?", DIA_Addon_Elvrich_WhatExactly_pirat);
+	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly, "Pirates in Khorinis?", DIA_Addon_Elvrich_WhatExactly_Here);
+	Info_AddChoice(DIA_Addon_Elvrich_WhatExactly, "Where's the pirates' mooring place?", DIA_Addon_Elvrich_WhatExactly_pirat);
 };
 
 func void DIA_Addon_Elvrich_WhatExactly_Here()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_Here_15_00"); //Piraten in Khorinis?
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_01"); //Ich weiß nicht sehr viel über sie. Bei der Anlegestelle habe ich das erste Mal überhaupt einen von ihnen gesehen.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_02"); //Sie halten sich immer im Hintergrund. Jeder von ihnen ist ein gesuchter Verbrecher in Khorinis.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_03"); //Sie haben Angst vor dem Galgen. Deswegen wirst du niemals einen von ihnen in der Stadt antreffen.
+	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_Here_15_00"); //Pirates in Khorinis?
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_01"); //I don't know very much about them. I first clapped eyes on one of them at the mooring place.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_02"); //They always stay in the background. Every single one of them is a wanted criminal in Khorinis.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_03"); //They're afraid of the gallows. That's why you're never going to meet one of them in town.
 };
 
 func void DIA_Addon_Elvrich_WhatExactly_lucia()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_lucia_15_00"); //Erzähl mir von Lucia.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_lucia_04_01"); //Ein Mädchen aus dem Hafenviertel. Sie hat für diesen Fiesling Bromor gearbeitet. Sie ist sehr hübsch.
+	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_lucia_15_00"); //Tell me about Lucia.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_lucia_04_01"); //A girl from the harbor district. She used to work for that horrible Bromor. She's very pretty.
 };
 
 func void DIA_Addon_Elvrich_WhatExactly_pirat()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_pirat_15_00"); //Wo ist diese Anlegestelle der Piraten?
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_01"); //Sie ist nicht weit vom Hafen von Khorinis entfernt.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_02"); //Wenn du auf der Kaimauer stehst und auf's Meer hinaus schaust, musst du nur in ein Boot steigen und rechts die Küste entlang fahren.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_03"); //Die erste kleine Bucht, die du dort findest, das ist die Anlegestelle, die ich meine.
+	AI_Output(other, self, "DIA_Addon_Elvrich_WhatExactly_pirat_15_00"); //Where's the pirates' mooring place?
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_01"); //Not far from the harbor of Khorinis.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_02"); //When you stand on the quay and look out to sea, all you need to do is get a boat and go to the right, along the coast.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_03"); //The first small bay you come across is the mooring place I was talking about.
 
 	Log_CreateTopic(TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
@@ -258,7 +258,7 @@ instance DIA_Addon_Elvrich_Bromor(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Elvrich_Bromor_Condition;
 	information		= DIA_Addon_Elvrich_Bromor_Info;
-	description		= "Bromor sagte, Lucia hätte eine goldene Schale mitgehen lassen...";
+	description		= "Bromor says Lucia walked off with a golden dish ...";
 };
 
 func int DIA_Addon_Elvrich_Bromor_Condition()
@@ -272,8 +272,8 @@ func int DIA_Addon_Elvrich_Bromor_Condition()
 
 func void DIA_Addon_Elvrich_Bromor_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_Bromor_15_00"); //Bromor sagte, Lucia hätte eine goldene Schale mitgehen lassen ...
-	AI_Output(self, other, "DIA_Addon_Elvrich_Bromor_04_01"); //Tja. Wenn Lucia wirklich Bromor bestohlen hat, dann werden die Banditen ihr das Ding abgenommen haben.
+	AI_Output(other, self, "DIA_Addon_Elvrich_Bromor_15_00"); //Bromor says Lucia walked off with a golden dish ...
+	AI_Output(self, other, "DIA_Addon_Elvrich_Bromor_04_01"); //Well. If Lucia really stole from Bromor, the bandits will certainly have taken the thing from her.
 
 	Log_CreateTopic(TOPIC_Addon_BromorsGold, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BromorsGold, LOG_RUNNING);
@@ -289,7 +289,7 @@ instance DIA_Addon_Elvrich_WhereIsLucia(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Elvrich_WhereIsLucia_Condition;
 	information		= DIA_Addon_Elvrich_WhereIsLucia_Info;
-	description		= "Wo ist Lucia jetzt?";
+	description		= "Where's Lucia now?";
 };
 
 func int DIA_Addon_Elvrich_WhereIsLucia_Condition()
@@ -303,10 +303,10 @@ func int DIA_Addon_Elvrich_WhereIsLucia_Condition()
 
 func void DIA_Addon_Elvrich_WhereIsLucia_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_WhereIsLucia_15_00"); //Wo ist Lucia jetzt?
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_01"); //Auf der großen Feldkreuzung vor Onars Hof haben sich unsere Weg getrennt.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_02"); //Die Banditen haben Lucia in den Wald hinter Sekobs Hof verschleppt.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_03"); //Innos möge sie beschützen.
+	AI_Output(other, self, "DIA_Addon_Elvrich_WhereIsLucia_15_00"); //Where's Lucia now?
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_01"); //We parted ways at the big crossroads in front of Onar's farm.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_02"); //The bandits dragged Lucia off to the woods behind Sekob's farm.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_03"); //May Innos protect her.
 
 	Log_CreateTopic(TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
@@ -324,7 +324,7 @@ instance DIA_Addon_Elvrich_FernandosWaffen(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Elvrich_FernandosWaffen_Condition;
 	information		= DIA_Addon_Elvrich_FernandosWaffen_Info;
-	description		= "Hatten die Banditen, die dich gefangen nahmen, Waffen geliefert bekommen?";
+	description		= "Did the bandits who held you captive receive a shipment of weapons?";
 };
 
 func int DIA_Addon_Elvrich_FernandosWaffen_Condition()
@@ -338,9 +338,9 @@ func int DIA_Addon_Elvrich_FernandosWaffen_Condition()
 
 func void DIA_Addon_Elvrich_FernandosWaffen_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_FernandosWaffen_15_00"); //Wurden den Banditen, die dich gefangen hielten, Waffen geliefert?
-	AI_Output(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_01"); //Oh ja. So einen Haufen, dass sie sie fast gar nicht schleppen konnten.
-	AI_Output(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_02"); //Sie sind mit dem ganzen Kram in Richtung Sekobs Hof verschwunden.
+	AI_Output(other, self, "DIA_Addon_Elvrich_FernandosWaffen_15_00"); //Did the bandits who held you captive receive a shipment of weapons?
+	AI_Output(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_01"); //Oh yes. So many that they could barely carry them.
+	AI_Output(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_02"); //They took the whole kaboodle and disappeared towards Sekob's farm.
 	B_GivePlayerXP(XP_Ambient);
 
 	Log_CreateTopic(TOPIC_Addon_BanditTrader, LOG_MISSION);
@@ -357,7 +357,7 @@ instance DIA_Addon_Elvrich_LuciaLetter(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Elvrich_LuciaLetter_Condition;
 	information		= DIA_Addon_Elvrich_LuciaLetter_Info;
-	description		= "Ich habe einen Brief von deiner Lucia gefunden.";
+	description		= "I found a letter from your Lucia.";
 };
 
 func int DIA_Addon_Elvrich_LuciaLetter_Condition()
@@ -371,12 +371,12 @@ func int DIA_Addon_Elvrich_LuciaLetter_Condition()
 
 func void DIA_Addon_Elvrich_LuciaLetter_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_LuciaLetter_15_00"); //Ich habe einen Brief von deiner Lucia gefunden.
-	AI_Output(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_01"); //(erregt) Was? Gib ihn her!
+	AI_Output(other, self, "DIA_Addon_Elvrich_LuciaLetter_15_00"); //I found a letter from your Lucia.
+	AI_Output(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_01"); //(excited) What? Give it here!
 	B_UseFakeScroll();
-	AI_Output(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_02"); //(verzweifelt) NEIN! Das glaub ich einfach nicht. Nein. Ich kann das nicht glauben.
-	AI_Output(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_03"); //(verzweifelt) Es kann nicht sein, dass sie mich einfach zurück lässt.
-	AI_Output(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_04"); //(verzweifelt) Nimm den Brief wieder mit. Ich will ihn nicht. Ich glaube fest daran, dass sie eines Tages wieder zu mir zurück kommt.
+	AI_Output(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_02"); //(desperate) NO! I don't believe this. No. I just can't believe it.
+	AI_Output(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_03"); //(desperate) She can't just leave me behind like this.
+	AI_Output(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_04"); //(desperate) Take this letter back. I don't want it. I firmly believe that she's going to come back to me some day.
 
 	Log_CreateTopic(TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
@@ -395,7 +395,7 @@ instance DIA_Addon_Elvrich_WasNun(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Elvrich_WasNun_Condition;
 	information		= DIA_Addon_Elvrich_WasNun_Info;
-	description		= "Du solltest machen, daß du wieder in die Stadt kommst!";
+	description		= "You should get yourself back to town in a hurry!";
 };
 
 func int DIA_Addon_Elvrich_WasNun_Condition()
@@ -408,12 +408,12 @@ func int DIA_Addon_Elvrich_WasNun_Condition()
 
 func void DIA_Addon_Elvrich_WasNun_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Elvrich_WasNun_15_00"); //Du solltest machen, dass du wieder in die Stadt kommst!
-	AI_Output(self, other, "DIA_Addon_Elvrich_WasNun_04_01"); //Was denkst du, was ich mache? Ich geh direkt zurück zu meinem Meister Thorben.
-	AI_Output(self, other, "DIA_Addon_Elvrich_WasNun_04_02"); //Wirst du nach den Banditen suchen?
-	AI_Output(other, self, "DIA_Addon_Elvrich_WasNun_15_03"); //Tja, ich denke schon ...
-	AI_Output(self, other, "DIA_Addon_Elvrich_WasNun_04_04"); //Wenn du Lucia finden solltest, bring sie sicher in die Stadt, ja?
-	AI_Output(other, self, "DIA_Addon_Elvrich_WasNun_15_05"); //Ich werde sehen, was ich tun kann.
+	AI_Output(other, self, "DIA_Addon_Elvrich_WasNun_15_00"); //You should get yourself back to town in a hurry!
+	AI_Output(self, other, "DIA_Addon_Elvrich_WasNun_04_01"); //What else would I be doing? I'm going straight back to my Master Thorben.
+	AI_Output(self, other, "DIA_Addon_Elvrich_WasNun_04_02"); //Will you go look for the bandits?
+	AI_Output(other, self, "DIA_Addon_Elvrich_WasNun_15_03"); //Well, yes, I think so ...
+	AI_Output(self, other, "DIA_Addon_Elvrich_WasNun_04_04"); //If you find Lucia, get her safely back to town, will you?
+	AI_Output(other, self, "DIA_Addon_Elvrich_WasNun_15_05"); //I'll see what I can do.
 
 	Log_CreateTopic(TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
@@ -449,5 +449,5 @@ func int DIA_Addon_Elvrich_PERM_Condition()
 
 func void DIA_Addon_Elvrich_PERM_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Elvrich_PERM_04_00"); //Danke, dass du mich gerettet hast!
+	AI_Output(self, other, "DIA_Addon_Elvrich_PERM_04_00"); //Thanks for saving me!
 };

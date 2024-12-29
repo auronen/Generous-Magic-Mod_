@@ -5,7 +5,7 @@
 prototype Mst_Default_SwampDrone(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Sumpfgasdrone";
+	name							= "Swampgas Drone";
 	guild							= GIL_BLOODFLY;
 	level							= 10;
 

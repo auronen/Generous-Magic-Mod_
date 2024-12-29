@@ -4,7 +4,7 @@ instance PIR_1301_Addon_Skip_NW(Npc_Default)
 	name							= "Skip";
 	npctype							= NpcType_Main;
 	guild							= GIL_PIR;
-	flags							= NPC_FLAG_IMMORTAL; // Joly: kommt sp‰ter in der Addonworld nochmal vor.
+	flags							= NPC_FLAG_IMMORTAL; // Joly: kommt sp√§ter in der Addonworld nochmal vor.
 
 	voice							= 8;
 	id								= 1301;

@@ -95,7 +95,7 @@ instance StoneGolem(Mst_Default_StoneGolem)
 instance Summoned_Golem(Mst_Default_StoneGolem)
 {
 	// -------- NPC --------
-	name							= "Beschworener Golem";
+	name							= "Summoned Golem";
 	guild							= GIL_SUMMONED_GOLEM;
 	level							= 0;
 
@@ -174,7 +174,7 @@ func void B_GolemRise()
 };
 
 //************************************************************************************
-//	Shattered_Golem ->liegt am Boden und setzt sich bei Annäherung des Hero zusammen
+//	Shattered_Golem ->liegt am Boden und setzt sich bei AnnÃ¤herung des Hero zusammen
 //************************************************************************************
 
 instance Shattered_Golem(Mst_Default_StoneGolem)
@@ -212,14 +212,14 @@ instance Shattered_Golem(Mst_Default_StoneGolem)
 
 // ##################################################
 // ##
-// ## Magischer Golem für Prüfung des Feuers
+// ## Magischer Golem fÃ¼r PrÃ¼fung des Feuers
 // ##
 // ##################################################
 
 instance MagicGolem(Mst_Default_StoneGolem)
 {
 	// -------- NPC --------
-	name							= "Magischer Golem";
+	name							= "Magic Golem";
 	// level						= // Level;
 	level							= 10;
 

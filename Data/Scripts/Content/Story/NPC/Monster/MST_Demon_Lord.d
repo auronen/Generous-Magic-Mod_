@@ -5,7 +5,7 @@
 prototype Mst_Default_DemonLord(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Dämonenlord";
+	name							= "Demon Lord";
 	guild							= GIL_DEMON;
 	level							= 60;
 

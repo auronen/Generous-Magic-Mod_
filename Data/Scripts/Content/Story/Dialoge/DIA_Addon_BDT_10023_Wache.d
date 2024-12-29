@@ -43,14 +43,14 @@ func int DIA_Addon_10023_Wache_Hi_Condition()
 
 func void DIA_Addon_10023_Wache_Hi_Info()
 {
-	AI_Output(self, other, "DIA_Addon_10023_Wache_Hi_11_00"); //Hey, wo willst du hin? Willst du in diesen Gang?
-	AI_Output(other, self, "DIA_Addon_10023_Wache_Hi_15_01"); //Naja, warum nicht?
-	AI_Output(self, other, "DIA_Addon_10023_Wache_Hi_11_02"); //Dahinten sind noch mehr Sklaven. Wegen mir kannst du rein, aber schlag sie nicht so fest, dass sie nicht mehr arbeiten können.
-	AI_Output(self, other, "DIA_Addon_10023_Wache_Hi_11_03"); //Schließlich wollen wir ja nicht, dass sie hier nur noch rumsitzen. Sie müssen Gold hacken.
-	AI_Output(other, self, "DIA_Addon_10023_Wache_Hi_15_04"); //Verstehe. Und wer hat das angeordnet?
-	AI_Output(self, other, "DIA_Addon_10023_Wache_Hi_11_05"); //Das ist ein direkter Befehl von Bloodwyn.
-	AI_Output(other, self, "DIA_Addon_10023_Wache_Hi_15_06"); //Ich dachte, Raven wäre hier der Chef.
-	AI_Output(self, other, "DIA_Addon_10023_Wache_Hi_11_07"); //Richtig - aber er hat die Sklaven Bloodwyn geschenkt. Er hat wohl keine Verwendung mehr für sie.
+	AI_Output(self, other, "DIA_Addon_10023_Wache_Hi_11_00"); //Hey, where are you going? Do you want to go into this passage?
+	AI_Output(other, self, "DIA_Addon_10023_Wache_Hi_15_01"); //Well sure, why not?
+	AI_Output(self, other, "DIA_Addon_10023_Wache_Hi_11_02"); //There are even more slaves back there. As far as I'm concerned you can go in, but don't hit them so hard they can't work any more.
+	AI_Output(self, other, "DIA_Addon_10023_Wache_Hi_11_03"); //After all, we certainly don't want them just sitting around. They have to dig for gold.
+	AI_Output(other, self, "DIA_Addon_10023_Wache_Hi_15_04"); //I see. And who ordered that?
+	AI_Output(self, other, "DIA_Addon_10023_Wache_Hi_11_05"); //That is a direct order from Bloodwyn.
+	AI_Output(other, self, "DIA_Addon_10023_Wache_Hi_15_06"); //I thought Raven was the boss here.
+	AI_Output(self, other, "DIA_Addon_10023_Wache_Hi_11_07"); //Right - but he gave the slaves to Bloodwyn. He doesn't have any more use for them.
 
 	Pardos.attribute[ATR_HITPOINTS] = 70;
 	B_LogEntry(Topic_Addon_Sklaven, Topic_Addon_Sklaven_3);
@@ -68,7 +68,7 @@ instance DIA_Addon_10023_Wache_go(C_INFO)
 	condition		= DIA_Addon_10023_Wache_go_Condition;
 	information		= DIA_Addon_10023_Wache_go_Info;
 	permanent		= TRUE;
-	description		= "Lass die Sklaven frei!";
+	description		= "Let the slaves go!";
 };
 
 func int DIA_Addon_10023_Wache_go_Condition()
@@ -78,33 +78,33 @@ func int DIA_Addon_10023_Wache_go_Condition()
 
 func void DIA_Addon_10023_Wache_go_Info()
 {
-	AI_Output(other, self, "DIA_Addon_10023_Wache_go_15_00"); //Lass die Sklaven frei!
+	AI_Output(other, self, "DIA_Addon_10023_Wache_go_15_00"); //Let the slaves go!
 
 	if (PrisonGuard_Rules == FALSE)
 	{
-		AI_Output(self, other, "DIA_Addon_10023_Wache_go_11_01"); //Pass mal auf. Bloodwyn hat hier das Kommando. Ihm gehören die Sklaven, also hat er das Recht, sie freizulassen.
-		AI_Output(self, other, "DIA_Addon_10023_Wache_go_11_02"); //Außerdem hat Thorus da auch noch ein Wort mitzureden. Und was ist mit dir?
+		AI_Output(self, other, "DIA_Addon_10023_Wache_go_11_01"); //Listen. Bloodwyn is in command here. The slaves belong to him, so he has the right to set them free.
+		AI_Output(self, other, "DIA_Addon_10023_Wache_go_11_02"); //Besides, Thorus also has a say in that. And what about you?
 		PrisonGuard_Rules = TRUE;
 		B_LogEntry(Topic_Addon_Sklaven, Topic_Addon_Sklaven_4);
 	};
 
-	AI_Output(self, other, "DIA_Addon_10023_Wache_go_11_03"); //Hast DU hier irgendwas zu sagen?
+	AI_Output(self, other, "DIA_Addon_10023_Wache_go_11_03"); //Do YOU have any say?
 
 	Info_ClearChoices(DIA_Addon_10023_Wache_go);
 	Info_AddChoice(DIA_Addon_10023_Wache_go, DIALOG_BACK, DIA_Addon_10023_Wache_go_BACK);
 
 	if (Npc_KnowsInfo(other, DIA_Addon_Thorus_Answer))
 	{
-		Info_AddChoice(DIA_Addon_10023_Wache_go, "Ich habe mit Thorus gesprochen.", DIA_Addon_10023_Wache_go_Thorus);
+		Info_AddChoice(DIA_Addon_10023_Wache_go, "I've had a talk with Thorus.", DIA_Addon_10023_Wache_go_Thorus);
 	}
 	else if (Npc_IsDead(Bloodwyn)
 	&& (Npc_HasItems(other, ItMi_Addon_Bloodwyn_Kopf) >= 1))
 	{
-		Info_AddChoice(DIA_Addon_10023_Wache_go, "(Bloodwyn's Kopf zeigen)", DIA_Addon_10023_Wache_go_Blood);
+		Info_AddChoice(DIA_Addon_10023_Wache_go, "(show Bloodwyn's head)", DIA_Addon_10023_Wache_go_Blood);
 	}
 	else
 	{
-		Info_AddChoice(DIA_Addon_10023_Wache_go, "Ich entscheide WER in die Mine kommt.", DIA_Addon_10023_Wache_go_WER);
+		Info_AddChoice(DIA_Addon_10023_Wache_go, "I decide WHO goes into the mine.", DIA_Addon_10023_Wache_go_WER);
 	};
 };
 
@@ -115,8 +115,8 @@ func void DIA_Addon_10023_Wache_go_BACK()
 
 func void DIA_Addon_10023_Wache_go_WER()
 {
-	AI_Output(other, self, "DIA_Addon_10023_Wache_go_WER_15_00"); //Ich entscheide, WER in die Mine kommt.
-	AI_Output(self, other, "DIA_Addon_10023_Wache_go_WER_11_01"); //Du machst Estebans alten Job? Dann hast du hier GAR NICHTS zu melden. Schwirr ab.
+	AI_Output(other, self, "DIA_Addon_10023_Wache_go_WER_15_00"); //I decide WHO goes into the mine.
+	AI_Output(self, other, "DIA_Addon_10023_Wache_go_WER_11_01"); //You're doing Esteban's old job. Then you have ABSOLUTELY NO say here. Buzz off.
 	Info_ClearChoices(DIA_Addon_10023_Wache_go);
 };
 
@@ -125,29 +125,29 @@ var int Wache_einmal;
 // ----------------------------------------
 func void DIA_Addon_10023_Wache_go_Blood()
 {
-	AI_Output(other, self, "DIA_Addon_10023_Wache_go_Blood_15_00"); //Hier reicht das?
-	AI_Output(self, other, "DIA_Addon_10023_Wache_go_Blood_11_01"); //(würgt) Steck das wieder weg. DAS will ich nicht sehen.
-	AI_Output(other, self, "DIA_Addon_10023_Wache_go_Blood_15_02"); //Es wäre besser für dich, wenn du die Sklaven JETZT freilässt.
-	AI_Output(self, other, "DIA_Addon_10023_Wache_go_Blood_11_03"); //Warte mal. Bloodwyn ist nicht der Einzige, der hier was zu sagen hat. Solange ich keinen Befehl von Thorus habe, wird hier niemand freigelassen.
+	AI_Output(other, self, "DIA_Addon_10023_Wache_go_Blood_15_00"); //Here, is that enough?
+	AI_Output(self, other, "DIA_Addon_10023_Wache_go_Blood_11_01"); //(gags) Put that away. I don't want to see THAT.
+	AI_Output(other, self, "DIA_Addon_10023_Wache_go_Blood_15_02"); //It would be better for you if you let the slaves go NOW.
+	AI_Output(self, other, "DIA_Addon_10023_Wache_go_Blood_11_03"); //Wait a minute. Bloodwyn isn't the only one who has a say here. So long as I don't have an order from Thorus, no one will be set free.
 
 	if (Npc_KnowsInfo(other, DIA_Addon_Thorus_Answer))
 	{
 		Info_ClearChoices(DIA_Addon_10023_Wache_go);
-		Info_AddChoice(DIA_Addon_10023_Wache_go, "Ich habe mit Thorus gesprochen.", DIA_Addon_10023_Wache_go_Thorus);
+		Info_AddChoice(DIA_Addon_10023_Wache_go, "I've had a talk with Thorus.", DIA_Addon_10023_Wache_go_Thorus);
 	}
 	else
 	{
 		if (Wache_einmal == FALSE)
 		{
-			AI_Output(other, self, "DIA_Addon_10023_Wache_go_Blood_15_04"); //Du hast doch gesagt, dass die Sklaven Bloodwyn gehören.
-			AI_Output(self, other, "DIA_Addon_10023_Wache_go_Blood_11_05"); //Ja. Ich habe aber auch gesagt, dass ich ohne Befehl von Thorus niemanden freilassen werde.
-			AI_Output(other, self, "DIA_Addon_10023_Wache_go_Blood_15_06"); //Du gehörst zu den Typen, die ohne Befehl nicht mal pinkeln gehen, was?
+			AI_Output(other, self, "DIA_Addon_10023_Wache_go_Blood_15_04"); //But you just said that the slaves belong to Bloodwyn.
+			AI_Output(self, other, "DIA_Addon_10023_Wache_go_Blood_11_05"); //Yes, but I also said that I won't set anyone free without an order from Thorus.
+			AI_Output(other, self, "DIA_Addon_10023_Wache_go_Blood_15_06"); //You're one of those guys who won't take a leak without orders, eh?
 			Wache_einmal = TRUE;
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Addon_10023_Wache_go_Blood_11_07"); //Ja, ich habe aber auch gesagt ...
-			AI_Output(other, self, "DIA_Addon_10023_Wache_go_Blood_15_08"); //... schon gut, erspar mir den Rest.
+			AI_Output(self, other, "DIA_Addon_10023_Wache_go_Blood_11_07"); //Yes, but I also said...
+			AI_Output(other, self, "DIA_Addon_10023_Wache_go_Blood_15_08"); //...all right, spare me the rest.
 		};
 
 		Info_ClearChoices(DIA_Addon_10023_Wache_go);
@@ -156,10 +156,10 @@ func void DIA_Addon_10023_Wache_go_Blood()
 
 func void DIA_Addon_10023_Wache_go_Thorus()
 {
-	AI_Output(other, self, "DIA_Addon_10023_Wache_go_Thorus_15_00"); //Ich habe mit Thorus gesprochen. Er befiehlt, die Sklaven freizulassen.
-	AI_Output(self, other, "DIA_Addon_10023_Wache_go_Thorus_11_01"); //Okay, wenn Thorus das befiehlt. Ich frage mich zwar, warum er so was entscheidet ...
-	AI_Output(other, self, "DIA_Addon_10023_Wache_go_Thorus_15_02"); //... aber für deine Fragen wirst du nicht bezahlt.
-	AI_Output(self, other, "DIA_Addon_10023_Wache_go_Thorus_11_03"); //Ist ja schon gut - ich werd hier also nicht mehr gebraucht, dann hole ich mir mal 'ne Suppe.
+	AI_Output(other, self, "DIA_Addon_10023_Wache_go_Thorus_15_00"); //I talked with Thorus. He ordered the slaves to be set free.
+	AI_Output(self, other, "DIA_Addon_10023_Wache_go_Thorus_11_01"); //Okay, if Thorus ordered it. But I have to ask myself why he decided on something like that...
+	AI_Output(other, self, "DIA_Addon_10023_Wache_go_Thorus_15_02"); //...but you aren't being paid to ask questions.
+	AI_Output(self, other, "DIA_Addon_10023_Wache_go_Thorus_11_03"); //All right, all right. I'm obviously not needed here any more, so I'll go get me some stew.
 
 	Ready_Togo = TRUE;
 	AI_StopProcessInfos(self);

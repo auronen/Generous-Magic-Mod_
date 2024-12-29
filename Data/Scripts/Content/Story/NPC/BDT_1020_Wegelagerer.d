@@ -1,7 +1,7 @@
 instance BDT_1020_Bandit_L(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Wegelagerer";
+	name							= "Highwayman";
 	npctype							= NpcType_Main;
 	guild							= GIL_BDT;
 	flags							= 0; // NPC_FLAG_IMMORTAL oder 0
@@ -28,7 +28,7 @@ instance BDT_1020_Bandit_L(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 30); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 30); // Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

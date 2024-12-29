@@ -5,7 +5,7 @@
 prototype Mst_Default_Bloodfly(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Blutfliege";
+	name							= "Bloodfly";
 	guild							= GIL_BLOODFLY;
 	level							= 4;
 
@@ -101,7 +101,7 @@ instance Bloodfly(Mst_Default_Bloodfly)
 instance YBloodfly(Mst_Default_Bloodfly)
 {
 	// -------- NPC --------
-	name							= "Kleine Blutfliege";
+	name							= "Small Bloodfly";
 	level							= 3;
 
 	// -------- attributes --------

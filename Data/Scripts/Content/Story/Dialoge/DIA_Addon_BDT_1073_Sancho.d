@@ -76,11 +76,11 @@ func int DIA_Addon_Sancho_HI_Condition()
 
 func void DIA_Addon_Sancho_HI_Info()
 {
-	AI_Output(self, other, "DIA_Addon_Sancho_HI_06_00"); //Scheiße, noch ein Neuer. (lacht) Auch wegen des Goldes hier, was?
+	AI_Output(self, other, "DIA_Addon_Sancho_HI_06_00"); //Shit, another new boy. (laughs) Here for the gold, too, aren't you?
 	AI_Output(other, self, "DIA_Addon_Sancho_HI_15_01"); //Gold?
-	AI_Output(self, other, "DIA_Addon_Sancho_HI_06_02"); //(lachend) Jetzt hör auf mich zu verarschen!
-	AI_Output(self, other, "DIA_Addon_Sancho_HI_06_03"); //Alle Neuen, die herkommen, wollen in die Mine.
-	AI_Output(self, other, "DIA_Addon_Sancho_HI_06_04"); //Aber stell dir das bloß nicht so einfach vor!
+	AI_Output(self, other, "DIA_Addon_Sancho_HI_06_02"); //(laughing) Quit trying to kid me!
+	AI_Output(self, other, "DIA_Addon_Sancho_HI_06_03"); //All the new boys who come here want into the mine.
+	AI_Output(self, other, "DIA_Addon_Sancho_HI_06_04"); //But don't think it's that easy!
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -101,7 +101,7 @@ instance DIA_Addon_Sancho_Lager(C_INFO)
 	nr				= 2;
 	condition		= DIA_Addon_Sancho_Lager_Condition;
 	information		= DIA_Addon_Sancho_Lager_Info;
-	description		= "Wie komme ich zum Lager?";
+	description		= "How do I get to the camp?";
 };
 
 func int DIA_Addon_Sancho_Lager_Condition()
@@ -111,12 +111,12 @@ func int DIA_Addon_Sancho_Lager_Condition()
 
 func void DIA_Addon_Sancho_Lager_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Sancho_Lager_15_00"); //Wie komme ich zum Lager?
-	AI_Output(self, other, "DIA_Addon_Sancho_Lager_06_01"); //Folge einfach dem Steg!
+	AI_Output(other, self, "DIA_Addon_Sancho_Lager_15_00"); //How do I get to the camp?
+	AI_Output(self, other, "DIA_Addon_Sancho_Lager_06_01"); //Just follow the boardwalk!
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output(self, other, "DIA_Addon_Sancho_Lager_06_02"); //Aber wenn du in die Mine willst, musst du an Franco vorbei.
-		AI_Output(self, other, "DIA_Addon_Sancho_Lager_06_03"); //Er erwartet von allen Neuen, dass sie sich erstmal 'ne Weile hier draußen abrackern!
+		AI_Output(self, other, "DIA_Addon_Sancho_Lager_06_02"); //But if you want to get into the mine, you'll have to get past Franco.
+		AI_Output(self, other, "DIA_Addon_Sancho_Lager_06_03"); //He expects all the new boys to slave away out here for a while first!
 	};
 
 	Log_CreateTopic(Topic_Addon_Franco, LOG_MISSION);
@@ -133,7 +133,7 @@ instance DIA_Addon_Sancho_Mine(C_INFO)
 	nr				= 3;
 	condition		= DIA_Addon_Sancho_Mine_Condition;
 	information		= DIA_Addon_Sancho_Mine_Info;
-	description		= "Erzähl mir mehr über die Mine...";
+	description		= "Tell me more about the mine...";
 };
 
 func int DIA_Addon_Sancho_Mine_Condition()
@@ -146,11 +146,11 @@ func int DIA_Addon_Sancho_Mine_Condition()
 
 func void DIA_Addon_Sancho_Mine_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Sancho_Mine_15_00"); //Erzähl mir mehr über die Mine ...
-	AI_Output(self, other, "DIA_Addon_Sancho_Mine_06_01"); //Ich geb dir 'nen guten Rat: Wenn du rein willst, stell dich gut mit Franco. Er ist hier draußen der Boss.
-	AI_Output(self, other, "DIA_Addon_Sancho_Mine_06_02"); //Er entscheidet, wer als Nächster rein darf.
-	AI_Output(self, other, "DIA_Addon_Sancho_Mine_06_03"); //Aber er wird dich nur reinlassen, wenn du hier draußen nicht die Eier schaukelst.
-	AI_Output(self, other, "DIA_Addon_Sancho_Mine_06_04"); //Also geh zu ihm, und lass dir 'ne Aufgabe geben!
+	AI_Output(other, self, "DIA_Addon_Sancho_Mine_15_00"); //Tell me more about the mine...
+	AI_Output(self, other, "DIA_Addon_Sancho_Mine_06_01"); //I'll give you some good advice: if you want to get in there, get in good with Franco. He's the boss out here.
+	AI_Output(self, other, "DIA_Addon_Sancho_Mine_06_02"); //He decides who's the next to go in.
+	AI_Output(self, other, "DIA_Addon_Sancho_Mine_06_03"); //But he'll only let you in if you don't goldbrick out here.
+	AI_Output(self, other, "DIA_Addon_Sancho_Mine_06_04"); //So go to him and let him give you a job!
 
 	B_LogEntry(Topic_Addon_Franco, Topic_Addon_Franco_2);
 };
@@ -164,7 +164,7 @@ instance DIA_Addon_Sancho_Franco(C_INFO)
 	nr				= 4;
 	condition		= DIA_Addon_Sancho_Franco_Condition;
 	information		= DIA_Addon_Sancho_Franco_Info;
-	description		= "Wo finde ich diesen Franco?";
+	description		= "Where do I find this Franco?";
 };
 
 func int DIA_Addon_Sancho_Franco_Condition()
@@ -178,9 +178,9 @@ func int DIA_Addon_Sancho_Franco_Condition()
 
 func void DIA_Addon_Sancho_Franco_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Sancho_Franco_15_00"); //Wo finde ich diesen Franco?
-	AI_Output(self, other, "DIA_Addon_Sancho_Franco_06_01"); //Er hängt meistens auf dem Vorplatz zum Lager rum.
-	AI_Output(self, other, "DIA_Addon_Sancho_Franco_06_02"); //Stell dich bloß gut mit ihm, sonst bekommst du am Ende noch so'n Scheißjob wie ich!
+	AI_Output(other, self, "DIA_Addon_Sancho_Franco_15_00"); //Where do I find this Franco?
+	AI_Output(self, other, "DIA_Addon_Sancho_Franco_06_01"); //He mostly hangs out in the court in front of the camp.
+	AI_Output(self, other, "DIA_Addon_Sancho_Franco_06_02"); //Get in good with him or you'll wind up with a crappy job like me!
 
 	B_LogEntry(Topic_Addon_Franco, Topic_Addon_Franco_3);
 };
@@ -194,7 +194,7 @@ instance DIA_Addon_Sancho_Spitzel(C_INFO)
 	nr				= 5;
 	condition		= DIA_Addon_Sancho_Spitzel_Condition;
 	information		= DIA_Addon_Sancho_Spitzel_Info;
-	description		= "Mußt du hier die ganze Zeit rumhängen?";
+	description		= "Do you have to hang around here all the time?";
 };
 
 func int DIA_Addon_Sancho_Spitzel_Condition()
@@ -208,10 +208,10 @@ func int DIA_Addon_Sancho_Spitzel_Condition()
 
 func void DIA_Addon_Sancho_Spitzel_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Sancho_Spitzel_15_00"); //Musst du hier die ganze Zeit rumhängen?
-	AI_Output(self, other, "DIA_Addon_Sancho_Spitzel_06_01"); //Ich soll alle Neuen untersuchen, damit sich bei uns kein Spitzel einschleicht.
-	AI_Output(self, other, "DIA_Addon_Sancho_Spitzel_06_02"); //Aber das kannst du vergessen. Ich meine, wir sind hier am Ende der Welt - mitten im Sumpf.
-	AI_Output(self, other, "DIA_Addon_Sancho_Spitzel_06_03"); //Niemand kann uns finden, niemand wird uns finden - und warum sollte sich jemand die Mühe machen, einen Spitzel zu uns schicken.
+	AI_Output(other, self, "DIA_Addon_Sancho_Spitzel_15_00"); //Do you have to hang around here all the time?
+	AI_Output(self, other, "DIA_Addon_Sancho_Spitzel_06_01"); //I'm supposed to check out all the new boys, to make sure that none of them are spies.
+	AI_Output(self, other, "DIA_Addon_Sancho_Spitzel_06_02"); //But you can forget it. I mean, we're at the end of the world here - in the middle of a swamp.
+	AI_Output(self, other, "DIA_Addon_Sancho_Spitzel_06_03"); //No one can find us, no one will find us - and why should someone go to the trouble of sending us a spy?
 };
 
 // ---------------------------------------------------------------------
@@ -224,7 +224,7 @@ instance DIA_Addon_Sancho_Perm(C_INFO)
 	condition		= DIA_Addon_Sancho_Perm_Condition;
 	information		= DIA_Addon_Sancho_Perm_Info;
 	permanent		= TRUE;
-	description		= "Was gibt's neues?";
+	description		= "What's new?";
 };
 
 func int DIA_Addon_Sancho_Perm_Condition()
@@ -239,20 +239,20 @@ var int Comment_Franco;
 var int Comment_Esteban;
 func void DIA_Addon_Sancho_Perm_Info()
 {
-	AI_Output(other, self, "DIA_Addon_Sancho_Perm_15_00"); //Was gibt's neues?
+	AI_Output(other, self, "DIA_Addon_Sancho_Perm_15_00"); //What's new?
 
 	if (Npc_IsDead(Franco)
 	&& (Comment_Franco == FALSE))
 	{
-		AI_Output(self, other, "DIA_Addon_Sancho_Perm_06_01"); //Ich hab gehört, du hast Franco umgelegt. Saubere Arbeit ...
+		AI_Output(self, other, "DIA_Addon_Sancho_Perm_06_01"); //I heard you killed Franco. Nice work...
 
 		if (!Npc_IsDead(Carlos))
 		{
-			AI_Output(self, other, "DIA_Addon_Sancho_Perm_06_02"); //... aber jetzt haben wir diesen Carlos am Hals. Mit dem ist auch nicht zu spaßen ...
+			AI_Output(self, other, "DIA_Addon_Sancho_Perm_06_02"); //... but now we've got that Carlos on our backs. He doesn't take any nonsense...
 		}
 		else
 		{
-			AI_Output(self, other, "DIA_Addon_Sancho_Perm_06_03"); //Und Carlos hast du auch umgebracht? Alter, du bist ein ganz übler Mörder, was? Lass mich bloß in Ruhe.
+			AI_Output(self, other, "DIA_Addon_Sancho_Perm_06_03"); //And you did in Carlos, too? Pal, you're a real nasty killer, aren't you? Just leave me alone.
 		};
 
 		Comment_Franco = TRUE;
@@ -260,12 +260,12 @@ func void DIA_Addon_Sancho_Perm_Info()
 	else if (Npc_IsDead(Esteban)
 	&& (Comment_Esteban == FALSE))
 	{
-		AI_Output(self, other, "DIA_Addon_Sancho_Perm_06_04"); //Ich hab gehört, du hast Esteban umgelegt. Hey Mann, du hast es vor, was?
+		AI_Output(self, other, "DIA_Addon_Sancho_Perm_06_04"); //I heard you killed Esteban. Hey, man, you're planning something, aren't you?
 
 		Comment_Esteban = TRUE;
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Addon_Sancho_Perm_06_05"); //Nee, im Moment gibt's nichts Neues.
+		AI_Output(self, other, "DIA_Addon_Sancho_Perm_06_05"); //Nah, there's nothing new right now.
 	};
 };

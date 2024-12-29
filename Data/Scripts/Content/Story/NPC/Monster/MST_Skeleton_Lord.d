@@ -1,7 +1,7 @@
 prototype Mst_Skeleton_Lord(C_NPC)
 {
 	// -------- NPC --------
-	name							= "Schattenkrieger";
+	name							= "Shadow Warrior";
 	guild							= GIL_SKELETON;
 	level							= 40;
 
@@ -101,7 +101,7 @@ instance Skeleton_Lord(Mst_Skeleton_Lord)
 instance Crypt_Skeleton_Lord(Mst_Skeleton_Lord)
 {
 	// -------- NPC --------
-	name							= "Schattenlord Inubis";
+	name							= "Shadow Lord Inubis";
 
 	// -------- attributes --------
 
@@ -127,7 +127,7 @@ instance Crypt_Skeleton_Lord(Mst_Skeleton_Lord)
 instance Skeleton_Lord_Archol(Mst_Skeleton_Lord)
 {
 	// -------- NPC --------
-	name							= "Schattenlord Archol";
+	name							= "Shadow Lord Archol";
 	level							= 60;
 
 	// -------- attributes --------

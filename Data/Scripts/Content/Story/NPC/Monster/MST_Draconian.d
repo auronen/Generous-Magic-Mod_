@@ -5,7 +5,7 @@
 prototype Mst_Default_Draconian(C_Npc)
 {
 	// -------- NPC --------
-	name							= "Echsenmensch";
+	name							= "Lizard Man";
 	guild							= GIL_DRACONIAN;
 	level							= 35;
 

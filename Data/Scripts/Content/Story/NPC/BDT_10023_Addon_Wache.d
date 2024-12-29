@@ -1,7 +1,7 @@
 instance BDT_10023_Addon_Wache(Npc_Default)
 {
 	// -------- NPC --------
-	name							= "Sklavenwache";
+	name							= "Slave guard";
 	npctype							= NpcType_Main;
 	guild							= GIL_BDT;
 	flags							= 0;
