@@ -6,7 +6,7 @@
 "Data/Scripts/Content/Story/Text.d:768","Steals life energy from human targets.","Steals life energy from human targets.","","","GMM_SuckEnergy_Description","",""
 "Data/Scripts/Content/Story/Text.d:769","Temporarily incapacitates target.","Temporarily incapacitates target.","","","GMM_GreenTentacle_Description","",""
 "Data/Scripts/Content/Story/Text.d:771","Temporarily incapacitates human target.","Temporarily incapacitates human target.","","","GMM_Swarm_Description","",""
-"Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:416","Mana extract (2 Fireweeds, 1 Blue Elder) ","Mana extract (2 Fireweeds, 1 Blue Elder) ","","","PC_ItPo_Mana_02.description","",""
+"Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:416","Mana extract (2 Fireweeds, 1 Blue Elder) ","Mana extract (2 Fireweeds, 1 Blue Elder)","","False","PC_ItPo_Mana_02.description","",""
 "Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:459","Mana elixir (2 Fire Roots, 1 Meadow Knotweed)","Mana elixir (2 Fire Roots, 1 Meadow Knotweed)","","","PC_ItPo_Mana_03.description","",""
 "Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:500","Mana potion (3 Mana Essences, 1 Meadow Knotweed)","Mana potion (3 Mana Essences, 1 Meadow Knotweed)","","","PC_ItPo_Mana_04.description","",""
 "Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:599","Essence of healing (2 Healing Plants, 1 Woodland Berry)","Essence of healing (2 Healing Plants, 1 Woodland Berry)","","","PC_ItPo_Health_01.description","",""
