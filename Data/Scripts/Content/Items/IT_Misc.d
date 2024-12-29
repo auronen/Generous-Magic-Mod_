@@ -2,8 +2,8 @@
 // Wert von Kram
 // ************************************************************************************************
 
-// Items für Objektbenutzung und Item-Interaktion...
-// z.B. Krautstampfer, Hammer, Kochlöffel, Laborflasche, Roheisen (Schmiede)
+// Items fÃƒÂ¼r Objektbenutzung und Item-Interaktion...
+// z.B. Krautstampfer, Hammer, KochlÃƒÂ¶ffel, Laborflasche, Roheisen (Schmiede)
 
 const int Value_SwordBlade = 10;
 const int Value_SwordBladeHot = 10;
@@ -65,7 +65,7 @@ const int Value_JeweleryChest = 1000;
 const int Value_InnosStatue = 100;
 const int Value_Sextant = 1500;
 
-/*ursprüngliche Werte:
+/*ursprÃƒÂ¼ngliche Werte:
 const int Value_SilverRing = 200;
 const int Value_SilverNecklace = 100;
 const int Value_SilverCandleHolder = 30;
@@ -86,7 +86,7 @@ const int Value_Sextant = 30;
 */
 
 /*******************************************************************************************
-** Items für Mobsi - Benutzung **
+** Items fÃƒÂ¼r Mobsi - Benutzung **
 *******************************************************************************************/
 // Krautstampfen
 
@@ -202,7 +202,7 @@ instance ItMi_Hammer(C_Item)
 };
 
 /******************************************************************************************/
-// im Topf rühren
+// im Topf rÃƒÂ¼hren
 instance ItMi_Scoop(C_Item)
 {
 	name						= "Spoon";
@@ -225,7 +225,7 @@ instance ItMi_Scoop(C_Item)
 };
 
 /******************************************************************************************/
-//	Pfanne zum Braten (für Lagerfeuer)
+//	Pfanne zum Braten (fÃƒÂ¼r Lagerfeuer)
 
 instance ItMi_Pan(C_Item)
 {
@@ -248,7 +248,7 @@ instance ItMi_Pan(C_Item)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-// Pfann für Herd
+// Pfann fÃƒÂ¼r Herd
 
 instance ItMi_PanFull(C_Item)
 {
@@ -272,7 +272,7 @@ instance ItMi_PanFull(C_Item)
 };
 
 /******************************************************************************************/
-//	Säge für Baumstamm
+//	SÃƒÂ¤ge fÃƒÂ¼r Baumstamm
 
 instance ItMi_Saw(C_Item)
 {
@@ -296,7 +296,7 @@ instance ItMi_Saw(C_Item)
 };
 
 /******************************************************************************************/
-//	Items für Schmiede **
+//	Items fÃƒÂ¼r Schmiede **
 
 instance ItMiSwordraw(C_Item)
 {
@@ -388,7 +388,7 @@ instance ItMiSwordblade(C_Item)
 /******************************************************************************************/
 
 /*******************************************************************************************
-** Items für Item - Interaktionen(ohne Mobsi benutzbar) **
+** Items fÃƒÂ¼r Item - Interaktionen(ohne Mobsi benutzbar) **
 *******************************************************************************************/
 
 /******************************************************************************************/
@@ -459,7 +459,7 @@ func void Use_Lute()
 };
 
 /******************************************************************************************/
-// Für Babe-Putzen
+// FÃƒÂ¼r Babe-Putzen
 instance ItMi_Brush(C_Item)
 {
 	name						= "Brush";
@@ -554,7 +554,7 @@ func void Use_Alarmhorn()
 
 */
 //*******************************
-// Päckchen
+// PÃƒÂ¤ckchen
 //*******************************
 instance ItMi_Packet(C_Item)
 {
@@ -618,7 +618,7 @@ func void UsePocket()
 };
 
 //******************************************************************************************
-//	Wertvolle Gegenstände
+//	Wertvolle GegenstÃƒÂ¤nde
 //******************************************************************************************
 instance ItMi_Nugget(C_Item)
 {
@@ -1251,7 +1251,7 @@ instance ItMi_DarkPearl(C_Item)
 
 // -------------------------------------------------------------
 //					Tabak Sorten
-//		 Apfeltabak (Basis für alle anderen)
+//		 Apfeltabak (Basis fÃƒÂ¼r alle anderen)
 // -------------------------------------------------------------
 instance ItMi_ApfelTabak(C_Item)
 {

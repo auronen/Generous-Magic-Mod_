@@ -157,7 +157,7 @@ instance Summoned_Skeleton(Mst_Default_Skeleton)
 
 	// -------- equipped weapons --------
 	EquipItem(self, ItMw_2H_Sword_M_01);
-	// EquipItem(self, ItRw_Sld_Bow); // FIXME Carsten: Bogen schießt beim Skelett in Zeitlupe...
+	// EquipItem(self, ItRw_Sld_Bow); // FIXME Carsten: Bogen schieÃƒÅ¸t beim Skelett in Zeitlupe...
 
 	// -------- daily routine --------
 	start_aistate = ZS_MM_Rtn_Summoned;

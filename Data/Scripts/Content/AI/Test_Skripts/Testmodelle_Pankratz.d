@@ -1,6 +1,6 @@
 instance J1(C_Item)
 {
-	name						= "Monster auff�llen Addon world";
+	name						= "Monster auffüllen Addon world";
 
 	mainflag					= ITEM_KAT_DOCS;
 	flags						= ITEM_MISSION;
@@ -729,7 +729,7 @@ instance DJG_inserten(C_Item)
 func void UseDJG_inserten()
 {
 //************************************************************
-//			Befehle fürs JOLY_Storyhelpletter
+//			Befehle fÃƒÂ¼rs JOLY_Storyhelpletter
 //************************************************************
 // B_Kapitelwechsel(1, NewWorld_Zen );
 // B_GiveTradeInv (1);
@@ -882,7 +882,7 @@ func void DIA_Namefehlt_KAP6_EXIT_Info()
 	*/
 
 //**************************************
-// Storyhelper light für die Oldworld // Joly: steht wegen verwechslungsgefahr!
+// Storyhelper light fÃƒÂ¼r die Oldworld // Joly: steht wegen verwechslungsgefahr!
 //**************************************
 instance SH_Oldworld(NPC_DEFAULT)
 {
@@ -993,7 +993,7 @@ func void SH_Oldworld_KAPITEL1ANFANG()
 
 	B_Kapitelwechsel(1, OLDWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	// Info_ClearChoices( SH_Oldworld_INFO1 );
 	AI_StopProcessInfos(self);
 };
@@ -1043,7 +1043,7 @@ func void SH_Oldworld_KAPITEL2ANFANG()
 	MIS_OLDWORLD = LOG_RUNNING;
 	B_Kapitelwechsel(2, OLDWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	// Info_ClearChoices( SH_Oldworld_INFO2 );
 	AI_StopProcessInfos(self);
 };
@@ -1097,7 +1097,7 @@ func void SH_Oldworld_KAPITEL3ANFANG()
 	B_NPC_IsAliveCheck(OldWorld_Zen);
 	B_Kapitelwechsel(3, OLDWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	Info_ClearChoices(SH_Oldworld_INFO3);
 	AI_StopProcessInfos(self);
 };
@@ -1162,7 +1162,7 @@ func void SH_Oldworld_KAPITEL4ANFANG()
 	B_NPC_IsAliveCheck(OLDWORLD_ZEN);
 	B_Kapitelwechsel(4, OLDWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	Info_ClearChoices(SH_Oldworld_INFO4);
 	AI_StopProcessInfos(self);
 };
@@ -1226,12 +1226,12 @@ func void SH_Oldworld_KAPITEL5ANFANG()
 	B_NPC_IsAliveCheck(OLDWORLD_ZEN);
 	B_Kapitelwechsel(4, OLDWORLD_ZEN);
 	// -------- was neu geschieht --------
-	CreateInvItems(hero, ItAt_IcedragonHeart, 1); // damit man eins für die DI hat!!
+	CreateInvItems(hero, ItAt_IcedragonHeart, 1); // damit man eins fÃƒÂ¼r die DI hat!!
 	MIS_AllDragonsDead = TRUE;
 	EnterNW_Kapitel5 = TRUE;
 	B_Kapitelwechsel(5, OLDWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	Info_ClearChoices(SH_Oldworld_INFO5);
 	AI_StopProcessInfos(self);
 };
@@ -1280,7 +1280,7 @@ func void SH_Oldworld_KAPITEL6ANFANG()
 	// -------- was neu geschieht --------
 	B_Kapitelwechsel(6, OLDWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	Info_ClearChoices(SH_Oldworld_INFO6);
 	AI_StopProcessInfos(self);
 };
@@ -1289,7 +1289,7 @@ func void SH_Oldworld_KAPITEL6ANFANG()
 instance PC_Hero(NPC_DEFAULT)
 {
 	// -------- NPC --------
-	name							= "Ich der Drachenjäger";
+	name							= "Ich der DrachenjÃƒÂ¤ger";
 	npctype							= NpcType_Main;
 	guild							= GIL_DJG;
 	level							= 30;
@@ -1432,7 +1432,7 @@ instance PC_Hero(NPC_DEFAULT)
 //	Firedragon Testmodell
 //*************************
 
-instance Dragon_Testmodell(Mst_Default_Dragon_Fire) // Joly: Testdrachen für den Talk!
+instance Dragon_Testmodell(Mst_Default_Dragon_Fire) // Joly: Testdrachen fÃƒÂ¼r den Talk!
 {
 	B_SetVisuals_Dragon_Fire();
 	Npc_SetToFistMode(self);

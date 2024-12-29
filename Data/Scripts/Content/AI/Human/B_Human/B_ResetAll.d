@@ -4,7 +4,7 @@
 
 func void B_ResetAll(var C_Npc slf)
 {
-	// ------ NSC hört ggf. auf zu glotzen ------
+	// ------ NSC hÃƒÂ¶rt ggf. auf zu glotzen ------
 	B_StopLookAt(slf);
 
 	// ------ NSC steckt ggf. Waffe weg ------

@@ -5,7 +5,7 @@
 	const string MOBNAME_CRATE							= "Crate";								// Kisten
 	const string MOBNAME_CHEST							= "Chest";								// Truhen
 	const string MOBNAME_BED							= "Bed";								// Betten
-	const string MOBNAME_DOOR							= "Door";								// Türen
+	const string MOBNAME_DOOR							= "Door";								// TÃƒÂ¼ren
 	const string MOBNAME_CAMPFIRE						= "";									// Lagerfeuer
 	const string MOBNAME_TORCH							= "";									// Fackel
 	const string MOBNAME_TORCHHOLDER					= "";									// Fackelhalter
@@ -18,9 +18,9 @@
 	const string MOBNAME_GRINDSTONE						= "Whetstone";						// Schleifstein
 	const string MOBNAME_WHEEL							= "Winch";								// Winde
 	const string MOBNAME_LAB							= "Alchemist's Bench";						// Alchemietisch
-	const string MOBNAME_BOOKSTAND						= "Bookstand";						// Buchständer
+	const string MOBNAME_BOOKSTAND						= "Bookstand";						// BuchstÃƒÂ¤nder
 	const string MOBNAME_BOOKSBOARD						= "Bookstand";						// Kommode mit Buch
-	const string MOBNAME_CHAIR							= "";									// Stühle
+	const string MOBNAME_CHAIR							= "";									// StÃƒÂ¼hle
 	const string MOBNAME_CAULDRON						= "Cauldron";								// Kochkessel
 	const string MOBNAME_SEAT							= "";									// Sessel
 	const string MOBNAME_THRONE							= "";									// Thron
@@ -34,7 +34,7 @@
 	const string MOBNAME_STOVE							= "Stove";								// HerdMobsi
 	const string MOBNAME_INNOS							= "Statue of Innos";						// Innos Staue
 	const string MOBNAME_RUNEMAKER						= "Rune Table";							// Runentisch
-	const string MOBNAME_SAW							= "Tree Saw";							// Sägemobsi
+	const string MOBNAME_SAW							= "Tree Saw";							// SÃƒÂ¤gemobsi
 	const string MOBNAME_ARMCHAIR						= "Armchair";
 	const string MOBNAME_LIBRARYLEVER					= "Lamp";
 	const string MOBNAME_SECRETSWITCH					= "";
@@ -78,7 +78,7 @@
 	const string MOBNAME_GRAVETEAM_03					= "Hodges - 'Everything will be fine'";
 	const string MOBNAME_GRAVETEAM_04					= "Hosh - 'What a shit'";
 	const string MOBNAME_GRAVETEAM_05					= "Chase - 'Whaddaya make of that?'";
-	const string MOBNAME_GRAVETEAM_06					= "Bj�rn - 'We're going for it!'";
+	const string MOBNAME_GRAVETEAM_06					= "Björn - 'We're going for it!'";
 	const string MOBNAME_GRAVETEAM_07					= "Michael - 'Just resting my eyes...'";
 	const string MOBNAME_GRAVETEAM_08					= "Kairo - 'Just a sec!'";
 	const string MOBNAME_GRAVETEAM_09					= "Uncle Cruncle - 'Finally he found the scorpion man'";
@@ -152,69 +152,69 @@ const string TXT_GUILDS [GIL_MAX] = {
 // - Charakterblatt (Text der Spielergilde)
 // - Debuganzeige (Taste "G")
 
-	"Gildenlos",
+	"Guildless",
 	"Paladin",
-	"Miliz",
-	"Bürger",
-	"Magier",
-	"Novize",
-	"Drachenjäger",
-	"Söldner",
-	"Bauer",
+	"Militia",
+	"Citizen",
+	"Magician",
+	"Novice",
+	"Dragon Hunter",
+	"Mercenary",
+	"Farmer",
 	"Bandit",
-	"Sträfling",
-	"Suchender",
-	"Landbewohner",
-	"Pirat",																					// Addon
-	"Wassermagier",																				// Addon
+	"Convict",
+	"Seeker",
+	"Land Dweller",
+	"Pirate",																					// Addon
+	"Water Mage",																				// Addon
 	"D",
 	"",																							// 16 - Gil_Seperator_Hum
-	"Fleischwanze",
-	"Schaf",
+	"Meatbug",
+	"Sheep",
 	"Goblin",
-	"Goblin Skelett",
-	"B. Goblin Skelett",
+	"Goblin Skeleton",
+	"S. Goblin Skeleton",
 	"Scavenger",
-	"Riesenratte",
-	"Feldräuber",
-	"Blutfliege",
-	"Waran",
+	"Giant Rat",
+	"Field Raider",
+	"Bloodfly",
+	"Lizard",
 	"Wolf",
-	"B. Wolf",
+	"S. Wolf",
 	"Minecrawler",
 	"Lurker",
-	"Skelett",
-	"B. Skelett",
-	"Skelett-Magier",
+	"Skeleton",
+	"S. Skeleton",
+	"Skeleton Mage",
 	"Zombie",
 	"Snapper",
-	"Schattenläufer",
-	"Skelettmonster",
-	"Harpie",
-	"Steingolem",
-	"Feuergolem",
-	"Eisgolem",
-	"B. Golem",																					// beschworener Golem
-	"Dämon",
-	"B. Dämon",
+	"Shadowbeast",
+	"Skeleton Monster",
+	"Harpy",
+	"Stone Golem",
+	"Fire Golem",
+	"Ice Golem",
+	"S. Golem",																					// beschworener Golem
+	"Demon",
+	"S. Demon",
 	"Troll",
-	"Sumpfhai",
-	"Drache",
+	"Swampshark",
+	"Dragon",
 	"Molerat",
 	"Alligator",																				// Addon
-	"Sumpfgolem",																				// Addon
-	"Wächter",																					// Addon
-	"Steinpuma",																				// Addon
+	"Swamp Golem",																				// Addon
+	"Guard",																					// Addon
+	"Stone Puma",																				// Addon
 	"A",																						// Addon
-	"Wächter",																					// Addon
+	"Guard",																					// Addon
 	"Zombie",																					// Addon
 	"",
 	"",
 	"",																							// 58 - Gil_Seperator_Orc
-	"Ork",
-	"Ork",
-	"Untoter Ork",
-	"Drakonier",
+	"Orc",
+	"Orc",
+	"Undead Orc",
+	"Draconian",
 	"X",
 	"Y",
 	"Z"
@@ -230,98 +230,98 @@ const string TXT_GUILDS [GIL_MAX] = {
 const string TXT_SPELLS[MAX_SPELL] =
 {
 	// Paladin-Runen
-	"Heiliges Licht",																			// 0 SPL_PalLight
-	"Kleine Wundheilung",																		// 1 SPL_PalLightHeal
-	"Heiliger Pfeil",																			// 2 SPL_PalHolyBolt
-	"Mittlere Wundheilung",																		// 3 SPL_PalMediumHeal
-	"Böses Vertreiben",																			// 4 SPL_PalRepelEvil
-	"Grosse Wundheilung",																		// 5 SPL_PalFullHeal
-	"Böses Vernichten",																			// 6 SPL_PalDestroyEvil
+	"Holy Light",																			// 0 SPL_PalLight
+	"Lesser Healing",																		// 1 SPL_PalLightHeal
+	"Holy Arrow",																			// 2 SPL_PalHolyBolt
+	"Medium Healing",																		// 3 SPL_PalMediumHeal
+	"Harm Evil",																			// 4 SPL_PalRepelEvil
+	"Greater Healing",																		// 5 SPL_PalFullHeal
+	"Destroy Evil",																			// 6 SPL_PalDestroyEvil
 
 	// Teleport-Runen
 	"Teleport",																					// 7 SPL_PalTeleportSecret
-	"Zur Hafenstadt",																			// 8 SPL_TeleportSeaport
-	"Zum Kloster",																				// 9 SPL_TeleportMonastery
-	"Zum Grossbauern",																			// 10 SPL_TeleportFarm
-	"Zu Xardas",																				// 11 SPL_TeleportXardas
-	"Zum Pass in Khorinis",																		// 12 SPL_TeleportPassNW
-	"Zum Pass im Minental",																		// 13 SPL_TeleportPassOW
-	"Zur Burg",																					// 14 SPL_TeleportOC
-	"Zum alten Dämonenturm",																	// 15 SPL_TeleportOWDemonTower
-	"Zur Taverne",																				// 16 SPL_TeleportTaverne
+	"To Harbor City",																			// 8 SPL_TeleportSeaport
+	"To Monastery",																				// 9 SPL_TeleportMonastery
+	"To Landowner",																			// 10 SPL_TeleportFarm
+	"To Xardas",																				// 11 SPL_TeleportXardas
+	"To Pass of Khorinis",																		// 12 SPL_TeleportPassNW
+	"To Valley of Mines Pass",																		// 13 SPL_TeleportPassOW
+	"To Castle",																					// 14 SPL_TeleportOC
+	"To Old Demon Tower",																	// 15 SPL_TeleportOWDemonTower
+	"To Tavern",																				// 16 SPL_TeleportTaverne
 	"TXT_SPL_TELEPORT_3",																		// 17 SPL_Teleport_3
 
 	// Kreis 1
-	"Licht",																					// 18 SPL_Light
-	"Feuerpfeil",																				// 19 SPL_Firebolt
+	"Light",																					// 18 SPL_Light
+	"Fire Arrow",																				// 19 SPL_Firebolt
 
 	// Kreis 2
-	"Eispfeil",																					// 20 SPL_Icebolt
+	"Ice Arrow",																					// 20 SPL_Icebolt
 
 	// Kreis 1
-	"leichte Wunden heilen",																	// 21 SPL_LightHeal
-	"Goblin Skelett",																			// 22 SPL_SummonGoblinSkeleton
+	"Heal Light Wounds",																	// 21 SPL_LightHeal
+	"Goblin Skeleton",																			// 22 SPL_SummonGoblinSkeleton
 
 	// Kreis 2
-	"Feuerball",																				// 23 SPL_InstantFireball
+	"Fireball",																				// 23 SPL_InstantFireball
 
 	// Kreis 1
-	"Blitz",																					// 24 SPL_Zap
+	"Small Lightning",																					// 24 SPL_Zap
 
 	// Kreis 2
-	"Wolf rufen",																				// 25 SPL_SummonWolf
-	"Windfaust",																				// 26 SPL_WindFist
-	"Schlaf",																					// 27 SPL_Sleep
+	"Summon Wolf",																				// 25 SPL_SummonWolf
+	"Wind Fist",																				// 26 SPL_WindFist
+	"Sleep",																					// 27 SPL_Sleep
 
 	// Kreis 3
-	"mittlere Wunden heilen",																	// 28 SPL_MediumHeal
-	"Blitzschlag",																				// 29 SPL_LightningFlash
-	"Grosser Feuerball",																		// 30 SPL_ChargeFireball
-	"Skelett",																					// 31 SPL_SummonSkeleton
-	"Angst",																					// 32 SPL_Fear
-	"Eisblock",																					// 33 SPL_IceCube
-	"Kugelblitz",																				// 34 SPL_ChargeZap
+	"Heal Medium Wounds",																	// 28 SPL_MediumHeal
+	"Lightning",																				// 29 SPL_LightningFlash
+	"Large Fireball",																		// 30 SPL_ChargeFireball
+	"Skeleton",																					// 31 SPL_SummonSkeleton
+	"Fear",																					// 32 SPL_Fear
+	"Ice Block",																					// 33 SPL_IceCube
+	"Ball Lightning",																				// 34 SPL_ChargeZap
 
 	// Kreis 4
-	"Golem erschaffen",																			// 35 SPL_SummonGolem
-	"Untote vernichten",																		// 36 SPL_DestroyUndead
-	"Grosser Feuersturm",																		// 37 SPL_Pyrokinesis
+	"Create Golem",																			// 35 SPL_SummonGolem
+	"Destroy Undead",																		// 36 SPL_DestroyUndead
+	"Large Fire Storm",																		// 37 SPL_Pyrokinesis
 
 	// Kreis 5
-	"Kleiner Feuersturm",																		// 38 SPL_Firestorm
-	"Eiswelle",																					// 39 SPL_IceWave
-	"Dämon",																					// 40 SPL_SummonDemon
-	"Vollheilung",																				// 41 SPL_FullHeal
+	"Small Fire Storm",																		// 38 SPL_Firestorm
+	"Ice Wave",																					// 39 SPL_IceWave
+	"Demon",																					// 40 SPL_SummonDemon
+	"Total Healing",																				// 41 SPL_FullHeal
 
 	// Kreis 6
-	"Feuerregen",																				// 42 SPL_Firerain
-	"Todeshauch",																				// 43 SPL_BreathOfDeath
-	"Massensterben",																			// 44 SPL_MassDeath
-	"Armee der Finsternis",																		// 45 SPL_ArmyOfDarkness
-	"Schrumpfen",																				// 46 SPL_Shrink
+	"Fire Rain",																				// 42 SPL_Firerain
+	"Breath of Death",																				// 43 SPL_BreathOfDeath
+	"Mass Destruction",																			// 44 SPL_MassDeath
+	"Army of Darkness",																		// 45 SPL_ArmyOfDarkness
+	"Shrink",																				// 46 SPL_Shrink
 
 	// Scrolls
-	"Schaf",																					// 47 SPL_TrfSheep
+	"Sheep",																					// 47 SPL_TrfSheep
 	"Scavenger",																				// 48 SPL_TrfScavenger
-	"Riesenratte",																				// 49 SPL_TrfGiantRat
-	"Feldräuber",																				// 50 SPL_TrfGiantBug
+	"Giant Rat",																				// 49 SPL_TrfGiantRat
+	"Field Raider",																				// 50 SPL_TrfGiantBug
 	"Wolf",																						// 51 SPL_TrfWolf
-	"Waran",																					// 52 SPL_TrfWaran
+	"Lizard",																					// 52 SPL_TrfWaran
 	"Snapper",																					// 53 SPL_TrfSnapper
 	"Warg",																						// 54 SPL_TrfWarg
-	"Feuerwaran",																				// 55 SPL_TrfFireWaran
+	"Fire Lizard",																				// 55 SPL_TrfFireWaran
 	"Lurker",																					// 56 SPL_TrfLurker
 	"Shadowbeast",																				// 57 SPL_TrfShadowbeast
 	"Dragon Snapper",																			// 58 SPL_TrfDragonSnapper
-	"Vergessen",																				// 59 SPL_Charm
+	"Oblivion",																				// 59 SPL_Charm
 
 	// Kreis 5
-	"Heiliges Geschoß",																			// 60 SPL_MasterOfDisaster
+	"Holy Missile",																			// 60 SPL_MasterOfDisaster
 
 	// ???
-	"TXT_SPL_DEATHBOLT",																		// 61 SPL_Deathbolt
-	"TXT_SPL_DEATHBALL",																		// 62 SPL_Deathball
-	"TXT_SPL_CONCUSSIONBOLT",																	// 63 SPL_ConcussionBolt
+	"Deathbolt",																		// 61 SPL_Deathbolt
+	"Deathball",																		// 62 SPL_Deathball
+	"Concussionbolt",																	// 63 SPL_ConcussionBolt
 	"TXT_SPL_RESERVED_64",																		// 64 SPL_Reserved_64
 	"TXT_SPL_RESERVED_65",																		// 65 SPL_Reserved_65
 	"TXT_SPL_RESERVED_66",																		// 66 SPL_Reserved_66
@@ -330,28 +330,28 @@ const string TXT_SPELLS[MAX_SPELL] =
 	"TXT_SPL_RESERVED_69",																		// 69 SPL_Reserved_69
 
 	// Magick (Wasser)
-	"Unwetter",																					// 70 SPL_Thunderstorm
-	"Windhose",																					// 71 SPL_Whirlwind
-	"Wasserfaust",																				// 72 SPL_WaterFist
-	"Eislanze",																					// 73 SPL_IceLance
-	"Menschen Aufblähen",																		// 74 SPL_Inflate
-	"Geysir",																					// 75 SPL_Geyser
-	"Wasserwand",																				// 76 SPL_Waterwall
+	"Storm",																					// 70 SPL_Thunderstorm
+	"Dust Devil",																					// 71 SPL_Whirlwind
+	"Waterfist",																				// 72 SPL_WaterFist
+	"Ice Lance",																					// 73 SPL_IceLance
+	"Inflate People",																		// 74 SPL_Inflate
+	"Geyser",																					// 75 SPL_Geyser
+	"Water Wall",																				// 76 SPL_Waterwall
 	"TXT_SPL_RESERVED_77",																		// 77 SPL_Reserved_77
 	"TXT_SPL_RESERVED_78",																		// 78 SPL_Reserved_78
 	"TXT_SPL_RESERVED_79",																		// 79 SPL_Reserved_79
 
 	// Magick (Maya)
-	"Insektenplage",																			// 80 SPL_Plague
-	"Insektenschwarm",																			// 81 SPL_Swarm
-	"Wurzelschlingen",																			// 82 SPL_GreenTentacle
-	"Erdbeben",																					// 83 SPL_Earthquake
-	"Wächter erschaffen",																		// 84 SPL_SummonGodzilla
-	"Beliar's Zorn",																			// 85 SPL_Energyball
-	"Energie stehlen",																			// 86 SPL_SuckEnergy
-	"Schrei der Toten",																			// 87 SPL_Skull
-	"Zombie erschaffen",																		// 88 SPL_SummonZombie
-	"Mud beschwören",																			// 89 SPL_SummonMud
+	"Insect Plague",																			// 80 SPL_Plague
+	"Insect Swarm",																			// 81 SPL_Swarm
+	"Root Snare",																			// 82 SPL_GreenTentacle
+	"Earthquake",																					// 83 SPL_Earthquake
+	"Create Guardian",																		// 84 SPL_SummonGodzilla
+	"Beliar's Wrath",																			// 85 SPL_Energyball
+	"Steal Energy",																			// 86 SPL_SuckEnergy
+	"Cry of the Dead",																			// 87 SPL_Skull
+	"Create Zombie",																		// 88 SPL_SummonZombie
+	"Summon Mud",																			// 89 SPL_SummonMud
 
 	// ...
 	"TXT_SPL_RESERVED_90",																		// 90 SPL_Reserved_90
@@ -514,24 +514,24 @@ const string TXT_SPELLS[MAX_SPELL] =
 const string TXT_TALENTS [NPC_TALENT_MAX] =
 {
 	"",																							// NPC_TALENT_UNKNOWN = 0;
-	"Einhänder",																				// NPC_TALENT_1H = 1;
-	"Zweihänder",																				// NPC_TALENT_2H = 2;
-	"Bogen",																					// NPC_TALENT_BOW = 3;
-	"Armbrust",																					// NPC_TALENT_CROSSBOW = 4;
-	"Schlösser knacken",																		// NPC_TALENT_PICKLOCK = 5; // wird jetzt per DEX geregelt UND es gibt nur noch Level 0 und 1 (nicht mehr 2)
+	"One-Handed",																				// NPC_TALENT_1H = 1;
+	"Two-Handed",																				// NPC_TALENT_2H = 2;
+	"Bow",																					// NPC_TALENT_BOW = 3;
+	"Crossbow",																					// NPC_TALENT_CROSSBOW = 4;
+	"Pick Locks",																		// NPC_TALENT_PICKLOCK = 5; // wird jetzt per DEX geregelt UND es gibt nur noch Level 0 und 1 (nicht mehr 2)
 	"",																							// altes Pickpocket aus Gothic 1 - NICHT benutzen! Bleibt als Relikt im Code = 6;
-	"Magie",																					// NPC_TALENT_MAGE = 7; // Magiekreis
-	"Schleichen",																				// NPC_TALENT_SNEAK = 8;
+	"Magic",																					// NPC_TALENT_MAGE = 7; // Magiekreis
+	"Sneak",																				// NPC_TALENT_SNEAK = 8;
 	"",																							// raus // NPC_TALENT_REGENERATE = 9;
 	"",																							// raus // NPC_TALENT_FIREMASTER = 10;
-	"Akrobatik",																				// NPC_TALENT_ACROBAT = 11;
-	"Taschendiebstahl",																			// NPC_TALENT_PICKPOCKET = 12; // NEUES Pickpocket
-	"Schmieden",																				// NPC_TALENT_SMITH = 13;
-	"Runen erschaffen",																			// NPC_TALENT_RUNES = 14;
-	"Alchemie",																					// NPC_TALENT_ALCHEMY = 15;
-	"Tiere ausweiden",																			// NPC_TALENT_TAKEANIMALTROPHY = 16;
-	"Fremde Sprache lesen",																		// NPC_TALENT_FOREIGNLANGUAGE = 17;
-	"Irrlicht Fähigkeiten",																		// NPC_TALENT_WISPDETECTOR = 18;
+	"Acrobatics",																				// NPC_TALENT_ACROBAT = 11;
+	"Pickpocket",																			// NPC_TALENT_PICKPOCKET = 12; // NEUES Pickpocket
+	"Forge Weapons",																				// NPC_TALENT_SMITH = 13;
+	"Create Runes",																			// NPC_TALENT_RUNES = 14;
+	"Alchemy",																					// NPC_TALENT_ALCHEMY = 15;
+	"Take Trophies",																			// NPC_TALENT_TAKEANIMALTROPHY = 16;
+	"Read foreign language",																		// NPC_TALENT_FOREIGNLANGUAGE = 17;
+	"Will-o'-the-wisp abilities",																		// NPC_TALENT_WISPDETECTOR = 18;
 	"",																							// NPC_TALENT_C = 19;
 	"",																							// NPC_TALENT_D = 20;
 	""																							// NPC_TALENT_E = 21;
@@ -540,27 +540,27 @@ const string TXT_TALENTS [NPC_TALENT_MAX] =
 const string TXT_TALENTS_SKILLS [NPC_TALENT_MAX] =
 {
 	"",																							// NPC_TALENT_UNKNOWN = 0;
-	"Anfänger|Kämpfer|Meister",																	// NPC_TALENT_1H = 1;
-	"Anfänger|Kämpfer|Meister",																	// NPC_TALENT_2H = 2;
-	"Anfänger|Schütze|Meister",																	// NPC_TALENT_BOW = 3;
-	"Anfänger|Schütze|Meister",																	// NPC_TALENT_CROSSBOW = 4;
-	"-|Gelernt|-",																				// NPC_TALENT_PICKLOCK = 5; // wird jetzt per DEX geregelt UND es gibt nur noch Level 0 und 1 (nicht mehr 2)
+	"Rookie|Fighter|Master",																	// NPC_TALENT_1H = 1;
+	"Rookie|Fighter|Master",																	// NPC_TALENT_2H = 2;
+	"Rookie|Marksman|Master",																	// NPC_TALENT_BOW = 3;
+	"Rookie|Marksman|Master",																	// NPC_TALENT_CROSSBOW = 4;
+	"-|Learned|-",																				// NPC_TALENT_PICKLOCK = 5; // wird jetzt per DEX geregelt UND es gibt nur noch Level 0 und 1 (nicht mehr 2)
 	"0|1|2",																					// altes Pickpocket aus Gothic 1 - NICHT benutzen! Bleibt als Relikt im Code = 6;
 	"0|1|2|3|4|5|6",																			// NPC_TALENT_MAGE = 7; // Magiekreis
-	"-|Gelernt",																				// NPC_TALENT_SNEAK = 8;
+	"-|Learned",																				// NPC_TALENT_SNEAK = 8;
 	"-|-",																						// raus // NPC_TALENT_REGENERATE = 9;
 	"-|-",																						// raus // NPC_TALENT_FIREMASTER = 10;
-	"-|Gelernt",																				// NPC_TALENT_ACROBAT = 11;
-	"-|Gelernt",																				// NPC_TALENT_PICKPOCKET = 12; // NEUES Pickpocket
-	"-|Gelernt",																				// NPC_TALENT_SMITH = 13;
-	"-|Gelernt",																				// NPC_TALENT_RUNES = 14;
-	"-|Gelernt",																				// NPC_TALENT_ALCHEMY = 15;
-	"-|Gelernt",																				// NPC_TALENT_TAKEANIMALTROPHY = 16;
-	"-|Gelernt",																				// NPC_TALENT_FOREIGNLANGUAGE = 17; // ADDON
-	"-|Gelernt",																				// NPC_TALENT_WISPDETECTOR = 18;
-	"-|Gelernt",																				// NPC_TALENT_C = 19;
-	"-|Gelernt",																				// NPC_TALENT_D = 20;
-	"-|Gelernt"																					// NPC_TALENT_E = 21;
+	"-|Learned",																				// NPC_TALENT_ACROBAT = 11;
+	"-|Learned",																				// NPC_TALENT_PICKPOCKET = 12; // NEUES Pickpocket
+	"-|Learned",																				// NPC_TALENT_SMITH = 13;
+	"-|Learned",																				// NPC_TALENT_RUNES = 14;
+	"-|Learned",																				// NPC_TALENT_ALCHEMY = 15;
+	"-|Learned",																				// NPC_TALENT_TAKEANIMALTROPHY = 16;
+	"-|Learned",																				// NPC_TALENT_FOREIGNLANGUAGE = 17; // ADDON
+	"-|Learned",																				// NPC_TALENT_WISPDETECTOR = 18;
+	"-|Learned",																				// NPC_TALENT_C = 19;
+	"-|Learned",																				// NPC_TALENT_D = 20;
+	"-|Learned"																					// NPC_TALENT_E = 21;
 };
 
 // *****************************************************************************************
@@ -569,14 +569,14 @@ const string TXT_TALENTS_SKILLS [NPC_TALENT_MAX] =
 
 const string TXT_INV_CAT [INV_CAT_MAX] = {
 	"",
-	"Waffen",
-	"Rüstungen",
-	"Magie",
-	"Artefakte",
-	"Nahrung",
-	"Tränke",
-	"Schriften",
-	"Verschiedenes"
+	"Weapons",
+	"Armor",
+	"Magic",
+	"Artifacts",
+	"Food",
+	"Potions",
+	"Writings",
+	"Miscellaneous"
 };
 
 // ***************************************************************************************
@@ -661,7 +661,7 @@ const string TXT_INV_CAT [INV_CAT_MAX] = {
 
 	const string PRINT_Addon_BDTArmor					= "Whoever wears this armor belongs to the bandits.";
 
-	const string PRINT_Addon_KUMU_01					= "We are three brothers from the same caste.";// Texte für kumulative Amulette
+	const string PRINT_Addon_KUMU_01					= "We are three brothers from the same caste.";// Texte fÃƒÂ¼r kumulative Amulette
 	const string PRINT_Addon_KUMU_02					= "Together we are stronger.";
 
 	const string PRINT_Addon_NadjaWait					= "Wait. About the weed...";
@@ -673,7 +673,7 @@ const string TXT_INV_CAT [INV_CAT_MAX] = {
 	const string PRINT_Trade_Not_Enough_Gold			= "You don't have enough gold to buy this item.";
 
 // *************************************************************
-// TEXTE FÜR ITEM-BESCHREIBUNGEN IM INV.
+// TEXTE FÃƒÅ“R ITEM-BESCHREIBUNGEN IM INV.
 // *************************************************************
 
 	const string NAME_Value								= "Value:";
@@ -769,7 +769,7 @@ const string GMM_GreenTentacle_Description		= "Temporarily incapacitates target.
 const string GMM_Swarm_Description				= "Temporarily incapacitates human target.";
 
 // *************************************************************
-// NAMEN FÜR Produktionsitems
+// NAMEN FÃƒÅ“R Produktionsitems
 // *************************************************************
 	const string NAME_ItMw_1H_Common_01					= "Sword";							// (40/30)
 	const string NAME_ItMw_1H_Special_01				= "Ore Longsword";
@@ -787,7 +787,7 @@ const string GMM_Swarm_Description				= "Temporarily incapacitates human target.
 	const string NAME_Addon_Harad_04					= "El Bastardo";						// ItMw_ElBastardo (120/110)
 
 // *************************************************************
-// PrintScreen Texte für B_GiveInvItems
+// PrintScreen Texte fÃƒÂ¼r B_GiveInvItems
 // *************************************************************
 
 	const string PRINT_Addon_gegeben					= " given";
@@ -802,14 +802,14 @@ const string GMM_Swarm_Description				= "Temporarily incapacitates human target.
 	const string PRINT_Addon_RuneGiven					= "Beliar grants you another spell";
 
 // *************************************************************
-// PrintScreen Texte für Steigerung (Lernen)
+// PrintScreen Texte fÃƒÂ¼r Steigerung (Lernen)
 // *************************************************************
 
 // ------ B_BuildLearnString ------
 	const string PRINT_Kosten							= ". Cost: ";
 	const string PRINT_LP								= " LP";
 
-// ------ Zu wenig LP / techerMAX überschritten ------
+// ------ Zu wenig LP / techerMAX ÃƒÂ¼berschritten ------
 	const string PRINT_NotEnoughLP						= "Not enough Learning Points!";
 	const string PRINT_NoLearnOverPersonalMAX			= "This teacher's maximum is ";
 
@@ -830,10 +830,10 @@ const string GMM_Swarm_Description				= "Temporarily incapacitates human target.
 
 // ------ 1H -------------------------------------------------------------------------------------
 	const string PRINT_Learn1H							= "Improve: Fight with one-handed weapons";
-	const string PRINT_Learn1H_and_2H					= "Improve: Fight with one and two-handed weapons";// ADDON geändert M.F.
+	const string PRINT_Learn1H_and_2H					= "Improve: Fight with one and two-handed weapons";// ADDON geÃƒÂ¤ndert M.F.
 // ------ 2H -------------------------------------------------------------------------------------
 	const string PRINT_Learn2H							= "Improve: Fight with two-handed weapons";
-	const string PRINT_Learn2H_and_1H					= "Improve: Fight with two and one-handed weapons";// ADDON geändert M.F.
+	const string PRINT_Learn2H_and_1H					= "Improve: Fight with two and one-handed weapons";// ADDON geÃƒÂ¤ndert M.F.
 // ------ Bow ------------------------------------------------------------------------------------
 	const string PRINT_LearnBow							= "Improve: Bow accuracy";
 	const string PRINT_LearnBow_and_Crossbow			= "Improve: Bow and crossbow accuracy";
@@ -992,7 +992,7 @@ const string GMM_Swarm_Description				= "Temporarily incapacitates human target.
 	const string PRINT_NOTHINGTOGET03					= "Nothing to plunder ...";
 
 // *************************************
-// StringKonstanten für Beten
+// StringKonstanten fÃƒÂ¼r Beten
 // *************************************
 
 	const string PRINT_BlessSTR							= "Innos grants you: Strength + ";
@@ -1147,7 +1147,7 @@ const string GMM_Swarm_Description				= "Temporarily incapacitates human target.
 	const string Pickpocket_120_Female					= "(It would be nearly impossible to steal her purse.)";
 
 // ****************************************************************************************
-// Relative Y-Koordinaten für die Bildschirmausgabe (in % der aktuellen Bildhöhe, von oben)
+// Relative Y-Koordinaten fÃƒÂ¼r die Bildschirmausgabe (in % der aktuellen BildhÃƒÂ¶he, von oben)
 // ****************************************************************************************
 
 	const int YPOS_GoldGiven							= 34;
@@ -1228,13 +1228,13 @@ const string GMM_Swarm_Description				= "Temporarily incapacitates human target.
 // ************************************
 // Vom Programm ausgelagerte Konstanten
 // ------------------------------------
-// NAMEN NICHT ÄNDERN!
+// NAMEN NICHT Ãƒâ€žNDERN!
 // ************************************
 
-// Bidschrimausgabe zum Thema Schloß öffnen/knacken
+// Bidschrimausgabe zum Thema SchloÃƒÅ¸ ÃƒÂ¶ffnen/knacken
 	const string _STR_MESSAGE_INTERACT_NO_KEY			= "No lockpick or fitting key.";
 
-// Bidschrimausgabe fürs Tausch-Fenster
+// Bidschrimausgabe fÃƒÂ¼rs Tausch-Fenster
 	const string _STR_MESSAGE_TRADE_FAILURE				= "Your trade goods aren't valuable enough.";
 
 // Trade-Manager

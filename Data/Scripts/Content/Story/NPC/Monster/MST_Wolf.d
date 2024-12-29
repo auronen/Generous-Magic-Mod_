@@ -181,7 +181,7 @@ instance YWolf(Mst_Default_Wolf)
 };
 
 //************
-//	Missions Wölfe für Pepe: YWolf
+//	Missions WÃƒÂ¶lfe fÃƒÂ¼r Pepe: YWolf
 //************
 
 instance PEPES_YWolf1(Mst_Default_Wolf)

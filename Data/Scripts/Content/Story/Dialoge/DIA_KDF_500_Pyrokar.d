@@ -398,7 +398,7 @@ func void DIA_Pyrokar_SUCCESS_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info PERM wenn Prüfung erfolgreich und die anderen noch nicht.
+//	Info PERM wenn PrÃƒÂ¼fung erfolgreich und die anderen noch nicht.
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Pyrokar_Todo(C_INFO)
 {
@@ -512,7 +512,7 @@ func void DIA_Pyrokar_OATH_Info()
 
 	Npc_SetTrueGuild(other, GIL_KDF);
 
-	Fire_Contest = TRUE; // fürs Log
+	Fire_Contest = TRUE; // fÃƒÂ¼rs Log
 
 	Snd_Play("LEVELUP");
 
@@ -1178,8 +1178,8 @@ func void DIA_Pyrokar_GIVEINNOSEYE_wer()
 	AI_Output(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_07"); //Pedro has forced his way into our most sacred halls, and stolen the Eye.
 	AI_Output(self, other, "DIA_Pyrokar_GIVEINNOSEYE_wer_11_08"); //I fear that he simply spent too much time by himself, outside of the gates and thus beyond the protective walls of the monastery, exposed to all lurking dangers.
 
-	Pedro.flags = 0; // Joly: Pedro ist nun mortal und zum Abschuß freigegeben.
-	Pedro_Traitor = TRUE; // Joly: Pedro ist für den SC nun als Traitor bekannt. Muß hier stehen bleiben und darf nur einmal auf True gesetzt werden
+	Pedro.flags = 0; // Joly: Pedro ist nun mortal und zum AbschuÃƒÅ¸ freigegeben.
+	Pedro_Traitor = TRUE; // Joly: Pedro ist fÃƒÂ¼r den SC nun als Traitor bekannt. MuÃƒÅ¸ hier stehen bleiben und darf nur einmal auf True gesetzt werden
 
 	B_LogEntry(TOPIC_INNOSEYE, TOPIC_INNOSEYE_13);
 	Log_AddEntry(TOPIC_TraitorPedro, TOPIC_TraitorPedro_2);
@@ -1511,7 +1511,7 @@ func void DIA_Pyrokar_KAP3_READY_Info()
 	B_GiveInvItems(self, other, ItMi_InnosEye_MIS, 1);
 	AI_Output(self, other, "DIA_Pyrokar_KAP3_READY_11_02"); //Bear in mind that you need to talk to a dragon first before you can attack it.
 	// AI_Output(self, other, "DIA_Pyrokar_KAP3_READY_11_03"); // Das Auge wird dir helfen, die Drachen dazu zu zwingen, mit dir zu reden.
-	// AI_Output(self, other, "DIA_Pyrokar_KAP3_READY_11_04"); // Es bietet dir nicht nur Schutz gegen ihre Angriffe, es fügt ihnen auch unerträgliche Schmerzen zu, wenn du es bei dir trägst.
+	// AI_Output(self, other, "DIA_Pyrokar_KAP3_READY_11_04"); // Es bietet dir nicht nur Schutz gegen ihre Angriffe, es fÃƒÂ¼gt ihnen auch unertrÃƒÂ¤gliche Schmerzen zu, wenn du es bei dir trÃƒÂ¤gst.
 	AI_Output(self, other, "DIA_Pyrokar_Add_11_01"); //The power of the Eye will force the dragons to speak to you and tell the truth.
 	AI_Output(self, other, "DIA_Pyrokar_Add_11_02"); //Furthermore, it offers protection against their attacks when you wear it.
 	AI_Output(self, other, "DIA_Pyrokar_KAP3_READY_11_05"); //However, its power does not last. You will have to fill it up again with magical energy.
@@ -1724,7 +1724,7 @@ func void DIA_Pyrokar_AlmanachBringen_Info()
 	var int AlmanachGeld;
 	var int PyrokarsAlmanachOffer;
 
-	PyrokarsAlmanachOffer = 400; // Joly: Gold für einen Almanach
+	PyrokarsAlmanachOffer = 400; // Joly: Gold fÃƒÂ¼r einen Almanach
 
 	AlmanachCount = Npc_HasItems(other, ITWR_DementorObsessionBook_MIS);
 

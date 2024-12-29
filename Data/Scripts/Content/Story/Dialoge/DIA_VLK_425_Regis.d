@@ -147,7 +147,7 @@ func void DIA_Regis_ANDRE_Info()
 };
 
 // ****************************************************
-// 					Prügelei mit Valentino
+// 					PrÃƒÂ¼gelei mit Valentino
 // ****************************************************
 instance DIA_Regis_Valentino(C_INFO)
 {

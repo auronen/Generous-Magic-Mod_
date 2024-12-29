@@ -438,7 +438,7 @@ func void DIA_Milten_DI_TeachMagic_Runen_Circle_4_SPL_LightningFlash()
 };
 
 //**********************************************************
-// Fünfter Kreis
+// FÃƒÂ¼nfter Kreis
 // --------------------------
 //**********************************************************
 func void DIA_Milten_DI_TeachMagic_Runen_Circle_5()

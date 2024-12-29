@@ -150,7 +150,7 @@ instance DIA_Dar_DuDieb(C_INFO)
 
 func int DIA_Dar_DuDieb_Condition()
 {
-	if ((Npc_KnowsInfo(other, DIA_Cipher_TradeWhat)) // von Diebstahl gehört
+	if ((Npc_KnowsInfo(other, DIA_Cipher_TradeWhat)) // von Diebstahl gehÃƒÂ¶rt
 	&& (MIS_Cipher_Paket == LOG_RUNNING))
 	{
 		return TRUE;

@@ -36,7 +36,7 @@ prototype Mst_Default_Meatbug(C_Npc)
 	aivar[AIV_MM_WuselStart]		= OnlyRoutine;
 
 	// -------- fight tactic --------
-//	fight_tactic =; // kämpfen nicht!
+//	fight_tactic =; // kÃƒÂ¤mpfen nicht!
 	senses = SENSE_SMELL;
 	senses_range = PERC_DIST_MONSTER_ACTIVE_MAX;
 

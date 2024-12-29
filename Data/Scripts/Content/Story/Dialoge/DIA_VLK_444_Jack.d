@@ -110,9 +110,9 @@ func int DIA_Jack_Job_Condition()
 func void DIA_Jack_Job_Info()
 {
 	AI_Output(other, self, "DIA_Jack_Job_15_00"); //What are you doing here?
-	// AI_Output(self, other, "DIA_Jack_Job_14_01"); // Damals, als junger Mann, bin ich noch zur See gefahren und habe so manchen großen Sturm miterlebt.
-	// AI_Output(self, other, "DIA_Jack_Job_14_02"); // Vor vielen Jahren hab ich mich dann hier nieder gelassen und war lange Zeit Leuchtturmwärter von Khorinis.
-	// AI_Output(self, other, "DIA_Jack_Job_14_03"); // Keine aufregende Sache. Wirklich nicht. Aber dieser alte Turm kam dem, was man ein Zuhause nennt, am Nächsten.
+	// AI_Output(self, other, "DIA_Jack_Job_14_01"); // Damals, als junger Mann, bin ich noch zur See gefahren und habe so manchen groÃƒÅ¸en Sturm miterlebt.
+	// AI_Output(self, other, "DIA_Jack_Job_14_02"); // Vor vielen Jahren hab ich mich dann hier nieder gelassen und war lange Zeit LeuchtturmwÃƒÂ¤rter von Khorinis.
+	// AI_Output(self, other, "DIA_Jack_Job_14_03"); // Keine aufregende Sache. Wirklich nicht. Aber dieser alte Turm kam dem, was man ein Zuhause nennt, am NÃƒÂ¤chsten.
 	// AI_Output(self, other, "DIA_Jack_Job_14_04"); // Bin schon ziemlich lange nicht mehr oben gewesen.
 	// AI_Output(other, self, "DIA_Jack_Job_15_05"); // Warum nicht?
 	AI_Output(self, other, "DIA_Jack_Job_14_06"); //Ever since those scallywags took over my lighthouse, I haven't dared get closer to it than twenty feet. Really bad rabble, that.
@@ -129,7 +129,7 @@ func void DIA_Jack_Job_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Erzähl mir was über die Stadt
+//	ErzÃƒÂ¤hl mir was ÃƒÂ¼ber die Stadt
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Jack_City(C_INFO)
 {
@@ -157,7 +157,7 @@ func void DIA_Jack_City_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Erzähl mir was über den Hafen
+//	ErzÃƒÂ¤hl mir was ÃƒÂ¼ber den Hafen
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Jack_Harbor(C_INFO)
 {

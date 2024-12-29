@@ -22,7 +22,7 @@ func void DIA_Jan_EXIT_Info()
 };
 
 //***********
-//	Begrüßung
+//	BegrÃƒÂ¼ÃƒÅ¸ung
 //***********
 instance DIA_JAN_Hello(C_INFO)
 {
@@ -400,7 +400,7 @@ func void Jan_Training_Smith_2hSpecial2()
 };
 
 //*******************************************
-//	Kann ich bei dir Rüstungen kaufen?
+//	Kann ich bei dir RÃƒÂ¼stungen kaufen?
 //*******************************************
 
 // -------------------------------------
@@ -470,7 +470,7 @@ func void DIA_JAN_SellArmor_BuildOne()
 };
 
 //*******************************************
-//	Ich habe die Drachenschuppen für dich.
+//	Ich habe die Drachenschuppen fÃƒÂ¼r dich.
 //*******************************************
 
 // -------------------------------------------
@@ -524,7 +524,7 @@ func void DIA_Jan_Dragonscales_Info()
 };
 
 //*******************************************
-//	Ist die Rüstung fertig?
+//	Ist die RÃƒÂ¼stung fertig?
 //*******************************************
 
 // -------------------------------
@@ -584,7 +584,7 @@ instance DIA_Jan_DJG_ARMOR_M(C_INFO)
 	condition		= DIA_Jan_DJG_ARMOR_M_Condition;
 	information		= DIA_Jan_DJG_ARMOR_M_Info;
 	permanent		= TRUE;
-	description		= "Medium dragon hunter armor: Protection: weapons 80, arrows 80 (12000 gold)"; // Wenn ändern, dann bitte auch in der Info-Instanz. s.u.
+	description		= "Medium dragon hunter armor: Protection: weapons 80, arrows 80 (12000 gold)"; // Wenn ÃƒÂ¤ndern, dann bitte auch in der Info-Instanz. s.u.
 };
 
 func int DIA_Jan_DJG_ARMOR_M_Condition()

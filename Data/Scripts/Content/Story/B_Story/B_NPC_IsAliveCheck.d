@@ -1,7 +1,7 @@
 // ******************************************************************************************************
-//  			B_NPC_IsAliveCheck (für NPCs die eine Levelchange vollziehen)
+//  			B_NPC_IsAliveCheck (fÃƒÂ¼r NPCs die eine Levelchange vollziehen)
 // ******************************************************************************************************
-var int SLD_Bullco_is_alive; // Check, ob die SLD noch leben und zum Drachenjäger gemacht werden können.
+var int SLD_Bullco_is_alive; // Check, ob die SLD noch leben und zum DrachenjÃƒÂ¤ger gemacht werden kÃƒÂ¶nnen.
 var int SLD_Rod_is_alive;
 var int SLD_Cipher_is_alive;
 var int SLD_Gorn_is_alive;
@@ -35,7 +35,7 @@ func void B_NPC_IsAliveCheck(var int Zen)
 
 		if (MIS_ReadyforChapter4 == TRUE) // Joly: letzter Pyrokar Dialog im 3. Kapitel
 		{
-			// 	Drachenjäger (Check, ob die SLD noch leben und zum Drachenjäger gemacht werden können.)
+			// 	DrachenjÃƒÂ¤ger (Check, ob die SLD noch leben und zum DrachenjÃƒÂ¤ger gemacht werden kÃƒÂ¶nnen.)
 			// ***********************************************************
 
 			var C_Npc SLD_Bullco_OWCheck; SLD_Bullco_OWCheck = Hlp_GetNpc(SLD_807_Bullco);
@@ -82,7 +82,7 @@ func void B_NPC_IsAliveCheck(var int Zen)
 
 		if (Kapitel >= 4)
 		{
-			// 	Drachenjäger (Check, wer nach der Drachenjagd in die NEWWORLD geht.)
+			// 	DrachenjÃƒÂ¤ger (Check, wer nach der Drachenjagd in die NEWWORLD geht.)
 			// ***********************************************************
 			var C_Npc GornDJG_NWCheck; GornDJG_NWCheck = Hlp_GetNpc(GornDJG);
 			if (Npc_IsDead(GornDJG)) { GornDJG_is_alive = FALSE; } else{ GornDJG_is_alive = TRUE; B_RemoveNpc(GornDJG_NWCheck); };

@@ -146,7 +146,7 @@ func void UnEquip_ItAm_Prot_Point_01()
 };
 
 /******************************************************************************************/
-instance ItAm_Prot_Mage_01(C_ITEM) // Magie Schutz Amulett von Serpentes an KDF für alle Minenanteile (Mission -> MIS_Serpentes_MinenAnteil_KDF == LOG_SUCCESS)
+instance ItAm_Prot_Mage_01(C_ITEM) // Magie Schutz Amulett von Serpentes an KDF fÃƒÂ¼r alle Minenanteile (Mission -> MIS_Serpentes_MinenAnteil_KDF == LOG_SUCCESS)
 {
 	name						= NAME_Amulett;
 
@@ -187,7 +187,7 @@ func void UnEquip_ItAm_Prot_Mage_01()
 
 /******************************************************************************************/
 
-instance ItAm_Prot_Total_01(C_ITEM) // ItAm_AmulettOfDeath_Mis (alle + 30) MAGIER_EXKLUSIV_AMULETT für den Endkampf des KDFs (Kapitel 5)
+instance ItAm_Prot_Total_01(C_ITEM) // ItAm_AmulettOfDeath_Mis (alle + 30) MAGIER_EXKLUSIV_AMULETT fÃƒÂ¼r den Endkampf des KDFs (Kapitel 5)
 {
 	name						= NAME_Amulett;
 
@@ -235,7 +235,7 @@ func void UnEquip_Value_Am_ProtTotal()
 };
 
 /******************************************************************************************/
-instance ItAm_Dex_01(C_Item) // Joly: von Dar an KDF und DJG vergeben ab Kapitel 4 \ Xardas_Secret-area für PAL (Kapitel 3)
+instance ItAm_Dex_01(C_Item) // Joly: von Dar an KDF und DJG vergeben ab Kapitel 4 \ Xardas_Secret-area fÃƒÂ¼r PAL (Kapitel 3)
 {
 	name						= NAME_Amulett;
 
@@ -317,7 +317,7 @@ func void UnEquip_ItAm_Strg_01()
 
 /******************************************************************************************/
 
-instance ItAm_Hp_01(C_Item) // von Bennet dem Schmied an den PAL und dem KDF (Kapitel 3)\Xardas_Secret-area für DJG (Kapitel 3)
+instance ItAm_Hp_01(C_Item) // von Bennet dem Schmied an den PAL und dem KDF (Kapitel 3)\Xardas_Secret-area fÃƒÂ¼r DJG (Kapitel 3)
 {
 	name						= NAME_Amulett;
 
@@ -415,7 +415,7 @@ func void UnEquip_ItAm_Mana_01()
 };
 
 /******************************************************************************************/
-instance ItAm_Dex_Strg_01(C_Item) // wird dem PAL von Ulthar überreicht für die Reinigung der Schreine Kapitel 3\
+instance ItAm_Dex_Strg_01(C_Item) // wird dem PAL von Ulthar ÃƒÂ¼berreicht fÃƒÂ¼r die Reinigung der Schreine Kapitel 3\
 {
 	name						= "Amulet of Power";
 
@@ -457,7 +457,7 @@ func void UnEquip_ItAm_Dex_Strg_01()
 };
 
 /******************************************************************************************/
-instance ItAm_Hp_Mana_01(C_Item) // Xardas_Secret-area für KDF (Kapitel 3)
+instance ItAm_Hp_Mana_01(C_Item) // Xardas_Secret-area fÃƒÂ¼r KDF (Kapitel 3)
 {
 	name						= "Amulet of Enlightenment";
 

@@ -176,7 +176,7 @@ func void DIA_Brian_OtherMasters_Info()
 };
 
 // *****************************************************
-// 					Über Meister Harad
+// 					ÃƒÅ“ber Meister Harad
 // *****************************************************
 instance DIA_Brian_AboutHarad(C_INFO)
 {
@@ -319,7 +319,7 @@ func void DIA_Brian_KAP3_EXIT_Info()
 };
 
 //*********************************************************************
-//	Kannst du auch Schmuckstücke reparieren?
+//	Kannst du auch SchmuckstÃƒÂ¼cke reparieren?
 //*********************************************************************
 instance DIA_Brian_RepairNecklace(C_INFO)
 {

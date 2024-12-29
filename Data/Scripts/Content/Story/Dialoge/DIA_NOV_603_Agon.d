@@ -180,7 +180,7 @@ func void DIA_Agon_YouAndBabo_Understand()
 };
 
 //************************************************************************
-//	Kann ich bei dir Kräuter bekommen?
+//	Kann ich bei dir KrÃƒÂ¤uter bekommen?
 //************************************************************************
 instance DIA_Agon_GetHerb(C_INFO)
 {
@@ -207,7 +207,7 @@ func void DIA_Agon_GetHerb_Info()
 };
 
 //************************************************************************
-//	Agon ist in der Höhle
+//	Agon ist in der HÃƒÂ¶hle
 //************************************************************************
 instance DIA_Agon_GolemDead(C_INFO)
 {
@@ -290,7 +290,7 @@ func void DIA_Agon_GolemDead_Congrat()
 };
 
 //****************************************
-//	Der Sc war vor Agon in der Höhle
+//	Der Sc war vor Agon in der HÃƒÂ¶hle
 //****************************************
 instance DIA_Agon_GolemLives(C_INFO)
 {
@@ -346,8 +346,8 @@ func int DIA_Agon_StillAlive_Condition()
 func void DIA_Agon_StillAlive_Info()
 {
 	AI_Output(other, self, "DIA_Agon_StillAlive_15_00"); //Was machst Du hier?
-	AI_Output(self, other, "DIA_Agon_StillAlive_07_01"); //Hättest Du mich nicht töten können? Dann müsste ich das ganze hier wenigstens nicht mehr ertragen.
-	AI_Output(self, other, "DIA_Agon_StillAlive_07_02"); //Jetzt lass mich in Ruhe! Geh zurück ins Kloster!
+	AI_Output(self, other, "DIA_Agon_StillAlive_07_01"); //HÃƒÂ¤ttest Du mich nicht tÃƒÂ¶ten kÃƒÂ¶nnen? Dann mÃƒÂ¼sste ich das ganze hier wenigstens nicht mehr ertragen.
+	AI_Output(self, other, "DIA_Agon_StillAlive_07_02"); //Jetzt lass mich in Ruhe! Geh zurÃƒÂ¼ck ins Kloster!
 
 	AI_StopProcessInfos(self);
 };

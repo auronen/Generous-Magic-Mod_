@@ -427,7 +427,7 @@ func void DIA_Harad_LEHRLING_Info()
 			AI_Output(self, other, "DIA_Harad_LEHRLING_12_27"); //So you should talk to all of them who still aren't convinced about you.
 		};
 	}
-	else // Mission nicht erfüllt
+	else // Mission nicht erfÃƒÂ¼llt
 	{
 		AI_Output(self, other, "DIA_Harad_LEHRLING_12_28"); //Not before you've proven to me that you're good for something.
 	};
@@ -736,7 +736,7 @@ func void DIA_Harad_SellBlades_Info()
 		Npc_RemoveInvItems(other, ItMw_ElBastardo, anzahl_ElBastardo);
 
 		var string concatText;
-		concatText = ConcatStrings(IntToString(gesamt), PRINT_ItemsGegeben); // "x Gegenstände gegeben"
+		concatText = ConcatStrings(IntToString(gesamt), PRINT_ItemsGegeben); // "x GegenstÃƒÂ¤nde gegeben"
 		AI_PrintScreen(concatText, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 		AI_Output(self, other, "DIA_Harad_SellBlades_12_03"); //Fine, and here's your pay.
@@ -947,7 +947,7 @@ func void DIA_Harad_TeachSTR_1()
 	Info_AddChoice(DIA_Harad_TeachSTR, B_BuildLearnString(PRINT_LearnSTR5, B_GetLearnCostAttribute(other, ATR_STRENGTH) * 5), DIA_Harad_TeachSTR_5);
 };
 
-// ------ 5 Stärke ------
+// ------ 5 StÃƒÂ¤rke ------
 func void DIA_Harad_TeachSTR_5()
 {
 	B_TeachAttributePoints(self, other, ATR_STRENGTH, 5, T_MED);
@@ -1022,7 +1022,7 @@ func void DIA_Harad_AboutErzklingen_Info()
 };
 
 // *****************************************************
-// 					Ich möchte eine Erzklinge kaufen
+// 					Ich mÃƒÂ¶chte eine Erzklinge kaufen
 // *****************************************************
 instance DIA_Harad_Erzklingen(C_INFO)
 {
@@ -1139,7 +1139,7 @@ func void DIA_Harad_Erzklingen_1h()
 // ############################
 
 //*********************************************************************
-//	Kannst du auch Schmuckstücke reparieren?
+//	Kannst du auch SchmuckstÃƒÂ¼cke reparieren?
 //*********************************************************************
 instance DIA_Harad_RepairNecklace(C_INFO)
 {

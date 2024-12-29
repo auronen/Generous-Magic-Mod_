@@ -444,7 +444,7 @@ func void DIA_Jarvis_HowManyLeft_Info()
 
 // ###############################
 // ## ##
-// 			Höhere Gilden
+// 			HÃƒÂ¶here Gilden
 // ## ##
 // ###############################
 

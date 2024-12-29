@@ -24,7 +24,7 @@ instance PAL_256_Ritter(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 50); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 50); // Grenzen fÃƒÂ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

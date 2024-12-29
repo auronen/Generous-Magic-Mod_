@@ -1,5 +1,5 @@
 //**********************************************************************************
-//	ItWr_XardasLetterToOpenBook_MIS an den SC um die HALLEN von Irdorath zu öffnen!
+//	ItWr_XardasLetterToOpenBook_MIS an den SC um die HALLEN von Irdorath zu ÃƒÂ¶ffnen!
 // ----------------------------------------------------------------------------------
 
 instance ItWr_XardasLetterToOpenBook_MIS(C_Item)
@@ -76,7 +76,7 @@ func void Use_XardasLetterToOpenBook()
 };
 
 //**********************************************************************************
-//	ItKe_MonastarySecretLibrary_Mis Schlüssel zur geheimen Bibliothek
+//	ItKe_MonastarySecretLibrary_Mis SchlÃƒÂ¼ssel zur geheimen Bibliothek
 //**********************************************************************************
 
 instance ItKe_MonastarySecretLibrary_Mis(C_Item)
@@ -218,7 +218,7 @@ func void Use_HallsofIrdorath_Open()
 				Doc_PrintLines	(nDocID, 0, HallsofIrdorath_Open_2);
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
@@ -297,7 +297,7 @@ func void Use_XardasSeamapBook_Mis()
 				Doc_PrintLines	(nDocID, 0, XardasSeamapBook_Mis_2);
 
 		// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
@@ -309,7 +309,7 @@ func void Use_XardasSeamapBook_Mis()
 				Doc_PrintLines	(nDocID, 0, XardasSeamapBook_Mis_4);
 
 		// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLines	(nDocID, 1, XardasSeamapBook_Mis_5);
@@ -322,7 +322,7 @@ func void Use_XardasSeamapBook_Mis()
 				Doc_PrintLines	(nDocID, 0, XardasSeamapBook_Mis_7);
 
 		// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLines	(nDocID, 1, XardasSeamapBook_Mis_8);
@@ -444,7 +444,7 @@ func void Use_Seamap_Irdorath()
 };
 
 //**********************************************************************
-//	Gefälschter Brief von Lee zum benutzen des Schiffes
+//	GefÃƒÂ¤lschter Brief von Lee zum benutzen des Schiffes
 //**********************************************************************
 
 instance ITWr_ForgedShipLetter_MIS(C_Item)
@@ -480,7 +480,7 @@ func void UseITWr_ForgedShipLetter_MIS()
 {
 	var int nDocID;
 
-// Joly:VORSICHT : Dieser Brief ist ein ERMÄCHTIGUNGSSCHREIBEN für das Schiff und kann von LEE oder dem Richter stammen. NICHT zwangsläufig von Lord Hagen oder gefälscht!!!!!!!!!
+// Joly:VORSICHT : Dieser Brief ist ein ERMÃƒâ€žCHTIGUNGSSCHREIBEN fÃƒÂ¼r das Schiff und kann von LEE oder dem Richter stammen. NICHT zwangslÃƒÂ¤ufig von Lord Hagen oder gefÃƒÂ¤lscht!!!!!!!!!
 
 	nDocID = Doc_Create();
 	Doc_SetPages(nDocID, 1);
@@ -530,7 +530,7 @@ instance ITKE_OC_MAINGATE_MIS(C_Item)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-instance ITKE_SHIP_LEVELCHANGE_MIS(C_Item) // Joly: führt zum Levelchange Kapitel 6!!!!!!!!!!!!!!!!!!!!!!
+instance ITKE_SHIP_LEVELCHANGE_MIS(C_Item) // Joly: fÃƒÂ¼hrt zum Levelchange Kapitel 6!!!!!!!!!!!!!!!!!!!!!!
 {
 	name						= "Key to Captain's Quarters";
 
@@ -694,7 +694,7 @@ func void UnEquip_ItAm_AmulettOfDeath_Mis()
 };
 
 /******************************************************************************************/
-//	Heiltrank für Randolph //
+//	Heiltrank fÃƒÂ¼r Randolph //
 /******************************************************************************************/
 instance ItPo_HealRandolph_MIS(C_Item)
 {

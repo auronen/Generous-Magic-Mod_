@@ -2,7 +2,7 @@
 // POTIONALCHEMY_S1
 // --------------
 // Funktion wird durch Labortisch-Mobsi-Benutzung aufgerufen!
-// benötigtes Item dafür: ItMi_Flask
+// benÃƒÂ¶tigtes Item dafÃƒÂ¼r: ItMi_Flask
 // *****************************************************
 func void POTIONALCHEMY_S1()
 {
@@ -49,7 +49,7 @@ func void PC_PotionAlchemy_End_Info()
 };
 
 //*******************************************************
-// Tränke herstellen Dialoge
+// TrÃƒÂ¤nke herstellen Dialoge
 // --------
 //********************************************************
 
@@ -305,7 +305,7 @@ func void PC_Charge_InnosEye_Info()
 };
 
 //*******************************************************
-// Mana Tränke
+// Mana TrÃƒÂ¤nke
 //*******************************************************
 var int ManaStart;
 // ----------------------
@@ -531,7 +531,7 @@ func void PC_ItPo_Mana_04_Info()
 };
 
 //*******************************************************
-// Heiltränke
+// HeiltrÃƒÂ¤nke
 //*******************************************************
 var int HealthStart;
 // ----------------------
@@ -757,7 +757,7 @@ func void PC_ItPo_Health_04_Info()
 };
 
 //*******************************************************
-// Spezielle Tränke
+// Spezielle TrÃƒÂ¤nke
 //*******************************************************
 var int SpecialStart;
 // ----------------------
@@ -1178,7 +1178,7 @@ func void PC_ItMi_Joint_Info()
 };
 
 //*******************************************************
-//	Grünen Novizen herstellen
+//	GrÃƒÂ¼nen Novizen herstellen
 //*******************************************************
 instance PC_ItMi_Addon_Joint_01(C_INFO)
 {

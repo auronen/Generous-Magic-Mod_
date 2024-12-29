@@ -283,7 +283,7 @@ func void DIA_Thorben_ZUSTIMMUNG_Info()
 };
 
 // ************************************************************
-// 		Was weißt du über Schlösser? // E2
+// 		Was weiÃƒÅ¸t du ÃƒÂ¼ber SchlÃƒÂ¶sser? // E2
 // ************************************************************
 instance DIA_Thorben_Locksmith(C_INFO)
 {
@@ -343,7 +343,7 @@ func void DIA_Thorben_Schuldenbuch_Info()
 };
 
 // ************************************************************
-// 		Kann ich Schlösser knacken lernen // E3
+// 		Kann ich SchlÃƒÂ¶sser knacken lernen // E3
 // ************************************************************
 instance DIA_Thorben_PleaseTeach(C_INFO)
 {
@@ -447,7 +447,7 @@ func void DIA_Thorben_PleaseTeach_Later()
 };
 
 // ************************************************************
-// 		Schlösser knacken lernen // E4
+// 		SchlÃƒÂ¶sser knacken lernen // E4
 // ************************************************************
 instance DIA_Thorben_Teach(C_INFO)
 {

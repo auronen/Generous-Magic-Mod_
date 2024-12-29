@@ -230,7 +230,7 @@ func void DIA_Hanna_Kap3_EXIT_Info()
 var int Hanna_PriceForLetter;
 
 // ************************************************************
-// 		Wie sieht´s aus?
+// 		Wie siehtÃ‚Â´s aus?
 // ************************************************************
 instance DIA_Hanna_AnyNews(C_INFO)
 {
@@ -364,7 +364,7 @@ func void DIA_Hanna_AnyNews_Yes_WillSee()
 };
 
 // ************************************************************
-//		Meinst du dieses Schriftstück?
+//		Meinst du dieses SchriftstÃƒÂ¼ck?
 // ************************************************************
 instance DIA_Hanna_ThisLetter(C_INFO)
 {

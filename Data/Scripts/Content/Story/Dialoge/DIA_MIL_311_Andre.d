@@ -314,7 +314,7 @@ func int DIA_Andre_PETZMASTER_Condition()
 
 func void DIA_Andre_PETZMASTER_Info()
 {
-	Andre_Schulden = 0; // weil Funktion nochmal durchlaufen wird, wenn Crime höher ist...
+	Andre_Schulden = 0; // weil Funktion nochmal durchlaufen wird, wenn Crime hÃƒÂ¶her ist...
 
 	// ------ SC hat mit Andre noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
@@ -343,7 +343,7 @@ func void DIA_Andre_PETZMASTER_Info()
 		AI_Output(self, other, "DIA_Andre_PETZMASTER_08_01"); //It is good that you have come to me before everything becomes even worse for you.
 		AI_Output(self, other, "DIA_Andre_PETZMASTER_08_02"); //Murder is a serious crime!
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); // Anzahl der Zeugen * 50
-		Andre_Schulden = Andre_Schulden + 500; // PLUS Mörder-Malus
+		Andre_Schulden = Andre_Schulden + 500; // PLUS MÃƒÂ¶rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
 			AI_Output(self, other, "DIA_Andre_PETZMASTER_08_03"); //To say nothing of the other things you have done.
@@ -385,7 +385,7 @@ func void DIA_Andre_PETZMASTER_Info()
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); // Anzahl der Zeugen * 50
 	};
 
-	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
+	// ------ Schaf getÃƒÂ¶tet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER)
 	{
 		AI_Output(self, other, "DIA_Andre_PETZMASTER_08_18"); //I have heard that you were after our sheep.
@@ -464,7 +464,7 @@ func void DIA_Andre_Hallo_Info()
 };
 
 // *********************************************************
-//					Nachricht für Lord Hagen
+//					Nachricht fÃƒÂ¼r Lord Hagen
 // *********************************************************
 instance DIA_Andre_Message(C_INFO)
 {
@@ -1196,7 +1196,7 @@ func void DIA_Andre_JOIN_Info()
 
 		AI_Output(self, other, "DIA_Andre_JOIN_08_13"); //If he vouches for you, there is nothing standing in the way of your acceptance into the militia.
 
-		// ------- Außerdem noch GuildOfThieves ------
+		// ------- AuÃƒÅ¸erdem noch GuildOfThieves ------
 		if (MIS_Andre_GuildOfThieves == LOG_SUCCESS)
 		{
 			AI_Output(self, other, "DIA_Andre_JOIN_08_14"); //Furthermore, you have managed to rid us of the thieves' guild. I would have accepted you for that alone.
@@ -1828,7 +1828,7 @@ func void DIA_Andre_BerichtDrachen_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//		Cornelius lügt
+//		Cornelius lÃƒÂ¼gt
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Andre_BennetInPrison(C_INFO)
 {
@@ -1857,7 +1857,7 @@ func void DIA_Andre_BennetInPrison_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//		Cornelius lügt
+//		Cornelius lÃƒÂ¼gt
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Andre_Cornelius_Liar(C_INFO)
 {

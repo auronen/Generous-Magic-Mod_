@@ -209,7 +209,7 @@ func void DIA_Gerold_Stuff_Info()
 {
 	AI_Output(other, self, "DIA_Gerold_Stuff_15_00"); //I've got something for you. The food you wanted.
 
-	// ------------------HACK für deutliche Anzeige-------------------
+	// ------------------HACK fÃƒÂ¼r deutliche Anzeige-------------------
 
 	if ((Npc_HasItems(other, ItFo_Honey) >= 1)
 	&& (Npc_HasItems(other, ItFo_Bread) >= 1)

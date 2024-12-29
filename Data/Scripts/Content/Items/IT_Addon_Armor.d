@@ -363,7 +363,7 @@ instance ITAR_MayaZombie_Addon(C_Item)
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-//	Magische Rüstungen
+//	Magische RÃƒÂ¼stungen
 //
 
 instance ItAr_FireArmor_Addon(C_Item)

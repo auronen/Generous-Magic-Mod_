@@ -256,7 +256,7 @@ func int DIA_Addon_Erol_Stoneplates_Condition()
 };
 
 var int StoneplatesCounter;
-const int Addon_ErolsStoneplatesOffer = (Value_StonePlateCommon + 5); // Joly:Kohle für eine StonePlateCommon
+const int Addon_ErolsStoneplatesOffer = (Value_StonePlateCommon + 5); // Joly:Kohle fÃƒÂ¼r eine StonePlateCommon
 
 func void DIA_Addon_Erol_Stoneplates_Info()
 {
@@ -323,7 +323,7 @@ func void DIA_Addon_Erol_Stoneplates_Info()
 		CreateInvItems(self, ItMi_Gold, StoneplatesGeld);
 		B_GiveInvItems(self, other, ItMi_Gold, StoneplatesGeld);
 
-		Npc_RemoveInvItems(self, ItWr_StonePlateCommon_Addon, Npc_HasItems(self, ItWr_StonePlateCommon_Addon)); // Joly: weil er zum Händler wird.
+		Npc_RemoveInvItems(self, ItWr_StonePlateCommon_Addon, Npc_HasItems(self, ItWr_StonePlateCommon_Addon)); // Joly: weil er zum HÃƒÂ¤ndler wird.
 
 		if (MIS_Addon_Erol_BanditStuff == LOG_SUCCESS)
 		{

@@ -36,7 +36,7 @@ const string GMM_Bookstand_Alchemy_Info_3 = "Stronger potions call for Meadow Kn
 const string GMM_Bookstand_Alchemy_Info_4 = "To brew any potions that effect permanent changes to the body or spirit, you need two plants:";
 const string GMM_Bookstand_Alchemy_Info_5 = "King's Sorrel and Meadow Knotweed.";
 
-FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY1_S1()		//AlchemiebÃƒÂ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -107,7 +107,7 @@ const string BookstandALCHEMY2_S1_9 = "To brew any potions that effect permanent
 const string BookstandALCHEMY2_S1_10 = "King's Sorrel";
 
 
-FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY2_S1()		//AlchemiebÃƒÂ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -182,7 +182,7 @@ const string GMM_Bookstand_Alchemy_PermHP_Ingredients = "1 Healing Root, 1 Meado
 const string GMM_Bookstand_Alchemy_PermMana_Ingredients = "1 Fire Root, 1 Meadow Knotweed";
 const string GMM_Bookstand_Alchemy_PermPotion_Info = "Brewing these recipes is the highest art of alchemy. They all have the use of king's sorrel and meadow knotweed as an ingredients in common.";
 
-FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY3_S1()		//AlchemiebÃƒÂ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	

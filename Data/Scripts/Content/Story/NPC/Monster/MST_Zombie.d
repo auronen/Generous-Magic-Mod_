@@ -533,7 +533,7 @@ instance MayaZombie04(Mst_Default_Zombie)
 };
 
 //*************
-//	Einer der Totenwächter
+//	Einer der TotenwÃƒÂ¤chter
 //*************
 
 instance MayaZombie04_Totenw(Mst_Default_Zombie)

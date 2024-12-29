@@ -14,9 +14,9 @@ func void STARTUP_NEWWORLD_PART_DRAGON_ISLAND_01()
 	// ----- Die Orks -----
 
 	Wld_InsertNpc(Troll_DI, "DI_ORKAREA_TROLL");
-	Wld_InsertItem(ItMi_DarkPearl, "FP_ITEM_DI_ENTER_03"); // Joly: Zutat für ItPo_MegaDrink
-	Wld_InsertItem(ItMi_Sulfur, "FP_ITEM_DI_ENTER_07"); // Joly: Zutat für ItPo_MegaDrink
-	Wld_InsertItem(ItWr_ZugBruecke_MIS, "FP_ITEM_DI_ENTER_09"); // Joly: Hinweis, die ZugbrückenProblematik zu lösen.
+	Wld_InsertItem(ItMi_DarkPearl, "FP_ITEM_DI_ENTER_03"); // Joly: Zutat fÃƒÂ¼r ItPo_MegaDrink
+	Wld_InsertItem(ItMi_Sulfur, "FP_ITEM_DI_ENTER_07"); // Joly: Zutat fÃƒÂ¼r ItPo_MegaDrink
+	Wld_InsertItem(ItWr_ZugBruecke_MIS, "FP_ITEM_DI_ENTER_09"); // Joly: Hinweis, die ZugbrÃƒÂ¼ckenProblematik zu lÃƒÂ¶sen.
 
 	Wld_InsertNpc(OrcWarrior_Rest, "FP_ROAM_DI_ORK_01");
 	Wld_InsertNpc(OrcWarrior_Rest, "FP_ROAM_DI_ORK_02");
@@ -201,7 +201,7 @@ func void STARTUP_DRAGONISLAND()
 	Angar_IsOnBoard = LOG_SUCCESS;
 	Girion_IsOnBoard = LOG_SUCCESS; */
 
-// ----- Die Kapitäne -----
+// ----- Die KapitÃƒÂ¤ne -----
 
 	if (JorgenIsCaptain == TRUE) // Jorgen
 	{
@@ -332,7 +332,7 @@ func void INIT_DRAGONISLAND()
 	// ----- Levelchange verbarrikadieren --------
 	if (Npc_HasItems(hero, ITKE_SHIP_LEVELCHANGE_MIS))
 	{
-		Npc_RemoveInvItems(hero, ITKE_SHIP_LEVELCHANGE_MIS, 1); // Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die Tür wieder zu!!!!
+		Npc_RemoveInvItems(hero, ITKE_SHIP_LEVELCHANGE_MIS, 1); // Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die TÃƒÂ¼r wieder zu!!!!
 	};
 
 	B_InitNpcGlobals();

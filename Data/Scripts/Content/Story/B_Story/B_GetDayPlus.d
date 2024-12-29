@@ -2,10 +2,10 @@
 // B_GetDayPlus
 // ------------
 // liefert ab zwei Stunden vor Mitternacht
-// den NÄCHSTEN Tag zurück.
-// Verhindert dadurch, daß ich z.B. um 23 59 h einen Auftrag bekomme,
-// der "am nächsten Tag" erfüllt werden soll und eine Minute später
-// bereits erfüllt ist.
+// den NÃƒâ€žCHSTEN Tag zurÃƒÂ¼ck.
+// Verhindert dadurch, daÃƒÅ¸ ich z.B. um 23 59 h einen Auftrag bekomme,
+// der "am nÃƒÂ¤chsten Tag" erfÃƒÂ¼llt werden soll und eine Minute spÃƒÂ¤ter
+// bereits erfÃƒÂ¼llt ist.
 // ******************************************************************
 
 func int B_GetDayPlus()

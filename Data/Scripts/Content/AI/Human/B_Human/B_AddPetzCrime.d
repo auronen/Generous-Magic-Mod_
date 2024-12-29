@@ -1,7 +1,7 @@
 // **************************************************
 // B_AddPetzCrime
 // --------------
-// Erhöht Petzcrime-Counter der übergebenen Crime
+// ErhÃƒÂ¶ht Petzcrime-Counter der ÃƒÂ¼bergebenen Crime
 // in der der Home-Location
 // **************************************************
 

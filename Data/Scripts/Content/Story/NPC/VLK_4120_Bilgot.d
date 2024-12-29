@@ -24,7 +24,7 @@ instance VLK_4120_Bilgot(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 30); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 30); // Grenzen fÃƒÂ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);
@@ -46,7 +46,7 @@ func void Rtn_Start_4120()
 
 func void Rtn_FollowToOCBridge_4120()
 {
-	TA_Follow_Player(08, 00, 23, 00, "START"); // große Brücke vorm OC
+	TA_Follow_Player(08, 00, 23, 00, "START"); // groÃƒÅ¸e BrÃƒÂ¼cke vorm OC
 	TA_Follow_Player(23, 00, 08, 00, "START");
 };
 

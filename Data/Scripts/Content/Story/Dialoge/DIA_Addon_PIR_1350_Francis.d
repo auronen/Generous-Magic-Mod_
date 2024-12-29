@@ -25,10 +25,10 @@ func void DIA_Addon_Francis_EXIT_Info()
 };
 
 // ************************************************************
-// 			  			In Gregs Hütte rein
+// 			  			In Gregs HÃƒÂ¼tte rein
 // ************************************************************
 // ------------------------------------------------------------
-// 			  		Spieler kennt Hütte nicht
+// 			  		Spieler kennt HÃƒÂ¼tte nicht
 // ------------------------------------------------------------
 instance DIA_Addon_Francis_First(C_INFO)
 {
@@ -57,7 +57,7 @@ func void DIA_Addon_Francis_First_Info()
 };
 
 // ------------------------------------------------------------
-// 			  			Ich muß da rein!
+// 			  			Ich muÃƒÅ¸ da rein!
 // ------------------------------------------------------------
 instance DIA_Addon_Francis_LetMeIn(C_INFO)
 {
@@ -122,7 +122,7 @@ func void DIA_Addon_Francis_AboutGreg_Info()
 };
 
 // ------------------------------------------------------------
-// 		  			Gib mir Schlüssel + Bestechung!
+// 		  			Gib mir SchlÃƒÂ¼ssel + Bestechung!
 // ------------------------------------------------------------
 var int Francis_bezahlt;
 instance DIA_Addon_Francis_Key(C_INFO)
@@ -330,7 +330,7 @@ func void DIA_Francis_PICKPOCKET_DoIt()
 	else
 	{
 		AI_StopProcessInfos(self);
-		B_Attack(self, other, AR_Theft, 1); // AR_Theft führt zu NEWS!
+		B_Attack(self, other, AR_Theft, 1); // AR_Theft fÃƒÂ¼hrt zu NEWS!
 	};
 
 	Info_ClearChoices(DIA_Francis_PICKPOCKET);

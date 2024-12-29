@@ -17,7 +17,7 @@ instance BDT_1090_Addon_Raven(Npc_Default)
 	attribute[ATR_MANA]				= 100;
 	attribute[ATR_HITPOINTS_MAX]	= 500;
 	attribute[ATR_HITPOINTS]		= 500;
-	attribute[ATR_MANA_MAX]			= 666666; // Joly:für die Waffe
+	attribute[ATR_MANA_MAX]			= 666666; // Joly:fÃƒÂ¼r die Waffe
 
 	// -------- visuals --------
 	B_SetNpcVisual(self, MALE, "Hum_Head_Thief", Face_N_Raven, BodyTex_N, ITAR_Raven_Addon);

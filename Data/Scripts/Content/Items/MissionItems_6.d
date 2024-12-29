@@ -1,6 +1,6 @@
 // *****************************************************************
 // // Joly: Auge Innos nicht dabei? Kein Problem. Xardas hilft auch dir Idiot!!!!!!!!!!!!
-// Vorsicht: Nur für D.A.U.s
+// Vorsicht: Nur fÃƒÂ¼r D.A.U.s
 // *****************************************************************
 
 instance ItSe_XardasNotfallBeutel_MIS(C_Item)
@@ -66,7 +66,7 @@ instance ItWr_XardasErmahnungFuerIdioten_MIS(C_Item)
 	text[5]						= "";											count[5] = 0;
 };
 
-const string XardasErmahnungFuerIdioten_1 = "My young prot�g�, you disappoint me greatly. How could you leave on the ship and not take the Eye of Innos?";
+const string XardasErmahnungFuerIdioten_1 = "My young protégé, you disappoint me greatly. How could you leave on the ship and not take the Eye of Innos?";
 const string XardasErmahnungFuerIdioten_2 = "I can only hope that there are limits to your negligence. Otherwise you will never rid the world of Evil and I will be forced to personally execute you for your stupidity.";
 const string XardasErmahnungFuerIdioten_3 = " Xardas";
 func void Use_XardasErmahnungFuerIdioten()
@@ -151,18 +151,18 @@ func void Use_Krypta_Garon()
 				Doc_PrintLine	(nDocID, 0, Krypta_Garon_8);
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, "");
-				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus
 
 	Doc_Show(nDocID);
 };
 
 //****************************************************************************
-//				DragonIsle_Undead_Schlüssel
+//				DragonIsle_Undead_SchlÃƒÂ¼ssel
 //			---------------------------------------------
 //****************************************************************************
 
 //**********************************************************************************
-//	Knasttürschlüssel für Pedros Zelle auf DI
+//	KnasttÃƒÂ¼rschlÃƒÂ¼ssel fÃƒÂ¼r Pedros Zelle auf DI
 //**********************************************************************************
 
 instance ItKe_OrkKnastDI_MIS(C_Item)
@@ -186,7 +186,7 @@ instance ItKe_OrkKnastDI_MIS(C_Item)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-instance ItKe_EVT_UNDEAD_01(C_Item) // Schlüssel für erste Tür
+instance ItKe_EVT_UNDEAD_01(C_Item) // SchlÃƒÂ¼ssel fÃƒÂ¼r erste TÃƒÂ¼r
 {
 	name						= "Key of Archol";
 
@@ -205,7 +205,7 @@ instance ItKe_EVT_UNDEAD_01(C_Item) // Schlüssel für erste Tür
 };
 
 //**********************************************************************************
-//	Schlüssel zum Labyrinth der Untoten auf DI
+//	SchlÃƒÂ¼ssel zum Labyrinth der Untoten auf DI
 //**********************************************************************************
 
 instance ItKe_EVT_UNDEAD_02(C_Item)
@@ -230,7 +230,7 @@ instance ItKe_EVT_UNDEAD_02(C_Item)
 };
 
 //**********************************************************************************
-//	Kammerschlüssel für´s Tor zum Saal des Untoten Drachen.
+//	KammerschlÃƒÂ¼ssel fÃƒÂ¼rÃ‚Â´s Tor zum Saal des Untoten Drachen.
 //**********************************************************************************
 
 instance ItKe_LastDoorToUndeadDrgDI_MIS(C_Item)
@@ -255,7 +255,7 @@ instance ItKe_LastDoorToUndeadDrgDI_MIS(C_Item)
 };
 
 //**********************************************************************************
-//	Schriftrolle für´s Tor zum Saal des Untoten Drachen.
+//	Schriftrolle fÃƒÂ¼rÃ‚Â´s Tor zum Saal des Untoten Drachen.
 //**********************************************************************************
 
 instance ItWr_LastDoorToUndeadDrgDI_MIS(C_Item)
@@ -305,7 +305,7 @@ func void Use_ItWr_LastDoorToUndeadDrgDI_MIS()
 				Doc_PrintLine	(nDocID, 0, ItWr_LastDoorToUndeadDrgDI_MIS_3);
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, "");
-				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus
 
 	Doc_Show(nDocID);
 
@@ -313,7 +313,7 @@ func void Use_ItWr_LastDoorToUndeadDrgDI_MIS()
 };
 
 //**********************************************************************************
-//	Schlüssel zur Truhe in der Kammer des OberDementors.
+//	SchlÃƒÂ¼ssel zur Truhe in der Kammer des OberDementors.
 //**********************************************************************************
 instance ItKe_ChestMasterDementor_MIS(C_Item)
 {
@@ -453,7 +453,7 @@ func void Use_Diary_BlackNovice()
 				Doc_PrintLines	(nDocID, 0, Diary_BlackNovice_3);
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_PrintLines	(nDocID, 1, Diary_BlackNovice_4);
@@ -523,7 +523,7 @@ func void Use_ZugBruecke()
 };
 
 //**********************************************************************************
-//	ItMi_PowerEye zum öffnen der letzten Tür
+//	ItMi_PowerEye zum ÃƒÂ¶ffnen der letzten TÃƒÂ¼r
 //**********************************************************************************
 
 instance ItMi_PowerEye(C_Item)

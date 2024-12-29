@@ -34,7 +34,7 @@ instance VLK_468_Canthar(Npc_Default)
 	B_SetFightSkills(self, 50);
 
 	// -------- inventory --------
-	// CreateInvItems(self, ItWr_Passierschein, 1);wird jetzt über Dialog vergeben, damit nicht mehr im Trade auftaucht
+	// CreateInvItems(self, ItWr_Passierschein, 1);wird jetzt ÃƒÂ¼ber Dialog vergeben, damit nicht mehr im Trade auftaucht
 	CreateInvItems(self, ItMi_Gold, 50);
 
 	// -------- equipped weapons --------

@@ -146,7 +146,7 @@ func void PC_PrayShrine_End_Info()
 };
 
 //*******************************************************
-// Für das Heil der Paladine beten
+// FÃƒÂ¼r das Heil der Paladine beten
 //*******************************************************
 instance PC_PrayShrine_Paladine(C_Info)
 {

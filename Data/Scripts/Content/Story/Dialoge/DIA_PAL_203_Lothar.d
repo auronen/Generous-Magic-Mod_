@@ -654,7 +654,7 @@ func void DIA_Lothar_PermB4OV_Info()
 // 		Blubb
 // ***************
 
-func void B_Lothar_Blubb() // überflüsige Outputs
+func void B_Lothar_Blubb() // ÃƒÂ¼berflÃƒÂ¼sige Outputs
 {
 	AI_Output(other, self, "DIA_Lothar_Add_15_00"); //But I MUST see Lord Hagen!
 
@@ -672,7 +672,7 @@ func void B_Lothar_Blubb() // überflüsige Outputs
 	AI_Output(other, self, "DIA_Lothar_Add_15_66"); //Where do I find the commander of the militia?
 	AI_Output(other, self, "DIA_Lothar_Add_15_08"); //I am now an apprentice with one of the masters!
 
-	// ------ NEWS_Modul für Unterstadt ------
+	// ------ NEWS_Modul fÃƒÂ¼r Unterstadt ------
 	AI_Output(self, other, "DIA_Lothar_Add_01_47"); //You again.
 
 	AI_Output(self, other, "DIA_Lothar_Add_01_43"); //I have heard that you saw Lord Andre?

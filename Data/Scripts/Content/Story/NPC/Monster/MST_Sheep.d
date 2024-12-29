@@ -42,7 +42,7 @@ prototype Mst_Default_Sheep(C_Npc)
 	aivar[AIV_MM_FollowInWater]		= FALSE;
 
 	// -------- fight tactic --------
-	// fight_tactic = FAI_Giant_Rat;// Schafe kämpfen nicht!!
+	// fight_tactic = FAI_Giant_Rat;// Schafe kÃƒÂ¤mpfen nicht!!
 	senses = SENSE_HEAR | SENSE_SEE | SENSE_SMELL;
 	senses_range = PERC_DIST_MONSTER_ACTIVE_MAX;
 
@@ -147,7 +147,7 @@ instance Follow_Sheep(Mst_Default_Sheep)
 	B_SetVisuals_Sheep();
 
 	// -------- aivars --------
-	aivar[AIV_ToughGuy]				= TRUE; // Liesel knn getötet werden, ohne daß jemand sich anpißt!
+	aivar[AIV_ToughGuy]				= TRUE; // Liesel knn getÃƒÂ¶tet werden, ohne daÃƒÅ¸ jemand sich anpiÃƒÅ¸t!
 	aivar[AIV_MM_RoamStart]			= OnlyRoutine;
 
 	Npc_SetToFistMode(self);

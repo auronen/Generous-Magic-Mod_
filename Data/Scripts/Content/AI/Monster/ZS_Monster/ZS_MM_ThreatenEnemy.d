@@ -1,9 +1,9 @@
 // **************************************************************
 // ZS_MM_ThreatenEnemy
 // -------------------
-// geht davon aus, daß Feind INNERHALB der DrohRange
+// geht davon aus, daÃƒÅ¸ Feind INNERHALB der DrohRange
 // Monster bedrohen Feind n Sekunden (einstellbar)
-// dann greifen sie an, es sei denn der Feind hat sich verkrümelt
+// dann greifen sie an, es sei denn der Feind hat sich verkrÃƒÂ¼melt
 // **************************************************************
 
 func void ZS_MM_ThreatenEnemy()
@@ -19,7 +19,7 @@ func void ZS_MM_ThreatenEnemy()
 	AI_StandUp(self);
 
 	// ------ Warn senden ------
-	Npc_SendPassivePerc(self, PERC_ASSESSWARN, other, self); // Opfer, Täter - ruft PACKHUNTER der selben Gilde herbei --> drohen dann mit
+	Npc_SendPassivePerc(self, PERC_ASSESSWARN, other, self); // Opfer, TÃƒÂ¤ter - ruft PACKHUNTER der selben Gilde herbei --> drohen dann mit
 };
 
 func int ZS_MM_ThreatenEnemy_loop()

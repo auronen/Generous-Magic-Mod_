@@ -4,7 +4,7 @@ instance SLD_806_Sylvio(Npc_Default)
 	name							= "Sylvio";
 	npctype							= NpcType_Main;
 	guild							= GIL_SLD;
-	flags							= NPC_FLAG_IMMORTAL; // Joly:Drachenjägeranführer. Muß leben // NPC_FLAG_IMMORTAL oder 0
+	flags							= NPC_FLAG_IMMORTAL; // Joly:DrachenjÃƒÂ¤geranfÃƒÂ¼hrer. MuÃƒÅ¸ leben // NPC_FLAG_IMMORTAL oder 0
 
 	voice							= 9;
 	id								= 806;
@@ -24,7 +24,7 @@ instance SLD_806_Sylvio(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 50); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 50); // Grenzen fÃƒÂ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

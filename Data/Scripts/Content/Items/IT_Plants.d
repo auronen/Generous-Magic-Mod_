@@ -559,7 +559,7 @@ func void Use_Planeberry()
 /******************************************************************************************/
 
 //******************************************************************************************
-//		Pflanze zum brauen von temporären und permanten Tränken
+//		Pflanze zum brauen von temporÃƒÂ¤ren und permanten TrÃƒÂ¤nken
 //******************************************************************************************
 
 instance ItPl_Temp_Herb(C_Item)

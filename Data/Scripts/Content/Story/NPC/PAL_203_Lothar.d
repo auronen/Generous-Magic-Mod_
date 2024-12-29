@@ -4,7 +4,7 @@ instance Pal_203_Lothar(Npc_Default)
 	name							= "Lothar";
 	npctype							= NpcType_Main;
 	guild							= GIL_PAL;
-	flags							= NPC_FLAG_IMMORTAL; // Bitte nicht ändern er stirbt zum 3. Kapitel
+	flags							= NPC_FLAG_IMMORTAL; // Bitte nicht ÃƒÂ¤ndern er stirbt zum 3. Kapitel
 
 	voice							= 1;
 	id								= 203;

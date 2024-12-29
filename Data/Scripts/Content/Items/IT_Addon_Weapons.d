@@ -4,7 +4,7 @@
 
 Magierstab rot, blau, gold
 Zweihandkeule, Einhandkeule(Holz, Stein)
-Steinhammer(Maya TX) klein(einhand), groß(zweihand)
+Steinhammer(Maya TX) klein(einhand), groÃƒÅ¸(zweihand)
 
 Sichelstab(Zweihand, Stab mit Sichelklinge)
 
@@ -19,9 +19,9 @@ ItMW_Addon_Stab04 // Sichelstab, Ulthar's Stab ab KAP1 Klosterkauf
 ItMW_Addon_Stab05 // Goldener Zauberstab ab KAP1 Klosterkauf
 
 ItMW_Addon_Hacker_1h_01 // Machete ab KAP1 zu kaufen +3
-ItMW_Addon_Hacker_2h_01 // Große Machete ab KAP1 zu kaufen +3
+ItMW_Addon_Hacker_2h_01 // GroÃƒÅ¸e Machete ab KAP1 zu kaufen +3
 ItMW_Addon_Keule_1h_01 // Keule, Windknecht finden ab kap 1
-ItMW_Addon_Keule_2h_01 // Große Keule, Sturmknecht finden in Addonworld
+ItMW_Addon_Keule_2h_01 // GroÃƒÅ¸e Keule, Sturmknecht finden in Addonworld
 
 */
 
@@ -435,7 +435,7 @@ instance ItMW_Addon_Keule_2h_01(C_Item) // Sturmknecht 2h Holzkeule
 	range						= RANGE_Sturmknecht;
 
 	on_equip					= UnEquip_2H_10; // MALUS WAFFE MUSS umgekehrt sein.
-	on_unequip					= Equip_2H_10; // erhöhen
+	on_unequip					= Equip_2H_10; // erhÃƒÂ¶hen
 
 	value						= Value_Sturmknecht;
 

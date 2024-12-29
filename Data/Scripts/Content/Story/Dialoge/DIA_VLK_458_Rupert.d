@@ -178,7 +178,7 @@ func void DIA_Rupert_WoMatteo_Info()
 };
 
 // ***************************************************************
-//							Wer hat Einfluß
+//							Wer hat EinfluÃƒÅ¸
 // ***************************************************************
 instance DIA_Rupert_WerEinfluss(C_INFO)
 {
@@ -332,7 +332,7 @@ func void DIA_Rupert_Bauernaufstand_Info()
 };
 
 // ***************************************************************
-//							Söldner
+//							SÃƒÂ¶ldner
 // ***************************************************************
 instance DIA_Rupert_Mercs(C_INFO)
 {

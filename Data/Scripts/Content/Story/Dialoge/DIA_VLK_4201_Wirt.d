@@ -110,6 +110,6 @@ func void DIA_Wirt_Hallo_Info()
 };
 
 /*
-Wenn du ein Problem hast und es lässt sich lösen, dann denk nicht weiter drüber nach.
-Und wenn du es nicht lösen kannst, dann brauchst du auch nicht weiter drüber nachzudenken.
+Wenn du ein Problem hast und es lÃƒÂ¤sst sich lÃƒÂ¶sen, dann denk nicht weiter drÃƒÂ¼ber nach.
+Und wenn du es nicht lÃƒÂ¶sen kannst, dann brauchst du auch nicht weiter drÃƒÂ¼ber nachzudenken.
 */

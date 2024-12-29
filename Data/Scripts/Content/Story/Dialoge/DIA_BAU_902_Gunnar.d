@@ -102,7 +102,7 @@ func void DIA_Gunnar_Everywhere_Info()
 };
 
 // ************************************************************
-// 			  			Aud dem Süden
+// 			  			Aud dem SÃƒÂ¼den
 // ************************************************************
 instance DIA_Gunnar_South(C_INFO)
 {

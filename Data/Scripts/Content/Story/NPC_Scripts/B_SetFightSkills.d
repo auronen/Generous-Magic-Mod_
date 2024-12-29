@@ -1,7 +1,7 @@
 // ************************************************************
 // B_SetFightSkills
 // ----------------
-// B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance%
+// B_AddFightSkill setzt Talent-Ani abhÃƒÂ¤ngig von TrefferChance%
 // ************************************************************
 
 func void B_SetFightSkills(var C_Npc slf, var int percent)

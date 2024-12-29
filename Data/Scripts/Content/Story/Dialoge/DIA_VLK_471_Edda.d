@@ -102,7 +102,7 @@ func void DIA_Edda_Kochen_Info()
 };
 
 // ************************************************************
-// 		tägliche Suppe abholen
+// 		tÃƒÂ¤gliche Suppe abholen
 // ************************************************************
 instance DIA_Edda_Suppe(C_INFO)
 {

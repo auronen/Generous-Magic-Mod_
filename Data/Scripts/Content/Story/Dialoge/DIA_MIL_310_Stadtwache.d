@@ -102,7 +102,7 @@ func void DIA_Mil_310_Stadtwache_FirstWarn_Info()
 	{
 		var C_Item itm; itm = Npc_GetEquippedArmor(other);
 
-		// ------ ohne Rüstung ------
+		// ------ ohne RÃƒÂ¼stung ------
 		if ((Npc_HasEquippedArmor(other) == FALSE)
 		&& (hero.guild == GIL_NONE))
 		{
@@ -135,7 +135,7 @@ func void DIA_Mil_310_Stadtwache_FirstWarn_Info()
 			};
 		}
 
-		// ------ alle anderen Rüstungen ------
+		// ------ alle anderen RÃƒÂ¼stungen ------
 		else
 		{
 			AI_Output(other, self, "DIA_Mil_310_Stadtwache_FirstWarn_15_18"); //(calmly) What?
@@ -272,7 +272,7 @@ func void DIA_Mil_310_Stadtwache_Bribe_Info()
 		Mil_310_schonmalreingelassen = TRUE;
 		B_CheckLog();
 
-		// ------ wenn bezahlt, persönliche Absolution erteilen -------
+		// ------ wenn bezahlt, persÃƒÂ¶nliche Absolution erteilen -------
 		MIL_310_Personal_AbsolutionLevel = B_GetCurrentAbsolutionLevel(self) + 1;
 	}
 	else // nicht genug Gold
@@ -309,7 +309,7 @@ func void DIA_Mil_310_Stadtwache_Passierschein_Info()
 {
 	AI_Output(other, self, "DIA_Mil_310_Stadtwache_Passierschein_15_00"); //I've got a pass!
 
-	if (Npc_HasEquippedArmor(other) == FALSE) // ohne Rüstung
+	if (Npc_HasEquippedArmor(other) == FALSE) // ohne RÃƒÂ¼stung
 	{
 		AI_Output(self, other, "DIA_Mil_310_Stadtwache_Passierschein_07_01"); //Really? And who did you kill for that, you cut-throat?
 		AI_Output(other, self, "DIA_Mil_310_Stadtwache_Passierschein_15_02"); //Now will you let me pass, or not?
@@ -379,7 +379,7 @@ func void DIA_Mil_310_Stadtwache_ZumSchmied_Info()
 };
 
 // ************************************************************
-// 				Planzen für Constantino
+// 				Planzen fÃƒÂ¼r Constantino
 // ************************************************************
 instance DIA_Addon_Mil_310_Stadtwache_Constantino(C_INFO)
 {
@@ -492,7 +492,7 @@ func void DIA_Mil_310_Stadtwache_MilizWerden_Info()
 };
 
 // ************************************************************
-// 				Wichtige Nachricht für Paladine
+// 				Wichtige Nachricht fÃƒÂ¼r Paladine
 // ************************************************************
 instance DIA_Mil_310_Stadtwache_Paladine(C_INFO)
 {

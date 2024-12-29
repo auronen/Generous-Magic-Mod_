@@ -131,7 +131,7 @@ func void DIA_Addon_Malcom_WasMachen_Info()
 };
 
 // ************************************************************
-// 					Holz - Nachricht für Henry
+// 					Holz - Nachricht fÃƒÂ¼r Henry
 // ************************************************************
 instance DIA_Addon_Malcom_Entertrupp(C_INFO)
 {

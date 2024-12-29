@@ -22,7 +22,7 @@ func void DIA_Angar_NW_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  	  Ich habe alle Drachen getötet. (Perm Kap 5)
+// 	  	  Ich habe alle Drachen getÃƒÂ¶tet. (Perm Kap 5)
 // ************************************************************
 instance DIA_Angar_NW_AllDragonsDead(C_INFO)
 {
@@ -158,7 +158,7 @@ func void DIA_Angar_NW_LeaveMyShip_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir ÃƒÂ¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Angar_NW_StillNeedYou(C_INFO)
 {

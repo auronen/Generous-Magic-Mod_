@@ -17,7 +17,7 @@ const int SPL_Heal_LightHeal = 200;
 const int SPL_Heal_MediumHeal = 400;
 const int SPL_Heal_FullHeal = 800;
 
-// ------ Instanz für alle normalen Heal-Sprüche ------
+// ------ Instanz fÃƒÂ¼r alle normalen Heal-SprÃƒÂ¼che ------
 instance Spell_Heal(C_Spell_Proto)
 {
 	time_per_mana = 0;
@@ -26,7 +26,7 @@ instance Spell_Heal(C_Spell_Proto)
 	canTurnDuringInvest = 0;
 };
 
-// ------ Instanz für alle Paladin Heal-Sprüche ------
+// ------ Instanz fÃƒÂ¼r alle Paladin Heal-SprÃƒÂ¼che ------
 instance Spell_PalHeal(C_Spell_Proto)
 {
 	time_per_mana = 0;

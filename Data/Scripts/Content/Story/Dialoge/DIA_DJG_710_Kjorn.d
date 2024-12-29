@@ -101,7 +101,7 @@ func void DIA_Kjorn_SellInfos_Info()
 };
 
 //*********************************************************************
-//	Ich brauche Infos über..
+//	Ich brauche Infos ÃƒÂ¼ber..
 //*********************************************************************
 instance DIA_Kjorn_BuyInfos(C_INFO)
 {
@@ -151,7 +151,7 @@ func void DIA_Kjorn_BuyInfos_GiveMoney()
 
 	Info_ClearChoices(DIA_Kjorn_BuyInfos);
 
-	// ----- Zurück -----
+	// ----- ZurÃƒÂ¼ck -----
 
 	Info_AddChoice(DIA_Kjorn_BuyInfos, DIALOG_BACK, DIA_Kjorn_BuyInfos_Back);
 
@@ -196,7 +196,7 @@ func void DIA_Kjorn_BuyInfos_GiveMoney()
 	};
 };
 
-// ------ Zurück -----
+// ------ ZurÃƒÂ¼ck -----
 
 func void DIA_Kjorn_BuyInfos_Back()
 {

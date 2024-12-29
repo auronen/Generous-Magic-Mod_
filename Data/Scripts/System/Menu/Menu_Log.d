@@ -26,7 +26,7 @@ instance MENU_LOG(C_MENU_DEF)
 };
 
 //
-// Menüpunkte
+// MenÃƒÂ¼punkte
 //
 
 const int LOG_ITEM_X1 	= 1200;

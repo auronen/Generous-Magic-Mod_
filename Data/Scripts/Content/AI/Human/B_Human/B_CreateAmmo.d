@@ -21,7 +21,7 @@ func void B_CreateAmmo(var C_Npc slf)
 		return;
 	};
 
-	// ------ Munition auffüllen ------
+	// ------ Munition auffÃƒÂ¼llen ------
 	if (rangedWeapon.munition == ItRw_Arrow)
 	{
 		if (Npc_HasItems(slf, ItRw_Arrow) < 10)

@@ -183,7 +183,7 @@ func void DIA_Addon_Bones_Teacher_Info()
 };
 
 // ************************************************************
-// 			  			Was weißt du über Francis?
+// 			  			Was weiÃƒÅ¸t du ÃƒÂ¼ber Francis?
 // ************************************************************
 instance DIA_Addon_Bones_Francis(C_INFO)
 {
@@ -250,7 +250,7 @@ func void DIA_Addon_Bones_WantArmor_Info()
 };
 
 //*********************************************************
-//	Du sollst mir die Rüstung geben.
+//	Du sollst mir die RÃƒÂ¼stung geben.
 //*********************************************************
 instance DIA_Addon_Bones_GiveArmor(C_INFO)
 {

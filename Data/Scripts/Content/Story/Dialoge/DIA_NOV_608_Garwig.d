@@ -303,7 +303,7 @@ func void DIA_Garwig_THIEF_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Hammer zurückbringen (immer wenn Spieler den Hammer hat)
+//	Info Hammer zurÃƒÂ¼ckbringen (immer wenn Spieler den Hammer hat)
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Garwig_Abgeben(C_INFO)
 {

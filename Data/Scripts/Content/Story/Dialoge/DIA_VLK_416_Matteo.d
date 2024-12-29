@@ -699,7 +699,7 @@ func void DIA_Matteo_WarumNichtBeiDir_Info()
 };
 
 // ************************************************************
-// 			  				Andere Möglichkeie E5
+// 			  				Andere MÃƒÂ¶glichkeie E5
 // ************************************************************
 instance DIA_Matteo_OtherWay(C_INFO)
 {

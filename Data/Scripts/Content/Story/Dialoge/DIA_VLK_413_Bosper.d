@@ -624,7 +624,7 @@ func void DIA_Bosper_Trade_Info()
 };
 
 // **************************************************************
-// 						Von Bogen gehört
+// 						Von Bogen gehÃƒÂ¶rt
 // **************************************************************
 instance DIA_Bosper_BogenRunning(C_INFO)
 {

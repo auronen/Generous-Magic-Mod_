@@ -16,7 +16,7 @@ func void B_PrintTeleportTooFarAway(var int Level)
 	};
 };
 
-// ------ Instanz für alle Teleport-Spells ------
+// ------ Instanz fÃƒÂ¼r alle Teleport-Spells ------
 instance Spell_Teleport(C_Spell_Proto)
 {
 	time_per_mana = 0;
@@ -284,7 +284,7 @@ func void Spell_Cast_TeleportOC()
 	AI_PlayAni(self, "T_HEASHOOT_2_STAND");
 };
 
-// ------ in den OW Dämonentower ------
+// ------ in den OW DÃƒÂ¤monentower ------
 func int Spell_Logic_TeleportOWDemonTower(var int manaInvested)
 {
 	if (Npc_GetActiveSpellIsScroll(self) && (self.attribute[ATR_MANA] >= SPL_Cost_Scroll))
@@ -348,7 +348,7 @@ func void Spell_Cast_TeleportTaverne()
 	AI_PlayAni(self, "T_HEASHOOT_2_STAND");
 };
 
-// ----- neu 1.21 Verteiler für die Cast-Funcs -------
+// ----- neu 1.21 Verteiler fÃƒÂ¼r die Cast-Funcs -------
 func void Spell_Cast_Teleport()
 {
 	if (Npc_GetActiveSpell(self) == SPL_PalTeleportSecret) { Spell_Cast_PalTeleportSecret(); };

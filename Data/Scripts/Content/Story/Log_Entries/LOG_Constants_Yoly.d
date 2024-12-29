@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃƒÂ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -267,7 +267,7 @@ const string TOPIC_Addon_VatrasAbloesung		= "Relief for Vatras";
 const string TOPIC_Addon_VatrasAbloesung_1		= "Vatras cannot help me solve my problem with the 'Eye of Innos' as long as there isn't another Water Mage to take over his task in the city.";
 const string TOPIC_Addon_VatrasAbloesung_2		= "Myxir has been sent to support Vatras in the seaport.";
 
-// ******** Texte, die in alte Topics gepackt werden müssen *************
+// ******** Texte, die in alte Topics gepackt werden mÃƒÂ¼ssen *************
 
 const string LogText_Addon_SCKnowsMisspeapl		= "Many citizens of Khorinis are missing. Nobody seems to know what became of them.";
 const string LogText_Addon_WilliamLeiche		= "The body of a fisherman lies in the ruins east of the Water Mages' camp.";

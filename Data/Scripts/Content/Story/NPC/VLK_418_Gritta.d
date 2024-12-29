@@ -33,7 +33,7 @@ instance VLK_418_Gritta(Npc_Default)
 
 	// -------- inventory --------
 	// KEIN AmbientInv!!!
-	CreateInvItems(self, ItMi_Gold, 100); // für die Matteo Mission
+	CreateInvItems(self, ItMi_Gold, 100); // fÃƒÂ¼r die Matteo Mission
 
 	// -------- daily routine --------
 	daily_routine = Rtn_Start_418;

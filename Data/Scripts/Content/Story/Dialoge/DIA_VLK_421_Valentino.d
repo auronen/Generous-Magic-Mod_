@@ -115,7 +115,7 @@ func int DIA_Valentino_Manieren_Condition()
 func void DIA_Valentino_Manieren_Info()
 {
 	AI_Output(other, self, "DIA_Valentino_Add_15_02"); //Looks like I'm going to have to teach you some manners!
-	// AI_Output(other, self, "DIA_Valentino_HALLO_klappe_15_00"); // Für deine dünnen Ärmchen hast du 'ne ganz schön große Klappe!
+	// AI_Output(other, self, "DIA_Valentino_HALLO_klappe_15_00"); // FÃƒÂ¼r deine dÃƒÂ¼nnen Ãƒâ€žrmchen hast du 'ne ganz schÃƒÂ¶n groÃƒÅ¸e Klappe!
 	AI_Output(self, other, "DIA_Valentino_HALLO_klappe_03_01"); //Doesn't matter to me! Thrash me all you want. When I get up tomorrow, I'll be fine again.
 	AI_Output(self, other, "DIA_Valentino_HALLO_klappe_03_02"); //But you'll have to run around with that mug of yours for life.
 };
@@ -148,7 +148,7 @@ func int DIA_Valentino_WASNUETZLICHES_Condition()
 func void DIA_Valentino_WASNUETZLICHES_Info()
 {
 	AI_Output(other, self, "DIA_Valentino_Add_15_03"); //(calmly) Do you have anything else to tell me?
-	// AI_Output(other, self, "DIA_Valentino_WASNUETZLICHES_15_00"); // Kannst du mir was Nützliches über die Stadt erzählen?
+	// AI_Output(other, self, "DIA_Valentino_WASNUETZLICHES_15_00"); // Kannst du mir was NÃƒÂ¼tzliches ÃƒÂ¼ber die Stadt erzÃƒÂ¤hlen?
 
 	if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{

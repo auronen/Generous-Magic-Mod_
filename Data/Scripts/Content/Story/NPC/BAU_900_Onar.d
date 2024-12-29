@@ -24,7 +24,7 @@ instance BAU_900_Onar(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 70); // Grenzen für Talent-Level liegen bei 30 und 60i
+	B_SetFightSkills(self, 70); // Grenzen fÃƒÂ¼r Talent-Level liegen bei 30 und 60i
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

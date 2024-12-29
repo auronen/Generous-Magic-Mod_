@@ -118,7 +118,7 @@ func void DIA_Pablo_WANTED_NOTHING()
 {
 	AI_Output(other, self, "DIA_Pablo_WANTED_NOTHING_15_00"); //No, you've got to be mistaken. Everything's fine with me ...
 	AI_Output(self, other, "DIA_Pablo_WANTED_NOTHING_12_01"); //Whatever you say, stranger.
-	// AI_Output(self, other, "DIA_Pablo_WANTED_NOTHING_12_02"); // Aber wenn du Probleme hast - dann lass sie außerhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
+	// AI_Output(self, other, "DIA_Pablo_WANTED_NOTHING_12_02"); // Aber wenn du Probleme hast - dann lass sie auÃƒÅ¸erhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
 	AI_Output(self, other, "DIA_Pablo_Add_12_00"); //But if that happens to be YOUR mug after all - and if you have some problems - keep them outside of this town. Things are difficult enough here as it is.
 	AI_Output(self, other, "DIA_Pablo_WANTED_NOTHING_12_03"); //And strangers who bring trouble into the city don't stay here long - I hope I make myself clear.
 	Pablo_belogen = TRUE;
@@ -134,7 +134,7 @@ func void DIA_Pablo_WANTED_IRONY()
 	AI_Output(other, self, "DIA_Pablo_Add_15_01"); //Ask them yourself. You've got them safely locked up, haven't you?
 	AI_Output(self, other, "DIA_Pablo_WANTED_IRONY_12_03"); //No - they're dead.
 	AI_Output(other, self, "DIA_Pablo_WANTED_IRONY_15_04"); //I guess we'll never know, then.
-	// AI_Output(self, other, "DIA_Pablo_WANTED_IRONY_12_05"); // Nun, wenn du in Schwierigkeiten steckst, dann sprich mal mit Lord Andre. Den Wisch kannst du behalten. Schönen Tag noch.
+	// AI_Output(self, other, "DIA_Pablo_WANTED_IRONY_12_05"); // Nun, wenn du in Schwierigkeiten steckst, dann sprich mal mit Lord Andre. Den Wisch kannst du behalten. SchÃƒÂ¶nen Tag noch.
 	AI_Output(self, other, "DIA_Pablo_Add_12_02"); //If you're in some kind of trouble - go talk to Lord Andre. Maybe he can help you. You'll find him in the barracks.
 
 	AI_StopProcessInfos(self);
@@ -160,7 +160,7 @@ func int DIA_Pablo_Banditen_Condition()
 func void DIA_Pablo_Banditen_Info()
 {
 	AI_Output(other, self, "DIA_Pablo_Add_15_03"); //What do you know about the bandits?
-	// AI_Output(other, self, "DIA_Pablo_Banditen_15_00"); // Was weißt du über die Banditen, die vor der Stadt ihr Unwesen treiben?
+	// AI_Output(other, self, "DIA_Pablo_Banditen_15_00"); // Was weiÃƒÅ¸t du ÃƒÂ¼ber die Banditen, die vor der Stadt ihr Unwesen treiben?
 	AI_Output(self, other, "DIA_Pablo_Add_12_04"); //They've all come from that blasted mining colony. But there are several splinter groups.
 	AI_Output(self, other, "DIA_Pablo_Add_12_05"); //Some have holed up in the mountains, and others have joined up with Onar, the landowner.
 	AI_Output(self, other, "DIA_Pablo_Add_12_06"); //But it's the bandits outside of town who cause the most problems.

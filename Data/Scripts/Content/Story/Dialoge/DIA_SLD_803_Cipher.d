@@ -223,7 +223,7 @@ func void DIA_Cipher_Joints_Info()
 			B_LogEntry(TOPIC_SLDRespekt, TOPIC_SLDRespekt_4);
 		};
 
-		MIS_Cipher_BringWeed = LOG_OBSOLETE; // Cipher ist glücklich
+		MIS_Cipher_BringWeed = LOG_OBSOLETE; // Cipher ist glÃƒÂ¼cklich
 	}
 	else // normal Running
 	{

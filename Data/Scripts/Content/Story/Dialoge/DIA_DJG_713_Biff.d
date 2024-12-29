@@ -8,7 +8,7 @@ func void B_BIFF_VERARSCHEN()
 	AI_Output(self, other, "DIA_Biff_ARBEITEN_lebenlassen_07_01"); //I don't need you to make a fool out of myself.
 };
 
-func void B_BiffsAnteil_Berechnung() // Joly: Wieviel Kohle muß der SC Biff nun geben:
+func void B_BiffsAnteil_Berechnung() // Joly: Wieviel Kohle muÃƒÅ¸ der SC Biff nun geben:
 {
 	var int momentanKohle;
 	var int UeberschussKohle;
@@ -28,7 +28,7 @@ func void B_BiffsAnteil_PrintScreen()
 	AI_PrintScreen(BiffsAnteilText, -1, 45, FONT_ScreenSmall, 4);
 };
 
-func void B_Biff_SetRefuseTalk() // Joly: Biffs Geld eintreiberei kommt beim HalbeHalbe Deal nicht so häufig.
+func void B_Biff_SetRefuseTalk() // Joly: Biffs Geld eintreiberei kommt beim HalbeHalbe Deal nicht so hÃƒÂ¤ufig.
 {
 	if (DJG_Biff_HalbeHalbe == TRUE)
 	{
@@ -312,7 +312,7 @@ func int DIA_Biff_GELDEINTREIBEN_Condition()
 	if ((DJG_Biff_SCGold < Npc_HasItems(hero, ItMi_Gold) - 1)
 	&& ((Npc_GetBodyState(hero)) != BS_INVENTORY) // Joly: wegen Truhen
 	&& ((Npc_GetBodyState(hero)) != BS_MOBINTERACT_INTERRUPT)
-	&& (((Npc_GetBodyState(hero)) != BS_STAND) || (BIFF_LABERT_GELDEINTREIBEN == TRUE)) // Joly: wegen Plündern von NSC-Invs
+	&& (((Npc_GetBodyState(hero)) != BS_STAND) || (BIFF_LABERT_GELDEINTREIBEN == TRUE)) // Joly: wegen PlÃƒÂ¼ndern von NSC-Invs
 	&& (((Npc_GetBodyState(hero)) != BS_ITEMINTERACT) || (BIFF_LABERT_GELDEINTREIBEN == TRUE)) // Joly: wegen Geldbeutel
 	&& (DJG_Biff_HalbeHalbe == TRUE)
 	&& (DJG_BiffParty == TRUE)
@@ -395,7 +395,7 @@ func int DIA_Biff_ICHBLEIBHIER_Condition()
 	&& (
 	(
 	(
-	// Joly: Biff stört nicht das Drachengespräch!
+	// Joly: Biff stÃƒÂ¶rt nicht das DrachengesprÃƒÂ¤ch!
 	((Npc_GetDistToWP(self, "OW_SWAMPDRAGON_01") < 4000) && (Npc_IsDead(SwampDragon) == FALSE) && (SwampDragon.flags != 0))
 	|| ((Npc_GetDistToWP(self, "LOCATION_19_03_PATH_RUIN8") < 2000) && (Npc_IsDead(RockDragon) == FALSE) && (RockDragon.flags != 0))
 	|| ((Npc_GetDistToWP(self, "CASTLE_36") < 4000) && (Npc_IsDead(FireDragon) == FALSE) && (FireDragon.flags != 0))
@@ -840,7 +840,7 @@ func void DIA_Biff_KnowWhereEnemy_No()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Gleich geht´s los
+//	Gleich gehtÃ‚Â´s los
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Biff_Pass(C_INFO)
 {

@@ -37,11 +37,11 @@ func void DIA_Fajeth_EXIT_Info()
 };
 
 /*
-Seit einiger Zeit suchen wir in diesem verfluchten Gebiet eine Stelle, die noch erzhaltiges Gestein enthält,
-nicht ständig von Orkpatroullien heimgesucht wird, wo die dauernden Drachenangriffe ausbleiben !
-Wir sind völlig verdreckt und ausgehungert, haben unzählige Kämpfe ausgetragen
-und haben endlich hier den Funken einer Hoffnung gefunden bei diesem dreckigen Loch in der Erde dort drüben unseren praktisch unmöglichen Auftrag zu erledigen.
-Und da kommt einer wie du daher und besitzt die Frechheit uns zu sagen, wir seien überfällig !Entweder bist du völlig verrückt oder einfach nur unverschämt !
+Seit einiger Zeit suchen wir in diesem verfluchten Gebiet eine Stelle, die noch erzhaltiges Gestein enthÃƒÂ¤lt,
+nicht stÃƒÂ¤ndig von Orkpatroullien heimgesucht wird, wo die dauernden Drachenangriffe ausbleiben !
+Wir sind vÃƒÂ¶llig verdreckt und ausgehungert, haben unzÃƒÂ¤hlige KÃƒÂ¤mpfe ausgetragen
+und haben endlich hier den Funken einer Hoffnung gefunden bei diesem dreckigen Loch in der Erde dort drÃƒÂ¼ben unseren praktisch unmÃƒÂ¶glichen Auftrag zu erledigen.
+Und da kommt einer wie du daher und besitzt die Frechheit uns zu sagen, wir seien ÃƒÂ¼berfÃƒÂ¤llig !Entweder bist du vÃƒÂ¶llig verrÃƒÂ¼ckt oder einfach nur unverschÃƒÂ¤mt !
 */
 ///////////////////////////////////////////////////////////////////////
 //	Info First
@@ -375,7 +375,7 @@ func void DIA_Fajeth_Perm2_Info()
 // #####################################################################
 // ##
 // ##
-// ## KAPITEL 3 und höher
+// ## KAPITEL 3 und hÃƒÂ¶her
 // ##
 // ##
 // #####################################################################

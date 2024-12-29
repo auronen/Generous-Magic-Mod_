@@ -929,7 +929,7 @@ instance DragonIsle_Keymaster(Default_AmbientDementor)
 	// -------- fighting skills --------
 
 	// -------- inventory --------
-	CreateInvItem(self, ItKe_EVT_UNDEAD_02); // der Schlüssel ist wichtig für die Türen zu den Zuggittern
+	CreateInvItem(self, ItKe_EVT_UNDEAD_02); // der SchlÃƒÂ¼ssel ist wichtig fÃƒÂ¼r die TÃƒÂ¼ren zu den Zuggittern
 
 	// -------- daily routine --------
 	start_aistate = ZS_Stand_Dementor;

@@ -1,5 +1,5 @@
 //****************************************************************************
-//			Schlüssel für Xardas Truhe
+//			SchlÃƒÂ¼ssel fÃƒÂ¼r Xardas Truhe
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Xardas(C_Item)
@@ -22,7 +22,7 @@ instance ItKe_Xardas(C_Item)
 };
 
 //**********************************************************************************
-//	Canthars Kompromittierender Brief für Sarah die Händlerin
+//	Canthars Kompromittierender Brief fÃƒÂ¼r Sarah die HÃƒÂ¤ndlerin
 // ----------------------------------------------------------------------------------
 
 instance ItWr_Canthars_KomproBrief_MIS(C_Item)
@@ -147,7 +147,7 @@ instance ItMi_CoragonsSilber(C_Item)
 };
 
 //*******************************
-// Päckchen für Thekla von Sagitta
+// PÃƒÂ¤ckchen fÃƒÂ¼r Thekla von Sagitta
 //*******************************
 instance ItMi_TheklasPaket(C_Item)
 {
@@ -255,7 +255,7 @@ func void UnEquip_ValentinosRing()
 };
 
 //****************************************************************************
-//			Schlüssel für Dexter Truhe
+//			SchlÃƒÂ¼ssel fÃƒÂ¼r Dexter Truhe
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Dexter(C_Item)
@@ -278,7 +278,7 @@ instance ItKe_Dexter(C_Item)
 };
 
 //**********************************************************************************
-//	Constantinos Kräuterliste
+//	Constantinos KrÃƒÂ¤uterliste
 // ----------------------------------------------------------------------------------
 
 instance ItWr_Kraeuterliste(C_Item)
@@ -347,7 +347,7 @@ func void Use_Kraeuterliste()
 				Doc_PrintLines	(nDocID, 0, Kraeuterliste_13);
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, Kraeuterliste_14);
-				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus
 
 	Doc_Show(nDocID);
 };
@@ -410,7 +410,7 @@ func void Use_ManaRezept()
 				Doc_PrintLine	(nDocID, 0, ManaRezept_7);
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, ManaRezept_8);
-				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus
 
 	Doc_Show(nDocID);
 };
@@ -479,7 +479,7 @@ func void UsePassierschein()
 };
 
 //****************************************************************************
-//				Kraut Paket für MIS_ANDRE_WAREHOUSE
+//				Kraut Paket fÃƒÂ¼r MIS_ANDRE_WAREHOUSE
 //			---------------------------------------------
 //****************************************************************************
 instance ItMi_HerbPaket(C_Item)
@@ -504,7 +504,7 @@ instance ItMi_HerbPaket(C_Item)
 };
 
 //****************************************************************************
-//				Lagerhaus Schlüssel für MIS_ANDRE_WAREHOUSE
+//				Lagerhaus SchlÃƒÂ¼ssel fÃƒÂ¼r MIS_ANDRE_WAREHOUSE
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Storage(C_Item)
@@ -778,7 +778,7 @@ func void UseVatrasMessage()
 
 //****************************************************************************
 //				Botschaft von Vatras an die Magier des Feuers
-//				Das Siegel wurde geöffnet
+//				Das Siegel wurde geÃƒÂ¶ffnet
 //			---------------------------------------------
 //****************************************************************************
 instance ItWr_VatrasMessage_Open(C_Item)
@@ -831,7 +831,7 @@ func void UseVatrasMessageOpen()
 };
 
 //****************************************************
-//		Hotelschlüssel
+//		HotelschlÃƒÂ¼ssel
 //****************************************************
 instance ItKe_Hotel(C_Item)
 {
@@ -853,7 +853,7 @@ instance ItKe_Hotel(C_Item)
 };
 
 //****************************************************
-//		Schlüssel zur Diebesgilde
+//		SchlÃƒÂ¼ssel zur Diebesgilde
 //****************************************************
 instance ItKe_ThiefGuildKey_MIS(C_Item)
 {
@@ -874,7 +874,7 @@ instance ItKe_ThiefGuildKey_MIS(C_Item)
 };
 
 //****************************************************
-//		Schlüssel zur Diebesgilde vom Hotel
+//		SchlÃƒÂ¼ssel zur Diebesgilde vom Hotel
 //****************************************************
 instance ItKe_ThiefGuildKey_Hotel_MIS(C_Item)
 {
@@ -895,7 +895,7 @@ instance ItKe_ThiefGuildKey_Hotel_MIS(C_Item)
 };
 
 //****************************************************
-//		Pfortenschlüssel Tempel von Innos
+//		PfortenschlÃƒÂ¼ssel Tempel von Innos
 //****************************************************
 instance ItKe_Innos_MIS(C_Item)
 {
@@ -917,7 +917,7 @@ instance ItKe_Innos_MIS(C_Item)
 };
 
 //****************************************************************************
-//			Schlüssel Vorratskammer Kloster
+//			SchlÃƒÂ¼ssel Vorratskammer Kloster
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_KlosterSchatz(C_Item)
@@ -940,7 +940,7 @@ instance ItKe_KlosterSchatz(C_Item)
 };
 
 //****************************************************************************
-//			Schlüssel Vorratskammer Kloster
+//			SchlÃƒÂ¼ssel Vorratskammer Kloster
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_KlosterStore(C_Item)
@@ -963,7 +963,7 @@ instance ItKe_KlosterStore(C_Item)
 };
 
 //****************************************************************************
-//			Schlüssel Schlafgemach Player
+//			SchlÃƒÂ¼ssel Schlafgemach Player
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_KDFPlayer(C_Item)
@@ -986,7 +986,7 @@ instance ItKe_KDFPlayer(C_Item)
 };
 
 //****************************************************************************
-//			Schlüssel Bibliothek Kloster
+//			SchlÃƒÂ¼ssel Bibliothek Kloster
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_KlosterBibliothek(C_Item)
@@ -1076,7 +1076,7 @@ func void UseItPo_LittleMana()
 };
 
 //****************************************************
-//		Hammer Innos, für Golem Prüfung
+//		Hammer Innos, fÃƒÂ¼r Golem PrÃƒÂ¼fung
 //****************************************************
 instance Holy_Hammer_MIS(C_Item)
 {
@@ -1118,7 +1118,7 @@ instance Holy_Hammer_MIS(C_Item)
 };
 
 //****************************************************************************
-//			Schlüssel für die Truhe in der Magierhöhle
+//			SchlÃƒÂ¼ssel fÃƒÂ¼r die Truhe in der MagierhÃƒÂ¶hle
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_MagicChest(C_Item)
@@ -1142,7 +1142,7 @@ instance ItKe_MagicChest(C_Item)
 };
 
 //****************************************************************************
-//			gefälschter Passierschein von Lee
+//			gefÃƒÂ¤lschter Passierschein von Lee
 //			---------------------------------------------
 //****************************************************************************
 instance ItWr_Passage_MIS(C_Item)
@@ -1197,7 +1197,7 @@ func void UsePassage()
 				Doc_PrintLines	(nDocID, 0, Passage_7);
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, Passage_8);
-				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+				Doc_SetMargins(nDocID, -1, 200, 50, 50, 50, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus
 
 	Doc_Show(nDocID);
 };
@@ -1256,7 +1256,7 @@ func void UseBanditLetter()
 
 		Log_CreateTopic(Topic_Bandits, LOG_MISSION);
 		Log_SetTopicStatus(Topic_Bandits, LOG_RUNNING);
-		B_LogEntry(Topic_Bandits, "Der Anführer der Banditen ist Dexter. Er versteckt sich bei einer Mine, beim Großbauer.");
+		B_LogEntry(Topic_Bandits, "Der AnfÃƒÂ¼hrer der Banditen ist Dexter. Er versteckt sich bei einer Mine, beim GroÃƒÅ¸bauer.");
 		MIS_Steckbriefe = LOG_RUNNING;
 	};
 
@@ -1329,7 +1329,7 @@ func void UsePoster()
 };
 
 //****************************************************************************
-//				Banditen Truhen Schlüssel
+//				Banditen Truhen SchlÃƒÂ¼ssel
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Bandit(C_Item)
@@ -1455,7 +1455,7 @@ instance ItMi_EddasStatue(C_Item)
 };
 
 //****************************************************************************
-//				Crypta-Schlüssel
+//				Crypta-SchlÃƒÂ¼ssel
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_EVT_CRYPT_01(C_Item)
@@ -1546,7 +1546,7 @@ instance ITAR_PAL_SKEL(C_Item)
 };
 
 //****************************************************************************
-//				Schlüssel zu Valentinos Truhe
+//				SchlÃƒÂ¼ssel zu Valentinos Truhe
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Valentino(C_Item)
@@ -1569,7 +1569,7 @@ instance ItKe_Valentino(C_Item)
 };
 
 //****************************************************************************
-//				Schlüssel zur Truhe OV Noname Typen
+//				SchlÃƒÂ¼ssel zur Truhe OV Noname Typen
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Buerger(C_Item)
@@ -1592,7 +1592,7 @@ instance ItKe_Buerger(C_Item)
 };
 
 //****************************************************************************
-//				Schlüssel Richter Truhe
+//				SchlÃƒÂ¼ssel Richter Truhe
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Richter(C_Item)
@@ -1615,7 +1615,7 @@ instance ItKe_Richter(C_Item)
 };
 
 //****************************************************************************
-//				Schlüssel Salandril
+//				SchlÃƒÂ¼ssel Salandril
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Salandril(C_Item)
@@ -1638,7 +1638,7 @@ instance ItKe_Salandril(C_Item)
 };
 
 //****************************************************************************
-//				Schlüssel Truhe ...wo die Paladine schlafen
+//				SchlÃƒÂ¼ssel Truhe ...wo die Paladine schlafen
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_PaladinTruhe(C_Item)
@@ -1683,7 +1683,7 @@ instance ItKe_ThiefTreasure(C_Item)
 };
 
 //****************************************************************************
-//				Diebsgilde Fingers Tür
+//				Diebsgilde Fingers TÃƒÂ¼r
 //			---------------------------------------------
 //****************************************************************************
 instance ItKe_Fingers(C_Item)
@@ -1770,7 +1770,7 @@ func void UseSchuldBuch()
 				Doc_PrintLine	(nDocID, 0, "");
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				// Doc_SetFont( nDocID, 1, FONT_BookHeadline ); // -1 -> all pages
 				// Doc_PrintLine	(nDocID, 1, "");
 				// Doc_PrintLines	(nDocID, 1, "StandardBuch Seite 2");
@@ -1814,7 +1814,7 @@ instance ItPl_Sagitta_Herb_MIS(C_Item)
 };
 
 //****************************************************************************
-//			Schlüssel für die obernen Schlafzimmer in der Taverne (MITTE DER WELT!)
+//			SchlÃƒÂ¼ssel fÃƒÂ¼r die obernen Schlafzimmer in der Taverne (MITTE DER WELT!)
 //			---------------------------------------------
 //****************************************************************************
 instance ITKE_ORLAN_HOTELZIMMER(C_Item)

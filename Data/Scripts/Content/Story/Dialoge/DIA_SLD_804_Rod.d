@@ -460,7 +460,7 @@ func void DIA_Rod_Wette_KeepIt()
 };
 
 // ************************************************************
-// 			  				Schwert zurück
+// 			  				Schwert zurÃƒÂ¼ck
 // ************************************************************
 var int Rod_SchwertXPGiven;
 instance DIA_Rod_GiveItBack(C_INFO)

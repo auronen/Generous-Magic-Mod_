@@ -211,7 +211,7 @@ func void UnEquip_ItRi_Prot_Point_02()
 };
 
 /******************************************************************************************/
-instance ItRi_Prot_Edge_01(C_Item) // bei Cassia als Belohnung // Höhle OW// PassNW bei den Orks
+instance ItRi_Prot_Edge_01(C_Item) // bei Cassia als Belohnung // HÃƒÂ¶hle OW// PassNW bei den Orks
 {
 	name						= NAME_Ring;
 
@@ -341,7 +341,7 @@ func void UnEquip_ItRi_Prot_Mage_01()
 };
 
 /******************************************************************************************/
-instance ItRi_Prot_Mage_02(C_ITEM) // Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4 // ricelordhütte OW
+instance ItRi_Prot_Mage_02(C_ITEM) // Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4 // ricelordhÃƒÂ¼tte OW
 {
 	name						= NAME_Ring;
 
@@ -526,7 +526,7 @@ func void UnEquip_ItRi_Dex_01()
 };
 
 /******************************************************************************************/
-instance ItRi_Dex_02(C_Item) // Joly:in OW Nähe Alter DT
+instance ItRi_Dex_02(C_Item) // Joly:in OW NÃƒÂ¤he Alter DT
 {
 	name						= NAME_Ring;
 

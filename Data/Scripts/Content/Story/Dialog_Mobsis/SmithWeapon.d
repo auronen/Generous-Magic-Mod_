@@ -33,9 +33,9 @@ func void PC_SmithWeapon_End_Info()
 //*******************************************************
 
 // *****************
-// Amboß-Dialoge
+// AmboÃƒÅ¸-Dialoge
 // -------------
-// hängen am Spieler
+// hÃƒÂ¤ngen am Spieler
 // *****************
 
 //*******************************************************
@@ -608,8 +608,8 @@ func void PC_ItMw_2H_Special_04_Info()
 // ****************************************************
 // SMITHWEAPON_S1
 // --------------
-// Funktion wird durch Amboß-Mobsi-Benutzung aufgerufen!
-// benötigtes Item dafür: ItMiSwordrawhot
+// Funktion wird durch AmboÃƒÅ¸-Mobsi-Benutzung aufgerufen!
+// benÃƒÂ¶tigtes Item dafÃƒÂ¼r: ItMiSwordrawhot
 // *****************************************************
 
 func void SMITHWEAPON_S1()

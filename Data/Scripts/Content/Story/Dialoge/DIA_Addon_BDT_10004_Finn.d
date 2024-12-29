@@ -262,7 +262,7 @@ func void DIA_Addon_Finn_Gold_Info()
 };
 
 // ---------------------------------------------------------------------
-//	Info einschätzen
+//	Info einschÃƒÂ¤tzen
 // ---------------------------------------------------------------------
 instance DIA_Addon_Finn_ein(C_INFO)
 {

@@ -138,7 +138,7 @@ func void UnEquip_ItBE_Addon_Leather_01()
 };
 
 // ------------------------------------------------------------------------------------------
-// Fellgürtel (SLD) Zweihand
+// FellgÃƒÂ¼rtel (SLD) Zweihand
 // ------------------------------------------------------------------------------------------
 instance ItBE_Addon_SLD_01(C_Item) // Bennet(Kap1)
 {
@@ -204,7 +204,7 @@ func void UnEquip_ItBE_Addon_SLD_01()
 };
 
 // ------------------------------------------------------------------------------------------
-// Novizenschärpe (Zweihand)
+// NovizenschÃƒÂ¤rpe (Zweihand)
 // ------------------------------------------------------------------------------------------
 instance ItBE_Addon_NOV_01(C_Item) // Gorax (Kap1)
 {
@@ -402,7 +402,7 @@ func void UnEquip_ItBE_Addon_KDF_01()
 };
 
 // ------------------------------------------------------------------------------------------
-// Minecrawler Gürtel Zweihand
+// Minecrawler GÃƒÂ¼rtel Zweihand
 // ------------------------------------------------------------------------------------------
 instance ItBE_Addon_MC(C_Item) // Bennet(Kap3)
 {
@@ -468,7 +468,7 @@ func void UnEquip_ItBE_Addon_MC()
 };
 
 // *****************************************************
-// 						kleine Gürtel
+// 						kleine GÃƒÂ¼rtel
 // *****************************************************
 // -----------------------------------------------------
 // STR 5
@@ -795,7 +795,7 @@ func void UnEquip_ItBe_Addon_Prot_FIRE()
 // -----------------------------------------------------
 // PROT EdgPoi
 // -----------------------------------------------------
-instance ItBe_Addon_Prot_EdgPoi(C_Item) // Khaled(Kap4)/Orlan(3) Missionbelohnung von Garett für Feuerwarane (Kap2)
+instance ItBe_Addon_Prot_EdgPoi(C_Item) // Khaled(Kap4)/Orlan(3) Missionbelohnung von Garett fÃƒÂ¼r Feuerwarane (Kap2)
 {
 	name						= NAME_Addon_Belt;
 

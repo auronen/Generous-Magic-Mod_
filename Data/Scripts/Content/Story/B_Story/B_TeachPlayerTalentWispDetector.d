@@ -34,7 +34,7 @@ func int B_TeachPlayerTalentWispDetector(var C_Npc slf, var C_Npc oth, var int W
 	Log_CreateTopic(TOPIC_WispDetector, LOG_NOTE);
 	B_LogEntry(TOPIC_WispDetector, LogText_Addon_WispLearned);
 
-	// ------ Körperteil nehmen lernen ------
+	// ------ KÃƒÂ¶rperteil nehmen lernen ------
 
 	if (WispSkill == WISPSKILL_FF) { PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FF] = TRUE; B_WISPDETECTOR_LearnEffect(slf); B_LogEntry(TOPIC_WispDetector, LogText_Addon_WispLearned_FF); };
 	if (WispSkill == WISPSKILL_NONE) { PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NONE] = TRUE; B_WISPDETECTOR_LearnEffect(slf); B_LogEntry(TOPIC_WispDetector, LogText_Addon_WispLearned_NONE); };
@@ -44,7 +44,7 @@ func int B_TeachPlayerTalentWispDetector(var C_Npc slf, var C_Npc oth, var int W
 	if (WispSkill == WISPSKILL_POTIONS) { PLAYER_TALENT_WISPDETECTOR[WISPSKILL_POTIONS] = TRUE; B_WISPDETECTOR_LearnEffect(slf); B_LogEntry(TOPIC_WispDetector, LogText_Addon_WispLearned_POTIONS); };
 	PrintScreen(PRINT_LearnWispDetector, -1, -1, FONT_Screen, 2);
 
-	// ------ bei jedem Körperteil: WispDetector-Talent lernen (programmvariable, wird nur zur Ausgabe in StatusScreen benutzt) ------
+	// ------ bei jedem KÃƒÂ¶rperteil: WispDetector-Talent lernen (programmvariable, wird nur zur Ausgabe in StatusScreen benutzt) ------
 	Npc_SetTalentSkill(oth, NPC_TALENT_WISPDETECTOR, 1);
 	return TRUE;
 };

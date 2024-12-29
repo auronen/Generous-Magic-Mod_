@@ -47,7 +47,7 @@ func void DIA_Godar_Hello_Info()
 };
 
 //*********************************************************************
-//	Wo kommt ihr überhaupt her?
+//	Wo kommt ihr ÃƒÂ¼berhaupt her?
 //*********************************************************************
 instance DIA_Godar_ComeFrom(C_INFO)
 {
@@ -167,7 +167,7 @@ func void DIA_Godar_Plan_Info()
 };
 
 //*********************************************************************
-//	Wisst ihr was über die Drachen?
+//	Wisst ihr was ÃƒÂ¼ber die Drachen?
 //*********************************************************************
 instance DIA_Godar_DragonLore(C_INFO)
 {

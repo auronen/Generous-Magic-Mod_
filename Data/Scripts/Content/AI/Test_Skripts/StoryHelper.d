@@ -18,7 +18,7 @@ instance ItPo_Story(C_Item)
 	scemeName					= "POTIONFAST";
 	on_state[0]					= UseItPo_Story;
 
-	description					= "Macht, da� es weitergeht bei Raven Video I";
+	description					= "Macht, daß es weitergeht bei Raven Video I";
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
 	text[2]						= "";											count[2] = 0;
@@ -142,7 +142,7 @@ func void StoryHelper_Cavalorn()
 
 	// Vatras den Brief gegeben
 	MIS_Addon_Cavalorn_Letter2Vatras = LOG_SUCCESS;
-	// Für Vatras den Banditen Händler gefunden
+	// FÃƒÂ¼r Vatras den Banditen HÃƒÂ¤ndler gefunden
 	MIS_Vatras_FindTheBanditTrader = LOG_SUCCESS;
 	// Wo sind die vermissten Leute?
 	MIS_Addon_Vatras_WhereAreMissingPeople = LOG_SUCCESS;
@@ -179,7 +179,7 @@ func void StoryHelper_KAPITEL1ANFANG()
 
 	B_Kapitelwechsel(1, NEWWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	// Info_ClearChoices( StoryHelper_INFO1 );
 	AI_StopProcessInfos(self);
 };
@@ -229,7 +229,7 @@ func void StoryHelper_KAPITEL2ANFANG()
 	MIS_OLDWORLD = LOG_RUNNING;
 	B_Kapitelwechsel(2, NEWWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	// Info_ClearChoices( StoryHelper_INFO2 );
 	AI_StopProcessInfos(self);
 };
@@ -283,7 +283,7 @@ func void StoryHelper_KAPITEL3ANFANG()
 	B_NPC_IsAliveCheck(OldWorld_Zen);
 	B_Kapitelwechsel(3, NEWWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	Info_ClearChoices(StoryHelper_INFO3);
 	AI_StopProcessInfos(self);
 };
@@ -345,7 +345,7 @@ func void StoryHelper_KAPITEL4ANFANG()
 	B_NPC_IsAliveCheck(NEWWORLD_ZEN);
 	B_Kapitelwechsel(4, NEWWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	Info_ClearChoices(StoryHelper_INFO4);
 	AI_StopProcessInfos(self);
 };
@@ -407,11 +407,11 @@ func void StoryHelper_KAPITEL5ANFANG()
 	B_NPC_IsAliveCheck(NEWWORLD_ZEN);
 	B_Kapitelwechsel(4, NEWWORLD_ZEN);
 	// -------- was neu geschieht --------
-	CreateInvItems(hero, ItAt_IcedragonHeart, 1); // damit man eins für die DI hat!!
+	CreateInvItems(hero, ItAt_IcedragonHeart, 1); // damit man eins fÃƒÂ¼r die DI hat!!
 	MIS_AllDragonsDead = TRUE;
 	B_Kapitelwechsel(5, NEWWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	Info_ClearChoices(StoryHelper_INFO5);
 	AI_StopProcessInfos(self);
 };
@@ -460,7 +460,7 @@ func void StoryHelper_KAPITEL6ANFANG()
 	// -------- was neu geschieht --------
 	B_Kapitelwechsel(6, NEWWORLD_ZEN);
 
-	// -------- Menü --------
+	// -------- MenÃƒÂ¼ --------
 	Info_ClearChoices(StoryHelper_INFO6);
 	AI_StopProcessInfos(self);
 };

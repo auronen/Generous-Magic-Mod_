@@ -10,7 +10,7 @@ func void B_AssessThreat()
 {
 	// EXIT if...
 
-	// ------ weiter weg als PERC_DIST für ASSESSTHREAT ------
+	// ------ weiter weg als PERC_DIST fÃƒÂ¼r ASSESSTHREAT ------
 	if (Npc_GetDistToNpc(self, other) > PERC_DIST_INTERMEDIAT)
 	{
 		return;

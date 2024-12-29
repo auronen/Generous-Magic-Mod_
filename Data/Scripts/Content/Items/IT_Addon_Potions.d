@@ -1,5 +1,5 @@
 /******************************************************************************************/
-//	Trank der Geistesveränderung (unwissend zusammengebraut) //
+//	Trank der GeistesverÃƒÂ¤nderung (unwissend zusammengebraut) //
 /******************************************************************************************/
 instance ItPo_Addon_Geist_01(C_Item)
 {
@@ -34,7 +34,7 @@ func void UseItPo_Geist_01()
 };
 
 /******************************************************************************************/
-//	Trank der Geistesveränderung (wissend zusammengebraut) //
+//	Trank der GeistesverÃƒÂ¤nderung (wissend zusammengebraut) //
 /******************************************************************************************/
 instance ItPo_Addon_Geist_02(C_Item)
 {

@@ -2,7 +2,7 @@
 // unbenutzte Item - Visuals
 // *************************
 
-// ItRw_Bow_War_04 // Dämonenbogen, Todbringer
+// ItRw_Bow_War_04 // DÃƒÂ¤monenbogen, Todbringer
 // ItRw_Bow_War_03 // Sturmbogen
 // ItRw_Bow_War_02 // Orkhetzer
 // ItRw_Bow_War_01 // Kriegsbogen
@@ -130,7 +130,7 @@ instance ItRw_Sld_Bow(C_Item)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-// Bögen
+// BÃƒÂ¶gen
 // Kapitel 1
 instance ItRw_Bow_L_01(C_Item)
 {
@@ -489,7 +489,7 @@ instance ItRw_Bow_H_04(C_Item)
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
-// Armbrüste
+// ArmbrÃƒÂ¼ste
 
 // Kapitel 1
 

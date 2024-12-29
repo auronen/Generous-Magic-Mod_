@@ -369,7 +369,7 @@ func void DIA_Addon_Orlan_WhenRangerMeeting_Los()
 };
 
 // -----------------------------------------------------
-// BESSERE RÜSTUNG
+// BESSERE RÃƒÅ“STUNG
 // -----------------------------------------------------
 instance DIA_Orlan_RUESTUNG(C_INFO)
 {

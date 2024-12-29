@@ -25,7 +25,7 @@ func void DIA_Wegelagerer_EXIT_Info()
 // 				  	Guard_Passage - First Warn
 // ************************************************************
 // ------------------------------------------------------------
-const string BDT_1020_Wegelagerer_Checkpoint = "NW_TROLLAREA_PATH_46"; // Die Brücke
+const string BDT_1020_Wegelagerer_Checkpoint = "NW_TROLLAREA_PATH_46"; // Die BrÃƒÂ¼cke
 // ------------------------------------------------------------
 instance DIA_BDT_1020_Wegelagerer_FirstWarn(C_INFO)
 {
@@ -290,7 +290,7 @@ func void DIA_BDT_1020_Wegelagerer_Attack_Info()
 	other.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status] = GP_NONE; // wird auch in ZS_Attack resettet
 
-	AI_StopProcessInfos(self); // dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos(self); // dem Spieler sofort wieder die Kontrolle zurÃƒÂ¼ckgeben
 
 	B_Attack(self, other, AR_NONE, 1);
 };

@@ -332,7 +332,7 @@ func void DIA_Oric_CanHelp_WhatYouMean()
 };
 
 //***********************************************
-//	Ich brauche noch Ausrüstung.
+//	Ich brauche noch AusrÃƒÂ¼stung.
 //***********************************************
 instance DIA_Oric_NeedStuff(C_INFO)
 {

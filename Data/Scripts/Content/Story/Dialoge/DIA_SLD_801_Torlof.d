@@ -444,11 +444,11 @@ func void DIA_Torlof_RUF_Info()
 	// --------------------
 	// ------ Duelle ------
 	// --------------------
-	if (Sld_Duelle_gewonnen >= 3) // geändert M.F.
+	if (Sld_Duelle_gewonnen >= 3) // geÃƒÂ¤ndert M.F.
 	{
 		Points_Sld = Points_Sld + 1;
 
-		if (Points_Sld >= 9) // geändert M.F.
+		if (Points_Sld >= 9) // geÃƒÂ¤ndert M.F.
 		{
 			AI_Output(self, other, "DIA_Torlof_RUF_01_27"); //And you won some fair duels.
 			AI_Output(self, other, "DIA_Torlof_RUF_01_28"); //A lot of mercenaries respect that.
@@ -463,7 +463,7 @@ func void DIA_Torlof_RUF_Info()
 	// ------ ENDABRECHNUNG ------
 	// ---------------------------
 
-	if (Points_Sld >= 9) // geändert M.F. // (Maximal 11 - 13 / insgesamt 6 + 3+1 oder 5+1 + 1 für Duell)
+	if (Points_Sld >= 9) // geÃƒÂ¤ndert M.F. // (Maximal 11 - 13 / insgesamt 6 + 3+1 oder 5+1 + 1 fÃƒÂ¼r Duell)
 	{
 		AI_Output(self, other, "DIA_Torlof_RUF_01_30"); //Most of the mercenaries are for you - as far as we're concerned, you can start with us any time.
 		AI_Output(self, other, "DIA_Torlof_RUF_01_31"); //Go to Lee. He'll explain everything else to you.

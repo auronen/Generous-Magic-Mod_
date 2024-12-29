@@ -10,7 +10,7 @@ instance VLK_444_Jack_DI(Npc_Default)
 	name							= "Jack";
 	npctype							= NpcType_Main;
 	guild							= GIL_VLK;
-	flags							= NPC_FLAG_IMMORTAL; // letzter NSC, der stehen bleiben muß -> Letzter Dialog!! // NPC_FLAG_IMMORTAL oder 0
+	flags							= NPC_FLAG_IMMORTAL; // letzter NSC, der stehen bleiben muÃƒÅ¸ -> Letzter Dialog!! // NPC_FLAG_IMMORTAL oder 0
 
 	voice							= 14;
 	id								= 4440;

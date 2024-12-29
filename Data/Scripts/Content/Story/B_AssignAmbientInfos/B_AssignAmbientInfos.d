@@ -2,7 +2,7 @@
 // B_AssignAmbientInfos
 // --------------------
 // Verteiler. Aufruf aller B_AssignAmbientInfos-Befehle,
-// abhängig von Gilde und Geschlecht
+// abhÃƒÂ¤ngig von Gilde und Geschlecht
 // *****************************************************
 
 func void B_AssignAmbientInfos(var C_Npc slf)
@@ -104,7 +104,7 @@ func void B_AssignAmbientInfos(var C_Npc slf)
 	// ------ OUT -------
 	if (slf.guild == GIL_OUT)
 	{
-		// ------ NW Ambient-Bauern auf den kleinen Höfen -------
+		// ------ NW Ambient-Bauern auf den kleinen HÃƒÂ¶fen -------
 		if (slf.npctype == NPCTYPE_AMBIENT)
 		{
 			if (slf.voice == 1) { B_AssignAmbientInfos_Out_1(slf); };

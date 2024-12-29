@@ -200,7 +200,7 @@ func void DIA_Addon_Esteban_MIS_Info()
 };
 
 // --------------------------------------------------------------------
-//	Info Attentäter (Kerl)
+//	Info AttentÃƒÂ¤ter (Kerl)
 // --------------------------------------------------------------------
 instance DIA_Addon_Esteban_Kerl(C_INFO)
 {

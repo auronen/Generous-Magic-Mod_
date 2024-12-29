@@ -271,7 +271,7 @@ func void DIA_PAL_205_Torwache_PassAsMage_Info()
 };
 
 // ************************************************************
-// 						Pass as SÖLDNER
+// 						Pass as SÃƒâ€“LDNER
 // ************************************************************
 instance DIA_PAL_205_Torwache_PassAsSld(C_INFO)
 {

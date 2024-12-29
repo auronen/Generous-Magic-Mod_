@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃƒÂ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -80,7 +80,7 @@ const string TOPIC_Addon_MalcomsStunt_1				= "Owen wants to know if his friend M
 const string TOPIC_Addon_MalcomsStunt_2				= "Owen said that there is water down there and that Malcom was alive at first. But after a while everything was quiet.";
 const string TOPIC_Addon_MalcomsStunt_3				= "I have given Owen the news about Malcom's death. He took it very calmly.";
 
-// -------- Addon Händler -----------
+// -------- Addon HÃƒÂ¤ndler -----------
 
 const string Topic_Addon_PIR_Trader					= "Trading with the pirates";
 
@@ -104,7 +104,7 @@ const string Log_Text_Addon_GarettTrade				= "Garret is the pirate trader. I can
 
 const string Log_Text_Addon_SamuelTrade				= "Samuel is the moonshiner. He sells all kinds of alcohol.";
 
-//	Sprüche
+//	SprÃƒÂ¼che
 
 const string Log_Text_Addon_TalentRune_Whirlwind	= "Ingredients for the rune 'Whirlwind': 1 wing";
 const string Log_Text_Addon_TalentRune_Icelance		= "Ingredients for the rune 'Ice Lance': 1 glacier quartz";

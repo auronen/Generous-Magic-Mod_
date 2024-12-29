@@ -184,7 +184,7 @@ func void DIA_Dyrian_CanHelp_Info()
 };
 
 //**************************************************************************
-//	SC hat die Prüfung des Feuers angenommen und mit Hyglas gesprochen
+//	SC hat die PrÃƒÂ¼fung des Feuers angenommen und mit Hyglas gesprochen
 //**************************************************************************
 instance DIA_Dyrian_Scroll(C_INFO)
 {
@@ -322,7 +322,7 @@ func void DIA_Dyrian_HelloAgain_Info()
 };
 
 //*****************************************************************************
-//			Wie gehts? // Info für Magier Success
+//			Wie gehts? // Info fÃƒÂ¼r Magier Success
 //*****************************************************************************
 func void B_Dyrian_PlayerHowIsIt()
 {
@@ -355,7 +355,7 @@ func void DIA_Dyrian_HowIsIt_Info()
 };
 
 //*****************************************************************************
-//			Wie gehts? // Info für alle anderen
+//			Wie gehts? // Info fÃƒÂ¼r alle anderen
 //*****************************************************************************
 instance DIA_Dyrian_other(C_INFO)
 {

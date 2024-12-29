@@ -25,12 +25,12 @@ func void DIA_Ambient_NEWS_Info()
 	// ------ CRIME ------
 	if (B_GetPlayerCrime(self) == CRIME_SHEEPKILLER)
 	{
-		B_Say(self, other, "$SHEEPKILLER_CRIME"); // Einfach unsere Schafe zu schlachten! Mach, daß du hier wegkommst!
+		B_Say(self, other, "$SHEEPKILLER_CRIME"); // Einfach unsere Schafe zu schlachten! Mach, daÃƒÅ¸ du hier wegkommst!
 	};
 
 	if (B_GetPlayerCrime(self) == CRIME_ATTACK)
 	{
-		B_Say(self, other, "$ATTACK_CRIME"); // Mit miesen Schlägern rede ich nicht!
+		B_Say(self, other, "$ATTACK_CRIME"); // Mit miesen SchlÃƒÂ¤gern rede ich nicht!
 	};
 
 	if (B_GetPlayerCrime(self) == CRIME_THEFT)
@@ -45,12 +45,12 @@ func void DIA_Ambient_NEWS_Info()
 		if ((other.guild == GIL_PAL)
 		&& (Hagen_Schulden <= 0))
 		{
-			B_Say(self, other, "$PAL_CITY_CRIME"); // Du bist eine Schande für deinen Orden! Lord Hagen wird toben vor Wut!
+			B_Say(self, other, "$PAL_CITY_CRIME"); // Du bist eine Schande fÃƒÂ¼r deinen Orden! Lord Hagen wird toben vor Wut!
 		}
 		else if ((other.guild == GIL_MIL)
 		&& (Andre_Schulden <= 0))
 		{
-			B_Say(self, other, "$MIL_CITY_CRIME"); // Du bist eine Schande für die Stadtwache! Lord Andre wird dir das sicher austreiben!
+			B_Say(self, other, "$MIL_CITY_CRIME"); // Du bist eine Schande fÃƒÂ¼r die Stadtwache! Lord Andre wird dir das sicher austreiben!
 		}
 		else if (Andre_Schulden <= 0) // Spieler ist irgendwer
 		{

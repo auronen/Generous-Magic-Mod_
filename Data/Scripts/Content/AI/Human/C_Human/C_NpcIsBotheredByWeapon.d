@@ -37,13 +37,13 @@ func int C_NpcIsBotheredByWeapon(var C_Npc slf, var C_Npc oth)
 		return FALSE;
 	};
 
-	// ------ Fäuste zählen nicht ------
+	// ------ FÃƒÂ¤uste zÃƒÂ¤hlen nicht ------
 	if (Npc_IsInFightMode(oth, FMODE_FIST))
 	{
 		return FALSE;
 	};
 
-	// ------ Gute und neutrale Spells zählen nicht ------
+	// ------ Gute und neutrale Spells zÃƒÂ¤hlen nicht ------
 	if (Npc_IsInFightMode(oth, FMODE_MAGIC) && (Npc_GetActiveSpellCat(oth) != SPELL_BAD))
 	{
 		return FALSE;

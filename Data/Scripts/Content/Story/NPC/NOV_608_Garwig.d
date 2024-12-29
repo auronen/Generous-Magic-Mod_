@@ -4,7 +4,7 @@ instance NOV_608_Garwig(Npc_Default)
 	name							= "Garwig";
 	npctype							= NpcType_Main;
 	guild							= GIL_NOV;
-	// level für Sleep- Scroll nötig M.F.= // LEVEL für Sleep- Scroll nötig M.F.;
+	// level fÃƒÂ¼r Sleep- Scroll nÃƒÂ¶tig M.F.= // LEVEL fÃƒÂ¼r Sleep- Scroll nÃƒÂ¶tig M.F.;
 	level							= 1;
 	flags							= 0;
 

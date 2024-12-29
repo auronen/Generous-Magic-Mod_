@@ -172,7 +172,7 @@ func void DIA_Pedro_TEMPEL_Info()
 	else
 	{
 		AI_Output(self, other, "DIA_Pedro_TEMPEL_09_02"); //If you want to be accepted into the Brotherhood of Innos, you must learn and obey the rules of the monastery.
-		// AI_Output(self, other, "DIA_Pedro_TEMPEL_09_03"); // Außerdem verlangen wir von jedem neuen Novizen die Gaben an Innos. Ein Schaf und ...
+		// AI_Output(self, other, "DIA_Pedro_TEMPEL_09_03"); // AuÃƒÅ¸erdem verlangen wir von jedem neuen Novizen die Gaben an Innos. Ein Schaf und ...
 		// B_Say_Gold (self, other, Summe_Kloster);
 		AI_Output(self, other, "DIA_ADDON_Pedro_TEMPEL_09_03"); //Also, we demand the gifts to Innos from each new novice.
 		AI_Output(self, other, "DIA_ADDON_Pedro_TEMPEL_09_04"); //A sheep and 1000 gold pieces.
@@ -401,7 +401,7 @@ func void DIA_Pedro_AUFNAHME_NO()
 };
 
 //*********************************************************************
-//	Erzähl mir vom Leben im Kloster.
+//	ErzÃƒÂ¤hl mir vom Leben im Kloster.
 //*********************************************************************
 instance DIA_Pedro_Monastery(C_INFO)
 {

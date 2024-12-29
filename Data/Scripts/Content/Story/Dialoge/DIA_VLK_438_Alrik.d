@@ -98,7 +98,7 @@ func void DIA_Alrik_Hallo_Info()
 };
 
 // ************************************************************
-// 			  				Du kämpfst?
+// 			  				Du kÃƒÂ¤mpfst?
 // ************************************************************
 instance DIA_Alrik_YouFight(C_INFO)
 {
@@ -161,7 +161,7 @@ func void DIA_Alrik_Regeln_Info()
 };
 
 // ************************************************************
-// 		  			Important für NEUE 3 Kämpfe ab Kap 3
+// 		  			Important fÃƒÂ¼r NEUE 3 KÃƒÂ¤mpfe ab Kap 3
 // ************************************************************
 
 func void B_Alrik_Again()
@@ -195,7 +195,7 @@ func void DIA_Alrik_NewFights3_Info()
 };
 
 // ************************************************************
-// 		  			Important für NEUE 3 Kämpfe ab Kap 5
+// 		  			Important fÃƒÂ¼r NEUE 3 KÃƒÂ¤mpfe ab Kap 5
 // ************************************************************
 instance DIA_Alrik_NewFights5(C_INFO)
 {
@@ -261,7 +261,7 @@ func void DIA_Alrik_WannaFight_Info()
 
 	Info_ClearChoices(DIA_Alrik_WannaFight);
 
-	// ------ EXIT: Wenn Alrik schonmal verloren, nächster Kampf erst, wenn Alrik das bessere Schwert hat ------
+	// ------ EXIT: Wenn Alrik schonmal verloren, nÃƒÂ¤chster Kampf erst, wenn Alrik das bessere Schwert hat ------
 	if (((Alrik_ArenaKampfVerloren > 0) && (Npc_HasItems(self, ItMW_AlriksSword_Mis) == 0))
 	|| (Npc_HasEquippedMeleeWeapon(self) == FALSE))
 	{
@@ -283,7 +283,7 @@ func void DIA_Alrik_WannaFight_Info()
 		};
 	}
 
-	// ----- EXIT: ÜBER DREI MAL Alrik_ArenaKampfVerloren ------
+	// ----- EXIT: ÃƒÅ“BER DREI MAL Alrik_ArenaKampfVerloren ------
 	else if ((Kapitel <= 2)
 	&& (Alrik_ArenaKampfVerloren > 3))
 	{

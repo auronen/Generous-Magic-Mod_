@@ -1,7 +1,7 @@
 // Missionitems 2. Kapitel
 
 //********************************************
-//	Xardas´ Stein des Wissens liegt im alten Demonenbeschwörerturm auf dem Tisch in seinem alten Studierzimmer!
+//	XardasÃ‚Â´ Stein des Wissens liegt im alten DemonenbeschwÃƒÂ¶rerturm auf dem Tisch in seinem alten Studierzimmer!
 //********************************************
 
 instance ItMi_StoneOfKnowlegde_MIS(C_Item)
@@ -135,7 +135,7 @@ func void UseLetterForGorn()
 };
 
 //********************************************
-//	Kerkerschlüssel der Burg im Minental
+//	KerkerschlÃƒÂ¼ssel der Burg im Minental
 //********************************************
 
 instance ItKe_PrisonKey_MIS(C_Item)
@@ -160,7 +160,7 @@ instance ItKe_PrisonKey_MIS(C_Item)
 };
 
 //********************************************
-//	Schlüssel Erzlager der Burg im Minental
+//	SchlÃƒÂ¼ssel Erzlager der Burg im Minental
 //********************************************
 instance ItKe_OC_Store(C_Item)
 {
@@ -184,7 +184,7 @@ instance ItKe_OC_Store(C_Item)
 };
 
 //********************************************
-//	Schlüssel Erzbaron Flur der Burg im Minental
+//	SchlÃƒÂ¼ssel Erzbaron Flur der Burg im Minental
 //********************************************
 instance ITKE_ErzBaronFlur(C_Item)
 {
@@ -208,7 +208,7 @@ instance ITKE_ErzBaronFlur(C_Item)
 };
 
 //********************************************
-//	Schlüssel Erzbaron Raum der Burg im Minental
+//	SchlÃƒÂ¼ssel Erzbaron Raum der Burg im Minental
 //********************************************
 instance ITKE_ErzBaronRaum(C_Item)
 {
@@ -323,7 +323,7 @@ func void UseItwr_Silvestro()
 };
 
 //**********************************************************************************
-//	Krallen des Rudelführers
+//	Krallen des RudelfÃƒÂ¼hrers
 // ----------------------------------------------------------------------------------
 instance ItAt_ClawLeader(C_Item)
 {
@@ -401,7 +401,7 @@ instance ItMi_GoldPlate_MIS(C_Item)
 };
 
 //********************************************
-//	Schlüssel Erzlager der Burg im Minental
+//	SchlÃƒÂ¼ssel Erzlager der Burg im Minental
 //********************************************
 instance ItKe_Pass_MIS(C_Item)
 {
@@ -425,7 +425,7 @@ instance ItKe_Pass_MIS(C_Item)
 };
 
 //********************************************
-//	Schlüssel Bromor
+//	SchlÃƒÂ¼ssel Bromor
 //********************************************
 instance ItKe_Bromor(C_Item)
 {
@@ -449,7 +449,7 @@ instance ItKe_Bromor(C_Item)
 };
 
 //********************************************
-//	Schlüssel Runenstein
+//	SchlÃƒÂ¼ssel Runenstein
 //********************************************
 instance ITKE_RUNE_MIS(C_Item)
 {
@@ -473,7 +473,7 @@ instance ITKE_RUNE_MIS(C_Item)
 };
 
 //**********************************************************************************
-//	Bloodfly Stachel ausschlürfen lernen
+//	Bloodfly Stachel ausschlÃƒÂ¼rfen lernen
 // ----------------------------------------------------------------------------------
 instance ItWr_Bloody_MIS(C_Item)
 {

@@ -111,7 +111,7 @@ func void DIA_Ignaz_Traenke_Info()
 	AI_Output(other, self, "DIA_Ignaz_Traenke_15_00"); //What's in it for me if I help you?
 	AI_Output(self, other, "DIA_Ignaz_Traenke_14_01"); //I could teach you how to brew potions.
 	AI_Output(self, other, "DIA_Ignaz_Traenke_14_02"); //I know the recipes for healing and mana essences and for speed potions.
-	// AI_Output(self, other, "DIA_Ignaz_Traenke_14_03");// Außerdem kann ich dir beibringen, wie du ein Elixier der Geschicklichkeit herstellst.
+	// AI_Output(self, other, "DIA_Ignaz_Traenke_14_03");// AuÃƒÅ¸erdem kann ich dir beibringen, wie du ein Elixier der Geschicklichkeit herstellst.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -138,8 +138,8 @@ func void DIA_Ignaz_Experiment_Info()
 	AI_Output(self, other, "DIA_Ignaz_Experiment_14_02"); //So far, I have only found it to work when the person in question is angry - for instance, if he has just been knocked down, or robbed.
 	AI_Output(self, other, "DIA_Ignaz_Experiment_14_03"); //Even if he has only witnessed such a deed, he will scratch it from his memory.
 	AI_Output(other, self, "DIA_Ignaz_Experiment_15_04"); //So I'm supposed to knock somebody down and then put a spell on him?
-	// AI_Output(other, self, "DIA_Ignaz_Add_15_00"); // Das macht dann wohl nur Sinn, wenn derjenige nach der Schlägerei WIRKLICH verärgert ist.
-	// AI_Output(other, self, "DIA_Ignaz_Add_15_01"); // (zu sich) Hier im Hafenviertel sind Schlägereien nichts Ungewöhnliches. Also müßte ich mir schon woanders ein Opfer suchen...
+	// AI_Output(other, self, "DIA_Ignaz_Add_15_00"); // Das macht dann wohl nur Sinn, wenn derjenige nach der SchlÃƒÂ¤gerei WIRKLICH verÃƒÂ¤rgert ist.
+	// AI_Output(other, self, "DIA_Ignaz_Add_15_01"); // (zu sich) Hier im Hafenviertel sind SchlÃƒÂ¤gereien nichts UngewÃƒÂ¶hnliches. Also mÃƒÂ¼ÃƒÅ¸te ich mir schon woanders ein Opfer suchen...
 	AI_Output(self, other, "DIA_Ignaz_Experiment_14_05"); //Yes, I think you get the point. But to make somebody angry, it is enough to attack him - you don't have to knock him down.
 	AI_Output(self, other, "DIA_Ignaz_Experiment_14_06"); //So you should pick somebody who's by himself - if there are other people around, you'll just get into trouble with Lord Andre.
 	AI_Output(self, other, "DIA_Ignaz_Experiment_14_07"); //Also, it makes no sense to cast the spell on someone who's busy attacking you. Wait for the right moment.
@@ -246,7 +246,7 @@ func void DIA_Ignaz_Danach_Info()
 	MIS_Ignaz_Charm = LOG_SUCCESS;
 	B_GivePlayerXP(XP_MIS_Ignaz_Charm);
 
-	// PATCH fallls alle Scrolls aufgekauft oder geplündert wurden
+	// PATCH fallls alle Scrolls aufgekauft oder geplÃƒÂ¼ndert wurden
 	CreateInvItems(self, ITSC_Charm, 3);
 };
 
@@ -343,7 +343,7 @@ func void DIA_Ignaz_Teach_Info()
 		{
 			AI_Output(self, other, "DIA_Ignaz_Teach_14_01"); //To prepare a potion at the alchemist's bench, you need a laboratory flask.
 			AI_Output(self, other, "DIA_Ignaz_Teach_14_02"); //And you're going to need different plants or other ingredients for each potion.
-			// AI_Output(self, other,"DIA_Ignaz_Teach_14_03"); // Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benötigten Pflanzen dafür sehr selten sind.
+			// AI_Output(self, other,"DIA_Ignaz_Teach_14_03"); // Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benÃƒÂ¶tigten Pflanzen dafÃƒÂ¼r sehr selten sind.
 			Alchemy_Explain = TRUE;
 		}
 		else

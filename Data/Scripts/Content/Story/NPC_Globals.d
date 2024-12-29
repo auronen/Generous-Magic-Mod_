@@ -75,7 +75,7 @@ var C_Npc Brandon;
 var C_Npc Matt;
 var C_Npc RoastPirate;
 var C_Npc BenchPirate;
-// Henrys Männer
+// Henrys MÃƒÂ¤nner
 var C_Npc SawPirate;
 var C_Npc HammerPirate;
 
@@ -345,7 +345,7 @@ var C_Npc Pedro_DI;
 var C_Npc Keymaster_DI;
 var C_Npc Archol;
 
-// ---Söldner---
+// ---SÃƒÂ¶ldner---
 var C_Npc Lee;
 var C_Npc Lee_DI;
 var C_Npc Torlof;
@@ -375,7 +375,7 @@ var C_Npc Pepe;
 var C_Npc Garwig;
 
 //*******************************************************
-//			NPC Globals füllen
+//			NPC Globals fÃƒÂ¼llen
 //*******************************************************
 
 func void B_InitNpcGlobals()

@@ -9,11 +9,11 @@ func void B_ENTER_OLDWORLD_Kapitel_1()
 {
 	if (EnterOW_Kapitel1 == FALSE)
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃƒÂ¼den ÃƒÂ¤ndern ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃƒÂ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs ÃƒÂ¤ndern ------
 
 		// ------ Respawn ------
 
@@ -28,11 +28,11 @@ func void B_ENTER_OLDWORLD_Kapitel_2()
 {
 	if (EnterOW_Kapitel2 == FALSE)
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃƒÂ¼den ÃƒÂ¤ndern ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃƒÂ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs ÃƒÂ¤ndern ------
 		// ------------- Steht unten am Weg 1. Charakter in Oldworld---------------------------------------------------------
 		// ------ Respawn ------
 
@@ -47,16 +47,16 @@ func void B_ENTER_OLDWORLD_Kapitel_3()
 {
 	if (EnterOW_Kapitel3 == FALSE)
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃƒÂ¼den ÃƒÂ¤ndern ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃƒÂ¶schen ------
 
 		// ------ Tote NSCs -----
 		B_RemoveNpc(PC_Mage_OW); // Milten ist in der NW!!!
 		B_RemoveNpc(PC_Fighter_OW); // Milten ist in der NW!!!
 		B_RemoveNpc(PC_ThiefOW); // Milten ist in der NW!!!
 
-		// ------ TAs ändern ------
+		// ------ TAs ÃƒÂ¤ndern ------
 
 		// ------ SPAWN ------
 
@@ -143,11 +143,11 @@ func void B_ENTER_OLDWORLD_Kapitel_3()
 var int EnterOW_Kapitel4;
 func void B_ENTER_OLDWORLD_Kapitel_4()
 {
-	if (EnterOW_Kapitel4 == FALSE) // Inserten der Drachenjäger wenn Drachenjagd eröffnet
+	if (EnterOW_Kapitel4 == FALSE) // Inserten der DrachenjÃƒÂ¤ger wenn Drachenjagd erÃƒÂ¶ffnet
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃƒÂ¼den ÃƒÂ¤ndern ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃƒÂ¶schen ------
 		if ((Npc_IsDead(Engrom)) == FALSE)
 		{
 			B_StartOtherRoutine(Engrom, "Obsessed");
@@ -161,8 +161,8 @@ func void B_ENTER_OLDWORLD_Kapitel_4()
 		// ------ Tote NSCs ------
 		B_RemoveNpc(STRF_1115_Geppert); // Joly: Platz machen im DJG Vorposten
 		B_RemoveNpc(STRF_1116_Kervo);
-		B_RemoveNpc(VLK_4106_Dobar); // Joly: Platz machen für neue DJG Schmiede
-		B_RemoveNpc(VLK_4107_Parlaf); // Joly: Platz machen für neue DJG Schmiede
+		B_RemoveNpc(VLK_4106_Dobar); // Joly: Platz machen fÃƒÂ¼r neue DJG Schmiede
+		B_RemoveNpc(VLK_4107_Parlaf); // Joly: Platz machen fÃƒÂ¼r neue DJG Schmiede
 
 		// Sengrath
 		// --------
@@ -179,7 +179,7 @@ func void B_ENTER_OLDWORLD_Kapitel_4()
 			B_KillNpc(Sengrath);
 		};
 
-		// Tote Drachenjäger
+		// Tote DrachenjÃƒÂ¤ger
 		// -----------------
 		Wld_InsertNpc(DJG_730_ToterDrachenjaeger, "OC1"); B_KillNpc(DJG_730_ToterDrachenjaeger);
 		Wld_InsertNpc(DJG_731_ToterDrachenjaeger, "OC1"); B_KillNpc(DJG_731_ToterDrachenjaeger);
@@ -193,7 +193,7 @@ func void B_ENTER_OLDWORLD_Kapitel_4()
 		Wld_InsertNpc(DJG_739_ToterDrachenjaeger, "OC1"); B_KillNpc(DJG_739_ToterDrachenjaeger);
 		Wld_InsertNpc(DJG_740_ToterDrachenjaeger, "OC1"); B_KillNpc(DJG_740_ToterDrachenjaeger); // Joly: hat schwarze Perle in der Tasche
 
-		// ------ TAs ändern ------
+		// ------ TAs ÃƒÂ¤ndern ------
 		Npc_ExchangeRoutine(Brutus, "Meatbugs");
 		Wld_InsertNpc(Meatbug_Brutus1, "OC_FOLTER_SHARP");
 		Wld_InsertNpc(Meatbug_Brutus2, "OC_FOLTER_SHARP");
@@ -415,11 +415,11 @@ func void B_ENTER_OLDWORLD_Kapitel_4()
 		Wld_InsertNpc(Snapper, "SPAWN_OW_WARAN_OC_PSI3");
 		Wld_InsertNpc(Snapper, "SPAWN_OW_WARAN_OC_PSI3");
 
-		// Kapitel2 Canyon "Gilbert´s Höhle"
+		// Kapitel2 Canyon "GilbertÃ‚Â´s HÃƒÂ¶hle"
 
 		Wld_InsertNpc(OrcWarrior_Roam, "FP_ROAM_OW_SNAPPER_OW_ORC5");
 		Wld_InsertNpc(OrcShaman_Sit, "FP_ROAM_OW_SNAPPER_OW_ORC_MOVE");
-		Wld_InsertNpc(OrcShaman_Sit, "LOCATION_16_IN"); // Gilberts ehem. Höhle
+		Wld_InsertNpc(OrcShaman_Sit, "LOCATION_16_IN"); // Gilberts ehem. HÃƒÂ¶hle
 
 		Wld_InsertNpc(OrcWarrior_Roam, "FP_ROAM_OW_SNAPPER_OW_ORC3");
 		Wld_InsertNpc(OrcWarrior_Roam, "FP_ROAM_OW_SNAPPER_OW_ORC3");
@@ -449,7 +449,7 @@ func void B_ENTER_OLDWORLD_Kapitel_4()
 		Wld_InsertNpc(Warg, "CASTLE_4");
 		Wld_InsertNpc(OrcWarrior_Roam, "OW_PATH_109");
 
-		// Nähe alter DT
+		// NÃƒÂ¤he alter DT
 		Wld_InsertNpc(DragonSnapper, "FP_ROAM_OW_SNAPPER_02_06");
 		Wld_InsertNpc(DragonSnapper, "FP_ROAM_OW_SNAPPER_02_11");
 		Wld_InsertNpc(DragonSnapper, "FP_ROAM_OW_SNAPPER_02_05");
@@ -474,7 +474,7 @@ func void B_ENTER_OLDWORLD_Kapitel_4()
 
 		Wld_InsertNpc(DMT_DementorAmbient, "OW_PATH_093");
 
-		// Nähe Newmine
+		// NÃƒÂ¤he Newmine
 
 		Wld_InsertNpc(Warg, "OW_PATH_195");
 		Wld_InsertNpc(Warg, "OW_PATH_195");
@@ -588,7 +588,7 @@ func void B_ENTER_OLDWORLD_Kapitel_4()
 	else if (Talbin_FollowsThroughPass == LOG_SUCCESS)
 	{
 		B_RemoveNpc(VLK_4130_Talbin);
-		Talbin_FollowsThroughPass = LOG_FAILED; // Joly: absoluter Schluß
+		Talbin_FollowsThroughPass = LOG_FAILED; // Joly: absoluter SchluÃƒÅ¸
 	};
 };
 
@@ -600,11 +600,11 @@ func void B_ENTER_OLDWORLD_Kapitel_5()
 {
 	if (EnterOW_Kapitel5 == FALSE)
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃƒÂ¼den ÃƒÂ¤ndern ------
 
 		// ------ Respawn ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃƒÂ¶schen ------
 		VLK_4143_HaupttorWache.flags = 0;
 		CreateInvItems(VLK_4143_HaupttorWache, ITKE_OC_MAINGATE_MIS, 1);
 
@@ -613,7 +613,7 @@ func void B_ENTER_OLDWORLD_Kapitel_5()
 			CreateInvItems(VLK_4100_Brutus, ITWR_DementorObsessionBook_MIS, 1);
 		};
 
-		// ------ TAs ändern ------
+		// ------ TAs ÃƒÂ¤ndern ------
 
 		if (TschuessBilgot == TRUE) // Bilgots (NewMine) Flucht aus der OW
 		{
@@ -637,11 +637,11 @@ func void B_ENTER_OLDWORLD_Kapitel_6()
 {
 	if (EnterOW_Kapitel6 == FALSE)
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃƒÂ¼den ÃƒÂ¤ndern ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃƒÂ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs ÃƒÂ¤ndern ------
 
 		// ------ Respawn ------
 
@@ -650,7 +650,7 @@ func void B_ENTER_OLDWORLD_Kapitel_6()
 };
 
 // ******************************************************************************************************************************************************************
-// B_ENTER_OLDWORLD (wird über INIT_OLDWORLD in der OW beim Betreten aufgerufen (Beispiel: für DJG, die erst nach dem 1.Betreten der OW eingesetzt werden))
+// B_ENTER_OLDWORLD (wird ÃƒÂ¼ber INIT_OLDWORLD in der OW beim Betreten aufgerufen (Beispiel: fÃƒÂ¼r DJG, die erst nach dem 1.Betreten der OW eingesetzt werden))
 // ******************************************************************************************************************************************************************
 
 func void B_ENTER_OLDWORLD()

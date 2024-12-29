@@ -275,7 +275,7 @@ func void DIA_Addon_Senyan_Attentat_JA()
 };
 
 // ----------------------------------------------------------------------
-//	Anders Überlegt
+//	Anders ÃƒÅ“berlegt
 // ----------------------------------------------------------------------
 instance DIA_Addon_Senyan_ChangePlan(C_INFO)
 {

@@ -51,7 +51,7 @@ func void B_Addon_DrinkPotion()
 {
 	AI_Output(other, self, "DIA_Addon_Brandon_GivePotion_15_00"); //Here, take the healing potion.
 
-	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) // geändert m.F.
+	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) // geÃƒÂ¤ndert m.F.
 	{
 		if (Npc_HasItems(self, ItPo_Health_03) > 0)
 		{

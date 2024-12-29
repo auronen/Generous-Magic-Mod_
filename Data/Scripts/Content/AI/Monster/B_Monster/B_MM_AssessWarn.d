@@ -1,8 +1,8 @@
 // ******************************************************
 // B_MM_AssessWarn
 // ---------------
-// Gründe, warum Monster warns senden/empfangen:
-// a) Beute warnt Jäger, damit er in ZS_Attack das Opfer wechseln kann
+// GrÃƒÂ¼nde, warum Monster warns senden/empfangen:
+// a) Beute warnt JÃƒÂ¤ger, damit er in ZS_Attack das Opfer wechseln kann
 // b) Rudeltiere (FRIENDLY zueinander) reagieren auf warn
 // ******************************************************
 
@@ -44,7 +44,7 @@ func void B_MM_AssessWarn()
 		return;
 	};
 
-	// ------- Monster sollen sich zu Tode stürzen, etc. ------
+	// ------- Monster sollen sich zu Tode stÃƒÂ¼rzen, etc. ------
 	if (Npc_GetHeightToNpc(self, other) > PERC_DIST_HEIGHT)
 	{
 		return;

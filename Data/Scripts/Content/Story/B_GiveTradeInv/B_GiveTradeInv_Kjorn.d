@@ -5,7 +5,7 @@ var int Kjorn_ItemsGiven_Chapter_4;
 var int Kjorn_ItemsGiven_Chapter_5;
 
 //*****************************************************
-//	Bitte nicht verändern, Trader ist NICHT imortal!!!!
+//	Bitte nicht verÃƒÂ¤ndern, Trader ist NICHT imortal!!!!
 //*****************************************************
 
 func void B_GiveTradeInv_Kjorn(var C_Npc slf)

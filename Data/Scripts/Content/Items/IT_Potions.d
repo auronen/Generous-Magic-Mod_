@@ -1,5 +1,5 @@
 // ************************************************************************************************
-// Wirkung und Kosten von Tränken
+// Wirkung und Kosten von TrÃƒÂ¤nken
 // ************************************************************************************************
 
 const int Value_HpEssenz = 25; const int HP_Essenz = 50;
@@ -23,7 +23,7 @@ const int Value_ManaTrunk = 200;
 const int Value_HpTrunk = 150;
 
 /******************************************************************************************/
-//	MANATRÄNKE //
+//	MANATRÃƒâ€žNKE //
 /******************************************************************************************/
 instance ItPo_Mana_01(C_Item)
 {
@@ -124,7 +124,7 @@ func void UseItPo_Mana_03()
 };
 
 /******************************************************************************************/
-//	HEILTRÄNKE //
+//	HEILTRÃƒâ€žNKE //
 /******************************************************************************************/
 instance ItPo_Health_01(C_Item)
 {
@@ -225,7 +225,7 @@ func void UseItPo_Health_03()
 };
 
 /******************************************************************************************/
-// TRÄNKE FÜR PERMANENTE ATTRIBUT-ÄNDERUNGEN!
+// TRÃƒâ€žNKE FÃƒÅ“R PERMANENTE ATTRIBUT-Ãƒâ€žNDERUNGEN!
 /******************************************************************************************/
 instance ItPo_Perm_STR(C_Item)
 {
@@ -399,7 +399,7 @@ func void UseItPo_Speed()
 //	MegaDrink Kapitel 6 //
 /******************************************************************************************/
 
-instance ItPo_MegaDrink(C_Item) // Joly: Megatrank aus Dracheneiern auf der Dracheninsel -> Kapitel 6 kurz vor´m Endgegner
+instance ItPo_MegaDrink(C_Item) // Joly: Megatrank aus Dracheneiern auf der Dracheninsel -> Kapitel 6 kurz vorÃ‚Â´m Endgegner
 {
 	name						= "Embarla Firgasto";
 
@@ -437,6 +437,6 @@ func void UseItPo_MegaDrink()
 		B_RaiseAttribute(self, ATR_STRENGTH, STRorDEX_MegaDrink);
 	};
 
-	Npc_ChangeAttribute(self, ATR_MANA, - ATR_MANA); // Joly: gemäß des Rezeptes
+	Npc_ChangeAttribute(self, ATR_MANA, - ATR_MANA); // Joly: gemÃƒÂ¤ÃƒÅ¸ des Rezeptes
 	Snd_Play("DEM_Warn");
 };

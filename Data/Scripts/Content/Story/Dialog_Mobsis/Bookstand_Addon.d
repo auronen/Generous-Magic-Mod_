@@ -1,5 +1,5 @@
 //*************************************
-//	Buchständer im Banditenlager
+//	BuchstÃƒÂ¤nder im Banditenlager
 //*************************************
 
 const string Bookstand_Addon_BL_S1_1 = "Mine";
@@ -121,7 +121,7 @@ const string BookstandMaya_31 = "He only recognized our plans when it was too la
 const string BookstandMaya_32 = "QUARHODRON closed the holy chambers of the temple behind him and RHADEMES was trapped in the temple for all time.";
 func void Use_BookstandMaya()
 {
-	if (BookstandMayaArt == 1) // Joly: überall objektieren!
+	if (BookstandMayaArt == 1) // Joly: ÃƒÂ¼berall objektieren!
 	{
 		Doc_PrintLine(StPl_nDocID, 0, "");
 		Doc_PrintLine(StPl_nDocID, 0, "");

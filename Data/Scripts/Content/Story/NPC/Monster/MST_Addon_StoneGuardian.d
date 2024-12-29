@@ -72,7 +72,7 @@ func void B_SetVisuals_Stoneguardian()
 };
 
 //**************************************************************
-//	Beschworener Steinwächter
+//	Beschworener SteinwÃƒÂ¤chter
 //**************************************************************
 
 instance Summoned_Guardian(Mst_Addon_Stoneguardian)
@@ -115,7 +115,7 @@ instance Summoned_Guardian(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	Steinwächter
+//	SteinwÃƒÂ¤chter
 //**************************************************************
 
 instance Stoneguardian(Mst_Addon_Stoneguardian)
@@ -212,7 +212,7 @@ instance Stoneguardian_MineDead4(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	Steinwächter
+//	SteinwÃƒÂ¤chter
 //**************************************************************
 
 instance Stoneguardian_Dead1(Mst_Addon_Stoneguardian)
@@ -290,7 +290,7 @@ instance Stoneguardian_MerdarionsSchluessel(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	OrnamentSteinwächter
+//	OrnamentSteinwÃƒÂ¤chter
 //**************************************************************
 
 instance Stoneguardian_Ornament(Mst_Addon_Stoneguardian)
@@ -313,7 +313,7 @@ instance Stoneguardian_Ornament(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	im Gebäude der Heiler
+//	im GebÃƒÂ¤ude der Heiler
 //**************************************************************
 
 instance Stoneguardian_Heiler(Mst_Addon_Stoneguardian)
@@ -462,7 +462,7 @@ instance Stoneguardian_Sani06(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	im Gebäude der Heiler
+//	im GebÃƒÂ¤ude der Heiler
 //**************************************************************
 
 instance Stoneguardian_NailedPortalADW1(Mst_Addon_Stoneguardian)

@@ -1,8 +1,8 @@
 // ****************************************************************************
 // ZS_ReactToWeapon
 // ----------------
-// Aufruf aus B_AssessDrawWeapon über Wahrnehmung DrawWeapon (PERC_DIST_DIALOG)
-// Aus B_AssessThreat über Wahrnehmung AssessThreat (PERC_DIST_INTERMEDIAT)
+// Aufruf aus B_AssessDrawWeapon ÃƒÂ¼ber Wahrnehmung DrawWeapon (PERC_DIST_DIALOG)
+// Aus B_AssessThreat ÃƒÂ¼ber Wahrnehmung AssessThreat (PERC_DIST_INTERMEDIAT)
 // Aus B_AssessPlayer, wenn C_NpcIsBotheredByWeapon (PERC_DIST_DIALOG)
 // ****************************************************************************
 

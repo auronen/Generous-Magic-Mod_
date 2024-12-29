@@ -65,10 +65,10 @@ func void DIA_Dexter_Hallo_Info()
 		/*// ADDON>
 		AI_Output(self, other, "DIA_Dexter_Hallo_09_04"); //Aber es stimmt. Ich habe meinen Jungs die Steckbriefe gegeben. Ich hatte keine andere Wahl.
 		AI_Output(self, other, "DIA_Dexter_Hallo_09_05"); //Als ich versuchte, aus dem Minental zu entfliehen, entdeckten mich die Soldaten und trieben mich in eine Falle.
-		AI_Output(self, other, "DIA_Dexter_Hallo_09_06"); //Ich dachte schon, das wäre mein Ende, aber dann tauchte plötzlich aus der Dunkelheit diese ... Gestalt auf.
-		AI_Output(self, other, "DIA_Dexter_Hallo_09_07"); //Er trug eine schwarze Robe mit Kapuze und eine Maske überm Gesicht. Und er sprach mit einer Stimme, die alles andere als menschlich war.
-		AI_Output(self, other, "DIA_Dexter_Hallo_09_08"); //Aber er bot mir seine Hilfe an. Er brachte mich aus dem Tal und bot mir eintausend Goldstücke für deinen Kopf.
-		AI_Output(self, other, "DIA_Dexter_Hallo_09_09"); //Hey, was sollte ich machen? Wenn ich abgelehnt hätte, dann hätte er mich getötet!
+		AI_Output(self, other, "DIA_Dexter_Hallo_09_06"); //Ich dachte schon, das wÃƒÂ¤re mein Ende, aber dann tauchte plÃƒÂ¶tzlich aus der Dunkelheit diese ... Gestalt auf.
+		AI_Output(self, other, "DIA_Dexter_Hallo_09_07"); //Er trug eine schwarze Robe mit Kapuze und eine Maske ÃƒÂ¼berm Gesicht. Und er sprach mit einer Stimme, die alles andere als menschlich war.
+		AI_Output(self, other, "DIA_Dexter_Hallo_09_08"); //Aber er bot mir seine Hilfe an. Er brachte mich aus dem Tal und bot mir eintausend GoldstÃƒÂ¼cke fÃƒÂ¼r deinen Kopf.
+		AI_Output(self, other, "DIA_Dexter_Hallo_09_09"); //Hey, was sollte ich machen? Wenn ich abgelehnt hÃƒÂ¤tte, dann hÃƒÂ¤tte er mich getÃƒÂ¶tet!
 		*/// ADDON<
 		// ADDON B_LogEntry (Topic_Bandits,"Dexter hat die Steckbriefe verteilt. Typen mit schwarzen Kapuzen haben ihn damit beauftragt.");
 
@@ -457,7 +457,7 @@ func void DIA_Dexter_Wo_Info()
 	}
 	else
 	{
-		AI_Output(self, other, "DIA_Dexter_Wo_09_02"); //Der Typ ist hier! Und nicht alleine. Da ist ein ganzer Haufen dieser Kerle überall unterwegs! Und die suchen dich.
+		AI_Output(self, other, "DIA_Dexter_Wo_09_02"); //Der Typ ist hier! Und nicht alleine. Da ist ein ganzer Haufen dieser Kerle ÃƒÂ¼berall unterwegs! Und die suchen dich.
 	};
 };
 

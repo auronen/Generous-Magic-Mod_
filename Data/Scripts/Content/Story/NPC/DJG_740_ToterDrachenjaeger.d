@@ -24,7 +24,7 @@ instance DJG_740_ToterDrachenjaeger(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 65); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 65); // Grenzen fÃƒÂ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);
@@ -39,6 +39,6 @@ instance DJG_740_ToterDrachenjaeger(Npc_Default)
 
 func void Rtn_Start_740()
 {
-	TA_Sit_Bench(08, 00, 23, 00, "MT14"); // Joly: ganz alter Dämonenturm
+	TA_Sit_Bench(08, 00, 23, 00, "MT14"); // Joly: ganz alter DÃƒÂ¤monenturm
 	TA_Sit_Bench(23, 00, 08, 00, "MT14");
 };

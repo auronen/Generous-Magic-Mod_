@@ -161,7 +161,7 @@ instance DIA_Aya_WarteHier(C_Info)
 	condition		= DIA_Aya_WarteHier_Condition;
 	information		= DIA_Aya_WarteHier_Info;
 	permanent		= TRUE;
-	description		= "Ich fürchte, ich muss mich von dir trennen.";
+	description		= "Ich fÃ¼rchte, ich muss mich von dir trennen.";
 };
 
 func int DIA_Aya_WarteHier_Condition()

@@ -96,7 +96,7 @@ instance Giant_Rat(Mst_Default_Giant_Rat)
 };
 
 //**************************************
-//	junge Giant_Rat (für Spielstart)
+//	junge Giant_Rat (fÃƒÂ¼r Spielstart)
 //**************************************
 
 instance YGiant_Rat(Mst_Default_Giant_Rat)

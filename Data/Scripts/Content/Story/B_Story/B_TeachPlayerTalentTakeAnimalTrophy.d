@@ -27,7 +27,7 @@ func int B_TeachPlayerTalentTakeAnimalTrophy(var C_Npc slf, var C_Npc oth, var i
 	Log_CreateTopic(TOPIC_TalentAnimalTrophy, LOG_NOTE);
 	B_LogEntry(TOPIC_TalentAnimalTrophy, TOPIC_TalentAnimalTrophy_1);
 
-	// ------ Körperteil nehmen lernen ------
+	// ------ KÃƒÂ¶rperteil nehmen lernen ------
 
 	if (trophy == TROPHY_Teeth) { PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] = TRUE;
 
@@ -89,7 +89,7 @@ func int B_TeachPlayerTalentTakeAnimalTrophy(var C_Npc slf, var C_Npc oth, var i
 
 	PrintScreen(PRINT_LearnTakeAnimalTrophy, -1, -1, FONT_Screen, 2);
 
-	// ------ bei jedem Körperteil: TakeAnimalTrophy-Talent lernen (programmvariable, wird nur zur Ausgabe in StatusScreen benutzt) ------
+	// ------ bei jedem KÃƒÂ¶rperteil: TakeAnimalTrophy-Talent lernen (programmvariable, wird nur zur Ausgabe in StatusScreen benutzt) ------
 	Npc_SetTalentSkill(oth, NPC_TALENT_TAKEANIMALTROPHY, 1);
 	return TRUE;
 };

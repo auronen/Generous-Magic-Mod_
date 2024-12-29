@@ -365,7 +365,7 @@ func void DIA_Addon_Matt_TooFar_Info()
 };
 
 // ------------------------------------------------------------
-// 			 Ich könnte 'nen Heiltrank gebrauchen!
+// 			 Ich kÃƒÂ¶nnte 'nen Heiltrank gebrauchen!
 // ------------------------------------------------------------
 instance DIA_Addon_Matt_Healing(C_INFO)
 {

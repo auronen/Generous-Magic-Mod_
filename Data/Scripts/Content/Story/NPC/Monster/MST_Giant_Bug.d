@@ -94,7 +94,7 @@ instance Giant_Bug(Mst_Default_Giant_Bug)
 };
 
 //**************************************
-//	junge Giant_Bug (für Spielstart)
+//	junge Giant_Bug (fÃƒÂ¼r Spielstart)
 //**************************************
 
 instance YGiant_Bug(Mst_Default_Giant_Bug)
@@ -209,7 +209,7 @@ instance YGiant_Bug_VinoRitual2(Mst_Default_Giant_Bug)
 };
 
 //**************************************
-//	Lobarts_Giant_Bug s (für Miliz Aufnahmemission)
+//	Lobarts_Giant_Bug s (fÃƒÂ¼r Miliz Aufnahmemission)
 //**************************************
 
 instance Lobarts_Giant_Bug1(Mst_Default_Giant_Bug)

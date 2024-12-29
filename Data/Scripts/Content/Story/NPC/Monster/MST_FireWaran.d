@@ -26,7 +26,7 @@ prototype Mst_Default_FireWaran(C_Npc)
 	protection[PROT_MAGIC]			= 0;
 
 	// -------- damage --------
-	damageType						= DAM_FIRE; // Opfer fängt an zu brennen
+	damageType						= DAM_FIRE; // Opfer fÃƒÂ¤ngt an zu brennen
 	//	damage[DAM_INDEX_BLUNT]		= 0;
 	//	damage[DAM_INDEX_EDGE]		= 0;
 	//	damage[DAM_INDEX_POINT]		= 0;

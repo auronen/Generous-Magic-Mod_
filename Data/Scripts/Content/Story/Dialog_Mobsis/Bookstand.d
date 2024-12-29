@@ -1,11 +1,11 @@
 // ##########################################################################
 // ##
-// ## Hier stehen alle Buchständermobsiscripte
+// ## Hier stehen alle BuchstÃƒÂ¤ndermobsiscripte
 // ##
 // ##########################################################################
 
 //*************************************
-//	Buchständer in der Klosterbibliothek
+//	BuchstÃƒÂ¤nder in der Klosterbibliothek
 //*************************************
 
 const string Bookstand_01_S1_1 = "The Test of Fire";
@@ -13,7 +13,7 @@ const string Bookstand_01_S1_2 = "Though a novice may feel ready to submit to th
 const string Bookstand_01_S1_3 = "The Test should challenge the wisdom, strength and dexterity of the novice. Therefore he must pass three trials, each of which is set before him by a magician of the High Council, before taking the Oath of the Fire to join the pact with the fire.";
 const string Bookstand_01_S1_4 = "Such is the will of Innos and so it shall be done.";
 const string Bookstand_01_S1_5 = "The High Council";
-func void Use_Bookstand_01_S1() // Buchständer in der Magierbibliothek
+func void Use_Bookstand_01_S1() // BuchstÃƒÂ¤nder in der Magierbibliothek
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 
@@ -21,7 +21,7 @@ func void Use_Bookstand_01_S1() // Buchständer in der Magierbibliothek
 	{
 		if (hero.guild == GIL_NOV)
 		{
-			KNOWS_FIRE_CONTEST = TRUE; // für die Prüfung des Feuers
+			KNOWS_FIRE_CONTEST = TRUE; // fÃƒÂ¼r die PrÃƒÂ¼fung des Feuers
 
 			Log_CreateTopic(TOPIC_FireContest, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_FireContest, LOG_RUNNING);
@@ -60,7 +60,7 @@ func void Use_Bookstand_01_S1() // Buchständer in der Magierbibliothek
 };
 
 //*************************************
-//	Buchständer in der Geheimen Bibliothek
+//	BuchstÃƒÂ¤nder in der Geheimen Bibliothek
 //*************************************
 // --------------------------------------
 var int FinalDragonEquipment_Once;
@@ -76,7 +76,7 @@ const string FINALDRAGONEQUIPMENT_S1_7 = "From: Weapons of the dragon lord.";
 const string FINALDRAGONEQUIPMENT_S1_8 = "To make an armor of dragon scales as hard as possible, the scales may be coated with the ore mined in the valley on the isle of Karynis.";
 const string FINALDRAGONEQUIPMENT_S1_9 = "To make a blade worthy of a dragon lord, the blade should be steeped in dragon blood. Even 5 phials of the blood can give the steel unequalled sharpness and strength.";
 const string FINALDRAGONEQUIPMENT_S1_10 = "Note: 'Karynis' probably refers to what is now known as Khorinis.";
-func void Use_FINALDRAGONEQUIPMENT_S1() // Buchständer in der geheimen Bibliothek
+func void Use_FINALDRAGONEQUIPMENT_S1() // BuchstÃƒÂ¤nder in der geheimen Bibliothek
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 

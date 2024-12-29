@@ -436,7 +436,7 @@ func void DIA_Opolos_Biblothek_Info()
 };
 
 //*********************************************************************
-//		Sc hat Opolos das Studieren ermöglicht (Kap. 2)
+//		Sc hat Opolos das Studieren ermÃƒÂ¶glicht (Kap. 2)
 //*********************************************************************
 instance DIA_Opolos_HelloAgain(C_INFO)
 {

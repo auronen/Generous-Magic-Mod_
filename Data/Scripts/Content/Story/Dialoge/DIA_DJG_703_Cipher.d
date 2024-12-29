@@ -266,7 +266,7 @@ func void DIA_CipherDJG_GoForSwampDragon_Info()
 		AI_StopProcessInfos(self);
 	};
 
-	self.flags = 0; // Joly: Wer weiß!!?!
+	self.flags = 0; // Joly: Wer weiÃƒÅ¸!!?!
 	DJG_Rod.flags = 0;
 };
 

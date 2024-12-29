@@ -1,5 +1,5 @@
 // ***************************************************
-//  	B_DragonKillCounter (Setzt die Countervariable "MIS_KilledDragons", wieviele Drachen der SC schon getötet hat.)
+//  	B_DragonKillCounter (Setzt die Countervariable "MIS_KilledDragons", wieviele Drachen der SC schon getÃƒÂ¶tet hat.)
 // ***************************************************
 var int SwapDragnIsDead;
 var int RckDragnIsDead;
@@ -58,7 +58,7 @@ func int B_DragonKillCounter(var C_Npc current_dragon)
 	{
 		MIS_AllDragonsDead = TRUE;
 
-		// Biff hat den letzten Drachenkampf überlebt.
+		// Biff hat den letzten Drachenkampf ÃƒÂ¼berlebt.
 
 		if ((DJG_BiffParty == TRUE)
 		&& ((Npc_IsDead(Biff)) == FALSE))

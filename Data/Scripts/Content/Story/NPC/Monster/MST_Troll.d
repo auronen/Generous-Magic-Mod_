@@ -149,7 +149,7 @@ instance Maya_Troll(Mst_Default_Troll)
 };
 
 //*********************************
-//	Höhlentroll bei Orks auf der DI
+//	HÃƒÂ¶hlentroll bei Orks auf der DI
 //*********************************
 instance Troll_DI(Mst_Default_Troll)
 {

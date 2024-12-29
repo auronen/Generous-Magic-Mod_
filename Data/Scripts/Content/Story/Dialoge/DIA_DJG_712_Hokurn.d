@@ -446,7 +446,7 @@ func void DIA_Hokurn_Teach_1H_5()
 };
 
 //*********************************************************************
-//	Wieso hängt ihr hier überhaupt rum?
+//	Wieso hÃƒÂ¤ngt ihr hier ÃƒÂ¼berhaupt rum?
 //*********************************************************************
 instance DIA_Hokurn_StayHere(C_INFO)
 {
@@ -472,7 +472,7 @@ func void DIA_Hokurn_StayHere_Info()
 	AI_Output(self, other, "DIA_Hokurn_StayHere_01_02"); //And I don't care as long as I have enough to drink.
 
 	/*
-	AI_Output(other, self, "DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier überhaupt?
+	AI_Output(other, self, "DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier ÃƒÂ¼berhaupt?
 	AI_Output(self, other, "DIA_Addon_Hokurn_StayHere_01_01"); //Keine Ahnung, was wir hier machen oder wann es los geht.
 	AI_Output(self, other, "DIA_Addon_Hokurn_StayHere_01_02"); //Ist mir auch egal, solange ich genug zu trinken habe.
 	*/

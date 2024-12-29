@@ -232,7 +232,7 @@ func void UnEquip_ItRi_Addon_Health_01()
 };
 
 // ---------------------------------------------------------------------------------------------------------
-instance ItRi_Addon_Health_02(C_Item) // Höhle zum Canyon
+instance ItRi_Addon_Health_02(C_Item) // HÃƒÂ¶hle zum Canyon
 {
 	name						= NAME_Ring;
 
@@ -474,9 +474,9 @@ func void UnEquip_ItRi_Addon_Mana_02()
 };
 
 // ------------------------------------------------------------------------------------------
-// Kumulatives Stärke Amulett (Maya)
+// Kumulatives StÃƒÂ¤rke Amulett (Maya)
 // ------------------------------------------------------------------------------------------
-instance ItAm_Addon_STR(C_Item) // feuerwaranhöhle strand
+instance ItAm_Addon_STR(C_Item) // feuerwaranhÃƒÂ¶hle strand
 {
 	name						= NAME_Amulett;
 

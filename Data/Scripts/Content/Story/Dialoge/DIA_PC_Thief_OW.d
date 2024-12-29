@@ -22,7 +22,7 @@ func void DIA_DiegoOw_EXIT_Info()
 };
 
 //******************************************************************
-//				Begrüssung
+//				BegrÃƒÂ¼ssung
 //******************************************************************
 instance DIA_DiegoOw_Hallo(C_INFO)
 {
@@ -76,7 +76,7 @@ func int DIA_DiegoOw_Beweise_Condition()
 
 func void DIA_DiegoOw_Beweise_Info()
 {
-	// AI_Output(other,self,"DIA_DiegoOw_Silvestro_15_00");// Was weißt du von Silvestros Erz?
+	// AI_Output(other,self,"DIA_DiegoOw_Silvestro_15_00");// Was weiÃƒÅ¸t du von Silvestros Erz?
 
 	AI_Output(other, self, "DIA_DiegoOw_Hallo_15_11"); //Listen, I need this proof.
 

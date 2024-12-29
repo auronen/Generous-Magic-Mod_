@@ -458,7 +458,7 @@ func void DIA_Onar_CollectGold_Info()
 		Onar_SOLD_Day = Wld_GetDay();
 		Onar_SOLD_XP = other.exp;
 	}
-	else // genau 1 Tag später...
+	else // genau 1 Tag spÃƒÂ¤ter...
 	{
 		if (other.exp > Onar_SOLD_XP + 200)
 		{

@@ -429,7 +429,7 @@ func void DIA_Lester_BACKINTOWN_Info()
 	B_GiveInvItems(self, other, ItRu_TeleportXardas, 1);
 
 	AI_StopProcessInfos(self);
-	Npc_ExchangeRoutine(self, "START"); // Joly: Lester geht wieder zurück in sein Tal!
+	Npc_ExchangeRoutine(self, "START"); // Joly: Lester geht wieder zurÃƒÂ¼ck in sein Tal!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -721,7 +721,7 @@ func void DIA_Lester_LeaveMyShip_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir ÃƒÂ¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lester_StillNeedYou(C_INFO)
 {
@@ -735,7 +735,7 @@ instance DIA_Lester_StillNeedYou(C_INFO)
 
 func int DIA_Lester_StillNeedYou_Condition()
 {
-	if (((Lester_IsOnBOard == LOG_OBSOLETE) // Hier brauch man natürlich nur eine variable abfragen
+	if (((Lester_IsOnBOard == LOG_OBSOLETE) // Hier brauch man natÃƒÂ¼rlich nur eine variable abfragen
 	|| (Lester_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew))
 	{

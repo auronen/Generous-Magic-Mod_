@@ -47,7 +47,7 @@ func void DIA_Bromor_GIRLS_Info()
 	AI_Output(other, self, "DIA_Addon_Bromor_GIRLS_15_00"); //Are you the one who runs this place?
 	// ADDON<
 
-	// AI_Output(other, self, "DIA_Bromor_GIRLS_15_00"); // Ich will mich amüsieren.
+	// AI_Output(other, self, "DIA_Bromor_GIRLS_15_00"); // Ich will mich amÃƒÂ¼sieren.
 	// AI_Output(self, other, "DIA_Bromor_GIRLS_07_01"); // Deshalb bist du ja hergekommen.
 
 	AI_Output(self, other, "DIA_Bromor_GIRLS_07_02"); //I am Bromor. This is my house, and these are my girls. I like my girls.

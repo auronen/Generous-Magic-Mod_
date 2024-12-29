@@ -32,7 +32,7 @@ instance DIA_Addon_Merdarion_NW_PICKPOCKET(C_INFO)
 	condition		= DIA_Addon_Merdarion_NW_PICKPOCKET_Condition;
 	information		= DIA_Addon_Merdarion_NW_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre schwierig seine Spruchrolle zu stehlen)";
+	description		= "(Es wÃƒÂ¤re schwierig seine Spruchrolle zu stehlen)";
 };
 
 func int DIA_Addon_Merdarion_NW_PICKPOCKET_Condition()

@@ -181,7 +181,7 @@ func void DIA_Addon_Skip_ADW_GregGetroffen_Info()
 };
 
 // ************************************************************
-// 			  			Überfahrt - PERM
+// 			  			ÃƒÅ“berfahrt - PERM
 // ************************************************************
 var int Skip_Transport_Variation;
 // ------------------------------------------------------------
@@ -224,7 +224,7 @@ func void DIA_Addon_Skip_Transport_Info()
 };
 
 // ************************************************************
-// 			 			Banditen + Rüstung
+// 			 			Banditen + RÃƒÂ¼stung
 // ************************************************************
 // ------------------------------------------------------------
 // 							About Bandits
@@ -262,7 +262,7 @@ func void DIA_Addon_Skip_Bandits_Info()
 };
 
 // ------------------------------------------------------------
-// 						Banditenrüstung
+// 						BanditenrÃƒÂ¼stung
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_ArmorPrice(C_INFO)
 {
@@ -296,7 +296,7 @@ func void DIA_Addon_Skip_ArmorPrice_Info()
 };
 
 // ------------------------------------------------------------
-// 						In Gregs Hütte
+// 						In Gregs HÃƒÂ¼tte
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_GregsHut(C_INFO)
 {
@@ -329,7 +329,7 @@ func void DIA_Addon_Skip_GregsHut_Info()
 };
 
 // ------------------------------------------------------------
-//					Über Francis --> Samuel
+//					ÃƒÅ“ber Francis --> Samuel
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_Francis(C_INFO)
 {
@@ -476,7 +476,7 @@ func void DIA_Addon_Skip_AngusHankDead_Info()
 };
 
 // ------------------------------------------------------------
-// 			 			Kenne den Mörder
+// 			 			Kenne den MÃƒÂ¶rder
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_AngusHankMurder(C_INFO)
 {
@@ -512,7 +512,7 @@ func void DIA_Addon_Skip_AngusHankMurder_Info()
 };
 
 // ------------------------------------------------------------
-// 							Grog zurück
+// 							Grog zurÃƒÂ¼ck
 // ------------------------------------------------------------
 instance DIA_Addon_Skip_Grog(C_INFO)
 {

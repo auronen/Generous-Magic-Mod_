@@ -1,5 +1,5 @@
 // *************************
-// Globalvariablen für Story
+// Globalvariablen fÃƒÂ¼r Story
 // *************************
 
 // ------ Teacher MAX Werte ------
@@ -61,7 +61,7 @@ var int heroHasEquippedSpecialStaff;
 */
 	var int STR_Artefakt_Effekt;
 
-// ------------Rüstungen---------
+// ------------RÃƒÂ¼stungen---------
 	var int LeatherArmor_Equipped;
 	var int SLDArmor_Equipped;
 	var int NOVArmor_Equipped;
@@ -69,11 +69,11 @@ var int heroHasEquippedSpecialStaff;
 	var int MILArmor_Equipped;
 	var int MCArmor_Equipped;
 // ----------Guertel-----------
-/*+ Specials (Diebesgürtel --> DEX zusammen mit?)
-Minecrawler Gürtel Protection Bonus?
-Gürtel der täglichen Erfahrung XP Ambient * 2
-Gürtel des tiere ausnehmens(alle AT TALENTS)
-Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
+/*+ Specials (DiebesgÃƒÂ¼rtel --> DEX zusammen mit?)
+Minecrawler GÃƒÂ¼rtel Protection Bonus?
+GÃƒÂ¼rtel der tÃƒÂ¤glichen Erfahrung XP Ambient * 2
+GÃƒÂ¼rtel des tiere ausnehmens(alle AT TALENTS)
+GÃƒÂ¼rtel der Heilung(1. Rezept heiltrank oder alle ...)
 */
 	var int KDF01_Equipped;
 	var int KDF02_Equipped;
@@ -99,9 +99,9 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int WISPSKILL_LEVEL;
 
 // ---------------------------------------------------
-	var int MIS_Addon_Cavalorn_TheHut;															// SC soll nach Cavalorns Hütte sehen.
+	var int MIS_Addon_Cavalorn_TheHut;															// SC soll nach Cavalorns HÃƒÂ¼tte sehen.
 	var int MIS_Addon_Cavalorn_KillBrago;														// BanditenKlatschen mit Cavalorn
-	var int MIS_Addon_Cavalorn_Letter2Vatras;													// übergebe Cavalorns Brief an Vatras
+	var int MIS_Addon_Cavalorn_Letter2Vatras;													// ÃƒÂ¼bergebe Cavalorns Brief an Vatras
 	var int MIS_Addon_Lester_PickForConstantino;												// SC Alternativweg in die Stadt.
 	var int MIS_Addon_Greg_BringMeToTheCity;													// SC verhilft Greg in die Stadt zu kommen.
 	var int MIS_Addon_Lares_Ornament2Saturas;													// Lares : bring datt ding zu SAturas
@@ -110,22 +110,22 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 
 	var int MIS_Addon_Saturas_BringRiordian2Me;													// Saturas schickt nach Riordian
 	var int MIS_Addon_Nefarius_BringMissingOrnaments;											// SC soll die 3 restlichen Ornamente finden.
-	var int MIS_Addon_Martin_GetRangar;															// SC soll den Lagerdieb für Martin erwischen.
+	var int MIS_Addon_Martin_GetRangar;															// SC soll den Lagerdieb fÃƒÂ¼r Martin erwischen.
 	var int MIS_Addon_Vatras_Go2Daron;															// SC soll zu Daron gehen wegen seinem Gebetsbuch
 	var int MIS_Addon_Daron_GetStatue;															// SC soll Daron die Statue von den Gobbos bei Taverne besorgen
-	var int MIS_Addon_Cord_Look4Patrick;														// SC soll bei Dexter nachsehen, ob sich Patrick immer noch dort aufhält.
-	var int MIS_Addon_Farim_PaladinFisch;														// SC soll dafür sorgen, dass die Miliz nicht mehr seinen Fisch pfändet.
+	var int MIS_Addon_Cord_Look4Patrick;														// SC soll bei Dexter nachsehen, ob sich Patrick immer noch dort aufhÃƒÂ¤lt.
+	var int MIS_Addon_Farim_PaladinFisch;														// SC soll dafÃƒÂ¼r sorgen, dass die Miliz nicht mehr seinen Fisch pfÃƒÂ¤ndet.
 	var int MIS_Addon_Cavalorn_GetOrnamentFromPAL;												// Hol das fehlende Ornament von Lord Hagen
-	var int MIS_Lares_BringRangerToMe;															// Besorge eine Ablöse für Lares, damit er vom Hafen weg kann.
-	var int MIS_Addon_Lares_ComeToRangerMeeting;												// SC soll bei Orlan erscheinen um seine Rüstung zu kriegen.
-	var int MIS_Addon_Greg_RakeCave;															// SC soll für Greg buddeln
+	var int MIS_Lares_BringRangerToMe;															// Besorge eine AblÃƒÂ¶se fÃƒÂ¼r Lares, damit er vom Hafen weg kann.
+	var int MIS_Addon_Lares_ComeToRangerMeeting;												// SC soll bei Orlan erscheinen um seine RÃƒÂ¼stung zu kriegen.
+	var int MIS_Addon_Greg_RakeCave;															// SC soll fÃƒÂ¼r Greg buddeln
 	var int MIS_Addon_Greg_RakeCave_Day;
 	var int MIS_Addon_Baltram_Paket4Skip;														// SC soll Handel zwischen Baltram und Skip abwickeln
-	var int MIS_Addon_Erol_BanditStuff;															// SC soll dem Händler Erol seine Waren von den Banditen zurück bringen.
+	var int MIS_Addon_Erol_BanditStuff;															// SC soll dem HÃƒÂ¤ndler Erol seine Waren von den Banditen zurÃƒÂ¼ck bringen.
 
-	const int MinimumPassagePlants						= 10;									// Anzahl der zu sammelnden Planzen für Constantino um in die Stadt zu kommen (Spielstart)
-	var int SaturasFirstMessageOpened;															// = TRUE wenn den Brief geöffnet
-	var int Vatras_SC_Liar;																		// Lügencounter für Vatras
+	const int MinimumPassagePlants						= 10;									// Anzahl der zu sammelnden Planzen fÃƒÂ¼r Constantino um in die Stadt zu kommen (Spielstart)
+	var int SaturasFirstMessageOpened;															// = TRUE wenn den Brief geÃƒÂ¶ffnet
+	var int Vatras_SC_Liar;																		// LÃƒÂ¼gencounter fÃƒÂ¼r Vatras
 	var int Vatras_ToMartin;
 	var int SC_GotWisp;
 	var int Vatras_GehZuLares;																	// Vatras schickt SC zu Lares
@@ -133,67 +133,67 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int LaresGuide_ZumPortal;																// Lares bringt im moment den SC zu...
 	var int LaresGuide_ZuOnar;																	// Lares bringt im moment den SC zu...
 	var int LaresGuide_OrnamentForest;															// Lares bringt im moment den SC zu...
-	var int Andre_Knows_MartinEmpfehlung;														// = TRUE Lord Andre lässt SC zu bei Miliz wegen Martins Empfehlung
+	var int Andre_Knows_MartinEmpfehlung;														// = TRUE Lord Andre lÃƒÂ¤sst SC zu bei Miliz wegen Martins Empfehlung
 	var int SC_KnowsKlosterTribut;																// = TRUE Pedro hat ihm die Klosterkosten (Schaf und 1000 GM) offenbart
-	var int Pedro_NOV_Aufnahme_LostInnosStatue_Daron;											// = TRUE Pedro lässt SC ein aufgrund des LostInnosStatue von Daron
-	var int SCKnowsBaltramAsPirateTrader;														// = TRUE SC weiß, dass Baltram mit Piraten handelt.
-	var int SC_GotRangar;																		// = TRUE SC hat Rangar beim Plüdern des Proviantlagers erwischt!
+	var int Pedro_NOV_Aufnahme_LostInnosStatue_Daron;											// = TRUE Pedro lÃƒÂ¤sst SC ein aufgrund des LostInnosStatue von Daron
+	var int SCKnowsBaltramAsPirateTrader;														// = TRUE SC weiÃƒÅ¸, dass Baltram mit Piraten handelt.
+	var int SC_GotRangar;																		// = TRUE SC hat Rangar beim PlÃƒÂ¼dern des Proviantlagers erwischt!
 	var int SC_MeetsGregTime;																	// wann und wo hat der SC Greg_NW schon getroffen
 	var int GregLocation;																		// Wo befindet sich Greg_NW gerade
 	const int Greg_Farm1								= 0;									// Vor der Stadt
 	const int Greg_Taverne								= 1;									// Orlans Kneipe
 	const int Greg_Bigcross								= 2;									// Auf den Feldern von Onar
 	const int Greg_Dexter								= 3;									// Dexter
-	var int SC_KnowsGregsSearchsDexter;															// = TRUE SC weiß, dass Greg Dexter sucht.
-	var int SC_KnowsConnectionSkipGreg;															// = TRUE SC weiß, dass Greg und Skip zusammen gehören.
+	var int SC_KnowsGregsSearchsDexter;															// = TRUE SC weiÃƒÅ¸, dass Greg Dexter sucht.
+	var int SC_KnowsConnectionSkipGreg;															// = TRUE SC weiÃƒÅ¸, dass Greg und Skip zusammen gehÃƒÂ¶ren.
 	var int SC_SawGregInTaverne;																// = TRUE SC hat mit Greg in der Taverne gesprochen.
-	var int Greg_SuchWeiter;																	// = TRUE SC soll auch die anderen Schätze für ihn finden.
-	var int Skip_Rum4Baltram;																	// = TRUE Skip gibt Rum für Baltram mit
+	var int Greg_SuchWeiter;																	// = TRUE SC soll auch die anderen SchÃƒÂ¤tze fÃƒÂ¼r ihn finden.
+	var int Skip_Rum4Baltram;																	// = TRUE Skip gibt Rum fÃƒÂ¼r Baltram mit
 	var int Knows_GregsHut;
 	var int Francis_ausgeschissen;																// bei Greg
 	var int MIS_Brandon_BringHering;
 
 // Missing People
 	var int Lares_CanBringScToPlaces;															// = TRUE Lares braucht die Boote im Hafen nicht mehr im Auge behalten.
-	var int SC_HearedAboutMissingPeople;														// = TRUE SC weiß, dass in der Stadt Leute verschwinden.
-	var int SC_KnowsDexterAsKidnapper;															// = TRUE SC weiß, dass Dexter in der Sache mit den verschwundenen Leuten mit drin hängt
-	var int Ranger_SCKnowsDexter;																// = TRUE SC weiß, dass Dexter im Castlemine sitzt von einem AddonNPC
+	var int SC_HearedAboutMissingPeople;														// = TRUE SC weiÃƒÅ¸, dass in der Stadt Leute verschwinden.
+	var int SC_KnowsDexterAsKidnapper;															// = TRUE SC weiÃƒÅ¸, dass Dexter in der Sache mit den verschwundenen Leuten mit drin hÃƒÂ¤ngt
+	var int Ranger_SCKnowsDexter;																// = TRUE SC weiÃƒÅ¸, dass Dexter im Castlemine sitzt von einem AddonNPC
 	var int Dexter_KnowsPatrick;																// = TRUE Dexter kennt Patrick
 	var int SCKnowsFarimAsWilliamsFriend;														// = TRUE SC kann Farim nach dem verschwundenen William befragen
-	var int SCKnowsSkipAsKidnapper;																// = TRUE die Spur führt den SC zu Skip
-	var int SCKnowsMissingPeopleAreInAddonWorld;												// = TRUE die Spur führt den SC zur Addonworld
+	var int SCKnowsSkipAsKidnapper;																// = TRUE die Spur fÃƒÂ¼hrt den SC zu Skip
+	var int SCKnowsMissingPeopleAreInAddonWorld;												// = TRUE die Spur fÃƒÂ¼hrt den SC zur Addonworld
 	var int SCKnowsExactlyWhereMissingPeopleAre;												// wird nicht verwendet
 	var int SCMetMissingPeople;																	// wird nicht verwendet
 	var int MissingPeopleReturnedHome;															// = TRUE SC hat die Leute befreit und nach Hause gebracht.
-	var int MIS_Akil_BringMissPeopleBack;														// Akil will Tonak und Telbor wieder zurück.
-	var int MIS_Bengar_BringMissPeopleBack;														// Bengar will Pardos wieder zurück.
-	var int MIS_Addon_Andre_MissingPeople;														// (nur MIL) Andre will die Leute zurück.
+	var int MIS_Akil_BringMissPeopleBack;														// Akil will Tonak und Telbor wieder zurÃƒÂ¼ck.
+	var int MIS_Bengar_BringMissPeopleBack;														// Bengar will Pardos wieder zurÃƒÂ¼ck.
+	var int MIS_Addon_Andre_MissingPeople;														// (nur MIL) Andre will die Leute zurÃƒÂ¼ck.
 	var int MIS_Addon_Vatras_WhereAreMissingPeople;												// Vatras will wissen, was mit den Vermissten passiert ist.
 	var int MIS_Bromor_LuciaStoleGold;															// = TRUE Bromor vermisst seine Ersparnisse. Lucia hat sie mitgehen lassen.
-	var int Bromor_Hausverbot;																	// = TRUE Bromor schmeißt den Spieler aus seinem Laden.
-	var int MIS_Thorben_BringElvrichBack;														// = TRUE Thorben will Elvrich wieder zurück bei der Arbeit haben.
-	var int Elvrich_GoesBack2Thorben;															// = TRUE Elvrich geht zurück zu Thorben
+	var int Bromor_Hausverbot;																	// = TRUE Bromor schmeiÃƒÅ¸t den Spieler aus seinem Laden.
+	var int MIS_Thorben_BringElvrichBack;														// = TRUE Thorben will Elvrich wieder zurÃƒÂ¼ck bei der Arbeit haben.
+	var int Elvrich_GoesBack2Thorben;															// = TRUE Elvrich geht zurÃƒÂ¼ck zu Thorben
 	var int MIS_LuciasLetter;																	// = TRUE Elvrich hat den Abschiedsbrief von Lucia gelesen.
-	var int MIS_Bartok_MissingTrokar;															// = TRUE Bartok will seinen Jägerfreund Trokar wieder haben.
+	var int MIS_Bartok_MissingTrokar;															// = TRUE Bartok will seinen JÃƒÂ¤gerfreund Trokar wieder haben.
 	var int SC_KnowsLuciaCaughtByBandits;														// = TRUE Lucia ist mit den Banditen hinter Sekobs Hof verschwunden.
-	var int Elvrich_SCKnowsPirats;																// = TRUE Elvrich erzählt von Skip!
+	var int Elvrich_SCKnowsPirats;																// = TRUE Elvrich erzÃƒÂ¤hlt von Skip!
 	var int Dexter_NoMoreSmallTalk;																// = TRUE Noch einmal Dexter anlabern und Dexter greift an.
 	var int Saturas_WillVertrauensBeweis;														// = TRUE saturas wartet auf antwort von Vatras!
-	var int SC_GotPORTALTEMPELWALKTHROUGHKey;													// = TRUE SC kann die Tür PORTALTEMPELWALKTHROUGH in NW potentiel öffnen.
+	var int SC_GotPORTALTEMPELWALKTHROUGHKey;													// = TRUE SC kann die TÃƒÂ¼r PORTALTEMPELWALKTHROUGH in NW potentiel ÃƒÂ¶ffnen.
 
 // Ranger
-	var int SC_KnowsRanger;																		// = TRUE SC hat vom RING des Wassers gehört.
+	var int SC_KnowsRanger;																		// = TRUE SC hat vom RING des Wassers gehÃƒÂ¶rt.
 	var int SC_IsRanger;																		// = TRUE Name ist programm
 	var int SaturasKnows_SC_IsRanger;															// = TRUE Saturas akzeptiert die Aufnahme des SC bei den Rangern
 	var int SCIsWearingRangerRing;																// = TRUE Name ist programm
 	var int RangerRingIsLaresRing;																// = TRUE Name ist programm
-	var int SC_KnowsCordAsRangerFromLares;														// = TRUE SC weiß von Lares, dass Cord zum RING gehört
-	var int SC_KnowsCordAsRangerFromLee;														// = TRUE SC weiß von Lares, dass Cord zum RING gehört
+	var int SC_KnowsCordAsRangerFromLares;														// = TRUE SC weiÃƒÅ¸ von Lares, dass Cord zum RING gehÃƒÂ¶rt
+	var int SC_KnowsCordAsRangerFromLee;														// = TRUE SC weiÃƒÅ¸ von Lares, dass Cord zum RING gehÃƒÂ¶rt
 	var int Cavalorn_RangerHint;																// = TRUE Cavalorn gibt Hint auf Ranger!
-	var int Baltram_Exchange4Lares;																// = TRUE Baltram kümmert sich um eine Ablöse am Hafen für Lares
-	var int SC_KnowsBaltramAsRanger;															// = TRUE Baltram gehört zum RING
+	var int Baltram_Exchange4Lares;																// = TRUE Baltram kÃƒÂ¼mmert sich um eine AblÃƒÂ¶se am Hafen fÃƒÂ¼r Lares
+	var int SC_KnowsBaltramAsRanger;															// = TRUE Baltram gehÃƒÂ¶rt zum RING
 	var int Lares_GotRingBack;																	// = TRUE Lares hat seinen Aquamarinring wieder
-	var int Lares_HaltsMaul;																	// = TRUE Lares hälts Maul nach Ranger meeting
+	var int Lares_HaltsMaul;																	// = TRUE Lares hÃƒÂ¤lts Maul nach Ranger meeting
 	var int RangerHelp_gildeSLD;																// = TRUE Lares hilft dem Spieler schneller bei SLD aufgenommen zu werden.
 	var int RangerHelp_gildeMIL;																// = TRUE Lares hilft dem Spieler schneller bei MIL aufgenommen zu werden.
 	var int RangerHelp_gildeKDF;																// = TRUE Lares hilft dem Spieler schneller bei KDF aufgenommen zu werden.
@@ -206,22 +206,22 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int RangerMeetingRunning;																// = TRUE Die Ranger meeten in Orlans Taverne
 	var int Lares_ComeToRangerMeeting;															// = TRUE Lares schickt den Spieler zum Rangermeeting.
 	var int Lares_TakeFirstMissionFromVatras;													// = TRUE Lares schickt den Spieler zum Vatras um seinen ersten Auftrag abzuholen.
-	var int MIS_Vatras_FindTheBanditTrader;														// Vatras will den Namen des Händler aus dem oberen Viertel, der den Banditen Waffen liefert.
-	var int MIs_Martin_FindTheBanditTrader;														// Martin will den Namen des Händler aus dem oberen Viertel, der den Banditen Waffen liefert.
+	var int MIS_Vatras_FindTheBanditTrader;														// Vatras will den Namen des HÃƒÂ¤ndler aus dem oberen Viertel, der den Banditen Waffen liefert.
+	var int MIs_Martin_FindTheBanditTrader;														// Martin will den Namen des HÃƒÂ¤ndler aus dem oberen Viertel, der den Banditen Waffen liefert.
 	var int BanditTrader_Lieferung_Gelesen;														// = TRUE SC hat den Lieferungsschein gelesen.
 	var int Fernando_HatsZugegeben;																// Fernando hat zugegeben Waffen an die Banditen geliefert zu haben.
 	var int Fernando_ImKnast;																	// Fernando Wird inhaftiert
-	var int SC_ShowedRangerArmor;																// SC Hat die RangerRüstung angehabt als er mit einem NSC geredet hat, der nicht zum 'Ring' gehört.
-	var int Orlan_KnowsSCAsRanger;																// = TRUE Orlan weiß, dass SC Ranger ist!
-	var int Orlan_Hint_Lares;																	// = TRUE Lares erzählt von Orlan.
+	var int SC_ShowedRangerArmor;																// SC Hat die RangerRÃƒÂ¼stung angehabt als er mit einem NSC geredet hat, der nicht zum 'Ring' gehÃƒÂ¶rt.
+	var int Orlan_KnowsSCAsRanger;																// = TRUE Orlan weiÃƒÅ¸, dass SC Ranger ist!
+	var int Orlan_Hint_Lares;																	// = TRUE Lares erzÃƒÂ¤hlt von Orlan.
 	var int Martin_KnowsFarim;																	// = TRUE Martin hilft Farim bei seinem Milizproblem
-	var int MadKillerCount;																		// SC's Counter für Ermordung unschuldiger Zivilisten.
+	var int MadKillerCount;																		// SC's Counter fÃƒÂ¼r Ermordung unschuldiger Zivilisten.
 	var int VatrasPissedOffForever;
 	var int VatrasMadKillerCount;
 
 // Ornamnet Portal
 	var int RitualRingRuns;																		// = LOG_RUNNING Ritual den Ornamentring zu heilen.
-	var int SC_KnowsOrnament;																	// = TRUE SC weiß, was es mit den Ornamenten auf sich hat.
+	var int SC_KnowsOrnament;																	// = TRUE SC weiÃƒÅ¸, was es mit den Ornamenten auf sich hat.
 	var int ORNAMENT_SWITCHED_BIGFARM;															// = TRUE Das Steinkreis-Ornamentevent bei Onars Hof ist aktiviert worden
 	var int ORNAMENT_SWITCHED_FARM;																// = TRUE Das Steinkreis-Ornamentevent bei Lobarts Hof ist aktiviert worden
 	var int ORNAMENT_SWITCHED_FOREST;															// = TRUE Das Steinkreis-Ornamentevent im Medium Wald ist aktiviert worden
@@ -229,7 +229,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int SC_SAW_ORNAMENT_MAP;																// = TRUE SC hat gesehen, wo er hin muss zu den teinkreisen
 	var int Lord_Hagen_GotOrnament;																// = TRUE SC hat das fehlende Ornament von hagen bekommen
 	var int Hagen_BringProof;																	// Ohne Guild reinflippern FIX
-	var int Vatras2Saturas_FindRaven_Open;														// = TRUE SC hat den Brief von Vatras an Saturas geöffnet.
+	var int Vatras2Saturas_FindRaven_Open;														// = TRUE SC hat den Brief von Vatras an Saturas geÃƒÂ¶ffnet.
 
 // Teleportsteine
 	var int SCUsed_TELEPORTER;																	// = TRUE SC benutzte irgendeinen Teleporter
@@ -243,29 +243,29 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int SCUsed_ADW_TELEPORTSTATION_PIRATES;													// = TRUE SC benutzte die Teleportstation bei...
 	var int SCUsed_ADW_TELEPORTSTATION_RAVENTELEPORT_OUT;										// = TRUE RAUS AUS aDANOSTEMPEL
 
-	var int SCUsed_ADW_TELEPORTSTATION_PIRATES_JACKSMONSTER;									// = TRUE Monster gespawnt, die bei AlligatorJack stören
+	var int SCUsed_ADW_TELEPORTSTATION_PIRATES_JACKSMONSTER;									// = TRUE Monster gespawnt, die bei AlligatorJack stÃƒÂ¶ren
 
 	var int SC_ADW_ActivatedAllTelePortStones;													// = TRUE Alle ADW Teleporter sind aktiviert.
 
 // ADDONWORLD KDW
-	var int NefariusADW_Talk2Saturas;															// = TRUE Infos über die Flut
-	var int MIS_ADDON_Myxir_GeistBeschwoeren;													// Myxir will, dass SC Quarhodron beschwört
-	var int SC_KnowsRavensGoldmine;																// SC hörte von der Goldmine.
+	var int NefariusADW_Talk2Saturas;															// = TRUE Infos ÃƒÂ¼ber die Flut
+	var int MIS_ADDON_Myxir_GeistBeschwoeren;													// Myxir will, dass SC Quarhodron beschwÃƒÂ¶rt
+	var int SC_KnowsRavensGoldmine;																// SC hÃƒÂ¶rte von der Goldmine.
 	var int StPl_nDocID;
-	var int Myxir_CITY_IstDa;																	// Ablöse von Vatras ist da.
+	var int Myxir_CITY_IstDa;																	// AblÃƒÂ¶se von Vatras ist da.
 	var int SC_OpenedCavalornsBeutel;															// = TRUE SC hat einen Nugget erhalten, Cavalornsbeutel
-	var int MIS_Saturas_LookingForHousesOfRulers;												// SC soll die 5 Herrenhäuser finden.
-	var int MIS_Riordian_HousesOfRulers;														// SC soll die 5 Herrenhäuser finden.
+	var int MIS_Saturas_LookingForHousesOfRulers;												// SC soll die 5 HerrenhÃƒÂ¤user finden.
+	var int MIS_Riordian_HousesOfRulers;														// SC soll die 5 HerrenhÃƒÂ¤user finden.
 
 	var int ENTERED_ADDONWORLD;																	// = TRUE war schon in der Addonworld
-	var int VatrasCanLeaveTown_Kap3;															// = TRUE Vatras kann nun zum Umkehrritual aufbrechen (Kapitelbremse fürs Addon)
-	var int VatrasAbloeseIstDa;																	// = TRUE Vatras Ablösung (ein KDW aus der ADW) ist in Khorinis eingetroffen.
-	var int Ghost_SCKnowsHow2GetInAdanosTempel;													// = TRUE Quarhodron erzählt SC wie man Ravens Tür aufmacht und in den Tempel kommt.
-	var int Saturas_KnowsHow2GetInTempel;														// = TRUE Saturas weiß wie man Ravens Tür aufmacht und in den Tempel kommt.
+	var int VatrasCanLeaveTown_Kap3;															// = TRUE Vatras kann nun zum Umkehrritual aufbrechen (Kapitelbremse fÃƒÂ¼rs Addon)
+	var int VatrasAbloeseIstDa;																	// = TRUE Vatras AblÃƒÂ¶sung (ein KDW aus der ADW) ist in Khorinis eingetroffen.
+	var int Ghost_SCKnowsHow2GetInAdanosTempel;													// = TRUE Quarhodron erzÃƒÂ¤hlt SC wie man Ravens TÃƒÂ¼r aufmacht und in den Tempel kommt.
+	var int Saturas_KnowsHow2GetInTempel;														// = TRUE Saturas weiÃƒÅ¸ wie man Ravens TÃƒÂ¼r aufmacht und in den Tempel kommt.
 	var int MIS_ADDON_Saturas_GoToRaven;														// = TRUE SC muss einen Weg finden zu Raven zu gelangen.
 	var int Saturas_RiesenPlan;																	// = TRUE SC soll zu Myxir, Geist erwecken geschichte abholen.
-	var int SC_Knows_WeaponInAdanosTempel;														// = TRUE SC weiß vom Schwert im Tempel
-	var int Saturas_KnowsWeaponIsInAdanosTempel;												// = TRUE Saturas weiß vom Schwert im Tempel
+	var int SC_Knows_WeaponInAdanosTempel;														// = TRUE SC weiÃƒÅ¸ vom Schwert im Tempel
+	var int Saturas_KnowsWeaponIsInAdanosTempel;												// = TRUE Saturas weiÃƒÅ¸ vom Schwert im Tempel
 	var int SC_SummonedAncientGhost;															// = TRUE Quarhodron ist erschienen.
 	var int SC_TalkedToGhost;																	// = TRUE SC hat mit Ghost gesprochen.
 
@@ -274,7 +274,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int SC_TookRhademesTrap;																// = TRUE SC ist an Rhademes vorbei gekommen
 	var int SC_TalkedToRhademAfter;																// = TRUE SC hat danach nochmal mit Rhademes gesprochen
 	var int RavenIsDead;																		// = TRUE Raven ist tot und das Hauptziel vom Addon erreicht.
-	var int BeliarsWeaponSpecialDamage;															// Grundwert für Speziellen Schaden Beliars Klaue
+	var int BeliarsWeaponSpecialDamage;															// Grundwert fÃƒÂ¼r Speziellen Schaden Beliars Klaue
 	var int BeliarDamageChance;																	// Chance auf Extraschaden
 	var int SC_FailedToEquipBeliarsWeapon;														// = TRUE SC hat versucht die Waffe anzulegen. -> Blitz in Arsch.
 	var int BeliarsWeaponUpgrated;																// = TRUE SC hat die Waffe wenigstens einmal verbessert!
@@ -370,7 +370,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int BDT_13_Kill;																		// und wenn er es dann auf die Spitze treibt...
 	var int BDT_13_einmal;																		// ein Ambient_13_bandit lacht nur einmal
 	var int BDT_1_Ausbuddeln;
-// ----MC töten (ZS_DEad) Damit bloodwyn rauskommt-----------
+// ----MC tÃƒÂ¶ten (ZS_DEad) Damit bloodwyn rauskommt-----------
 	var int Minecrawler_Killed;
 	var int Bloodwyn_Spawn;
 
@@ -400,7 +400,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int GoldMob_18_Amount;
 	var int GoldMob_19_Amount;
 	var int GoldMob_20_Amount;
-// Mine (großer Raum)
+// Mine (groÃƒÅ¸er Raum)
 	const int GoldMob_01_AmounT_MAX						= 5;
 	const int GoldMob_02_AmounT_MAX						= 5;
 	const int GoldMob_03_AmounT_MAX						= 5;
@@ -431,7 +431,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int MIS_LookForMorgan;																	// Suche Morgan
 	var int MIS_MorganRumBringen;																// Bring Morgan seinen Rum wieder
 	var int MIS_KrokoJagd;																		// Alligator Jagd mit Jack
-	var int AlligatorJack_KrokosKilled;															// Wieviel Alligatoren hat der Player getötet?
+	var int AlligatorJack_KrokosKilled;															// Wieviel Alligatoren hat der Player getÃƒÂ¶tet?
 	var int AlligatorJackTrustYou;																// Er vertraut dir;-)
 	var int AlligatorJack_JagdStart;
 	var int AlligatorJack_PlayersTriesAlone;
@@ -444,7 +444,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 
 	var int Francis_100_Told;
 	var int Francis_500_Told;
-	var int Francis_HasProof;																	// Player hat Beweise für Schmuggel
+	var int Francis_HasProof;																	// Player hat Beweise fÃƒÂ¼r Schmuggel
 	var int MIS_Francis_FreeBDTTower;															// RAUS
 	var int MIS_Henry_FreeBDTTower;
 	var int Knows_HenrysEntertrupp;
@@ -490,7 +490,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int SC_KnowsGoldmine;
 	var int Player_KnowsSchnellerHering;
 
-// diese hier wegmachen!! Sobald es möglich ist!!
+// diese hier wegmachen!! Sobald es mÃƒÂ¶glich ist!!
 	var int MIS_Addon_HenryCrewMember;
 	var int MIS_Addon_MorganCrewMember;
 	var int MIS_ADDON_ProofHenryCrew;
@@ -507,7 +507,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 
 	var int Knows_RuebenSchnaps;
 	var int Knows_VinoSchnaps;
-	var int Knows_PiratenSchnaps;																// Weißer Rum
+	var int Knows_PiratenSchnaps;																// WeiÃƒÅ¸er Rum
 	var int Knows_Magierschnaps;
 	var int Knows_Sumpfkrautschnaps;
 
@@ -521,13 +521,13 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 // Lehrer
 	var int Cavalorn_Addon_TeachPlayer;															// Bogen (bis 90),1H (bis 30) und Schleichen
 	var int Myxir_Addon_TeachPlayer;															// TeachLanguage
-	var int AlligatorJack_Addon_TeachPlayer;													// Häute und Zähne
-	var int Francis_Addon_TeachPlayer;															// Stärke und Geschick bis 90
+	var int AlligatorJack_Addon_TeachPlayer;													// HÃƒÂ¤ute und ZÃƒÂ¤hne
+	var int Francis_Addon_TeachPlayer;															// StÃƒÂ¤rke und Geschick bis 90
 	var int Henry_Addon_TeachPlayer;															// 2h bis 90
 	var int Morgan_Addon_TeachPlayer;															// 1h bis 75
-	var int Erol_Addon_TeachPlayer;																// Stärke
-	var int Riordian_Addon_TeachPlayer;															// Irrlicht Fähigkeiten
-	var int Riordian_ADW_ADDON_TeachWisp;														// Irrlicht Fähigkeiten
+	var int Erol_Addon_TeachPlayer;																// StÃƒÂ¤rke
+	var int Riordian_Addon_TeachPlayer;															// Irrlicht FÃƒÂ¤higkeiten
+	var int Riordian_ADW_ADDON_TeachWisp;														// Irrlicht FÃƒÂ¤higkeiten
 	var int Riordian_ADW_ADDON_TeachAlchemy;													// Alchemy
 	var int Saturas_Addon_TeachCircle;															// magische Kreise
 	var int Merdarion_Addon_TeachMana;															// Mana
@@ -547,11 +547,11 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Parlan_Schulden;																	// wieviel Gold schuldet der SC Parlan
 
 // *************************
-// Globalvariablen für Diebstahl
+// Globalvariablen fÃƒÂ¼r Diebstahl
 // *************************
 
 	const int Theftdiff									= 10;									// DEX Diff Wert ab dem der Dialog erscheint
-	var int TheftDexGlob;																		// benötigte Geschicklichkeit um NSC auszuplündern
+	var int TheftDexGlob;																		// benÃƒÂ¶tigte Geschicklichkeit um NSC auszuplÃƒÂ¼ndern
 	var int TheftGoldGlob;																		// Gold Anzahl die NSC in der Tasche hat
 
 //*******************
@@ -581,10 +581,10 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int MIS_Hilda_PfanneKaufen_Day;
 	var int Hilda_Stew_Day;
 
-	var int MIS_LobartKillBugs;																	// Lobart: Töte alle Feldräuber
+	var int MIS_LobartKillBugs;																	// Lobart: TÃƒÂ¶te alle FeldrÃƒÂ¤uber
 
 //*********************
-//	Punkte für Aufnahme
+//	Punkte fÃƒÂ¼r Aufnahme
 //*********************
 
 	var int MIL_Aufnahme;
@@ -599,7 +599,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	const int APP_Harad									= 2;
 	const int APP_Constantino							= 3;
 
-	var int MIS_Apprentice;																		// fürs Log
+	var int MIS_Apprentice;																		// fÃƒÂ¼rs Log
 // -------------------------------
 	var int Bosper_Lehrling_Day;
 	var int Harad_Lehrling_Day;
@@ -637,12 +637,12 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 
 	var int Andre_EyeInnos;
 
-	const int Kopfgeld									= 100;									// Gold pro ausgeleifertem Verbrecher (*3 für Diebesgilde)
-	var int Andre_Diebesgilde_aufgeraeumt;														// Wenn Andre sich selbst drum kümmert...
-	var int Diebesgilde_Verraten;																// Wenn man Andre vom Versteck erzählt hat...
+	const int Kopfgeld									= 100;									// Gold pro ausgeleifertem Verbrecher (*3 fÃƒÂ¼r Diebesgilde)
+	var int Andre_Diebesgilde_aufgeraeumt;														// Wenn Andre sich selbst drum kÃƒÂ¼mmert...
+	var int Diebesgilde_Verraten;																// Wenn man Andre vom Versteck erzÃƒÂ¤hlt hat...
 	var int MIS_AndreHelpLobart;																// Andre schickt SC zum ersten Bauerhof. Er soll Lobart helfen!
-	var int Andre_GivesChance;																	// Spieler will der Miliz beitreten (Vorraussetzung für weitere Missionen )
-	var int Andre_Bonus;																		// für spezielle Andre Abfrage;)
+	var int Andre_GivesChance;																	// Spieler will der Miliz beitreten (Vorraussetzung fÃƒÂ¼r weitere Missionen )
+	var int Andre_Bonus;																		// fÃƒÂ¼r spezielle Andre Abfrage;)
 	var int Rengaru_Ausgeliefert;
 	var int Nagur_Ausgeliefert;
 	var int Halvor_Ausgeliefert;
@@ -655,8 +655,8 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int MIS_Andre_FISH;
 	var int MIS_Andre_Peck;
 	var int MIS_AndreGotThief;																	// SC hat den Dieb gefangen oder die Kohle wieder geschafft!
-	var int MIS_Baltram_ScoutAkil;																// Händler Baltram schickt dich los um Akils Hof zu untersuchen!
-	var int MIS_Canthars_KomproBrief;															// Canthar sagt SC er soll Sarah den KomproBrief unterjubeln um seine Händlerstand wieder zu kriegen. LOG_SUCCESS = Sarah sitzt im Knast, LOG_OBSOLETE = SC hat Canthar bei Andre verraten!
+	var int MIS_Baltram_ScoutAkil;																// HÃƒÂ¤ndler Baltram schickt dich los um Akils Hof zu untersuchen!
+	var int MIS_Canthars_KomproBrief;															// Canthar sagt SC er soll Sarah den KomproBrief unterjubeln um seine HÃƒÂ¤ndlerstand wieder zu kriegen. LOG_SUCCESS = Sarah sitzt im Knast, LOG_OBSOLETE = SC hat Canthar bei Andre verraten!
 	var int MIS_Canthars_KomproBrief_Day;
 	var int MIS_Meldor_BringGold;																// SC kann Geld von Meldor an Gedlverleiher abgeben
 	var int MIS_Meldor_BringGold_Day;
@@ -664,10 +664,10 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Regis_Ring;
 	var int Pablo_AndreMelden;
 
-	var int Alrik_Kaempfe;																		// wie oft schon mit Alrik gekämpft
+	var int Alrik_Kaempfe;																		// wie oft schon mit Alrik gekÃƒÂ¤mpft
 	var int Alrik_ArenaKampfVerloren;															// wie oft - Counter
 	var int Alrik_VomSchwertErzaehlt;
-	var int MIS_Alrik_Sword;																	// Alrik will sein Schwert zurück
+	var int MIS_Alrik_Sword;																	// Alrik will sein Schwert zurÃƒÂ¼ck
 
 	var int MIS_Bosper_Bogen;
 	var int MIS_Bosper_WolfFurs;
@@ -694,7 +694,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Halvor_Deal;																		// Spieler ist Deal mit Halvor eingegangen (mehr Waren zum Kaufen)
 
 // --------- Kardif Hafenkneipe Wirt ----------------
-	var int Kardif_Deal;																		// wird mit dem Gold-Betrag gefüllt, den der Spieler für die Infos bezahlen muss
+	var int Kardif_Deal;																		// wird mit dem Gold-Betrag gefÃƒÂ¼llt, den der Spieler fÃƒÂ¼r die Infos bezahlen muss
 // --------- Nagur (Akil's Bote) ----------------
 	var int MIS_Nagur_Bote;
 	var int Nagur_Deal;																			// Nagur Baltrams Lieferung Mission
@@ -729,10 +729,10 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Edda_Day;
 	var int Edda_Schlafplatz;
 
-	var int Knows_Ork;																			// Spieler hat vom Ork vor der Stadt gehört
+	var int Knows_Ork;																			// Spieler hat vom Ork vor der Stadt gehÃƒÂ¶rt
 	var int MIS_Matteo_Gold;																	// Schulden von Gritta eintreiben (von Matteo)
-	var int Knows_Matteo;																		// fürs Log
-	var int Gritta_GoldGiven;																	// Gritta hat Gold per Dialog rausgerückt!
+	var int Knows_Matteo;																		// fÃƒÂ¼rs Log
+	var int Gritta_GoldGiven;																	// Gritta hat Gold per Dialog rausgerÃƒÂ¼ckt!
 	var int Thorben_GotGold;
 
 	var int MIS_Thorben_GetBlessings;
@@ -745,21 +745,21 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int MIS_AttackFellan;
 
 	var int Vatras_Trust;																		// Vatras vertraut dir (ehrlich!) und gibt dir den KDF - Auftrag
-	var int Vatras_Chance;																		// wenn der Spieler Vatras Schwachsinn erzählt
-	var int Vatras_Influence;																	// Spieler hat Vatras überzeugt, dieser setzt sich für ihn ein
+	var int Vatras_Chance;																		// wenn der Spieler Vatras Schwachsinn erzÃƒÂ¤hlt
+	var int Vatras_Influence;																	// Spieler hat Vatras ÃƒÂ¼berzeugt, dieser setzt sich fÃƒÂ¼r ihn ein
 	var int Vatras_First;																		// Abfrage zum Dialog basteln
 	var int Vatras_Second;
 	var int Vatras_Third;
-	var int MIS_Vatras_Message;																	// für die KDF Send Mission
+	var int MIS_Vatras_Message;																	// fÃƒÂ¼r die KDF Send Mission
 
-	var int MIl_309_News;																		// Für die Vergabe der verschiedenen Infos
+	var int MIl_309_News;																		// FÃƒÂ¼r die Vergabe der verschiedenen Infos
 
 	var int Mil_305_schonmalreingelassen;
 
-	var int Knows_Paladins;																		// kennt der Spieler die Infos über die Paladine
-	var int MIS_Garvell_Infos;																	// Mission von Garvell (wer hätte das gedacht?)
-	var int Tell_Garvell;																		// eine var die sich reimt, kann nicht schlecht sein;) --> damit der Spieler nur einmal den Sermon erzählen muss M.F.
-	var int KnowsPaladins_Ore;																	// Weiß warum die paladine da sind
+	var int Knows_Paladins;																		// kennt der Spieler die Infos ÃƒÂ¼ber die Paladine
+	var int MIS_Garvell_Infos;																	// Mission von Garvell (wer hÃƒÂ¤tte das gedacht?)
+	var int Tell_Garvell;																		// eine var die sich reimt, kann nicht schlecht sein;) --> damit der Spieler nur einmal den Sermon erzÃƒÂ¤hlen muss M.F.
+	var int KnowsPaladins_Ore;																	// WeiÃƒÅ¸ warum die paladine da sind
 
 	var int Lares_Guide;																		// Wie lange ist Spieler mit Lares unterwegs?
 
@@ -768,7 +768,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Sekob_Pachtbezahlt;
 	var int MIS_Sekob_RedeMitOnar;
 
-	var int Sekob_RoomFree;																		// wenn Xardas dich zur Truhe schickt (für Portalraum)
+	var int Sekob_RoomFree;																		// wenn Xardas dich zur Truhe schickt (fÃƒÂ¼r Portalraum)
 
 	var int Torlof_TheOtherMission_TooLate;
 	var int MIS_Cipher_BringWeed;
@@ -776,7 +776,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Dar_Dieb;
 	var int Dar_Verdacht;
 	var int Dar_LostAgainstCipher;
-	var int MIS_Thekla_Paket;																	// Kräuterpäckchen von Sagitta besorgen.
+	var int MIS_Thekla_Paket;																	// KrÃƒÂ¤uterpÃƒÂ¤ckchen von Sagitta besorgen.
 	var int Sylvio_MenDefeated;
 	var int Sylvio_angequatscht;
 	var int Sld_Duelle_gewonnen;																// In ZS_Unconscious
@@ -794,13 +794,13 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Wolf_ProduceCrawlerArmor;
 
 	var int MIS_ThiefGuild_sucked;																// Wenn SC Rengaru, Halvor oder anderes Mitglied verknackt => TRUE
-	var int Knows_Ruga_Answer;																	// für interne Dialogauswahl
-	var int Miliz_Points;																		// Punkte für Milizaufnahme
-	var int Nadja_Money;																		// Je nach Spieler Antwort muss er mehr Kohle für die Info locker machen
-	var int Knows_Borka_Dealer;																	// Spieler weiß von Nadja, das Borka der Dealer ist
-	var int Borka_Deal;																			// Borka hat sich auf einen Deal mit dem Spieler eingelassen, Beweis für Mission
-	var int Nadja_Victim;																		// Spieler opfert Nadja, was nicht zu ihrer Gesundheit beiträgt
-	var int GernodsDrink;																		// Getränk für Gerond
+	var int Knows_Ruga_Answer;																	// fÃƒÂ¼r interne Dialogauswahl
+	var int Miliz_Points;																		// Punkte fÃƒÂ¼r Milizaufnahme
+	var int Nadja_Money;																		// Je nach Spieler Antwort muss er mehr Kohle fÃƒÂ¼r die Info locker machen
+	var int Knows_Borka_Dealer;																	// Spieler weiÃƒÅ¸ von Nadja, das Borka der Dealer ist
+	var int Borka_Deal;																			// Borka hat sich auf einen Deal mit dem Spieler eingelassen, Beweis fÃƒÂ¼r Mission
+	var int Nadja_Victim;																		// Spieler opfert Nadja, was nicht zu ihrer Gesundheit beitrÃƒÂ¤gt
+	var int GernodsDrink;																		// GetrÃƒÂ¤nk fÃƒÂ¼r Gerond
 	var int GernodHappy;																		// Hats ihm auch geschmeckt?
 	var int MIS_DragomirsArmbrust;																// Dragomirs Armbrust beim Ritualkreis
 
@@ -808,12 +808,12 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 //	KLOSTER
 // ---------------------------
 	var int MIS_KlosterArbeit;																	// Spieler ist Novize und nimmt Arbeiten der Magier entgegen
-	var int Kloster_Punkte;																		// für Abfrage wieviel Punkte hat Spieler um in die Bibliothek zu dürfen
-	var int MIS_NeorasPflanzen;																	// für Neoras 7 Feuernesseln besorgen
-	var int MIS_NeorasRezept;																	// Rezept für Neoras
+	var int Kloster_Punkte;																		// fÃƒÂ¼r Abfrage wieviel Punkte hat Spieler um in die Bibliothek zu dÃƒÂ¼rfen
+	var int MIS_NeorasPflanzen;																	// fÃƒÂ¼r Neoras 7 Feuernesseln besorgen
+	var int MIS_NeorasRezept;																	// Rezept fÃƒÂ¼r Neoras
 	var int MIS_ParlanFegen;																	// Novizenkammern ausfegen
 	var int NOV_Helfer;																			// Anzahl der Novizen, die dem Spieler helfen die Kammern zu fegen
-	var int MIS_GoraxEssen;																		// Essen für die Novizen verteilen
+	var int MIS_GoraxEssen;																		// Essen fÃƒÂ¼r die Novizen verteilen
 	var int Gorax_Gold;
 	var int Wurst_Gegeben;																		//
 	var int MIS_MardukBeten;																	// Marduk fordert den Spieler zum Gebet auf
@@ -832,27 +832,27 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Opolos_Rezept;
 	var int Babo_Training;
 
-	var int MIS_GuardSheep;																		// Schafe hüten für Opolos
-	var int MIS_PickHerb;																		// Unkraut jäten mit Agon
+	var int MIS_GuardSheep;																		// Schafe hÃƒÂ¼ten fÃƒÂ¼r Opolos
+	var int MIS_PickHerb;																		// Unkraut jÃƒÂ¤ten mit Agon
 	var int MIS_SweepLibrary;																	// Sc soll Bibliothek fegen
 	var int ShrineconfessCost;																	// Beicht kosten am Wegschrein
 	var int KNOWS_FIRE_CONTEST;																	// Spieler kennt das alte Gesetz
-	var int MIS_HelpDyrian;																		// Sc soll ein gutes Wort für Dyraian einlegen.
-	var int MIS_HelpBabo;																		// Babo will Gärtner werden
+	var int MIS_HelpDyrian;																		// Sc soll ein gutes Wort fÃƒÂ¼r Dyraian einlegen.
+	var int MIS_HelpBabo;																		// Babo will GÃƒÂ¤rtner werden
 	var int MIS_HelpOpolos;																		// Opolos will in die Stadt
 
 	var int Wegelagerer_Surprise;																// Wegelagerer nach Novizen gefragt
-	var int MIS_SCHNITZELJAGD;																	// die Prüfung des Feuers
+	var int MIS_SCHNITZELJAGD;																	// die PrÃƒÂ¼fung des Feuers
 	var int MIS_GOLEM;
 	var int MIS_RUNE;
 
 	var int MIS_RescueGorn;																		// Die "Befreie Gorn" Mission. Wir von Lee und Milten vergeben!
-	const int CostRescueGorn							= 500;									// Preis für Gorns Freilassung für Garond!!!!
+	const int CostRescueGorn							= 500;									// Preis fÃƒÂ¼r Gorns Freilassung fÃƒÂ¼r Garond!!!!
 
-	var int Canthar_GotMe;																		// == TRUE : Canthar weiß, daß SC Sträfling ist!
+	var int Canthar_GotMe;																		// == TRUE : Canthar weiÃƒÅ¸, daÃƒÅ¸ SC StrÃƒÂ¤fling ist!
 	var int Canthar_Passierschein_Accept;														// Deal mit dem Passierschein ist abgeschlossen worden => TRUE
 	var int Canthar_Passierschein_Accept_Day;													// Tag des Abschlusses!
-	var int Canthar_AccusePlayerAndre;															// == True wenn Canthar den Player bei Andre angschwärzt hat (Sträfling)
+	var int Canthar_AccusePlayerAndre;															// == True wenn Canthar den Player bei Andre angschwÃƒÂ¤rzt hat (StrÃƒÂ¤fling)
 	var int Canthar_AccusePlayerAndre_Day;														// Tag des Verrats
 
 	var int Sentenza_GoldTaken;
@@ -863,14 +863,14 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int BusterLOG;
 	var int BennetLOG;
 
-	var int MIS_Pepe_KillWolves;																// SC soll für Pepe die Wölfe töten.
+	var int MIS_Pepe_KillWolves;																// SC soll fÃƒÂ¼r Pepe die WÃƒÂ¶lfe tÃƒÂ¶ten.
 	var int MIS_Pepe_KickBullco;
 	var int MIS_Torlof_HolPachtVonSekob;														// Torlof schickt SC zu Sekobs Hof um die Pacht einzutreiben!
 	var int MIS_Torlof_BengarMilizKlatschen;													// SC soll Hof 4 von den Milizen befeien.
 	var int MIS_Gaan_Snapper;																	// ersten Dragon snapper in der NW platt machen!
 
 	var int MIS_Sekob_Bronko_eingeschuechtert;													// Bronko wurde mit den SLD gedroht und geht wieder arbeiten.
-	var int MIS_Balthasar_BengarsWeide;															// Balthasar darf nicht mehr auf Bengars Weide. SC muß Bengar überreden.
+	var int MIS_Balthasar_BengarsWeide;															// Balthasar darf nicht mehr auf Bengars Weide. SC muÃƒÅ¸ Bengar ÃƒÂ¼berreden.
 	var int MIS_Gaan_Deal;																		// Kohledeal mit Gaan wegen Monster im Wald.
 	var int MIS_Rukhar_Wettkampf;																// Wettsaufen in der Taverne
 	var int MIS_Rukhar_Wettkampf_Day;
@@ -883,18 +883,18 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Buster_Friend;
 
 	var int Liesel_Giveaway;																	// ob Spieler Liesel abgegeben hat
-	var int MIS_Gorax_Ambient;																	// Gorax für Ambeint Mission freigeschaltet
-	var int Thief_Absolution;																	// Spieler muß büßen
+	var int MIS_Gorax_Ambient;																	// Gorax fÃƒÂ¼r Ambeint Mission freigeschaltet
+	var int Thief_Absolution;																	// Spieler muÃƒÅ¸ bÃƒÂ¼ÃƒÅ¸en
 	var int Hammer_Taken;																		// Spieler hat Hammer Innos geklaut
-	var int Igaraz_Anger;																		// Spieler erzürnt Igaraz
+	var int Igaraz_Anger;																		// Spieler erzÃƒÂ¼rnt Igaraz
 	var int Igaraz_Wait;
 	var int MIS_Gorax_Bote;																		// Ambient Auftrag von Gorax
-	var int Paket_Opend;																		// Spieler hat das Paket für Gorax geöffnet
-	var int Goraxday;																			// Goarx hat nach einem Tag einen Auftrag für den Spieler
+	var int Paket_Opend;																		// Spieler hat das Paket fÃƒÂ¼r Gorax geÃƒÂ¶ffnet
+	var int Goraxday;																			// Goarx hat nach einem Tag einen Auftrag fÃƒÂ¼r den Spieler
 
 	var int MIS_Jack_KillLighthouseBandits;														// Jack will, dass die Banditen aus seinem Leuchturm weg sind.
 	var int MIS_Wasili_BringOldCoin;															// Wasili sammelt OLDCOINs
-	var int MIS_Sagitta_Herb;																	// Sonnenaloe für Sagitta
+	var int MIS_Sagitta_Herb;																	// Sonnenaloe fÃƒÂ¼r Sagitta
 
 // ------ KAPITEL 2 ------
 
@@ -902,7 +902,7 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Fernando_Erz;
 	var int MIS_ScoutMine;																		// AL Kommandant Garond schickt SC in die neue Mine!
 	var int MIS_Fajeth_Kill_Snapper;															// Fajeth in der neuen Mine will die Sapper los werden SC soll sie beseitigen!
-	var int MIS_Fed_GetRidOfTengron;															// Fed will für Info über Diego Tenron los werden
+	var int MIS_Fed_GetRidOfTengron;															// Fed will fÃƒÂ¼r Info ÃƒÂ¼ber Diego Tenron los werden
 	var int MIS_BaltramTrade;																	// Baltram handelt wieder mit dir!
 
 	var int MIS_Engor_BringMeat;																// Burg im Minental Ambient Mission Kapitel 2
@@ -930,39 +930,39 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int MIS_RitualInnosEyeRepair;															// Vatras wartet auf Xardas und Pyrokar am Sonnenkreis
 	var int MIS_ReadyforChapter4;																// Mit dieser Varible in den Levelchange zur OW -> Kapitel 4
 	var int MIS_Bennet_InnosEyeRepairedSetting;													// Bennet hat die Fassung des Auge Innos repariert.
-	var int MIS_SCKnowsInnosEyeIsBroken;														// SC weiß, dass DMT, das Ding zerstört.
+	var int MIS_SCKnowsInnosEyeIsBroken;														// SC weiÃƒÅ¸, dass DMT, das Ding zerstÃƒÂ¶rt.
 	var int MIS_RescueBennet;																	// Berfreie Bennet aus dem Knast
 	var int MIS_FindTheObesessed;																// Finde alle Besessenen
 	var int MIS_HealHilda;																		// Heile Lobarts Frau Hilda!
 	var int MIS_BabosDocs;																		// Babo wird erpresst
 	var int MIS_BengarsHelpingSLD;																// SC kann SLD anheuern, die auf seinen Hof achten!
-	var int MIS_GetMalakBack;																	// Malak ist ausgebückst. SC kann ihn zu Bengar zurück schicken.
+	var int MIS_GetMalakBack;																	// Malak ist ausgebÃƒÂ¼ckst. SC kann ihn zu Bengar zurÃƒÂ¼ck schicken.
 	var int MIS_HyglasBringBook;																// Hyglas will das hero ihm ein Buch besorgt.
-	var int MIS_HannaRetrieveLetter;															// besorge das alte Schriftstück für Hanna
+	var int MIS_HannaRetrieveLetter;															// besorge das alte SchriftstÃƒÂ¼ck fÃƒÂ¼r Hanna
 	var int MIS_HelpDiegoNW;																	// Diego will seinen Schatz haben!
 	var int MIS_DiegoNWSendsYouToJudge;															// Diego schickt dich zum Richter
 	var int MIS_DiegosResidence;																// Diego hat ein neues Haus!
 	var int MIS_Akil_SchafDiebe;																// banditen haben Akils schafe gestohlen.
 	var int MIS_Lee_JudgeRichter;																// Beweise gegen Richter finden.
 	var int MIS_Richter_BringHolyHammer;														// Dem Richter den heiligen Hammer der Magier bringen.
-	var int MIS_Richter_KillMorgahard;															// Richter will, dass SC entflohenen Morgahard tötet.
+	var int MIS_Richter_KillMorgahard;															// Richter will, dass SC entflohenen Morgahard tÃƒÂ¶tet.
 	var int MIS_InnosEyeStolen;																	// die Kacke is am Dampfen. DMT\Pedro haben das Auge geklaut.
 	var int MIS_RescueBilgot;																	// Bilgot aus OW rausholen
 
-// Gildenabhängig
+// GildenabhÃƒÂ¤ngig
 	var int MIS_Buster_KillShadowbeasts_DJG;													// Buster schickt dich los Shadowbiester zu erledigen. SLD oder DJG
 	var int MIS_Ulthar_HeileSchreine_PAL;														// Ulthar schickt dich los die verhexten Schreine zu heilen. PAL oder MIL
-	var int MIS_Serpentes_MinenAnteil_KDF;														// Serpentes schickt dich los die gefälschten Minenanteile einzusammeln. KDF
+	var int MIS_Serpentes_MinenAnteil_KDF;														// Serpentes schickt dich los die gefÃƒÂ¤lschten Minenanteile einzusammeln. KDF
 
 // ------ KAPITEL 4 ------
-	var int MIS_DJG_Sylvio_KillIceGolem;														// Sylvio will, daß der SC ihm den Weg frei killt.
+	var int MIS_DJG_Sylvio_KillIceGolem;														// Sylvio will, daÃƒÅ¸ der SC ihm den Weg frei killt.
 	var int MIS_AllDragonsDead;																	// Die OW ist von den Drachen befreit.
-	var int MIS_KilledDragons;																	// Anzahl der schon getöteten Drachen
+	var int MIS_KilledDragons;																	// Anzahl der schon getÃƒÂ¶teten Drachen
 	var int MIS_JanBecomesSmith;																// Jan sucht Arbeit
 	var int MIS_FErrosSword;																	// Ferros sucht sein Schwert
 	var int MIS_GeroldGiveFood;																	// SC kann Gerold mit Food versorgen!
-	var int MIS_KillHoshPak;																	// Hosh-Pak töten
-	var int MIS_Tabin_LookForEngrom;															// Finde Engrom den Jäger!
+	var int MIS_KillHoshPak;																	// Hosh-Pak tÃƒÂ¶ten
+	var int MIS_Tabin_LookForEngrom;															// Finde Engrom den JÃƒÂ¤ger!
 	var int MIS_KillOrkOberst;																	// Kill den Ork Oberst.
 	var int MIS_Neoras_DragonEgg;																// Bring das Ei zu Neoras (PAL und KDF)
 	var int MIS_Dar_BringOrcEliteRing;															// Bring das OrkEliteRing zu Dar (DJG und KDF)
@@ -970,11 +970,11 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 
 // ------ KAPITEL 5 ------
 	var int MIS_Xardas_SCCanOpenIrdorathBook;													// SC kann Buch "Die Hallen von Irdorath" lesen
-	var int MIS_SCKnowsWayToIrdorath;															// SC weiß jetzt, dass er das Schiff braucht und kennt den Weg zur Dracheninsel
-	var int MIS_PyrokarClearDemonTower;															// Pyrokar will, dass SC dem DT aufräumt, als Tribut für Jorgens freilassung.->==LOG_SUCCESS Jorgen kann nun als Kapitän angeheuert werden.
-	var int ItWr_HallsofIrdorathIsOpen;															// SC hat das Buch geöffnet
+	var int MIS_SCKnowsWayToIrdorath;															// SC weiÃƒÅ¸ jetzt, dass er das Schiff braucht und kennt den Weg zur Dracheninsel
+	var int MIS_PyrokarClearDemonTower;															// Pyrokar will, dass SC dem DT aufrÃƒÂ¤umt, als Tribut fÃƒÂ¼r Jorgens freilassung.->==LOG_SUCCESS Jorgen kann nun als KapitÃƒÂ¤n angeheuert werden.
+	var int ItWr_HallsofIrdorathIsOpen;															// SC hat das Buch geÃƒÂ¶ffnet
 	var int ItWr_SCReadsHallsofIrdorath;														// SC hat das Buch durchgelesen
-	var int MIS_ScoutLibrary;																	// Erkunde das Gewölbe Huhu!
+	var int MIS_ScoutLibrary;																	// Erkunde das GewÃƒÂ¶lbe Huhu!
 	var int PlayerGetsAmulettOfDeath;
 	var int PlayergetsFinalDJGArmor;
 	var int MIS_bringRosiBackToSekob;
@@ -982,12 +982,12 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int MIS_SCvisitShip;
 	var int MIS_Raoul_KillTrollBlack;
 	var int MIS_Raoul_DoesntPayTrollFur;
-	var int MIS_RichtersPermissionForShip;														// Ermächtigungsschreiben fürs Schiff beim Richter erpressen.
+	var int MIS_RichtersPermissionForShip;														// ErmÃƒÂ¤chtigungsschreiben fÃƒÂ¼rs Schiff beim Richter erpressen.
 	var int MIS_RosisFlucht;
 
 	var int Crewmember_Count;																	// Die Anzahl der Crewmitglieder
 	const int Max_Crew									= 9;									// Max. Crewmitglieder
-	const int Min_Crew									= 5;									// Min. Crewmitglieder // Joly: wenn dieser Wert geändert wird, müssen auch die Dialoge angepasst werden!!!!!!!!!
+	const int Min_Crew									= 5;									// Min. Crewmitglieder // Joly: wenn dieser Wert geÃƒÂ¤ndert wird, mÃƒÂ¼ssen auch die Dialoge angepasst werden!!!!!!!!!
 
 // Crewmembers
 	var int Lee_IsOnBoard;																		// Ist Lee an Bord? -> == LOG_SUCCESS
@@ -1005,17 +1005,17 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Girion_IsOnBoard;																	// Ist Girion an Bord? -> == LOG_SUCCESS
 
 	var int MIS_ShipIsFree;																		// Das Schiff ist frei und SC kann mit seinen Jungs draufgehen.
-	var int SCGotCaptain;																		// == TRUE ->SC hat sich für einen Kapitän entschieden.
-	var int JorgenIsCaptain;																	// == TRUE Jorgen ist der Käptain!
-	var int TorlofIsCaptain;																	// == TRUE Torlof ist der Käptain!
-	var int JackIsCaptain;																		// == TRUE Jack ist der Käptain!
+	var int SCGotCaptain;																		// == TRUE ->SC hat sich fÃƒÂ¼r einen KapitÃƒÂ¤n entschieden.
+	var int JorgenIsCaptain;																	// == TRUE Jorgen ist der KÃƒÂ¤ptain!
+	var int TorlofIsCaptain;																	// == TRUE Torlof ist der KÃƒÂ¤ptain!
+	var int JackIsCaptain;																		// == TRUE Jack ist der KÃƒÂ¤ptain!
 
-	var int MIS_ReadyforChapter6;																// Alles klar für Kapitel 6
-	var int MIS_OCGateOpen;																		// == TRUE -> Das Tor vom OC ist geöffnet worden (ORCSturm)
+	var int MIS_ReadyforChapter6;																// Alles klar fÃƒÂ¼r Kapitel 6
+	var int MIS_OCGateOpen;																		// == TRUE -> Das Tor vom OC ist geÃƒÂ¶ffnet worden (ORCSturm)
 	var int MIS_Jack_NewLighthouseOfficer;														// Jack braucht jemanden, der auf seinen Leuchtturm auspasst!
 
 // ------ KAPITEL 6 ------
-	var int MIS_Mario_Ambush;																	// Mario verrät den SC
+	var int MIS_Mario_Ambush;																	// Mario verrÃƒÂ¤t den SC
 
 //**************************
 // Allgemeine Hilfsvariablen
@@ -1030,17 +1030,17 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int Lobart_MILCHANGEBOT;																// Lobart bietet SC den MilchholAuftrag an!
 
 // --------Matteo und Gritta --------------
-	var int SCPaysForGritta;																	// SC bezahlt für Gritta
-	var int Matteo_Deal;																		// Spieler läßt sich von Matteo bezahlen
-	var int Matteo_Day;																			// wenn Spieler sich entscheiden sollte, nicht zu Matteo zurückzukehren
+	var int SCPaysForGritta;																	// SC bezahlt fÃƒÂ¼r Gritta
+	var int Matteo_Deal;																		// Spieler lÃƒÂ¤ÃƒÅ¸t sich von Matteo bezahlen
+	var int Matteo_Day;																			// wenn Spieler sich entscheiden sollte, nicht zu Matteo zurÃƒÂ¼ckzukehren
 
 	var int HannaGaveSword;																		// Hanna hat dem Sc das Schwert gegeben
 	var int DayMeetAlwin;																		// Tag der Erpressung
-	var int MoeOfferedTrain;																	// Für 30 Gold trainier ich dich.
-	var int Kardif_OneQuestion;																	// Kardif will 5 Goldmünzen für jede Frage, die der SC stellt.
+	var int MoeOfferedTrain;																	// FÃƒÂ¼r 30 Gold trainier ich dich.
+	var int Kardif_OneQuestion;																	// Kardif will 5 GoldmÃƒÂ¼nzen fÃƒÂ¼r jede Frage, die der SC stellt.
 
 	var int Bartok_Deal;																		// Spieler macht einen Deal mit Bartok
-	var int Bartok_Day;																			// und die Tage werden wieder gezählt... - wenn mehr als 10, haut Bartok den Spieler um
+	var int Bartok_Day;																			// und die Tage werden wieder gezÃƒÂ¤hlt... - wenn mehr als 10, haut Bartok den Spieler um
 	var int Bartok_OrkGesagt;
 
 	var int Constantino_Gehilfe;																// Name ist Programm
@@ -1056,18 +1056,18 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int EddaPaid;																			// Du hast Edda Geld gegeben
 	var int Coragon_Trade;																		// SC zahlt seine Zeche und Coragon handelt mit SC
 
-	var int HelpOpolos;																			// Spieler hilft Opolios beim Schafehüten
-	var int HelpAgon;																			// Spieler hilft Agon bim Kräutergarten
+	var int HelpOpolos;																			// Spieler hilft Opolios beim SchafehÃƒÂ¼ten
+	var int HelpAgon;																			// Spieler hilft Agon bim KrÃƒÂ¤utergarten
 	var int HelpBabo;																			// Spieler hilft Babo beim Fegen
 	var int BaboLikesYou;																		// Babo mag den Spieler
 
 	var int Rengaru_InKnast;																	// Andre fragt ab ob Rengaru in den Knast ging!
-	var int Nagur_UmsGeldBeschissen;															// Für minuspunkte bei Andre
+	var int Nagur_UmsGeldBeschissen;															// FÃƒÂ¼r minuspunkte bei Andre
 	var int wulfgarWantsMoney;																	// Wulfgar will bezahlt werden!!
 
 	var int Hagen_GaveInfoKnight;																// Nachfragen wie man Paladin wird
 
-// Bauerhöfe
+// BauerhÃƒÂ¶fe
 	var int Torlof_Probe;
 	const int Probe_Sekob								= 1;									// Joly: 0 wird verwendet// ADDON
 	const int Probe_Bengar								= 2;
@@ -1080,41 +1080,41 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 
 // ---------------------------
 
-	var int Thekla_SCNaughty;																	// =True SC war frech zur guten Küchenfee!
-	var int Torlof_PissedOff;																	// SC hat Torlof verärgert und muß ihm einen Fisch bringen!
-	var int Torlof_SC_DarfZuLee;																// Torlof lässt SC ins Haupthaus von Onar
-	var int Torlof_SauerWegenSekob;																// Torlof verteilt Rüffel, weilSC Sekob zu sanft angefasst hat!
-	var int Babera_BronkoKeinBauer;																// Babera verrät dem Spieler, daß Bronko gar nicht der Bauer ist!
-	var int Sekob_ersteChancevertan;															// falls SC erste mal schon Weichei raushängen läßt, muß er zu Torlof gehen und sich Rüffel abholen.
+	var int Thekla_SCNaughty;																	// =True SC war frech zur guten KÃƒÂ¼chenfee!
+	var int Torlof_PissedOff;																	// SC hat Torlof verÃƒÂ¤rgert und muÃƒÅ¸ ihm einen Fisch bringen!
+	var int Torlof_SC_DarfZuLee;																// Torlof lÃƒÂ¤sst SC ins Haupthaus von Onar
+	var int Torlof_SauerWegenSekob;																// Torlof verteilt RÃƒÂ¼ffel, weilSC Sekob zu sanft angefasst hat!
+	var int Babera_BronkoKeinBauer;																// Babera verrÃƒÂ¤t dem Spieler, daÃƒÅ¸ Bronko gar nicht der Bauer ist!
+	var int Sekob_ersteChancevertan;															// falls SC erste mal schon Weichei raushÃƒÂ¤ngen lÃƒÂ¤ÃƒÅ¸t, muÃƒÅ¸ er zu Torlof gehen und sich RÃƒÂ¼ffel abholen.
 	var int Till_Angebot;																		// Die Kohle, die der SC von Till erfeilscht.
 	var int Till_HatSeinGeldBehalten;															// Till hat dem SC gar nicht gegeben.
-	var int Till_IchMachsNurEinmal;																// Ich mach´s Bestätigung kommtz nur einmal!
-	var int Bengar_MILIZKLATSCHEN_Kohle;														// Lohn fürs Milizenklatschen auf Hof 4.
+	var int Till_IchMachsNurEinmal;																// Ich machÃ‚Â´s BestÃƒÂ¤tigung kommtz nur einmal!
+	var int Bengar_MILIZKLATSCHEN_Kohle;														// Lohn fÃƒÂ¼rs Milizenklatschen auf Hof 4.
 	var int Rumbold_Bezahlt;																	// Miliz von Farm3 bekommen durch Bezahlung.
 
 // ---------------------------
 	var int Mika_Helps;																			// Miliz Mika hilft SC bei den SLD auf Akils Hof.
-	var int Akil_Sauer;																			// SC verärgert Akil, weil er ihn um Kohle erpresst.
+	var int Akil_Sauer;																			// SC verÃƒÂ¤rgert Akil, weil er ihn um Kohle erpresst.
 	var int Akils_SLDStillthere;
 	var int Engardo_SchonAngeredet;																// Engarde sollte man besser nur einmal ansprechen.
 	var int Kati_Mahlzeit;
 	var int Lieferung_Geholt;
 
 // ------ KAPITEL 2 ------
-	var int KnowsGerold;																		// SC weiß dass, er mit Gerold sprechen muss.(DIA_PC_Mage und DIA_PAL_267_Sengrath gesetzt, wird bei DIA_PAL_261_Gerold abgefragt
-	var int KnowsAboutGorn;																		// Sc weiß dass Gorn im Kerker ist. (DIA_PC_Mage und DIA_PAL_267_Sengrath gesetzt, wird bei DIA_PAL_261_Gerold abgefragt
+	var int KnowsGerold;																		// SC weiÃƒÅ¸ dass, er mit Gerold sprechen muss.(DIA_PC_Mage und DIA_PAL_267_Sengrath gesetzt, wird bei DIA_PAL_261_Gerold abgefragt
+	var int KnowsAboutGorn;																		// Sc weiÃƒÅ¸ dass Gorn im Kerker ist. (DIA_PC_Mage und DIA_PAL_267_Sengrath gesetzt, wird bei DIA_PAL_261_Gerold abgefragt
 	var int DayContactGorn;																		// Tag der Bestechung von Gerold
-	var int PriceForGorn;																		// Preis für Gorn, wird auf True gesetzt, wenn der SC Gorn freikaufen will.
+	var int PriceForGorn;																		// Preis fÃƒÂ¼r Gorn, wird auf True gesetzt, wenn der SC Gorn freikaufen will.
 	var int Gorns_Beutel;
-	var int SLDChooseMoreMoney;																	// Sld hat 1000 Gold für die MinenMission bekommen.
+	var int SLDChooseMoreMoney;																	// Sld hat 1000 Gold fÃƒÂ¼r die MinenMission bekommen.
 	var int FoodForGerold;																		// Die Bestechung von Gerold (DIA_PAL_261_Gerod)
 	var int WantinDungeon;																		// da man keine Permanenten Infos abfragen kann wird sie im DIA_PAL_261_Gerold abgefragt
-	var int SetGornFree;																		// Jetzt kann Gerold sir den Schlüssel für Gorn geben!
+	var int SetGornFree;																		// Jetzt kann Gerold sir den SchlÃƒÂ¼ssel fÃƒÂ¼r Gorn geben!
 	var int GornsTreasure;																		// Gorns Schatzversteck
-	var int GornDJG_WhatMonsters;																// Gorn berichtet über Draconier
+	var int GornDJG_WhatMonsters;																// Gorn berichtet ÃƒÂ¼ber Draconier
 	var int Knows_Diego;
 	var int SearchForDiego;																		// Milten (und Sengrath) sagt dem Player Diego sei in der Mine
-	var int FajethSendsYouBack;																	// Snapper erledigt, Fajeth schickt den SC zurück in die Burg im Minental
+	var int FajethSendsYouBack;																	// Snapper erledigt, Fajeth schickt den SC zurÃƒÂ¼ck in die Burg im Minental
 	var int Milten_Equipment;
 
 	var int Fajeth_Pay;
@@ -1124,39 +1124,39 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 
 	var int Ore_Counter;
 
-	var int Knows_WEAPON_1H_Special_01;															// (für ItWr_Silverblade) Spieler lernt WEAPON_1H_Special_01)
+	var int Knows_WEAPON_1H_Special_01;															// (fÃƒÂ¼r ItWr_Silverblade) Spieler lernt WEAPON_1H_Special_01)
 
 // ------ KAPITEL 3 ------
-	var int Pedro_Traitor;																		// SC erfährt von Pedros Auge Innos Klau
-	var int RitualInnosEyeRuns;																	// Das Umkehrritual läuft
+	var int Pedro_Traitor;																		// SC erfÃƒÂ¤hrt von Pedros Auge Innos Klau
+	var int RitualInnosEyeRuns;																	// Das Umkehrritual lÃƒÂ¤uft
 	var int Bennet_RepairDay;																	// Repariere das Auge Innos
 	var int heroGIL_KDF2;																		// == TRUE -> SC ist hoher KDF
 	var int Xardas_GoesToRitualInnosEye;														// Xardas geht zum Umkehrritual
 	var int Pyrokar_GoesToRitualInnosEye;														// Pyrokar geht zum Umkehrritual
-	var int Pyrokar_DeniesInnosEyeRitual;														// Pyrokar will erst einen Beweis für Xardas Vertrauen
+	var int Pyrokar_DeniesInnosEyeRitual;														// Pyrokar will erst einen Beweis fÃƒÂ¼r Xardas Vertrauen
 	var int CorneliusFlee;																		// Cornelius macht die Biege
 	var int Cornelius_TellTruth;																// Cornelius beichtet alles
 	var int Cornelius_PayForProof;
-	var int MiltenNW_GivesMonasteryKey;															// Der SC hat den Klosterschlüssel erhalten.
+	var int MiltenNW_GivesMonasteryKey;															// Der SC hat den KlosterschlÃƒÂ¼ssel erhalten.
 	var int Parlan_DontTalkToNovice;															// Rede nicht mit den Novizen
-	var int NeorasBrewsForYou;																	// Neoras braut Tränke für dich!
+	var int NeorasBrewsForYou;																	// Neoras braut TrÃƒÂ¤nke fÃƒÂ¼r dich!
 	var int BabosDocsOpen;																		// Player hat sich Babos Schmuddelhelt angeguckt
 	var int Igaraz_ISPartner;																	// igaraz und Player erpressen babo
-	var int MIS_Gorax_KillPedro;																// Serpentes gibt Gorax Geld den SLD-SC dazu zu bringen Pedro zu töten.
-	var int OpenedDiegosBag;																	// Player hat den Sack geöffnet!
+	var int MIS_Gorax_KillPedro;																// Serpentes gibt Gorax Geld den SLD-SC dazu zu bringen Pedro zu tÃƒÂ¶ten.
+	var int OpenedDiegosBag;																	// Player hat den Sack geÃƒÂ¶ffnet!
 	const int DiegosTreasure							= 2000;									// Diegos Schatz!
 	var int SC_KnowsProspektorSalandril;														// == TRUE MinanteilBetrug von Salandril ist aufgeflogen.
 	var int PyrokarToldKarrasToResearchDMT;														// == TRUE Karras macht DMT Research
 	var int Pyrokar_AskKarrasAboutDMTAmulett;													// == TRUE Karras fragen, wegen Schutzamulett gegen den Schwarzen Blick
-	var int MIS_Karras_FindBlessedStone;														// == LOG_SUCCESS SC bringt Karras gesegnetes Gestein, für Schutzamulett gegen den Schwarzen Blick
-	var int Angar_KnowsMadPsi;																	// == TRUE Angar kennt die Wahrheit über die Bruderschaft des Schläfers.
+	var int MIS_Karras_FindBlessedStone;														// == LOG_SUCCESS SC bringt Karras gesegnetes Gestein, fÃƒÂ¼r Schutzamulett gegen den Schwarzen Blick
+	var int Angar_KnowsMadPsi;																	// == TRUE Angar kennt die Wahrheit ÃƒÂ¼ber die Bruderschaft des SchlÃƒÂ¤fers.
 	var int Cornelius_IsLiar;
-	var int RescueBennet_KnowsWitness;															// Der SC hat erfahren, dass es einen Zeugen für den Mord gibt
+	var int RescueBennet_KnowsWitness;															// Der SC hat erfahren, dass es einen Zeugen fÃƒÂ¼r den Mord gibt
 	var int RecueBennet_KnowsCornelius;															// Der SC hat erfahren, dass Cornelius der Zeuge ist.
 	var int Cornelius_ThreatenByMilSC;
 	var int SCIstRichtersLakai;
 	var int SCFoundMorgahard;
-	const int Gold_BlessSword							= 5000;									// Soviel kostet die erste Segnung deines PalSchwertes (Hoshi: bei Änderung bitte auch in der Text.d ändern!!!!(const string Bless_Sword))
+	const int Gold_BlessSword							= 5000;									// Soviel kostet die erste Segnung deines PalSchwertes (Hoshi: bei Ãƒâ€žnderung bitte auch in der Text.d ÃƒÂ¤ndern!!!!(const string Bless_Sword))
 	const int CostForPAlSpells							= 5;									// Soviel kosten Pal Spells!!
 	var int SalandrilMinenAnteil_MAINCounter;
 	var int SalandrilVerteilteMinenAnteil;
@@ -1167,35 +1167,35 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 
 // ------ KAPITEL 4 ------
 	var int DJG_SwampParty;																		// Rod und Cipher greifen mit SC den Drachen an.
-	var int DJG_BiffParty;																		// SCs eigener kleiner Söldner.
+	var int DJG_BiffParty;																		// SCs eigener kleiner SÃƒÂ¶ldner.
 	var int DJG_BiffSurvivedLastDragon;
 	var int Angar_willDJGwerden;																// Angar will DJG werden
 	var int DJG_Angar_SentToStones;																// Angar macht sich auf zum STonehenge
-	var int DJG_AngarGotAmulett;																// SC gibt Angar das Amulett zurück.
+	var int DJG_AngarGotAmulett;																// SC gibt Angar das Amulett zurÃƒÂ¼ck.
 	var int DJG_AngarAngriff;																	// SC greift SkeletonMage zusammen mit Angar an!
 
 	var int HokurnLastDrink;																	// Wann hat Hokurn letztes mal getrunken
 	var int HokurnGetsDrink;																	// Er hat was zu trrinken bekommen
-	var int HokurnTellsDragon;																	// Erzählt dir was über drachen
+	var int HokurnTellsDragon;																	// ErzÃƒÂ¤hlt dir was ÃƒÂ¼ber drachen
 	var int GodarLikesYou;																		// Wir wettern gegen die Oberviertelfuzzies!
-	var int KjornToldDragon;																	// erzählt dir was über drachen
-	var int KjorntoldOrks;																		// erzählt was über Orks
-	var int KjornToldOldCamp;																	// erzählt über Burg im Minental
-	var int KjornToldColony;																	// erzählt über das Minental
+	var int KjornToldDragon;																	// erzÃƒÂ¤hlt dir was ÃƒÂ¼ber drachen
+	var int KjorntoldOrks;																		// erzÃƒÂ¤hlt was ÃƒÂ¼ber Orks
+	var int KjornToldOldCamp;																	// erzÃƒÂ¤hlt ÃƒÂ¼ber Burg im Minental
+	var int KjornToldColony;																	// erzÃƒÂ¤hlt ÃƒÂ¼ber das Minental
 
 	var int DragonTalk_Exit_Free;
 	var int DJG_Biff_Stay;																		// zu nah am Drachen bleibt Biff stehen.
 	var int Keroloth_HasPayed;																	// Keroloth hat Finderlohn bezahlt
 	var int Keroloths_BeutelLeer;																// Beutel ist leer
-	var int OrikToldMissionChapter4;															// Orik hat dem SC den Auftrga erklährt
+	var int OrikToldMissionChapter4;															// Orik hat dem SC den Auftrga erklÃƒÂ¤hrt
 	var int Sengrath_Missing;																	// Sengrath ist auf der Suche nach seiner Armbrust gestorben.
-	var int Talbin_FollowsThroughPass;															// SC bringt Talbin über den Pass!
-	var int Biff_FollowsThroughPass;															// SC bringt Talbin über den Pass!
+	var int Talbin_FollowsThroughPass;															// SC bringt Talbin ÃƒÂ¼ber den Pass!
+	var int Biff_FollowsThroughPass;															// SC bringt Talbin ÃƒÂ¼ber den Pass!
 	var int EngromIsGone;																		// Engrom lebte zu Kapitel 4 noch. ist jetzt verschwunden!
-	var int TalkedTo_AntiPaladin;																// Paladin SC hat mit den Eliteorkanführer gesprochen.
-	var int Hyglas_SendsToKarras;																// Karras soll dir über die Sterne erzählen
+	var int TalkedTo_AntiPaladin;																// Paladin SC hat mit den EliteorkanfÃƒÂ¼hrer gesprochen.
+	var int Hyglas_SendsToKarras;																// Karras soll dir ÃƒÂ¼ber die Sterne erzÃƒÂ¤hlen
 	var int Jan_WantsDragonBlood;																// == TRUE Jan kauft (PAL und KDF) Drachenblut ab.
-	const int Garond_KilledDragonGeld					= 300;									// Geld für jeden getöteten Drachen.
+	const int Garond_KilledDragonGeld					= 300;									// Geld fÃƒÂ¼r jeden getÃƒÂ¶teten Drachen.
 
 	var int DJG_BiffParty_nomore;
 	var int DJG_Biff_HalbeHalbe;
@@ -1204,13 +1204,13 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int DJG_Biff_HalbeHalbe_again;
 
 // ------ KAPITEL 5 ------
-	var int Pyrokar_LetYouPassTalamon;															// Pyrokar gewährt dir Zugang zum Bibliotheks Vorraum.
-	var int SecretLibraryIsOpen;																// Geheimtür zur Bibliothek wurde geöffnet
+	var int Pyrokar_LetYouPassTalamon;															// Pyrokar gewÃƒÂ¤hrt dir Zugang zum Bibliotheks Vorraum.
+	var int SecretLibraryIsOpen;																// GeheimtÃƒÂ¼r zur Bibliothek wurde geÃƒÂ¶ffnet
 	var int HeroWasInLibrary;																	// Spieler war im Keller des klosters
-	var int DayForFinalDJGArmor;																// Dann kanst du dir deine Rüstung abholen
-	var int PlayerHasFinalArmor;																// Sc hat DJG Rüstung
+	var int DayForFinalDJGArmor;																// Dann kanst du dir deine RÃƒÂ¼stung abholen
+	var int PlayerHasFinalArmor;																// Sc hat DJG RÃƒÂ¼stung
 	var int RosiFoundKap5;																		// Rosi steht in der Wildnis
-	var int PAL_KnowsAbout_FINAL_BLESSING;														// Paladine Sc hat rezept für Finale Waffensegnung gelesen!
+	var int PAL_KnowsAbout_FINAL_BLESSING;														// Paladine Sc hat rezept fÃƒÂ¼r Finale Waffensegnung gelesen!
 
 // ------ KAPITEL 6 ------
 	var int ORkSturmDI;																			// Ork haben das Schiff angegriffen.
@@ -1218,29 +1218,29 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 	var int SC_InnosEyeVergessen_DI;															// Spieler hat das Ding nicht zur DI mitgenommen!
 	var int SCFoundPedro;
 	var int UndeadDragonIsDead;																	// UndeadDragon ist tot
-	var int DiegAndGornAreOnboard;																// fürs Video Extro_AllesWirdGut!
+	var int DiegAndGornAreOnboard;																// fÃƒÂ¼rs Video Extro_AllesWirdGut!
 
 //****************************
-//	Lehrer (hier sollten alle variablen für die Freischaltung der einzelnen Lehrer stehen
+//	Lehrer (hier sollten alle variablen fÃƒÂ¼r die Freischaltung der einzelnen Lehrer stehen
 //****************************
 
 //********************************
 	var int Alrik_TeachPlayer;																	// 1-hand Lerer in der city (bis 30)
-	var int Moe_TeachPlayer;																	// Stärkelehrer im Hafen (bis 30)
+	var int Moe_TeachPlayer;																	// StÃƒÂ¤rkelehrer im Hafen (bis 30)
 	var int Bartok_TeachPlayer;																	// Bogenlehrer in der Stadt (bis 30)
 	var int Boltan_TeachPlayer;																	// Armbrustlehrer der Miliz (bis 60)
 	var int Wulfgar_TeachPlayer;																// 1h Lehrer der Miliz (bis 60)
-	var int Girion_TeachPlayer;																	// 2h Lehrer für Pal (bis 60)
+	var int Girion_TeachPlayer;																	// 2h Lehrer fÃƒÂ¼r Pal (bis 60)
 	var int Thorben_TeachPlayer;																// Picklock Lehrer in Khorinis
 	var int Buster_TeachPlayer;																	// Einhand und Zweikampf (bis 30)
 	var int Cord_TeachPlayer;																	// Einhand und Zweikampf (bis 60)
 	var int Lee_TeachPlayer;																	// 2h (bis 100)
-	var int Torlof_TeachPlayer;																	// Stärkelehrer (bis 90)
+	var int Torlof_TeachPlayer;																	// StÃƒÂ¤rkelehrer (bis 90)
 	var int Dar_TeachPlayer;																	// Geschicklichkeitslehrer (bis 90)
 	var int Cassia_TeachPlayer;																	// Geschicklichkeit bis 90 + Schleichen
 	var int Jesper_TeachPlayer;																	// Taschendiebstahl
-	var int Ramirez_TeachPlayer;																// Schlösser öffnen
-	var int Carl_TeachPlayer;																	// Stärke (-30)
+	var int Ramirez_TeachPlayer;																// SchlÃƒÂ¶sser ÃƒÂ¶ffnen
+	var int Carl_TeachPlayer;																	// StÃƒÂ¤rke (-30)
 	var int Gaan_TeachPlayer;																	// Fell, Krallen!
 
 //********************************
@@ -1251,32 +1251,32 @@ Gürtel der Heilung(1. Rezept heiltrank oder alle ...)
 // STR
 	var int Carl_TeachSTR;																		// STR - 30
 	var int Harad_TeachSTR;																		// STR - 45 wenn Schmieden gelernt
-	var int Mortis_TeachSTR;																	// STR - 60 für Miliz oder Pal
+	var int Mortis_TeachSTR;																	// STR - 60 fÃƒÂ¼r Miliz oder Pal
 	var int Ingmar_TeachSTR;																	// STR - 90
 // DEX
 	var int Lares_TeachDEX;																		// DEX - 30
-	var int Ruga_TeachDEX;																		// DEX - 60 für Miliz oder Pal
-	var int Cassia_TeachDEX;																	// DEX - 90 für 100 Gold oder umsonst (Attila)
+	var int Ruga_TeachDEX;																		// DEX - 60 fÃƒÂ¼r Miliz oder Pal
+	var int Cassia_TeachDEX;																	// DEX - 90 fÃƒÂ¼r 100 Gold oder umsonst (Attila)
 // MAN
 	var int Vatras_TeachMANA;																	// MANA - 50
-	var int Albrecht_TeachMANA;																	// MANA - 100 für Pal
+	var int Albrecht_TeachMANA;																	// MANA - 100 fÃƒÂ¼r Pal
 // 1H
 	var int Alrik_Teach1H;																		// 1h - 30
-	var int Wulfgar_Teach1H;																	// 1h - 60 für Miliz oder Pal (oder 100 Gold)
-	var int Cedric_Teach1H;																		// 1h - 90 für Pal
+	var int Wulfgar_Teach1H;																	// 1h - 60 fÃƒÂ¼r Miliz oder Pal (oder 100 Gold)
+	var int Cedric_Teach1H;																		// 1h - 90 fÃƒÂ¼r Pal
 // 2H
-	var int Wulfgar_Teach2H;																	// 2h - 60 für Miliz oder Pal (oder 100 Gold)
-	var int Girion_Teach2H;																		// 2h - 90 für Pal
-	var int LordHagen_Teach2H;																	// 2h - 100 für Pal - Meister, ab 90% (Girion schickt dich auch)
+	var int Wulfgar_Teach2H;																	// 2h - 60 fÃƒÂ¼r Miliz oder Pal (oder 100 Gold)
+	var int Girion_Teach2H;																		// 2h - 90 fÃƒÂ¼r Pal
+	var int LordHagen_Teach2H;																	// 2h - 100 fÃƒÂ¼r Pal - Meister, ab 90% (Girion schickt dich auch)
 // Bogen
 	var int Bartok_TeachBow;																	// Bow - 30
 // Armbrust
-	var int Ruga_TeachCrossbow;																	// Crossbow - 60 für Miliz oder Pal
+	var int Ruga_TeachCrossbow;																	// Crossbow - 60 fÃƒÂ¼r Miliz oder Pal
 // Diebestalente
-	var int Cassia_TeachPickpocket;																// für 100 Gold oder umsonst (Attila)
-	var int Jesper_TeachSneak;																	// für 100 Gold ...
-	var int Ramirez_TeachPicklock;																// für 100 Gold ...
-	var int Thorben_TeachPicklock;																// für 200, wenn Gritta bezahlt für 100, wenn Schuldenbuch zurück umsonst
+	var int Cassia_TeachPickpocket;																// fÃƒÂ¼r 100 Gold oder umsonst (Attila)
+	var int Jesper_TeachSneak;																	// fÃƒÂ¼r 100 Gold ...
+	var int Ramirez_TeachPicklock;																// fÃƒÂ¼r 100 Gold ...
+	var int Thorben_TeachPicklock;																// fÃƒÂ¼r 200, wenn Gritta bezahlt fÃƒÂ¼r 100, wenn Schuldenbuch zurÃƒÂ¼ck umsonst
 // sonstige Talente
 	var int Harad_TeachSmith;																	// Common
 	var int Constantino_TeachAlchemy;															// Health_01, Health_02, Health 03, Perm_Health, Mana_01, Mana_02, Perm_STR
@@ -1320,8 +1320,8 @@ SPL_Charm
 // 2H
 // var int
 	var int Rod_Teach2H;																		// 2H bis 30
-	var int Cord_Teach2H;																		// 1H und 2H - 60 für SLD
-	var int Lee_Teach2H;																		// 2H - 100 für SLD und DJG - Meister, ab 90% (wer tot???)
+	var int Cord_Teach2H;																		// 1H und 2H - 60 fÃƒÂ¼r SLD
+	var int Lee_Teach2H;																		// 2H - 100 fÃƒÂ¼r SLD und DJG - Meister, ab 90% (wer tot???)
 
 	var int Wolf_TeachBow;
 // Bow
@@ -1349,7 +1349,7 @@ SPL_Charm
 /*
 TROPHY_Claws
 TROPHY_Fur
-TROPHY_Heart Golem / Dämon
+TROPHY_Heart Golem / DÃƒÂ¤mon
 TROPHY_ShadowHorn
 TROPHY_FireTongue
 TROPHY_BFWing
@@ -1381,7 +1381,7 @@ TROPHY_DragonBlood
 // STR
 	var int Opolos_TeachSTR;																	// STR - 50
 // 2H
-	var int XXX_Teach2H;																		// 2H - 70 für Nov/KdF
+	var int XXX_Teach2H;																		// 2H - 70 fÃƒÂ¼r Nov/KdF
 // PalRunes
 	var int Ulthar_TeachPalRunes;																// PalLightHeal, PalMediumHeal, PalFullHeal
 	var int Pyrokar_TeachPalRunes;																// PalLight
@@ -1393,10 +1393,10 @@ TROPHY_DragonBlood
 	var int Marduk_TeachRunes;																	// IceBolt1, Zap2, LightningFlash3, IceCube3, Thunderball4, IceWave5
 //*** BIBLIOTHEK - BreathOfDeath6, MassDeath6 ***
 // Alchemy
-	var int Neoras_TeachAlchemy;																// Health_01, Health_02, Mana_01 _02 _03, Perm_Mana, Perm_STR (für Magier und Paladine)
-	var int Babo_TeachPlayer;																	// 1H + 2H - 70 für Nov/KdF
+	var int Neoras_TeachAlchemy;																// Health_01, Health_02, Mana_01 _02 _03, Perm_Mana, Perm_STR (fÃƒÂ¼r Magier und Paladine)
+	var int Babo_TeachPlayer;																	// 1H + 2H - 70 fÃƒÂ¼r Nov/KdF
 
-// ------ Scroll-Händler -------
+// ------ Scroll-HÃƒÂ¤ndler -------
 
 // *** wo Runen-Scrolls kaufen ??? ***
 
@@ -1406,7 +1406,7 @@ TROPHY_DragonBlood
 	var int Dobar_Learnsmith;																	// (Common) Schmied Burg im Minental
 	var int Keroloth_TeachPlayer;																// 1-Hand Lehrer Burg im Minental (bis 60)
 	var int Udar_TeachPlayer;																	// Armbrustlehrer Burg im Minental (bis 30)
-	var int Brutus_TeachSTR;																	// Stärke Lehrer bis 75
+	var int Brutus_TeachSTR;																	// StÃƒÂ¤rke Lehrer bis 75
 // -----------------------------
 // Oldworld Surface ab Kapitel 2
 // -----------------------------
@@ -1414,9 +1414,9 @@ TROPHY_DragonBlood
 // -----------------------------
 // Oldworld Surface ab Kapitel 4
 // -----------------------------
-	var int Godar_TeachPlayer;																	// Zähne, BFSting, BFWing, Schleichen, - DJG - OW Anfang, später Djg-Lager
+	var int Godar_TeachPlayer;																	// ZÃƒÂ¤hne, BFSting, BFWing, Schleichen, - DJG - OW Anfang, spÃƒÂ¤ter Djg-Lager
 	var int Jan_TeachPlayer;																	// Schmieden, Common, Special 1 beide, Special 2 beide. im OC
-	var int Hokurn_TeachPlayer;																	// Kampflehrer bis 100 - DJG - OW Anfang, später Djg-Lager
+	var int Hokurn_TeachPlayer;																	// Kampflehrer bis 100 - DJG - OW Anfang, spÃƒÂ¤ter Djg-Lager
 
 // ------------- Sonstige Variablen -------------------------------------
 	var int Apple_Bonus;
@@ -1439,7 +1439,7 @@ TROPHY_DragonBlood
 
 /*
 
-// Kapitäne:
+// KapitÃƒÂ¤ne:
 
 Jack
 Torlof STR

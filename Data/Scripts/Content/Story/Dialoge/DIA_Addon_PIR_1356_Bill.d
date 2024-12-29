@@ -266,7 +266,7 @@ func void DIA_Addon_Bill_FoundFriends_Info()
 };
 
 // ------------------------------------------------------------
-// 						Ich kenne den Mörder
+// 						Ich kenne den MÃƒÂ¶rder
 // ------------------------------------------------------------
 instance DIA_Addon_Bill_JuanMurder(C_INFO)
 {
@@ -424,7 +424,7 @@ func void DIA_Addon_Bill_LearnTalent_Info()
 {
 	AI_Output(other, self, "DIA_Addon_Bill_LearnTalent_15_00"); //Show me how to pick pockets.
 
-	if (other.attribute[ATR_DEXTERITY] >= 40) // braucht man für Francis
+	if (other.attribute[ATR_DEXTERITY] >= 40) // braucht man fÃƒÂ¼r Francis
 	{
 		if (B_TeachThiefTalent(self, other, NPC_TALENT_PICKPOCKET))
 		{

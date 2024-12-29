@@ -13,7 +13,7 @@ func void B_GiveTradeInv_Gorax(var C_Npc slf)
 
 		CreateInvItems(slf, ItKe_Innos_MIS, 1); // Joly: damit man wieder aus dem Kloster kommt, wenn man reingeklettert ist.
 
-		CreateInvItems(slf, ItSc_Sleep, 1); // Joly: Für Mission benötigt!!!!
+		CreateInvItems(slf, ItSc_Sleep, 1); // Joly: FÃƒÂ¼r Mission benÃƒÂ¶tigt!!!!
 		CreateInvItems(slf, ItMi_Sulfur, 2);
 		CreateInvItems   (slf, ItPo_Mana_01,  	7);
 		CreateInvItems(slf, ItPo_Health_01, 3);

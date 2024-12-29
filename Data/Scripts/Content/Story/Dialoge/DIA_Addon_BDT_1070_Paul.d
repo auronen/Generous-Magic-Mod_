@@ -163,7 +163,7 @@ func void DIA_Addon_Paul_HunoVerdacht_Info()
 };
 
 // ---------------------------------------------------------------------
-//	Arbeitest für Huno
+//	Arbeitest fÃƒÂ¼r Huno
 // ---------------------------------------------------------------------
 instance DIA_Addon_Paul_HunoArbeit(C_INFO)
 {

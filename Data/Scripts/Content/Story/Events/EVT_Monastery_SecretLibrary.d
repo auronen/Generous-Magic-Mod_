@@ -1,5 +1,5 @@
 //****************************
-// 	EVT_MONASTERY_SECRETLIBRARY_FUNC (Funktion, die bei öffnen der Geheimtür zur geheimen Bibliothek ausgeführt wird. normalerweise Kapitel 5)
+// 	EVT_MONASTERY_SECRETLIBRARY_FUNC (Funktion, die bei ÃƒÂ¶ffnen der GeheimtÃƒÂ¼r zur geheimen Bibliothek ausgefÃƒÂ¼hrt wird. normalerweise Kapitel 5)
 //****************************
 func void EVT_MONASTERY_SECRETLIBRARY_S1()
 {

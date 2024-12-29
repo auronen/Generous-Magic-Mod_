@@ -166,7 +166,7 @@ func void DIA_Bilgot_KNOWSLEADSNAPPER_Info()
 	AI_Output(other, self, "DIA_Bilgot_KNOWSLEADSNAPPER_15_08"); //Fine. I think I understand. Thank you!
 	AI_Output(self, other, "DIA_Bilgot_KNOWSLEADSNAPPER_05_09"); //Remember, you gave me your word!
 
-	Wld_InsertNpc(NewMine_LeadSnapper, "OW_ORC_LOOKOUT_2_01"); // Der Rudelführer
+	Wld_InsertNpc(NewMine_LeadSnapper, "OW_ORC_LOOKOUT_2_01"); // Der RudelfÃƒÂ¼hrer
 
 	B_LogEntry(TOPIC_FajethKillSnapper, TOPIC_FajethKillSnapper_2);
 
@@ -199,7 +199,7 @@ func int DIA_Bilgot_TAKEYOUWITHME_Condition()
 func void DIA_Bilgot_TAKEYOUWITHME_Info()
 {
 	AI_Output(other, self, "DIA_Bilgot_TAKEYOUWITHME_15_00"); //It's time, Bilgot! Pack your things, we're off.
-	// Joly: SC bringt den Typ bis zum Pass AI_Output(self, other, "DIA_Bilgot_TAKEYOUWITHME_05_01"); // Großartig! Es reicht mir schon, wenn du mich über die große Brücke am Fluss vor der belagerten Burg bringst. Den Rest schaff ich dann schon.
+	// Joly: SC bringt den Typ bis zum Pass AI_Output(self, other, "DIA_Bilgot_TAKEYOUWITHME_05_01"); // GroÃƒÅ¸artig! Es reicht mir schon, wenn du mich ÃƒÂ¼ber die groÃƒÅ¸e BrÃƒÂ¼cke am Fluss vor der belagerten Burg bringst. Den Rest schaff ich dann schon.
 	// Joly: SC bringt den Typ bis zum Pass AI_Output(other, self, "DIA_Bilgot_TAKEYOUWITHME_15_02"); // Dann beeil dich!
 	AI_Output(self, other, "DIA_Bilgot_TAKEYOUWITHME_05_03"); //I'm ready!
 

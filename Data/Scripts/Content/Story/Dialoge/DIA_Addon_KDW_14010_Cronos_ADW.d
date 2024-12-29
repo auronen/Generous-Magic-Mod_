@@ -32,7 +32,7 @@ instance DIA_Addon_Cronos_ADW_PICKPOCKET(C_INFO)
 	condition		= DIA_Addon_Cronos_ADW_PICKPOCKET_Condition;
 	information		= DIA_Addon_Cronos_ADW_PICKPOCKET_Info;
 	permanent		= TRUE;
-	description		= "(Es wäre einfach seine Karte zu stehlen)";
+	description		= "(Es wÃƒÂ¤re einfach seine Karte zu stehlen)";
 };
 
 func int DIA_Addon_Cronos_ADW_PICKPOCKET_Condition()

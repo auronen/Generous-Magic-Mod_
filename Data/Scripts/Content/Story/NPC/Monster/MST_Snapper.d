@@ -260,7 +260,7 @@ instance NewMine_Snapper8(Mst_Default_Snapper)
 	// -------- daily routine --------
 };
 
-instance NewMine_LeadSnapper(Mst_Default_Snapper) // OW NewMineMission Kill_Snapper: Bilgot weiß von einem Leittier, das muß tot -> Fajeths Auftrag erledigt!
+instance NewMine_LeadSnapper(Mst_Default_Snapper) // OW NewMineMission Kill_Snapper: Bilgot weiÃƒÅ¸ von einem Leittier, das muÃƒÅ¸ tot -> Fajeths Auftrag erledigt!
 {
 	// -------- NPC --------
 	name							= "Pack Leader";

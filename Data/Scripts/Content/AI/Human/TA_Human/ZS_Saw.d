@@ -1,5 +1,5 @@
 // ****************************
-// NSC benutzt Säge Mobsi
+// NSC benutzt SÃƒÂ¤ge Mobsi
 // ****************************
 
 func void ZS_Saw()
@@ -25,7 +25,7 @@ func int ZS_Saw_Loop()
 		AI_UseMob(self, "BAUMSAEGE", 1);
 	};
 
-	// ------ Random-Ani beim Hämmern ------
+	// ------ Random-Ani beim HÃƒÂ¤mmern ------
 	if ((Npc_GetStateTime(self) > 15)
 	&& (C_BodyStateContains(self, BS_MOBINTERACT_INTERRUPT)))
 	{

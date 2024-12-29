@@ -4,7 +4,7 @@
 
 func void PC_Sleep(var int t)
 {
-	AI_StopProcessInfos(self); // [SK] ->muss hier stehen um das update zu gewährleisten
+	AI_StopProcessInfos(self); // [SK] ->muss hier stehen um das update zu gewÃƒÂ¤hrleisten
 
 	PLAYER_MOBSI_PRODUCTION = MOBSI_NONE;
 	self.aivar[AIV_INVINCIBLE] = FALSE;
@@ -36,7 +36,7 @@ func void PC_Sleep(var int t)
 
 	// -------- AssessEnterRoom-Wahrnehmung versenden --------
 	PrintGlobals(PD_ITEM_MOBSI);
-	Npc_SendPassivePerc(hero, PERC_ASSESSENTERROOM, NULL, hero); // ...damit der Spieler dieses Feature nicht zum Hütteplündern ausnutzt!
+	Npc_SendPassivePerc(hero, PERC_ASSESSENTERROOM, NULL, hero); // ...damit der Spieler dieses Feature nicht zum HÃƒÂ¼tteplÃƒÂ¼ndern ausnutzt!
 };
 
 func void SLEEPABIT_S1()
@@ -44,7 +44,7 @@ func void SLEEPABIT_S1()
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 	var C_Npc rock; rock = Hlp_GetNpc(PC_Rockefeller);
 
-	//***ALT** if(Hlp_GetInstanceID(self)== Hlp_GetInstanceID(Hero)) // MH: geändert, damit kontrollierte NSCs nicht schlafen können!
+	//***ALT** if(Hlp_GetInstanceID(self)== Hlp_GetInstanceID(Hero)) // MH: geÃƒÂ¤ndert, damit kontrollierte NSCs nicht schlafen kÃƒÂ¶nnen!
 	if ((Hlp_GetInstanceID(self) == Hlp_GetInstanceID(her)) || (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(rock)))
 	{
 		self.aivar[AIV_INVINCIBLE] = TRUE;

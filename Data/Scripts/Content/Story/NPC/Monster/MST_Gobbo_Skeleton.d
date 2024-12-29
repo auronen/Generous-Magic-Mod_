@@ -81,7 +81,7 @@ instance Gobbo_Skeleton(Mst_Default_Gobbo_Skeleton)
 	// -------- visuals --------
 	B_SetVisuals_Gobbo_Skeleton();
 
-	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR ÃƒÂ¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 
@@ -113,7 +113,7 @@ instance Summoned_Gobbo_Skeleton(Mst_Default_Gobbo_Skeleton)
 	aivar[AIV_PARTYMEMBER]			= TRUE;
 
 	B_SetAttitude(self, ATT_FRIENDLY);
-	Npc_SetToFightMode(self, ItMw_1H_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1H_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR ÃƒÂ¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 
@@ -126,7 +126,7 @@ instance Summoned_Gobbo_Skeleton(Mst_Default_Gobbo_Skeleton)
 };
 
 //************************************
-//	Gobbo_Skeleton im OW Dämonenturm
+//	Gobbo_Skeleton im OW DÃƒÂ¤monenturm
 //************************************
 instance Gobbo_SkeletonOWDemonTower(Mst_Default_Gobbo_Skeleton)
 {
@@ -137,7 +137,7 @@ instance Gobbo_SkeletonOWDemonTower(Mst_Default_Gobbo_Skeleton)
 	// -------- visuals --------
 	B_SetVisuals_Gobbo_Skeleton();
 
-	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR ÃƒÂ¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 

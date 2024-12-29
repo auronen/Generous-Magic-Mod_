@@ -88,7 +88,7 @@ instance Itemhoshi(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 70); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 70); // Grenzen fÃƒÂ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 // ------------------------------------------------------------
@@ -676,7 +676,7 @@ instance Itemhoshi(Npc_Default)
 	CreateInvItems(self, ItRw_Addon_MagicBolt, 100);
 
 // ------------------------------------------------------------
-//	Alle Gürtel
+//	Alle GÃƒÂ¼rtel
 // ------------------------------------------------------------
 // Gothic2
 
@@ -1088,7 +1088,7 @@ instance TA_Testmodell(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 70); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 70); // Grenzen fÃƒÂ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);
@@ -1158,7 +1158,7 @@ func void Rtn_Follow_1500()
 };
 
 //*************************************************
-//	Testdialoge für Followmode und Guideplayer ----
+//	Testdialoge fÃƒÂ¼r Followmode und Guideplayer ----
 //*************************************************
 
 // --- Exit ---
@@ -1270,7 +1270,7 @@ instance Info_TA_Testmodell_FollowEnd(C_INFO)
 	condition		= DIA_TA_Testmodell_FollowEnd_Condition;
 	information		= DIA_TA_Testmodell_FollowEnd_Info;
 	permanent		= TRUE;
-	description		= "H�r auf mir zu folgen!";
+	description		= "Hör auf mir zu folgen!";
 };
 
 func int DIA_TA_Testmodell_FollowEnd_Condition()
@@ -1320,7 +1320,7 @@ instance TA_Smalltalkpartner(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 70); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 70); // Grenzen fÃƒÂ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);
@@ -1426,7 +1426,7 @@ func void UseGold()
 
 instance Armor(C_Item)
 {
-	name						= "Ein Beutel voller R�stungen!";
+	name						= "Ein Beutel voller Rüstungen!";
 
 	mainflag					= ITEM_KAT_NONE;
 	flags						= 0;
@@ -1618,11 +1618,11 @@ func void UsePatrickHelper()
 	self.attribute[ATR_MANA] = 400;
 
 	Npc_SetTalentSkill(self, NPC_TALENT_MAGE, 6);
-	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // hängt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // hÃƒÂ¤ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill(self, NPC_TALENT_SNEAK, 1);
 	Npc_SetTalentSkill(self, NPC_TALENT_ACROBAT, 0);
 
-	Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // hängt ab von DEX (auf Scriptebene)
+	Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // hÃƒÂ¤ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill(self, NPC_TALENT_SMITH, 1);
 	Npc_SetTalentSkill(self, NPC_TALENT_RUNES, 1);
 	Npc_SetTalentSkill(self, NPC_TALENT_ALCHEMY, 1);

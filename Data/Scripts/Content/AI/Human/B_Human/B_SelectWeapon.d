@@ -1,7 +1,7 @@
 // *******************************************
 // B_SelectWeapon
 // --------------
-// Bei Fernkämpfern wird Muni ins Inv gemogelt
+// Bei FernkÃƒÂ¤mpfern wird Muni ins Inv gemogelt
 // *******************************************
 
 func void B_SelectWeapon(var C_Npc slf, var C_Npc oth)
@@ -16,10 +16,10 @@ func void B_SelectWeapon(var C_Npc slf, var C_Npc oth)
 		return;
 	};
 
-	// ------ Magie wählen oder behalten ------
-	if (B_SelectSpell(slf, oth)) // bei HUMANS wählen nur Magier, Paladine oder Dementoren Magie
+	// ------ Magie wÃƒÂ¤hlen oder behalten ------
+	if (B_SelectSpell(slf, oth)) // bei HUMANS wÃƒÂ¤hlen nur Magier, Paladine oder Dementoren Magie
 	{
-		return; // Magie gewählt!
+		return; // Magie gewÃƒÂ¤hlt!
 	};
 
 	if (Npc_IsInFightMode(slf, FMODE_MAGIC)) // Habe Magie gezogen, will aber keine benutzen!!!
@@ -29,7 +29,7 @@ func void B_SelectWeapon(var C_Npc slf, var C_Npc oth)
 			AI_RemoveWeapon(slf);
 		};
 
-		AI_ReadyMeleeWeapon(slf); // Schwert ziehen, sonst Fäuste
+		AI_ReadyMeleeWeapon(slf); // Schwert ziehen, sonst FÃƒÂ¤uste
 		return;
 	};
 
@@ -64,7 +64,7 @@ func void B_SelectWeapon(var C_Npc slf, var C_Npc oth)
 			AI_RemoveWeapon(slf);
 		};
 
-		AI_ReadyMeleeWeapon(slf); // Schwert ziehen, sonst Fäuste
+		AI_ReadyMeleeWeapon(slf); // Schwert ziehen, sonst FÃƒÂ¤uste
 		return;
 	};
 
@@ -99,7 +99,7 @@ func void B_SelectWeapon(var C_Npc slf, var C_Npc oth)
 			return;
 		};
 
-		// ----- wenn gar keine Waffe: Default (Fäuste) ------
+		// ----- wenn gar keine Waffe: Default (FÃƒÂ¤uste) ------
 		AI_ReadyMeleeWeapon(slf);
 		return;
 	};

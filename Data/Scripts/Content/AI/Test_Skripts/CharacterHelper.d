@@ -245,7 +245,7 @@ func void B_SetHeroWeapon()
 };
 
 //***************************************************************************
-//	Hero bekommt Ausrüstung
+//	Hero bekommt AusrÃƒÂ¼stung
 //***************************************************************************
 func void B_SetHeroEquipment()
 {
@@ -574,8 +574,8 @@ func void CH_Guild_Info()
 	Info_AddChoice(CH_Guild, DIALOG_BACK, CH_Guild_BACK);
 	Info_AddChoice(CH_Guild, "Novize", CH_NOV);
 	Info_AddChoice(CH_Guild, "KDF", CH_KDF);
-	Info_AddChoice(CH_Guild, "S�ldner", CH_SLD);
-	Info_AddChoice(CH_Guild, "Drachenj�ger", CH_DJG);
+	Info_AddChoice(CH_Guild, "Söldner", CH_SLD);
+	Info_AddChoice(CH_Guild, "Drachenjäger", CH_DJG);
 	Info_AddChoice(CH_Guild, "Miliz", CH_MIL);
 	Info_AddChoice(CH_Guild, "Paladin", CH_PAL);
 	Info_AddChoice(CH_Guild, "None", CH_NONE);
@@ -709,7 +709,7 @@ instance CH_Level_Stopper(C_INFO)
 	condition		= CH_Level_Stopper_Condition;
 	information		= CH_Level_Stopper_Info;
 	permanent		= TRUE;
-	description		= "ZUR�CK";
+	description		= "ZURÜCK";
 };
 
 func int CH_Level_Stopper_Condition()
@@ -1553,7 +1553,7 @@ func void CH_Level_50()
 	B_SetHeroWeapon();
 	B_SetHeroEquipment();
 }; //*********************************************
-// Geschick und Stärke
+// Geschick und StÃƒÂ¤rke
 //*********************************************
 // ---------------------------
 var int AttributeStart;
@@ -1565,7 +1565,7 @@ instance DIA_CH_Attribute_Start(C_INFO)
 	condition		= DIA_CH_Attribute_Start_Condition;
 	information		= DIA_CH_Attribute_Start_Info;
 	permanent		= TRUE;
-	description		= "St�rke und Geschick";
+	description		= "Stärke und Geschick";
 };
 
 func int DIA_CH_Attribute_Start_Condition()
@@ -1596,7 +1596,7 @@ instance DIA_CH_Attribute_Stopper(C_INFO)
 	condition		= DIA_CH_Attribute_Stopper_Condition;
 	information		= DIA_CH_Attribute_Stopper_Info;
 	permanent		= TRUE;
-	description		= "ZUR�CK";
+	description		= "ZURÜCK";
 };
 
 func int DIA_CH_Attribute_Stopper_Condition()
@@ -1613,7 +1613,7 @@ func void DIA_CH_Attribute_Stopper_Info()
 };
 
 //*********************************************
-// Attribute Stärke
+// Attribute StÃƒÂ¤rke
 //*********************************************
 instance DIA_CH_Strength(C_INFO)
 {
@@ -1622,7 +1622,7 @@ instance DIA_CH_Strength(C_INFO)
 	condition		= DIA_CH_Strength_Condition;
 	information		= DIA_CH_Strength_Info;
 	permanent		= TRUE;
-	description		= "St�rke steigern";
+	description		= "Stärke steigern";
 };
 
 func int DIA_CH_Strength_Condition()
@@ -1975,7 +1975,7 @@ func void DIA_CH_KREISE_Info()
 	// Info_AddChoice(DIA_CH_KREISE,"Paladin-Runen", CH_Training_Runen_Paladin);
 
 	Info_AddChoice(DIA_CH_KREISE, "Sechster Kreis", CH_KREISE_6);
-	Info_AddChoice(DIA_CH_KREISE, "F�nfter Kreis", CH_KREISE_5);
+	Info_AddChoice(DIA_CH_KREISE, "Fünfter Kreis", CH_KREISE_5);
 	Info_AddChoice(DIA_CH_KREISE, "Vierter Kreis", CH_KREISE_4);
 	Info_AddChoice(DIA_CH_KREISE, "Dritter Kreis", CH_KREISE_3);
 	Info_AddChoice(DIA_CH_KREISE, "Zweiter Kreis", CH_KREISE_2);
@@ -2342,7 +2342,7 @@ func void CH_Training_Runen_Circle_4_SPL_Pyrokinesis()
 };
 
 //**********************************************************
-// Fünfter Kreis
+// FÃƒÂ¼nfter Kreis
 // --------------------------
 //**********************************************************
 func void DIA_CH_Runen_5()
@@ -2501,7 +2501,7 @@ instance DIA_CH_Kampf_Stopper(C_INFO)
 	condition		= DIA_CH_Kampf_Stopper_Condition;
 	information		= DIA_CH_Kampf_Stopper_Info;
 	permanent		= TRUE;
-	description		= "ZUR�CK";
+	description		= "ZURÜCK";
 };
 
 func int DIA_CH_Kampf_Stopper_Condition()
@@ -2936,7 +2936,7 @@ instance DIA_CH_Dieb_Stopper(C_INFO)
 	condition		= DIA_CH_Dieb_Stopper_Condition;
 	information		= DIA_CH_Dieb_Stopper_Info;
 	permanent		= TRUE;
-	description		= "ZUR�CK";
+	description		= "ZURÜCK";
 };
 
 func int DIA_CH_Dieb_Stopper_Condition()
@@ -3019,7 +3019,7 @@ func void DIA_CH_Dieb_Schleichen_Info()
 };
 
 //*********************************************
-// Dieb Schlösser öffnen
+// Dieb SchlÃƒÂ¶sser ÃƒÂ¶ffnen
 //*********************************************
 instance DIA_CH_Dieb_Picklock(C_INFO)
 {
@@ -3028,7 +3028,7 @@ instance DIA_CH_Dieb_Picklock(C_INFO)
 	condition		= DIA_CH_Dieb_Picklock_Condition;
 	information		= DIA_CH_Dieb_Picklock_Info;
 	permanent		= TRUE;
-	description		= "Schl�sser �ffnen";
+	description		= "Schlösser öffnen";
 };
 
 func int DIA_CH_Dieb_Picklock_Condition()
@@ -3090,7 +3090,7 @@ func void DIA_CH_Dieb_Alle_Info()
 };
 
 //***************************************************************************
-// Talente Diebesfähigkeiten
+// Talente DiebesfÃƒÂ¤higkeiten
 //***************************************************************************
 func void DIA_CH_Dieb_Alle_BACK()
 {
@@ -3152,7 +3152,7 @@ instance DIA_CH_Misc_Start(C_INFO)
 	condition		= DIA_CH_Misc_Start_Condition;
 	information		= DIA_CH_Misc_Start_Info;
 	permanent		= TRUE;
-	description		= "Sonstiges (Tr�nke,Troph�en,Schmieden,Paladin-Runen,Sprache)";
+	description		= "Sonstiges (Tränke,Trophäen,Schmieden,Paladin-Runen,Sprache)";
 };
 
 func int DIA_CH_Misc_Start_Condition()
@@ -3183,7 +3183,7 @@ instance DIA_CH_Misc_Stopper(C_INFO)
 	condition		= DIA_CH_Misc_Stopper_Condition;
 	information		= DIA_CH_Misc_Stopper_Info;
 	permanent		= TRUE;
-	description		= "ZUR�CK";
+	description		= "ZURÜCK";
 };
 
 func int DIA_CH_Misc_Stopper_Condition()
@@ -3216,7 +3216,7 @@ instance DIA_CH_Misc_Alchemie(C_INFO)
 	condition		= DIA_CH_Misc_Alchemie_Condition;
 	information		= DIA_CH_Misc_Alchemie_Info;
 	permanent		= TRUE;
-	description		= "Alchemie - die Kunst Tr�nke zu brauen";
+	description		= "Alchemie - die Kunst Tränke zu brauen";
 };
 
 func int DIA_CH_Misc_Alchemie_Condition()
@@ -3246,7 +3246,7 @@ instance DIA_CH_Misc_Alchemie_Stopper(C_INFO)
 	condition		= DIA_CH_Misc_Alchemie_Stopper_Condition;
 	information		= DIA_CH_Misc_Alchemie_Stopper_Info;
 	permanent		= TRUE;
-	description		= "ZUR�CK";
+	description		= "ZURÜCK";
 };
 
 func int DIA_CH_Misc_Alchemie_Stopper_Condition()
@@ -3263,7 +3263,7 @@ func void DIA_CH_Misc_Alchemie_Stopper_Info()
 };
 
 //*********************************************
-// Heiltränke aller Art
+// HeiltrÃƒÂ¤nke aller Art
 //*********************************************
 instance DIA_CH_Misc_Health(C_INFO)
 {
@@ -3272,7 +3272,7 @@ instance DIA_CH_Misc_Health(C_INFO)
 	condition		= DIA_CH_Misc_Health_Condition;
 	information		= DIA_CH_Misc_Health_Info;
 	permanent		= TRUE;
-	description		= "Heiltr�nke aller Art";
+	description		= "Heiltränke aller Art";
 };
 
 func int DIA_CH_Misc_Health_Condition()
@@ -3339,7 +3339,7 @@ func void CH_Training_Alchemy_POTION_Perm_Health()
 };
 
 //*********************************************
-// Manatränke aller Art
+// ManatrÃƒÂ¤nke aller Art
 //*********************************************
 instance DIA_CH_Misc_Mana(C_INFO)
 {
@@ -3348,7 +3348,7 @@ instance DIA_CH_Misc_Mana(C_INFO)
 	condition		= DIA_CH_Misc_Mana_Condition;
 	information		= DIA_CH_Misc_Mana_Info;
 	permanent		= TRUE;
-	description		= "Manatr�nke aller Art";
+	description		= "Manatränke aller Art";
 };
 
 func int DIA_CH_Misc_Mana_Condition()
@@ -3415,7 +3415,7 @@ func void CH_Training_Alchemy_POTION_Perm_Mana()
 };
 
 //*********************************************
-// Spezielle Tränke
+// Spezielle TrÃƒÂ¤nke
 //*********************************************
 instance DIA_CH_Misc_Special(C_INFO)
 {
@@ -3424,7 +3424,7 @@ instance DIA_CH_Misc_Special(C_INFO)
 	condition		= DIA_CH_Misc_Special_Condition;
 	information		= DIA_CH_Misc_Special_Info;
 	permanent		= TRUE;
-	description		= "Spezielle Tr�nke";
+	description		= "Spezielle Tränke";
 };
 
 func int DIA_CH_Misc_Special_Condition()
@@ -3502,7 +3502,7 @@ instance DIA_CH_Misc_SmithStart(C_INFO)
 	condition		= DIA_CH_Misc_SmithStart_Condition;
 	information		= DIA_CH_Misc_SmithStart_Info;
 	permanent		= TRUE;
-	description		= "Schmieden - M�nnergruppe";
+	description		= "Schmieden - Männergruppe";
 };
 
 func int DIA_CH_Misc_SmithStart_Condition()
@@ -3532,7 +3532,7 @@ instance DIA_CH_Misc_SmithStopper(C_INFO)
 	condition		= DIA_CH_Misc_SmithStopper_Condition;
 	information		= DIA_CH_Misc_SmithStopper_Info;
 	permanent		= TRUE;
-	description		= "ZUR�CK";
+	description		= "ZURÜCK";
 };
 
 func int DIA_CH_Misc_SmithStopper_Condition()
@@ -3754,7 +3754,7 @@ instance DIA_CH_Misc_Animal_Stopper(C_INFO)
 	condition		= DIA_CH_Misc_Animal_Stopper_Condition;
 	information		= DIA_CH_Misc_Animal_Stopper_Info;
 	permanent		= TRUE;
-	description		= "ZUR�CK";
+	description		= "ZURÜCK";
 };
 
 func int DIA_CH_Misc_Animal_Stopper_Condition()
@@ -3780,7 +3780,7 @@ instance DIA_CH_Misc_Animal_allg(C_INFO)
 	condition		= DIA_CH_Misc_Animal_allg_Condition;
 	information		= DIA_CH_Misc_Animal_allg_Info;
 	permanent		= TRUE;
-	description		= "Z�hne, Fell, Klauen, Herzen";
+	description		= "Zähne, Fell, Klauen, Herzen";
 };
 
 func int DIA_CH_Misc_Animal_allg_Condition()
@@ -3853,7 +3853,7 @@ instance DIA_CH_Misc_Animal_Speziell(C_INFO)
 	condition		= DIA_CH_Misc_Animal_Speziell_Condition;
 	information		= DIA_CH_Misc_Animal_Speziell_Info;
 	permanent		= TRUE;
-	description		= "Fl�gel, Stachel, Zangen, Platten";
+	description		= "Flügel, Stachel, Zangen, Platten";
 };
 
 func int DIA_CH_Misc_Animal_Speziell_Condition()
@@ -3917,7 +3917,7 @@ func void CH_Training_TROPHYS_Mandibles()
 };
 
 // --------------------------------------------
-// Animal Trophys Blut, Hörner, Schuppen
+// Animal Trophys Blut, HÃƒÂ¶rner, Schuppen
 // --------------------------------------------
 instance DIA_CH_Misc_Animal_other(C_INFO)
 {
@@ -3926,7 +3926,7 @@ instance DIA_CH_Misc_Animal_other(C_INFO)
 	condition		= DIA_CH_Misc_Animal_other_Condition;
 	information		= DIA_CH_Misc_Animal_other_Info;
 	permanent		= TRUE;
-	description		= "Blut, Schuppen, H�rner, Zunge";
+	description		= "Blut, Schuppen, Hörner, Zunge";
 };
 
 func int DIA_CH_Misc_Animal_other_Condition()
@@ -4067,7 +4067,7 @@ instance DIA_CH_Misc_PalHeal(C_INFO)
 	condition		= DIA_CH_Misc_PalHeal_Condition;
 	information		= DIA_CH_Misc_PalHeal_Info;
 	permanent		= TRUE;
-	description		= "Licht und Heilspr�che";
+	description		= "Licht und Heilsprüche";
 };
 
 func int DIA_CH_Misc_PalHeal_Condition()
@@ -4139,7 +4139,7 @@ instance DIA_CH_Misc_PalKampf(C_INFO)
 	condition		= DIA_CH_Misc_PalKampf_Condition;
 	information		= DIA_CH_Misc_PalKampf_Info;
 	permanent		= TRUE;
-	description		= "Kampfspr�che";
+	description		= "Kampfsprüche";
 };
 
 func int DIA_CH_Misc_PalKampf_Condition()

@@ -1,7 +1,7 @@
 instance VLK_430_Buergerin(Npc_Default)
 {
 	// -------- NPC --------
-	name							= Name_Buergerin; // Frau vom 'Säger' 453
+	name							= Name_Buergerin; // Frau vom 'SÃƒÂ¤ger' 453
 	npctype							= NPCTYPE_AMBIENT;
 	guild							= GIL_VLK;
 	flags							= 0;

@@ -2,10 +2,10 @@
 // C_PredatorFoundPrey
 // -------------------
 // Monster erkennen NUR Menschen oder andere Monster,
-// wenn in B_InitMonster Attitudes die Attitüde zu other auf HOSTILE gesetzt ist.
+// wenn in B_InitMonster Attitudes die AttitÃƒÂ¼de zu other auf HOSTILE gesetzt ist.
 // Sie reagieren auf diese "Feinde" mit B_AssessEnemy
 // Folgende Ausnahmen gehen in ZS_MM_Hunt (--> ZS_MM_Attack), weil other ihre Beute ist!
-// Die Beute flieht getriggert durch PERC_ASSESSWARN (gesendet von Jäger)
+// Die Beute flieht getriggert durch PERC_ASSESSWARN (gesendet von JÃƒÂ¤ger)
 // *************************************************************************************
 
 func int C_PredatorFoundPrey(var C_Npc slf, var C_Npc oth)

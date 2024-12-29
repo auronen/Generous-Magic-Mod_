@@ -5,7 +5,7 @@
 const int Value_Fackel = 2;
 
 // ************************************************************************************************
-// 	Fackel muß ihre Instanznamen behalten
+// 	Fackel muÃƒÅ¸ ihre Instanznamen behalten
 // ************************************************************************************************
 instance ItLsTorch(C_Item)
 {

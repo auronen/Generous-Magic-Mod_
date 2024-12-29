@@ -111,7 +111,7 @@ func void Equip_ItMi_InnosEye_Broken_Mis()
 };
 
 //**********************************************************************************
-//	Ermächtigungsschreiben für SC für Pyrokar, das Auge Innos rauszurücken.
+//	ErmÃƒÂ¤chtigungsschreiben fÃƒÂ¼r SC fÃƒÂ¼r Pyrokar, das Auge Innos rauszurÃƒÂ¼cken.
 // ----------------------------------------------------------------------------------
 
 instance ItWr_PermissionToWearInnosEye_MIS(C_Item)
@@ -203,7 +203,7 @@ func void Use_XardasBookForPyrokar()
 };
 
 //**********************************************************************************
-//	ItKe_CHEST_SEKOB_XARDASBOOK_MIS Xardas Schlüssel für die Truhe auf Sekobs Hof
+//	ItKe_CHEST_SEKOB_XARDASBOOK_MIS Xardas SchlÃƒÂ¼ssel fÃƒÂ¼r die Truhe auf Sekobs Hof
 //**********************************************************************************
 
 instance ItKe_CHEST_SEKOB_XARDASBOOK_MIS(C_Item)
@@ -293,7 +293,7 @@ func void UseCorneliusTagebuch()
 };
 
 //**********************************************************************************
-//	ITWR_DementorObsessionBook_MIS // Joly: DementorBuch, der Bessenheit, Ein NSC trägt dieses Buch mit sich, wenn er von einem Dementor kurzzeitig übernommen wurde.)
+//	ITWR_DementorObsessionBook_MIS // Joly: DementorBuch, der Bessenheit, Ein NSC trÃƒÂ¤gt dieses Buch mit sich, wenn er von einem Dementor kurzzeitig ÃƒÂ¼bernommen wurde.)
 //**********************************************************************************
 
 instance ITWR_DementorObsessionBook_MIS(C_ITEM)
@@ -369,7 +369,7 @@ func void Use_DementorObsessionBook()
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLines	(nDocID, 0, DementorObsessionBook_5);
 		// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
@@ -496,7 +496,7 @@ func void Use_PyrokarsObsessionList()
 };
 
 /******************************************************************************************/
-//	Heiltrank für Hilda //
+//	Heiltrank fÃƒÂ¼r Hilda //
 /******************************************************************************************/
 instance ItPo_HealHilda_MIS(C_Item)
 {
@@ -595,7 +595,7 @@ func void Use_MalethsBanditGold()
 };
 
 // *****************************************************
-// 		MoleratFett für "die Winde klemmt"
+// 		MoleratFett fÃƒÂ¼r "die Winde klemmt"
 // *****************************************************
 
 instance ItMi_Moleratlubric_MIS(C_Item)
@@ -741,7 +741,7 @@ func void Use_BabosDocs()
 };
 
 //*************************************************************
-//	igaraz Schlüssel
+//	igaraz SchlÃƒÂ¼ssel
 //*************************************************************
 
 instance ItKe_IgarazChest_Mis(C_Item)
@@ -1175,7 +1175,7 @@ instance ItAm_Prot_BlackEye_Mis(C_Item)
 };
 
 //**********************************************************************************
-//	Gestein aus gesegneter Erde für das Schutzamulett gegen den Schwarzen Blick
+//	Gestein aus gesegneter Erde fÃƒÂ¼r das Schutzamulett gegen den Schwarzen Blick
 //**********************************************************************************
 
 instance ItMi_KarrasBlessedStone_Mis(C_Item)
@@ -1201,7 +1201,7 @@ instance ItMi_KarrasBlessedStone_Mis(C_Item)
 };
 
 //**********************************************************************************
-//	Komprobrief für Lee
+//	Komprobrief fÃƒÂ¼r Lee
 // ----------------------------------------------------------------------------------
 
 instance ItWr_RichterKomproBrief_MIS(C_Item)
@@ -1420,7 +1420,7 @@ func void Use_VinosKellergeister_Mis()
 				Doc_PrintLines	(nDocID, 0, "");
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");

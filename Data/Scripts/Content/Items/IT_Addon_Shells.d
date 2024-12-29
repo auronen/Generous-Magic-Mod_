@@ -9,14 +9,14 @@ var int Shell_Opener;
 // ---------------------------------------------------------------------
 func void B_OpenShell()
 {
-	// Muschel zerbricht beim Öffnen --> keine leere Muschel
+	// Muschel zerbricht beim Ãƒâ€“ffnen --> keine leere Muschel
 
 	var int shellomizer;
 	shellomizer = Hlp_Random(100);
 
 	Shell_Opener = (Shell_Opener + 1);
 
-	if (Shell_Opener == 1) // die erste Muschel die der Spieler öffnet
+	if (Shell_Opener == 1) // die erste Muschel die der Spieler ÃƒÂ¶ffnet
 	{
 		B_PlayerFindItem(ItMi_Addon_WhitePearl, 1);
 	}
@@ -25,12 +25,12 @@ func void B_OpenShell()
 		// Schwarze Perle
 		B_PlayerFindItem(ItMi_DarkPearl, 1);
 
-	} // ------------------Jetzt gibt's zufällig Items-----------------
+	} // ------------------Jetzt gibt's zufÃƒÂ¤llig Items-----------------
 	else
 	{
 		if (shellomizer >= 80)
 		{
-			// weiße Perle
+			// weiÃƒÅ¸e Perle
 			B_PlayerFindItem(ItMi_Addon_WhitePearl, 1);
 		}
 		else if (shellomizer >= 55)

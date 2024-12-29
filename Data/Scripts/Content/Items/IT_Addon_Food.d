@@ -121,7 +121,7 @@ func void UseGrog()
 //	Lou's Hammer (mit Manaessenz)
 // -----------------------------
 
-var int Hammer_Once; // damit der Magier sich nicht für 30 Gold superviel MANA kauft!!
+var int Hammer_Once; // damit der Magier sich nicht fÃƒÂ¼r 30 Gold superviel MANA kauft!!
 
 instance ItFo_Addon_LousHammer(C_Item)
 {

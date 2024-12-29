@@ -1,7 +1,7 @@
 // ************************************************
 // B_FinishingMove
 // ---------------
-// FIX: stellt sicher, daß NSC bei AI_FinishingMove
+// FIX: stellt sicher, daÃƒÅ¸ NSC bei AI_FinishingMove
 // auf JEDEN Fall eine Waffe hat
 // ************************************************
 

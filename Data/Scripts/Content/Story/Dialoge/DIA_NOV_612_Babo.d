@@ -534,7 +534,7 @@ func void DIA_Babo_Life_Info()
 };
 
 //*********************************************************************
-//		Sc hat Babo den Gärtnerposten verschafft (Kap. 2)
+//		Sc hat Babo den GÃƒÂ¤rtnerposten verschafft (Kap. 2)
 //*********************************************************************
 instance DIA_Babo_HowIsIt(C_INFO)
 {
@@ -705,7 +705,7 @@ func void DIA_Babo_Kap3_KeepTheFaith_Info()
 };
 
 //*********************************************
-//	Das klingt aber nicht sehr glücklich.
+//	Das klingt aber nicht sehr glÃƒÂ¼cklich.
 //*********************************************
 instance DIA_Babo_Kap3_Unhappy(C_INFO)
 {

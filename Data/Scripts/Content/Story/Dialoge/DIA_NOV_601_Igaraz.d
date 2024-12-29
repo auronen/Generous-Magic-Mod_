@@ -133,7 +133,7 @@ func void DIA_Igaraz_NotWork_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-// Wer sind die Erwählten?
+// Wer sind die ErwÃƒÂ¤hlten?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Igaranz_Choosen(C_INFO)
 {
@@ -188,7 +188,7 @@ func void DIA_Igaranz_Choosen_HowChoosen()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Erzähl mir was über Innos Lehren
+//	ErzÃƒÂ¤hl mir was ÃƒÂ¼ber Innos Lehren
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Igaranz_StudyInnos(C_INFO)
 {
@@ -218,7 +218,7 @@ func void DIA_Igaraz_StudyInnos_Info()
 };
 
 //**************************************************************************
-//	ABSCHNITT 2 DIE PRÜFUNG DER MAGIE
+//	ABSCHNITT 2 DIE PRÃƒÅ“FUNG DER MAGIE
 //**************************************************************************
 ///////////////////////////////////////////////////////////////////////
 //	Info CHOOSEN
@@ -349,7 +349,7 @@ func void DIA_Igaraz_ADD_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Perm Prüfung
+//	Info Perm PrÃƒÂ¼fung
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Igaraz_Pruefung(C_INFO)
 {
@@ -519,7 +519,7 @@ func void DIA_Igaraz_TalkAboutBabo_Info()
 };
 
 //**************************************************************************
-//	Du hast etwas was Babo gehört
+//	Du hast etwas was Babo gehÃƒÂ¶rt
 //**************************************************************************
 instance DIA_Igaranz_BabosBelongings(C_INFO)
 {
@@ -575,7 +575,7 @@ func void DIA_Igaraz_WhereDocs_Info()
 };
 
 //**************************************************************************
-//	Was soll Babo für dich tun?
+//	Was soll Babo fÃƒÂ¼r dich tun?
 //**************************************************************************
 instance DIA_Igaranz_BabosJob(C_INFO)
 {
@@ -604,7 +604,7 @@ func void DIA_Igaraz_BabosJob_Info()
 };
 
 //**************************************************************************
-//	Wieviel willst du für die Papiere haben?
+//	Wieviel willst du fÃƒÂ¼r die Papiere haben?
 //**************************************************************************
 instance DIA_Igaranz_Price(C_INFO)
 {
@@ -706,7 +706,7 @@ func void DIA_Igaraz_PICKPOCKET_DoIt()
 	{
 		B_ResetThiefLevel();
 		AI_StopProcessInfos(self);
-		B_Attack(self, other, AR_Theft, 1); // AR_Theft führt zu NEWS!
+		B_Attack(self, other, AR_Theft, 1); // AR_Theft fÃƒÂ¼hrt zu NEWS!
 	};
 };
 

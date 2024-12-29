@@ -3,8 +3,8 @@
 // ***************************************************
 func void B_AssignSchiffswachenGuard(var C_Npc Schiffswache)
 {
-	if ((MIS_ShipIsFree == TRUE) // Joly: SC darf jetzt auf´s Schiff!!!!
-	|| (MIS_SCVisitShip == LOG_RUNNING)) // Joly: Für die Kurzzeitige Erlaubnis, das Schiff zu besuchen! Muß nach der Aktion wieder geändert werden, z. B = 0;
+	if ((MIS_ShipIsFree == TRUE) // Joly: SC darf jetzt aufÃ‚Â´s Schiff!!!!
+	|| (MIS_SCVisitShip == LOG_RUNNING)) // Joly: FÃƒÂ¼r die Kurzzeitige Erlaubnis, das Schiff zu besuchen! MuÃƒÅ¸ nach der Aktion wieder geÃƒÂ¤ndert werden, z. B = 0;
 	{
 		if (Schiffswache.voice == 4)
 		{

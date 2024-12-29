@@ -101,7 +101,7 @@ func void UseStandardBuch()
 				Doc_PrintLines	(nDocID, 0, StandardBuch_3);
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_PrintLines	(nDocID, 1, StandardBuch_4);
@@ -298,7 +298,7 @@ func void UseEinhandBuch()
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLines	(nDocID, 0, EinhandBuch_2);
 
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
@@ -366,7 +366,7 @@ func void UseZweihandBuch()
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLines	(nDocID, 0, ZweihandBuch_2);
 
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_BookHeadline); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_PrintLines	(nDocID, 1, "");

@@ -1,7 +1,7 @@
 // ***************************************
 // ZS_Bandit
 // ---------
-// Für Zustandsgesteuerte Banditen
+// FÃƒÂ¼r Zustandsgesteuerte Banditen
 // Wenn FP_Campfire, sitzen, sonst stehen.
 // ***************************************
 

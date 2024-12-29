@@ -30,7 +30,7 @@ instance PIR_1320_Addon_Greg(Npc_Default)
 	B_GiveNpcTalents(self);
 
 	// -------- fighting skills --------
-	B_SetFightSkills(self, 80); // Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills(self, 80); // Grenzen fÃƒÂ¼r Talent-Level liegen bei 30 und 60
 
 	// -------- inventory --------
 	B_CreateAmbientInv(self);

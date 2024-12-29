@@ -1,5 +1,5 @@
 // EVT_ADDON_ADANOSDOOR_ENTRANCE_VOICESCRIPT
-// (die RavenGehtInDenAdanosTempelTür)
+// (die RavenGehtInDenAdanosTempelTÃƒÂ¼r)
 
 func void EVT_ADDON_ADANOSDOOR_ENTRANCE_VOICESCRIPT()
 {

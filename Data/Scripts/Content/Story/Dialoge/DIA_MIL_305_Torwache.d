@@ -174,7 +174,7 @@ func void DIA_Mil_305_Torwache_Attack_Info()
 };
 
 // ***************************************************************
-//					Nachricht für Lord Hagen
+//					Nachricht fÃƒÂ¼r Lord Hagen
 // ***************************************************************
 instance DIA_Mil_305_Torwache_MESSAGE(C_INFO)
 {
@@ -230,7 +230,7 @@ func void DIA_Mil_305_Torwache_Ausnahme_Info()
 };
 
 // ************************************************************
-// 						Ich BIN Bürger!
+// 						Ich BIN BÃƒÂ¼rger!
 // ************************************************************
 instance DIA_Mil_305_Torwache_PassAsCitizen(C_INFO)
 {
@@ -353,7 +353,7 @@ func void DIA_Mil_305_Torwache_PassAsMage_Info()
 };
 
 // ************************************************************
-// 						Pass as SÖLDNER
+// 						Pass as SÃƒâ€“LDNER
 // ************************************************************
 instance DIA_Mil_305_Torwache_PassAsSld(C_INFO)
 {

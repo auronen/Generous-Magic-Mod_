@@ -99,7 +99,7 @@ instance PC_L20(NPC_DEFAULT) // Anfang 2. Kapitel - Ende der ADW
 	id								= 0;
 	exp								= (500 * ((level + 1) / 2) * (level + 1));
 	exp_next						= (500 * ((level + 2) / 2) * (level + 1));
-	lp								= 40; // für Lockpick, SteintafelIII
+	lp								= 40; // fÃƒÂ¼r Lockpick, SteintafelIII
 
 	// -------- attributes --------
 	attribute[ATR_STRENGTH]			= 106; // 10+50+46 (40% von 115) // 80LP
@@ -149,7 +149,7 @@ instance PC_L40(NPC_DEFAULT) // Anfang 4. Kapitel (Drachenjagd)
 	id								= 0;
 	exp								= (500 * ((level + 1) / 2) * (level + 1));
 	exp_next						= (500 * ((level + 2) / 2) * (level + 1));
-	lp								= 60; // für Lockpick, SteintafelIII, PermSTR
+	lp								= 60; // fÃƒÂ¼r Lockpick, SteintafelIII, PermSTR
 
 	// -------- attributes --------
 	attribute[ATR_STRENGTH]			= 159; // 10+80+69 (60% von 115) // 170LP
@@ -206,7 +206,7 @@ instance PC_L60(NPC_DEFAULT) // Anfang 6. Kapitel (Dracheninsel)
 	id								= 0;
 	exp								= (500 * ((level + 1) / 2) * (level + 1));
 	exp_next						= (500 * ((level + 2) / 2) * (level + 1));
-	lp								= 60; // 60; für Lockpick, SteintafelIII, PermSTR
+	lp								= 60; // 60; fÃƒÂ¼r Lockpick, SteintafelIII, PermSTR
 
 	// -------- attributes --------
 	attribute[ATR_STRENGTH]			= 228; // 10+126+92 (80% von 115) // 370LP
@@ -286,10 +286,10 @@ instance PC_E3Mage(NPC_DEFAULT) // PC_E3Mage
 	B_AddFightSkill(self, NPC_TALENT_BOW, 20);
 	B_AddFightSkill(self, NPC_TALENT_CROSSBOW, 10);
 	Npc_SetTalentSkill(self, NPC_TALENT_MAGE, 6);
-	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // hängt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // hÃƒÂ¤ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill(self, NPC_TALENT_SNEAK, 1);
 	// Npc_SetTalentSkill(self, NPC_TALENT_ACROBAT, 0);
-	// Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // hängt ab von DEX (auf Scriptebene)
+	// Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // hÃƒÂ¤ngt ab von DEX (auf Scriptebene)
 	// Npc_SetTalentSkill(self, NPC_TALENT_SMITH, 1);
 	Npc_SetTalentSkill(self, NPC_TALENT_RUNES, 1);
 	Npc_SetTalentSkill(self, NPC_TALENT_ALCHEMY, 1);
@@ -454,10 +454,10 @@ instance PC_E3Paladin(NPC_DEFAULT) // PC_E3Paladin
 	B_AddFightSkill(self, NPC_TALENT_BOW, 80);
 	B_AddFightSkill(self, NPC_TALENT_CROSSBOW, 70);
 	Npc_SetTalentSkill(self, NPC_TALENT_MAGE, 0);
-	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // hängt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill(self, NPC_TALENT_PICKLOCK, 1); // hÃƒÂ¤ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill(self, NPC_TALENT_SNEAK, 1);
 	// Npc_SetTalentSkill(self, NPC_TALENT_ACROBAT, 0);
-	// Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // hängt ab von DEX (auf Scriptebene)
+	// Npc_SetTalentSkill(self, NPC_TALENT_PICKPOCKET, 1); // hÃƒÂ¤ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill(self, NPC_TALENT_SMITH, 1);
 	// Npc_SetTalentSkill(self, NPC_TALENT_RUNES, 1);
 	// Npc_SetTalentSkill(self, NPC_TALENT_ALCHEMY, 1);

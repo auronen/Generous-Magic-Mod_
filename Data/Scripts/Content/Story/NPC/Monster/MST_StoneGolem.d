@@ -174,7 +174,7 @@ func void B_GolemRise()
 };
 
 //************************************************************************************
-//	Shattered_Golem ->liegt am Boden und setzt sich bei Annäherung des Hero zusammen
+//	Shattered_Golem ->liegt am Boden und setzt sich bei AnnÃƒÂ¤herung des Hero zusammen
 //************************************************************************************
 
 instance Shattered_Golem(Mst_Default_StoneGolem)
@@ -212,7 +212,7 @@ instance Shattered_Golem(Mst_Default_StoneGolem)
 
 // ##################################################
 // ##
-// ## Magischer Golem für Prüfung des Feuers
+// ## Magischer Golem fÃƒÂ¼r PrÃƒÂ¼fung des Feuers
 // ##
 // ##################################################
 

@@ -1,7 +1,7 @@
 // ***************************************************
 // Npc_Plunder_Is_Empty
 // --------------------
-// wird aufgerufen, wenn bewußtloser/toter NPC/Monster
+// wird aufgerufen, wenn bewuÃƒÅ¸tloser/toter NPC/Monster
 // mit leerem Inventory angeklickt wird
 // ***************************************************
 

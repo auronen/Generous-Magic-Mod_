@@ -24,7 +24,7 @@ const string BookstandAnimals1_S1_7 = "A talent experienced hunters value greatl
 const string BookstandAnimals1_S1_8 = "A hunter with this skill can also skin swampsharks and lurkers.";
 const string BookstandAnimals1_S1_9 = "Extract Claws";
 const string BookstandAnimals1_S1_10 = "An art to be used on all kinds of lizards, snappers, lurkers and shadowbeats.";
-func void Use_BookstandAnimals1_S1() // Tierbücher
+func void Use_BookstandAnimals1_S1() // TierbÃƒÂ¼cher
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 
@@ -81,7 +81,7 @@ const string BookstandAnimals2_S1_8 = "particularly valuable, as they contain a 
 const string BookstandAnimals2_S1_9 = "However, it should be used sparingly, as the human body ceases to react to it over time.";
 const string BookstandAnimals2_S1_10 = "Minecrawler plates are also popular. They can be used to make armor.";
 
-func void Use_BookstandAnimals2_S1() // Tierbücher
+func void Use_BookstandAnimals2_S1() // TierbÃƒÂ¼cher
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 
@@ -137,7 +137,7 @@ const string BookstandAnimals3_S1_7 = "The shadowbeast is an ancient loner and l
 const string BookstandAnimals3_S1_8 = "There are very few of these creatures left, therefore they are no danger to humans unless they venture into their hunting grounds.";
 const string BookstandAnimals3_S1_9 = "The horn on a shadowbeast's head is regarded as a valuable hunting trophy. A hunter must learn how to remove it properly";
 const string BookstandAnimals3_S1_10 = "in order to claim this prize.";
-func void Use_BookstandAnimals3_S1() // Tierbücher
+func void Use_BookstandAnimals3_S1() // TierbÃƒÂ¼cher
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 

@@ -300,7 +300,7 @@ func void DIA_Addon_Garett_GiveKompass_Info()
 {
 	AI_Output(other, self, "DIA_Addon_Garett_GiveKompass_15_00"); //Here's your compass.
 
-	// Patch m.f. - weil Händler
+	// Patch m.f. - weil HÃƒÂ¤ndler
 	if (B_GiveInvItems(other, self, ItMI_Addon_Kompass_Mis, 1))
 	{
 		Npc_RemoveInvItems(self, ItMI_Addon_Kompass_Mis, 1);

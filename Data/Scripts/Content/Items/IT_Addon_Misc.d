@@ -30,7 +30,7 @@ instance ItMi_GoldNugget_Addon(C_Item)
 };
 
 // ---------------------------------------------------------------------
-//	Weiße Perle
+//	WeiÃƒÅ¸e Perle
 // ---------------------------------------------------------------------
 instance ItMi_Addon_WhitePearl(C_Item)
 {
@@ -55,7 +55,7 @@ instance ItMi_Addon_WhitePearl(C_Item)
 };
 
 // ---------------------------------------------------------------------
-//	Grüner Novize
+//	GrÃƒÂ¼ner Novize
 // ---------------------------------------------------------------------
 instance ItMi_Addon_Joint_01(C_Item)
 {
@@ -122,7 +122,7 @@ instance ItMi_BaltramPaket(C_Item)
 };
 
 //****************************************************************************
-//				Baltrams Lieferung für Skip
+//				Baltrams Lieferung fÃƒÂ¼r Skip
 //			---------------------------------------------
 //****************************************************************************
 instance ItMi_Packet_Baltram4Skip_Addon(C_Item)

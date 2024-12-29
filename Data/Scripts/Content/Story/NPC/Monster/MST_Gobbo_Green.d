@@ -26,7 +26,7 @@ prototype Mst_Default_Gobbo_Green(C_NPC)
 	protection[PROT_MAGIC]			= 0;
 
 	// -------- damage --------
-	// entweder EIN damagetype oder mehrere damage[x], die dann addiert werden und getrennten Rüstungsabzug bekommen
+	// entweder EIN damagetype oder mehrere damage[x], die dann addiert werden und getrennten RÃƒÂ¼stungsabzug bekommen
 	damageType						= DAM_EDGE;
 	//	damage[DAM_INDEX_BLUNT]		= 0;
 	//	damage[DAM_INDEX_EDGE]		= 0;
@@ -84,7 +84,7 @@ instance Gobbo_Green(Mst_Default_Gobbo_Green)
 	// -------- visuals --------
 	B_SetVisuals_Gobbo_Green();
 
-	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR ÃƒÂ¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 
@@ -125,7 +125,7 @@ instance YGobbo_Green(Mst_Default_Gobbo_Green)
 
 	// -------- fight tactic --------
 	fight_tactic = FAI_MONSTER_COWARD;
-	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode(self, ItMw_1h_Bau_Mace); // Waffe ist nur Optik - Schaden wird NUR ÃƒÂ¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 
 	// -------- talents --------
 

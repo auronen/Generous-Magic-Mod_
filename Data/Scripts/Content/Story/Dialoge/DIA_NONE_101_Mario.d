@@ -201,7 +201,7 @@ func void DIA_None_101_Mario_YourPrice_Info()
 };
 
 //*********************************************************************
-//	Die Reise kann gefährlich werden.
+//	Die Reise kann gefÃƒÂ¤hrlich werden.
 //*********************************************************************
 instance DIA_None_101_Mario_CouldBeDangerous(C_INFO)
 {
@@ -333,7 +333,7 @@ func void DIA_Mario_LeaveMyShip_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir ÃƒÂ¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Mario_StillNeedYou(C_INFO)
 {
@@ -347,7 +347,7 @@ instance DIA_Mario_StillNeedYou(C_INFO)
 
 func int DIA_Mario_StillNeedYou_Condition()
 {
-	if (((Mario_IsOnBOard == LOG_OBSOLETE) // Hier brauch man natürlich nur eine variable abfragen
+	if (((Mario_IsOnBOard == LOG_OBSOLETE) // Hier brauch man natÃƒÂ¼rlich nur eine variable abfragen
 	|| (Mario_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew))
 	{

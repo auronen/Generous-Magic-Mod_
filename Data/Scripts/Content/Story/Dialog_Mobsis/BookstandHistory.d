@@ -18,7 +18,7 @@ const string BookstandHistory1_S1_1 = "The Way of Battle";
 const string BookstandHistory1_S1_2 = "The best defense is a good offense, at least against anything non-human. It's useless to parry animals' or monsters' attacks.";
 const string BookstandHistory1_S1_3 = "It's better to keep the foe at bay with well-aimed blows and then launch a surprise combination attack.";
 const string BookstandHistory1_S1_4 = "Of course, only experienced fighters can combine their moves. If you become a master in the art of battle, you can even use several combinations.";
-func void Use_BookstandHistory1_S1() // Geschichtsbücher
+func void Use_BookstandHistory1_S1() // GeschichtsbÃƒÂ¼cher
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 
@@ -69,7 +69,7 @@ const string BookstandHistory2_S1_4 = "Thus the valley became a prison colony wh
 const string BookstandHistory2_S1_5 = "Outside of Khorinis lie a series of farms which use the good soil to plant wheat and turnips and breed sheep.";
 const string BookstandHistory2_S1_6 = "For generations the largest farm has belonged to a landowner who rents the surrounding lands to other farmers.";
 const string BookstandHistory2_S1_7 = "On the middle of the island is an ancient monastery of Innos, led by the Magicians of Fire. There they conduct research of magic and alchemy and press wine.";
-func void Use_BookstandHistory2_S1() // Geschichtsbücher
+func void Use_BookstandHistory2_S1() // GeschichtsbÃƒÂ¼cher
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 
@@ -120,7 +120,7 @@ const string BookstandHistory3_S1_7 = "To evade this fate he must pay a heavy fi
 const string BookstandHistory3_S1_8 = "In all large places, men of justice keep the peace. They will hear of any crime, and it is their duty to effect punishment and restore order.";
 const string BookstandHistory3_S1_9 = "For whoever suffers from crime or witnesses such will not have a high opinion of the culprit.";
 const string BookstandHistory3_S1_10 = "Of course, there are folks who care nothing for laws, particularly bandits and mercenaries.";
-func void Use_BookstandHistory3_S1() // Geschichtsbücher
+func void Use_BookstandHistory3_S1() // GeschichtsbÃƒÂ¼cher
 {
 	var C_Npc her; her = Hlp_GetNpc(PC_Hero);
 

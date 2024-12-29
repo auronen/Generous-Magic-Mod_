@@ -31,7 +31,7 @@ func void B_GiveTradeInv_Khaled(var C_Npc slf)
 
 		CreateInvItems(slf, ItRw_Arrow, 30);
 
-		// Gürtel
+		// GÃƒÂ¼rtel
 		CreateInvItems(slf, ItBE_Addon_Leather_01, 1);
 
 		Khaled_ItemsGiven_Chapter_1 = TRUE;

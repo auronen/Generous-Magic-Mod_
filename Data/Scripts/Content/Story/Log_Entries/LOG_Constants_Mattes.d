@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃƒÂ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -89,7 +89,7 @@ const string Topic_Bandits						= "Wanted Notes and Bandits";
 const string Topic_Bandits_1					= "Some bandits are after me. They've got a wanted note. I wonder what's behind it all.";
 const string Topic_Bandits_2					= "The bandits' leader is Dexter. He's hiding out in a mine near the landowner's.";
 
-// ------ Der Rübenbauer ------
+// ------ Der RÃƒÂ¼benbauer ------
 const string TOPIC_Kleidung						= "Lobart's Work clothes";
 const string TOPIC_Kleidung_1					= "Farmer Lobart is prepared to sell me work clothes.";
 const string TOPIC_Kleidung_2					= "I can pay part of the price by working on his farm. The more work I do, the cheaper the clothes get.";
@@ -175,7 +175,7 @@ const string TOPIC_BosperWolf_3					= "Bosper has taught me to skin animals.";
 const string TOPIC_ConstantinoPlants			= "Herbs for Constantino";
 const string TOPIC_ConstantinoPlants_1			= "Constantino wants one plant of each type, otherwise he won't accept me as his apprentice.";
 
-// -------------Händler und Diebe---------------------------
+// -------------HÃƒÂ¤ndler und Diebe---------------------------
 const string TOPIC_Canthar						= "Canthar's Favor";
 const string TOPIC_Canthar_1					= "Canthar wants me to do him the favor I still owe him.";
 const string TOPIC_Canthar_2					= "Canthar has promised to give me a weapon in return for doing him a favor.";
@@ -227,7 +227,7 @@ const string TOPIC_AlrikSchwert_1				= "Alrik sold his sword to the merchant Jor
 const string TOPIC_Garvell						= "Information for Garvell";
 const string TOPIC_Garvell_1					= "Garvell wants information about the orcs, and he wants to know why the paladins are in town.";
 
-// ---------Milizaufträge-------------------------------
+// ---------MilizauftrÃƒÂ¤ge-------------------------------
 const string TOPIC_Peck							= "Where is Peck?";
 const string TOPIC_Peck_1						= "Peck's somewhere in town. If I take him back to the barracks, I can get a weapon from him.";
 
@@ -255,7 +255,7 @@ const string Topic_Gemeinschaft					= "Serve the Community";
 const string Topic_Gemeinschaft_1				= "It is my duty as a novice to perform tasks to serve the community.";
 const string Topic_Gemeinschaft_2				= "If I complete the tasks for the mages, I will be granted permission to study in the library.";
 
-// ---------Arbeiten für die Gemeinschaft-----------------------------
+// ---------Arbeiten fÃƒÂ¼r die Gemeinschaft-----------------------------
 const string Topic_Neorasrezept					= "The Lost Recipe";
 const string Topic_Neorasrezept_1				= "Master Neoras is missing a recipe for brewing mana potions.";
 const string Topic_Neorasrezept_2				= "That must be the recipe Opolos wants to take a look at.";
@@ -297,7 +297,7 @@ const string Topic_BaboTrain_2					= "If I can persuade the paladin Sergio to pr
 const string Topic_KarrasCharm					= "A Short Trip to the City";
 const string Topic_KarrasCharm_1				= "Master Karras has sent me to the city. He wants me to get him three of the spell scrolls Ignaz makes and sells.";
 
-// ---------Prüfung des Feuers---------------------
+// ---------PrÃƒÂ¼fung des Feuers---------------------
 const string TOPIC_FireContest					= "The Test of Fire";
 const string TOPIC_FireContest_1				= "As a novice, I have a right to demand the Test of Fire. This entails each of the three magicians from the High Council setting me a test. If I pass these trials, I will be accepted into the Circle of Fire.";
 const string TOPIC_FireContest_2				= "I demanded the Test of Fire from Pyrokar. Now I have to complete the three tasks the High Council sets for me.";
@@ -315,7 +315,7 @@ const string TOPIC_Schnitzeljagd				= "The Path of Believers";
 const string TOPIC_Schnitzeljagd_1				= "Pyrokar is setting the Test of Magic for me. It's the same test that the chosen novices Ulf, Igaraz and Agon were set.";
 const string TOPIC_Schnitzeljagd_2				= "I'm to follow the signs of Innos and 'bring what the believer finds behind the path'. He gave me a key too.";
 
-// ---------Hilfe für Novizen-----------------------
+// ---------Hilfe fÃƒÂ¼r Novizen-----------------------
 const string Topic_BaboGaertner					= "Babo and the Garden";
 const string Topic_BaboGaertner_1				= "Babo would rather work in the herb garden than sweep the yard.";
 
@@ -343,7 +343,7 @@ const string Topic_KlosterTeacher_8				= "Brother Parlan teaches various other f
 const string Topic_KlosterTeacher_9				= "Master Parlan can help me to improve my magic powers.";
 const string Topic_KlosterTeacher_10			= "Brother Parlan has taught me the first three Circles. Brother Karras will help me into the next Circles.";
 
-// ---------Söldner----------------------------------
+// ---------SÃƒÂ¶ldner----------------------------------
 const string TOPIC_BecomeSLD					= "Member of the Mercenaries";
 
 const string TOPIC_BecomeSLD_1					= "To be accepted as a mercenary, I have to get Onar's approval once I've persuaded the mercenaries.";
@@ -472,7 +472,7 @@ const string Topic_TengronRing_1				= "Tengron gave me a ring that I'm to give U
 const string Topic_OricBruder					= "Bad News";
 const string Topic_OricBruder_1					= "When I'm in the castle, I'm to tell Oric that his brother fell up at the pass.";
 
-const string TOPIC_BilgotEscort					= "Bilgot�s Curse";
+const string TOPIC_BilgotEscort					= "Bilgot´s Curse";
 const string TOPIC_BilgotEscort_1				= "Bilgot wants me to get him out of the valley.";
 
 const string TOPIC_Botschaft					= "The Message";

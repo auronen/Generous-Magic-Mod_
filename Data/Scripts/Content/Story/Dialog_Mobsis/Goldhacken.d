@@ -1,6 +1,6 @@
 func int B_GoldMob_Bestimmung()
 {
-	// bin ich mobsi X und habe ich noch Gold übrig?
+	// bin ich mobsi X und habe ich noch Gold ÃƒÂ¼brig?
 	if (Hlp_StrCmp(Npc_GetNearestWP(self), "ADW_MINE_PICK_01") && (GoldMob_01_Amount_MAX > GoldMob_01_Amount))
 	{
 		GoldMob_01_Amount = (GoldMob_01_Amount + 1);
@@ -236,7 +236,7 @@ func void PC_Goldhacken_Addon_Hour_Info()
 };
 
 //*******************************************************
-//	Goldhacken Trümmerschlag
+//	Goldhacken TrÃƒÂ¼mmerschlag
 //*******************************************************
 instance PC_Goldhacken_Addon_TSchlag(C_Info)
 {

@@ -3,7 +3,7 @@ instance VLK_401_Cornelius(Npc_Default)
 	// -------- NPC --------
 	name							= "Cornelius";
 	npctype							= NpcType_Main;
-	guild							= GIL_NONE; // Hoshi:Ich muss ihn umhauen können, ohne das mir die PALs auf den Sack gehen.
+	guild							= GIL_NONE; // Hoshi:Ich muss ihn umhauen kÃƒÂ¶nnen, ohne das mir die PALs auf den Sack gehen.
 	flags							= NPC_FLAG_IMMORTAL; // Joly: immortal Hauptstory
 
 	voice							= 13;

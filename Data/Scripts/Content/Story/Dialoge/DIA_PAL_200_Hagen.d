@@ -178,7 +178,7 @@ func int DIA_Hagen_PETZMASTER_Condition()
 
 func void DIA_Hagen_PETZMASTER_Info()
 {
-	Hagen_Schulden = 0; // weil Funktion nochmal durchlaufen wird, wenn Crime höher ist...
+	Hagen_Schulden = 0; // weil Funktion nochmal durchlaufen wird, wenn Crime hÃƒÂ¶her ist...
 
 	// ------ SC hat mit Hagen noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
@@ -191,7 +191,7 @@ func void DIA_Hagen_PETZMASTER_Info()
 		AI_Output(self, other, "DIA_Hagen_PETZMASTER_04_01"); //You have gotten yourself into a fine mess.
 		AI_Output(self, other, "DIA_Hagen_PETZMASTER_04_02"); //Murder is a serious crime!
 		Hagen_Schulden = (B_GetTotalPetzCounter(self) * 50); // Anzahl der Zeugen * 50
-		Hagen_Schulden = Hagen_Schulden + 500; // PLUS Mörder-Malus
+		Hagen_Schulden = Hagen_Schulden + 500; // PLUS MÃƒÂ¶rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
 			AI_Output(self, other, "DIA_Hagen_PETZMASTER_04_03"); //Not to mention your other offenses.
@@ -229,7 +229,7 @@ func void DIA_Hagen_PETZMASTER_Info()
 		Hagen_Schulden = (B_GetTotalPetzCounter(self) * 50); // Anzahl der Zeugen * 50
 	};
 
-	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
+	// ------ Schaf getÃƒÂ¶tet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER)
 	{
 		AI_Output(self, other, "DIA_Hagen_PETZMASTER_04_13"); //You have been after our sheep - I didn't want to believe it at first.
@@ -523,7 +523,7 @@ func void DIA_Lord_Hagen_Pass_Info()
 		B_StartOtherRoutine(Fernando, "WAIT");
 	};
 
-	Wld_InsertNpc(BDT_1020_Bandit_L, "NW_TROLLAREA_PATH_47"); // Joly: // ADDON stört dann nicht mehr
+	Wld_InsertNpc(BDT_1020_Bandit_L, "NW_TROLLAREA_PATH_47"); // Joly: // ADDON stÃƒÂ¶rt dann nicht mehr
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -845,7 +845,7 @@ func void DIA_Lord_Hagen_Knight_Yes()
 };
 
 //***********************************************
-//	Wie kann ich mich würdig erweisen
+//	Wie kann ich mich wÃƒÂ¼rdig erweisen
 //***********************************************
 instance DIA_Lord_Hagen_WhatProof(C_INFO)
 {
@@ -1038,7 +1038,7 @@ func void DIA_Lord_Hagen_BACKINTOWN_Info()
 	Wld_InsertNpc(BDT_1050_Landstreicher, "NW_TROLLAREA_NOVCHASE_01");
 	Wld_InsertNpc(BDT_1051_Wegelagerer, "NW_TROLLAREA_RITUALFOREST_09");
 	Wld_InsertNpc(BDT_1052_Wegelagerer, "NW_TROLLAREA_RITUALFOREST_09");
-	B_KillNpc(BDT_1020_Bandit_L); // Joly: macht Platz für DMT_1200_Dementor
+	B_KillNpc(BDT_1020_Bandit_L); // Joly: macht Platz fÃƒÂ¼r DMT_1200_Dementor
 	Wld_InsertNpc(DMT_1200_Dementor, "NW_TROLLAREA_RITUALPATH_01");
 	// Wld_InsertNpc(DMT_1201_Dementor, "NW_TROLLAREA_RITUALPATH_01");
 	Wld_InsertNpc(DMT_1202_Dementor, "NW_TROLLAREA_RITUAL_01");
@@ -1160,11 +1160,11 @@ func void DIA_Lord_Hagen_RescueBennet_WhySure()
 func void DIA_Lord_Hagen_RescueBennet_Witness()
 {
 	AI_Output(other, self, "DIA_Lord_Hagen_RescueBennet_Witness_15_00"); //Wer ist der Zeuge?
-	AI_Output(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_01"); //Cornelius, der Sekretär des Statthalters, hat den Mord gesehen.
-	AI_Output(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_02"); //Seine Beschreibung trifft zweifelsfrei auf Bennet zu. Damit ist die Sache für mich erledigt.
-	AI_Output(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_03"); //Der Söldner wird wegen Landesverrats hängen.
+	AI_Output(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_01"); //Cornelius, der SekretÃƒÂ¤r des Statthalters, hat den Mord gesehen.
+	AI_Output(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_02"); //Seine Beschreibung trifft zweifelsfrei auf Bennet zu. Damit ist die Sache fÃƒÂ¼r mich erledigt.
+	AI_Output(self, other, "DIA_Lord_Hagen_RescueBennet_Witness_04_03"); //Der SÃƒÂ¶ldner wird wegen Landesverrats hÃƒÂ¤ngen.
 
-	B_LogEntry(TOPIC_RESCUEBENNET, "Cornelius, der Sekretär des Stadthalters, ist also der Zeuge. Er behauptet, den Mord beobachtet zu haben.");
+	B_LogEntry(TOPIC_RESCUEBENNET, "Cornelius, der SekretÃƒÂ¤r des Stadthalters, ist also der Zeuge. Er behauptet, den Mord beobachtet zu haben.");
 
 	RecueBennet_KnowsCornelius = TRUE;
 };
@@ -1432,7 +1432,7 @@ func void DIA_Lord_Hagen_RINGEBRINGEN_Info()
 	var int OrcRingGeld;
 	var int HagensRingOffer;
 
-	HagensRingOffer = 150; // Joly: Geld für einen Orkring
+	HagensRingOffer = 150; // Joly: Geld fÃƒÂ¼r einen Orkring
 
 	Ringcount = Npc_HasItems(other, ItRi_OrcEliteRing);
 

@@ -92,7 +92,7 @@ func void Use_SaturasFirstMessage_Sealed()
 
 //****************************************************************************
 //				Cavalorn's Brief an Vatras von Saturas
-//				Das Siegel wurde geöffnet
+//				Das Siegel wurde geÃƒÂ¶ffnet
 //			---------------------------------------------
 //****************************************************************************
 instance ItWr_SaturasFirstMessage_Addon(C_Item)
@@ -117,7 +117,7 @@ instance ItWr_SaturasFirstMessage_Addon(C_Item)
 };
 
 //****************************************************************************
-//				Portalschlüsselbruchstück
+//				PortalschlÃƒÂ¼sselbruchstÃƒÂ¼ck
 //			---------------------------------------------
 //****************************************************************************
 
@@ -354,7 +354,7 @@ instance ItMi_PortalRing_Addon(C_Item)
 };
 
 //**********************************************************************************
-//	Empfehlungsschreiben für Andre, Miliz zu werden (von Martin)
+//	Empfehlungsschreiben fÃƒÂ¼r Andre, Miliz zu werden (von Martin)
 // ----------------------------------------------------------------------------------
 
 instance ItWr_Martin_MilizEmpfehlung_Addon(C_Item)
@@ -477,7 +477,7 @@ func void Use_RavensKidnapperMission_Addon()
 };
 
 //**********************************************************************************
-//	Empfehlungsschreiben für Pedro, ins Kloster eingelassen zu werden.
+//	Empfehlungsschreiben fÃƒÂ¼r Pedro, ins Kloster eingelassen zu werden.
 // ----------------------------------------------------------------------------------
 
 instance ItWr_Vatras_KDFEmpfehlung_Addon(C_Item)
@@ -523,7 +523,7 @@ func void Use_VatrasKDFEmpfehlung_Addon()
 				Doc_PrintLines	(nDocID, 0, "");
 				Doc_PrintLines	(nDocID, 0, VatrasKDFEmpfehlung_Addon_2);
 				Doc_PrintLines	(nDocID, 0, VatrasKDFEmpfehlung_Addon_3);
-				// Doc_PrintLine	(nDocID, 0, "Ich hoffe, dass ich nicht persönlich erscheinen muss ihm den Einlass ");
+				// Doc_PrintLine	(nDocID, 0, "Ich hoffe, dass ich nicht persÃƒÂ¶nlich erscheinen muss ihm den Einlass ");
 				Doc_PrintLine	(nDocID, 0, "");
 				Doc_PrintLine	(nDocID, 0, VatrasKDFEmpfehlung_Addon_4);
 	Doc_Show(nDocID);
@@ -668,8 +668,8 @@ instance ItMi_Rake(C_Item)
 	value						= Value_Rake;
 
 	description					= name;
-	// text[3]					= "(Lässt sich bei geöffnetem Inventar benutzen)";
-	// text[4]					= "('Aktionstaste' + 'Pfeil- Vorne' gedrückt halten)";
+	// text[3]					= "(LÃƒÂ¤sst sich bei geÃƒÂ¶ffnetem Inventar benutzen)";
+	// text[4]					= "('Aktionstaste' + 'Pfeil- Vorne' gedrÃƒÂ¼ckt halten)";
 
 	text[0]						= "";											count[0] = 0;
 	text[1]						= "";											count[1] = 0;
@@ -687,7 +687,7 @@ func void Use_Rake()
 };
 
 /******************************************************************************************/
-instance ItRi_Addon_BanditTrader(C_Item) // Händlergildenring
+instance ItRi_Addon_BanditTrader(C_Item) // HÃƒÂ¤ndlergildenring
 {
 	name						= "Guild ring";
 
@@ -1014,7 +1014,7 @@ instance ItMi_Focus(C_Item)
 };
 
 // ---------------------------------------------------------------------------
-//				Stahl Paket für Huno
+//				Stahl Paket fÃƒÂ¼r Huno
 // ---------------------------------------------------------------------------
 instance ItMi_Addon_Steel_Paket(C_Item)
 {
@@ -1178,7 +1178,7 @@ func void Use_Addon_Stone_01()
 // ---------------------------------------------------------------------------
 //		Steintafel 5
 // ---------------------------------------------------------------------------
-instance ItMi_Addon_Stone_05(C_Item) // Valley - Totenwächter
+instance ItMi_Addon_Stone_05(C_Item) // Valley - TotenwÃƒÂ¤chter
 {
 	name						= "Yellow stone tablet";
 
@@ -1586,7 +1586,7 @@ func void UseFrancisAbrechnung_Mis()
 				Doc_PrintLine	(nDocID, 0, "");
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLine	(nDocID, 1, "");
 				Doc_PrintLine	(nDocID, 1, FrancisAbrechnung_Mis_17);
@@ -1677,7 +1677,7 @@ func void UseGregsLogbuch()
 				Doc_PrintLines	(nDocID, 0, GregsLogbuch_3);
 
 	// 2.Seite
-				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins(nDocID, -1, 30, 20, 275, 20, 1); // 0 -> margins are in pixels (Position des Textes von den RÃƒÂ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_SetFont(nDocID, 1, FONT_Book); // -1 -> all pages
 				Doc_PrintLines	(nDocID, 1, GregsLogbuch_4);
 				Doc_PrintLine	(nDocID, 1, "");
@@ -1690,7 +1690,7 @@ func void UseGregsLogbuch()
 };
 
 // -----------------------------------------------------------------------
-// Bloodwyns Truhenschlüssel - Schwere Garderüstung
+// Bloodwyns TruhenschlÃƒÂ¼ssel - Schwere GarderÃƒÂ¼stung
 // -----------------------------------------------------------------------
 instance ITKE_Addon_Bloodwyn_01(C_Item)
 {
@@ -1714,7 +1714,7 @@ instance ITKE_Addon_Bloodwyn_01(C_Item)
 };
 
 // -----------------------------------------------------------------------
-// Heiler Truhenschlüssel -
+// Heiler TruhenschlÃƒÂ¼ssel -
 // -----------------------------------------------------------------------
 instance ITKE_Addon_Heiler(C_Item)
 {
