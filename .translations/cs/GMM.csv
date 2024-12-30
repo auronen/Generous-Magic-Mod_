@@ -1,6 +1,6 @@
 "location","source","target","id","fuzzy","context","translator_comments","developer_comments"
 "Data/Scripts/Content/Story/Text.d:764","Non-lethal Scroll","(nezabíjí) Svitek","","True","GMM_Non_Lethal_Scroll","",""
-"Data/Scripts/Content/Story/Text.d:765","Non-lethal, Circle:","(nezabíjí) Kruh:","","False","GMM_Non_Lethal_Circle","",""
+"Data/Scripts/Content/Story/Text.d:765","Non-lethal, Circle:","(nezabíjí) Kruh:","","True","GMM_Non_Lethal_Circle","",""
 "Data/Scripts/Content/Story/Text.d:766","Temporarily incapacitates target.","Dočasně zneschopní cíl.","","False","GMM_Windwhirl_Description","",""
 "Data/Scripts/Content/Story/Text.d:767","Stops enemy attacks and makes them flee.","Cíle přestanou útočit a utečou.","","False","GMM_Fear_Description","",""
 "Data/Scripts/Content/Story/Text.d:768","Steals life energy from human targets.","Saje životní energii lidských nepřátel.","","False","GMM_SuckEnergy_Description","",""
