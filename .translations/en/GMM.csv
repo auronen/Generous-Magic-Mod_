@@ -1,5 +1,5 @@
 "location","source","target","id","fuzzy","context","translator_comments","developer_comments"
-"Data/Scripts/Content/Story/Text.d:763","Non-lethal Scroll","Non-lethal Scroll","","","GMM_Non_Lethal_Scroll","",""
+"Data/Scripts/Content/Story/Text.d:763","Non-lethal Scroll","(Non-lethal) Scroll","","False","GMM_Non_Lethal_Scroll","",""
 "Data/Scripts/Content/Story/Text.d:764","Non-lethal, Circle:","Non-lethal, Circle:","","","GMM_Non_Lethal_Circle","",""
 "Data/Scripts/Content/Story/Text.d:765","Temporarily incapacitates target.","Temporarily incapacitates target.","","","GMM_Temp_stun","",""
 "Data/Scripts/Content/Story/Text.d:766","Stops enemy attacks and makes them flee.","Stops enemy attacks and makes them flee.","","","GMM_Fear_Description","",""
