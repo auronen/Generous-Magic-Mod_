@@ -255,8 +255,8 @@ instance ItRu_GreenTentacle(C_Item)
 	text[1]						= NAME_Manakosten;								count[1] = SPL_Cost_Greententacle;
 	text[2]						= NAME_Sec_Duration;							count[2] = SPL_TIME_Greententacle;
 	text[3]						= "";											count[3] = 0;
-	TEXT	[4]		    =	GMM_GreenTentacle_Description;			
-	//COUNT	[4] = 
+	TEXT[4]					    = GMM_Temp_stun;			
+//	COUNT[4]					= 
 	text[5]						= NAME_Value;									count[5] = value;
 };
 

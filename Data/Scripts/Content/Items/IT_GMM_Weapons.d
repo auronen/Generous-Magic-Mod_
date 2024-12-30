@@ -60,7 +60,7 @@ INSTANCE ItMW_GMM_Stab_02_Regen (C_Item)
     visual        =   "ItMW_MageStaff_Good_2H_02.3DS";
     effect        =   "SPELLFX_MAGESTAFF4";
 
-    description   =   "Wand of Rejuvenation";
+    description   =   name;
 
     TEXT [0]      = NAME_Damage;                    COUNT[0]    = damageTotal;
     TEXT [1]      = NAME_MANA_needed;               COUNT[1]    = cond_value[2];
@@ -209,7 +209,7 @@ INSTANCE ItMW_GMM_Stab_04_Summon (C_Item)
     visual                  =   "ItMW_MageStaff_Good_2H_02.3DS"; 
     effect              =   "SPELLFX_MAGESTAFF4";
 
-    description             =   "";
+    description             =   name;
 
     TEXT[0]                 = NAME_Damage;                  COUNT[0]    = damageTotal;
     TEXT[1]             = NAME_Mana_needed;                 COUNT[1]    = cond_value[2];
