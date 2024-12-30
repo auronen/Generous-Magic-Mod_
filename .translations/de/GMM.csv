@@ -1,6 +1,6 @@
 "location","source","target","id","fuzzy","context","translator_comments","developer_comments"
-"Data/Scripts/Content/Story/Text.d:764","Non-lethal Scroll","Nicht-tödliche Spruchrolle","","False","GMM_Non_Lethal_Scroll","",""
-"Data/Scripts/Content/Story/Text.d:765","Non-lethal, Circle:","Nicht-tödlich, Kreis:","","False","GMM_Non_Lethal_Circle","",""
+"Data/Scripts/Content/Story/Text.d:764","Non-lethal Scroll","(Nicht-tödlich) Spruchrolle","","False","GMM_Non_Lethal_Scroll","",""
+"Data/Scripts/Content/Story/Text.d:765","Non-lethal, Circle:","(Nicht-tödlich) Kreis:","","False","GMM_Non_Lethal_Circle","",""
 "Data/Scripts/Content/Story/Text.d:766","Temporarily incapacitates target.","","","False","GMM_Windwhirl_Description","",""
 "Data/Scripts/Content/Story/Text.d:767","Stops enemy attacks and makes them flee.","Stoppt Angriffe von Feinden und lässt sie flüchten.","","False","GMM_Fear_Description","",""
 "Data/Scripts/Content/Story/Text.d:768","Steals life energy from human targets.","Stiehlt Lebensenergie von menschlichen Zielen.","","False","GMM_SuckEnergy_Description","",""
