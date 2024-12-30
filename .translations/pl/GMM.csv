@@ -1,6 +1,6 @@
 "location","source","target","id","fuzzy","context","translator_comments","developer_comments"
-"Data/Scripts/Content/Story/Text.d:764","Non-lethal Scroll","(Nie Zabija) Zwój","","False","GMM_Non_Lethal_Scroll","",""
-"Data/Scripts/Content/Story/Text.d:765","Non-lethal, Circle:","(Nie zabija) Krąg:","","False","GMM_Non_Lethal_Circle","",""
+"Data/Scripts/Content/Story/Text.d:764","Non-lethal Scroll","(Nie Zabija) Zwój","","True","GMM_Non_Lethal_Scroll","",""
+"Data/Scripts/Content/Story/Text.d:765","Non-lethal, Circle:","(Nie zabija) Krąg:","","True","GMM_Non_Lethal_Circle","",""
 "Data/Scripts/Content/Story/Text.d:766","Temporarily incapacitates target.","Chwilowo unieszkodliwia cel.","","False","GMM_Windwhirl_Description","",""
 "Data/Scripts/Content/Story/Text.d:767","Stops enemy attacks and makes them flee.","Cele przestają atakować i uciekają.","","False","GMM_Fear_Description","",""
 "Data/Scripts/Content/Story/Text.d:768","Steals life energy from human targets.","Wysysa energię życiową z ludzi.","","False","GMM_SuckEnergy_Description","",""
