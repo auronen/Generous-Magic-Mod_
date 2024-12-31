@@ -14,7 +14,7 @@
 "Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:921","Elixier of Spirit (1 Fire Root, 1 King's Sorrel, Meadow Knotweed)","","","False","PC_ItPo_Perm_Mana.description","",""
 "Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:964","Potion of Dexterity (1 Goblin Berry, 1 King's Sorrel, Meadow Knotweed)","","","False","PC_ItPo_Dex.description","",""
 "Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:1007","Potion of strength (1 Dragonroot, 1 King's Sorrel, Meadow Knotweed)","","","False","PC_ItPo_Strg.description","",""
-"Data/Scripts/Content/Items/IT_GMM_Weapons.d:43","Wand of Rejuvenation","","","False","ItMW_GMM_Stab_02_Regen.name","",""
+"Data/Scripts/Content/Items/IT_GMM_Weapons.d:43","Wand of Rejuvenation","Panzer tylko nie zjeb tego","","False","ItMW_GMM_Stab_02_Regen.name","",""
 "Data/Scripts/Content/Items/IT_GMM_Weapons.d:67","Mana regeneration per second:","","","False","ItMW_GMM_Stab_02_Regen.TEXT[4]","",""
 "Data/Scripts/Content/Items/IT_GMM_Weapons.d:158","Wand of Efficiency","","","False","ItMW_GMM_Stab_03_Eff.name","",""
 "Data/Scripts/Content/Items/IT_GMM_Weapons.d:182","Spells cost 35% mana less to cast.","","","False","ItMW_GMM_Stab_03_Eff.TEXT[4]","",""
