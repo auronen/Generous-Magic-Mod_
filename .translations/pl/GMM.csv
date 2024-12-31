@@ -17,7 +17,7 @@
 "Data/Scripts/Content/Story/Dialog_Mobsis/Potion_Alchemy.d:1007","Potion of strength (1 Dragonroot, 1 King's Sorrel, Meadow Knotweed)","Mikstura Siły (1 Smoczy Korzeń, 1 Szczaw Królewski, 1 Rdest Polny)","","False","PC_ItPo_Strg.description","",""
 "Data/Scripts/Content/Items/IT_GMM_Weapons.d:43","Wand of Rejuvenation","Kostur Medytacji","","False","ItMW_GMM_Stab_02_Regen.name","",""
 "Data/Scripts/Content/Items/IT_GMM_Weapons.d:63","Wand of Rejuvenation","Kostur Medytacji","","False","ItMW_GMM_Stab_02_Regen.description","",""
-"Data/Scripts/Content/Items/IT_GMM_Weapons.d:67","Mana regeneration per second:","Regenerujacja many/s:","","False","ItMW_GMM_Stab_02_Regen.TEXT[4]","",""
+"Data/Scripts/Content/Items/IT_GMM_Weapons.d:67","Mana regeneration per second:","Regeneracja many/s:","","False","ItMW_GMM_Stab_02_Regen.TEXT[4]","",""
 "Data/Scripts/Content/Items/IT_GMM_Weapons.d:158","Wand of Efficiency","Kostur Wydajności","","False","ItMW_GMM_Stab_03_Eff.name","",""
 "Data/Scripts/Content/Items/IT_GMM_Weapons.d:182","Spells cost 35% mana less to cast.","Koszt rzucania czarów zmniejszony o 35%.","","False","ItMW_GMM_Stab_03_Eff.TEXT[4]","",""
 "Data/Scripts/Content/Items/IT_GMM_Weapons.d:192","Summoner's Wand","Kostur Przywołania","","False","ItMW_GMM_Stab_04_Summon.name","",""
