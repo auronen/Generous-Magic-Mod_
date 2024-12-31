@@ -79,8 +79,8 @@ instance ItRu_Whirlwind(C_Item)
 	text[1]						= NAME_Manakosten;								count[1] = SPL_Cost_Whirlwind;
 	text[2]						= NAME_Sec_Duration;							count[2] = SPL_TIME_WHIRLWIND;
 	text[3]						= "";											count[3] = 0;
-		TEXT	[4]		    =	GMM_Windwhirl_Description;			
-	//COUNT	[4]
+	TEXT[4]					    = GMM_Temp_stun;			
+//	COUNT[4]
 	text[5]						= NAME_Value;									count[5] = value;
 };
 
