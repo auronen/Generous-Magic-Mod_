@@ -1629,11 +1629,11 @@ instance ITAR_KDW_H(C_Item)
 	visual_skin					= 0;
 	material					= MAT_LEATHER;
 
-	protection[PROT_EDGE]		= 100;
-	protection[PROT_BLUNT]		= 100;
-	protection[PROT_POINT]		= 100;
-	protection[PROT_FIRE]		= 50;
-	protection[PROT_MAGIC]		= 50;
+	protection[PROT_EDGE]		= 90;
+	protection[PROT_BLUNT]		= 90;
+	protection[PROT_POINT]		= 110;
+	protection[PROT_FIRE]		= 40;
+	protection[PROT_MAGIC]		= 60;
 
 	value						= VALUE_ITAR_KDW_H;
 

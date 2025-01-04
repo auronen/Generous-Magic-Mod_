@@ -280,11 +280,11 @@ instance ITAR_KDW_L_Addon(C_Item)
 	visual_skin					= 0;
 	material					= MAT_LEATHER;
 
-	protection[PROT_EDGE]		= 50;
-	protection[PROT_BLUNT]		= 50;
+	protection[PROT_EDGE]		= 30;
+	protection[PROT_BLUNT]		= 30;
 	protection[PROT_POINT]		= 50;
-	protection[PROT_FIRE]		= 25;
-	protection[PROT_MAGIC]		= 25;
+	protection[PROT_FIRE]		= 10;
+	protection[PROT_MAGIC]		= 30;
 
 	value						= VALUE_ITAR_KDW_L_Addon;
 

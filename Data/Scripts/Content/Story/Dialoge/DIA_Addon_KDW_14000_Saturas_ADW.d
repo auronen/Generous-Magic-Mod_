@@ -1266,6 +1266,8 @@ func int DIA_Addon_Saturas_ADW_CIRCLE_Condition()
 	};
 };
 
+
+
 func void DIA_Addon_Saturas_ADW_CIRCLE_Info()
 {
 	AI_Output(other, self, "DIA_Addon_Saturas_ADW_CIRCLE_15_00"); //I want to learn a higher level of magic.
@@ -1277,6 +1279,17 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info()
 		{
 			AI_Output(self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_01"); //Yes, you are ready to increase your knowledge.
 			AI_Output(self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_02"); //Enter now the second Circle of Magic. May Adanos give you the strength to use the power now granted to you wisely.
+				
+				
+				CreateInvItems(other, ItAr_KdW_L_Addon, 1);
+				AI_EquipArmor(other, ItAr_KdW_L_Addon);
+				
+				var int Second_Circle_From_Saturas;
+				Second_Circle_From_Saturas = 1;
+				
+			
+				
+		
 		};
 	}
 	else if ((Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) == 2)
@@ -1286,6 +1299,13 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info()
 		{
 			AI_Output(self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_03"); //Yes, the time is right. Enter now the third Circle of Magic.
 			AI_Output(self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_04"); //Your knowledge will now allow you to effect new, more powerful magic. Use it with care.
+			
+			if Second_Circle_From_Saturas == 0
+			{
+				CreateInvItems(other, ItAr_KdW_L_Addon, 1);
+				AI_EquipArmor(other, ItAr_KdW_L_Addon);
+			};
+		
 		};
 	}
 	else if ((Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) == 3)
@@ -1295,6 +1315,14 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info()
 		{
 			AI_Output(self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_05"); //The time has come. You are ready to enter the fourth Circle of Magic.
 			AI_Output(self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_06"); //Mighty now are your words and deeds. Always choose your new spells with care and reason.
+			
+				CreateInvItems(other, ItAr_KdW_H, 1);
+				AI_EquipArmor(other, ItAr_KdW_H);
+			var int Fourth_Circle_From_Saturas;
+				
+				Fourth_Circle_From_Saturas = 1;
+			
+			
 		};
 	}
 	else if ((Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) == 4)
@@ -1305,6 +1333,13 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info()
 			AI_Output(self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_07"); //You will now be granted the privilege of entering the fifth Circle of Magic
 			AI_Output(self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_08"); //The spells which you will now learn can be truly devastating.
 			AI_Output(self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_09"); //So be aware of your power and do not succumb to delusions of grandeur.
+		
+			if Second_Circle_From_Saturas == 0
+			{
+				CreateInvItems(other, ItAr_KdW_H, 1);
+				AI_EquipArmor(other, ItAr_KdW_H);
+			};
+		
 		};
 	}
 	else if (Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) == 5)
