@@ -78,7 +78,7 @@ for dir in release/langs/*; do
         ENC=$(get_encoding "$LANG")
         echo "Packing mod files for language $LANG"
 
-        .ci/.scripts/vdfs -b "$dir" -c "Gothic 2 GMM ($LANG)" -o release/release/Data/modvdf/GMM_$LANG.mod .scripts/g2a.yml
+        .ci/.scripts/vdfs -b "$dir" -c "Gothic 2 GMM ($LANG)" -o release/release/Data/modvdf/GMM_$LANG.mod .ci/.scripts/g2a.yml
 
         cp .ci/.scripts/GMM.ini release/release/System/GMM_$LANG.ini
         sed -i "s/{lang}/$LANG/g; s/{ver}/$VER/g; s/{enc}/$ENC/g" release/release/System/GMM_$LANG.ini
