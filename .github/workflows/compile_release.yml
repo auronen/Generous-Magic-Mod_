@@ -11,13 +11,13 @@ jobs:
 
     steps:
       # ..
+      - name: "Checkout this repo"
+        uses: actions/checkout@v3
       - name: "Checkout Gothic 2 Localizations repo"
         uses: actions/checkout@v3
         with:
           repository: 'auronen/Gothic-2-localization'
           path: 'g2loc'
-      - name: "Checkout this repo"
-        uses: actions/checkout@v3
       - name: "Substituting Gothic 2 GMM..."
         run: |
           .ci/.scripts/release.sh
