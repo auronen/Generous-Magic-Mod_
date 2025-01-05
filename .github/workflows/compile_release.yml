@@ -32,6 +32,6 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "release/release/*.zip"
-          bodyFile: ".scripts/body.md"
+          bodyFile: ".ci/.scripts/body.md"
           tag: ${{ steps.generate_release_tag.outputs.next_release_tag }}
           name: Release ${{ steps.generate_release_tag.outputs.next_release_tag }}
