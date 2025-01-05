@@ -40,6 +40,7 @@ echo "Substituting Gothic 2 GMM..."
 mkdir -p release/{langs,release}
 cp -R .ci/.release/* release/release
 
+cd ..
 ls -la
 
 .ci/.scripts/dacode subs -i cp1252 -c "_work/Data/Scripts" -b "g2loc/.translations" -t ".translations" -d "release/langs"
