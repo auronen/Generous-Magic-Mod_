@@ -18,7 +18,7 @@ jobs:
           path: 'g2loc'
       - name: "Checkout this repo"
         uses: actions/checkout@v3
-      - name: "Substituting Gothic 1 Localizations..."
+      - name: "Substituting Gothic 2 GMM..."
         run: |
           .ci/.scripts/release.sh
       - name: "Generate release tag"
