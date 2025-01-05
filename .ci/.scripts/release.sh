@@ -43,7 +43,7 @@ cp -R .ci/.release/* release/release
 ls -la
 tree -L2 .
 
-.ci/.scripts/dacode subs -i cp1252 -c "_work/Data/Scripts" -b "g2loc/.translations" -t ".translations" -d "release/langs"
+.ci/.scripts/dacode subs -i cp1252 -c "Data/Scripts" -b "g2loc/.translations" -t ".translations" -d "release/langs"
 
 echo "Compiling Gothic 2 GMM..."
 
