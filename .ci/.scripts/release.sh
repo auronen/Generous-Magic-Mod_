@@ -40,9 +40,6 @@ echo "Substituting Gothic 2 GMM..."
 mkdir -p release/{langs,release}
 cp -R .ci/.release/* release/release
 
-ls -la
-tree -L2 .
-
 .ci/.scripts/dacode subs -i cp1252 -c "Data/Scripts" -b "g2loc/.translations" -t ".translations" -d "release/langs" -l cs,de,en,fr,it,pl,ro,ru
 
 echo "Compiling Gothic 2 GMM..."
@@ -73,6 +70,9 @@ for dir in release/langs/*; do
         mv "$dir"/_compiled "$dir"/_work/Data/Scripts/_compiled
         mv "$dir"/Content   "$dir"/_work/Data/Scripts/Content
         mv "$dir"/System    "$dir"/_work/Data/Scripts/System
+
+        mkdir -p "$dir/Autorun"
+        cp .ci/resources/zParserExtender.dll "$dir/Autorun"
 
         LANG=$(basename "$dir")
         ENC=$(get_encoding "$LANG")
