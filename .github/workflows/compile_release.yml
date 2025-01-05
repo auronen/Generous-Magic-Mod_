@@ -16,6 +16,8 @@ jobs:
         with:
           repository: 'auronen/Gothic-2-localization'
           path: 'g2loc'
+      - name: "Checkout this repo"
+        uses: actions/checkout@v3
       - name: "Substituting Gothic 1 Localizations..."
         run: |
           .ci/.scripts/release.sh
